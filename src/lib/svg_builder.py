@@ -14,6 +14,7 @@ from .color import *
 __all__ = [
     "element_resolve_namespaces",
     "remove_element_in_tree",
+    "untangle_gradient_links",
     "Transform",
     "Placement",
     "element_apply_transform",
@@ -103,8 +104,38 @@ def element_depth_in_tree(element: ET.Element, tree: ET.ElementTree|ET.Element) 
 def remove_element_in_tree(element: ET.Element, tree: ET.ElementTree|ET.Element):
     for parent in tree.iter():
         # Removes element it if it's a child of parent 
-        parent.remove(element)
+        if element in parent:
+            parent.remove(element)
+
+# Remove all <linearGradient> elements which link to another with an href, and updated all
+# references to this element.
+def untangle_gradient_links(tree: ET.ElementTree|ET.Element) -> None:
+    def update_all_refs(root: ET.Element, old_id: str, new_id: str) -> None:
+        for child in root.iter():
+            child.attrib = dict((name, value.replace(f"url(#{old_id})", f"url(#{new_id})")) for name, value in child.attrib.items())
     
+    root = tree.getroot() if isinstance(tree, ET.ElementTree) else tree
+    
+    gradients = dict((gradient.get("id", None), gradient) for gradient in tree.findall(".//linearGradient"))
+    
+    for gradient in gradients.values():
+        if "xlink:href" in gradient.attrib:
+            value = gradient.attrib["xlink:href"] 
+        elif "href" in gradient.attrib:
+            value = gradient.attrib["href"]
+        else:
+            continue
+        
+        if "id" not in gradient.attrib:
+            # Element is not possible to reference
+            continue
+        
+        id = gradient.attrib["id"]
+        
+        parent_id = value.removeprefix("#")
+        
+        update_all_refs(root, id, parent_id)
+        remove_element_in_tree(gradient, tree)
 
 @dataclass
 class Transform:

@@ -33,6 +33,8 @@ def lookup_icon_id(id: str) -> SvgElement | None:
     for child in svg.iter():
         element_resolve_namespaces(child)
     
+    untangle_gradient_links(svg)
+    
     element = svg.getroot().find(".//svg[@id='icon']")
     if element == None:
         panic(f"icon {id}'s SVG file did not contain child svg element with id 'icon'")

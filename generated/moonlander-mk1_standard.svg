@@ -418,7 +418,7 @@
     <svg id="icon_example" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" version="1.1" inkscape:label="icon" x="16.66666666666667" y="16.66666666666667">
       <rect class="icon-bounding-box" width="100" height="100" fill="none" id="rect1" />
       <circle style="fill:url(#fg_main)" id="path1" cx="24.292374" cy="36.607815" r="3.342242" />
-      <circle style="fill:#000000;stroke:url(#fg_main)" id="circle1" cx="75.207626" cy="36.607815" r="3.342242" />
+      <circle style="fill:url(#fg_main);stroke:none" id="circle1" cx="75.207626" cy="36.607815" r="3.342242" />
       <path style="fill:none;stroke:url(#fg_main);stroke-width:3.08;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1" d="M 28.417826,51.396138 C 40.486805,60.070933 61.300572,60.040329 72.607439,50" id="path2" ns0:nodetypes="cc" />
     </svg>
   </g>
