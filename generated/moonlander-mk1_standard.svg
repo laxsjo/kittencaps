@@ -1,0 +1,758 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns:ns0="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" version="1.1" viewBox="-150.0 -629.0737725975564 2000.0 2479.0737725975564" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" style="--bg_main: #f0eee9; --bg_main-side: #c5c0b6; --bg_accent: #837c9a; --bg_accent-side: #6b6778; --fg_main: #000; --fg_1: #f0f; --fg_2: #f0f; --fg_3: #f0f; --outline_frame: none; --outline_surface: none; --top-surface-stroke: var(--outline_surface); --main-body-stroke: var(--outline_frame); --top-surface: none; --main-body: none;">
+  <defs id="palette-colors">
+    <linearGradient id="bg_main" inkscape:swatch="solid">
+      <stop style="stop-color:#f0eee9;" />
+    </linearGradient>
+    <linearGradient id="bg_main-side" inkscape:swatch="solid">
+      <stop style="stop-color:#c5c0b6;" />
+    </linearGradient>
+    <linearGradient id="bg_accent" inkscape:swatch="solid">
+      <stop style="stop-color:#837c9a;" />
+    </linearGradient>
+    <linearGradient id="bg_accent-side" inkscape:swatch="solid">
+      <stop style="stop-color:#6b6778;" />
+    </linearGradient>
+    <linearGradient id="fg_main" inkscape:swatch="solid">
+      <stop style="stop-color:#000;" />
+    </linearGradient>
+    <linearGradient id="fg_1" inkscape:swatch="solid">
+      <stop style="stop-color:#f0f;" />
+    </linearGradient>
+    <linearGradient id="fg_2" inkscape:swatch="solid">
+      <stop style="stop-color:#f0f;" />
+    </linearGradient>
+    <linearGradient id="fg_3" inkscape:swatch="solid">
+      <stop style="stop-color:#f0f;" />
+    </linearGradient>
+    <linearGradient id="outline_frame" inkscape:swatch="solid">
+      <stop style="stop-color:none;" />
+    </linearGradient>
+    <linearGradient id="outline_surface" inkscape:swatch="solid">
+      <stop style="stop-color:none;" />
+    </linearGradient>
+  </defs>
+  <style type="text/css">
+	.frame-box{fill:none;}
+	.top-surface{fill:var(--top-surface);stroke:var(--top-surface-stroke);stroke-miterlimit:10;}
+	.main-body{fill:var(--main-body);stroke:var(--main-body-stroke);stroke-miterlimit:10;}
+</style>
+  <symbol id="1u" viewBox="-27 -27 54 54">
+    <rect x="-27" y="-27" class="frame-box" width="54" height="54" />
+    <rect x="-25.8" y="-25.8" class="main-body" width="51.59" height="51.59" />
+    <g>
+      <path class="top-surface" d="M18-14.4c0-1.98-1.62-3.6-3.6-3.6h-28.8c-1.98,0-3.6,1.62-3.6,3.6v28.8c0,1.98,1.62,3.6,3.6,3.6h28.8    c1.98,0,3.6-1.62,3.6-3.6V-14.4z" />
+    </g>
+  </symbol>
+  <symbol id="1.25u" viewBox="-33.75 -27 67.5 54">
+    <rect x="-33.75" y="-27" class="frame-box" width="67.5" height="54" />
+    <rect x="-32.55" y="-25.8" class="main-body" width="65.09" height="51.59" />
+    <g>
+      <path class="top-surface" d="M24.75-14.4c0-1.98-1.62-3.6-3.6-3.6h-42.3c-1.98,0-3.6,1.62-3.6,3.6v28.8c0,1.98,1.62,3.6,3.6,3.6h42.3    c1.98,0,3.6-1.62,3.6-3.6V-14.4z" />
+    </g>
+  </symbol>
+  <symbol id="1.5u" viewBox="-40.5 -27 81 54">
+    <rect x="-40.5" y="-27" class="frame-box" width="81" height="54" />
+    <rect x="-39.3" y="-25.8" class="main-body" width="78.59" height="51.59" />
+    <g>
+      <path class="top-surface" d="M31.5-14.4c0-1.98-1.62-3.6-3.6-3.6h-55.8c-1.98,0-3.6,1.62-3.6,3.6v28.8c0,1.98,1.62,3.6,3.6,3.6h55.8    c1.98,0,3.6-1.62,3.6-3.6V-14.4z" />
+    </g>
+  </symbol>
+  <symbol id="0.75u" viewBox="-47.25 -27 94.5 54">
+    <rect x="-47.25" y="-27" class="frame-box" width="94.5" height="54" />
+    <rect x="-46.05" y="-25.8" class="main-body" width="92.09" height="51.59" />
+    <g>
+      <path class="top-surface" d="M38.25-14.4c0-1.98-1.62-3.6-3.6-3.6h-69.3c-1.98,0-3.6,1.62-3.6,3.6v28.8c0,1.98,1.62,3.6,3.6,3.6h69.3    c1.98,0,3.6-1.62,3.6-3.6V-14.4z" />
+    </g>
+  </symbol>
+  <symbol id="2u" viewBox="-54 -27 108 54">
+    <rect x="-52.8" y="-25.8" class="main-body" width="105.59" height="51.59" />
+    <rect x="-54" y="-27" class="frame-box" width="108" height="54" />
+    <g>
+      <path class="top-surface" d="M45-14.4c0-1.98-1.62-3.6-3.6-3.6h-82.8c-1.98,0-3.6,1.62-3.6,3.6v28.8c0,1.98,1.62,3.6,3.6,3.6h82.8    c1.98,0,3.6-1.62,3.6-3.6V-14.4z" />
+    </g>
+  </symbol>
+  <symbol id="2.25u" viewBox="-60.75 -27 121.5 54">
+    <rect x="-60.75" y="-27" class="frame-box" width="121.5" height="54" />
+    <rect x="-59.55" y="-25.8" class="main-body" width="119.09" height="51.59" />
+    <g>
+      <path class="top-surface" d="M51.75-14.4c0-1.98-1.62-3.6-3.6-3.6h-96.3c-1.98,0-3.6,1.62-3.6,3.6v28.8c0,1.98,1.62,3.6,3.6,3.6h96.3    c1.98,0,3.6-1.62,3.6-3.6V-14.4z" />
+    </g>
+  </symbol>
+  <symbol id="2.75u" viewBox="-74.25 -27 148.5 54">
+    <rect x="-74.25" y="-27" class="frame-box" width="148.5" height="54" />
+    <rect x="-73.05" y="-25.8" class="main-body" width="146.09" height="51.59" />
+    <g>
+      <path class="top-surface" d="M65.25-14.4c0-1.98-1.62-3.6-3.6-3.6h-123.3c-1.98,0-3.6,1.62-3.6,3.6v28.8c0,1.98,1.62,3.6,3.6,3.6h123.3    c1.98,0,3.6-1.62,3.6-3.6V-14.4z" />
+    </g>
+  </symbol>
+  <symbol id="6.25u" viewBox="-168.75 -27 337.5 54">
+    <rect x="-167.55" y="-25.8" class="main-body" width="335.09" height="51.59" />
+    <g id="_x31_25u_3_">
+      <rect x="-168.75" y="-27" class="frame-box" width="337.5" height="54" />
+    </g>
+  </symbol>
+  <style type="text/css">
+  @font-face {
+    font-family: "Open Gorton";
+    font-weight: 400;
+    src: url(data:font/otf;base64,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)
+  }
+  .keycap-color-bg_main {
+    --top-surface: url(#bg_main);
+    --main-body: url(#bg_main-side);
+  }
+  .keycap-color-bg_accent {
+    --top-surface: url(#bg_accent);
+    --main-body: url(#bg_accent-side);
+  }
+ </style>
+  <g transform="scale(1.0)">
+    <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_accent" />
+    <svg id="icon" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
+      <rect class="icon-bounding-box" width="100" height="100" fill="none" />
+      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);" x="50" y="74.64" text-anchor="middle">
+        <tspan />
+      </text>
+    </svg>
+  </g>
+  <g transform="translate(100.0, 0.0) scale(1.0)">
+    <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_main" />
+    <svg id="icon" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
+      <rect class="icon-bounding-box" width="100" height="100" fill="none" />
+      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);" x="50" y="74.64" text-anchor="middle">
+        <tspan />
+      </text>
+    </svg>
+  </g>
+  <g transform="translate(200.0, 0.0) scale(1.0)">
+    <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_main" />
+    <svg id="icon" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
+      <rect class="icon-bounding-box" width="100" height="100" fill="none" />
+      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);" x="50" y="74.64" text-anchor="middle">
+        <tspan />
+      </text>
+    </svg>
+  </g>
+  <g transform="translate(300.0, 0.0) scale(1.0)">
+    <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_main" />
+    <svg id="icon" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
+      <rect class="icon-bounding-box" width="100" height="100" fill="none" />
+      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);" x="50" y="74.64" text-anchor="middle">
+        <tspan />
+      </text>
+    </svg>
+  </g>
+  <g transform="translate(400.0, 0.0) scale(1.0)">
+    <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_main" />
+    <svg id="icon" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
+      <rect class="icon-bounding-box" width="100" height="100" fill="none" />
+      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);" x="50" y="74.64" text-anchor="middle">
+        <tspan />
+      </text>
+    </svg>
+  </g>
+  <g transform="translate(500.0, 0.0) scale(1.0)">
+    <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_main" />
+    <svg id="icon" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
+      <rect class="icon-bounding-box" width="100" height="100" fill="none" />
+      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);" x="50" y="74.64" text-anchor="middle">
+        <tspan />
+      </text>
+    </svg>
+  </g>
+  <g transform="translate(600.0, 0.0) scale(1.0)">
+    <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_main" />
+    <svg id="icon" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
+      <rect class="icon-bounding-box" width="100" height="100" fill="none" />
+      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);" x="50" y="74.64" text-anchor="middle">
+        <tspan />
+      </text>
+    </svg>
+  </g>
+  <g transform="translate(1100.0, 0.0) scale(1.0)">
+    <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_main" />
+    <svg id="icon" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
+      <rect class="icon-bounding-box" width="100" height="100" fill="none" />
+      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);" x="50" y="74.64" text-anchor="middle">
+        <tspan />
+      </text>
+    </svg>
+  </g>
+  <g transform="translate(1200.0, 0.0) scale(1.0)">
+    <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_main" />
+    <svg id="icon" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
+      <rect class="icon-bounding-box" width="100" height="100" fill="none" />
+      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);" x="50" y="74.64" text-anchor="middle">
+        <tspan />
+      </text>
+    </svg>
+  </g>
+  <g transform="translate(1300.0, 0.0) scale(1.0)">
+    <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_main" />
+    <svg id="icon" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
+      <rect class="icon-bounding-box" width="100" height="100" fill="none" />
+      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);" x="50" y="74.64" text-anchor="middle">
+        <tspan />
+      </text>
+    </svg>
+  </g>
+  <g transform="translate(1400.0, 0.0) scale(1.0)">
+    <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_main" />
+    <svg id="icon" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
+      <rect class="icon-bounding-box" width="100" height="100" fill="none" />
+      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);" x="50" y="74.64" text-anchor="middle">
+        <tspan />
+      </text>
+    </svg>
+  </g>
+  <g transform="translate(1500.0, 0.0) scale(1.0)">
+    <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_main" />
+    <svg id="icon" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
+      <rect class="icon-bounding-box" width="100" height="100" fill="none" />
+      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);" x="50" y="74.64" text-anchor="middle">
+        <tspan />
+      </text>
+    </svg>
+  </g>
+  <g transform="translate(1600.0, 0.0) scale(1.0)">
+    <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_main" />
+    <svg id="icon" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
+      <rect class="icon-bounding-box" width="100" height="100" fill="none" />
+      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);" x="50" y="74.64" text-anchor="middle">
+        <tspan />
+      </text>
+    </svg>
+  </g>
+  <g transform="translate(1700.0, 0.0) scale(1.0)">
+    <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_accent" />
+    <svg id="icon" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
+      <rect class="icon-bounding-box" width="100" height="100" fill="none" />
+      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);" x="50" y="74.64" text-anchor="middle">
+        <tspan />
+      </text>
+    </svg>
+  </g>
+  <g transform="translate(0.0, 100.0) scale(1.0)">
+    <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_accent" />
+    <svg id="icon" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
+      <rect class="icon-bounding-box" width="100" height="100" fill="none" />
+      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);" x="50" y="74.64" text-anchor="middle">
+        <tspan />
+      </text>
+    </svg>
+  </g>
+  <g transform="translate(100.0, 100.0) scale(1.0)">
+    <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_main" />
+    <svg id="icon_Q" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
+      <rect class="icon-bounding-box" width="100" height="100" fill="none" />
+      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);" x="50" y="74.64" text-anchor="middle">
+        <tspan>Q</tspan>
+      </text>
+    </svg>
+  </g>
+  <g transform="translate(200.0, 100.0) scale(1.0)">
+    <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_main" />
+    <svg id="icon_D" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
+      <rect class="icon-bounding-box" width="100" height="100" fill="none" />
+      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);" x="50" y="74.64" text-anchor="middle">
+        <tspan>D</tspan>
+      </text>
+    </svg>
+  </g>
+  <g transform="translate(300.0, 100.0) scale(1.0)">
+    <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_main" />
+    <svg id="icon_R" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
+      <rect class="icon-bounding-box" width="100" height="100" fill="none" />
+      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);" x="50" y="74.64" text-anchor="middle">
+        <tspan>R</tspan>
+      </text>
+    </svg>
+  </g>
+  <g transform="translate(400.0, 100.0) scale(1.0)">
+    <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_main" />
+    <svg id="icon_W" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
+      <rect class="icon-bounding-box" width="100" height="100" fill="none" />
+      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);" x="50" y="74.64" text-anchor="middle">
+        <tspan>W</tspan>
+      </text>
+    </svg>
+  </g>
+  <g transform="translate(500.0, 100.0) scale(1.0)">
+    <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_main" />
+    <svg id="icon_B" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
+      <rect class="icon-bounding-box" width="100" height="100" fill="none" />
+      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);" x="50" y="74.64" text-anchor="middle">
+        <tspan>B</tspan>
+      </text>
+    </svg>
+  </g>
+  <g transform="translate(600.0, 100.0) scale(1.0)">
+    <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_accent" />
+    <svg id="icon" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
+      <rect class="icon-bounding-box" width="100" height="100" fill="none" />
+      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);" x="50" y="74.64" text-anchor="middle">
+        <tspan />
+      </text>
+    </svg>
+  </g>
+  <g transform="translate(1100.0, 100.0) scale(1.0)">
+    <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_accent" />
+    <svg id="icon" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
+      <rect class="icon-bounding-box" width="100" height="100" fill="none" />
+      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);" x="50" y="74.64" text-anchor="middle">
+        <tspan />
+      </text>
+    </svg>
+  </g>
+  <g transform="translate(1200.0, 100.0) scale(1.0)">
+    <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_main" />
+    <svg id="icon_J" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
+      <rect class="icon-bounding-box" width="100" height="100" fill="none" />
+      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);" x="50" y="74.64" text-anchor="middle">
+        <tspan>J</tspan>
+      </text>
+    </svg>
+  </g>
+  <g transform="translate(1300.0, 100.0) scale(1.0)">
+    <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_main" />
+    <svg id="icon_F" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
+      <rect class="icon-bounding-box" width="100" height="100" fill="none" />
+      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);" x="50" y="74.64" text-anchor="middle">
+        <tspan>F</tspan>
+      </text>
+    </svg>
+  </g>
+  <g transform="translate(1400.0, 100.0) scale(1.0)">
+    <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_main" />
+    <svg id="icon_U" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
+      <rect class="icon-bounding-box" width="100" height="100" fill="none" />
+      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);" x="50" y="74.64" text-anchor="middle">
+        <tspan>U</tspan>
+      </text>
+    </svg>
+  </g>
+  <g transform="translate(1500.0, 100.0) scale(1.0)">
+    <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_main" />
+    <svg id="icon_P" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
+      <rect class="icon-bounding-box" width="100" height="100" fill="none" />
+      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);" x="50" y="74.64" text-anchor="middle">
+        <tspan>P</tspan>
+      </text>
+    </svg>
+  </g>
+  <g transform="translate(1600.0, 100.0) scale(1.0)">
+    <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_accent" />
+    <svg id="icon" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
+      <rect class="icon-bounding-box" width="100" height="100" fill="none" />
+      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);" x="50" y="74.64" text-anchor="middle">
+        <tspan />
+      </text>
+    </svg>
+  </g>
+  <g transform="translate(1700.0, 100.0) scale(1.0)">
+    <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_accent" />
+    <svg id="icon" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
+      <rect class="icon-bounding-box" width="100" height="100" fill="none" />
+      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);" x="50" y="74.64" text-anchor="middle">
+        <tspan />
+      </text>
+    </svg>
+  </g>
+  <g transform="translate(0.0, 200.0) scale(1.0)">
+    <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_accent" />
+    <svg id="icon" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
+      <rect class="icon-bounding-box" width="100" height="100" fill="none" />
+      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);" x="50" y="74.64" text-anchor="middle">
+        <tspan />
+      </text>
+    </svg>
+  </g>
+  <g transform="translate(100.0, 200.0) scale(1.0)">
+    <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_main" />
+    <svg id="icon_A" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
+      <rect class="icon-bounding-box" width="100" height="100" fill="none" />
+      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);" x="50" y="74.64" text-anchor="middle">
+        <tspan>A</tspan>
+      </text>
+    </svg>
+  </g>
+  <g transform="translate(200.0, 200.0) scale(1.0)">
+    <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_main" />
+    <svg id="icon_S" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
+      <rect class="icon-bounding-box" width="100" height="100" fill="none" />
+      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);" x="50" y="74.64" text-anchor="middle">
+        <tspan>S</tspan>
+      </text>
+    </svg>
+  </g>
+  <g transform="translate(300.0, 200.0) scale(1.0)">
+    <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_main" />
+    <svg id="icon_H" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
+      <rect class="icon-bounding-box" width="100" height="100" fill="none" />
+      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);" x="50" y="74.64" text-anchor="middle">
+        <tspan>H</tspan>
+      </text>
+    </svg>
+  </g>
+  <g transform="translate(400.0, 200.0) scale(1.0)">
+    <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_main" />
+    <svg id="icon_T" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
+      <rect class="icon-bounding-box" width="100" height="100" fill="none" />
+      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);" x="50" y="74.64" text-anchor="middle">
+        <tspan>T</tspan>
+      </text>
+    </svg>
+  </g>
+  <g transform="translate(500.0, 200.0) scale(1.0)">
+    <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_main" />
+    <svg id="icon_G" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
+      <rect class="icon-bounding-box" width="100" height="100" fill="none" />
+      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);" x="50" y="74.64" text-anchor="middle">
+        <tspan>G</tspan>
+      </text>
+    </svg>
+  </g>
+  <g transform="translate(600.0, 200.0) scale(1.0)">
+    <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_accent" />
+    <svg id="icon_example" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" version="1.1" inkscape:label="icon" x="16.66666666666667" y="16.66666666666667">
+      <rect class="icon-bounding-box" width="100" height="100" fill="none" id="rect1" />
+      <circle style="fill:url(#fg_main)" id="path1" cx="24.292374" cy="36.607815" r="3.342242" />
+      <circle style="fill:#000000;stroke:url(#fg_main)" id="circle1" cx="75.207626" cy="36.607815" r="3.342242" />
+      <path style="fill:none;stroke:url(#fg_main);stroke-width:3.08;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1" d="M 28.417826,51.396138 C 40.486805,60.070933 61.300572,60.040329 72.607439,50" id="path2" ns0:nodetypes="cc" />
+    </svg>
+  </g>
+  <g transform="translate(1100.0, 200.0) scale(1.0)">
+    <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_accent" />
+    <svg id="icon" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
+      <rect class="icon-bounding-box" width="100" height="100" fill="none" />
+      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);" x="50" y="74.64" text-anchor="middle">
+        <tspan />
+      </text>
+    </svg>
+  </g>
+  <g transform="translate(1200.0, 200.0) scale(1.0)">
+    <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_main" />
+    <svg id="icon_Y" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
+      <rect class="icon-bounding-box" width="100" height="100" fill="none" />
+      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);" x="50" y="74.64" text-anchor="middle">
+        <tspan>Y</tspan>
+      </text>
+    </svg>
+  </g>
+  <g transform="translate(1300.0, 200.0) scale(1.0)">
+    <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_main" />
+    <svg id="icon_N" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
+      <rect class="icon-bounding-box" width="100" height="100" fill="none" />
+      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);" x="50" y="74.64" text-anchor="middle">
+        <tspan>N</tspan>
+      </text>
+    </svg>
+  </g>
+  <g transform="translate(1400.0, 200.0) scale(1.0)">
+    <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_main" />
+    <svg id="icon_E" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
+      <rect class="icon-bounding-box" width="100" height="100" fill="none" />
+      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);" x="50" y="74.64" text-anchor="middle">
+        <tspan>E</tspan>
+      </text>
+    </svg>
+  </g>
+  <g transform="translate(1500.0, 200.0) scale(1.0)">
+    <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_main" />
+    <svg id="icon_O" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
+      <rect class="icon-bounding-box" width="100" height="100" fill="none" />
+      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);" x="50" y="74.64" text-anchor="middle">
+        <tspan>O</tspan>
+      </text>
+    </svg>
+  </g>
+  <g transform="translate(1600.0, 200.0) scale(1.0)">
+    <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_main" />
+    <svg id="icon_I" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
+      <rect class="icon-bounding-box" width="100" height="100" fill="none" />
+      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);" x="50" y="74.64" text-anchor="middle">
+        <tspan>I</tspan>
+      </text>
+    </svg>
+  </g>
+  <g transform="translate(1700.0, 200.0) scale(1.0)">
+    <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_accent" />
+    <svg id="icon" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
+      <rect class="icon-bounding-box" width="100" height="100" fill="none" />
+      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);" x="50" y="74.64" text-anchor="middle">
+        <tspan />
+      </text>
+    </svg>
+  </g>
+  <g transform="translate(0.0, 300.0) scale(1.0)">
+    <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_accent" />
+    <svg id="icon" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
+      <rect class="icon-bounding-box" width="100" height="100" fill="none" />
+      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);" x="50" y="74.64" text-anchor="middle">
+        <tspan />
+      </text>
+    </svg>
+  </g>
+  <g transform="translate(100.0, 300.0) scale(1.0)">
+    <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_main" />
+    <svg id="icon_Z" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
+      <rect class="icon-bounding-box" width="100" height="100" fill="none" />
+      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);" x="50" y="74.64" text-anchor="middle">
+        <tspan>Z</tspan>
+      </text>
+    </svg>
+  </g>
+  <g transform="translate(200.0, 300.0) scale(1.0)">
+    <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_main" />
+    <svg id="icon_X" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
+      <rect class="icon-bounding-box" width="100" height="100" fill="none" />
+      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);" x="50" y="74.64" text-anchor="middle">
+        <tspan>X</tspan>
+      </text>
+    </svg>
+  </g>
+  <g transform="translate(300.0, 300.0) scale(1.0)">
+    <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_main" />
+    <svg id="icon_M" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
+      <rect class="icon-bounding-box" width="100" height="100" fill="none" />
+      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);" x="50" y="74.64" text-anchor="middle">
+        <tspan>M</tspan>
+      </text>
+    </svg>
+  </g>
+  <g transform="translate(400.0, 300.0) scale(1.0)">
+    <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_main" />
+    <svg id="icon_C" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
+      <rect class="icon-bounding-box" width="100" height="100" fill="none" />
+      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);" x="50" y="74.64" text-anchor="middle">
+        <tspan>C</tspan>
+      </text>
+    </svg>
+  </g>
+  <g transform="translate(500.0, 300.0) scale(1.0)">
+    <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_main" />
+    <svg id="icon_V" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
+      <rect class="icon-bounding-box" width="100" height="100" fill="none" />
+      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);" x="50" y="74.64" text-anchor="middle">
+        <tspan>V</tspan>
+      </text>
+    </svg>
+  </g>
+  <g transform="translate(1200.0, 300.0) scale(1.0)">
+    <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_main" />
+    <svg id="icon_K" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
+      <rect class="icon-bounding-box" width="100" height="100" fill="none" />
+      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);" x="50" y="74.64" text-anchor="middle">
+        <tspan>K</tspan>
+      </text>
+    </svg>
+  </g>
+  <g transform="translate(1300.0, 300.0) scale(1.0)">
+    <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_main" />
+    <svg id="icon_L" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
+      <rect class="icon-bounding-box" width="100" height="100" fill="none" />
+      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);" x="50" y="74.64" text-anchor="middle">
+        <tspan>L</tspan>
+      </text>
+    </svg>
+  </g>
+  <g transform="translate(1400.0, 300.0) scale(1.0)">
+    <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_main" />
+    <svg id="icon_." viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
+      <rect class="icon-bounding-box" width="100" height="100" fill="none" />
+      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);" x="50" y="74.64" text-anchor="middle">
+        <tspan>.</tspan>
+      </text>
+    </svg>
+  </g>
+  <g transform="translate(1500.0, 300.0) scale(1.0)">
+    <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_main" />
+    <svg id="icon_," viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
+      <rect class="icon-bounding-box" width="100" height="100" fill="none" />
+      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);" x="50" y="74.64" text-anchor="middle">
+        <tspan>,</tspan>
+      </text>
+    </svg>
+  </g>
+  <g transform="translate(1600.0, 300.0) scale(1.0)">
+    <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_accent" />
+    <svg id="icon" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
+      <rect class="icon-bounding-box" width="100" height="100" fill="none" />
+      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);" x="50" y="74.64" text-anchor="middle">
+        <tspan />
+      </text>
+    </svg>
+  </g>
+  <g transform="translate(1700.0, 300.0) scale(1.0)">
+    <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_accent" />
+    <svg id="icon" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
+      <rect class="icon-bounding-box" width="100" height="100" fill="none" />
+      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);" x="50" y="74.64" text-anchor="middle">
+        <tspan />
+      </text>
+    </svg>
+  </g>
+  <g transform="translate(0.0, 400.0) scale(1.0)">
+    <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_accent" />
+    <svg id="icon" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
+      <rect class="icon-bounding-box" width="100" height="100" fill="none" />
+      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);" x="50" y="74.64" text-anchor="middle">
+        <tspan />
+      </text>
+    </svg>
+  </g>
+  <g transform="translate(100.0, 400.0) scale(1.0)">
+    <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_accent" />
+    <svg id="icon" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
+      <rect class="icon-bounding-box" width="100" height="100" fill="none" />
+      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);" x="50" y="74.64" text-anchor="middle">
+        <tspan />
+      </text>
+    </svg>
+  </g>
+  <g transform="translate(200.0, 400.0) scale(1.0)">
+    <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_accent" />
+    <svg id="icon" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
+      <rect class="icon-bounding-box" width="100" height="100" fill="none" />
+      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);" x="50" y="74.64" text-anchor="middle">
+        <tspan />
+      </text>
+    </svg>
+  </g>
+  <g transform="translate(300.0, 400.0) scale(1.0)">
+    <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_accent" />
+    <svg id="icon" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
+      <rect class="icon-bounding-box" width="100" height="100" fill="none" />
+      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);" x="50" y="74.64" text-anchor="middle">
+        <tspan />
+      </text>
+    </svg>
+  </g>
+  <g transform="translate(400.0, 400.0) scale(1.0)">
+    <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_accent" />
+    <svg id="icon" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
+      <rect class="icon-bounding-box" width="100" height="100" fill="none" />
+      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);" x="50" y="74.64" text-anchor="middle">
+        <tspan />
+      </text>
+    </svg>
+  </g>
+  <g transform="translate(1300.0, 400.0) scale(1.0)">
+    <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_accent" />
+    <svg id="icon" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
+      <rect class="icon-bounding-box" width="100" height="100" fill="none" />
+      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);" x="50" y="74.64" text-anchor="middle">
+        <tspan />
+      </text>
+    </svg>
+  </g>
+  <g transform="translate(1400.0, 400.0) scale(1.0)">
+    <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_accent" />
+    <svg id="icon" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
+      <rect class="icon-bounding-box" width="100" height="100" fill="none" />
+      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);" x="50" y="74.64" text-anchor="middle">
+        <tspan />
+      </text>
+    </svg>
+  </g>
+  <g transform="translate(1500.0, 400.0) scale(1.0)">
+    <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_accent" />
+    <svg id="icon" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
+      <rect class="icon-bounding-box" width="100" height="100" fill="none" />
+      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);" x="50" y="74.64" text-anchor="middle">
+        <tspan />
+      </text>
+    </svg>
+  </g>
+  <g transform="translate(1600.0, 400.0) scale(1.0)">
+    <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_accent" />
+    <svg id="icon" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
+      <rect class="icon-bounding-box" width="100" height="100" fill="none" />
+      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);" x="50" y="74.64" text-anchor="middle">
+        <tspan />
+      </text>
+    </svg>
+  </g>
+  <g transform="translate(1700.0, 400.0) scale(1.0)">
+    <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_accent" />
+    <svg id="icon" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
+      <rect class="icon-bounding-box" width="100" height="100" fill="none" />
+      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);" x="50" y="74.64" text-anchor="middle">
+        <tspan />
+      </text>
+    </svg>
+  </g>
+  <g transform="translate(694.4543648263005, 340.9009742330268) rotate(45) scale(1.0)">
+    <use xlink:href="#2u" width="200" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_accent" />
+    <svg id="icon" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="66.66666666666667" y="16.66666666666667">
+      <rect class="icon-bounding-box" width="100" height="100" fill="none" />
+      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);" x="50" y="74.64" text-anchor="middle">
+        <tspan />
+      </text>
+    </svg>
+  </g>
+  <g transform="translate(623.7436867076458, 411.6116523516815) rotate(45) scale(1.0)">
+    <use xlink:href="#1.5u" width="150.0" height="100" transform="translate(100, 0) rotate(90)" style="overflow:visible;" class="keycap-color-bg_accent" />
+    <svg id="icon_Sh" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="41.66666666666667">
+      <rect class="icon-bounding-box" width="100" height="100" fill="none" />
+      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);" x="50" y="74.64" text-anchor="middle">
+        <tspan>Sh</tspan>
+      </text>
+    </svg>
+  </g>
+  <g transform="translate(694.4543648263005, 482.32233047033634) rotate(45) scale(1.0)">
+    <use xlink:href="#1.5u" width="150.0" height="100" transform="translate(100, 0) rotate(90)" style="overflow:visible;" class="keycap-color-bg_accent" />
+    <svg id="icon_Ct" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="41.66666666666667">
+      <rect class="icon-bounding-box" width="100" height="100" fill="none" />
+      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);" x="50" y="74.64" text-anchor="middle">
+        <tspan>Ct</tspan>
+      </text>
+    </svg>
+  </g>
+  <g transform="translate(765.1650429449553, 553.0330085889912) rotate(45) scale(1.0)">
+    <use xlink:href="#1.5u" width="150.0" height="100" transform="translate(100, 0) rotate(90)" style="overflow:visible;" class="keycap-color-bg_accent" />
+    <svg id="icon_Al" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="41.66666666666667">
+      <rect class="icon-bounding-box" width="100" height="100" fill="none" />
+      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);" x="50" y="74.64" text-anchor="middle">
+        <tspan>Al</tspan>
+      </text>
+    </svg>
+  </g>
+  <g transform="translate(964.1242789363898, 482.32233047033634) rotate(-45) scale(1.0)">
+    <use xlink:href="#2u" width="200" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_accent" />
+    <svg id="icon_Super" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="66.66666666666667" y="16.66666666666667">
+      <rect class="icon-bounding-box" width="100" height="100" fill="none" />
+      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);" x="50" y="74.64" text-anchor="middle">
+        <tspan>Super</tspan>
+      </text>
+    </svg>
+  </g>
+  <g transform="translate(964.1242789363898, 623.7436867076458) rotate(-45) scale(1.0)">
+    <use xlink:href="#1.5u" width="150.0" height="100" transform="translate(100, 0) rotate(90)" style="overflow:visible;" class="keycap-color-bg_accent" />
+    <svg id="icon_¨" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="41.66666666666667">
+      <rect class="icon-bounding-box" width="100" height="100" fill="none" />
+      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);" x="50" y="74.64" text-anchor="middle">
+        <tspan>¨</tspan>
+      </text>
+    </svg>
+  </g>
+  <g transform="translate(1034.8349570550447, 553.0330085889912) rotate(-45) scale(1.0)">
+    <use xlink:href="#1.5u" width="150.0" height="100" transform="translate(100, 0) rotate(90)" style="overflow:visible;" class="keycap-color-bg_accent" />
+    <svg id="icon__" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="41.66666666666667">
+      <rect class="icon-bounding-box" width="100" height="100" fill="none" />
+      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);" x="50" y="74.64" text-anchor="middle">
+        <tspan>_</tspan>
+      </text>
+    </svg>
+  </g>
+  <g transform="translate(1105.5456351736996, 482.32233047033634) rotate(-45) scale(1.0)">
+    <use xlink:href="#1.5u" width="150.0" height="100" transform="translate(100, 0) rotate(90)" style="overflow:visible;" class="keycap-color-bg_accent" />
+    <svg id="icon_Na" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="41.66666666666667">
+      <rect class="icon-bounding-box" width="100" height="100" fill="none" />
+      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);" x="50" y="74.64" text-anchor="middle">
+        <tspan>Na</tspan>
+      </text>
+    </svg>
+  </g>
+</svg>

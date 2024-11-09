@@ -1,0 +1,95 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema",
+  "title": "JSON Text",
+  "description": "An object describing the colors and fonts used in a keycap set",
+  "type": "object",
+  "definitions": {
+    "color": {
+      "anyOf": [
+        {
+          "description": "A valid CSS color.",
+          "type": "string"
+        },
+        {
+          "enum": [{ "hidden": true }]
+        }
+      ]
+    },
+    "maybeSPColor": {
+      "anyOf": [
+        {
+          "$ref": "#/definitions/color"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "SPColor": {
+              "type": "string"
+            }
+          },
+          "required": [ "SPColor" ]
+        }
+      ]
+    }
+  },
+  "properties": {
+    "font_family": {
+      "description": "The font family to use when rendering text. Must be installed.",
+      "type": "string"
+    },
+    "font_weight": {
+      "description": "The CSS font weight to use when rendering text.",
+      "type": "integer"
+    },
+    "font_size_px": {
+      "description": "The size of the font in pixels to use when rendering text.",
+      "type": "integer"
+    },
+    "colors": {
+      "description": "The colors to bind to named color variables used in the keycap set. If a color is not given it defaults to hidden.",
+      "type": "object",
+      "properties": {
+        "bg_main": {
+          "$ref": "#/definitions/maybeSPColor"
+        },
+        "bg_accent": {
+          "$ref": "#/definitions/maybeSPColor"
+        },
+        "fg_main": {
+          "$ref": "#/definitions/color"
+        },
+        "fg_1": {
+          "$ref": "#/definitions/color"
+        },
+        "fg_2": {
+          "$ref": "#/definitions/color"
+        },
+        "fg_3": {
+          "$ref": "#/definitions/color"
+        },
+        "outline_frame": {
+          "$ref": "#/definitions/color"
+        },
+        "outline_surface": {
+          "$ref": "#/definitions/color"
+        }
+      },
+      "required": [
+        "bg_main",
+        "bg_accent",
+        "fg_main",
+        "fg_1",
+        "fg_2",
+        "fg_3",
+        "outline_frame",
+        "outline_surface"
+      ]
+    }
+  },
+  "required": [
+    "font_family",
+    "font_weight",
+    "font_size_px",
+    "colors"
+  ]
+}

@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "kittencaps"
+version = "0.1.0"
+description = "Programs for generating the open source keycap set Kittencaps"
+authors = ["Rasmus Söderhielm <rasmus.soderhielm@gmail.com>"]
+# readme = "README.md"
+# license = "BSD"
+packages = [
+  { include = "src" }
+]
+include = [
+  { path = "assets", format = ["sdist", "wheel"] }
+]
+
+[tool.poetry.scripts]
+generate_embedded_font_svg = "src.generate_embedded_font_svg:run"
+package = "src.package:run"
+
+[tool.poetry.dependencies]
+python = "^3.12.5"
+lxml = "^5.3.0"
+fonttools = {version="^4.54.1", extras=["woff"]}
+damsenviet-kle = {git = "https://github.com/DamSenViet/kle-py", rev = "v1.0.1"}
+colour = "^0.1.5"
+jsonschema = "^3.2.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
