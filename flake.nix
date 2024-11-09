@@ -28,6 +28,9 @@
           poetry2nix.overlays.default
           self.overlays.default
         ];
+        config = {
+          allowUnfree = true;
+        };
       };
       pypkgsBuildRequirements = {};
       pythonEnv = (pkgs.poetry2nix.mkPoetryEnv {
@@ -61,6 +64,7 @@
           pkgs.poetry
           pkgs.just
           pkgs.open-gorton
+          pkgs.pureref
         ];
       };
       

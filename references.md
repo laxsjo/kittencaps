@@ -4,3 +4,5 @@
 - https://mintlodica.com/products/dsa-pastel-dreams-keycaps
 - https://www.behance.net/gallery/120275563/Pastel-Mechanical-Keyboard
 - https://osume.com/products/lilac-dreams-novelty-kit
+- https://www.etsy.com/listing/1504884758/happy-kitten-keycap-set-moa-profile-cute
+- https://catladysfind.com/products/desert-kitty-keycap-set
