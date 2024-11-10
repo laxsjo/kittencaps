@@ -6,7 +6,7 @@
   "colors": {
     "bg_main": { "SPColor": "WGB" },
     "bg_accent": { "SPColor": "RCE" },
-    "fg_main": "#000000",
+    "fg_main": "#7D787C",
     "fg_1": "fuchsia",
     "fg_2": "fuchsia",
     "fg_3": "fuchsia",

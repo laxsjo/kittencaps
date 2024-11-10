@@ -1,20 +1,20 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<svg xmlns:ns0="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" version="1.1" viewBox="-20.0 -20.0 940.0 404.90485194281405" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" style="--bg_main: #f0eee9; --bg_main-side: #c5c0b6; --bg_accent: #837c9a; --bg_accent-side: #6b6778; --fg_main: #000; --fg_1: #f0f; --fg_2: #f0f; --fg_3: #f0f; --outline_frame: none; --outline_surface: none; --top-surface-stroke: var(--outline_surface); --main-body-stroke: var(--outline_frame); --top-surface: none; --main-body: none;">
+<svg xmlns:ns0="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" version="1.1" viewBox="-20.0 -20.0 940.0 404.90485194281405" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" style="--bg_main: #f0eee9; --bg_main-side: #c9c7c3; --bg_accent: #837c9a; --bg_accent-side: #6d6881; --fg_main: #7d787c; --fg_1: #f0f; --fg_2: #f0f; --fg_3: #f0f; --outline_frame: none; --outline_surface: none; --top-surface-stroke: var(--outline_surface); --main-body-stroke: var(--outline_frame); --top-surface: none; --main-body: none;">
   <defs id="palette-colors">
     <linearGradient id="bg_main" inkscape:swatch="solid">
       <stop style="stop-color:#f0eee9;" />
     </linearGradient>
     <linearGradient id="bg_main-side" inkscape:swatch="solid">
-      <stop style="stop-color:#c5c0b6;" />
+      <stop style="stop-color:#c9c7c3;" />
     </linearGradient>
     <linearGradient id="bg_accent" inkscape:swatch="solid">
       <stop style="stop-color:#837c9a;" />
     </linearGradient>
     <linearGradient id="bg_accent-side" inkscape:swatch="solid">
-      <stop style="stop-color:#6b6778;" />
+      <stop style="stop-color:#6d6881;" />
     </linearGradient>
     <linearGradient id="fg_main" inkscape:swatch="solid">
-      <stop style="stop-color:#000;" />
+      <stop style="stop-color:#7d787c;" />
     </linearGradient>
     <linearGradient id="fg_1" inkscape:swatch="solid">
       <stop style="stop-color:#f0f;" />
@@ -244,11 +244,15 @@
   </g>
   <g transform="translate(50.0, 50.0) scale(0.5)">
     <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_main" />
-    <svg id="icon_Q" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
-      <rect class="icon-bounding-box" width="100" height="100" fill="none" />
-      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);" x="50" y="74.64" text-anchor="middle">
-        <tspan>Q</tspan>
+    <svg id="icon_Q" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" version="1.1" x="16.66666666666667" y="16.66666666666667">
+      <rect class="icon-bounding-box" width="100" height="100" fill="none" id="rect10" x="0" y="0" />
+      <text style="font-weight:400;font-size:70px;font-family:'Open Gorton';fill:url(#fg_main)" x="50" y="74.639999" text-anchor="middle" id="text10" inkscape:label="text">
+        <tspan id="tspan10">Q</tspan>
       </text>
+      <path style="fill:url(#fg_main);fill-rule:nonzero;stroke:url(#fg_main);stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none" d="m 33.159853,34.746337 2.096702,-7.214163 7.070658,0.60677" id="path1" ns0:nodetypes="ccc" inkscape:label="Ear" />
+      <path style="fill:url(#fg_main);fill-rule:nonzero;stroke:url(#fg_main);stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none" d="m 66.840147,34.746337 -2.096702,-7.214163 -7.070658,0.60677" id="path13" ns0:nodetypes="ccc" inkscape:label="Ear" />
+      <ellipse style="fill:url(#fg_main);fill-rule:nonzero;stroke:none;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none" id="path16" cy="44.748581" cx="-58.217804" rx="3.455512" ry="5.0944848" inkscape:label="Eye" transform="scale(-1,1)" />
+      <ellipse style="fill:url(#fg_main);fill-rule:nonzero;stroke:none;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none" id="ellipse16" cy="44.748581" cx="41.782196" rx="3.455512" ry="5.0944848" inkscape:label="Eye" />
     </svg>
   </g>
   <g transform="translate(100.0, 50.0) scale(0.5)">

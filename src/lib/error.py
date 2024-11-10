@@ -35,7 +35,9 @@ class Ok[T]:
     def unwrap_err(self) -> Never:
         return panic(f"Tried to unwrap_err {self}")
 
-def unwrap[T](option: T|Error[Any]) -> T:
+def unwrap[T](option: T|Error[Any]|None) -> T:
     if isinstance(option, Error):
-        panic(f"Tried to unwrap error {option}")
+        panic(f"Tried to unwrap error {option}", 1)
+    if option == None:
+        panic(f"Tried to unwrap None", 1)
     return option

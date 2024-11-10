@@ -4,7 +4,7 @@ from dataclasses import dataclass
 import dataclasses
 from colour import Color, RGB_color_picker, hash_or_str
 import os
-import json
+import json5
 import jsonschema
 import pathlib
 
@@ -142,8 +142,8 @@ class Theme():
         # type JsonValue = JsonValueSimple | dict[str, JsonValue] | list[JsonValue]
         
         with open(project.path_to_absolute("assets/themes/theme-schema.json")) as file:
-            schema = json.load(file)
-    
+            schema = json5.load(file)
+        
         path = pathlib.Path(theme_path)
         if not path.exists():
             panic(f"File '{path}' does not exist")
@@ -152,7 +152,7 @@ class Theme():
             panic(f"'{path}' is not a file")
         
         with open(path) as file:
-            theme_object = json.load(file)
+            theme_object = json5.load(file)
         
         try:
             jsonschema.validate(theme_object, schema)

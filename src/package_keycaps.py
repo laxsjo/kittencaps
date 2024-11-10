@@ -2,7 +2,7 @@
 
 from typing import *
 import sys
-import json
+import json5
 import argparse
 import pathlib
 import xml.etree.ElementTree as ET
@@ -60,7 +60,7 @@ def main() -> None:
         
     with open(layout_path, "r") as file:
         layout = kle.Keyboard.from_json(
-            json.load(file)
+            json5.load(file)
         )
 
     # Magic Number: Size of single keycap in pixels

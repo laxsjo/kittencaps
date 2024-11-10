@@ -23,6 +23,7 @@ fonttools = {version="^4.54.1", extras=["woff"]}
 damsenviet-kle = {git = "https://github.com/DamSenViet/kle-py", rev = "v1.0.1"}
 colour = "^0.1.5"
 jsonschema = "^3.2.0"
+json5 = "^0.9.25 "
 
 [build-system]
 requires = ["poetry-core"]

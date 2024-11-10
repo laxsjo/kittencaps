@@ -8,6 +8,7 @@ import operator
 from .utils import *
 
 __all__ = [
+    "Vec3",
     "Pos",
     "Rotation",
     "Scaling",
@@ -16,6 +17,54 @@ __all__ = [
     "Box",
     "Orientation",
 ]
+
+@dataclass
+class Vec3():
+    x: float
+    y: float
+    z: float
+    
+    def __iter__(self):
+        yield self.x
+        yield self.y
+        yield self.z
+    
+    def __len__(self) -> int:
+        return 3
+    
+    def __add__(self, other: Vec3) -> Vec3:
+        return Vec3(
+            self.x + other.x,
+            self.y + other.y,
+            self.z + other.z,
+        )
+    
+    def __sub__(self, other: Vec3) -> Vec3:
+        return Vec3(
+            self.x - other.x,
+            self.y - other.y,
+            self.z - other.z,
+        )
+    
+    def __mul__(self, factor: Vec3 | float) -> Vec3:
+        other = Vec3.promote_float(factor)
+        return Vec3(
+            self.x * other.x,
+            self.y * other.y,
+            self.z * other.z,
+        )
+    
+    def __truediv__(self, factor: Vec3 | float) -> Vec3:
+        other = Vec3.promote_float(factor)
+        return Vec3(
+            self.x / other.x,
+            self.y / other.y,
+            self.z / other.z,
+        )
+    
+    @classmethod
+    def promote_float(cls, component: float|Self) -> Self:
+        return cls(component, component, component) if not isinstance(component, Vec3) else component
 
 @dataclass
 class Pos():
