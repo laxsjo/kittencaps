@@ -31,6 +31,7 @@ NS = {
     "": "http://www.w3.org/2000/svg",
     "xlink": "http://www.w3.org/1999/xlink",
     "inkscape": "http://www.inkscape.org/namespaces/inkscape",
+    "bx": "https://boxy-svg.com",
 }
 
 for namespace, url in NS.items():
@@ -136,6 +137,63 @@ def untangle_gradient_links(tree: ET.ElementTree|ET.Element) -> None:
         
         update_all_refs(root, id, parent_id)
         remove_element_in_tree(gradient, tree)
+
+def tree_filtered_indent(tree: ET.Element|ET.ElementTree, predicate: Callable[[ET.Element], bool], space: str="  ", level: int=0) -> None:
+    """Indent an XML document by inserting newlines and indentation space
+    after elements.
+
+    *tree* is the ElementTree or Element to modify.  The (root) element
+    itself will not be changed, but the tail text of all elements in its
+    subtree will be adapted.
+    
+    *predicate* is a function which is called for every element in the tree (including the
+    root). If this function returns false, it's content isn't indented. 
+
+    *space* is the whitespace to insert for each indentation level, two
+    space characters by default.
+
+    *level* is the initial indentation level. Setting this to a higher
+    value than 0 can be used for indenting subtrees that are more deeply
+    nested inside of a document.
+    """
+    root = tree.getroot() if isinstance(tree, ET.ElementTree) else tree
+    
+    if level < 0:
+        raise ValueError(f"Initial indentation level must be >= 0, got {level}")
+    if not len(root):
+        return
+
+    # Reduce the memory consumption by reusing indentation strings.
+    indentations = ["\n" + level * space]
+
+    def _indent_children(elem: ET.Element, level: int):
+        if not predicate(elem):
+            return
+        
+        # Start a new indentation level for the first child.
+        child_level = level + 1
+        try:
+            child_indentation = indentations[child_level]
+        except IndexError:
+            child_indentation = indentations[level] + space
+            indentations.append(child_indentation)
+
+        if not elem.text or not elem.text.strip():
+            elem.text = child_indentation
+
+        child = None
+        for child in elem:
+            if len(child):
+                _indent_children(child, child_level)
+            if not child.tail or not child.tail.strip():
+                child.tail = child_indentation
+        
+        # Dedent after the last child by overwriting the previous indentation.
+        if child != None and not (child.tail or "").strip():
+            child.tail = indentations[level]
+
+
+    _indent_children(root, 0)
 
 @dataclass
 class Transform:
@@ -358,21 +416,26 @@ def build_palette_def(palette: Palette) -> ET.Element:
     })
     
     for name, color in palette.css_colors().items():
+        title = ET.Element("title")
+        title.text = name
         stop = ET.Element("stop", {
             "style": f"stop-color:{color};"
         })
         
         gradient = ET.Element("linearGradient", {
             "id": name,
+            # To make Inkscape happy
             "inkscape:swatch": "solid",
+            # To make BoxySVG happy
+            "bx:pinned": "true",
+            "gradientUnits": "userSpaceOnUse",
         })
+        gradient.append(title)
         gradient.append(stop)
         
         def_element.append(gradient)
     
     return def_element
-        
-        
 
 class SvgDocumentBuilder:
     elements: list[ET.Element]
@@ -438,6 +501,6 @@ class SvgDocumentBuilder:
             root.append(element)
         
         tree = ET.ElementTree(root)
-        ET.indent(tree, space="  ", level=0)
+        tree_filtered_indent(tree, lambda element: element.tag not in ["text"], "  ")
         
         return tree

@@ -1,53 +1,53 @@
-<?xml version='1.0' encoding='utf-8'?>
-<svg version="1.1" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:bx="https://boxy-svg.com" style="">
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:bx="https://boxy-svg.com" style="">
   <defs id="palette-colors">
     <linearGradient id="bg_main" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
       <title>bg_main</title>
-      <stop style="stop-color:#f5f7f7;" />
+      <stop style="stop-color:#f5f7f7;"/>
     </linearGradient>
     <linearGradient id="bg_main-side" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
       <title>bg_main-side</title>
-      <stop style="stop-color:#cdcece;" />
+      <stop style="stop-color:#cdcece;"/>
     </linearGradient>
     <linearGradient id="bg_accent" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
       <title>bg_accent</title>
-      <stop style="stop-color:#dee0ed;" />
+      <stop style="stop-color:#dee0ed;"/>
     </linearGradient>
     <linearGradient id="bg_accent-side" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
       <title>bg_accent-side</title>
-      <stop style="stop-color:#babbc6;" />
+      <stop style="stop-color:#babbc6;"/>
     </linearGradient>
     <linearGradient id="bg_focus" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
       <title>bg_focus</title>
-      <stop style="stop-color:#7d787c;" />
+      <stop style="stop-color:#7d787c;"/>
     </linearGradient>
     <linearGradient id="bg_focus-side" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
       <title>bg_focus-side</title>
-      <stop style="stop-color:#686468;" />
+      <stop style="stop-color:#686468;"/>
     </linearGradient>
-    <linearGradient id="fg_main" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
+    <linearGradient id="fg_main" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse" gradientTransform="matrix(0.393552, 0, 0, -0.512323, 43.080509, 89.237046)">
       <title>fg_main</title>
-      <stop style="stop-color:#7d787c;" />
+      <stop style="stop-color:#7d787c;"/>
     </linearGradient>
     <linearGradient id="fg_1" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
       <title>fg_1</title>
-      <stop style="stop-color:#f0f;" />
+      <stop style="stop-color:#f0f;"/>
     </linearGradient>
     <linearGradient id="fg_2" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
       <title>fg_2</title>
-      <stop style="stop-color:#f0f;" />
+      <stop style="stop-color:#f0f;"/>
     </linearGradient>
-    <linearGradient id="fg_3" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
+    <linearGradient id="fg_3" inkscape:swatch="solid" gradientUnits="userSpaceOnUse" bx:pinned="true">
       <title>fg_3</title>
-      <stop style="stop-color:#f0f;" />
+      <stop style="stop-color:#f0f;"/>
     </linearGradient>
     <linearGradient id="outline_frame" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
       <title>outline_frame</title>
-      <stop style="stop-color:none;" />
+      <stop style="stop-color:none;"/>
     </linearGradient>
     <linearGradient id="outline_surface" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
       <title>outline_surface</title>
-      <stop style="stop-color:none;" />
+      <stop style="stop-color:none;"/>
     </linearGradient>
   </defs>
   <style type="text/css" id="font_style">
@@ -63,7 +63,10 @@
     }
   </style>
   <svg id="icon" viewBox="0 0 100 100" width="100" height="100" style="overflow:visible;">
-    <rect class="icon-bounding-box" width="100" height="100" fill="none" />
-    <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="74.64" text-anchor="middle" xml:space="preserve"><tspan>_</tspan></text>
+    <rect class="icon-bounding-box" width="100" height="100" fill="none"/>
+    <path style="stroke: url(&quot;#fg_main&quot;); fill: none; stroke-linecap: round; stroke-width: 5px;" d="M 19.719 50 L 63.695 50"/>
+    <path style="fill: none; stroke: url(&quot;#fg_main&quot;); stroke-linecap: round; stroke-width: 5px;" d="M 49.956 36.261 L 63.695 50"/>
+    <path style="fill: none; stroke: url(&quot;#fg_main&quot;); stroke-linecap: round; stroke-width: 5px; transform-box: fill-box; transform-origin: 50% 50%;" d="M 49.956 63.739 L 63.695 50" transform="matrix(-1, 0, 0, -1, 0.000021, 0.000019)"/>
+    <path style="stroke: url(&quot;#fg_main&quot;); fill: none; stroke-linecap: round; stroke-width: 5px; transform-box: fill-box; transform-origin: 50% 50%;" d="M 61.617 50 L 90.945 50" transform="matrix(0, 1, -1, 0, 0.000006, -0.000005)"/>
   </svg>
 </svg>

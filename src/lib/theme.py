@@ -33,6 +33,7 @@ class PaletteDeclaration(TypedDict):
     # None values signify the color be hidden
     bg_main: MaybeSpColorDeclaration
     bg_accent: MaybeSpColorDeclaration
+    bg_focus: MaybeSpColorDeclaration
     
     fg_main: ColorDeclaration
     fg_1: ColorDeclaration
@@ -53,6 +54,7 @@ class ThemeDeclaration(TypedDict):
 class Palette:
     bg_main: KeycapColor
     bg_accent: KeycapColor
+    bg_focus: KeycapColor
     
     fg_main: HideableColor
     fg_1: HideableColor
@@ -79,6 +81,7 @@ class Palette:
         
         self.bg_main = resolve_plastic_color(declaration["bg_main"])
         self.bg_accent = resolve_plastic_color(declaration["bg_accent"])
+        self.bg_focus = resolve_plastic_color(declaration["bg_focus"])
         self.fg_main = resolve_color(declaration["fg_main"])
         self.fg_1 = resolve_color(declaration["fg_1"])
         self.fg_2 = resolve_color(declaration["fg_2"])

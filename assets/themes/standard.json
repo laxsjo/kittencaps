@@ -4,8 +4,9 @@
   "font_weight": 400,
   "font_size_px": 70,
   "colors": {
-    "bg_main": { "SPColor": "WGB" },
-    "bg_accent": { "SPColor": "RCE" },
+    "bg_main": "#F5F7F7",
+    "bg_accent": "#DEE0ED",
+    "bg_focus": "#7D787C",
     "fg_main": "#7D787C",
     "fg_1": "fuchsia",
     "fg_2": "fuchsia",

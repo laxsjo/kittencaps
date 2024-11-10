@@ -55,6 +55,9 @@
         "bg_accent": {
           "$ref": "#/definitions/maybeSPColor"
         },
+        "bg_focus": {
+          "$ref": "#/definitions/maybeSPColor"
+        },
         "fg_main": {
           "$ref": "#/definitions/color"
         },

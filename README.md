@@ -2,12 +2,20 @@
 
 TODO
 
+## Editing icons
+
+This project is designed to support editing the icon SVGs with Inkscape and BoxySVG. Other editors may work however.
+TODO: Add notes about installing BoxySVG, and making sure to place all elements in the child svg element.
+
+
 ## Development
 ```sh
 nix develop
 poetry install
 ```
 Now you should be able to select the interpreter in VS Code.
+
+TODO: Add note about how this installs versions of the different editors/other GUI programs, and how there is a `.#no-editors` development environment which does not.
 
 Run using
 ```shell

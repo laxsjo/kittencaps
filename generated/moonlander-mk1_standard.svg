@@ -1,34 +1,52 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<svg xmlns:ns0="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" version="1.1" viewBox="-20.0 -20.0 940.0 404.90485194281405" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" style="--bg_main: #f0eee9; --bg_main-side: #c9c7c3; --bg_accent: #837c9a; --bg_accent-side: #6d6881; --fg_main: #7d787c; --fg_1: #f0f; --fg_2: #f0f; --fg_3: #f0f; --outline_frame: none; --outline_surface: none; --top-surface-stroke: var(--outline_surface); --main-body-stroke: var(--outline_frame); --top-surface: none; --main-body: none;">
+<svg xmlns:ns0="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" version="1.1" viewBox="-20.0 -20.0 940.0 404.90485194281405" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:bx="https://boxy-svg.com" style="--bg_main: #f5f7f7; --bg_main-side: #cdcece; --bg_accent: #dee0ed; --bg_accent-side: #babbc6; --bg_focus: #7d787c; --bg_focus-side: #686468; --fg_main: #7d787c; --fg_1: #f0f; --fg_2: #f0f; --fg_3: #f0f; --outline_frame: none; --outline_surface: none; --top-surface-stroke: var(--outline_surface); --main-body-stroke: var(--outline_frame); --top-surface: none; --main-body: none;">
   <defs id="palette-colors">
-    <linearGradient id="bg_main" inkscape:swatch="solid">
-      <stop style="stop-color:#f0eee9;" />
+    <linearGradient id="bg_main" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
+      <title>bg_main</title>
+      <stop style="stop-color:#f5f7f7;" />
     </linearGradient>
-    <linearGradient id="bg_main-side" inkscape:swatch="solid">
-      <stop style="stop-color:#c9c7c3;" />
+    <linearGradient id="bg_main-side" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
+      <title>bg_main-side</title>
+      <stop style="stop-color:#cdcece;" />
     </linearGradient>
-    <linearGradient id="bg_accent" inkscape:swatch="solid">
-      <stop style="stop-color:#837c9a;" />
+    <linearGradient id="bg_accent" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
+      <title>bg_accent</title>
+      <stop style="stop-color:#dee0ed;" />
     </linearGradient>
-    <linearGradient id="bg_accent-side" inkscape:swatch="solid">
-      <stop style="stop-color:#6d6881;" />
+    <linearGradient id="bg_accent-side" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
+      <title>bg_accent-side</title>
+      <stop style="stop-color:#babbc6;" />
     </linearGradient>
-    <linearGradient id="fg_main" inkscape:swatch="solid">
+    <linearGradient id="bg_focus" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
+      <title>bg_focus</title>
       <stop style="stop-color:#7d787c;" />
     </linearGradient>
-    <linearGradient id="fg_1" inkscape:swatch="solid">
+    <linearGradient id="bg_focus-side" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
+      <title>bg_focus-side</title>
+      <stop style="stop-color:#686468;" />
+    </linearGradient>
+    <linearGradient id="fg_main" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
+      <title>fg_main</title>
+      <stop style="stop-color:#7d787c;" />
+    </linearGradient>
+    <linearGradient id="fg_1" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
+      <title>fg_1</title>
       <stop style="stop-color:#f0f;" />
     </linearGradient>
-    <linearGradient id="fg_2" inkscape:swatch="solid">
+    <linearGradient id="fg_2" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
+      <title>fg_2</title>
       <stop style="stop-color:#f0f;" />
     </linearGradient>
-    <linearGradient id="fg_3" inkscape:swatch="solid">
+    <linearGradient id="fg_3" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
+      <title>fg_3</title>
       <stop style="stop-color:#f0f;" />
     </linearGradient>
-    <linearGradient id="outline_frame" inkscape:swatch="solid">
+    <linearGradient id="outline_frame" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
+      <title>outline_frame</title>
       <stop style="stop-color:none;" />
     </linearGradient>
-    <linearGradient id="outline_surface" inkscape:swatch="solid">
+    <linearGradient id="outline_surface" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
+      <title>outline_surface</title>
       <stop style="stop-color:none;" />
     </linearGradient>
   </defs>
@@ -106,149 +124,124 @@
     --top-surface: url(#bg_accent);
     --main-body: url(#bg_accent-side);
   }
+  .keycap-color-bg_focus {
+    --top-surface: url(#bg_focus);
+    --main-body: url(#bg_focus-side);
+  }
  </style>
   <g transform="scale(0.5)">
     <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_accent" />
     <svg id="icon" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
       <rect class="icon-bounding-box" width="100" height="100" fill="none" />
-      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);" x="50" y="74.64" text-anchor="middle">
-        <tspan />
-      </text>
+      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="74.64" text-anchor="middle" xml:space="preserve"><tspan /></text>
     </svg>
   </g>
   <g transform="translate(50.0, 0.0) scale(0.5)">
     <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_main" />
     <svg id="icon" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
       <rect class="icon-bounding-box" width="100" height="100" fill="none" />
-      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);" x="50" y="74.64" text-anchor="middle">
-        <tspan />
-      </text>
+      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="74.64" text-anchor="middle" xml:space="preserve"><tspan /></text>
     </svg>
   </g>
   <g transform="translate(100.0, 0.0) scale(0.5)">
     <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_main" />
     <svg id="icon" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
       <rect class="icon-bounding-box" width="100" height="100" fill="none" />
-      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);" x="50" y="74.64" text-anchor="middle">
-        <tspan />
-      </text>
+      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="74.64" text-anchor="middle" xml:space="preserve"><tspan /></text>
     </svg>
   </g>
   <g transform="translate(150.0, 0.0) scale(0.5)">
     <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_main" />
     <svg id="icon" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
       <rect class="icon-bounding-box" width="100" height="100" fill="none" />
-      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);" x="50" y="74.64" text-anchor="middle">
-        <tspan />
-      </text>
+      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="74.64" text-anchor="middle" xml:space="preserve"><tspan /></text>
     </svg>
   </g>
   <g transform="translate(200.0, 0.0) scale(0.5)">
     <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_main" />
     <svg id="icon" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
       <rect class="icon-bounding-box" width="100" height="100" fill="none" />
-      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);" x="50" y="74.64" text-anchor="middle">
-        <tspan />
-      </text>
+      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="74.64" text-anchor="middle" xml:space="preserve"><tspan /></text>
     </svg>
   </g>
   <g transform="translate(250.0, 0.0) scale(0.5)">
     <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_main" />
     <svg id="icon" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
       <rect class="icon-bounding-box" width="100" height="100" fill="none" />
-      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);" x="50" y="74.64" text-anchor="middle">
-        <tspan />
-      </text>
+      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="74.64" text-anchor="middle" xml:space="preserve"><tspan /></text>
     </svg>
   </g>
   <g transform="translate(300.0, 0.0) scale(0.5)">
     <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_main" />
     <svg id="icon" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
       <rect class="icon-bounding-box" width="100" height="100" fill="none" />
-      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);" x="50" y="74.64" text-anchor="middle">
-        <tspan />
-      </text>
+      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="74.64" text-anchor="middle" xml:space="preserve"><tspan /></text>
     </svg>
   </g>
   <g transform="translate(550.0, 0.0) scale(0.5)">
     <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_main" />
     <svg id="icon" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
       <rect class="icon-bounding-box" width="100" height="100" fill="none" />
-      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);" x="50" y="74.64" text-anchor="middle">
-        <tspan />
-      </text>
+      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="74.64" text-anchor="middle" xml:space="preserve"><tspan /></text>
     </svg>
   </g>
   <g transform="translate(600.0, 0.0) scale(0.5)">
     <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_main" />
     <svg id="icon" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
       <rect class="icon-bounding-box" width="100" height="100" fill="none" />
-      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);" x="50" y="74.64" text-anchor="middle">
-        <tspan />
-      </text>
+      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="74.64" text-anchor="middle" xml:space="preserve"><tspan /></text>
     </svg>
   </g>
   <g transform="translate(650.0, 0.0) scale(0.5)">
     <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_main" />
     <svg id="icon" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
       <rect class="icon-bounding-box" width="100" height="100" fill="none" />
-      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);" x="50" y="74.64" text-anchor="middle">
-        <tspan />
-      </text>
+      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="74.64" text-anchor="middle" xml:space="preserve"><tspan /></text>
     </svg>
   </g>
   <g transform="translate(700.0, 0.0) scale(0.5)">
     <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_main" />
     <svg id="icon" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
       <rect class="icon-bounding-box" width="100" height="100" fill="none" />
-      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);" x="50" y="74.64" text-anchor="middle">
-        <tspan />
-      </text>
+      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="74.64" text-anchor="middle" xml:space="preserve"><tspan /></text>
     </svg>
   </g>
   <g transform="translate(750.0, 0.0) scale(0.5)">
     <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_main" />
     <svg id="icon" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
       <rect class="icon-bounding-box" width="100" height="100" fill="none" />
-      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);" x="50" y="74.64" text-anchor="middle">
-        <tspan />
-      </text>
+      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="74.64" text-anchor="middle" xml:space="preserve"><tspan /></text>
     </svg>
   </g>
   <g transform="translate(800.0, 0.0) scale(0.5)">
     <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_main" />
     <svg id="icon" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
       <rect class="icon-bounding-box" width="100" height="100" fill="none" />
-      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);" x="50" y="74.64" text-anchor="middle">
-        <tspan />
-      </text>
+      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="74.64" text-anchor="middle" xml:space="preserve"><tspan /></text>
     </svg>
   </g>
   <g transform="translate(850.0, 0.0) scale(0.5)">
     <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_accent" />
     <svg id="icon" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
       <rect class="icon-bounding-box" width="100" height="100" fill="none" />
-      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);" x="50" y="74.64" text-anchor="middle">
-        <tspan />
-      </text>
+      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="74.64" text-anchor="middle" xml:space="preserve"><tspan /></text>
     </svg>
   </g>
   <g transform="translate(0.0, 50.0) scale(0.5)">
     <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_accent" />
-    <svg id="icon" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
+    <svg id="icon_del" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
       <rect class="icon-bounding-box" width="100" height="100" fill="none" />
-      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);" x="50" y="74.64" text-anchor="middle">
-        <tspan />
-      </text>
+      <path style="stroke: url(&quot;#fg_main&quot;); fill: none; stroke-linecap: round; stroke-width: 5px;" d="M 19.719 50 L 63.695 50" />
+      <path style="fill: none; stroke: url(&quot;#fg_main&quot;); stroke-linecap: round; stroke-width: 5px;" d="M 49.956 36.261 L 63.695 50" />
+      <path style="fill: none; stroke: url(&quot;#fg_main&quot;); stroke-linecap: round; stroke-width: 5px; transform-box: fill-box; transform-origin: 50% 50%;" d="M 49.956 63.739 L 63.695 50" transform="matrix(-1, 0, 0, -1, 0.000021, 0.000019)" />
+      <path style="stroke: url(&quot;#fg_main&quot;); fill: none; stroke-linecap: round; stroke-width: 5px; transform-box: fill-box; transform-origin: 50% 50%;" d="M 61.617 50 L 90.945 50" transform="matrix(0, 1, -1, 0, 0.000006, -0.000005)" />
     </svg>
   </g>
   <g transform="translate(50.0, 50.0) scale(0.5)">
     <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_main" />
     <svg id="icon_Q" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" version="1.1" x="16.66666666666667" y="16.66666666666667">
       <rect class="icon-bounding-box" width="100" height="100" fill="none" id="rect10" x="0" y="0" />
-      <text style="font-weight:400;font-size:70px;font-family:'Open Gorton';fill:url(#fg_main)" x="50" y="74.639999" text-anchor="middle" id="text10" inkscape:label="text">
-        <tspan id="tspan10">Q</tspan>
-      </text>
+      <text style="font-weight:400;font-size:70px;font-family:'Open Gorton';fill:url(#fg_main)" x="50" y="74.639999" text-anchor="middle" id="text10" inkscape:label="text"><tspan id="tspan10">Q</tspan></text>
       <path style="fill:url(#fg_main);fill-rule:nonzero;stroke:url(#fg_main);stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none" d="m 33.159853,34.746337 2.096702,-7.214163 7.070658,0.60677" id="path1" ns0:nodetypes="ccc" inkscape:label="Ear" />
       <path style="fill:url(#fg_main);fill-rule:nonzero;stroke:url(#fg_main);stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none" d="m 66.840147,34.746337 -2.096702,-7.214163 -7.070658,0.60677" id="path13" ns0:nodetypes="ccc" inkscape:label="Ear" />
       <ellipse style="fill:url(#fg_main);fill-rule:nonzero;stroke:none;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none" id="path16" cy="44.748581" cx="-58.217804" rx="3.455512" ry="5.0944848" inkscape:label="Eye" transform="scale(-1,1)" />
@@ -259,166 +252,130 @@
     <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_main" />
     <svg id="icon_D" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
       <rect class="icon-bounding-box" width="100" height="100" fill="none" />
-      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);" x="50" y="74.64" text-anchor="middle">
-        <tspan>D</tspan>
-      </text>
+      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="74.64" text-anchor="middle" xml:space="preserve"><tspan>D</tspan></text>
     </svg>
   </g>
   <g transform="translate(150.0, 50.0) scale(0.5)">
     <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_main" />
     <svg id="icon_R" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
       <rect class="icon-bounding-box" width="100" height="100" fill="none" />
-      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);" x="50" y="74.64" text-anchor="middle">
-        <tspan>R</tspan>
-      </text>
+      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="74.64" text-anchor="middle" xml:space="preserve"><tspan>R</tspan></text>
     </svg>
   </g>
   <g transform="translate(200.0, 50.0) scale(0.5)">
     <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_main" />
     <svg id="icon_W" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
       <rect class="icon-bounding-box" width="100" height="100" fill="none" />
-      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);" x="50" y="74.64" text-anchor="middle">
-        <tspan>W</tspan>
-      </text>
+      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="74.64" text-anchor="middle" xml:space="preserve"><tspan>W</tspan></text>
     </svg>
   </g>
   <g transform="translate(250.0, 50.0) scale(0.5)">
     <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_main" />
     <svg id="icon_B" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
       <rect class="icon-bounding-box" width="100" height="100" fill="none" />
-      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);" x="50" y="74.64" text-anchor="middle">
-        <tspan>B</tspan>
-      </text>
+      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="74.64" text-anchor="middle" xml:space="preserve"><tspan>B</tspan></text>
     </svg>
   </g>
   <g transform="translate(300.0, 50.0) scale(0.5)">
     <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_accent" />
     <svg id="icon" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
       <rect class="icon-bounding-box" width="100" height="100" fill="none" />
-      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);" x="50" y="74.64" text-anchor="middle">
-        <tspan />
-      </text>
+      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="74.64" text-anchor="middle" xml:space="preserve"><tspan /></text>
     </svg>
   </g>
   <g transform="translate(550.0, 50.0) scale(0.5)">
     <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_accent" />
     <svg id="icon" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
       <rect class="icon-bounding-box" width="100" height="100" fill="none" />
-      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);" x="50" y="74.64" text-anchor="middle">
-        <tspan />
-      </text>
+      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="74.64" text-anchor="middle" xml:space="preserve"><tspan /></text>
     </svg>
   </g>
   <g transform="translate(600.0, 50.0) scale(0.5)">
     <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_main" />
     <svg id="icon_J" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
       <rect class="icon-bounding-box" width="100" height="100" fill="none" />
-      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);" x="50" y="74.64" text-anchor="middle">
-        <tspan>J</tspan>
-      </text>
+      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="74.64" text-anchor="middle" xml:space="preserve"><tspan>J</tspan></text>
     </svg>
   </g>
   <g transform="translate(650.0, 50.0) scale(0.5)">
     <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_main" />
     <svg id="icon_F" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
       <rect class="icon-bounding-box" width="100" height="100" fill="none" />
-      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);" x="50" y="74.64" text-anchor="middle">
-        <tspan>F</tspan>
-      </text>
+      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="74.64" text-anchor="middle" xml:space="preserve"><tspan>F</tspan></text>
     </svg>
   </g>
   <g transform="translate(700.0, 50.0) scale(0.5)">
     <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_main" />
     <svg id="icon_U" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
       <rect class="icon-bounding-box" width="100" height="100" fill="none" />
-      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);" x="50" y="74.64" text-anchor="middle">
-        <tspan>U</tspan>
-      </text>
+      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="74.64" text-anchor="middle" xml:space="preserve"><tspan>U</tspan></text>
     </svg>
   </g>
   <g transform="translate(750.0, 50.0) scale(0.5)">
     <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_main" />
     <svg id="icon_P" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
       <rect class="icon-bounding-box" width="100" height="100" fill="none" />
-      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);" x="50" y="74.64" text-anchor="middle">
-        <tspan>P</tspan>
-      </text>
+      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="74.64" text-anchor="middle" xml:space="preserve"><tspan>P</tspan></text>
     </svg>
   </g>
   <g transform="translate(800.0, 50.0) scale(0.5)">
     <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_accent" />
     <svg id="icon" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
       <rect class="icon-bounding-box" width="100" height="100" fill="none" />
-      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);" x="50" y="74.64" text-anchor="middle">
-        <tspan />
-      </text>
+      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="74.64" text-anchor="middle" xml:space="preserve"><tspan /></text>
     </svg>
   </g>
   <g transform="translate(850.0, 50.0) scale(0.5)">
     <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_accent" />
     <svg id="icon" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
       <rect class="icon-bounding-box" width="100" height="100" fill="none" />
-      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);" x="50" y="74.64" text-anchor="middle">
-        <tspan />
-      </text>
+      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="74.64" text-anchor="middle" xml:space="preserve"><tspan /></text>
     </svg>
   </g>
   <g transform="translate(0.0, 100.0) scale(0.5)">
     <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_accent" />
     <svg id="icon" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
       <rect class="icon-bounding-box" width="100" height="100" fill="none" />
-      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);" x="50" y="74.64" text-anchor="middle">
-        <tspan />
-      </text>
+      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="74.64" text-anchor="middle" xml:space="preserve"><tspan /></text>
     </svg>
   </g>
   <g transform="translate(50.0, 100.0) scale(0.5)">
     <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_main" />
     <svg id="icon_A" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
       <rect class="icon-bounding-box" width="100" height="100" fill="none" />
-      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);" x="50" y="74.64" text-anchor="middle">
-        <tspan>A</tspan>
-      </text>
+      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="74.64" text-anchor="middle" xml:space="preserve"><tspan>A</tspan></text>
     </svg>
   </g>
   <g transform="translate(100.0, 100.0) scale(0.5)">
     <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_main" />
     <svg id="icon_S" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
       <rect class="icon-bounding-box" width="100" height="100" fill="none" />
-      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);" x="50" y="74.64" text-anchor="middle">
-        <tspan>S</tspan>
-      </text>
+      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="74.64" text-anchor="middle" xml:space="preserve"><tspan>S</tspan></text>
     </svg>
   </g>
   <g transform="translate(150.0, 100.0) scale(0.5)">
     <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_main" />
     <svg id="icon_H" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
       <rect class="icon-bounding-box" width="100" height="100" fill="none" />
-      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);" x="50" y="74.64" text-anchor="middle">
-        <tspan>H</tspan>
-      </text>
+      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="74.64" text-anchor="middle" xml:space="preserve"><tspan>H</tspan></text>
     </svg>
   </g>
   <g transform="translate(200.0, 100.0) scale(0.5)">
     <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_main" />
     <svg id="icon_T" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
       <rect class="icon-bounding-box" width="100" height="100" fill="none" />
-      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);" x="50" y="74.64" text-anchor="middle">
-        <tspan>T</tspan>
-      </text>
+      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="74.64" text-anchor="middle" xml:space="preserve"><tspan>T</tspan></text>
     </svg>
   </g>
   <g transform="translate(250.0, 100.0) scale(0.5)">
     <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_main" />
     <svg id="icon_G" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
       <rect class="icon-bounding-box" width="100" height="100" fill="none" />
-      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);" x="50" y="74.64" text-anchor="middle">
-        <tspan>G</tspan>
-      </text>
+      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="74.64" text-anchor="middle" xml:space="preserve"><tspan>G</tspan></text>
     </svg>
   </g>
   <g transform="translate(300.0, 100.0) scale(0.5)">
-    <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_accent" />
+    <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_focus" />
     <svg id="icon_example" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" version="1.1" inkscape:label="icon" x="16.66666666666667" y="16.66666666666667">
       <rect class="icon-bounding-box" width="100" height="100" fill="none" id="rect1" />
       <circle style="fill:url(#fg_main)" id="path1" cx="24.292374" cy="36.607815" r="3.342242" />
@@ -427,336 +384,262 @@
     </svg>
   </g>
   <g transform="translate(550.0, 100.0) scale(0.5)">
-    <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_accent" />
+    <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_focus" />
     <svg id="icon" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
       <rect class="icon-bounding-box" width="100" height="100" fill="none" />
-      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);" x="50" y="74.64" text-anchor="middle">
-        <tspan />
-      </text>
+      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="74.64" text-anchor="middle" xml:space="preserve"><tspan /></text>
     </svg>
   </g>
   <g transform="translate(600.0, 100.0) scale(0.5)">
     <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_main" />
     <svg id="icon_Y" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
       <rect class="icon-bounding-box" width="100" height="100" fill="none" />
-      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);" x="50" y="74.64" text-anchor="middle">
-        <tspan>Y</tspan>
-      </text>
+      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="74.64" text-anchor="middle" xml:space="preserve"><tspan>Y</tspan></text>
     </svg>
   </g>
   <g transform="translate(650.0, 100.0) scale(0.5)">
     <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_main" />
     <svg id="icon_N" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
       <rect class="icon-bounding-box" width="100" height="100" fill="none" />
-      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);" x="50" y="74.64" text-anchor="middle">
-        <tspan>N</tspan>
-      </text>
+      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="74.64" text-anchor="middle" xml:space="preserve"><tspan>N</tspan></text>
     </svg>
   </g>
   <g transform="translate(700.0, 100.0) scale(0.5)">
     <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_main" />
     <svg id="icon_E" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
       <rect class="icon-bounding-box" width="100" height="100" fill="none" />
-      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);" x="50" y="74.64" text-anchor="middle">
-        <tspan>E</tspan>
-      </text>
+      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="74.64" text-anchor="middle" xml:space="preserve"><tspan>E</tspan></text>
     </svg>
   </g>
   <g transform="translate(750.0, 100.0) scale(0.5)">
     <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_main" />
     <svg id="icon_O" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
       <rect class="icon-bounding-box" width="100" height="100" fill="none" />
-      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);" x="50" y="74.64" text-anchor="middle">
-        <tspan>O</tspan>
-      </text>
+      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="74.64" text-anchor="middle" xml:space="preserve"><tspan>O</tspan></text>
     </svg>
   </g>
   <g transform="translate(800.0, 100.0) scale(0.5)">
     <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_main" />
     <svg id="icon_I" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
       <rect class="icon-bounding-box" width="100" height="100" fill="none" />
-      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);" x="50" y="74.64" text-anchor="middle">
-        <tspan>I</tspan>
-      </text>
+      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="74.64" text-anchor="middle" xml:space="preserve"><tspan>I</tspan></text>
     </svg>
   </g>
   <g transform="translate(850.0, 100.0) scale(0.5)">
     <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_accent" />
     <svg id="icon" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
       <rect class="icon-bounding-box" width="100" height="100" fill="none" />
-      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);" x="50" y="74.64" text-anchor="middle">
-        <tspan />
-      </text>
+      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="74.64" text-anchor="middle" xml:space="preserve"><tspan /></text>
     </svg>
   </g>
   <g transform="translate(0.0, 150.0) scale(0.5)">
     <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_accent" />
     <svg id="icon" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
       <rect class="icon-bounding-box" width="100" height="100" fill="none" />
-      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);" x="50" y="74.64" text-anchor="middle">
-        <tspan />
-      </text>
+      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="74.64" text-anchor="middle" xml:space="preserve"><tspan /></text>
     </svg>
   </g>
   <g transform="translate(50.0, 150.0) scale(0.5)">
     <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_main" />
     <svg id="icon_Z" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
       <rect class="icon-bounding-box" width="100" height="100" fill="none" />
-      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);" x="50" y="74.64" text-anchor="middle">
-        <tspan>Z</tspan>
-      </text>
+      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="74.64" text-anchor="middle" xml:space="preserve"><tspan>Z</tspan></text>
     </svg>
   </g>
   <g transform="translate(100.0, 150.0) scale(0.5)">
     <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_main" />
     <svg id="icon_X" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
       <rect class="icon-bounding-box" width="100" height="100" fill="none" />
-      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);" x="50" y="74.64" text-anchor="middle">
-        <tspan>X</tspan>
-      </text>
+      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="74.64" text-anchor="middle" xml:space="preserve"><tspan>X</tspan></text>
     </svg>
   </g>
   <g transform="translate(150.0, 150.0) scale(0.5)">
     <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_main" />
     <svg id="icon_M" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
       <rect class="icon-bounding-box" width="100" height="100" fill="none" />
-      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);" x="50" y="74.64" text-anchor="middle">
-        <tspan>M</tspan>
-      </text>
+      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="74.64" text-anchor="middle" xml:space="preserve"><tspan>M</tspan></text>
     </svg>
   </g>
   <g transform="translate(200.0, 150.0) scale(0.5)">
     <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_main" />
     <svg id="icon_C" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
       <rect class="icon-bounding-box" width="100" height="100" fill="none" />
-      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);" x="50" y="74.64" text-anchor="middle">
-        <tspan>C</tspan>
-      </text>
+      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="74.64" text-anchor="middle" xml:space="preserve"><tspan>C</tspan></text>
     </svg>
   </g>
   <g transform="translate(250.0, 150.0) scale(0.5)">
     <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_main" />
     <svg id="icon_V" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
       <rect class="icon-bounding-box" width="100" height="100" fill="none" />
-      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);" x="50" y="74.64" text-anchor="middle">
-        <tspan>V</tspan>
-      </text>
+      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="74.64" text-anchor="middle" xml:space="preserve"><tspan>V</tspan></text>
     </svg>
   </g>
   <g transform="translate(600.0, 150.0) scale(0.5)">
     <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_main" />
     <svg id="icon_K" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
       <rect class="icon-bounding-box" width="100" height="100" fill="none" />
-      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);" x="50" y="74.64" text-anchor="middle">
-        <tspan>K</tspan>
-      </text>
+      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="74.64" text-anchor="middle" xml:space="preserve"><tspan>K</tspan></text>
     </svg>
   </g>
   <g transform="translate(650.0, 150.0) scale(0.5)">
     <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_main" />
     <svg id="icon_L" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
       <rect class="icon-bounding-box" width="100" height="100" fill="none" />
-      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);" x="50" y="74.64" text-anchor="middle">
-        <tspan>L</tspan>
-      </text>
+      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="74.64" text-anchor="middle" xml:space="preserve"><tspan>L</tspan></text>
     </svg>
   </g>
   <g transform="translate(700.0, 150.0) scale(0.5)">
     <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_main" />
     <svg id="icon_." viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
       <rect class="icon-bounding-box" width="100" height="100" fill="none" />
-      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);" x="50" y="74.64" text-anchor="middle">
-        <tspan>.</tspan>
-      </text>
+      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="74.64" text-anchor="middle" xml:space="preserve"><tspan>.</tspan></text>
     </svg>
   </g>
   <g transform="translate(750.0, 150.0) scale(0.5)">
     <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_main" />
     <svg id="icon_," viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
       <rect class="icon-bounding-box" width="100" height="100" fill="none" />
-      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);" x="50" y="74.64" text-anchor="middle">
-        <tspan>,</tspan>
-      </text>
+      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="74.64" text-anchor="middle" xml:space="preserve"><tspan>,</tspan></text>
     </svg>
   </g>
   <g transform="translate(800.0, 150.0) scale(0.5)">
     <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_accent" />
     <svg id="icon" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
       <rect class="icon-bounding-box" width="100" height="100" fill="none" />
-      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);" x="50" y="74.64" text-anchor="middle">
-        <tspan />
-      </text>
+      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="74.64" text-anchor="middle" xml:space="preserve"><tspan /></text>
     </svg>
   </g>
   <g transform="translate(850.0, 150.0) scale(0.5)">
     <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_accent" />
     <svg id="icon" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
       <rect class="icon-bounding-box" width="100" height="100" fill="none" />
-      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);" x="50" y="74.64" text-anchor="middle">
-        <tspan />
-      </text>
+      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="74.64" text-anchor="middle" xml:space="preserve"><tspan /></text>
     </svg>
   </g>
   <g transform="translate(0.0, 200.0) scale(0.5)">
     <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_accent" />
     <svg id="icon" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
       <rect class="icon-bounding-box" width="100" height="100" fill="none" />
-      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);" x="50" y="74.64" text-anchor="middle">
-        <tspan />
-      </text>
+      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="74.64" text-anchor="middle" xml:space="preserve"><tspan /></text>
     </svg>
   </g>
   <g transform="translate(50.0, 200.0) scale(0.5)">
     <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_accent" />
     <svg id="icon" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
       <rect class="icon-bounding-box" width="100" height="100" fill="none" />
-      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);" x="50" y="74.64" text-anchor="middle">
-        <tspan />
-      </text>
+      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="74.64" text-anchor="middle" xml:space="preserve"><tspan /></text>
     </svg>
   </g>
   <g transform="translate(100.0, 200.0) scale(0.5)">
     <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_accent" />
     <svg id="icon" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
       <rect class="icon-bounding-box" width="100" height="100" fill="none" />
-      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);" x="50" y="74.64" text-anchor="middle">
-        <tspan />
-      </text>
+      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="74.64" text-anchor="middle" xml:space="preserve"><tspan /></text>
     </svg>
   </g>
   <g transform="translate(150.0, 200.0) scale(0.5)">
     <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_accent" />
     <svg id="icon" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
       <rect class="icon-bounding-box" width="100" height="100" fill="none" />
-      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);" x="50" y="74.64" text-anchor="middle">
-        <tspan />
-      </text>
+      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="74.64" text-anchor="middle" xml:space="preserve"><tspan /></text>
     </svg>
   </g>
   <g transform="translate(200.0, 200.0) scale(0.5)">
     <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_accent" />
     <svg id="icon" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
       <rect class="icon-bounding-box" width="100" height="100" fill="none" />
-      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);" x="50" y="74.64" text-anchor="middle">
-        <tspan />
-      </text>
+      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="74.64" text-anchor="middle" xml:space="preserve"><tspan /></text>
     </svg>
   </g>
   <g transform="translate(650.0, 200.0) scale(0.5)">
     <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_accent" />
     <svg id="icon" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
       <rect class="icon-bounding-box" width="100" height="100" fill="none" />
-      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);" x="50" y="74.64" text-anchor="middle">
-        <tspan />
-      </text>
+      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="74.64" text-anchor="middle" xml:space="preserve"><tspan /></text>
     </svg>
   </g>
   <g transform="translate(700.0, 200.0) scale(0.5)">
     <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_accent" />
     <svg id="icon" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
       <rect class="icon-bounding-box" width="100" height="100" fill="none" />
-      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);" x="50" y="74.64" text-anchor="middle">
-        <tspan />
-      </text>
+      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="74.64" text-anchor="middle" xml:space="preserve"><tspan /></text>
     </svg>
   </g>
   <g transform="translate(750.0, 200.0) scale(0.5)">
     <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_accent" />
     <svg id="icon" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
       <rect class="icon-bounding-box" width="100" height="100" fill="none" />
-      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);" x="50" y="74.64" text-anchor="middle">
-        <tspan />
-      </text>
+      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="74.64" text-anchor="middle" xml:space="preserve"><tspan /></text>
     </svg>
   </g>
   <g transform="translate(800.0, 200.0) scale(0.5)">
     <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_accent" />
     <svg id="icon" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
       <rect class="icon-bounding-box" width="100" height="100" fill="none" />
-      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);" x="50" y="74.64" text-anchor="middle">
-        <tspan />
-      </text>
+      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="74.64" text-anchor="middle" xml:space="preserve"><tspan /></text>
     </svg>
   </g>
   <g transform="translate(850.0, 200.0) scale(0.5)">
     <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_accent" />
     <svg id="icon" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
       <rect class="icon-bounding-box" width="100" height="100" fill="none" />
-      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);" x="50" y="74.64" text-anchor="middle">
-        <tspan />
-      </text>
+      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="74.64" text-anchor="middle" xml:space="preserve"><tspan /></text>
     </svg>
   </g>
   <g transform="translate(347.2271824131503, 170.4504871165134) rotate(45) scale(0.5)">
-    <use xlink:href="#2u" width="200" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_accent" />
+    <use xlink:href="#2u" width="200" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_focus" />
     <svg id="icon" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="66.66666666666667" y="16.66666666666667">
       <rect class="icon-bounding-box" width="100" height="100" fill="none" />
-      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);" x="50" y="74.64" text-anchor="middle">
-        <tspan />
-      </text>
+      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="74.64" text-anchor="middle" xml:space="preserve"><tspan /></text>
     </svg>
   </g>
   <g transform="translate(311.8718433538229, 205.80582617584076) rotate(45) scale(0.5)">
     <use xlink:href="#1.5u" width="150.0" height="100" transform="translate(100, 0) rotate(90)" style="overflow:visible;" class="keycap-color-bg_accent" />
     <svg id="icon_Sh" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="41.66666666666667">
       <rect class="icon-bounding-box" width="100" height="100" fill="none" />
-      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);" x="50" y="74.64" text-anchor="middle">
-        <tspan>Sh</tspan>
-      </text>
+      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="74.64" text-anchor="middle" xml:space="preserve"><tspan>Sh</tspan></text>
     </svg>
   </g>
   <g transform="translate(347.2271824131503, 241.16116523516817) rotate(45) scale(0.5)">
     <use xlink:href="#1.5u" width="150.0" height="100" transform="translate(100, 0) rotate(90)" style="overflow:visible;" class="keycap-color-bg_accent" />
     <svg id="icon_Ct" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="41.66666666666667">
       <rect class="icon-bounding-box" width="100" height="100" fill="none" />
-      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);" x="50" y="74.64" text-anchor="middle">
-        <tspan>Ct</tspan>
-      </text>
+      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="74.64" text-anchor="middle" xml:space="preserve"><tspan>Ct</tspan></text>
     </svg>
   </g>
   <g transform="translate(382.58252147247765, 276.5165042944956) rotate(45) scale(0.5)">
-    <use xlink:href="#1.5u" width="150.0" height="100" transform="translate(100, 0) rotate(90)" style="overflow:visible;" class="keycap-color-bg_accent" />
+    <use xlink:href="#1.5u" width="150.0" height="100" transform="translate(100, 0) rotate(90)" style="overflow:visible;" class="keycap-color-bg_focus" />
     <svg id="icon_Al" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="41.66666666666667">
       <rect class="icon-bounding-box" width="100" height="100" fill="none" />
-      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);" x="50" y="74.64" text-anchor="middle">
-        <tspan>Al</tspan>
-      </text>
+      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="74.64" text-anchor="middle" xml:space="preserve"><tspan>Al</tspan></text>
     </svg>
   </g>
   <g transform="translate(482.0621394681949, 241.16116523516817) rotate(-45) scale(0.5)">
-    <use xlink:href="#2u" width="200" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_accent" />
+    <use xlink:href="#2u" width="200" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_focus" />
     <svg id="icon_Super" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="66.66666666666667" y="16.66666666666667">
       <rect class="icon-bounding-box" width="100" height="100" fill="none" />
-      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);" x="50" y="74.64" text-anchor="middle">
-        <tspan>Super</tspan>
-      </text>
+      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="74.64" text-anchor="middle" xml:space="preserve"><tspan>Super</tspan></text>
     </svg>
   </g>
   <g transform="translate(482.0621394681949, 311.8718433538229) rotate(-45) scale(0.5)">
-    <use xlink:href="#1.5u" width="150.0" height="100" transform="translate(100, 0) rotate(90)" style="overflow:visible;" class="keycap-color-bg_accent" />
+    <use xlink:href="#1.5u" width="150.0" height="100" transform="translate(100, 0) rotate(90)" style="overflow:visible;" class="keycap-color-bg_focus" />
     <svg id="icon_¨" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="41.66666666666667">
       <rect class="icon-bounding-box" width="100" height="100" fill="none" />
-      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);" x="50" y="74.64" text-anchor="middle">
-        <tspan>¨</tspan>
-      </text>
+      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="74.64" text-anchor="middle" xml:space="preserve"><tspan>¨</tspan></text>
     </svg>
   </g>
   <g transform="translate(517.4174785275223, 276.5165042944956) rotate(-45) scale(0.5)">
     <use xlink:href="#1.5u" width="150.0" height="100" transform="translate(100, 0) rotate(90)" style="overflow:visible;" class="keycap-color-bg_accent" />
     <svg id="icon__" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="41.66666666666667">
       <rect class="icon-bounding-box" width="100" height="100" fill="none" />
-      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);" x="50" y="74.64" text-anchor="middle">
-        <tspan>_</tspan>
-      </text>
+      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="74.64" text-anchor="middle" xml:space="preserve"><tspan>_</tspan></text>
     </svg>
   </g>
   <g transform="translate(552.7728175868498, 241.16116523516817) rotate(-45) scale(0.5)">
     <use xlink:href="#1.5u" width="150.0" height="100" transform="translate(100, 0) rotate(90)" style="overflow:visible;" class="keycap-color-bg_accent" />
     <svg id="icon_Na" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="41.66666666666667">
       <rect class="icon-bounding-box" width="100" height="100" fill="none" />
-      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);" x="50" y="74.64" text-anchor="middle">
-        <tspan>Na</tspan>
-      </text>
+      <text style="font-weight:400;font-size:70px;font-family:Open Gorton;fill:url(#fg_main);white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="74.64" text-anchor="middle" xml:space="preserve"><tspan>Na</tspan></text>
     </svg>
   </g>
 </svg>

@@ -33,6 +33,7 @@ def lookup_icon_id(id: str) -> SvgElement | None:
     for child in svg.iter():
         element_resolve_namespaces(child)
     
+    # This is required if the file has been edited with Inkscape.
     untangle_gradient_links(svg)
     
     element = svg.getroot().find(".//svg[@id='icon']")
@@ -61,10 +62,18 @@ def create_text_icon_svg(text: str, id: str|None, font: Font.FontDefinition, fon
     centered_y = 100 / 2 + (font_size_px * font.metrics.cap_center_offset())
     
     text_element = ET.Element("text", {
-        "style": f"font-weight:{font.weight};font-size:{font_size_px}px;font-family:{font.family};fill:url(#fg_main);",
+        "style":
+            f"font-weight:{font.weight};"
+            f"font-size:{font_size_px}px;"
+            f"font-family:{font.family};"
+            f"fill:url(#fg_main);"
+            f"white-space:normal;"
+            f"white-space-collapse:collapse;"
+            f"text-wrap:nowrap;",
         "x": "50",
         "y": str(centered_y),
         "text-anchor": "middle",
+        "xml:space": "preserve",
     })
     text_element.append(text_span_element)
     
@@ -287,6 +296,7 @@ class KeyboardBuilder():
         # Make sure that the CSS rule selectors match the property names!
         assert hasattr(self.theme.colors, "bg_main")
         assert hasattr(self.theme.colors, "bg_accent")
+        assert hasattr(self.theme.colors, "bg_focus")
         builder.add_element(
             SvgStyleBuilder()\
                 .indentation(1, " ")\
@@ -298,6 +308,10 @@ class KeyboardBuilder():
                 .rule(CssRule(".keycap-color-bg_accent", {
                     "--top-surface": "url(#bg_accent)",
                     "--main-body": "url(#bg_accent-side)"
+                }))
+                .rule(CssRule(".keycap-color-bg_focus", {
+                    "--top-surface": "url(#bg_focus)",
+                    "--main-body": "url(#bg_focus-side)"
                 }))
                 # .rule(
                 #     ".icon-bounding-box {stroke: red; stroke-width: 1px;}"

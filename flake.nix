@@ -39,6 +39,12 @@
         python = pkgs.python312;
       });
       pythonApp = pkgs.poetry2nix.mkPoetryApplication { projectDir = ./.; };
+      devPackages = [
+        pythonEnv
+        pkgs.poetry
+        pkgs.just
+        pkgs.open-gorton
+      ];
     in {
       lib = pkgsNoOverlay.callPackage ./lib.nix {};
       inherit pythonEnv;
@@ -58,21 +64,22 @@
           program = "${pythonApp}/bin/package_keycaps";
         };
       };
-      devShells.default = pkgs.mkShellNoCC {
-        packages = [
-          pythonEnv
-          pkgs.poetry
-          pkgs.just
-          pkgs.open-gorton
-          pkgs.pureref
-        ];
-      };
-      
-      # Dev shell with only poetry. Use this to generate the initial lock file.
-      devShells.poetry = pkgs.mkShellNoCC {
-        packages = [
-          pkgs.poetry
-        ];
+      devShells = {
+        default = pkgs.mkShellNoCC {
+          packages = devPackages ++ (with pkgs; [
+            pureref
+            inkscape
+          ]);
+        };
+        no-editors = pkgs.mkShellNoCC {
+          packages = devPackages;
+        };
+        # Dev shell with only poetry. Use this to generate the initial lock file.
+        poetry = pkgs.mkShellNoCC {
+          packages = [
+            pkgs.poetry
+          ];
+        };
       };
     })) // {
       overlays.default = import ./pkgs { inherit self inputs; };
