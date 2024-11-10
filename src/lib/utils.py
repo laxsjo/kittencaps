@@ -9,6 +9,7 @@ __all__ = [
     "todo",
     "Todo",
     "assert_instance",
+    "inspect",
 ]
 
 def eprint(*args, **kwargs):
@@ -39,3 +40,7 @@ def assert_instance[T](_class: type[T], value: Any) -> T:
         return value
     else:
         panic(f"assert_instance: Value {value} is not an instance of {_class}")
+
+def inspect[T](value: T) -> T:
+    print(value)
+    return value

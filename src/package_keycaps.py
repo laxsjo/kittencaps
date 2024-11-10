@@ -64,7 +64,7 @@ def main() -> None:
         )
 
     # Magic Number: Size of single keycap in pixels
-    unit_px = 100
+    unit_px = 50
 
     result = build_keyboard_svg(layout, unit_px, theme, key_templates)
     

@@ -210,10 +210,22 @@ class PlacedComponent():
     def bounds(self) -> Bounds:
         return Box(
             self.transform.get_translation(),
-            self.element.size,
+            self.element.size * self.transform.get_scaling(),
             self.transform.get_rotation(),
-            Pos(0, 0)
+            self.transform.get_translation(),
         ).bounds()
+
+def border_from_bounds(bounds: Bounds|ViewBox) -> ET.Element:
+    viewbox = ViewBox.from_bounds(bounds) if isinstance(bounds, Bounds) else bounds
+    print(f"bounds: {bounds}")
+    return ET.Element("rect", {
+        "width": str(viewbox.size.get_x()),
+        "height": str(viewbox.size.get_y()),
+        "x": str(viewbox.pos.x),
+        "y": str(viewbox.pos.y),
+        "stroke": "red",
+        "fill": "rgba(255, 0, 0, 0.2)",
+    })
 
 @dataclass
 class KeyboardBuilder():
@@ -258,18 +270,19 @@ class KeyboardBuilder():
     def build(self) -> ET.ElementTree:
         bounds = functools.reduce(
             Bounds.combine,
-            map(PlacedComponent.bounds, self._components),
+            (component.bounds() for component in self._components),
         )
         
         # Magic Number: Extra whitespace around generated keymap in pixels.
-        padding = 100
+        padding = 20
         
         viewbox = ViewBox.from_bounds(bounds).add_padding(padding)
 
         builder = SvgDocumentBuilder()\
             .set_viewbox(viewbox)\
             .palette(self.theme.colors)\
-            .add_icon_set(self._factory.templates)
+            .add_icon_set(self._factory.templates)\
+            # .add_element(border_from_bounds(viewbox))
         
         # Make sure that the CSS rule selectors match the property names!
         assert hasattr(self.theme.colors, "bg_main")
@@ -296,6 +309,9 @@ class KeyboardBuilder():
         
         if self._builder_extra:
             self._builder_extra(builder)
+            
+        # Visualize keycap bounds
+        # builder.add_elements(border_from_bounds(component.bounds()) for component in self._components)
         
         return builder.build()
 

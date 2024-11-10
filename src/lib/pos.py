@@ -137,7 +137,11 @@ class Scaling():
     @classmethod
     def identity(cls) -> Self:
         return cls(1, 1)
-
+    
+    def get_x(self) -> float:
+        return self.x
+    def get_y(self) -> float:
+        return self.y or self.x
     
     def is_identity(self) -> bool:
         return self.x == 1 and self.y == 1
@@ -180,13 +184,8 @@ class Bounds():
         
         return Bounds(
             min=Pos(min(*x_components), min(*y_components)),
-            max=Pos(max(*x_components), max(*x_components))
+            max=Pos(max(*x_components), max(*y_components))
         )
-        
-        # Bounds(
-        #     min=Pos(min(self.min.x, other.min.x), min(self.min.y, other.min.y)),
-        #     max=Pos(max(self.max.x, other.max.x), max(self.min.y, other.min.y)),
-        # )
 
 @dataclass
 class Box():
@@ -197,22 +196,24 @@ class Box():
     rotation_origin: Pos
     
     def bounds(self) -> Bounds:
-        # I'm assuming that negative y is the positive direction
-        top_left = self.pos - self.size.as_pos()/2
-        bottom_right = self.pos + self.size.as_pos()/2
+        min_corner = self.pos
+        max_corner = self.pos + self.size.as_pos()
         corners = [
-            top_left,
-            Pos(bottom_right.x, top_left.y),
-            bottom_right,
-            Pos(top_left.x, bottom_right.y),
+            Pos(min_corner.x, min_corner.y),
+            Pos(min_corner.x, max_corner.y),
+            Pos(max_corner.x, max_corner.y),
+            Pos(max_corner.x, min_corner.y),
         ]
         
         rotated = map(lambda pos: rotate(pos, self.rotation_origin, self.rotation.deg), corners)
         
         # Type system is not advanced enough to understand this :(
-        x_components, y_components = cast(tuple[tuple[float, ...], tuple[float, ...]], zip(*rotated))
+        x_components, y_components = cast(
+            tuple[tuple[float, ...], tuple[float, ...]],
+            zip(*rotated)
+        )
         
         return Bounds(
             min=Pos(min(*x_components), min(*y_components)),
-            max=Pos(max(*x_components), max(*x_components))
+            max=Pos(max(*x_components), max(*y_components))
         )

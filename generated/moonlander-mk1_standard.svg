@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<svg xmlns:ns0="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" version="1.1" viewBox="-150.0 -629.0737725975564 2000.0 2479.0737725975564" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" style="--bg_main: #f0eee9; --bg_main-side: #c5c0b6; --bg_accent: #837c9a; --bg_accent-side: #6b6778; --fg_main: #000; --fg_1: #f0f; --fg_2: #f0f; --fg_3: #f0f; --outline_frame: none; --outline_surface: none; --top-surface-stroke: var(--outline_surface); --main-body-stroke: var(--outline_frame); --top-surface: none; --main-body: none;">
+<svg xmlns:ns0="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" version="1.1" viewBox="-20.0 -20.0 940.0 404.90485194281405" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" style="--bg_main: #f0eee9; --bg_main-side: #c5c0b6; --bg_accent: #837c9a; --bg_accent-side: #6b6778; --fg_main: #000; --fg_1: #f0f; --fg_2: #f0f; --fg_3: #f0f; --outline_frame: none; --outline_surface: none; --top-surface-stroke: var(--outline_surface); --main-body-stroke: var(--outline_frame); --top-surface: none; --main-body: none;">
   <defs id="palette-colors">
     <linearGradient id="bg_main" inkscape:swatch="solid">
       <stop style="stop-color:#f0eee9;" />
@@ -107,7 +107,7 @@
     --main-body: url(#bg_accent-side);
   }
  </style>
-  <g transform="scale(1.0)">
+  <g transform="scale(0.5)">
     <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_accent" />
     <svg id="icon" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
       <rect class="icon-bounding-box" width="100" height="100" fill="none" />
@@ -116,7 +116,7 @@
       </text>
     </svg>
   </g>
-  <g transform="translate(100.0, 0.0) scale(1.0)">
+  <g transform="translate(50.0, 0.0) scale(0.5)">
     <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_main" />
     <svg id="icon" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
       <rect class="icon-bounding-box" width="100" height="100" fill="none" />
@@ -125,7 +125,7 @@
       </text>
     </svg>
   </g>
-  <g transform="translate(200.0, 0.0) scale(1.0)">
+  <g transform="translate(100.0, 0.0) scale(0.5)">
     <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_main" />
     <svg id="icon" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
       <rect class="icon-bounding-box" width="100" height="100" fill="none" />
@@ -134,7 +134,7 @@
       </text>
     </svg>
   </g>
-  <g transform="translate(300.0, 0.0) scale(1.0)">
+  <g transform="translate(150.0, 0.0) scale(0.5)">
     <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_main" />
     <svg id="icon" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
       <rect class="icon-bounding-box" width="100" height="100" fill="none" />
@@ -143,7 +143,7 @@
       </text>
     </svg>
   </g>
-  <g transform="translate(400.0, 0.0) scale(1.0)">
+  <g transform="translate(200.0, 0.0) scale(0.5)">
     <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_main" />
     <svg id="icon" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
       <rect class="icon-bounding-box" width="100" height="100" fill="none" />
@@ -152,7 +152,7 @@
       </text>
     </svg>
   </g>
-  <g transform="translate(500.0, 0.0) scale(1.0)">
+  <g transform="translate(250.0, 0.0) scale(0.5)">
     <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_main" />
     <svg id="icon" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
       <rect class="icon-bounding-box" width="100" height="100" fill="none" />
@@ -161,7 +161,7 @@
       </text>
     </svg>
   </g>
-  <g transform="translate(600.0, 0.0) scale(1.0)">
+  <g transform="translate(300.0, 0.0) scale(0.5)">
     <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_main" />
     <svg id="icon" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
       <rect class="icon-bounding-box" width="100" height="100" fill="none" />
@@ -170,7 +170,7 @@
       </text>
     </svg>
   </g>
-  <g transform="translate(1100.0, 0.0) scale(1.0)">
+  <g transform="translate(550.0, 0.0) scale(0.5)">
     <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_main" />
     <svg id="icon" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
       <rect class="icon-bounding-box" width="100" height="100" fill="none" />
@@ -179,7 +179,7 @@
       </text>
     </svg>
   </g>
-  <g transform="translate(1200.0, 0.0) scale(1.0)">
+  <g transform="translate(600.0, 0.0) scale(0.5)">
     <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_main" />
     <svg id="icon" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
       <rect class="icon-bounding-box" width="100" height="100" fill="none" />
@@ -188,7 +188,7 @@
       </text>
     </svg>
   </g>
-  <g transform="translate(1300.0, 0.0) scale(1.0)">
+  <g transform="translate(650.0, 0.0) scale(0.5)">
     <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_main" />
     <svg id="icon" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
       <rect class="icon-bounding-box" width="100" height="100" fill="none" />
@@ -197,7 +197,7 @@
       </text>
     </svg>
   </g>
-  <g transform="translate(1400.0, 0.0) scale(1.0)">
+  <g transform="translate(700.0, 0.0) scale(0.5)">
     <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_main" />
     <svg id="icon" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
       <rect class="icon-bounding-box" width="100" height="100" fill="none" />
@@ -206,7 +206,7 @@
       </text>
     </svg>
   </g>
-  <g transform="translate(1500.0, 0.0) scale(1.0)">
+  <g transform="translate(750.0, 0.0) scale(0.5)">
     <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_main" />
     <svg id="icon" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
       <rect class="icon-bounding-box" width="100" height="100" fill="none" />
@@ -215,7 +215,7 @@
       </text>
     </svg>
   </g>
-  <g transform="translate(1600.0, 0.0) scale(1.0)">
+  <g transform="translate(800.0, 0.0) scale(0.5)">
     <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_main" />
     <svg id="icon" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
       <rect class="icon-bounding-box" width="100" height="100" fill="none" />
@@ -224,7 +224,7 @@
       </text>
     </svg>
   </g>
-  <g transform="translate(1700.0, 0.0) scale(1.0)">
+  <g transform="translate(850.0, 0.0) scale(0.5)">
     <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_accent" />
     <svg id="icon" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
       <rect class="icon-bounding-box" width="100" height="100" fill="none" />
@@ -233,7 +233,7 @@
       </text>
     </svg>
   </g>
-  <g transform="translate(0.0, 100.0) scale(1.0)">
+  <g transform="translate(0.0, 50.0) scale(0.5)">
     <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_accent" />
     <svg id="icon" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
       <rect class="icon-bounding-box" width="100" height="100" fill="none" />
@@ -242,7 +242,7 @@
       </text>
     </svg>
   </g>
-  <g transform="translate(100.0, 100.0) scale(1.0)">
+  <g transform="translate(50.0, 50.0) scale(0.5)">
     <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_main" />
     <svg id="icon_Q" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
       <rect class="icon-bounding-box" width="100" height="100" fill="none" />
@@ -251,7 +251,7 @@
       </text>
     </svg>
   </g>
-  <g transform="translate(200.0, 100.0) scale(1.0)">
+  <g transform="translate(100.0, 50.0) scale(0.5)">
     <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_main" />
     <svg id="icon_D" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
       <rect class="icon-bounding-box" width="100" height="100" fill="none" />
@@ -260,7 +260,7 @@
       </text>
     </svg>
   </g>
-  <g transform="translate(300.0, 100.0) scale(1.0)">
+  <g transform="translate(150.0, 50.0) scale(0.5)">
     <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_main" />
     <svg id="icon_R" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
       <rect class="icon-bounding-box" width="100" height="100" fill="none" />
@@ -269,7 +269,7 @@
       </text>
     </svg>
   </g>
-  <g transform="translate(400.0, 100.0) scale(1.0)">
+  <g transform="translate(200.0, 50.0) scale(0.5)">
     <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_main" />
     <svg id="icon_W" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
       <rect class="icon-bounding-box" width="100" height="100" fill="none" />
@@ -278,7 +278,7 @@
       </text>
     </svg>
   </g>
-  <g transform="translate(500.0, 100.0) scale(1.0)">
+  <g transform="translate(250.0, 50.0) scale(0.5)">
     <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_main" />
     <svg id="icon_B" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
       <rect class="icon-bounding-box" width="100" height="100" fill="none" />
@@ -287,7 +287,7 @@
       </text>
     </svg>
   </g>
-  <g transform="translate(600.0, 100.0) scale(1.0)">
+  <g transform="translate(300.0, 50.0) scale(0.5)">
     <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_accent" />
     <svg id="icon" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
       <rect class="icon-bounding-box" width="100" height="100" fill="none" />
@@ -296,7 +296,7 @@
       </text>
     </svg>
   </g>
-  <g transform="translate(1100.0, 100.0) scale(1.0)">
+  <g transform="translate(550.0, 50.0) scale(0.5)">
     <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_accent" />
     <svg id="icon" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
       <rect class="icon-bounding-box" width="100" height="100" fill="none" />
@@ -305,7 +305,7 @@
       </text>
     </svg>
   </g>
-  <g transform="translate(1200.0, 100.0) scale(1.0)">
+  <g transform="translate(600.0, 50.0) scale(0.5)">
     <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_main" />
     <svg id="icon_J" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
       <rect class="icon-bounding-box" width="100" height="100" fill="none" />
@@ -314,7 +314,7 @@
       </text>
     </svg>
   </g>
-  <g transform="translate(1300.0, 100.0) scale(1.0)">
+  <g transform="translate(650.0, 50.0) scale(0.5)">
     <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_main" />
     <svg id="icon_F" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
       <rect class="icon-bounding-box" width="100" height="100" fill="none" />
@@ -323,7 +323,7 @@
       </text>
     </svg>
   </g>
-  <g transform="translate(1400.0, 100.0) scale(1.0)">
+  <g transform="translate(700.0, 50.0) scale(0.5)">
     <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_main" />
     <svg id="icon_U" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
       <rect class="icon-bounding-box" width="100" height="100" fill="none" />
@@ -332,7 +332,7 @@
       </text>
     </svg>
   </g>
-  <g transform="translate(1500.0, 100.0) scale(1.0)">
+  <g transform="translate(750.0, 50.0) scale(0.5)">
     <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_main" />
     <svg id="icon_P" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
       <rect class="icon-bounding-box" width="100" height="100" fill="none" />
@@ -341,7 +341,7 @@
       </text>
     </svg>
   </g>
-  <g transform="translate(1600.0, 100.0) scale(1.0)">
+  <g transform="translate(800.0, 50.0) scale(0.5)">
     <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_accent" />
     <svg id="icon" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
       <rect class="icon-bounding-box" width="100" height="100" fill="none" />
@@ -350,7 +350,7 @@
       </text>
     </svg>
   </g>
-  <g transform="translate(1700.0, 100.0) scale(1.0)">
+  <g transform="translate(850.0, 50.0) scale(0.5)">
     <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_accent" />
     <svg id="icon" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
       <rect class="icon-bounding-box" width="100" height="100" fill="none" />
@@ -359,7 +359,7 @@
       </text>
     </svg>
   </g>
-  <g transform="translate(0.0, 200.0) scale(1.0)">
+  <g transform="translate(0.0, 100.0) scale(0.5)">
     <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_accent" />
     <svg id="icon" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
       <rect class="icon-bounding-box" width="100" height="100" fill="none" />
@@ -368,7 +368,7 @@
       </text>
     </svg>
   </g>
-  <g transform="translate(100.0, 200.0) scale(1.0)">
+  <g transform="translate(50.0, 100.0) scale(0.5)">
     <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_main" />
     <svg id="icon_A" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
       <rect class="icon-bounding-box" width="100" height="100" fill="none" />
@@ -377,7 +377,7 @@
       </text>
     </svg>
   </g>
-  <g transform="translate(200.0, 200.0) scale(1.0)">
+  <g transform="translate(100.0, 100.0) scale(0.5)">
     <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_main" />
     <svg id="icon_S" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
       <rect class="icon-bounding-box" width="100" height="100" fill="none" />
@@ -386,7 +386,7 @@
       </text>
     </svg>
   </g>
-  <g transform="translate(300.0, 200.0) scale(1.0)">
+  <g transform="translate(150.0, 100.0) scale(0.5)">
     <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_main" />
     <svg id="icon_H" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
       <rect class="icon-bounding-box" width="100" height="100" fill="none" />
@@ -395,7 +395,7 @@
       </text>
     </svg>
   </g>
-  <g transform="translate(400.0, 200.0) scale(1.0)">
+  <g transform="translate(200.0, 100.0) scale(0.5)">
     <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_main" />
     <svg id="icon_T" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
       <rect class="icon-bounding-box" width="100" height="100" fill="none" />
@@ -404,7 +404,7 @@
       </text>
     </svg>
   </g>
-  <g transform="translate(500.0, 200.0) scale(1.0)">
+  <g transform="translate(250.0, 100.0) scale(0.5)">
     <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_main" />
     <svg id="icon_G" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
       <rect class="icon-bounding-box" width="100" height="100" fill="none" />
@@ -413,7 +413,7 @@
       </text>
     </svg>
   </g>
-  <g transform="translate(600.0, 200.0) scale(1.0)">
+  <g transform="translate(300.0, 100.0) scale(0.5)">
     <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_accent" />
     <svg id="icon_example" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" version="1.1" inkscape:label="icon" x="16.66666666666667" y="16.66666666666667">
       <rect class="icon-bounding-box" width="100" height="100" fill="none" id="rect1" />
@@ -422,7 +422,7 @@
       <path style="fill:none;stroke:url(#fg_main);stroke-width:3.08;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1" d="M 28.417826,51.396138 C 40.486805,60.070933 61.300572,60.040329 72.607439,50" id="path2" ns0:nodetypes="cc" />
     </svg>
   </g>
-  <g transform="translate(1100.0, 200.0) scale(1.0)">
+  <g transform="translate(550.0, 100.0) scale(0.5)">
     <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_accent" />
     <svg id="icon" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
       <rect class="icon-bounding-box" width="100" height="100" fill="none" />
@@ -431,7 +431,7 @@
       </text>
     </svg>
   </g>
-  <g transform="translate(1200.0, 200.0) scale(1.0)">
+  <g transform="translate(600.0, 100.0) scale(0.5)">
     <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_main" />
     <svg id="icon_Y" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
       <rect class="icon-bounding-box" width="100" height="100" fill="none" />
@@ -440,7 +440,7 @@
       </text>
     </svg>
   </g>
-  <g transform="translate(1300.0, 200.0) scale(1.0)">
+  <g transform="translate(650.0, 100.0) scale(0.5)">
     <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_main" />
     <svg id="icon_N" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
       <rect class="icon-bounding-box" width="100" height="100" fill="none" />
@@ -449,7 +449,7 @@
       </text>
     </svg>
   </g>
-  <g transform="translate(1400.0, 200.0) scale(1.0)">
+  <g transform="translate(700.0, 100.0) scale(0.5)">
     <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_main" />
     <svg id="icon_E" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
       <rect class="icon-bounding-box" width="100" height="100" fill="none" />
@@ -458,7 +458,7 @@
       </text>
     </svg>
   </g>
-  <g transform="translate(1500.0, 200.0) scale(1.0)">
+  <g transform="translate(750.0, 100.0) scale(0.5)">
     <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_main" />
     <svg id="icon_O" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
       <rect class="icon-bounding-box" width="100" height="100" fill="none" />
@@ -467,7 +467,7 @@
       </text>
     </svg>
   </g>
-  <g transform="translate(1600.0, 200.0) scale(1.0)">
+  <g transform="translate(800.0, 100.0) scale(0.5)">
     <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_main" />
     <svg id="icon_I" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
       <rect class="icon-bounding-box" width="100" height="100" fill="none" />
@@ -476,7 +476,7 @@
       </text>
     </svg>
   </g>
-  <g transform="translate(1700.0, 200.0) scale(1.0)">
+  <g transform="translate(850.0, 100.0) scale(0.5)">
     <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_accent" />
     <svg id="icon" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
       <rect class="icon-bounding-box" width="100" height="100" fill="none" />
@@ -485,7 +485,7 @@
       </text>
     </svg>
   </g>
-  <g transform="translate(0.0, 300.0) scale(1.0)">
+  <g transform="translate(0.0, 150.0) scale(0.5)">
     <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_accent" />
     <svg id="icon" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
       <rect class="icon-bounding-box" width="100" height="100" fill="none" />
@@ -494,7 +494,7 @@
       </text>
     </svg>
   </g>
-  <g transform="translate(100.0, 300.0) scale(1.0)">
+  <g transform="translate(50.0, 150.0) scale(0.5)">
     <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_main" />
     <svg id="icon_Z" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
       <rect class="icon-bounding-box" width="100" height="100" fill="none" />
@@ -503,7 +503,7 @@
       </text>
     </svg>
   </g>
-  <g transform="translate(200.0, 300.0) scale(1.0)">
+  <g transform="translate(100.0, 150.0) scale(0.5)">
     <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_main" />
     <svg id="icon_X" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
       <rect class="icon-bounding-box" width="100" height="100" fill="none" />
@@ -512,7 +512,7 @@
       </text>
     </svg>
   </g>
-  <g transform="translate(300.0, 300.0) scale(1.0)">
+  <g transform="translate(150.0, 150.0) scale(0.5)">
     <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_main" />
     <svg id="icon_M" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
       <rect class="icon-bounding-box" width="100" height="100" fill="none" />
@@ -521,7 +521,7 @@
       </text>
     </svg>
   </g>
-  <g transform="translate(400.0, 300.0) scale(1.0)">
+  <g transform="translate(200.0, 150.0) scale(0.5)">
     <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_main" />
     <svg id="icon_C" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
       <rect class="icon-bounding-box" width="100" height="100" fill="none" />
@@ -530,7 +530,7 @@
       </text>
     </svg>
   </g>
-  <g transform="translate(500.0, 300.0) scale(1.0)">
+  <g transform="translate(250.0, 150.0) scale(0.5)">
     <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_main" />
     <svg id="icon_V" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
       <rect class="icon-bounding-box" width="100" height="100" fill="none" />
@@ -539,7 +539,7 @@
       </text>
     </svg>
   </g>
-  <g transform="translate(1200.0, 300.0) scale(1.0)">
+  <g transform="translate(600.0, 150.0) scale(0.5)">
     <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_main" />
     <svg id="icon_K" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
       <rect class="icon-bounding-box" width="100" height="100" fill="none" />
@@ -548,7 +548,7 @@
       </text>
     </svg>
   </g>
-  <g transform="translate(1300.0, 300.0) scale(1.0)">
+  <g transform="translate(650.0, 150.0) scale(0.5)">
     <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_main" />
     <svg id="icon_L" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
       <rect class="icon-bounding-box" width="100" height="100" fill="none" />
@@ -557,7 +557,7 @@
       </text>
     </svg>
   </g>
-  <g transform="translate(1400.0, 300.0) scale(1.0)">
+  <g transform="translate(700.0, 150.0) scale(0.5)">
     <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_main" />
     <svg id="icon_." viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
       <rect class="icon-bounding-box" width="100" height="100" fill="none" />
@@ -566,7 +566,7 @@
       </text>
     </svg>
   </g>
-  <g transform="translate(1500.0, 300.0) scale(1.0)">
+  <g transform="translate(750.0, 150.0) scale(0.5)">
     <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_main" />
     <svg id="icon_," viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
       <rect class="icon-bounding-box" width="100" height="100" fill="none" />
@@ -575,7 +575,7 @@
       </text>
     </svg>
   </g>
-  <g transform="translate(1600.0, 300.0) scale(1.0)">
+  <g transform="translate(800.0, 150.0) scale(0.5)">
     <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_accent" />
     <svg id="icon" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
       <rect class="icon-bounding-box" width="100" height="100" fill="none" />
@@ -584,7 +584,7 @@
       </text>
     </svg>
   </g>
-  <g transform="translate(1700.0, 300.0) scale(1.0)">
+  <g transform="translate(850.0, 150.0) scale(0.5)">
     <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_accent" />
     <svg id="icon" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
       <rect class="icon-bounding-box" width="100" height="100" fill="none" />
@@ -593,7 +593,7 @@
       </text>
     </svg>
   </g>
-  <g transform="translate(0.0, 400.0) scale(1.0)">
+  <g transform="translate(0.0, 200.0) scale(0.5)">
     <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_accent" />
     <svg id="icon" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
       <rect class="icon-bounding-box" width="100" height="100" fill="none" />
@@ -602,7 +602,7 @@
       </text>
     </svg>
   </g>
-  <g transform="translate(100.0, 400.0) scale(1.0)">
+  <g transform="translate(50.0, 200.0) scale(0.5)">
     <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_accent" />
     <svg id="icon" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
       <rect class="icon-bounding-box" width="100" height="100" fill="none" />
@@ -611,7 +611,7 @@
       </text>
     </svg>
   </g>
-  <g transform="translate(200.0, 400.0) scale(1.0)">
+  <g transform="translate(100.0, 200.0) scale(0.5)">
     <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_accent" />
     <svg id="icon" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
       <rect class="icon-bounding-box" width="100" height="100" fill="none" />
@@ -620,7 +620,7 @@
       </text>
     </svg>
   </g>
-  <g transform="translate(300.0, 400.0) scale(1.0)">
+  <g transform="translate(150.0, 200.0) scale(0.5)">
     <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_accent" />
     <svg id="icon" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
       <rect class="icon-bounding-box" width="100" height="100" fill="none" />
@@ -629,7 +629,7 @@
       </text>
     </svg>
   </g>
-  <g transform="translate(400.0, 400.0) scale(1.0)">
+  <g transform="translate(200.0, 200.0) scale(0.5)">
     <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_accent" />
     <svg id="icon" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
       <rect class="icon-bounding-box" width="100" height="100" fill="none" />
@@ -638,7 +638,7 @@
       </text>
     </svg>
   </g>
-  <g transform="translate(1300.0, 400.0) scale(1.0)">
+  <g transform="translate(650.0, 200.0) scale(0.5)">
     <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_accent" />
     <svg id="icon" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
       <rect class="icon-bounding-box" width="100" height="100" fill="none" />
@@ -647,7 +647,7 @@
       </text>
     </svg>
   </g>
-  <g transform="translate(1400.0, 400.0) scale(1.0)">
+  <g transform="translate(700.0, 200.0) scale(0.5)">
     <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_accent" />
     <svg id="icon" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
       <rect class="icon-bounding-box" width="100" height="100" fill="none" />
@@ -656,7 +656,7 @@
       </text>
     </svg>
   </g>
-  <g transform="translate(1500.0, 400.0) scale(1.0)">
+  <g transform="translate(750.0, 200.0) scale(0.5)">
     <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_accent" />
     <svg id="icon" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
       <rect class="icon-bounding-box" width="100" height="100" fill="none" />
@@ -665,7 +665,7 @@
       </text>
     </svg>
   </g>
-  <g transform="translate(1600.0, 400.0) scale(1.0)">
+  <g transform="translate(800.0, 200.0) scale(0.5)">
     <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_accent" />
     <svg id="icon" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
       <rect class="icon-bounding-box" width="100" height="100" fill="none" />
@@ -674,7 +674,7 @@
       </text>
     </svg>
   </g>
-  <g transform="translate(1700.0, 400.0) scale(1.0)">
+  <g transform="translate(850.0, 200.0) scale(0.5)">
     <use xlink:href="#1u" width="100.0" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_accent" />
     <svg id="icon" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="16.66666666666667">
       <rect class="icon-bounding-box" width="100" height="100" fill="none" />
@@ -683,7 +683,7 @@
       </text>
     </svg>
   </g>
-  <g transform="translate(694.4543648263005, 340.9009742330268) rotate(45) scale(1.0)">
+  <g transform="translate(347.2271824131503, 170.4504871165134) rotate(45) scale(0.5)">
     <use xlink:href="#2u" width="200" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_accent" />
     <svg id="icon" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="66.66666666666667" y="16.66666666666667">
       <rect class="icon-bounding-box" width="100" height="100" fill="none" />
@@ -692,7 +692,7 @@
       </text>
     </svg>
   </g>
-  <g transform="translate(623.7436867076458, 411.6116523516815) rotate(45) scale(1.0)">
+  <g transform="translate(311.8718433538229, 205.80582617584076) rotate(45) scale(0.5)">
     <use xlink:href="#1.5u" width="150.0" height="100" transform="translate(100, 0) rotate(90)" style="overflow:visible;" class="keycap-color-bg_accent" />
     <svg id="icon_Sh" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="41.66666666666667">
       <rect class="icon-bounding-box" width="100" height="100" fill="none" />
@@ -701,7 +701,7 @@
       </text>
     </svg>
   </g>
-  <g transform="translate(694.4543648263005, 482.32233047033634) rotate(45) scale(1.0)">
+  <g transform="translate(347.2271824131503, 241.16116523516817) rotate(45) scale(0.5)">
     <use xlink:href="#1.5u" width="150.0" height="100" transform="translate(100, 0) rotate(90)" style="overflow:visible;" class="keycap-color-bg_accent" />
     <svg id="icon_Ct" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="41.66666666666667">
       <rect class="icon-bounding-box" width="100" height="100" fill="none" />
@@ -710,7 +710,7 @@
       </text>
     </svg>
   </g>
-  <g transform="translate(765.1650429449553, 553.0330085889912) rotate(45) scale(1.0)">
+  <g transform="translate(382.58252147247765, 276.5165042944956) rotate(45) scale(0.5)">
     <use xlink:href="#1.5u" width="150.0" height="100" transform="translate(100, 0) rotate(90)" style="overflow:visible;" class="keycap-color-bg_accent" />
     <svg id="icon_Al" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="41.66666666666667">
       <rect class="icon-bounding-box" width="100" height="100" fill="none" />
@@ -719,7 +719,7 @@
       </text>
     </svg>
   </g>
-  <g transform="translate(964.1242789363898, 482.32233047033634) rotate(-45) scale(1.0)">
+  <g transform="translate(482.0621394681949, 241.16116523516817) rotate(-45) scale(0.5)">
     <use xlink:href="#2u" width="200" height="100" transform="" style="overflow:visible;" class="keycap-color-bg_accent" />
     <svg id="icon_Super" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="66.66666666666667" y="16.66666666666667">
       <rect class="icon-bounding-box" width="100" height="100" fill="none" />
@@ -728,7 +728,7 @@
       </text>
     </svg>
   </g>
-  <g transform="translate(964.1242789363898, 623.7436867076458) rotate(-45) scale(1.0)">
+  <g transform="translate(482.0621394681949, 311.8718433538229) rotate(-45) scale(0.5)">
     <use xlink:href="#1.5u" width="150.0" height="100" transform="translate(100, 0) rotate(90)" style="overflow:visible;" class="keycap-color-bg_accent" />
     <svg id="icon_¨" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="41.66666666666667">
       <rect class="icon-bounding-box" width="100" height="100" fill="none" />
@@ -737,7 +737,7 @@
       </text>
     </svg>
   </g>
-  <g transform="translate(1034.8349570550447, 553.0330085889912) rotate(-45) scale(1.0)">
+  <g transform="translate(517.4174785275223, 276.5165042944956) rotate(-45) scale(0.5)">
     <use xlink:href="#1.5u" width="150.0" height="100" transform="translate(100, 0) rotate(90)" style="overflow:visible;" class="keycap-color-bg_accent" />
     <svg id="icon__" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="41.66666666666667">
       <rect class="icon-bounding-box" width="100" height="100" fill="none" />
@@ -746,7 +746,7 @@
       </text>
     </svg>
   </g>
-  <g transform="translate(1105.5456351736996, 482.32233047033634) rotate(-45) scale(1.0)">
+  <g transform="translate(552.7728175868498, 241.16116523516817) rotate(-45) scale(0.5)">
     <use xlink:href="#1.5u" width="150.0" height="100" transform="translate(100, 0) rotate(90)" style="overflow:visible;" class="keycap-color-bg_accent" />
     <svg id="icon_Na" viewBox="0 0 100 100" width="66.66666666666666" height="66.66666666666666" style="overflow:visible;" x="16.66666666666667" y="41.66666666666667">
       <rect class="icon-bounding-box" width="100" height="100" fill="none" />
