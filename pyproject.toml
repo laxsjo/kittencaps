@@ -13,7 +13,7 @@ include = [
 ]
 
 [tool.poetry.scripts]
-generate_embedded_font_svg = "src.generate_embedded_font_svg:run"
+generate_icon = "src.generate_icon:run"
 package = "src.package:run"
 
 [tool.poetry.dependencies]

@@ -26,7 +26,7 @@ in stdenvNoCC.mkDerivation {
     for file in $(find $fontsSrc -regextype awk -regex '.*(ttf|otf|woff|woff2)'); do
       args+=("--font" "$file")
     done
-    generate_embedded_font_svg "''${args[@]}" > $out
+    generate_icon "''${args[@]}" > $out
   '';
   
   

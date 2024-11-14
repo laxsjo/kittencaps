@@ -20,7 +20,7 @@ TODO: Add note about how this installs versions of the different editors/other G
 Run using
 ```shell
 nix run .#package
-nix run .#generate_embedded_font_svg -- [args]
+nix run .#generate_icon -- [args]
 ```
 
 or
@@ -28,7 +28,7 @@ or
 ```shell
 nix develop
 python -m src.package
-python -m src.generate_embedded_font_svg [args]
+python -m src.generate_icon [args]
 ```
 
 ### PureRef

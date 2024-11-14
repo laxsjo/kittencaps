@@ -53,14 +53,12 @@
         scripts = pythonApp;
       };
       apps = {
-        generate_embedded_font_svg = {
+        generate_icon = {
           type = "app";
-          # replace <script> with the name in the [tool.poetry.scripts] section of your pyproject.toml
-          program = "${pythonApp}/bin/generate_embedded_font_svg";
+          program = "${pythonApp}/bin/generate_icon";
         };
         package_keycaps = {
           type = "app";
-          # replace <script> with the name in the [tool.poetry.scripts] section of your pyproject.toml
           program = "${pythonApp}/bin/package_keycaps";
         };
       };
