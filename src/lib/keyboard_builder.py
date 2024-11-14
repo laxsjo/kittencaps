@@ -17,8 +17,8 @@ __all__ = [
     "build_keyboard_svg",
 ]
 
-def resolve_key_position(key: kle.Key) -> Pos:
-    return rotate(Pos(key.x, key.y), Pos(key.rotation_x, key.rotation_y), key.rotation_angle)
+def resolve_key_position(key: kle.Key) -> Vec2:
+    return rotate(Vec2(key.x, key.y), Vec2(key.rotation_x, key.rotation_y), key.rotation_angle)
 
 # Get svg of the specified id or None if it does not exist.
 def lookup_icon_id(id: str) -> SvgElement | None:
@@ -159,7 +159,7 @@ class KeycapFactory:
             case Orientation.VERTICAL:
                 dimensions.y = key.major_size * 100
         
-        frame_pos = Pos(0, 0)
+        frame_pos = Vec2(0, 0)
         frame_rotation = Rotation(0)
         match key.orientation:
             case Orientation.HORIZONTAL:

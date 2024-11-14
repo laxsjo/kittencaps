@@ -23,7 +23,7 @@ def generate_svg(font_paths: list[pathlib.Path], theme: Theme, out_file: TextIO)
     font_rules = (Font.generate_css_rule(Font.FontDefinition(path)) for path in font_paths)
     
     builder = SvgDocumentBuilder()\
-        .set_viewbox(ViewBox(Pos(0, 0), Scaling(100, 100)))\
+        .set_viewbox(ViewBox(Vec2(0, 0), Scaling(100, 100)))\
         .palette(theme.colors)
     
     style = SvgStyleBuilder()\

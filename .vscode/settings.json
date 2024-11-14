@@ -9,6 +9,7 @@
         "sdist",
         "tspan",
         "VARC",
+        "Vec",
         "virtualenvwrapper"
     ],
     "svg.preview.background": "editor"

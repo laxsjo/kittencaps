@@ -9,7 +9,7 @@ from .utils import *
 
 __all__ = [
     "Vec3",
-    "Pos",
+    "Vec2",
     "Rotation",
     "Scaling",
     "rotate",
@@ -67,7 +67,7 @@ class Vec3():
         return cls(component, component, component) if not isinstance(component, Vec3) else component
 
 @dataclass
-class Pos():
+class Vec2():
     x: float
     y: float
     
@@ -75,29 +75,36 @@ class Pos():
         yield self.x
         yield self.y
         
-    def __add__(self, other: Pos) -> Pos:
-        return Pos(
+    def __add__(self, other: Vec2) -> Vec2:
+        return Vec2(
             self.x + other.x,
             self.y + other.y,
         )
     
-    def __sub__(self, other: Pos) -> Pos:
-        return Pos(
+    def __sub__(self, other: Vec2) -> Vec2:
+        return Vec2(
             self.x - other.x,
             self.y - other.y,
         )
     
-    def __mul__(self, factor: float) -> Pos:
-        return Pos(
-            self.x * factor,
-            self.y * factor,
+    def __mul__(self, factor: float|Vec2) -> Vec2:
+        other = Vec2.promote_float(factor)
+        return Vec2(
+            self.x * other.x,
+            self.y * other.y,
         )
     
-    def __truediv__(self, factor: float) -> Pos:
-        return Pos(
-            self.x / factor,
-            self.y / factor,
+    def __truediv__(self, factor: float|Vec2) -> Vec2:
+        other = Vec2.promote_float(factor)
+        return Vec2(
+            self.x / other.x,
+            self.y / other.y,
         )
+    
+    @classmethod
+    def promote_float(cls, component: float|Self) -> Self:
+        return cls(component, component) if not isinstance(component, Vec2) else component
+
     
     @classmethod
     def identity(cls) -> Self:
@@ -198,10 +205,10 @@ class Scaling():
     def promote_to_pair(self) -> Scaling:
         return self if self.y != None else Scaling(self.x, self.x)
     
-    def as_pos(self) -> Pos:
-        return Pos(*self.promote_to_pair())
+    def as_pos(self) -> Vec2:
+        return Vec2(*self.promote_to_pair())
 
-def rotate(point: Pos, origin: Pos, angle: float) -> Pos:
+def rotate(point: Vec2, origin: Vec2, angle: float) -> Vec2:
     """
     Rotate a point counterclockwise by a given angle around a given origin.
 
@@ -215,7 +222,7 @@ def rotate(point: Pos, origin: Pos, angle: float) -> Pos:
 
     qx = ox + math.cos(angle_rad) * (px - ox) - math.sin(angle_rad) * (py - oy)
     qy = oy + math.sin(angle_rad) * (px - ox) + math.cos(angle_rad) * (py - oy)
-    return Pos(qx, qy)
+    return Vec2(qx, qy)
 
 class Orientation(IntEnum):
     HORIZONTAL = 0
@@ -223,8 +230,8 @@ class Orientation(IntEnum):
 
 @dataclass
 class Bounds():
-    min: Pos
-    max: Pos
+    min: Vec2
+    max: Vec2
     
     def combine(self, other: Bounds) -> Bounds:
         import operator
@@ -232,26 +239,26 @@ class Bounds():
         x_components, y_components = zip(self.min, self.max, other.min, other.max)
         
         return Bounds(
-            min=Pos(min(*x_components), min(*y_components)),
-            max=Pos(max(*x_components), max(*y_components))
+            min=Vec2(min(*x_components), min(*y_components)),
+            max=Vec2(max(*x_components), max(*y_components))
         )
 
 @dataclass
 class Box():
-    pos: Pos
+    pos: Vec2
     size: Scaling
     rotation: Rotation
     # TODO: this is kind of ugly
-    rotation_origin: Pos
+    rotation_origin: Vec2
     
     def bounds(self) -> Bounds:
         min_corner = self.pos
         max_corner = self.pos + self.size.as_pos()
         corners = [
-            Pos(min_corner.x, min_corner.y),
-            Pos(min_corner.x, max_corner.y),
-            Pos(max_corner.x, max_corner.y),
-            Pos(max_corner.x, min_corner.y),
+            Vec2(min_corner.x, min_corner.y),
+            Vec2(min_corner.x, max_corner.y),
+            Vec2(max_corner.x, max_corner.y),
+            Vec2(max_corner.x, min_corner.y),
         ]
         
         rotated = map(lambda pos: rotate(pos, self.rotation_origin, self.rotation.deg), corners)
@@ -263,6 +270,6 @@ class Box():
         )
         
         return Bounds(
-            min=Pos(min(*x_components), min(*y_components)),
-            max=Pos(max(*x_components), max(*y_components))
+            min=Vec2(min(*x_components), min(*y_components)),
+            max=Vec2(max(*x_components), max(*y_components))
         )

@@ -197,12 +197,12 @@ def tree_filtered_indent(tree: ET.Element|ET.ElementTree, predicate: Callable[[E
 
 @dataclass
 class Transform:
-    translate: Pos | None = None
+    translate: Vec2 | None = None
     rotate: Rotation | None = None
     scale: Scaling | None  = None
     
-    def get_translation(self) -> Pos:
-        return self.translate or Pos.identity()
+    def get_translation(self) -> Vec2:
+        return self.translate or Vec2.identity()
         
     def get_rotation(self) -> Rotation:
         return self.rotate or Rotation.identity()
@@ -225,7 +225,7 @@ class Transform:
         return cls()
 
 class Placement(Transform):
-    def __init__(self, translate: Pos|None = None, rotate: Rotation|None = None):
+    def __init__(self, translate: Vec2|None = None, rotate: Rotation|None = None):
         super().__init__(translate, rotate, None)
     
 
@@ -248,12 +248,12 @@ def element_apply_style(element: ET.Element, styles: CssStyles) -> None:
 
 @dataclass
 class ViewBox:
-    pos: Pos
+    pos: Vec2
     size: Scaling
     
     def add_padding(self, padding: float) -> ViewBox:
         return ViewBox(
-            pos=self.pos - Pos(padding, padding),
+            pos=self.pos - Vec2(padding, padding),
             size=self.size + Scaling(padding) * 2
         )
     
