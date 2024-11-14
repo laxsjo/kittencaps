@@ -312,17 +312,20 @@ class SvgSymbol:
 
 class SvgSymbolSet:
     symbols: dict[str,SvgSymbol]
-    style: ET.Element|None
+    # TODO: Wow this is ugly...
+    other_elements: list[ET.Element]
     
     def __init__(self, source: ET.ElementTree) -> None:
-        elements = source.findall("symbol", NS)
+        tree_resolve_namespaces(source)
+        
+        elements = source.findall("symbol")
         self.symbols = dict(map(lambda icon: (icon.id, icon), map(SvgSymbol, elements)))
         
-        self.style = source.find("style", NS)
-        if self.style != None:
-            element_resolve_namespaces(self.style)
-        
-        
+        self.other_elements = []
+        style = source.find("style")
+        if style is not None:
+            self.other_elements.append(style)
+        self.other_elements.extend(source.findall("clipPath"))
     
     def __contains__(self, id: str) -> bool:
         return id in self.symbols
@@ -457,8 +460,7 @@ class SvgDocumentBuilder:
         return self
     
     def add_icon_set(self, icon_set: SvgSymbolSet) -> Self:
-        if icon_set.style != None:
-            self.elements.append(icon_set.style)
+        self.elements.extend(icon_set.other_elements)
         for icon in icon_set.symbols.values():
             self.elements.append(icon.source.element)
         return self

@@ -5,12 +5,38 @@
 	.frame-box{fill:none;}
 	.top-surface{fill:var(--top-surface);stroke:var(--top-surface-stroke);stroke-miterlimit:10;}
 	.main-body{fill:var(--main-body);stroke:var(--main-body-stroke);stroke-miterlimit:10;}
+  .mask-surface{--top-surface:white;--top-surface-stroke:none}
 </style>
+
+<!-- Scale by 1/36 -->
+<clipPath id="1u-clip" clipPathUnits="objectBoundingBox">
+  <use href="#1u-top-surface" transform="translate(0.5, 0.5) scale(0.027777777777777776)"></use>
+</clipPath>
+<clipPath id="1.25u-clip" clipPathUnits="objectBoundingBox">
+  <use href="#1.25u-top-surface" transform="translate(0.5, 0.5) scale(0.027777777777777776)"></use>
+</clipPath>
+<clipPath id="1.5u-clip" clipPathUnits="objectBoundingBox">
+  <use href="#1.5u-top-surface" transform="translate(0.5, 0.5) scale(0.027777777777777776)"></use>
+</clipPath>
+<clipPath id="0.75u-clip" clipPathUnits="objectBoundingBox">
+  <use href="#0.75u-top-surface" transform="translate(0.5, 0.5) scale(0.027777777777777776)"></use>
+</clipPath>
+<clipPath id="2u-clip" clipPathUnits="objectBoundingBox">
+  <use href="#2u-top-surface" transform="translate(0.5, 0.5) scale(0.027777777777777776)"></use>
+</clipPath>
+<clipPath id="2.25u-clip" clipPathUnits="objectBoundingBox">
+  <use href="#2.25u-top-surface" transform="translate(0.5, 0.5) scale(0.027777777777777776)"></use>
+</clipPath>
+<clipPath id="2.75u-clip" clipPathUnits="objectBoundingBox">
+  <use href="#2.75u-top-surface" transform="translate(0.5, 0.5) scale(0.027777777777777776)"></use>
+</clipPath>
+
 <symbol  id="1u" viewBox="-27 -27 54 54">
 	<rect x="-27" y="-27" class="frame-box" width="54" height="54"/>
 	<rect x="-25.8" y="-25.8" class="main-body" width="51.59" height="51.59"/>
 	<g>
-		<path class="top-surface" d="M18-14.4c0-1.98-1.62-3.6-3.6-3.6h-28.8c-1.98,0-3.6,1.62-3.6,3.6v28.8c0,1.98,1.62,3.6,3.6,3.6h28.8
+    <!-- dimension: 36x36 -->
+		<path id="1u-top-surface" class="top-surface" d="M18-14.4c0-1.98-1.62-3.6-3.6-3.6h-28.8c-1.98,0-3.6,1.62-3.6,3.6v28.8c0,1.98,1.62,3.6,3.6,3.6h28.8
 			c1.98,0,3.6-1.62,3.6-3.6V-14.4z"/>
 	</g>
 </symbol>
@@ -18,7 +44,7 @@
 	<rect x="-33.75" y="-27" class="frame-box" width="67.5" height="54"/>
 	<rect x="-32.55" y="-25.8" class="main-body" width="65.09" height="51.59"/>
 	<g>
-		<path class="top-surface" d="M24.75-14.4c0-1.98-1.62-3.6-3.6-3.6h-42.3c-1.98,0-3.6,1.62-3.6,3.6v28.8c0,1.98,1.62,3.6,3.6,3.6h42.3
+		<path id="1.25u-top-surface" class="top-surface" d="M24.75-14.4c0-1.98-1.62-3.6-3.6-3.6h-42.3c-1.98,0-3.6,1.62-3.6,3.6v28.8c0,1.98,1.62,3.6,3.6,3.6h42.3
 			c1.98,0,3.6-1.62,3.6-3.6V-14.4z"/>
 	</g>
 </symbol>
@@ -26,7 +52,7 @@
 	<rect x="-40.5" y="-27" class="frame-box" width="81" height="54"/>
 	<rect x="-39.3" y="-25.8" class="main-body" width="78.59" height="51.59"/>
 	<g>
-		<path class="top-surface" d="M31.5-14.4c0-1.98-1.62-3.6-3.6-3.6h-55.8c-1.98,0-3.6,1.62-3.6,3.6v28.8c0,1.98,1.62,3.6,3.6,3.6h55.8
+		<path id="1.5u-top-surface" class="top-surface" d="M31.5-14.4c0-1.98-1.62-3.6-3.6-3.6h-55.8c-1.98,0-3.6,1.62-3.6,3.6v28.8c0,1.98,1.62,3.6,3.6,3.6h55.8
 			c1.98,0,3.6-1.62,3.6-3.6V-14.4z"/>
 	</g>
 </symbol>
@@ -34,7 +60,7 @@
 	<rect x="-47.25" y="-27" class="frame-box" width="94.5" height="54"/>
 	<rect x="-46.05" y="-25.8" class="main-body" width="92.09" height="51.59"/>
 	<g>
-		<path class="top-surface" d="M38.25-14.4c0-1.98-1.62-3.6-3.6-3.6h-69.3c-1.98,0-3.6,1.62-3.6,3.6v28.8c0,1.98,1.62,3.6,3.6,3.6h69.3
+		<path id="0.75u-top-surface" class="top-surface" d="M38.25-14.4c0-1.98-1.62-3.6-3.6-3.6h-69.3c-1.98,0-3.6,1.62-3.6,3.6v28.8c0,1.98,1.62,3.6,3.6,3.6h69.3
 			c1.98,0,3.6-1.62,3.6-3.6V-14.4z"/>
 	</g>
 </symbol>
@@ -42,7 +68,7 @@
 	<rect x="-52.8" y="-25.8" class="main-body" width="105.59" height="51.59"/>
 	<rect x="-54" y="-27" class="frame-box" width="108" height="54"/>
 	<g>
-		<path class="top-surface" d="M45-14.4c0-1.98-1.62-3.6-3.6-3.6h-82.8c-1.98,0-3.6,1.62-3.6,3.6v28.8c0,1.98,1.62,3.6,3.6,3.6h82.8
+		<path id="2u-top-surface" class="top-surface" d="M45-14.4c0-1.98-1.62-3.6-3.6-3.6h-82.8c-1.98,0-3.6,1.62-3.6,3.6v28.8c0,1.98,1.62,3.6,3.6,3.6h82.8
 			c1.98,0,3.6-1.62,3.6-3.6V-14.4z"/>
 	</g>
 </symbol>
@@ -50,7 +76,7 @@
 	<rect x="-60.75" y="-27" class="frame-box" width="121.5" height="54"/>
 	<rect x="-59.55" y="-25.8" class="main-body" width="119.09" height="51.59"/>
 	<g>
-		<path class="top-surface" d="M51.75-14.4c0-1.98-1.62-3.6-3.6-3.6h-96.3c-1.98,0-3.6,1.62-3.6,3.6v28.8c0,1.98,1.62,3.6,3.6,3.6h96.3
+		<path id="2.25u-top-surface" class="top-surface" d="M51.75-14.4c0-1.98-1.62-3.6-3.6-3.6h-96.3c-1.98,0-3.6,1.62-3.6,3.6v28.8c0,1.98,1.62,3.6,3.6,3.6h96.3
 			c1.98,0,3.6-1.62,3.6-3.6V-14.4z"/>
 	</g>
 </symbol>
@@ -58,14 +84,8 @@
 	<rect x="-74.25" y="-27" class="frame-box" width="148.5" height="54"/>
 	<rect x="-73.05" y="-25.8" class="main-body" width="146.09" height="51.59"/>
 	<g>
-		<path class="top-surface" d="M65.25-14.4c0-1.98-1.62-3.6-3.6-3.6h-123.3c-1.98,0-3.6,1.62-3.6,3.6v28.8c0,1.98,1.62,3.6,3.6,3.6h123.3
+		<path id="2.75u-top-surface" class="top-surface" d="M65.25-14.4c0-1.98-1.62-3.6-3.6-3.6h-123.3c-1.98,0-3.6,1.62-3.6,3.6v28.8c0,1.98,1.62,3.6,3.6,3.6h123.3
 			c1.98,0,3.6-1.62,3.6-3.6V-14.4z"/>
-	</g>
-</symbol>
-<symbol  id="6.25u" viewBox="-168.75 -27 337.5 54">
-	<rect x="-167.55" y="-25.8" class="main-body" width="335.09" height="51.59"/>
-	<g id="_x31_25u_3_">
-		<rect x="-168.75" y="-27" class="frame-box" width="337.5" height="54"/>
 	</g>
 </symbol>
 </svg>

@@ -190,6 +190,8 @@ class KeycapFactory:
         if icon == None:
             icon = create_text_icon_svg(key.icon_id, None, self.theme.font, self.theme.font_size_px)
         icon.set_size(Scaling(icon_surface_size_ratio))
+        # Mask to surface area
+        icon.element.set("clip-path", f"url(#{key.size_u()}-clip)")
         
         centered_pos = dimensions.as_pos() / 2
         
