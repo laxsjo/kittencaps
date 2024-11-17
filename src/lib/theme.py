@@ -29,19 +29,7 @@ class SpColorDeclaration(TypedDict):
 
 type ColorDeclaration = str | HiddenColorDeclaration
 type MaybeSpColorDeclaration = ColorDeclaration | SpColorDeclaration
-class PaletteDeclaration(TypedDict):
-    # None values signify the color be hidden
-    bg_main: MaybeSpColorDeclaration
-    bg_accent: MaybeSpColorDeclaration
-    bg_focus: MaybeSpColorDeclaration
-    
-    fg_main: ColorDeclaration
-    fg_1: ColorDeclaration
-    fg_2: ColorDeclaration
-    fg_3: ColorDeclaration
-    
-    outline_frame: ColorDeclaration
-    outline_surface: ColorDeclaration
+type PaletteDeclaration = dict[str, MaybeSpColorDeclaration]
 
 @dataclass
 class ThemeDeclaration(TypedDict):
@@ -53,19 +41,7 @@ class ThemeDeclaration(TypedDict):
     top_size: float
     colors: PaletteDeclaration
 
-@dataclass
-class Palette:
-    bg_main: KeycapColor
-    bg_accent: KeycapColor
-    bg_focus: KeycapColor
-    
-    fg_main: HideableColor
-    fg_1: HideableColor
-    fg_2: HideableColor
-    fg_3: HideableColor
-    
-    outline_frame: HideableColor
-    outline_surface: HideableColor
+class Palette(dict[str, HideableColor]):
     
     def __init__(self, declaration: PaletteDeclaration):
         def resolve_color(declaration: ColorDeclaration) -> HideableColor:
@@ -74,40 +50,24 @@ class Palette:
             else:
                 return HideableColor(hidden=True)
         
-        def resolve_plastic_color(declaration: MaybeSpColorDeclaration) -> KeycapColor:
+        def resolve_plastic_color(declaration: MaybeSpColorDeclaration) -> HideableColor:
             if isinstance(declaration, dict) and "SPColor" in declaration:
                 color = HideableColor(SPColor(declaration["SPColor"]).to_color())
             else:
                 color = resolve_color(declaration)
             
-            return KeycapColor(color)
+            return color
         
-        self.bg_main = resolve_plastic_color(declaration["bg_main"])
-        self.bg_accent = resolve_plastic_color(declaration["bg_accent"])
-        self.bg_focus = resolve_plastic_color(declaration["bg_focus"])
-        self.fg_main = resolve_color(declaration["fg_main"])
-        self.fg_1 = resolve_color(declaration["fg_1"])
-        self.fg_2 = resolve_color(declaration["fg_2"])
-        self.fg_3 = resolve_color(declaration["fg_3"])
-        self.outline_frame = resolve_color(declaration["outline_frame"])
-        self.outline_surface = resolve_color(declaration["outline_surface"])
+        for name, color_declaration in declaration.items():
+            self[name] = resolve_plastic_color(color_declaration)
+    
+    # Return list of keycap colors in self, i.e. those that start with "bg_"
+    def keycap_colors(self) -> Iterable[tuple[str, HideableColor]]:
+        return filter(lambda pair: pair[0].startswith("bg_"), self.items())
     
     # Create map of own fields to valid CSS color strings.
     def css_colors(self) -> dict[str, str]:
-        result: dict[str, str] = dict()
-        for field in dataclasses.fields(self):
-            name = field.name
-            value = getattr(self, name)
-            # ! You must make sure to update this if you edit any of the field types!
-            value: KeycapColor|HideableColor
-            
-            if isinstance(value, KeycapColor):
-                result[name] = value.color.to_css_value()
-                result[name + "-side"] = value.get_side().to_css_value()
-            else:
-                result[name] = value.to_css_value()
-        
-        return result
+        return dict((name, value.to_css_value()) for name, value in self.items())
     
     def as_css_styles(self) -> CssStyles:
         return CssStyles((f"--{name}", color) for name, color in self.css_colors().items())

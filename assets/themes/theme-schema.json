@@ -60,45 +60,9 @@
     "colors": {
       "description": "The colors to bind to named color variables used in the keycap set. If a color is not given it defaults to hidden.",
       "type": "object",
-      "properties": {
-        "bg_main": {
-          "$ref": "#/definitions/maybeSPColor"
-        },
-        "bg_accent": {
-          "$ref": "#/definitions/maybeSPColor"
-        },
-        "bg_focus": {
-          "$ref": "#/definitions/maybeSPColor"
-        },
-        "fg_main": {
-          "$ref": "#/definitions/color"
-        },
-        "fg_1": {
-          "$ref": "#/definitions/color"
-        },
-        "fg_2": {
-          "$ref": "#/definitions/color"
-        },
-        "fg_3": {
-          "$ref": "#/definitions/color"
-        },
-        "outline_frame": {
-          "$ref": "#/definitions/color"
-        },
-        "outline_surface": {
-          "$ref": "#/definitions/color"
-        }
-      },
-      "required": [
-        "bg_main",
-        "bg_accent",
-        "fg_main",
-        "fg_1",
-        "fg_2",
-        "fg_3",
-        "outline_frame",
-        "outline_surface"
-      ]
+      "additionalProperties": {
+        "$ref": "#/definitions/maybeSPColor"
+      }
     }
   },
   "required": [

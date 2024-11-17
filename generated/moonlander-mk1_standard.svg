@@ -1,53 +1,25 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<svg xmlns:ns0="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" version="1.1" viewBox="-40 -40 1880 809.81" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:bx="https://boxy-svg.com" style="--bg_main: #f5f7f7; --bg_main-side: #cdcece; --bg_accent: #dee0ed; --bg_accent-side: #babbc6; --bg_focus: #7d787c; --bg_focus-side: #686468; --fg_main: #7d787c; --fg_1: #f0f; --fg_2: #f0f; --fg_3: #f0f; --outline_frame: none; --outline_surface: none;">
+<svg xmlns:ns0="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" version="1.1" viewBox="-40 -40 1880 809.81" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:bx="https://boxy-svg.com" style="--bg_main: #f5f7f7; --bg_accent: #dee0ed; --bg_focus: #7d787c; --fg_main: #7d787c; --fg_lighter: #d5d5df;">
   <defs id="palette-colors">
     <linearGradient id="bg_main" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
       <title>bg_main</title>
       <stop style="stop-color:#f5f7f7;" />
     </linearGradient>
-    <linearGradient id="bg_main-side" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
-      <title>bg_main-side</title>
-      <stop style="stop-color:#cdcece;" />
-    </linearGradient>
     <linearGradient id="bg_accent" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
       <title>bg_accent</title>
       <stop style="stop-color:#dee0ed;" />
-    </linearGradient>
-    <linearGradient id="bg_accent-side" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
-      <title>bg_accent-side</title>
-      <stop style="stop-color:#babbc6;" />
     </linearGradient>
     <linearGradient id="bg_focus" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
       <title>bg_focus</title>
       <stop style="stop-color:#7d787c;" />
     </linearGradient>
-    <linearGradient id="bg_focus-side" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
-      <title>bg_focus-side</title>
-      <stop style="stop-color:#686468;" />
-    </linearGradient>
     <linearGradient id="fg_main" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
       <title>fg_main</title>
       <stop style="stop-color:#7d787c;" />
     </linearGradient>
-    <linearGradient id="fg_1" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
-      <title>fg_1</title>
-      <stop style="stop-color:#f0f;" />
-    </linearGradient>
-    <linearGradient id="fg_2" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
-      <title>fg_2</title>
-      <stop style="stop-color:#f0f;" />
-    </linearGradient>
-    <linearGradient id="fg_3" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
-      <title>fg_3</title>
-      <stop style="stop-color:#f0f;" />
-    </linearGradient>
-    <linearGradient id="outline_frame" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
-      <title>outline_frame</title>
-      <stop style="stop-color:none;" />
-    </linearGradient>
-    <linearGradient id="outline_surface" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
-      <title>outline_surface</title>
-      <stop style="stop-color:none;" />
+    <linearGradient id="fg_lighter" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
+      <title>fg_lighter</title>
+      <stop style="stop-color:#d5d5df;" />
     </linearGradient>
   </defs>
   <filter id="sideShading">
@@ -156,9 +128,11 @@
     <g id="keycap-unshaded-3">
       <rect class="surface" width="100" height="100" />
       <g transform="">
-        <svg id="icon_3" viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0">
+        <svg id="icon_:3" viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0">
           <rect class="icon-bounding-box" width="100" height="100" fill="none" />
-          <text style="font-weight:400;font-size:46px;font-family:Open Gorton;fill:url(#fg_main);white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="66.19200000000001" text-anchor="middle" xml:space="preserve"><tspan>3</tspan></text>
+          <text style="fill: url(&quot;#fg_main&quot;); font-family: &quot;Open Gorton&quot;; font-size: 46px; text-anchor: middle;" xml:space="preserve" x="56.973" y="66.192">3</text>
+          <ellipse style="fill: url(&quot;#bg_focus&quot;);" cx="36.193" cy="43.123" rx="2.666" ry="2.666" />
+          <ellipse style="fill: url(&quot;#bg_focus&quot;);" cx="36.193" cy="57.665" rx="2.666" ry="2.666" />
         </svg>
       </g>
     </g>
@@ -785,9 +759,92 @@
     <g id="keycap-unshaded-54">
       <rect class="surface" width="100" height="100" />
       <g transform="">
-        <svg id="icon" viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0">
-          <rect class="icon-bounding-box" width="100" height="100" fill="none" />
-          <text style="font-weight:400;font-size:46px;font-family:Open Gorton;fill:url(#fg_main);white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="66.19200000000001" text-anchor="middle" xml:space="preserve"><tspan /></text>
+        <svg id="icon_gaming" viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0">
+          <path style="fill: url(&quot;#bg_main&quot;); stroke: url(&quot;#fg_main&quot;); stroke-linecap: round; stroke-linejoin: round; stroke-width: 3px;" d="M 31.143 41.822 C 35.034 37.293 41.261 33.376 47.223 32.685 C 48.52 32.535 50.007 26.412 51.313 26.389 C 52.61 26.366 55.425 31.659 56.696 31.963 C 61.708 33.166 63.675 33.846 67.907 36.923 C 68.739 37.527 74.21 34.264 75.036 35.079 C 76.791 36.813 74.735 46.176 75.382 47.37 C 77.571 51.402 78.088 55.736 78.094 58.952 C 78.094 58.952 31.203 41.67 31.143 41.822 Z">
+            <title>Body</title>
+          </path>
+          <path style="stroke: url(&quot;#fg_main&quot;); fill: url(&quot;#bg_main&quot;); stroke-linecap: round; stroke-width: 3px; transform-box: fill-box; transform-origin: 50% 50%;" d="M 34.556 32.299 C 30.942 34.868 28.204 37.302 29.518 40.113 C 31.195 43.7 37.473 41.781 43.127 39.512" transform="matrix(-0.308585, 0.951197, -0.951197, -0.308585, -0.000016, 0.00001)">
+            <title>Paw</title>
+          </path>
+          <ellipse style="fill: url(&quot;#bg_focus&quot;);" cx="45.899" cy="39.72" rx="1.98" ry="1.98">
+            <title>Eye</title>
+          </ellipse>
+          <ellipse style="fill: url(&quot;#bg_focus&quot;);" cx="63.721" cy="45.64" rx="1.98" ry="1.98">
+            <title>Eye</title>
+          </ellipse>
+          <path style="fill: url(&quot;#bg_accent&quot;); stroke: url(&quot;#fg_main&quot;); stroke-width: 3px;" d="M 0 30.301 L 100 67.103 L 100 100 L 0 100 L 0 30.301 Z">
+            <title>Table</title>
+          </path>
+          <path style="stroke-linecap: round; stroke-linejoin: round; fill: none; stroke: url(&quot;#fg_main&quot;); stroke-width: 2px; transform-box: fill-box; transform-origin: 50% 50%;" d="M 50.437 41.42 C 50.972 42.651 52.585 43.192 54.142 42.504 C 54.573 43.793 56.168 45.109 58.485 44.621" transform="matrix(0.99889, -0.04711, 0.04711, 0.99889, 0, 0)">
+            <title>Mouth</title>
+          </path>
+          <g transform="matrix(1, -0.014408, 0, 1, 13.983849, -12.18671)" style="">
+            <title>Keyboard</title>
+            <rect x="-58.037" y="-70.797" width="43" height="15.665" style="stroke: url(&quot;#fg_main&quot;); fill: url(&quot;#bg_main&quot;); stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px;" transform="matrix(-0.934085, -0.357052, 0.8393, -0.749746, 57.39723, 14.907937)">
+              <title>Case</title>
+            </rect>
+            <g transform="matrix(-0.934085, -0.357052, 0.627407, -0.560462, 25.125178, 132.71793)" style="">
+              <title>Keys</title>
+              <rect x="19.145" y="70.935" width="2" height="5" style="fill: url(&quot;#fg_lighter&quot;); stroke: url(&quot;#fg_lighter&quot;); stroke-linecap: round; stroke-linejoin: round;" />
+              <rect x="23.145" y="70.935" width="2" height="4" style="fill: url(&quot;#fg_lighter&quot;); stroke: url(&quot;#fg_lighter&quot;); stroke-linecap: round; stroke-linejoin: round;" />
+              <rect x="27.145" y="70.935" width="2" height="2" style="fill: url(&quot;#fg_lighter&quot;); stroke: url(&quot;#fg_lighter&quot;); stroke-linecap: round; stroke-linejoin: round;" />
+              <rect x="31.145" y="70.935" width="2" height="3" style="fill: url(&quot;#fg_lighter&quot;); stroke: url(&quot;#fg_lighter&quot;); stroke-linecap: round; stroke-linejoin: round;" />
+              <rect x="35.145" y="70.935" width="2" height="3" style="fill: url(&quot;#fg_lighter&quot;); stroke: url(&quot;#fg_lighter&quot;); stroke-linecap: round; stroke-linejoin: round;" />
+              <rect x="39.145" y="70.935" width="2" height="3" style="fill: url(&quot;#fg_lighter&quot;); stroke: url(&quot;#fg_lighter&quot;); stroke-linecap: round; stroke-linejoin: round;" />
+              <rect x="43.145" y="70.935" width="2" height="3" style="fill: url(&quot;#fg_lighter&quot;); stroke: url(&quot;#fg_lighter&quot;); stroke-linecap: round; stroke-linejoin: round;" />
+              <rect x="47.145" y="70.935" width="2" height="2" style="fill: url(&quot;#fg_lighter&quot;); stroke: url(&quot;#fg_lighter&quot;); stroke-linecap: round; stroke-linejoin: round;" />
+              <rect x="51.145" y="70.935" width="2" height="4" style="fill: url(&quot;#fg_lighter&quot;); stroke: url(&quot;#fg_lighter&quot;); stroke-linecap: round; stroke-linejoin: round;" />
+              <rect x="55.145" y="70.935" width="2" height="5" style="fill: url(&quot;#fg_lighter&quot;); stroke: url(&quot;#fg_lighter&quot;); stroke-linecap: round; stroke-linejoin: round;" />
+              <rect x="19.145" y="77.935" width="2" height="2" style="fill: url(&quot;#fg_lighter&quot;); stroke: url(&quot;#fg_lighter&quot;); stroke-linecap: round; stroke-linejoin: round;" />
+              <rect x="23.145" y="76.935" width="2" height="2" style="fill: url(&quot;#fg_lighter&quot;); stroke: url(&quot;#fg_lighter&quot;); stroke-linecap: round; stroke-linejoin: round;" />
+              <rect x="27.145" y="74.935" width="2" height="2" style="fill: url(&quot;#fg_lighter&quot;); stroke: url(&quot;#fg_lighter&quot;); stroke-linecap: round; stroke-linejoin: round;" />
+              <rect x="31.145" y="75.935" width="2" height="2" style="fill: url(&quot;#fg_lighter&quot;); stroke: url(&quot;#fg_lighter&quot;); stroke-linecap: round; stroke-linejoin: round;" />
+              <rect x="35.145" y="75.935" width="2" height="2" style="fill: url(&quot;#fg_lighter&quot;); stroke: url(&quot;#fg_lighter&quot;); stroke-linecap: round; stroke-linejoin: round;" />
+              <rect x="39.145" y="75.935" width="2" height="2" style="fill: url(&quot;#fg_lighter&quot;); stroke: url(&quot;#fg_lighter&quot;); stroke-linecap: round; stroke-linejoin: round;" />
+              <rect x="43.145" y="75.935" width="2" height="2" style="fill: url(&quot;#fg_lighter&quot;); stroke: url(&quot;#fg_lighter&quot;); stroke-linecap: round; stroke-linejoin: round;" />
+              <rect x="47.145" y="74.935" width="2" height="2" style="fill: url(&quot;#fg_lighter&quot;); stroke: url(&quot;#fg_lighter&quot;); stroke-linecap: round; stroke-linejoin: round;" />
+              <rect x="51.145" y="76.935" width="2" height="2" style="fill: url(&quot;#fg_lighter&quot;); stroke: url(&quot;#fg_lighter&quot;); stroke-linecap: round; stroke-linejoin: round;" />
+              <rect x="55.145" y="77.935" width="2" height="2" style="fill: url(&quot;#fg_lighter&quot;); stroke: url(&quot;#fg_lighter&quot;); stroke-linecap: round; stroke-linejoin: round;" />
+              <rect x="19.145" y="81.935" width="2" height="4" style="fill: url(&quot;#fg_lighter&quot;); stroke: url(&quot;#fg_lighter&quot;); stroke-linecap: round; stroke-linejoin: round;" />
+              <rect x="23.145" y="80.935" width="2" height="5" style="fill: url(&quot;#fg_lighter&quot;); stroke: url(&quot;#fg_lighter&quot;); stroke-linecap: round; stroke-linejoin: round;" />
+              <rect x="27.145" y="78.935" width="2" height="3" style="fill: url(&quot;#fg_lighter&quot;); stroke: url(&quot;#fg_lighter&quot;); stroke-linecap: round; stroke-linejoin: round;" />
+              <rect x="31.145" y="79.935" width="2" height="2" style="fill: url(&quot;#fg_lighter&quot;); stroke: url(&quot;#fg_lighter&quot;); stroke-linecap: round; stroke-linejoin: round;" />
+              <rect x="35.145" y="79.935" width="2" height="2" style="fill: url(&quot;#fg_lighter&quot;); stroke: url(&quot;#fg_lighter&quot;); stroke-linecap: round; stroke-linejoin: round;" />
+              <rect x="39.145" y="79.935" width="2" height="2" style="fill: url(&quot;#fg_lighter&quot;); stroke: url(&quot;#fg_lighter&quot;); stroke-linecap: round; stroke-linejoin: round;" />
+              <rect x="43.145" y="79.935" width="2" height="2" style="fill: url(&quot;#fg_lighter&quot;); stroke: url(&quot;#fg_lighter&quot;); stroke-linecap: round; stroke-linejoin: round;" />
+              <rect x="47.145" y="78.935" width="2" height="3" style="fill: url(&quot;#fg_lighter&quot;); stroke: url(&quot;#fg_lighter&quot;); stroke-linecap: round; stroke-linejoin: round;" />
+              <rect x="51.145" y="80.935" width="2" height="5" style="fill: url(&quot;#fg_lighter&quot;); stroke: url(&quot;#fg_lighter&quot;); stroke-linecap: round; stroke-linejoin: round;" />
+              <rect x="55.145" y="81.935" width="2" height="4" style="fill: url(&quot;#fg_lighter&quot;); stroke: url(&quot;#fg_lighter&quot;); stroke-linecap: round; stroke-linejoin: round;" />
+              <rect x="27.145" y="83.935" width="2" height="2" style="fill: url(&quot;#fg_lighter&quot;); stroke: url(&quot;#fg_lighter&quot;); stroke-linecap: round; stroke-linejoin: round;" />
+              <rect x="31.145" y="83.935" width="6" height="2" style="fill: url(&quot;#fg_lighter&quot;); stroke: url(&quot;#fg_lighter&quot;); stroke-linecap: round; stroke-linejoin: round;" />
+              <rect x="39.145" y="83.935" width="6" height="2" style="fill: url(&quot;#fg_lighter&quot;); stroke: url(&quot;#fg_lighter&quot;); stroke-linecap: round; stroke-linejoin: round;" />
+              <rect x="47.145" y="83.935" width="2" height="2" style="fill: url(&quot;#fg_lighter&quot;); stroke: url(&quot;#fg_lighter&quot;); stroke-linecap: round; stroke-linejoin: round;" />
+            </g>
+            <polyline style="fill: none; stroke-linecap: round; stroke-linejoin: round; stroke: url(&quot;#fg_main&quot;); stroke-width: 2px;" points="11.692 73.852 11.692 74.528 52.659 90.119 65.83 77.973 65.83 77.159">
+              <title>Edge</title>
+            </polyline>
+          </g>
+          <g transform="matrix(1, 0, 0, 1, 7.568624, -2.222609)">
+            <title>Mouse</title>
+            <path style="stroke-linecap: round; stroke-linejoin: round; stroke: url(&quot;#fg_main&quot;); stroke-width: 2px; fill: url(&quot;#bg_main&quot;);" d="M 25.255 51.352 C 23.755 53.113 21.211 54.674 18.574 56.268 C 16.667 55.999 14.138 55.189 13.129 54.109 L 12.885 53.255 C 13.389 52.322 14.126 50.907 15.534 49.71 C 17.324 48.188 19.138 47.487 19.596 47.424 C 20.948 47.238 24.458 48.348 25.664 49.951 L 25.255 51.352 Z">
+              <title>Body</title>
+            </path>
+            <path style="fill: none; stroke-linecap: round; stroke-linejoin: round; stroke: url(&quot;#fg_main&quot;); stroke-width: 2px;" d="M 19.119 55.868 C 20.043 54.385 21.584 52.402 25.031 51.036">
+              <title>Side</title>
+            </path>
+            <path style="fill: none; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px; stroke: url(&quot;#fg_main&quot;);" d="M 17.74 51.92 L 17.068 52.745">
+              <title>Wheel</title>
+            </path>
+          </g>
+          <g style="" transform="matrix(0.66, 0, 0, 0.66, 22.288481, 14.141075)">
+            <title>Paw</title>
+            <path style="fill: url(&quot;#bg_main&quot;); stroke-width: 5px; stroke-linecap: round; transform-box: fill-box; transform-origin: 50% 50%;" d="M 65.8 57.072 C 62.82 59.359 54.66 67.384 59.919 71.459 C 62.939 73.799 73.091 67.946 80.187 60.773" transform="matrix(1, 0.000069, -0.000069, 1, 0.00002, 0.000099)">
+              <title>Background</title>
+            </path>
+            <path style="stroke: url(&quot;#fg_main&quot;); fill: url(&quot;#bg_main&quot;); stroke-linecap: round; transform-origin: 67.704px 64.787px; stroke-width: 4.54545px;" d="M 65.8 57.072 C 62.82 59.359 54.66 67.384 59.919 71.459 C 62.939 73.799 69.727 72.25 76.823 65.077" transform="matrix(1, 0.000069, -0.000069, 1, 0, 0)">
+              <title>Outline</title>
+            </path>
+          </g>
         </svg>
       </g>
     </g>

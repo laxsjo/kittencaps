@@ -409,23 +409,16 @@ class KeyboardBuilder():
             .add_elements(self._factory.get_masks())\
             # .add_element(border_from_bounds(viewbox))
         
-        # Make sure that the CSS rule selectors match the property names!
-        assert hasattr(self.theme.colors, "bg_main")
-        assert hasattr(self.theme.colors, "bg_accent")
-        assert hasattr(self.theme.colors, "bg_focus")
         builder.add_element(
             SvgStyleBuilder()\
                 .indentation(1, "  ")\
                 .statement(Font.generate_css_rule(self.theme.font))\
-                .rule(CssRule(".keycap-color-bg_main", CssStyles({
-                    "--surface": "url(#bg_main)",
-                })))
-                .rule(CssRule(".keycap-color-bg_accent", CssStyles({
-                    "--surface": "url(#bg_accent)",
-                })))
-                .rule(CssRule(".keycap-color-bg_focus", CssStyles({
-                    "--surface": "url(#bg_focus)",
-                })))
+                .rule(*(
+                    CssRule(f".keycap-color-{name}", CssStyles({
+                        "--surface": f"url(#{name})",
+                    }))
+                    for name, color in self.theme.colors.keycap_colors()
+                ))
                 .rule(CssRule(".surface", CssStyles({
                     "fill": "var(--surface)",
                 })))
