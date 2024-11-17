@@ -95,29 +95,26 @@
   <symbol id="2.75u-top" viewBox="-181.25 -50 362.5 100" preserveAspectRatio="none">
     <path class="top-surface" d="M181.25-40c0-5.5-4.5-10-10-10h-342.5c-5.5,0-10,4.5-10,10v80c0,5.5,4.5,10,10,10h342.5   c5.5,0,10-4.5,10-10V-40z" />
   </symbol>
-  <mask id="1.5u-base" maskContentUnits="objectBoundingBox">
-    <rect width="100%" height="100%" fill="black" />
-    <rect width="0.97037" height="0.955556" x="0.0148148" y="0.0222222" fill="white" />
+  <mask id="1.5u-base">
+    <rect width="145.556" height="95.5556" x="2.22222" y="2.22222" fill="white" />
   </mask>
-  <mask id="1u-base" maskContentUnits="objectBoundingBox">
-    <rect width="100%" height="100%" fill="black" />
-    <rect width="0.955556" height="0.955556" x="0.0222222" y="0.0222222" fill="white" />
+  <mask id="1u-base">
+    <rect width="95.5556" height="95.5556" x="2.22222" y="2.22222" fill="white" />
   </mask>
-  <mask id="2u-base" maskContentUnits="objectBoundingBox">
-    <rect width="100%" height="100%" fill="black" />
-    <rect width="0.977778" height="0.955556" x="0.0111111" y="0.0222222" fill="white" />
+  <mask id="2u-base">
+    <rect width="195.556" height="95.5556" x="2.22222" y="2.22222" fill="white" />
   </mask>
-  <mask id="1.5u-shading" maskContentUnits="objectBoundingBox">
-    <rect width="100%" height="100%" fill="white" />
-    <use width="0.777778" height="0.666667" x="0.111111" y="0.166667" href="#1.5u-top" style="--top-surface: black" />
+  <mask id="1.5u-shading">
+    <rect width="150" height="100" fill="white" />
+    <use width="116.667" height="66.6667" x="16.6667" y="16.6667" href="#1.5u-top" style="--top-surface: black" />
   </mask>
-  <mask id="1u-shading" maskContentUnits="objectBoundingBox">
-    <rect width="100%" height="100%" fill="white" />
-    <use width="0.666667" height="0.666667" x="0.166667" y="0.166667" href="#1u-top" style="--top-surface: black" />
+  <mask id="1u-shading">
+    <rect width="100" height="100" fill="white" />
+    <use width="66.6667" height="66.6667" x="16.6667" y="16.6667" href="#1u-top" style="--top-surface: black" />
   </mask>
-  <mask id="2u-shading" maskContentUnits="objectBoundingBox">
-    <rect width="100%" height="100%" fill="white" />
-    <use width="0.833333" height="0.666667" x="0.0833333" y="0.166667" href="#2u-top" style="--top-surface: black" />
+  <mask id="2u-shading">
+    <rect width="200" height="100" fill="white" />
+    <use width="166.667" height="66.6667" x="16.6667" y="16.6667" href="#2u-top" style="--top-surface: black" />
   </mask>
   <style type="text/css">
   @font-face {

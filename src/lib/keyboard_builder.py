@@ -189,25 +189,17 @@ class KeycapFactory:
         width = self.theme.unit_size * size - offset * 2
         height = self.theme.base_size
         
-        bg = ET.Element("rect", {
-            "width": "100%",
-            "height": "100%",
-            "fill": "black",
-        })
-        
         rect = ET.Element("rect", {
-            "width": f"{width / self.theme.unit_size / size:g}",
-            "height": f"{height / self.theme.unit_size:g}",
-            "x": f"{offset / self.theme.unit_size / size:g}",
-            "y": f"{offset / self.theme.unit_size:g}",
+            "width": f"{width:g}",
+            "height": f"{height:g}",
+            "x": f"{offset:g}",
+            "y": f"{offset:g}",
             "fill": "white",
         })
         
         mask = ET.Element("mask", {
             "id": id,
-            "maskContentUnits": "objectBoundingBox",
         })
-        mask.append(bg)
         mask.append(rect)
         
         
@@ -224,27 +216,26 @@ class KeycapFactory:
         size = float(size_u.removesuffix("u"))
         
         offset = (self.theme.unit_size - self.theme.top_size) / 2
-        width = (self.theme.unit_size * size - offset * 2)
+        width = self.theme.unit_size * size - offset * 2
         height = self.theme.top_size
         
         bg = ET.Element("rect", {
-            "width": "100%",
-            "height": "100%",
+            "width": f"{self.theme.unit_size * size:g}",
+            "height": f"{self.theme.unit_size:g}",
             "fill": "white",
         })
         
         top_surface = ET.Element("use", {
-            "width": f"{width / self.theme.unit_size / size:g}",
-            "height": f"{height / self.theme.unit_size:g}",
-            "x": f"{offset / self.theme.unit_size / size:g}",
-            "y": f"{offset / self.theme.unit_size:g}",
+            "width": f"{width:g}",
+            "height": f"{height:g}",
+            "x": f"{offset:g}",
+            "y": f"{offset:g}",
             "href": f"#{size_u}-top",
             "style": "--top-surface: black",
         })
         
         mask = ET.Element("mask", {
             "id": id,
-            "maskContentUnits": "objectBoundingBox",
         })
         mask.append(bg)
         mask.append(top_surface)
