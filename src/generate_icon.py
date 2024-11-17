@@ -6,24 +6,53 @@ import pathlib
 import sys
 import argparse
 import xml.etree.ElementTree as ET
+import re
 
 from fontTools import ttLib
 
 from .lib.utils import *
 from .lib import font as Font
 from .lib.svg_builder import *
-from .lib.keyboard_builder import create_text_icon_svg
+from .lib.keyboard_builder import *
 from .lib.pos import *
 from .lib.theme import *
 from .lib.color import *
 from .lib import project
+from .lib.error import *
 
-def generate_svg(font_paths: list[pathlib.Path], theme: Theme, out_file: TextIO) -> None:
+def parse_size(size: str) -> Ok[Vec2]|Error[str]:
+    if not size.endswith("u"):
+        return Error(f"The given keycap size '{size}' is not valid: it must be suffixed with a 'u'.")
+    
+    size = size.removesuffix("u")
+    if len(size) == 0:
+        return Error(f"The given keycap size '{size}' is not valid: no size was given.")
+    
+    
+    components = size.split("x")
+    try:
+        components = tuple(map(float, components))
+    except ValueError:
+        return Error(f"The given keycap size '{size}' does not contain valid numbers.")
+    
+    # The zero check is to make type inference happy :)
+    if len(components) > 2 or len(components) == 0:
+        return Error(f"The given keycap size '{size}' is not valid: you can not specify more than two dimensions.")
+    
+    if len(components) == 1:
+        components += (1.0,)
+    
+    if components[0] != 1 and components[1] != 1:
+        return Error(f"The given keycap size '{size}' is not valid: neither of it's dimensions are 1u.")
+    
+    return Ok(Vec2(*components))
+
+def generate_svg(size: Vec2, font_paths: list[pathlib.Path], theme: Theme, templates: SvgSymbolSet, out_file: TextIO) -> None:
     font = Font.FontDefinition(font_paths[0])
     font_rules = (Font.generate_css_rule(Font.FontDefinition(path)) for path in font_paths)
     
     builder = SvgDocumentBuilder()\
-        .set_viewbox(ViewBox(Vec2(0, 0), Scaling(100, 100)))\
+        .set_viewbox(ViewBox(Vec2(0, 0), (size * 100).as_scaling()))\
         .palette(theme.colors)
     
     style = SvgStyleBuilder()\
@@ -35,9 +64,44 @@ def generate_svg(font_paths: list[pathlib.Path], theme: Theme, out_file: TextIO)
         .build()
 
     builder.add_element(style)
+        
+    key_size = KeycapGeometry.from_dimensions(size)
+    if key_size == None:
+        panic(f"Icon was not 1u in either width or height, given key dimensions: ({size.x}, {size.y})")
     
-    icon = create_text_icon_svg("_", "", font, theme.font_size_px)
-
+    center_pos = Vec2(50, 50) * size
+    surface_scaling = Scaling(theme.top_size / theme.unit_size)
+    match key_size.orientation:
+        case Orientation.HORIZONTAL:
+            surface_rotation = Rotation(0)
+        case Orientation.VERTICAL:
+            surface_rotation = Rotation(90)
+            
+    surface_id = f"{key_size.size_u()}-top"
+    print(surface_id)
+    # A surface symbol is assumed to have a "-50 -50 100 100" viewbox
+    surface_symbol = templates[surface_id]
+    if isinstance(surface_symbol, Error):
+        panic(f"Given icon size did not have a corresponding entry in the templates file: could not find symbol element with id '{surface_id}'.")
+    surface_path = surface_symbol.source.element.find(".//path")
+    if surface_path == None:
+        panic(f"Found symbol with id {surface_id} did not have required path child element")
+    element_apply_transform(surface_path, Transform(
+        translate=center_pos,
+        scale=surface_scaling,
+        rotate=surface_rotation,
+    ))
+    surface_path.set("stroke", "black")
+    surface_path.set("stroke-opacity", "0.5")
+    surface_path.set("fill", "none")
+    try:
+        del surface_path.attrib["class"]
+    except:
+        pass
+    element_add_label(surface_path, "outline")
+    builder.add_element(surface_path)
+    
+    icon = create_text_icon_svg("_", "", size, font, theme.font_size_px)
     builder.add_element(icon.element)
     
     tree = builder.build()
@@ -46,6 +110,12 @@ def generate_svg(font_paths: list[pathlib.Path], theme: Theme, out_file: TextIO)
 def main() -> None:
     parser = argparse.ArgumentParser(description="Generate an empty SVG with the given font embedded.")
 
+    parser.add_argument(
+        "--size",
+        metavar="SIZE",
+        required=True,
+        help="The size of the keycap in u. You may specify a width and height separated by an 'x', which allows you to create a vertical keycap. If not the height is assumed to be 1. One of the lengths must be equal to 1. Ex: 1u, 1x1.5u",
+    )
     parser.add_argument(
         "--font",
         metavar="FILE",
@@ -62,6 +132,13 @@ def main() -> None:
         help="Path to a JSON file describing the fonts and colors to use in the generated SVG. Must follow the schema 'assets/themes/theme-schema.json'. (Note that this is only useful to set when editing the individual icon. The theme information is stripped out when it's inserted into the full keycap set SVG.)",
     )
     parser.add_argument(
+        "--templates",
+        metavar="KEYCAP_TEMPLATES",
+        type=pathlib.Path,
+        default=project.path_to_absolute("assets/templates/frame-templates.svg"),
+        help="Path to an SVG file with TODO: figure out semantics of frame-templates.svg",
+    )
+    parser.add_argument(
         "--out",
         type=pathlib.Path,
         default=None,
@@ -70,18 +147,27 @@ def main() -> None:
 
     args = parser.parse_args()
 
+    match parse_size(args.size):
+        case Ok(size):
+            size = size
+        case Error(msg):
+            panic(msg)
+
     fonts = args.font
     
     theme_path = args.theme
     theme = Theme.load_file(theme_path)
+    template_path = args.templates
+    with open(template_path, "r") as file:
+        key_templates = SvgSymbolSet(ET.parse(file))
 
     out: pathlib.Path | None = args.out
 
     if out == None:
-        generate_svg(fonts, theme, sys.stdout)
+        generate_svg(size, fonts, theme, key_templates, sys.stdout)
     else:
         with open(out, "w") as out_file:
-            generate_svg(fonts, theme, out_file)
+            generate_svg(size, fonts, theme, key_templates, out_file)
 
 def run() -> None:
     try:

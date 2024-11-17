@@ -63,10 +63,7 @@ def main() -> None:
             json5.load(file)
         )
 
-    # Magic Number: Size of single keycap in pixels
-    unit_px = 50
-
-    result = build_keyboard_svg(layout, unit_px, theme, key_templates)
+    result = build_keyboard_svg(layout, theme, key_templates)
     
     with open(out, "w") if out != None else sys.stdout as file:
         result.write(file, encoding="unicode", xml_declaration=True)

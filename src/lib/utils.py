@@ -7,6 +7,7 @@ __all__ = [
     "eprint",
     "panic",
     "todo",
+    "impossible",
     "Todo",
     "assert_instance",
     "inspect",
@@ -31,6 +32,9 @@ def panic(reason: str, traceback_level: int = 0) -> Never:
 
 def todo() -> Never:
     panic("TODO: unfinished code", 1)
+    
+def impossible() -> Never:
+    panic("Reached impossible code", 1)
 
 type Todo = Never
 

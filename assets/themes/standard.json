@@ -2,7 +2,10 @@
   "$schema": "./theme-schema.json",
   "font_family": "Open Gorton",
   "font_weight": 400,
-  "font_size_px": 70,
+  "font_size_px": 46,
+  "unit_size": 100,
+  "base_size": 95.5555555555555,
+  "top_size": 66.66666666666666,
   "colors": {
     "bg_main": "#F5F7F7",
     "bg_accent": "#DEE0ED",

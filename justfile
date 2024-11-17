@@ -6,13 +6,16 @@ create-icon-template:
     nix build .#icon-template-svg
     cp --no-preserve=mode,ownership,timestamps result assets/icons/icon-template.svg
 
-# Create a new icon with the specified name in assets/icons
-create-icon name:
-    cp assets/icons/icon-template.svg assets/icons/[{{name}}].svg
+# Create a new icon with the specified name in assets/icons. Size should be in u, may specify two dimensions for vertical keycaps, see `python -m src.generate_icon --help` for more details.
+create-icon name size="1u":
+    nix build .#open-gorton
+    python -m src.generate_icon --size {{size}} --out "assets/icons/[{{name}}].svg" \
+        --font result/share/fonts/opentype/OpenGorton-Regular.otf \
+        --font result/share/fonts/opentype/OpenGorton-Bold.otf
     @echo "Created 'assets/icons/[{{name}}].svg', edit it by running 'just edit-icon {{name}}'"
 
 # Open icon `name` in the specified editor, with the required Open Gorton font installed.
-edit-icon name editor="inkscape":
+edit-icon name editor="boxy-svg":
     nix develop -c just _edit-icon-inner "{{name}}" "{{editor}}"
 
 _edit-icon-inner name editor:

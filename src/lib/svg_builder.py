@@ -12,9 +12,12 @@ from .theme import *
 from .color import *
 
 __all__ = [
+    "get_unique_id",
     "element_resolve_namespaces",
+    "tree_resolve_namespaces",
     "remove_element_in_tree",
     "untangle_gradient_links",
+    "element_add_label",
     "Transform",
     "Placement",
     "element_apply_transform",
@@ -36,6 +39,16 @@ NS = {
 
 for namespace, url in NS.items():
     ET.register_namespace(namespace, url)
+
+_id_highest_indices: dict[str, int] = dict()
+def get_unique_id(prefix: str) -> str:
+    global _id_highest_indices
+    if prefix not in _id_highest_indices:
+        _id_highest_indices[prefix] = 0
+    
+    result = f"{prefix}-{_id_highest_indices[prefix]}"
+    _id_highest_indices[prefix] += 1
+    return result
 
 # label_raw can either be a tag name or attribute name. If it has a namespace it should be
 # in the form '{namespace_url}label'.
@@ -138,6 +151,16 @@ def untangle_gradient_links(tree: ET.ElementTree|ET.Element) -> None:
         update_all_refs(root, id, parent_id)
         remove_element_in_tree(gradient, tree)
 
+# Add label to element in a way which is understood by inkscape and boxy-svg
+def element_add_label(element: ET.Element, label: str) -> None:
+    s = list(element)
+    if (title := element.find("./title")) is None:
+        title = ET.Element("title")
+        element.insert(0, title)
+    
+    element.set("inkscape:label", label)
+    title.text = label
+
 def tree_filtered_indent(tree: ET.Element|ET.ElementTree, predicate: Callable[[ET.Element], bool], space: str="  ", level: int=0) -> None:
     """Indent an XML document by inserting newlines and indentation space
     after elements.
@@ -213,11 +236,11 @@ class Transform:
     def to_svg_value(self) -> str:
         transforms: list[str] = []
         if self.translate != None and not self.translate.is_identity():
-            transforms.append(f"translate({", ".join(map(str, self.translate))})")
+            transforms.append(f"translate({", ".join(map(number_to_str, self.translate))})")
         if self.rotate != None and not self.rotate.is_identity():
-            transforms.append(f"rotate({self.rotate.deg})")
+            transforms.append(f"rotate({self.rotate.deg:g})")
         if self.scale != None and not self.scale.is_identity():
-            transforms.append(f"scale({", ".join(map(str, self.scale))})")
+            transforms.append(f"scale({", ".join(map(number_to_str, self.scale))})")
         return " ".join(transforms)
         
     @classmethod
@@ -286,7 +309,7 @@ class SvgElement(SizedElement):
         self.element = element
     
     # TODO: Super ugly name and everything
-    def set_size(self, size: Scaling):
+    def set_scale(self, size: Scaling):
         view_box_size = Scaling(*itertools.islice(map(float, self.element.attrib["viewBox"].split(" ")), 2, 4))
         
         size *= view_box_size
@@ -326,6 +349,7 @@ class SvgSymbolSet:
         if style is not None:
             self.other_elements.append(style)
         self.other_elements.extend(source.findall("clipPath"))
+        self.other_elements.extend(source.findall("filter"))
     
     def __contains__(self, id: str) -> bool:
         return id in self.symbols
@@ -480,7 +504,7 @@ class SvgDocumentBuilder:
     def build(self) -> ET.ElementTree:
         if self.viewbox == None:
             panic("You must set a viewbox!")
-        viewbox_str = f"{self.viewbox.pos.x} {self.viewbox.pos.y} {self.viewbox.size.x} {self.viewbox.size.y}"
+        viewbox_str = f"{self.viewbox.pos.x:g} {self.viewbox.pos.y:g} {self.viewbox.size.x:g} {self.viewbox.size.y:g}"
         
         def transform_namespace(pair: tuple[str, str]) -> tuple[str, str]:
             namespace, url = pair

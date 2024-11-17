@@ -43,7 +43,19 @@
     },
     "font_size_px": {
       "description": "The size of the font in pixels to use when rendering text.",
-      "type": "integer"
+      "type": "number"
+    },
+    "unit_size": {
+      "description": "The total width in pixels a single 1u keycap occupies, including any margin. The 100x100 icon SVGs are scaled to this dimension.",
+      "type": "number"
+    },
+    "base_size": {
+      "description": "The base width in pixels of a 1u keycap",
+      "type": "number"
+    },
+    "top_size": {
+      "description": "The width in pixels of the top surface of a 1u keycap in pixels",
+      "type": "number"
     },
     "colors": {
       "description": "The colors to bind to named color variables used in the keycap set. If a color is not given it defaults to hidden.",
@@ -93,6 +105,9 @@
     "font_family",
     "font_weight",
     "font_size_px",
+    "unit_size",
+    "base_size",
+    "top_size",
     "colors"
   ]
 }

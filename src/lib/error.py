@@ -20,7 +20,7 @@ class Error[T]:
     value: T
     
     def unwrap(self) -> Never:
-        return panic(f"Tried to unwrap ${self}")
+        return panic(f"Tried to unwrap {self}")
     
     def unwrap_err(self) -> T:
         return self.value

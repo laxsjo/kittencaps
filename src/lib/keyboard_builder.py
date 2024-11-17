@@ -3,6 +3,8 @@ from dataclasses import dataclass, field
 import xml.etree.ElementTree as ET 
 import functools
 import damsenviet.kle as kle
+import itertools
+
 from . import project
 from .theme import *
 from typing import *
@@ -14,6 +16,8 @@ from . import font as Font
 from .color import *
 
 __all__ = [
+    "KeycapGeometry",
+    "create_text_icon_svg",
     "build_keyboard_svg",
 ]
 
@@ -52,14 +56,16 @@ def lookup_icon_id(id: str) -> SvgElement | None:
     # }))
 
 # id defaults to text
-def create_text_icon_svg(text: str, id: str|None, font: Font.FontDefinition, font_size_px: int) -> SvgElement:
+def create_text_icon_svg(text: str, id: str|None, keycap_size: Vec2, font: Font.FontDefinition, font_size_px: int) -> SvgElement:
     id = id if id != None else text
     id = f"icon_{id}" if id != "" else "icon"
     
     text_span_element = ET.Element("tspan")
     text_span_element.text = text
     
-    centered_y = 100 / 2 + (font_size_px * font.metrics.cap_center_offset())
+    size = keycap_size * 100
+    
+    centered_y = size.y / 2 + (font_size_px * font.metrics.cap_center_offset())
     
     text_element = ET.Element("text", {
         "style":
@@ -70,8 +76,8 @@ def create_text_icon_svg(text: str, id: str|None, font: Font.FontDefinition, fon
             f"white-space:normal;"
             f"white-space-collapse:collapse;"
             f"text-wrap:nowrap;",
-        "x": "50",
-        "y": str(centered_y),
+        "x": number_to_str(size.x / 2),
+        "y": number_to_str(centered_y),
         "text-anchor": "middle",
         "xml:space": "preserve",
     })
@@ -79,22 +85,42 @@ def create_text_icon_svg(text: str, id: str|None, font: Font.FontDefinition, fon
     
     bounding_box_element = ET.Element("rect", {
         "class": "icon-bounding-box",
-        "width": "100",
-        "height": "100",
+        "width": number_to_str(size.x),
+        "height": number_to_str(size.y),
         "fill": "none",
     })
     
     root = ET.Element("svg", {
         "id": id,
-        "viewBox": "0 0 100 100",
-        "width": "100",
-        "height": "100",
+        "viewBox": f"0 0 {" ".join(map(number_to_str, size))}",
+        "width": number_to_str(size.x),
+        "height": number_to_str(size.y),
         "style": "overflow:visible;",
     })
     root.append(bounding_box_element)
     root.append(text_element)
     
     return SvgElement(root)
+
+@dataclass
+class KeycapGeometry:
+    major_size: float
+    orientation: Orientation
+
+    # Returns None if neither of dimensions components are equal to 1u
+    @classmethod
+    def from_dimensions(cls, dimensions: Vec2) -> Self|None:
+        if dimensions.y == 1:
+            return cls(dimensions.x, Orientation.HORIZONTAL)
+        elif dimensions.x == 1:
+            return cls(dimensions.y, Orientation.VERTICAL)
+        else:
+            return None
+    
+    # Get major size in '_u' notation, ex: 1u, 1.5u
+    def size_u(self) -> str:
+        size = float(f"{float(self.major_size):.2}")
+        return f"{size}".removesuffix(".0") + "u"
 
 class KeycapInfo:
     icon_id: str
@@ -110,15 +136,12 @@ class KeycapInfo:
         label = key.labels[4]
         self.icon_id = label.text
         
-        if key.height == 1:
-            self.orientation = Orientation.HORIZONTAL
-            self.major_size = key.width
-        elif key.width == 1:
-            self.orientation = Orientation.VERTICAL
-            self.major_size = key.height
-        else:
+        geometry = KeycapGeometry.from_dimensions(Vec2(key.width, key.height))
+        if geometry is None:
             panic(f"Key '{label}' was not 1u in either width or height, given key dimensions: ({key.width}, {key.width})")
         
+        self.orientation = geometry.orientation
+        self.major_size = geometry.major_size
         self.color = key.color
      
     # Get size in '_u' notation, ex: 1u, 1.5u
@@ -145,19 +168,105 @@ class KeycapFactory:
                                     |          |
                                     |          |
                                     +----------+
-        ```                            
+        ```
     """
     
     templates: SvgSymbolSet
     theme: Theme
+    _masks: dict[str, ET.Element] = field(default_factory=lambda: {})
+    _shading_masks: dict[str, ET.Element] = field(default_factory=lambda: {})
+    
+    # Creates a mask and return its id
+    def _get_size_mask(self, size_u: str) -> str:
+        if size_u in self._masks:
+            return self._masks[size_u].attrib["id"]
+        
+        id = f"{size_u}-base"
+        
+        size = float(size_u.removesuffix("u"))
+        
+        offset = (self.theme.unit_size - self.theme.base_size) / 2
+        width = self.theme.unit_size * size - offset * 2
+        height = self.theme.base_size
+        
+        bg = ET.Element("rect", {
+            "width": "100%",
+            "height": "100%",
+            "fill": "black",
+        })
+        
+        rect = ET.Element("rect", {
+            "width": f"{width / self.theme.unit_size / size:g}",
+            "height": f"{height / self.theme.unit_size:g}",
+            "x": f"{offset / self.theme.unit_size / size:g}",
+            "y": f"{offset / self.theme.unit_size:g}",
+            "fill": "white",
+        })
+        
+        mask = ET.Element("mask", {
+            "id": id,
+            "maskContentUnits": "objectBoundingBox",
+        })
+        mask.append(bg)
+        mask.append(rect)
+        
+        
+        self._masks[size_u] = mask
+        return id
+    
+    # Creates a mask and return its id
+    def _get_shading_mask(self, size_u: str) -> str:
+        if size_u in self._shading_masks:
+            return self._shading_masks[size_u].attrib["id"]
+        
+        id = f"{size_u}-shading"
+        
+        size = float(size_u.removesuffix("u"))
+        
+        offset = (self.theme.unit_size - self.theme.top_size) / 2
+        width = (self.theme.unit_size * size - offset * 2)
+        height = self.theme.top_size
+        
+        bg = ET.Element("rect", {
+            "width": "100%",
+            "height": "100%",
+            "fill": "white",
+        })
+        
+        top_surface = ET.Element("use", {
+            "width": f"{width / self.theme.unit_size / size:g}",
+            "height": f"{height / self.theme.unit_size:g}",
+            "x": f"{offset / self.theme.unit_size / size:g}",
+            "y": f"{offset / self.theme.unit_size:g}",
+            "href": f"#{size_u}-top",
+            "style": "--top-surface: black",
+        })
+        
+        mask = ET.Element("mask", {
+            "id": id,
+            "maskContentUnits": "objectBoundingBox",
+        })
+        mask.append(bg)
+        mask.append(top_surface)
+        
+        self._shading_masks[size_u] = mask
+        return id
+    
+    def get_masks(self) -> Iterable[ET.Element]:
+        return itertools.chain(
+            [value for _, value in sorted(self._masks.items())],
+            [value for _, value in sorted(self._shading_masks.items())],
+        )
     
     def create(self, key: KeycapInfo) -> SizedElement:
-        dimensions = Scaling(100, 100)
+        unit = self.theme.unit_size
+        
+        dimensions = Scaling(unit)
         match key.orientation:
             case Orientation.HORIZONTAL:
-                dimensions.x = key.major_size * 100
+                dimensions.x *= key.major_size
             case Orientation.VERTICAL:
-                dimensions.y = key.major_size * 100
+                dimensions.y *= key.major_size
         
         frame_pos = Vec2(0, 0)
         frame_rotation = Rotation(0)
@@ -166,43 +275,55 @@ class KeycapFactory:
                 pass
             case Orientation.VERTICAL:
                 frame_rotation += 90
-                frame_pos.x += 100
+                frame_pos.x += unit
         
-        frame = self.templates.create_symbol_element(
-            key.size_u(),
-            Placement(
-                translate=frame_pos,
-                rotate=frame_rotation
-            ),
-            (100 * key.major_size, 100),
-        )
-        if isinstance(frame, Error):
-            panic(f"Key size '{key.size_u()}' which was not one of the size defined in given key templates set: {self.templates.symbols.keys()}")
-        frame.attrib["class"] = f"keycap-color-{key.color}"
-
-        # Based on dimensions of the #1u template element in assets/templates/frame-templates.svg.
-        # Is surface size divided by frame size
-        # TODO: Move this somewhere else?
-        icon_surface_size_ratio = 36 / 54
+        base = ET.Element("rect", {
+            "class": "top-surface",
+            "width": f"{unit * key.major_size:g}",
+            "height": f"{unit:g}",
+        })
         
-        # Icon is an svg with a viewbox of "0 0 100 100"
+        # A 1u icon is an svg with a viewbox of "0 0 100 100"
         icon = lookup_icon_id(key.icon_id)
         if icon == None:
-            icon = create_text_icon_svg(key.icon_id, None, self.theme.font, self.theme.font_size_px)
-        icon.set_size(Scaling(icon_surface_size_ratio))
-        # Mask to surface area
-        icon.element.set("clip-path", f"url(#{key.size_u()}-clip)")
+            icon = create_text_icon_svg(key.icon_id, None, Vec2(1, 1), self.theme.font, self.theme.font_size_px)
+        icon.set_scale(Scaling(self.theme.unit_size / 100))
         
-        centered_pos = dimensions.as_pos() / 2
+        center_pos = dimensions.as_vec2() / 2
+        icon_pos = center_pos - icon.size.as_vec2() / 2
         
-        icon_pos = centered_pos - icon.size.as_pos()/2
+        icon.element.attrib["x"] = f"{icon_pos.x:g}"
+        icon.element.attrib["y"] = f"{icon_pos.y:g}"
         
-        icon.element.attrib["x"] = str(icon_pos.x)
-        icon.element.attrib["y"] = str(icon_pos.y)
+        icon_wrapper = ET.Element("g")
+        icon_wrapper.append(icon.element)
+        element_apply_transform(icon_wrapper, Placement(
+            translate=frame_pos.swap(),
+            rotate=-frame_rotation
+        ))
         
-        group = ET.Element("g")
-        group.append(frame)
-        group.append(icon.element)
+        unshaded_group = ET.Element("g", {
+            "id": get_unique_id("keycap-unshaded")
+        })
+        unshaded_group.append(base)
+        unshaded_group.append(icon_wrapper)
+        
+        shading = ET.Element("use", {
+            "href": f"#{unshaded_group.get("id")}",
+            "mask": f"url(#{self._get_shading_mask(key.size_u())})",
+            "filter": "url(#sideShading)",
+        })
+        
+        group = ET.Element("g", {
+            "class": f"keycap-color-{key.color}",
+            "mask": f"url(#{self._get_size_mask(key.size_u())})",
+        })
+        element_apply_transform(group, Placement(
+            translate=frame_pos,
+            rotate=frame_rotation
+        ))
+        group.append(unshaded_group)
+        group.append(shading)
         
         return SizedElement(group, dimensions)
 
@@ -214,7 +335,7 @@ class PlacedComponent():
     
     def realize(self) -> ET.Element:
         element = self.element.element
-        element.attrib["transform"] = self.transform.to_svg_value()
+        element_apply_transform(element, self.transform)
         
         return element
     
@@ -228,7 +349,6 @@ class PlacedComponent():
 
 def border_from_bounds(bounds: Bounds|ViewBox) -> ET.Element:
     viewbox = ViewBox.from_bounds(bounds) if isinstance(bounds, Bounds) else bounds
-    print(f"bounds: {bounds}")
     return ET.Element("rect", {
         "width": str(viewbox.size.get_x()),
         "height": str(viewbox.size.get_y()),
@@ -241,8 +361,6 @@ def border_from_bounds(bounds: Bounds|ViewBox) -> ET.Element:
 @dataclass
 class KeyboardBuilder():
     theme: Theme
-    # Pixels per u
-    unit_px: int
     key_templates: SvgSymbolSet
     _factory: KeycapFactory = cast(Never, None) # Is initialized in __post_init__
     _components: list[PlacedComponent] = field(default_factory=lambda: [])
@@ -253,12 +371,11 @@ class KeyboardBuilder():
     
     def key(self, key: kle.Key) -> Self:
         element = self._factory.create(KeycapInfo(key))
-        pos = resolve_key_position(key) * self.unit_px
+        pos = resolve_key_position(key) * self.theme.unit_size
         
         return self.component(PlacedComponent(element, Transform(
             translate=pos,
             rotate=Rotation(key.rotation_angle),
-            scale=Scaling(self.unit_px/100),
         )))
     
     def keys(self, *keys: kle.Key) -> Self:
@@ -285,7 +402,7 @@ class KeyboardBuilder():
         )
         
         # Magic Number: Extra whitespace around generated keymap in pixels.
-        padding = 20
+        padding = 40
         
         viewbox = ViewBox.from_bounds(bounds).add_padding(padding)
 
@@ -293,6 +410,7 @@ class KeyboardBuilder():
             .set_viewbox(viewbox)\
             .palette(self.theme.colors)\
             .add_icon_set(self._factory.templates)\
+            .add_elements(self._factory.get_masks())\
             # .add_element(border_from_bounds(viewbox))
         
         # Make sure that the CSS rule selectors match the property names!
@@ -331,8 +449,8 @@ class KeyboardBuilder():
         
         return builder.build()
 
-def build_keyboard_svg(keyboard: kle.Keyboard, unit: int, theme: Theme, key_templates: SvgSymbolSet) -> ET.ElementTree:
-    return (KeyboardBuilder(theme, unit, key_templates)\
+def build_keyboard_svg(keyboard: kle.Keyboard, theme: Theme, key_templates: SvgSymbolSet) -> ET.ElementTree:
+    return (KeyboardBuilder(theme,  key_templates)\
         .keys(*keyboard.keys)\
         # TODO: This is pretty hacky
         .builder_extra(lambda builder: \

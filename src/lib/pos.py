@@ -8,6 +8,7 @@ import operator
 from .utils import *
 
 __all__ = [
+    "number_to_str",
     "Vec3",
     "Vec2",
     "Rotation",
@@ -17,6 +18,11 @@ __all__ = [
     "Box",
     "Orientation",
 ]
+
+# Convert number to string, with integer valued floats not including a trailing
+# '.0' 
+def number_to_str(number: float) -> str:
+    return str(number).removesuffix(".0")
 
 @dataclass
 class Vec3():
@@ -101,6 +107,12 @@ class Vec2():
             self.y / other.y,
         )
     
+    def __neg__(self) -> Vec2:
+        return Vec2(
+            -self.x,
+            -self.y,
+        )
+    
     @classmethod
     def promote_float(cls, component: float|Self) -> Self:
         return cls(component, component) if not isinstance(component, Vec2) else component
@@ -115,6 +127,10 @@ class Vec2():
     
     def as_scaling(self) -> Scaling:
         return Scaling(*self)
+    
+    # Return a new Vec2 with the x and y components swapped
+    def swap(self) -> Vec2:
+        return Vec2(self.y, self.x)
 
 @dataclass
 class Rotation:
@@ -132,6 +148,11 @@ class Rotation:
         return Rotation(
             self.deg * other
         )
+    def __neg__(self) -> Rotation:
+        return Rotation(
+            -self.deg,
+        )
+    
     
     @classmethod
     def identity(cls) -> Self:
@@ -143,51 +164,44 @@ class Rotation:
 @dataclass
 class Scaling():
     x: float
-    y: float|None = None
+    y: float
+    
+    def __init__(self, x: float, y: float|None = None):
+        self.x = x
+        self.y = y if y is not None else x
     
     def __iter__(self):
         yield self.x
-        if self.y != None:
+        if self.y != self.x:
             yield self.y
     
     def __len__(self) -> int:
-        return 1 if self.y == None else 2
+        return 1 if self.y == self.x else 2
 
     def __add__(self, other: Self) -> Scaling:
-        if len(self) == len(other):
-            return Scaling(
-                *(map(lambda pair: pair[0] + pair[1], zip(self, other)))
-            )
-        else:
-            return self.promote_to_pair() + other.promote_to_pair()
-    
-    def __sub__(self, other: Self) -> Scaling:
-        if len(self) == len(other):
-            return Scaling(
-                *(map(lambda pair: pair[0] - pair[1], zip(self, other)))
-            )
-        else:
-            return self.promote_to_pair() + other.promote_to_pair()
-    
-    def __mul__(self, other: float|Scaling) -> Scaling:
-        return self._mul_scaling(other) if isinstance(other, Scaling) else self._mul_float(other)
-    
-    def _mul_scaling(self, other: Scaling) -> Scaling:
-        if len(self) == len(other):
-            return Scaling(
-                *(map(lambda pair: pair[0] * pair[1], zip(self, other)))
-            )
-        else:
-            return self.promote_to_pair() * other.promote_to_pair()
-    
-    def _mul_float(self, factor: float) -> Scaling:
         return Scaling(
-            *(map(lambda x: x * factor, self))
+            self.x + other.x,
+            self.y + other.y,
         )
     
-    def __truediv__(self, factor: float) -> Scaling:
+    def __sub__(self, other: Self) -> Scaling:
         return Scaling(
-            *(map(lambda x: x * factor, self))
+            self.x - other.x,
+            self.y - other.y,
+        )
+    
+    def __mul__(self, other: float|Scaling) -> Scaling:
+        other = Scaling.promote_float(other)
+        return Scaling(
+            self.x * other.x,
+            self.y * other.y,
+        )
+    
+    def __truediv__(self, other: float|Scaling) -> Scaling:
+        other = Scaling.promote_float(other)
+        return Scaling(
+            self.x / other.x,
+            self.y / other.y,
         )
     
     @classmethod
@@ -202,11 +216,16 @@ class Scaling():
     def is_identity(self) -> bool:
         return self.x == 1 and self.y == 1
     
-    def promote_to_pair(self) -> Scaling:
-        return self if self.y != None else Scaling(self.x, self.x)
+    @classmethod
+    def promote_float(cls, value: float|Self) -> Self:
+        return value if isinstance(value, Scaling) else cls(value)
     
-    def as_pos(self) -> Vec2:
-        return Vec2(*self.promote_to_pair())
+    # Deprecated
+    def promote_to_pair(self) -> Scaling:
+        return self
+    
+    def as_vec2(self) -> Vec2:
+        return Vec2(self.x, self.y)
 
 def rotate(point: Vec2, origin: Vec2, angle: float) -> Vec2:
     """
@@ -253,7 +272,7 @@ class Box():
     
     def bounds(self) -> Bounds:
         min_corner = self.pos
-        max_corner = self.pos + self.size.as_pos()
+        max_corner = self.pos + self.size.as_vec2()
         corners = [
             Vec2(min_corner.x, min_corner.y),
             Vec2(min_corner.x, max_corner.y),

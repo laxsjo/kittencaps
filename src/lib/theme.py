@@ -48,6 +48,9 @@ class ThemeDeclaration(TypedDict):
     font_family: str
     font_weight: int
     font_size_px: int
+    unit_size: float
+    base_size: float
+    top_size: float
     colors: PaletteDeclaration
 
 @dataclass
@@ -113,6 +116,9 @@ class Palette:
 class Theme():
     font: FontDefinition
     font_size_px: int
+    unit_size: float
+    base_size: float
+    top_size: float
     colors: Palette
     
     @classmethod
@@ -135,6 +141,9 @@ class Theme():
         return cls(
             font=font,
             font_size_px=declaration["font_size_px"],
+            unit_size=declaration["unit_size"],
+            base_size=declaration["base_size"],
+            top_size=declaration["top_size"],
             colors=Palette(declaration["colors"]),
         )
     
