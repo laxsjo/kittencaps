@@ -4,6 +4,7 @@ import xml.etree.ElementTree as ET
 import functools
 import damsenviet.kle as kle
 import itertools
+import re
 
 from . import project
 from .theme import *
@@ -275,8 +276,12 @@ class KeycapFactory:
         })
         
         # A 1u icon is an svg with a viewbox of "0 0 100 100"
-        icon = lookup_icon_id(key.icon_id)
-        if icon == None:
+        if (match := re.match(r"\[(.*)\]", key.icon_id)):
+            id = match.group(1)
+            icon = lookup_icon_id(id)
+            if icon is None:
+                panic(f"Could not find icon '{key.icon_id}'")
+        else:
             icon = create_text_icon_svg(key.icon_id, None, Vec2(1, 1), self.theme.font, self.theme.font_size_px)
         icon.set_scale(Scaling(self.theme.unit_size / 100))
         
