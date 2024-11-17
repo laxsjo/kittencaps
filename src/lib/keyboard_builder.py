@@ -231,7 +231,7 @@ class KeycapFactory:
             "x": f"{offset:g}",
             "y": f"{offset:g}",
             "href": f"#{size_u}-top",
-            "style": "--top-surface: black",
+            "fill": "black",
         })
         
         mask = ET.Element("mask", {
@@ -269,7 +269,7 @@ class KeycapFactory:
                 frame_pos.x += unit
         
         base = ET.Element("rect", {
-            "class": "top-surface",
+            "class": "surface",
             "width": f"{unit * key.major_size:g}",
             "height": f"{unit:g}",
         })
@@ -410,20 +410,20 @@ class KeyboardBuilder():
         assert hasattr(self.theme.colors, "bg_focus")
         builder.add_element(
             SvgStyleBuilder()\
-                .indentation(1, " ")\
+                .indentation(1, "  ")\
                 .statement(Font.generate_css_rule(self.theme.font))\
-                .rule(CssRule(".keycap-color-bg_main", {
-                    "--top-surface": "url(#bg_main)",
-                    "--main-body": "url(#bg_main-side)"
-                }))
-                .rule(CssRule(".keycap-color-bg_accent", {
-                    "--top-surface": "url(#bg_accent)",
-                    "--main-body": "url(#bg_accent-side)"
-                }))
-                .rule(CssRule(".keycap-color-bg_focus", {
-                    "--top-surface": "url(#bg_focus)",
-                    "--main-body": "url(#bg_focus-side)"
-                }))
+                .rule(CssRule(".keycap-color-bg_main", CssStyles({
+                    "--surface": "url(#bg_main)",
+                })))
+                .rule(CssRule(".keycap-color-bg_accent", CssStyles({
+                    "--surface": "url(#bg_accent)",
+                })))
+                .rule(CssRule(".keycap-color-bg_focus", CssStyles({
+                    "--surface": "url(#bg_focus)",
+                })))
+                .rule(CssRule(".surface", CssStyles({
+                    "fill": "var(--surface)",
+                })))
                 # .rule(
                 #     ".icon-bounding-box {stroke: red; stroke-width: 1px;}"
                 # )\
@@ -445,10 +445,5 @@ def build_keyboard_svg(keyboard: kle.Keyboard, theme: Theme, key_templates: SvgS
         .keys(*keyboard.keys)\
         # TODO: This is pretty hacky
         .builder_extra(lambda builder: \
-            builder.root_styles(theme.colors.as_css_styles() | {
-                "--top-surface-stroke": "var(--outline_surface)",
-                "--main-body-stroke": "var(--outline_frame)",
-                "--top-surface": "none",
-                "--main-body": "none",
-            }))\
+            builder.root_styles(theme.colors.as_css_styles()))\
         .build())

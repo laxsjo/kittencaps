@@ -78,7 +78,6 @@ def generate_svg(size: Vec2, font_paths: list[pathlib.Path], theme: Theme, templ
             surface_rotation = Rotation(90)
             
     surface_id = f"{key_size.size_u()}-top"
-    print(surface_id)
     # A surface symbol is assumed to have a "-50 -50 100 100" viewbox
     surface_symbol = templates[surface_id]
     if isinstance(surface_symbol, Error):
@@ -94,6 +93,7 @@ def generate_svg(size: Vec2, font_paths: list[pathlib.Path], theme: Theme, templ
     surface_path.set("stroke", "black")
     surface_path.set("stroke-opacity", "0.5")
     surface_path.set("fill", "none")
+    element_remove_css_properties(surface_path, {"fill"})
     try:
         del surface_path.attrib["class"]
     except:

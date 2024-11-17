@@ -49,7 +49,7 @@
       lib = pkgsNoOverlay.callPackage ./lib.nix {};
       inherit pythonEnv;
       packages = {
-        inherit (pkgs) open-gorton icon-template-svg;
+        inherit (pkgs) open-gorton;
         scripts = pythonApp;
       };
       apps = {

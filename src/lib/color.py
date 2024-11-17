@@ -2,6 +2,7 @@ from __future__ import annotations
 from typing import *
 from dataclasses import dataclass
 import math
+import re
 from colour import Color, RGB_color_picker, hash_or_str
 
 from .error import *
@@ -17,7 +18,19 @@ __all__ = [
 ]
 
 # TODO: move out CSS stuff
-type CssStyles = dict[str, str]
+class CssStyles(dict[str, str]):
+    @classmethod
+    def from_style(cls, style: str) -> Self:
+        statements = list(filter(lambda x: x != "", (statement.strip() for statement in style.split(";"))))
+        if len(statements) == 1 and statements[0] == "":
+            return cls()
+        return cls(
+            re.split(r"\s*:\s*", statement, 1)
+            for statement in statements
+        )
+    
+    def to_style(self) -> str:
+        return ";".join(f"{name}:{value}" for name, value in self.items())
 
 # Definitely arguable if this class should exist
 @dataclass
@@ -80,6 +93,7 @@ class KeycapColor:
     color: HideableColor
     
     # Get color the keycap's side faces: color but darkened slightly
+    # TODO: Unused, should probably remove
     def get_side(self) -> HideableColor:
         # We assume that the top surface has an angle of 90 degrees, which means that
         # self.color represents the surface when fully lit.

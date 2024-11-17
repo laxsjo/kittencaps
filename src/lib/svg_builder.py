@@ -18,6 +18,8 @@ __all__ = [
     "remove_element_in_tree",
     "untangle_gradient_links",
     "element_add_label",
+    "element_append_css_properties",
+    "element_remove_css_properties",
     "Transform",
     "Placement",
     "element_apply_transform",
@@ -160,6 +162,27 @@ def element_add_label(element: ET.Element, label: str) -> None:
     
     element.set("inkscape:label", label)
     title.text = label
+
+
+def element_append_css_properties(element: ET.Element, properties: CssStyles) -> None:
+    styles = CssStyles(CssStyles.from_style(element.get("style", "")) | properties)
+    if styles != CssStyles():
+        element.set("style", styles.to_style())
+
+def element_remove_css_properties(element: ET.Element, properties: set[str]) -> None:
+    styles = CssStyles.from_style(element.get("style", ""))
+    for property in properties:
+        try:
+            del styles[property]
+        except:
+            pass
+    if styles == CssStyles():
+        try:
+            del element.attrib["style"]
+        except:
+            pass
+    else:
+        element.set("style", styles.to_style())
 
 def tree_filtered_indent(tree: ET.Element|ET.ElementTree, predicate: Callable[[ET.Element], bool], space: str="  ", level: int=0) -> None:
     """Indent an XML document by inserting newlines and indentation space
@@ -399,8 +422,8 @@ class SvgStyleBuilder:
     
     # Make sure that the generated element content is indented as if the style element was
     # at indent depth in the element tree.
-    def indentation(self, indent: int, space: str = "  ") -> SvgStyleBuilder:
-        self._indent_depth = indent
+    def indentation(self, indent_level: int, space: str = "  ") -> SvgStyleBuilder:
+        self._indent_depth = indent_level
         self._indent_space = space
         return self
     
@@ -472,7 +495,7 @@ class SvgDocumentBuilder:
     
     def __init__(self) -> None:
         self.elements = []
-        self._root_styles = dict()
+        self._root_styles = CssStyles()
         pass
     
     def add_element(self, element: ET.Element) -> Self:

@@ -1,11 +1,6 @@
 help:
     just --list
 
-# Generate the assets/icons/icon-template.svg file
-create-icon-template:
-    nix build .#icon-template-svg
-    cp --no-preserve=mode,ownership,timestamps result assets/icons/icon-template.svg
-
 # Create a new icon with the specified name in assets/icons. Size should be in u, may specify two dimensions for vertical keycaps, see `python -m src.generate_icon --help` for more details.
 create-icon name size="1u":
     nix build .#open-gorton

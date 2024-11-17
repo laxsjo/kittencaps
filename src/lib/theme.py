@@ -110,7 +110,7 @@ class Palette:
         return result
     
     def as_css_styles(self) -> CssStyles:
-        return dict((f"--{name}", color) for name, color in self.css_colors().items())
+        return CssStyles((f"--{name}", color) for name, color in self.css_colors().items())
 
 @dataclass
 class Theme():
