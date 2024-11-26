@@ -40,3 +40,7 @@ generate-keycaps layout="moonlander-mk1" theme="standard":
         ./assets/layouts/{{layout}}.json \
         --theme=./assets/themes/{{theme}}.json \
         --out=./generated/{{layout}}_{{theme}}.svg
+
+# Open the reference images in pureref
+open-refs:
+    pureref references/references.pur &>> /dev/null &
