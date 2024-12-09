@@ -74,7 +74,8 @@ class Palette(dict[str, HideableColor]):
 
 @dataclass
 class Theme():
-    font: FontDefinition
+    default_font: FontDefinition
+    font_family: list[FontDefinition]
     font_size_px: int
     unit_size: float
     base_size: float
@@ -99,7 +100,8 @@ class Theme():
                 font = matching_fonts[0]
         
         return cls(
-            font=font,
+            default_font=font,
+            font_family=fonts,
             font_size_px=declaration["font_size_px"],
             unit_size=declaration["unit_size"],
             base_size=declaration["base_size"],

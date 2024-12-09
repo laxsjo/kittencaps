@@ -26,7 +26,7 @@ def resolve_key_position(key: kle.Key) -> Vec2:
     return rotate(Vec2(key.x, key.y), Vec2(key.rotation_x, key.rotation_y), key.rotation_angle)
 
 # Get svg of the specified id or None if it does not exist.
-def lookup_icon_id(id: str) -> SvgElement | None:
+def lookup_icon_id(id: str, defs: DefsSet) -> SvgElement | None:
     path = project.path_to_absolute(f"assets/icons/[{id}].svg")
     if not path.is_file():
         return None
@@ -34,9 +34,8 @@ def lookup_icon_id(id: str) -> SvgElement | None:
     with path.open() as file:
         svg = ET.parse(file)
     
-    element_resolve_namespaces(svg.getroot())
-    for child in svg.iter():
-        element_resolve_namespaces(child)
+    for element in svg.iter():
+        element_resolve_namespaces(element)
     
     # This is required if the file has been edited with Inkscape.
     untangle_gradient_links(svg)
@@ -45,16 +44,11 @@ def lookup_icon_id(id: str) -> SvgElement | None:
     if element == None:
         panic(f"icon {id}'s SVG file did not contain child svg element with id 'icon'")
     
-    element_resolve_namespaces(element)
-    for child in element.iter():
-        element_resolve_namespaces(child)
-    
     element.attrib["id"] = f"icon_{id}"
     
+    defs.extract_references_from_element_in_tree(element, svg)
+    
     return SvgElement(element)
-    # return SvgElement(ET.Element("svg", {
-    #     "viewBox": "0 0 100 100"
-    # }))
 
 # id defaults to text
 def create_text_icon_svg(text: str, id: str|None, keycap_size: Vec2, font: Font.FontDefinition, font_size_px: int) -> SvgElement:
@@ -66,7 +60,7 @@ def create_text_icon_svg(text: str, id: str|None, keycap_size: Vec2, font: Font.
     
     size = keycap_size * 100
     
-    centered_y = size.y / 2 + (font_size_px * font.metrics.cap_center_offset())
+    centered_y = size.y / 2 + (font_size_px * float(font.metrics.cap_center_offset()))
     
     text_element = ET.Element("text", {
         "style":
@@ -84,13 +78,6 @@ def create_text_icon_svg(text: str, id: str|None, keycap_size: Vec2, font: Font.
     })
     text_element.append(text_span_element)
     
-    bounding_box_element = ET.Element("rect", {
-        "class": "icon-bounding-box",
-        "width": number_to_str(size.x),
-        "height": number_to_str(size.y),
-        "fill": "none",
-    })
-    
     root = ET.Element("svg", {
         "id": id,
         "viewBox": f"0 0 {" ".join(map(number_to_str, size))}",
@@ -98,7 +85,6 @@ def create_text_icon_svg(text: str, id: str|None, keycap_size: Vec2, font: Font.
         "height": number_to_str(size.y),
         "style": "overflow:visible;",
     })
-    root.append(bounding_box_element)
     root.append(text_element)
     
     return SvgElement(root)
@@ -174,8 +160,14 @@ class KeycapFactory:
     
     templates: SvgSymbolSet
     theme: Theme
+    _defs: DefsSet = field(init=False)
     _masks: dict[str, ET.Element] = field(default_factory=lambda: {})
     _shading_masks: dict[str, ET.Element] = field(default_factory=lambda: {})
+    
+    def __post_init__(self):
+        self._defs = DefsSet(
+            skipped_ids=set(self.theme.colors.keys())
+        )
     
     # Creates a mask and return its id
     def _get_size_mask(self, size_u: str) -> str:
@@ -244,10 +236,11 @@ class KeycapFactory:
         self._shading_masks[size_u] = mask
         return id
     
-    def get_masks(self) -> Iterable[ET.Element]:
+    def get_defs(self) -> Iterable[ET.Element]:
         return itertools.chain(
-            [value for _, value in sorted(self._masks.items())],
-            [value for _, value in sorted(self._shading_masks.items())],
+            (value for _, value in sorted(self._masks.items())),
+            (value for _, value in sorted(self._shading_masks.items())),
+            self._defs.defs,
         )
     
     def create(self, key: KeycapInfo) -> SizedElement:
@@ -278,11 +271,11 @@ class KeycapFactory:
         # A 1u icon is an svg with a viewbox of "0 0 100 100"
         if (match := re.match(r"\[(.*)\]", key.icon_id)):
             id = match.group(1)
-            icon = lookup_icon_id(id)
+            icon = lookup_icon_id(id, self._defs)
             if icon is None:
                 panic(f"Could not find icon '{key.icon_id}'")
         else:
-            icon = create_text_icon_svg(key.icon_id, None, Vec2(1, 1), self.theme.font, self.theme.font_size_px)
+            icon = create_text_icon_svg(key.icon_id, None, Vec2(1, 1), self.theme.default_font, self.theme.font_size_px)
         icon.set_scale(Scaling(self.theme.unit_size / 100))
         
         center_pos = dimensions.as_vec2() / 2
@@ -358,7 +351,7 @@ def border_from_bounds(bounds: Bounds|ViewBox) -> ET.Element:
 class KeyboardBuilder():
     theme: Theme
     key_templates: SvgSymbolSet
-    _factory: KeycapFactory = cast(Never, None) # Is initialized in __post_init__
+    _factory: KeycapFactory = field(init=False)
     _components: list[PlacedComponent] = field(default_factory=lambda: [])
     _builder_extra: Callable[[SvgDocumentBuilder], Any]|None = None
     
@@ -406,13 +399,19 @@ class KeyboardBuilder():
             .set_viewbox(viewbox)\
             .palette(self.theme.colors)\
             .add_icon_set(self._factory.templates)\
-            .add_elements(self._factory.get_masks())\
+            .add_element(make_element(
+                "defs",
+                {
+                    "id": "factory-elements",
+                },
+                self._factory.get_defs()
+            ))\
             # .add_element(border_from_bounds(viewbox))
         
         builder.add_element(
             SvgStyleBuilder()\
                 .indentation(1, "  ")\
-                .statement(Font.generate_css_rule(self.theme.font))\
+                .statement(*map(Font.generate_css_rule, self.theme.font_family))\
                 .rule(*(
                     CssRule(f".keycap-color-{name}", CssStyles({
                         "--surface": f"url(#{name})",

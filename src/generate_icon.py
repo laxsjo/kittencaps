@@ -47,7 +47,7 @@ def parse_size(size: str) -> Ok[Vec2]|Error[str]:
     
     return Ok(Vec2(*components))
 
-def generate_svg(size: Vec2, font_paths: list[pathlib.Path], theme: Theme, templates: SvgSymbolSet, out_file: TextIO) -> None:
+def generate_svg(size: Vec2, bg_color: str|None, font_paths: list[pathlib.Path], theme: Theme, templates: SvgSymbolSet, out_file: TextIO) -> None:
     font = Font.FontDefinition(font_paths[0])
     font_rules = (Font.generate_css_rule(Font.FontDefinition(path)) for path in font_paths)
     
@@ -98,11 +98,23 @@ def generate_svg(size: Vec2, font_paths: list[pathlib.Path], theme: Theme, templ
         del surface_path.attrib["class"]
     except:
         pass
-    element_add_label(surface_path, "outline")
-    builder.add_element(surface_path)
+    element_add_label(surface_path, "Outline")
+    
+    bg_element = ET.Element("rect", {
+        "class": "icon-bg",
+        "width": number_to_str(size.x * 100),
+        "height": number_to_str(size.y * 100),
+        "fill": f"url(#{bg_color or "bg_main"})",
+    })
+    if bg_color is None:
+        bg_element.set("visibility", "hidden")
+    element_add_label(bg_element, "BG")
     
     icon = create_text_icon_svg("_", "", size, font, theme.font_size_px)
+    
+    builder.add_element(bg_element)
     builder.add_element(icon.element)
+    builder.add_element(surface_path)
     
     tree = builder.build()
     tree.write(out_file, encoding="unicode", xml_declaration=True)
@@ -115,6 +127,12 @@ def main() -> None:
         metavar="SIZE",
         required=True,
         help="The size of the keycap in u. You may specify a width and height separated by an 'x', which allows you to create a vertical keycap. If not the height is assumed to be 1. One of the lengths must be equal to 1. Ex: 1u, 1x1.5u",
+    )
+    parser.add_argument(
+        "--bg-color",
+        metavar="COLOR",
+        default="",
+        help="The background color of the keycap. The value must be a valid name present in the theme, or an empty string. The created element is set to hidden if empty or not given. It's purely to help while designing and is removed before the icon is inserted into the assembled keymap.",
     )
     parser.add_argument(
         "--font",
@@ -152,7 +170,7 @@ def main() -> None:
             size = size
         case Error(msg):
             panic(msg)
-
+    
     fonts = args.font
     
     theme_path = args.theme
@@ -160,14 +178,20 @@ def main() -> None:
     template_path = args.templates
     with open(template_path, "r") as file:
         key_templates = SvgSymbolSet(ET.parse(file))
-
+    
+    bg_color = cast(str, args.bg_color)
+    if bg_color == "":
+        bg_color = None
+    elif bg_color not in theme.colors:
+        panic(f"The specified background color '{bg_color}' could not be found in the theme.")
+    
     out: pathlib.Path | None = args.out
 
     if out == None:
-        generate_svg(size, fonts, theme, key_templates, sys.stdout)
+        generate_svg(size, bg_color, fonts, theme, key_templates, sys.stdout)
     else:
         with open(out, "w") as out_file:
-            generate_svg(size, fonts, theme, key_templates, out_file)
+            generate_svg(size, bg_color, fonts, theme, key_templates, out_file)
 
 def run() -> None:
     try:

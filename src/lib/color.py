@@ -13,6 +13,7 @@ __all__ = [
     "CssStyles",
     "CssStatement",
     "CssRule",
+    "css_parse_url",
     "HideableColor",
     "KeycapColor",
 ]
@@ -52,7 +53,26 @@ class CssRule():
             "".join(style_lines) +
             "}"
         )
-            
+
+# Parse a "url" css value, and return the found content inside the "url(*)"
+# statement, with any escape sequences or surrounding quotes resolved, or `None`
+# if the value is not a "url" value.
+def css_parse_url(value: str) -> str|None:
+    value = value.strip()
+    if not value.startswith("url(") or not value.endswith(")"):
+        return None
+    
+    value = value\
+        .removeprefix("url(")\
+        .removesuffix(")")\
+        .strip()
+    
+    if re.match(r"^\".*[^\\]\"$|^\"\"$", value):
+        value = value.removeprefix("\"").removesuffix("\"")
+    if re.match(r"^'.*[^\\]'$|^''$", value):
+        value = value.removeprefix("'").removesuffix("'")
+    
+    return re.sub(r"\\(.)", r"\1", value)
 
 class HideableColor(Color):
     _hidden: bool

@@ -1,6 +1,7 @@
 from __future__ import annotations
 from typing import *
-from dataclasses import dataclass
+from dataclasses import dataclass, field
+from copy import copy, deepcopy
 import re
 import xml.etree.ElementTree as ET
 import itertools
@@ -12,11 +13,15 @@ from .theme import *
 from .color import *
 
 __all__ = [
+    "MaybeElementTree",
+    "resolve_element_tree",
     "get_unique_id",
     "element_resolve_namespaces",
     "tree_resolve_namespaces",
+    "make_element",
     "remove_element_in_tree",
     "untangle_gradient_links",
+    "DefsSet",
     "element_add_label",
     "element_append_css_properties",
     "element_remove_css_properties",
@@ -42,6 +47,10 @@ NS = {
 for namespace, url in NS.items():
     ET.register_namespace(namespace, url)
 
+type MaybeElementTree = ET.Element | ET.ElementTree
+def resolve_element_tree(tree: MaybeElementTree) -> ET.Element:
+    return tree.getroot() if isinstance(tree, ET.ElementTree) else tree
+
 _id_highest_indices: dict[str, int] = dict()
 def get_unique_id(prefix: str) -> str:
     global _id_highest_indices
@@ -51,6 +60,14 @@ def get_unique_id(prefix: str) -> str:
     result = f"{prefix}-{_id_highest_indices[prefix]}"
     _id_highest_indices[prefix] += 1
     return result
+
+def get_similar_unique_ids(id: str, existing_ids: set[str]) -> str:
+    current_suffix = 0
+    while True:
+        current_id = f"{id}-{current_suffix}"
+        if current_id not in existing_ids:
+            return current_id
+        current_suffix += 1
 
 # label_raw can either be a tag name or attribute name. If it has a namespace it should be
 # in the form '{namespace_url}label'.
@@ -87,7 +104,11 @@ def tree_resolve_namespaces(tree: ET.ElementTree|ET.Element) -> None:
     for child in root.findall(".//*"):
         element_resolve_namespaces(child)
 
-
+# Sane element initializer that can add child elements.
+def make_element(tag: str, attributes: dict[str, str], children: Iterable[ET.Element]) -> ET.Element:
+    result = ET.Element(tag, attributes)
+    result.extend(children)
+    return result
 
 def element_depth_in_tree(element: ET.Element, tree: ET.ElementTree|ET.Element) -> int | Error[str]:
     root = tree.getroot() if isinstance(tree, ET.ElementTree) else tree
@@ -123,6 +144,11 @@ def remove_element_in_tree(element: ET.Element, tree: ET.ElementTree|ET.Element)
         if element in parent:
             parent.remove(element)
 
+def tree_get_id(tree: MaybeElementTree, id: str) -> ET.Element|None:
+    for element in resolve_element_tree(tree).iter():
+        if element.get("id", None) == id:
+            return element
+
 # Remove all <linearGradient> elements which link to another with an href, and updated all
 # references to this element.
 def untangle_gradient_links(tree: ET.ElementTree|ET.Element) -> None:
@@ -152,6 +178,119 @@ def untangle_gradient_links(tree: ET.ElementTree|ET.Element) -> None:
         
         update_all_refs(root, id, parent_id)
         remove_element_in_tree(gradient, tree)
+
+# Get a list of all ids which are somehow referenced by element, or one of its
+# children.
+def element_get_outgoing_ids(element: ET.Element) -> Iterable[str]:
+    def get_single_element_ids(element: ET.Element):        
+        attrib = copy(element.attrib)
+        
+        if "style" in attrib:
+            styles = CssStyles.from_style(attrib["style"])
+            for value in styles.values():
+                url = css_parse_url(value)
+                if url is None or not url.startswith("#"):
+                    continue
+                yield url.removeprefix("#")
+        
+            del attrib["style"]
+        
+        for value in attrib.values():
+            if value.startswith("#"):
+                yield value.removeprefix("#")
+    
+    yielded_ids = set()
+    for child in element.iter():
+        for id in get_single_element_ids(child):
+            if id not in yielded_ids:
+                yielded_ids.add(id)
+                yield id
+
+def element_update_outgoing_id(element: ET.Element, old_id: str, new_id: str):
+    def update_single_element_id(element: ET.Element, old_id: str, new_id: str):        
+        attrib = element.attrib
+        
+        for name, value in attrib:
+            if name == "style":
+                styles = CssStyles.from_style(value)
+                for property, value in styles.items():
+                    url = css_parse_url(value)
+                    if url is None or not url.startswith("#"):
+                        continue
+                    
+                    id = url.removeprefix("#")
+                    if id == old_id:
+                        # TODO: This will break if new_id requires escaping...
+                        styles[property] = f"url(#{new_id})"
+                attrib["style"] = styles.to_style()
+            else:
+                if value.startswith("#") and value == f"#{old_id}":
+                    attrib[name] = f"#{new_id}"
+    
+    for child in element.iter():
+        update_single_element_id(child, old_id, new_id)
+
+# class DefsSet(list[ET.Element]):
+#     def append(self, object):
+#         if object not in self:
+#             super().append(object)
+@dataclass
+class DefsSet():
+    skipped_ids: set[str]
+    defs: list[ET.Element] = field(default_factory=lambda: [])
+    
+    # Get a list of elements from `tree` which `element` refer to. The return list
+    # of elements are deep copies of the elements in tree.
+    # 
+    # Referred to elements which have an id in `self.skiped_ids` are
+    # ignored, i.e. they are not returned and the corresponding attribute in element
+    # is not changed.
+    # 
+    # `self.defs` contains a list of elements previously returned from
+    # this function. If any of the returned element ids conflict the ids in the
+    # return list are updated, and `element` is mutated to match this new list of elements.
+    def extract_references_from_element_in_tree(self, element: ET.Element, tree: MaybeElementTree):
+        def extract_uncopied(element: ET.Element):
+            nonlocal tree
+            tree = resolve_element_tree(tree)
+            
+            # We don't use a set because we'd like to maintain element order.
+            found_referents: list[ET.Element] = []
+            
+            # To avoid infinite recursion due to cyclic trees
+            encountered_elements: set[ET.Element] = {element}
+            
+            for id in element_get_outgoing_ids(element):
+                if id in self.skipped_ids:
+                    continue
+                
+                referent = tree_get_id(tree, id)
+                if referent is None or referent in encountered_elements:
+                    continue
+                encountered_elements.add(referent)
+                
+                found_referents.append(referent)
+                found_referents.extend(extract_uncopied(referent))
+            
+            # Remove duplicates
+            # Unsure if necessary...
+            return dict.fromkeys(found_referents).keys()
+        
+        referents = list(map(deepcopy, extract_uncopied(element)))
+        
+        existing_ids = {element.get("id", "") for element in self.defs}
+        
+        for referent in referents:
+            id = referent.get("id", "")
+            if id in existing_ids:
+                new_id = get_similar_unique_ids(id, existing_ids)
+                
+                referent.set("id", new_id)
+                for element in (element, *referents):
+                    element_update_outgoing_id(element, id, new_id)
+        
+        self.defs += referents
+            
 
 # Add label to element in a way which is understood by inkscape and boxy-svg
 def element_add_label(element: ET.Element, label: str) -> None:

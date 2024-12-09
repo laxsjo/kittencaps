@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<svg xmlns:ns0="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" version="1.1" viewBox="-40 -40 1880 809.81" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:bx="https://boxy-svg.com" style="--bg_main: #f5f7f7; --bg_accent: #dee0ed; --bg_focus: #7d787c; --fg_main: #7d787c; --fg_lighter: #d5d5df;">
+<svg version="1.1" viewBox="-40 -40 1880 809.81" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:bx="https://boxy-svg.com" style="--bg_main: #f5f7f7; --bg_accent: #dee0ed; --bg_focus: #7d787c; --fg_main: #7d787c; --fg_main_lighter: #969095; --fg_lighter: #d5d5df; --fg_dark: #4f4d4f; --fg_orange: #ffc867; --fg_color: #d8cfe5; --fg_color_lighter: #f9f0ff;">
   <defs id="palette-colors">
     <linearGradient id="bg_main" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
       <title>bg_main</title>
@@ -17,9 +17,29 @@
       <title>fg_main</title>
       <stop style="stop-color:#7d787c;" />
     </linearGradient>
+    <linearGradient id="fg_main_lighter" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
+      <title>fg_main_lighter</title>
+      <stop style="stop-color:#969095;" />
+    </linearGradient>
     <linearGradient id="fg_lighter" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
       <title>fg_lighter</title>
       <stop style="stop-color:#d5d5df;" />
+    </linearGradient>
+    <linearGradient id="fg_dark" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
+      <title>fg_dark</title>
+      <stop style="stop-color:#4f4d4f;" />
+    </linearGradient>
+    <linearGradient id="fg_orange" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
+      <title>fg_orange</title>
+      <stop style="stop-color:#ffc867;" />
+    </linearGradient>
+    <linearGradient id="fg_color" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
+      <title>fg_color</title>
+      <stop style="stop-color:#d8cfe5;" />
+    </linearGradient>
+    <linearGradient id="fg_color_lighter" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
+      <title>fg_color_lighter</title>
+      <stop style="stop-color:#f9f0ff;" />
     </linearGradient>
   </defs>
   <filter id="sideShading">
@@ -48,32 +68,63 @@
   <symbol id="2.75u-top" viewBox="-181.25 -50 362.5 100" preserveAspectRatio="none">
     <path class="surface" style="fill:inherit;" d="M181.25-40c0-5.5-4.5-10-10-10h-342.5c-5.5,0-10,4.5-10,10v80c0,5.5,4.5,10,10,10h342.5   c5.5,0,10-4.5,10-10V-40z" />
   </symbol>
-  <mask id="1.5u-base">
-    <rect width="145.556" height="95.5556" x="2.22222" y="2.22222" fill="white" />
-  </mask>
-  <mask id="1u-base">
-    <rect width="95.5556" height="95.5556" x="2.22222" y="2.22222" fill="white" />
-  </mask>
-  <mask id="2u-base">
-    <rect width="195.556" height="95.5556" x="2.22222" y="2.22222" fill="white" />
-  </mask>
-  <mask id="1.5u-shading">
-    <rect width="150" height="100" fill="white" />
-    <use width="116.667" height="66.6667" x="16.6667" y="16.6667" href="#1.5u-top" fill="black" />
-  </mask>
-  <mask id="1u-shading">
-    <rect width="100" height="100" fill="white" />
-    <use width="66.6667" height="66.6667" x="16.6667" y="16.6667" href="#1u-top" fill="black" />
-  </mask>
-  <mask id="2u-shading">
-    <rect width="200" height="100" fill="white" />
-    <use width="166.667" height="66.6667" x="16.6667" y="16.6667" href="#2u-top" fill="black" />
-  </mask>
+  <defs id="factory-elements">
+    <mask id="1.5u-base">
+      <rect width="145.556" height="95.5556" x="2.22222" y="2.22222" fill="white" />
+    </mask>
+    <mask id="1u-base">
+      <rect width="95.5556" height="95.5556" x="2.22222" y="2.22222" fill="white" />
+    </mask>
+    <mask id="2u-base">
+      <rect width="195.556" height="95.5556" x="2.22222" y="2.22222" fill="white" />
+    </mask>
+    <mask id="1.5u-shading">
+      <rect width="150" height="100" fill="white" />
+      <use width="116.667" height="66.6667" x="16.6667" y="16.6667" href="#1.5u-top" fill="black" />
+    </mask>
+    <mask id="1u-shading">
+      <rect width="100" height="100" fill="white" />
+      <use width="66.6667" height="66.6667" x="16.6667" y="16.6667" href="#1u-top" fill="black" />
+    </mask>
+    <mask id="2u-shading">
+      <rect width="200" height="100" fill="white" />
+      <use width="166.667" height="66.6667" x="16.6667" y="16.6667" href="#2u-top" fill="black" />
+    </mask>
+    <linearGradient id="color-0" bx:pinned="true" gradientUnits="userSpaceOnUse">
+      <title>fg_color</title>
+      <stop style="stop-color: rgb(216, 207, 229);" />
+    </linearGradient>
+    <linearGradient id="color-1" gradientUnits="userSpaceOnUse" bx:pinned="true">
+      <title>fg_color_lighter</title>
+      <stop style="stop-color: rgb(252, 248, 255);" />
+    </linearGradient>
+    <symbol id="paw_print" viewBox="0 0 7 6.5" bx:pinned="true">
+      <title>Paw Print</title>
+      <path d="M 5.971 3.823 C 6.005 5.183 4.835 6.337 3.474 6.337 C 2.113 6.337 1.029 5.234 1.01 3.873 C 1.005 3.538 1.346 3.351 1.669 3.137 C 2.247 2.752 3.026 2.474 3.493 2.474 C 3.988 2.474 4.667 2.716 5.272 3.086 C 5.551 3.257 5.962 3.482 5.971 3.823 Z" style="fill: inherit;" />
+      <ellipse style="fill: inherit; transform-box: fill-box; transform-origin: 50% 50%;" cx="188.09" cy="77.524" rx="0.897" ry="1.039" transform="matrix(0.993581, -0.113127, 0.113127, 0.993581, -186.714024, -75.673454)" />
+      <ellipse style="fill: inherit;" cx="3.542" cy="1.203" rx="0.944" ry="1.04" />
+      <ellipse style="fill: inherit; transform-origin: 188.09px 77.524px;" cx="188.09" cy="77.524" rx="0.873" ry="1.012" transform="matrix(-0.993581, -0.113127, -0.113127, 0.993581, -182.438609, -75.686071)" />
+    </symbol>
+    <symbol id="eye" viewBox="0 0 1.9588 3.1008" bx:pinned="true">
+      <title>Eye</title>
+      <ellipse style="stroke-width: 0.5px; fill: url(&quot;#bg_focus&quot;);" cx="56.522" cy="33.941" rx="0.934" ry="1.523" transform="matrix(0.9995470046997071, 0.030088001862168305, -0.030087001621723175, 0.9995470046997069, -54.495808913947414, -34.075845433619804)">
+        <title>Pupil</title>
+      </ellipse>
+      <ellipse style="fill: url(&quot;#bg_main&quot;);" cx="56.973" cy="33.193" rx="0.247" ry="0.275" transform="matrix(0.999547, 0.030088, -0.030087, 0.999547, -54.399759, -34.13989)">
+        <title>Highlight</title>
+      </ellipse>
+    </symbol>
+  </defs>
   <style type="text/css">
     @font-face {
       font-family: "Open Gorton";
       font-weight: 400;
       src: url(data:font/otf;base64,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)
+    }
+    @font-face {
+      font-family: "Open Gorton";
+      font-weight: 700;
+      src: url(data:font/otf;base64,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)
     }
     .keycap-color-bg_main {
       --surface: url(#bg_main);
@@ -93,7 +144,6 @@
       <rect class="surface" width="100" height="100" />
       <g transform="">
         <svg id="icon" viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0">
-          <rect class="icon-bounding-box" width="100" height="100" fill="none" />
           <text style="font-weight:400;font-size:46px;font-family:Open Gorton;fill:url(#fg_main);white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="66.19200000000001" text-anchor="middle" xml:space="preserve"><tspan /></text>
         </svg>
       </g>
@@ -105,7 +155,6 @@
       <rect class="surface" width="100" height="100" />
       <g transform="">
         <svg id="icon_1" viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0">
-          <rect class="icon-bounding-box" width="100" height="100" fill="none" />
           <text style="font-weight:400;font-size:46px;font-family:Open Gorton;fill:url(#fg_main);white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="66.19200000000001" text-anchor="middle" xml:space="preserve"><tspan>1</tspan></text>
         </svg>
       </g>
@@ -117,7 +166,6 @@
       <rect class="surface" width="100" height="100" />
       <g transform="">
         <svg id="icon_2" viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0">
-          <rect class="icon-bounding-box" width="100" height="100" fill="none" />
           <text style="font-weight:400;font-size:46px;font-family:Open Gorton;fill:url(#fg_main);white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="66.19200000000001" text-anchor="middle" xml:space="preserve"><tspan>2</tspan></text>
         </svg>
       </g>
@@ -143,7 +191,6 @@
       <rect class="surface" width="100" height="100" />
       <g transform="">
         <svg id="icon_4" viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0">
-          <rect class="icon-bounding-box" width="100" height="100" fill="none" />
           <text style="font-weight:400;font-size:46px;font-family:Open Gorton;fill:url(#fg_main);white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="66.19200000000001" text-anchor="middle" xml:space="preserve"><tspan>4</tspan></text>
         </svg>
       </g>
@@ -155,7 +202,6 @@
       <rect class="surface" width="100" height="100" />
       <g transform="">
         <svg id="icon_5" viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0">
-          <rect class="icon-bounding-box" width="100" height="100" fill="none" />
           <text style="font-weight:400;font-size:46px;font-family:Open Gorton;fill:url(#fg_main);white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="66.19200000000001" text-anchor="middle" xml:space="preserve"><tspan>5</tspan></text>
         </svg>
       </g>
@@ -167,7 +213,6 @@
       <rect class="surface" width="100" height="100" />
       <g transform="">
         <svg id="icon" viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0">
-          <rect class="icon-bounding-box" width="100" height="100" fill="none" />
           <text style="font-weight:400;font-size:46px;font-family:Open Gorton;fill:url(#fg_main);white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="66.19200000000001" text-anchor="middle" xml:space="preserve"><tspan /></text>
         </svg>
       </g>
@@ -179,7 +224,6 @@
       <rect class="surface" width="100" height="100" />
       <g transform="">
         <svg id="icon" viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0">
-          <rect class="icon-bounding-box" width="100" height="100" fill="none" />
           <text style="font-weight:400;font-size:46px;font-family:Open Gorton;fill:url(#fg_main);white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="66.19200000000001" text-anchor="middle" xml:space="preserve"><tspan /></text>
         </svg>
       </g>
@@ -191,7 +235,6 @@
       <rect class="surface" width="100" height="100" />
       <g transform="">
         <svg id="icon_6" viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0">
-          <rect class="icon-bounding-box" width="100" height="100" fill="none" />
           <text style="font-weight:400;font-size:46px;font-family:Open Gorton;fill:url(#fg_main);white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="66.19200000000001" text-anchor="middle" xml:space="preserve"><tspan>6</tspan></text>
         </svg>
       </g>
@@ -203,7 +246,6 @@
       <rect class="surface" width="100" height="100" />
       <g transform="">
         <svg id="icon_7" viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0">
-          <rect class="icon-bounding-box" width="100" height="100" fill="none" />
           <text style="font-weight:400;font-size:46px;font-family:Open Gorton;fill:url(#fg_main);white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="66.19200000000001" text-anchor="middle" xml:space="preserve"><tspan>7</tspan></text>
         </svg>
       </g>
@@ -215,7 +257,6 @@
       <rect class="surface" width="100" height="100" />
       <g transform="">
         <svg id="icon_8" viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0">
-          <rect class="icon-bounding-box" width="100" height="100" fill="none" />
           <text style="font-weight:400;font-size:46px;font-family:Open Gorton;fill:url(#fg_main);white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="66.19200000000001" text-anchor="middle" xml:space="preserve"><tspan>8</tspan></text>
         </svg>
       </g>
@@ -227,7 +268,6 @@
       <rect class="surface" width="100" height="100" />
       <g transform="">
         <svg id="icon_9" viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0">
-          <rect class="icon-bounding-box" width="100" height="100" fill="none" />
           <text style="font-weight:400;font-size:46px;font-family:Open Gorton;fill:url(#fg_main);white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="66.19200000000001" text-anchor="middle" xml:space="preserve"><tspan>9</tspan></text>
         </svg>
       </g>
@@ -239,7 +279,6 @@
       <rect class="surface" width="100" height="100" />
       <g transform="">
         <svg id="icon_0" viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0">
-          <rect class="icon-bounding-box" width="100" height="100" fill="none" />
           <text style="font-weight:400;font-size:46px;font-family:Open Gorton;fill:url(#fg_main);white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="66.19200000000001" text-anchor="middle" xml:space="preserve"><tspan>0</tspan></text>
         </svg>
       </g>
@@ -251,7 +290,6 @@
       <rect class="surface" width="100" height="100" />
       <g transform="">
         <svg id="icon" viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0">
-          <rect class="icon-bounding-box" width="100" height="100" fill="none" />
           <text style="font-weight:400;font-size:46px;font-family:Open Gorton;fill:url(#fg_main);white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="66.19200000000001" text-anchor="middle" xml:space="preserve"><tspan /></text>
         </svg>
       </g>
@@ -263,11 +301,30 @@
       <rect class="surface" width="100" height="100" />
       <g transform="">
         <svg id="icon_del" viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0">
-          <rect class="icon-bounding-box" width="100" height="100" fill="none" />
-          <path style="stroke: url(&quot;#fg_main&quot;); fill: none; stroke-linecap: round; stroke-width: 3px;" d="M 30.015 50 L 59.039 50" />
-          <path style="fill: none; stroke: url(&quot;#fg_main&quot;); stroke-linecap: round; stroke-width: 3px;" d="M 49.971 40.933 L 59.039 50" />
-          <path style="fill: none; stroke: url(&quot;#fg_main&quot;); stroke-linecap: round; stroke-width: 3px; transform-box: fill-box; transform-origin: 50% 50%;" d="M 49.971 59.067 L 59.039 50" transform="matrix(-1, 0, 0, -1, 0.000011, 0.000002)" />
-          <path style="stroke: url(&quot;#fg_main&quot;); fill: none; stroke-linecap: round; stroke-width: 3px; transform-box: fill-box; transform-origin: 50% 50%;" d="M 57.667 50 L 77.023 50" transform="matrix(0, 1, -1, 0, -0.000009, 0.00001)" />
+          <path style="fill: none; stroke: url(&quot;#fg_main&quot;); stroke-linecap: round; stroke-width: 3px; stroke-linejoin: round; transform-box: fill-box; transform-origin: 50% 50%;" d="M 37.693 27.49 L 66.817 27.49 L 66.817 48.51 L 37.693 48.51 L 27.182 38 L 37.693 27.49 Z" transform="matrix(-1, 0, 0, -1, 0.00001, 0.000004)">
+            <title>Frame</title>
+          </path>
+          <path style="fill: none; stroke-linecap: round; stroke-linejoin: round; stroke: url(&quot;#fg_main&quot;); stroke-width: 3px;" d="M 47.685 32.937 L 37.559 43.063 M 37.559 32.937 L 47.685 43.063">
+            <title>Cross</title>
+          </path>
+          <path style="stroke-linecap: round; stroke-linejoin: round; stroke: url(&quot;#fg_main&quot;); stroke-width: 2px; stroke-dasharray: 2, 3; stroke-dashoffset: -27px; transform-origin: 60.936px 67.813px; fill: url(&quot;#bg_main&quot;);" d="M 63.846 58.839 C 64.884 59.19 66.476 57.55 67.046 57.743 C 67.617 57.936 67.991 58.878 68.131 60.408 C 69.483 61.266 70.158 63.266 69.771 65.445 C 69.508 66.932 69.13 67.773 68.351 69.048 C 68.351 69.048 69.435 69.291 72.332 70.223 C 75.218 71.153 74.207 73.681 71.365 72.791 C 69.372 72.166 67.626 71.752 67.626 71.752 C 67.102 73.515 66.297 77.666 63.196 76.568 C 63.196 76.568 63.216 76.777 62.62 78.625 C 61.886 80.9 59.068 79.985 59.81 77.571 C 60.172 76.395 60.345 76.023 60.345 76.023 C 58.685 75.688 58.391 75.523 57.263 75.096 C 57.263 75.096 56.959 75.833 56.755 76.651 C 56.195 78.896 53.286 77.493 53.824 75.611 C 54.057 74.794 54.341 73.916 54.341 73.916 C 51.87 72.084 53.013 70.46 53.507 67.948 C 53.507 67.948 51.673 67.477 49.016 66.658 C 46.358 65.839 47.108 63.09 50.214 64.02 C 53.32 64.95 54.244 65.004 54.244 65.004 C 53.912 63.292 53.861 62.297 54.444 60.494 C 54.966 58.885 57.884 57.634 59.02 57.775 C 59.981 56.666 61.007 55.997 61.726 56.24 C 62.445 56.483 62.809 58.489 63.846 58.839 Z">
+            <title>Body</title>
+          </path>
+          <path style="fill: none; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px; stroke: url(&quot;#fg_main&quot;); stroke-dashoffset: -0.1px;" d="M 59.377 66.363 C 60.415 66.019 62.015 66.354 62.712 67.244">
+            <title>Mouth</title>
+          </path>
+          <path style="stroke-linecap: round; fill: none; stroke: url(&quot;#fg_main_lighter&quot;);" d="M 75.264 54.91 L 71.404 57.33 M 75.46 56.301 L 72.684 58.126 M 74.202 54.135 C 74.386 53.951 74.91 53.188 75.397 53.386 C 75.943 53.609 76.163 54.241 76.121 54.218 M 77.268 54.514 C 77.757 54.402 78.636 54.393 78.728 54.837 C 78.812 55.245 78.03 55.54 78.03 55.54 M 77.386 56.445 C 77.575 57.077 76.986 57.009 76.645 57.126 C 76.454 57.192 76.262 57.185 75.947 56.959">
+            <title>Cloud</title>
+          </path>
+          <path style="stroke-linecap: round; fill: none; stroke: url(&quot;#fg_main_lighter&quot;);" d="M 45.224 58.185 L 46.799 59.651 M 45.567 56.809 L 48.537 59.389 M 46.164 55.696 C 46.569 55.627 46.397 55.166 47.089 55.097 C 47.634 55.043 47.752 56.219 47.16 56.495 M 43.911 56.772 C 43.659 56.341 44.073 55.181 44.462 54.957 C 44.819 54.752 45.317 55.731 45.317 55.731 M 43.821 57.835 C 42.66 57.678 42.897 58.679 43.11 58.968 C 43.23 59.129 43.907 59.361 44.525 59.28">
+            <title>Cloud</title>
+          </path>
+          <path style="stroke-linecap: round; fill: none; stroke: url(&quot;#fg_main_lighter&quot;); transform-origin: 73.859px 79.743px;" d="M 73.438 77.672 L 71.912 76.001 M 73.333 79.421 L 70.441 76.282 M 74.554 77.423 C 74.962 77.509 75.476 78.057 75.291 78.49 C 75.247 78.591 74.797 78.682 74.844 78.801 M 74.935 79.687 C 75.667 80 75.599 80.968 75.043 81.305 C 74.684 81.522 74.254 80.67 74.219 80.582 M 73.313 81.105 C 73.557 82.681 71.432 80.666 72.17 79.56">
+            <title>Cloud</title>
+          </path>
+          <path style="fill: none; stroke-linecap: round; stroke-linejoin: round; stroke: url(&quot;#fg_main_lighter&quot;);" d="M 46.735 72.745 L 49.007 71.479 M 44.99 72.301 L 47.638 70.659 M 45.815 73.364 C 46.053 73.285 45.89 73.955 45.82 74.165 C 45.724 74.454 45.367 74.622 45.094 74.61 C 44.786 74.597 44.207 74.514 44.049 74.196 C 43.99 74.079 44.185 73.626 44.185 73.626 M 42.851 72.66 C 42.413 72.514 41.084 73.478 41.658 74.052 C 41.887 74.282 42.718 74.024 42.822 74.024 M 44.612 71.382 C 44.457 71.331 43.625 70.409 43.277 70.757 C 43.209 70.824 42.699 71.524 42.907 71.524">
+            <title>Cloud</title>
+          </path>
         </svg>
       </g>
     </g>
@@ -279,7 +336,7 @@
       <g transform="">
         <svg id="icon_Q" viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" version="1.1" x="0" y="0">
           <rect class="icon-bounding-box" width="100" height="100" fill="none" id="rect10" x="0" y="0" />
-          <text style="font-weight: 400; font-size: 46px; font-family: &quot;Open Gorton&quot;; fill: url(&quot;#fg_main&quot;); white-space: pre;" x="50" y="66.192" text-anchor="middle" id="text10" inkscape:label="text"><tspan id="tspan10">Q</tspan></text>
+          <text style="fill: rgb(83, 55, 125); font-family: &quot;Open Gorton&quot;; font-size: 46px; text-anchor: middle; white-space: pre; visibility: hidden;" id="text10" inkscape:label="text" x="50" y="66.192">Q</text>
           <path style="fill: url(&quot;#fg_main&quot;); fill-rule: nonzero; stroke: url(&quot;#fg_main&quot;); stroke-linecap: round; stroke-linejoin: round; stroke-dasharray: none; stroke-width: 3px;" d="M 38.886 39.933 L 40.269 35.171 L 44.936 35.572" id="path1" inkscape:label="Ear">
             <title>Ear</title>
           </path>
@@ -292,6 +349,13 @@
           <ellipse style="fill:url(#fg_main);fill-rule:nonzero;stroke:none;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none" id="ellipse16" cy="46.534" cx="44.576" rx="2.281" ry="3.362" inkscape:label="Eye">
             <title>Eye</title>
           </ellipse>
+          <path d="M 49.973 49.096 m -15.672 0 a 15.672 15.672 0 1 0 31.344 0 a 15.672 15.672 0 1 0 -31.344 0 Z M 49.973 49.096 m -12.49 0 a 12.49 12.49 0 0 1 24.98 0 a 12.49 12.49 0 0 1 -24.98 0 Z" bx:shape="ring 49.973 49.096 12.49 12.49 15.672 15.672 1@f7b8829c" style="fill: url(&quot;#bg_focus&quot;);" />
+          <path style="fill: none; stroke-linecap: round; stroke-linejoin: round; stroke: url(&quot;#fg_main&quot;); stroke-width: 3.3px;" d="M 55.457 57.554 L 59.198 61.637 C 59.198 61.637 61.51 64.512 64.853 64.236 C 67.499 64.018 68.344 62.884 73.13 62.138">
+            <title>Tail</title>
+          </path>
+          <path style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px; fill: url(&quot;#fg_main&quot;);" d="M 55.295 59.821 C 55.474 60.044 55.445 60.318 55.175 60.448 L 57.468 62.852 C 57.674 62.734 57.966 62.717 58.129 62.921 L 60.782 60.919 C 60.622 60.749 60.667 60.507 60.876 60.337 L 58.736 58 C 58.544 58.152 58.241 58.149 58.089 57.983 L 55.295 59.821 Z">
+            <title>Bevel</title>
+          </path>
         </svg>
       </g>
     </g>
@@ -302,7 +366,6 @@
       <rect class="surface" width="100" height="100" />
       <g transform="">
         <svg id="icon_D" viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0">
-          <rect class="icon-bounding-box" width="100" height="100" fill="none" />
           <text style="font-weight:400;font-size:46px;font-family:Open Gorton;fill:url(#fg_main);white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="66.19200000000001" text-anchor="middle" xml:space="preserve"><tspan>D</tspan></text>
         </svg>
       </g>
@@ -314,7 +377,6 @@
       <rect class="surface" width="100" height="100" />
       <g transform="">
         <svg id="icon_R" viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0">
-          <rect class="icon-bounding-box" width="100" height="100" fill="none" />
           <text style="font-weight:400;font-size:46px;font-family:Open Gorton;fill:url(#fg_main);white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="66.19200000000001" text-anchor="middle" xml:space="preserve"><tspan>R</tspan></text>
         </svg>
       </g>
@@ -325,9 +387,15 @@
     <g id="keycap-unshaded-18">
       <rect class="surface" width="100" height="100" />
       <g transform="">
-        <svg id="icon_W" viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0">
+        <svg id="icon_w" viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0">
           <rect class="icon-bounding-box" width="100" height="100" fill="none" />
-          <text style="font-weight:400;font-size:46px;font-family:Open Gorton;fill:url(#fg_main);white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="66.19200000000001" text-anchor="middle" xml:space="preserve"><tspan>W</tspan></text>
+          <text style="fill: url(&quot;#fg_main&quot;); font-family: &quot;Open Gorton&quot;; font-size: 40px; text-anchor: middle;" xml:space="preserve" x="50" y="64.08">w</text>
+          <path style="fill: none; stroke-linecap: round; stroke-linejoin: round; stroke: url(&quot;#fg_main&quot;); stroke-width: 2.5px;" d="M 21.476 43.294 L 29.863 48.111 L 21.642 52.429">
+            <title>Eye</title>
+          </path>
+          <path style="fill: none; stroke-linecap: round; stroke-linejoin: round; stroke: url(&quot;#fg_main&quot;); transform-box: fill-box; transform-origin: 50% 50%; stroke-width: 2.5px;" d="M 70.137 52.429 L 78.524 47.612 L 70.303 43.294" transform="matrix(-1, 0, 0, -1, -0.000017, -0.000005)">
+            <title>Eye</title>
+          </path>
         </svg>
       </g>
     </g>
@@ -338,7 +406,6 @@
       <rect class="surface" width="100" height="100" />
       <g transform="">
         <svg id="icon_B" viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0">
-          <rect class="icon-bounding-box" width="100" height="100" fill="none" />
           <text style="font-weight:400;font-size:46px;font-family:Open Gorton;fill:url(#fg_main);white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="66.19200000000001" text-anchor="middle" xml:space="preserve"><tspan>B</tspan></text>
         </svg>
       </g>
@@ -350,7 +417,6 @@
       <rect class="surface" width="100" height="100" />
       <g transform="">
         <svg id="icon" viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0">
-          <rect class="icon-bounding-box" width="100" height="100" fill="none" />
           <text style="font-weight:400;font-size:46px;font-family:Open Gorton;fill:url(#fg_main);white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="66.19200000000001" text-anchor="middle" xml:space="preserve"><tspan /></text>
         </svg>
       </g>
@@ -362,7 +428,6 @@
       <rect class="surface" width="100" height="100" />
       <g transform="">
         <svg id="icon" viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0">
-          <rect class="icon-bounding-box" width="100" height="100" fill="none" />
           <text style="font-weight:400;font-size:46px;font-family:Open Gorton;fill:url(#fg_main);white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="66.19200000000001" text-anchor="middle" xml:space="preserve"><tspan /></text>
         </svg>
       </g>
@@ -374,7 +439,6 @@
       <rect class="surface" width="100" height="100" />
       <g transform="">
         <svg id="icon_J" viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0">
-          <rect class="icon-bounding-box" width="100" height="100" fill="none" />
           <text style="font-weight:400;font-size:46px;font-family:Open Gorton;fill:url(#fg_main);white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="66.19200000000001" text-anchor="middle" xml:space="preserve"><tspan>J</tspan></text>
         </svg>
       </g>
@@ -386,7 +450,6 @@
       <rect class="surface" width="100" height="100" />
       <g transform="">
         <svg id="icon_F" viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0">
-          <rect class="icon-bounding-box" width="100" height="100" fill="none" />
           <text style="font-weight:400;font-size:46px;font-family:Open Gorton;fill:url(#fg_main);white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="66.19200000000001" text-anchor="middle" xml:space="preserve"><tspan>F</tspan></text>
         </svg>
       </g>
@@ -398,7 +461,6 @@
       <rect class="surface" width="100" height="100" />
       <g transform="">
         <svg id="icon_U" viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0">
-          <rect class="icon-bounding-box" width="100" height="100" fill="none" />
           <text style="font-weight:400;font-size:46px;font-family:Open Gorton;fill:url(#fg_main);white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="66.19200000000001" text-anchor="middle" xml:space="preserve"><tspan>U</tspan></text>
         </svg>
       </g>
@@ -410,7 +472,6 @@
       <rect class="surface" width="100" height="100" />
       <g transform="">
         <svg id="icon_P" viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0">
-          <rect class="icon-bounding-box" width="100" height="100" fill="none" />
           <text style="font-weight:400;font-size:46px;font-family:Open Gorton;fill:url(#fg_main);white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="66.19200000000001" text-anchor="middle" xml:space="preserve"><tspan>P</tspan></text>
         </svg>
       </g>
@@ -422,7 +483,6 @@
       <rect class="surface" width="100" height="100" />
       <g transform="">
         <svg id="icon" viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0">
-          <rect class="icon-bounding-box" width="100" height="100" fill="none" />
           <text style="font-weight:400;font-size:46px;font-family:Open Gorton;fill:url(#fg_main);white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="66.19200000000001" text-anchor="middle" xml:space="preserve"><tspan /></text>
         </svg>
       </g>
@@ -434,7 +494,6 @@
       <rect class="surface" width="100" height="100" />
       <g transform="">
         <svg id="icon" viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0">
-          <rect class="icon-bounding-box" width="100" height="100" fill="none" />
           <text style="font-weight:400;font-size:46px;font-family:Open Gorton;fill:url(#fg_main);white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="66.19200000000001" text-anchor="middle" xml:space="preserve"><tspan /></text>
         </svg>
       </g>
@@ -445,9 +504,12 @@
     <g id="keycap-unshaded-28">
       <rect class="surface" width="100" height="100" />
       <g transform="">
-        <svg id="icon" viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0">
+        <svg id="icon_tab" viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0">
           <rect class="icon-bounding-box" width="100" height="100" fill="none" />
-          <text style="font-weight:400;font-size:46px;font-family:Open Gorton;fill:url(#fg_main);white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="66.19200000000001" text-anchor="middle" xml:space="preserve"><tspan /></text>
+          <path style="stroke: url(&quot;#fg_main&quot;); fill: none; stroke-linecap: round; stroke-width: 3px;" d="M 32.808 50 L 61.832 50" />
+          <path style="fill: none; stroke: url(&quot;#fg_main&quot;); stroke-linecap: round; stroke-width: 3px;" d="M 52.764 40.933 L 61.832 50" />
+          <path style="fill: none; stroke: url(&quot;#fg_main&quot;); stroke-linecap: round; stroke-width: 3px; transform-box: fill-box; transform-origin: 50% 50%;" d="M 52.764 59.067 L 61.832 50" transform="matrix(-1, 0, 0, -1, 0.000001, 0.000003)" />
+          <path style="stroke: url(&quot;#fg_main&quot;); fill: none; stroke-linecap: round; stroke-width: 3.5px; transform-origin: 65.1px 50px;" d="M 65.1 40.758 L 65.1 59.242" />
         </svg>
       </g>
     </g>
@@ -458,7 +520,6 @@
       <rect class="surface" width="100" height="100" />
       <g transform="">
         <svg id="icon_A" viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0">
-          <rect class="icon-bounding-box" width="100" height="100" fill="none" />
           <text style="font-weight:400;font-size:46px;font-family:Open Gorton;fill:url(#fg_main);white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="66.19200000000001" text-anchor="middle" xml:space="preserve"><tspan>A</tspan></text>
         </svg>
       </g>
@@ -470,7 +531,6 @@
       <rect class="surface" width="100" height="100" />
       <g transform="">
         <svg id="icon_S" viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0">
-          <rect class="icon-bounding-box" width="100" height="100" fill="none" />
           <text style="font-weight:400;font-size:46px;font-family:Open Gorton;fill:url(#fg_main);white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="66.19200000000001" text-anchor="middle" xml:space="preserve"><tspan>S</tspan></text>
         </svg>
       </g>
@@ -482,7 +542,6 @@
       <rect class="surface" width="100" height="100" />
       <g transform="">
         <svg id="icon_H" viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0">
-          <rect class="icon-bounding-box" width="100" height="100" fill="none" />
           <text style="font-weight:400;font-size:46px;font-family:Open Gorton;fill:url(#fg_main);white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="66.19200000000001" text-anchor="middle" xml:space="preserve"><tspan>H</tspan></text>
         </svg>
       </g>
@@ -494,7 +553,6 @@
       <rect class="surface" width="100" height="100" />
       <g transform="">
         <svg id="icon_T" viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0">
-          <rect class="icon-bounding-box" width="100" height="100" fill="none" />
           <text style="font-weight:400;font-size:46px;font-family:Open Gorton;fill:url(#fg_main);white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="66.19200000000001" text-anchor="middle" xml:space="preserve"><tspan>T</tspan></text>
         </svg>
       </g>
@@ -506,7 +564,6 @@
       <rect class="surface" width="100" height="100" />
       <g transform="">
         <svg id="icon_G" viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0">
-          <rect class="icon-bounding-box" width="100" height="100" fill="none" />
           <text style="font-weight:400;font-size:46px;font-family:Open Gorton;fill:url(#fg_main);white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="66.19200000000001" text-anchor="middle" xml:space="preserve"><tspan>G</tspan></text>
         </svg>
       </g>
@@ -517,11 +574,17 @@
     <g id="keycap-unshaded-34">
       <rect class="surface" width="100" height="100" />
       <g transform="">
-        <svg id="icon_example" viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" version="1.1" inkscape:label="icon" x="0" y="0">
-          <rect class="icon-bounding-box" width="100" height="100" fill="none" id="rect1" />
-          <circle style="fill:url(#fg_main)" id="path1" cx="24.292374" cy="36.607815" r="3.342242" />
-          <circle style="fill:url(#fg_main);stroke:none" id="circle1" cx="75.207626" cy="36.607815" r="3.342242" />
-          <path style="fill:none;stroke:url(#fg_main);stroke-width:3.08;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1" d="M 28.417826,51.396138 C 40.486805,60.070933 61.300572,60.040329 72.607439,50" id="path2" ns0:nodetypes="cc" />
+        <svg id="icon_esc" viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0">
+          <text style="fill: url(&quot;#bg_main&quot;); font-family: &quot;Open Gorton&quot;; font-size: 23px; font-weight: 700; text-anchor: middle; white-space: pre;" xml:space="preserve" x="50" y="58.411">ESC</text>
+          <line style="fill: none; stroke-linejoin: round; stroke-width: 4px; stroke-linecap: square; stroke: url(&quot;#bg_main&quot;);" x1="10" y1="0" x2="10" y2="100">
+            <title>Bar</title>
+          </line>
+          <line style="fill: none; stroke-linejoin: round; stroke-width: 4px; stroke-linecap: square; stroke: url(&quot;#bg_main&quot;);" x1="90.001" y1="0" x2="90.001" y2="100">
+            <title>Bar</title>
+          </line>
+          <path style="fill: none; stroke-linejoin: round; stroke-width: 4px; stroke-linecap: round; stroke: url(&quot;#bg_main&quot;);" d="M 30 0 C 30 0 28.891 8.397 28.891 13.87 C 28.891 24.264 25.627 19.46 23.317 30.895 M 23.927 60.79 C 25.221 67.729 27.894 66.383 28.67 76.387 C 29.446 86.391 30 100 30 100" />
+          <path style="fill: none; stroke-linejoin: round; stroke-width: 4px; stroke-linecap: round; stroke: url(&quot;#bg_main&quot;);" d="M 50 0 L 50 15.442 C 50 20.3 50.466 22.589 51.392 26.65 M 52.749 68.63 C 50.71 72.72 50 73.196 50 77.832 L 50 100" />
+          <path style="fill: none; stroke-linejoin: round; stroke-width: 4px; stroke-linecap: round; stroke: url(&quot;#bg_main&quot;);" d="M 70 0 L 70 26.079 C 69.908 28.521 69.389 29.992 67.415 32.079 M 64.818 66.67 C 64.034 68.266 64.167 70.586 66.387 72.385 C 69.212 74.674 70.619 74.227 70.619 79.479 C 70.619 84.289 70 100 70 100" />
         </svg>
       </g>
     </g>
@@ -531,9 +594,37 @@
     <g id="keycap-unshaded-35">
       <rect class="surface" width="100" height="100" />
       <g transform="">
-        <svg id="icon" viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0">
-          <rect class="icon-bounding-box" width="100" height="100" fill="none" />
-          <text style="font-weight:400;font-size:46px;font-family:Open Gorton;fill:url(#fg_main);white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="66.19200000000001" text-anchor="middle" xml:space="preserve"><tspan /></text>
+        <svg id="icon_play" viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" transform="matrix(1, 0, 0, 1, 0.29027465163380306, -0.5805493032676043)" x="0" y="0">
+          <g>
+            <title>Record</title>
+            <ellipse style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 3px; fill: url(&quot;#color-0&quot;); stroke: url(&quot;#color-1&quot;);" cx="50" cy="50" rx="28" ry="28" />
+            <path style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 10px; fill: url(&quot;#color-1&quot;);" transform="matrix(0.148844, 0, 0, 0.148844, -130.640943, -13.4205)" d="M 1050.709765142 332.029 A 188.116 188.116 0 0 1 1213.623 237.971 L 1213.623 426.087 Z" bx:shape="pie 1213.623 426.087 0 188.116 300 360 1@cf35a006">
+              <title>HiglightBG</title>
+            </path>
+            <path style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 10px; fill: url(&quot;#color-1&quot;);" transform="matrix(0.148844, 0, 0, 0.148844, -130.640943, -13.4205)" d="M 1376.536234858 520.145 A 188.116 188.116 0 0 1 1213.623 614.203 L 1213.623 426.087 Z" bx:shape="pie 1213.623 426.087 0 188.116 120 180 1@5700c6e3">
+              <title>HiglightBG</title>
+            </path>
+            <ellipse style="stroke-linecap: round; stroke-linejoin: round; paint-order: stroke; stroke-width: 11px; fill: url(&quot;#fg_orange&quot;);" cx="50" cy="50" rx="12" ry="12">
+              <title>Center</title>
+            </ellipse>
+            <g>
+              <title>Rings</title>
+              <ellipse style="stroke-linecap: round; stroke-linejoin: round; fill: none; stroke: rgb(230, 218, 238); stroke-width: 2px; visibility: hidden;" cx="50" cy="50" rx="23" ry="23" />
+              <ellipse style="stroke-linecap: round; stroke-linejoin: round; fill: none; stroke: rgb(230, 218, 238); stroke-width: 2px; visibility: hidden;" cx="50" cy="50" rx="19" ry="19" />
+              <ellipse style="stroke-linecap: round; stroke-linejoin: round; fill: none; stroke: rgb(230, 218, 238); stroke-width: 2px; visibility: hidden;" cx="50" cy="50" rx="15" ry="15" />
+              <path d="M 68.745 63.331 C 66.859 65.979 64.426 68.209 61.611 69.859 M 57.869 71.619 C 55.75 72.39 53.486 72.859 51.129 72.973 M 31.642 36.142 C 33.017 34.324 34.655 32.717 36.5 31.377 M 38.551 30.048 C 41.545 28.326 44.964 27.259 48.611 27.042 M 34.2 39.444 C 34.904 38.392 35.711 37.414 36.606 36.524 M 38.763 34.677 C 41.021 33.019 43.658 31.848 46.521 31.318 M 65.991 60.264 C 65.033 61.753 63.873 63.1 62.55 64.265 M 58.144 67.171 C 56.264 68.064 54.215 68.658 52.058 68.89 M 37.527 41.666 C 40.058 37.885 44.262 35.319 49.08 35.028 M 62.473 58.334 C 60.936 60.63 58.782 62.478 56.248 63.641 M 53.646 64.554 C 52.479 64.845 51.257 65 50 65 C 49.753 65 49.508 64.994 49.264 64.982" style="stroke-linecap: round; stroke-linejoin: round; fill: none; stroke-width: 2.5px; stroke: rgb(235, 225, 246);">
+                <title>Groves</title>
+              </path>
+            </g>
+          </g>
+          <g style="" transform="matrix(0.550031, 0, 0, 0.550031, 22.565954, 22.498226)">
+            <path d="M 24.631 36.638 L 33.252 48.46 L 16.01 48.46 L 24.631 36.638 Z" bx:shape="triangle 16.01 36.638 17.242 11.822 0.5 0 1@eae8573c" style="stroke-linecap: round; stroke-linejoin: round; transform-origin: 24.631px 42.549px; stroke-width: 16.3627px; fill: none; stroke: url(&quot;#fg_orange&quot;);" transform="matrix(0, 1, -1, 0, 16.879996, 7.450469)" />
+            <path d="M 55.694 41.46 L 55.694 58.54 L 55.694 41.46 Z" style="stroke-linejoin: round; stroke-width: 16.3627px; fill: none; stroke: url(&quot;#fg_orange&quot;);" transform="matrix(1.000001, 0, 0, 1, -0.000047, -0.00003)" />
+            <path d="M 64.7 41.458 L 64.7 58.542 L 64.7 41.458 Z" style="stroke-linejoin: round; stroke-width: 16.3627px; fill: none; stroke: url(&quot;#fg_orange&quot;);" transform="matrix(1, 0, 0, 1, -0.000051, -0.000013)" />
+            <path d="M 24.631 36.638 L 33.252 48.46 L 16.01 48.46 L 24.631 36.638 Z" bx:shape="triangle 16.01 36.638 17.242 11.822 0.5 0 1@eae8573c" style="stroke-linecap: round; stroke-linejoin: round; fill: url(&quot;#bg_main&quot;); stroke: url(&quot;#bg_main&quot;); stroke-width: 4px; transform-box: fill-box; transform-origin: 50% 50%;" transform="matrix(0, 1, -1, 0, 16.879996, 7.450478)" />
+            <path d="M 55.694 41.46 L 55.694 58.54 L 55.694 41.46 Z" style="stroke-linejoin: round; fill: url(&quot;#bg_main&quot;); stroke: url(&quot;#bg_main&quot;); stroke-width: 5.5px;" />
+            <path d="M 64.7 41.458 L 64.7 58.542 L 64.7 41.458 Z" style="stroke-linejoin: round; fill: url(&quot;#bg_main&quot;); stroke: url(&quot;#bg_main&quot;); stroke-width: 5.5px;" />
+          </g>
         </svg>
       </g>
     </g>
@@ -544,7 +635,6 @@
       <rect class="surface" width="100" height="100" />
       <g transform="">
         <svg id="icon_Y" viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0">
-          <rect class="icon-bounding-box" width="100" height="100" fill="none" />
           <text style="font-weight:400;font-size:46px;font-family:Open Gorton;fill:url(#fg_main);white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="66.19200000000001" text-anchor="middle" xml:space="preserve"><tspan>Y</tspan></text>
         </svg>
       </g>
@@ -556,7 +646,6 @@
       <rect class="surface" width="100" height="100" />
       <g transform="">
         <svg id="icon_N" viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0">
-          <rect class="icon-bounding-box" width="100" height="100" fill="none" />
           <text style="font-weight:400;font-size:46px;font-family:Open Gorton;fill:url(#fg_main);white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="66.19200000000001" text-anchor="middle" xml:space="preserve"><tspan>N</tspan></text>
         </svg>
       </g>
@@ -568,7 +657,6 @@
       <rect class="surface" width="100" height="100" />
       <g transform="">
         <svg id="icon_E" viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0">
-          <rect class="icon-bounding-box" width="100" height="100" fill="none" />
           <text style="font-weight:400;font-size:46px;font-family:Open Gorton;fill:url(#fg_main);white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="66.19200000000001" text-anchor="middle" xml:space="preserve"><tspan>E</tspan></text>
         </svg>
       </g>
@@ -580,7 +668,6 @@
       <rect class="surface" width="100" height="100" />
       <g transform="">
         <svg id="icon_O" viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0">
-          <rect class="icon-bounding-box" width="100" height="100" fill="none" />
           <text style="font-weight:400;font-size:46px;font-family:Open Gorton;fill:url(#fg_main);white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="66.19200000000001" text-anchor="middle" xml:space="preserve"><tspan>O</tspan></text>
         </svg>
       </g>
@@ -592,20 +679,31 @@
       <rect class="surface" width="100" height="100" />
       <g transform="">
         <svg id="icon_I" viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0">
-          <rect class="icon-bounding-box" width="100" height="100" fill="none" />
           <text style="font-weight:400;font-size:46px;font-family:Open Gorton;fill:url(#fg_main);white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="66.19200000000001" text-anchor="middle" xml:space="preserve"><tspan>I</tspan></text>
         </svg>
       </g>
     </g>
     <use href="#keycap-unshaded-40" mask="url(#1u-shading)" filter="url(#sideShading)" />
   </g>
-  <g class="keycap-color-bg_accent" mask="url(#1u-base)" transform="translate(1700, 200)">
+  <g class="keycap-color-bg_focus" mask="url(#1u-base)" transform="translate(1700, 200)">
     <g id="keycap-unshaded-41">
       <rect class="surface" width="100" height="100" />
       <g transform="">
-        <svg id="icon" viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0">
-          <rect class="icon-bounding-box" width="100" height="100" fill="none" />
-          <text style="font-weight:400;font-size:46px;font-family:Open Gorton;fill:url(#fg_main);white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="66.19200000000001" text-anchor="middle" xml:space="preserve"><tspan /></text>
+        <svg id="icon_enter" viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" transform="matrix(1.0000000000000002, 0, 0, 1.0000000000000002, 1.290542755007266, -1.5872811004057557)" x="0" y="0">
+          <g transform="matrix(1, 0, 0, 1, 14.762421, 4.016501)">
+            <title>Enter</title>
+            <path style="fill: none; stroke-linecap: round; stroke-linejoin: round; stroke-width: 3px; stroke: url(&quot;#bg_main&quot;);" d="M 59.361 45.707 L 59.361 48.588 C 59.361 50.091 58.049 51.261 56.601 51.261 L 37.586 51.261" />
+            <path style="fill: none; stroke-linecap: round; stroke-width: 3px; stroke: url(&quot;#bg_main&quot;); transform-box: fill-box; transform-origin: 50% 50%;" d="M 37.586 51.261 L 42.586 46.261" transform="matrix(-1, 0, 0, -1, -0.000006, 0)" />
+            <path style="fill: none; stroke-linecap: round; stroke-width: 3px; stroke: url(&quot;#bg_main&quot;); transform-origin: 40.086px 53.76px;" d="M 37.586 51.261 L 42.586 56.26" />
+          </g>
+          <g style="" transform="matrix(-1, 0.118846, 0, 1, 96.718242, -11.773461)">
+            <title>Door</title>
+            <path style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 3px; fill: url(&quot;#bg_accent&quot;);" d="M 57.319 69.514 L -3.282 112.163 L 55.599 105.166 L 70.627 69.466 L 57.319 69.514 Z" />
+            <rect x="55.599" y="41.676" width="16.419" height="28.054" style="fill: url(&quot;#fg_lighter&quot;);" />
+            <polyline style="fill: none; stroke-linejoin: round; stroke: url(&quot;#bg_main&quot;); stroke-width: 2.99993px;" points="72.018 69.73 72.018 41.676 55.599 41.676 55.599 69.73">
+              <title>Frame</title>
+            </polyline>
+          </g>
         </svg>
       </g>
     </g>
@@ -616,7 +714,6 @@
       <rect class="surface" width="100" height="100" />
       <g transform="">
         <svg id="icon" viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0">
-          <rect class="icon-bounding-box" width="100" height="100" fill="none" />
           <text style="font-weight:400;font-size:46px;font-family:Open Gorton;fill:url(#fg_main);white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="66.19200000000001" text-anchor="middle" xml:space="preserve"><tspan /></text>
         </svg>
       </g>
@@ -628,7 +725,6 @@
       <rect class="surface" width="100" height="100" />
       <g transform="">
         <svg id="icon_Z" viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0">
-          <rect class="icon-bounding-box" width="100" height="100" fill="none" />
           <text style="font-weight:400;font-size:46px;font-family:Open Gorton;fill:url(#fg_main);white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="66.19200000000001" text-anchor="middle" xml:space="preserve"><tspan>Z</tspan></text>
         </svg>
       </g>
@@ -640,7 +736,6 @@
       <rect class="surface" width="100" height="100" />
       <g transform="">
         <svg id="icon_X" viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0">
-          <rect class="icon-bounding-box" width="100" height="100" fill="none" />
           <text style="font-weight:400;font-size:46px;font-family:Open Gorton;fill:url(#fg_main);white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="66.19200000000001" text-anchor="middle" xml:space="preserve"><tspan>X</tspan></text>
         </svg>
       </g>
@@ -652,7 +747,6 @@
       <rect class="surface" width="100" height="100" />
       <g transform="">
         <svg id="icon_M" viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0">
-          <rect class="icon-bounding-box" width="100" height="100" fill="none" />
           <text style="font-weight:400;font-size:46px;font-family:Open Gorton;fill:url(#fg_main);white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="66.19200000000001" text-anchor="middle" xml:space="preserve"><tspan>M</tspan></text>
         </svg>
       </g>
@@ -664,7 +758,6 @@
       <rect class="surface" width="100" height="100" />
       <g transform="">
         <svg id="icon_C" viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0">
-          <rect class="icon-bounding-box" width="100" height="100" fill="none" />
           <text style="font-weight:400;font-size:46px;font-family:Open Gorton;fill:url(#fg_main);white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="66.19200000000001" text-anchor="middle" xml:space="preserve"><tspan>C</tspan></text>
         </svg>
       </g>
@@ -676,7 +769,6 @@
       <rect class="surface" width="100" height="100" />
       <g transform="">
         <svg id="icon_V" viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0">
-          <rect class="icon-bounding-box" width="100" height="100" fill="none" />
           <text style="font-weight:400;font-size:46px;font-family:Open Gorton;fill:url(#fg_main);white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="66.19200000000001" text-anchor="middle" xml:space="preserve"><tspan>V</tspan></text>
         </svg>
       </g>
@@ -688,7 +780,6 @@
       <rect class="surface" width="100" height="100" />
       <g transform="">
         <svg id="icon_K" viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0">
-          <rect class="icon-bounding-box" width="100" height="100" fill="none" />
           <text style="font-weight:400;font-size:46px;font-family:Open Gorton;fill:url(#fg_main);white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="66.19200000000001" text-anchor="middle" xml:space="preserve"><tspan>K</tspan></text>
         </svg>
       </g>
@@ -700,7 +791,6 @@
       <rect class="surface" width="100" height="100" />
       <g transform="">
         <svg id="icon_L" viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0">
-          <rect class="icon-bounding-box" width="100" height="100" fill="none" />
           <text style="font-weight:400;font-size:46px;font-family:Open Gorton;fill:url(#fg_main);white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="66.19200000000001" text-anchor="middle" xml:space="preserve"><tspan>L</tspan></text>
         </svg>
       </g>
@@ -713,7 +803,8 @@
       <g transform="">
         <svg id="icon_." viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0">
           <rect class="icon-bounding-box" width="100" height="100" fill="none" />
-          <text style="font-weight:400;font-size:46px;font-family:Open Gorton;fill:url(#fg_main);white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="66.19200000000001" text-anchor="middle" xml:space="preserve"><tspan>.</tspan></text>
+          <text style="font-weight: 400; font-size: 46px; font-family: &quot;Open Gorton&quot;; fill: url(&quot;#fg_main&quot;); white-space: pre;" x="50" y="68.192" text-anchor="middle" xml:space="preserve"><tspan style="font-size: 46px; word-spacing: 0px;">.</tspan></text>
+          <text style="fill: url(&quot;#fg_main&quot;); font-family: &quot;Open Gorton&quot;; font-size: 32px; text-anchor: middle;" xml:space="preserve" x="50" y="48.192">&gt;</text>
         </svg>
       </g>
     </g>
@@ -725,7 +816,8 @@
       <g transform="">
         <svg id="icon_," viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0">
           <rect class="icon-bounding-box" width="100" height="100" fill="none" />
-          <text style="font-weight:400;font-size:46px;font-family:Open Gorton;fill:url(#fg_main);white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="66.19200000000001" text-anchor="middle" xml:space="preserve"><tspan>,</tspan></text>
+          <text style="font-weight: 400; font-size: 46px; font-family: &quot;Open Gorton&quot;; fill: url(&quot;#fg_main&quot;); white-space: pre;" x="50" y="68.192" text-anchor="middle" xml:space="preserve"><tspan style="font-size: 46px; word-spacing: 0px;">,</tspan></text>
+          <text style="fill: url(&quot;#fg_main&quot;); font-family: &quot;Open Gorton&quot;; font-size: 32px; text-anchor: middle;" xml:space="preserve" x="50" y="48.224">&lt;</text>
         </svg>
       </g>
     </g>
@@ -736,20 +828,19 @@
       <rect class="surface" width="100" height="100" />
       <g transform="">
         <svg id="icon" viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0">
-          <rect class="icon-bounding-box" width="100" height="100" fill="none" />
           <text style="font-weight:400;font-size:46px;font-family:Open Gorton;fill:url(#fg_main);white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="66.19200000000001" text-anchor="middle" xml:space="preserve"><tspan /></text>
         </svg>
       </g>
     </g>
     <use href="#keycap-unshaded-52" mask="url(#1u-shading)" filter="url(#sideShading)" />
   </g>
-  <g class="keycap-color-bg_accent" mask="url(#1u-base)" transform="translate(1700, 300)">
+  <g class="keycap-color-bg_focus" mask="url(#1u-base)" transform="translate(1700, 300)">
     <g id="keycap-unshaded-53">
       <rect class="surface" width="100" height="100" />
       <g transform="">
-        <svg id="icon" viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0">
-          <rect class="icon-bounding-box" width="100" height="100" fill="none" />
-          <text style="font-weight:400;font-size:46px;font-family:Open Gorton;fill:url(#fg_main);white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="66.19200000000001" text-anchor="middle" xml:space="preserve"><tspan /></text>
+        <svg id="icon_below_enter" viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" transform="matrix(1, 0, 0, 1, -71.71042927940482, -70.46318299412367)" x="0" y="0">
+          <path style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 3px; fill: url(&quot;#bg_accent&quot;);" d="M 39.399 -35.448 L 100 -0.001 L 41.119 0 L 26.091 -33.914 L 39.399 -35.448 Z" />
+          <path style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px; fill: url(&quot;#bg_accent&quot;);" d="M 85.431 100 L 100 100 L 99.975 -0.209 L 41.119 0 L 41.119 0 L 85.431 100 Z" />
         </svg>
       </g>
     </g>
@@ -772,7 +863,7 @@
           <ellipse style="fill: url(&quot;#bg_focus&quot;);" cx="63.721" cy="45.64" rx="1.98" ry="1.98">
             <title>Eye</title>
           </ellipse>
-          <path style="fill: url(&quot;#bg_accent&quot;); stroke: url(&quot;#fg_main&quot;); stroke-width: 3px;" d="M 0 30.301 L 100 67.103 L 100 100 L 0 100 L 0 30.301 Z">
+          <path style="stroke: url(&quot;#fg_main&quot;); stroke-width: 3px; fill: url(&quot;#bg_main&quot;);" d="M 0 30.301 L 100 67.103 L 100 100 L 0 100 L 0 30.301 Z">
             <title>Table</title>
           </path>
           <path style="stroke-linecap: round; stroke-linejoin: round; fill: none; stroke: url(&quot;#fg_main&quot;); stroke-width: 2px; transform-box: fill-box; transform-origin: 50% 50%;" d="M 50.437 41.42 C 50.972 42.651 52.585 43.192 54.142 42.504 C 54.573 43.793 56.168 45.109 58.485 44.621" transform="matrix(0.99889, -0.04711, 0.04711, 0.99889, 0, 0)">
@@ -855,7 +946,6 @@
       <rect class="surface" width="100" height="100" />
       <g transform="">
         <svg id="icon" viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0">
-          <rect class="icon-bounding-box" width="100" height="100" fill="none" />
           <text style="font-weight:400;font-size:46px;font-family:Open Gorton;fill:url(#fg_main);white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="66.19200000000001" text-anchor="middle" xml:space="preserve"><tspan /></text>
         </svg>
       </g>
@@ -867,7 +957,6 @@
       <rect class="surface" width="100" height="100" />
       <g transform="">
         <svg id="icon" viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0">
-          <rect class="icon-bounding-box" width="100" height="100" fill="none" />
           <text style="font-weight:400;font-size:46px;font-family:Open Gorton;fill:url(#fg_main);white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="66.19200000000001" text-anchor="middle" xml:space="preserve"><tspan /></text>
         </svg>
       </g>
@@ -879,7 +968,6 @@
       <rect class="surface" width="100" height="100" />
       <g transform="">
         <svg id="icon" viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0">
-          <rect class="icon-bounding-box" width="100" height="100" fill="none" />
           <text style="font-weight:400;font-size:46px;font-family:Open Gorton;fill:url(#fg_main);white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="66.19200000000001" text-anchor="middle" xml:space="preserve"><tspan /></text>
         </svg>
       </g>
@@ -891,7 +979,6 @@
       <rect class="surface" width="100" height="100" />
       <g transform="">
         <svg id="icon" viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0">
-          <rect class="icon-bounding-box" width="100" height="100" fill="none" />
           <text style="font-weight:400;font-size:46px;font-family:Open Gorton;fill:url(#fg_main);white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="66.19200000000001" text-anchor="middle" xml:space="preserve"><tspan /></text>
         </svg>
       </g>
@@ -903,7 +990,6 @@
       <rect class="surface" width="100" height="100" />
       <g transform="">
         <svg id="icon" viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0">
-          <rect class="icon-bounding-box" width="100" height="100" fill="none" />
           <text style="font-weight:400;font-size:46px;font-family:Open Gorton;fill:url(#fg_main);white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="66.19200000000001" text-anchor="middle" xml:space="preserve"><tspan /></text>
         </svg>
       </g>
@@ -915,7 +1001,6 @@
       <rect class="surface" width="100" height="100" />
       <g transform="">
         <svg id="icon" viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0">
-          <rect class="icon-bounding-box" width="100" height="100" fill="none" />
           <text style="font-weight:400;font-size:46px;font-family:Open Gorton;fill:url(#fg_main);white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="66.19200000000001" text-anchor="middle" xml:space="preserve"><tspan /></text>
         </svg>
       </g>
@@ -927,7 +1012,6 @@
       <rect class="surface" width="100" height="100" />
       <g transform="">
         <svg id="icon" viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0">
-          <rect class="icon-bounding-box" width="100" height="100" fill="none" />
           <text style="font-weight:400;font-size:46px;font-family:Open Gorton;fill:url(#fg_main);white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="66.19200000000001" text-anchor="middle" xml:space="preserve"><tspan /></text>
         </svg>
       </g>
@@ -939,20 +1023,19 @@
       <rect class="surface" width="100" height="100" />
       <g transform="">
         <svg id="icon" viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0">
-          <rect class="icon-bounding-box" width="100" height="100" fill="none" />
           <text style="font-weight:400;font-size:46px;font-family:Open Gorton;fill:url(#fg_main);white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="66.19200000000001" text-anchor="middle" xml:space="preserve"><tspan /></text>
         </svg>
       </g>
     </g>
     <use href="#keycap-unshaded-62" mask="url(#1u-shading)" filter="url(#sideShading)" />
   </g>
-  <g class="keycap-color-bg_accent" mask="url(#1u-base)" transform="translate(1700, 400)">
+  <g class="keycap-color-bg_focus" mask="url(#1u-base)" transform="translate(1700, 400)">
     <g id="keycap-unshaded-63">
       <rect class="surface" width="100" height="100" />
       <g transform="">
-        <svg id="icon" viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0">
-          <rect class="icon-bounding-box" width="100" height="100" fill="none" />
-          <text style="font-weight:400;font-size:46px;font-family:Open Gorton;fill:url(#fg_main);white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="66.19200000000001" text-anchor="middle" xml:space="preserve"><tspan /></text>
+        <svg id="icon_below_enter2" viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" transform="matrix(1, 0, 0, 1, -71.71042927940482, -70.46318299412367)" x="0" y="0">
+          <path style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px; fill: url(&quot;#bg_accent&quot;);" d="M 85.431 0 L 100 0 L 99.975 -100.21 L 41.119 -100 L 85.431 0 Z" />
+          <path style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px; fill: url(&quot;#bg_accent&quot;);" d="M 100 32.878 L 85.431 0 L 100 0 Z" />
         </svg>
       </g>
     </g>
@@ -963,7 +1046,6 @@
       <rect class="surface" width="200" height="100" />
       <g transform="">
         <svg id="icon" viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="50" y="0">
-          <rect class="icon-bounding-box" width="100" height="100" fill="none" />
           <text style="font-weight:400;font-size:46px;font-family:Open Gorton;fill:url(#fg_main);white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="66.19200000000001" text-anchor="middle" xml:space="preserve"><tspan /></text>
         </svg>
       </g>
@@ -975,7 +1057,6 @@
       <rect class="surface" width="150" height="100" />
       <g transform="translate(0, 100) rotate(-90)">
         <svg id="icon_Sh" viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="25">
-          <rect class="icon-bounding-box" width="100" height="100" fill="none" />
           <text style="font-weight:400;font-size:46px;font-family:Open Gorton;fill:url(#fg_main);white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="66.19200000000001" text-anchor="middle" xml:space="preserve"><tspan>Sh</tspan></text>
         </svg>
       </g>
@@ -987,7 +1068,6 @@
       <rect class="surface" width="150" height="100" />
       <g transform="translate(0, 100) rotate(-90)">
         <svg id="icon_Ct" viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="25">
-          <rect class="icon-bounding-box" width="100" height="100" fill="none" />
           <text style="font-weight:400;font-size:46px;font-family:Open Gorton;fill:url(#fg_main);white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="66.19200000000001" text-anchor="middle" xml:space="preserve"><tspan>Ct</tspan></text>
         </svg>
       </g>
@@ -999,7 +1079,6 @@
       <rect class="surface" width="150" height="100" />
       <g transform="translate(0, 100) rotate(-90)">
         <svg id="icon_Al" viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="25">
-          <rect class="icon-bounding-box" width="100" height="100" fill="none" />
           <text style="font-weight:400;font-size:46px;font-family:Open Gorton;fill:url(#fg_main);white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="66.19200000000001" text-anchor="middle" xml:space="preserve"><tspan>Al</tspan></text>
         </svg>
       </g>
@@ -1010,9 +1089,223 @@
     <g id="keycap-unshaded-68">
       <rect class="surface" width="200" height="100" />
       <g transform="">
-        <svg id="icon_Super" viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="50" y="0">
-          <rect class="icon-bounding-box" width="100" height="100" fill="none" />
-          <text style="font-weight:400;font-size:46px;font-family:Open Gorton;fill:url(#fg_main);white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="66.19200000000001" text-anchor="middle" xml:space="preserve"><tspan>Super</tspan></text>
+        <svg id="icon_super" viewBox="0 0 200 100" width="200.0" height="100.0" style="overflow:visible;" transform="matrix(1, 0, 0, 0.9999999999999999, 14.785905464222736, 9.023905317410456)" x="0" y="0">
+          <rect class="icon-bounding-box" width="200" height="100" style="fill: url(&quot;#bg_focus&quot;);" y="0.036">
+            <title>BG</title>
+          </rect>
+          <use href="#paw_print" width="7" height="6.5" transform="matrix(0.5253768563270569, -1.3284560441970825, 1.3284560441970825, 0.5253768563270569, 172.52984292003538, 49.25199415279358)" style="fill: url(&quot;#fg_lighter&quot;); transform-box: fill-box; transform-origin: 50% 50%;" />
+          <g transform="matrix(1, 0, 0, 1, 57.983207, -2.939922)">
+            <title>Cat</title>
+            <path style="stroke-linecap: round; stroke-linejoin: round; fill: url(&quot;#bg_main&quot;); stroke-width: 2px;" d="M 72.976 31.177 C 74.479 31.995 74.656 32.304 77.259 32.823 C 82.721 33.912 84.419 33.763 88.753 33.666 C 92.398 33.584 94.536 32.578 99.061 33.235 C 104.865 34.078 105.939 38.393 105.939 38.393 L 106.414 45.357 L 95.873 54.617 C 93.681 54.996 90.69 55.265 88.631 55.32 C 82.679 55.479 80.763 55.616 75.863 54.769 C 65.443 53.922 70.933 53.691 65.26 53.783 C 62.67 53.335 60.201 52.553 58.722 51.792 C 58.661 51.8 55.517 41.971 55.517 41.971 C 52.748 40.836 54.019 30.687 55.478 29.115 C 56.23 28.671 72.635 29.443 72.976 31.177 Z">
+              <title>Body BG</title>
+            </path>
+            <path style="stroke-linecap: round; stroke-linejoin: round; fill: url(&quot;#bg_main&quot;); stroke-width: 2px; stroke: url(&quot;#bg_focus&quot;);" d="M 73.618 33.684 C 73.633 30.408 72.106 26.928 71.06 26.657 C 70.014 26.386 67.406 27.318 66.602 27.099 C 64.223 26.45 61.61 25.241 59.239 25.94 L 54.337 24.461 C 53.43 26.252 54.006 28.124 54.771 28.968 M 55.05 28.91 C 53.591 30.482 53.223 31.873 53.107 32.626 C 52.053 32.858 50.789 34.611 50.88 36.576 C 51.033 39.879 56.514 44.514 63.747 43.474">
+              <title>Head</title>
+            </path>
+            <g style="visibility: hidden;">
+              <title>Thin Left Eye</title>
+              <ellipse style="fill: url(&quot;#bg_main&quot;); stroke: url(&quot;#bg_focus&quot;); stroke-width: 0.5px;" cx="56.9" cy="33.946" rx="1.7" ry="1.8" />
+              <path d="M 57.363 33.722 C 57.481 34.807 57.136 35.542 56.174 35.537 C 55.213 35.531 55.119 34.929 55.119 33.936 C 55.119 32.944 55.439 32.238 56.336 32.372 C 57.233 32.506 57.289 33.042 57.363 33.722 Z" style="fill: url(&quot;#bg_focus&quot;);">
+                <title>Pupil</title>
+              </path>
+              <ellipse style="fill: url(&quot;#bg_main&quot;);" cx="57.08" cy="33.18" rx="0.247" ry="0.275">
+                <title>Highlight</title>
+              </ellipse>
+            </g>
+            <g transform="matrix(1, 0, 0, 1, 6.683798, 0.536731)" style="visibility: hidden;">
+              <title>Thin Right Eye</title>
+              <ellipse style="fill: url(&quot;#bg_main&quot;); stroke-width: 0.5px; stroke: url(&quot;#bg_focus&quot;);" cx="60.306" cy="33.488" rx="2.095" ry="1.797" transform="matrix(0.99967, -0.025697, 0.025697, 0.99967, -3.164418, 2.456059)" />
+              <path d="M 58.539 34.18 C 58.681 35.265 58.265 36 57.106 35.995 C 55.948 35.99 55.833 35.387 55.833 34.395 C 55.833 33.402 56.22 32.696 57.301 32.83 C 58.383 32.964 58.45 33.5 58.539 34.18 Z" style="transform-box: fill-box; transform-origin: 50% 50%; stroke-width: 2px; fill: url(&quot;#bg_focus&quot;);" transform="matrix(0.99967, -0.025697, 0.025697, 0.99967, 0, 0)">
+                <title>Pupil</title>
+              </path>
+              <ellipse style="fill: url(&quot;#bg_main&quot;); stroke-width: 2px;" cx="58.18" cy="33.51" rx="0.247" ry="0.275">
+                <title>Highlight</title>
+              </ellipse>
+            </g>
+            <g style="opacity: 0.44; visibility: hidden;">
+              <title>Outlined Left Eye</title>
+              <ellipse style="fill: url(&quot;#bg_main&quot;); stroke: url(&quot;#bg_focus&quot;);" cx="56.9" cy="33.946" rx="1.9" ry="2" />
+              <path d="M 57.363 33.722 C 57.481 34.807 57.136 35.542 56.174 35.537 C 55.213 35.531 55.119 34.929 55.119 33.936 C 55.119 32.944 55.439 32.238 56.336 32.372 C 57.233 32.506 57.289 33.042 57.363 33.722 Z" style="fill: url(&quot;#bg_focus&quot;);">
+                <title>Pupil</title>
+              </path>
+              <ellipse style="fill: url(&quot;#bg_main&quot;);" cx="57.08" cy="33.18" rx="0.247" ry="0.275">
+                <title>Highlight</title>
+              </ellipse>
+            </g>
+            <g transform="matrix(1, 0, 0, 1, 6.684, 0.537)" style="opacity: 0.44; visibility: hidden;">
+              <title>Outlined Right Eye</title>
+              <ellipse style="fill: url(&quot;#bg_main&quot;); stroke: url(&quot;#bg_focus&quot;);" cx="60.306" cy="33.488" rx="2.392" ry="2.05" transform="matrix(0.99967, -0.025697, 0.025697, 0.99967, -3.164418, 2.456059)" />
+              <path d="M 58.539 34.18 C 58.681 35.265 58.265 36 57.106 35.995 C 55.948 35.99 55.833 35.387 55.833 34.395 C 55.833 33.402 56.22 32.696 57.301 32.83 C 58.383 32.964 58.45 33.5 58.539 34.18 Z" style="transform-box: fill-box; transform-origin: 50% 50%; stroke-width: 2px; fill: url(&quot;#bg_focus&quot;);" transform="matrix(0.99967, -0.025697, 0.025697, 0.99967, 0, 0)">
+                <title>Pupil</title>
+              </path>
+              <ellipse style="fill: url(&quot;#bg_main&quot;); stroke-width: 2px;" cx="58.18" cy="33.51" rx="0.247" ry="0.275">
+                <title>Highlight</title>
+              </ellipse>
+            </g>
+            <use href="#eye" width="1.9588000774383545" height="3.100800037384033" transform="matrix(1.210901, 0.109498, -0.13237, 1.208833, 55.69712, 32.017681)" style="transform-box: fill-box; transform-origin: 50% 50%;">
+              <title>Left Eye</title>
+            </use>
+            <use href="#eye" width="1.9588000774383545" height="3.100800037384033" transform="matrix(1.321287, -0.025191, -0.046291, 1.216945, 61.915335, 33.502525)" style="transform-origin: 0.979px 1.55px;">
+              <title>Right Eye</title>
+            </use>
+            <g style="transform-origin: 56.522px 33.941px; visibility: hidden;" transform="matrix(0.999547, 0.030088, -0.030087, 0.999547, 0, 0)">
+              <title>Left Eye</title>
+            </g>
+            <g style="transform-origin: 56.522px 33.941px; visibility: hidden;" transform="matrix(1.199279, 0.009282, -0.007739, 0.99997, 7.640338, 1.023888)">
+              <title>Right Eye</title>
+              <ellipse style="stroke-width: 0.5px; fill: url(&quot;#bg_focus&quot;);" cx="56.522" cy="33.941" rx="0.934" ry="1.523">
+                <title>Pupil</title>
+              </ellipse>
+              <ellipse style="fill: url(&quot;#bg_main&quot;);" cx="56.973" cy="33.193" rx="0.247" ry="0.275">
+                <title>Highlight</title>
+              </ellipse>
+            </g>
+            <g transform="matrix(1, 0, 0, 1, 6.684, 0.537)" style="visibility: hidden;">
+              <title>Right Eye</title>
+              <ellipse style="stroke-width: 0.5px; fill: url(&quot;#bg_focus&quot;); transform-box: fill-box; transform-origin: 50% 50%;" cx="60.306" cy="33.488" rx="1.174" ry="1.538" transform="matrix(0.99967, -0.025697, 0.025697, 0.99967, -2.933399, 0.91102)">
+                <title>Pupil</title>
+              </ellipse>
+              <ellipse style="fill: url(&quot;#bg_main&quot;); stroke-width: 2px;" cx="58.18" cy="33.51" rx="0.247" ry="0.275">
+                <title>Highlight</title>
+              </ellipse>
+            </g>
+            <path style="stroke-linecap: round; stroke-linejoin: round; fill: url(&quot;#bg_main&quot;); stroke-width: 2px; stroke: url(&quot;#bg_focus&quot;);" d="M 75.633 55.091 C 80.533 55.938 82.576 56.029 88.528 55.87 C 90.587 55.815 92.169 55.682 94.361 55.303 M 58.764 52.436 C 60.243 53.197 62.573 53.972 65.163 54.42">
+              <title>Belly</title>
+            </path>
+            <path style="stroke-linecap: round; stroke-linejoin: round; fill: url(&quot;#bg_main&quot;); stroke-width: 2px; stroke: url(&quot;#bg_focus&quot;);" d="M 55.408 42.091 C 54.455 43.354 53.936 43.438 53.819 44.664 C 50.783 45.72 48.047 47.165 46.231 49.525 C 43.93 49.716 42.538 54.961 46.129 55.805 C 46.456 55.882 49.593 55.877 50.515 55.496 C 52.758 55.784 56.034 55.01 59.567 54.22 C 60.144 54.091 61.639 52.881 61.968 52.475">
+              <title>Front Leg</title>
+            </path>
+            <path style="stroke-linecap: round; stroke-linejoin: round; fill: url(&quot;#bg_main&quot;); stroke-width: 2px; stroke: url(&quot;#bg_focus&quot;);" d="M 50.703 50.062 C 50.294 49.494 47.752 49.184 46.461 49.459">
+              <title>Paw</title>
+            </path>
+            <path style="stroke-linecap: round; stroke-linejoin: round; fill: url(&quot;#bg_main&quot;); stroke-width: 2px; stroke: url(&quot;#bg_focus&quot;);" d="M 65.144 50.474 C 65.265 51.103 65.245 51.527 65.245 51.527 C 65.115 53.77 64.838 55.949 63.98 59.392 C 63.98 59.392 62.761 59.988 62.395 60.977 C 61.479 63.454 65.376 64.703 68.505 63.983 C 69.136 63.838 71.659 63.153 71.955 61.237 C 75.113 57.967 77.063 56.676 78.035 53.365 C 78.217 52.747 78.532 51.783 78.56 50.792">
+              <title>Front Leg</title>
+            </path>
+            <path style="stroke-linecap: round; stroke-linejoin: round; fill: url(&quot;#bg_main&quot;); stroke-width: 2px; stroke: url(&quot;#bg_focus&quot;);" d="M 106.588 44.042 C 106.705 45.452 107.147 49.21 107.184 49.548 C 107.943 56.45 103.106 60.115 100.346 61.255 C 97.69 62.352 94.317 63.544 92.772 63.841 C 89.854 64.401 87.914 62.358 88.915 60.492 C 89.185 59.989 90.979 59.09 90.979 59.09 C 92.61 57.92 92.533 58.006 94.701 56.598 C 94.11 55.987 94.2 54.542 94.2 54.542">
+              <title>Back Leg</title>
+            </path>
+            <path style="stroke-linecap: round; stroke-linejoin: round; fill: url(&quot;#bg_main&quot;); stroke-width: 2px; stroke: url(&quot;#bg_focus&quot;);" d="M 73.163 30.691 C 74.666 31.509 74.853 32.125 77.456 32.644 C 82.918 33.733 83.866 33.619 88.2 33.522 C 91.845 33.44 94.709 32.641 98.731 33.144 C 104.584 33.876 106.894 38.858 106.894 38.858 C 109.033 40.025 112.589 43.964 114.465 46.992 C 115.608 48.837 117.859 58.021 112.42 62.064 C 106.407 66.534 93.441 67.17 87.542 66.343 C 85.279 66.026 84.619 62.115 86.912 61.037 C 87.67 60.68 89.001 60.072 90.545 60.027 C 93.991 59.926 104.892 60.399 108.149 57.676 C 110.969 55.318 110.2 51.536 109.11 49.619 C 108.321 48.23 107.348 47.099 106.82 46.273">
+              <title>Back &amp; Tail</title>
+            </path>
+            <path style="stroke-linecap: round; stroke-linejoin: round; fill: url(&quot;#bg_main&quot;); stroke-width: 1.5px; stroke: url(&quot;#bg_focus&quot;);" d="M 106.227 44.034 C 106.34 44.667 106.526 46.057 106.575 46.531">
+              <title>Tail Crease</title>
+            </path>
+          </g>
+          <g transform="matrix(1, 0, 0, 1, 62.691004, 7.933)" style="pointer-events: none; visibility: hidden;">
+            <title>Thin Cat</title>
+            <path style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px; fill: url(&quot;#bg_main&quot;);" d="M 72.976 31.177 C 74.479 31.995 74.656 32.304 77.259 32.823 C 82.721 33.912 84.419 33.763 88.753 33.666 C 92.398 33.584 94.536 32.578 99.061 33.235 C 104.865 34.078 105.939 38.393 105.939 38.393 L 106.414 45.357 L 95.873 54.617 C 93.681 54.996 90.69 55.265 88.631 55.32 C 82.679 55.479 80.763 55.616 75.863 54.769 C 65.443 53.922 70.933 53.691 65.26 53.783 C 62.67 53.335 60.201 52.553 58.722 51.792 C 58.661 51.8 55.517 41.971 55.517 41.971 C 52.748 40.836 54.019 30.687 55.478 29.115 C 56.23 28.671 72.635 29.443 72.976 31.177 Z">
+              <title>Body BG</title>
+            </path>
+            <path style="stroke-linecap: round; stroke-linejoin: round; fill: url(&quot;#bg_main&quot;); stroke: url(&quot;#bg_focus&quot;); stroke-width: 1.5px;" d="M 73.407 33.7 C 73.422 30.424 72.041 27.187 70.995 26.916 C 69.949 26.645 67.341 27.593 66.537 27.374 C 64.158 26.725 61.6 25.535 59.229 26.234 L 54.513 24.833 C 53.606 26.624 54.426 28.257 55.191 29.101 M 55.384 28.92 C 53.925 30.492 53.442 32.013 53.326 32.766 C 52.272 32.998 51.054 34.62 51.145 36.585 C 51.298 39.888 56.603 44.275 63.836 43.235">
+              <title>Head</title>
+            </path>
+            <g>
+              <title>Left Eye</title>
+              <ellipse style="fill: url(&quot;#bg_main&quot;); stroke-width: 0.6px; stroke: url(&quot;#bg_focus&quot;);" cx="56.9" cy="33.946" rx="1.737" ry="1.797" />
+              <path d="M 57.363 33.722 C 57.481 34.807 57.136 35.542 56.174 35.537 C 55.213 35.531 55.119 34.929 55.119 33.936 C 55.119 32.944 55.439 32.238 56.336 32.372 C 57.233 32.506 57.289 33.042 57.363 33.722 Z" style="stroke-width: 0.6px; fill: url(&quot;#bg_focus&quot;);">
+                <title>Pupil</title>
+              </path>
+              <ellipse style="fill: url(&quot;#bg_main&quot;);" cx="57.08" cy="33.18" rx="0.247" ry="0.275">
+                <title>Highlight</title>
+              </ellipse>
+            </g>
+            <g transform="matrix(1, 0, 0, 1, 6.683798, 0.536731)">
+              <title>Right Eye</title>
+              <ellipse style="fill: url(&quot;#bg_main&quot;); stroke-width: 0.6px; stroke: url(&quot;#bg_focus&quot;);" cx="60.306" cy="33.488" rx="2.095" ry="1.797" transform="matrix(0.99967, -0.025697, 0.025697, 0.99967, -3.164418, 2.456059)" />
+              <path d="M 58.539 34.18 C 58.681 35.265 58.265 36 57.106 35.995 C 55.948 35.99 55.833 35.387 55.833 34.395 C 55.833 33.402 56.22 32.696 57.301 32.83 C 58.383 32.964 58.45 33.5 58.539 34.18 Z" style="stroke-width: 0.6px; transform-box: fill-box; transform-origin: 50% 50%; fill: url(&quot;#bg_focus&quot;);" transform="matrix(0.99967, -0.025697, 0.025697, 0.99967, 0, 0)">
+                <title>Pupil</title>
+              </path>
+              <ellipse style="fill: url(&quot;#bg_main&quot;);" cx="58.18" cy="33.51" rx="0.247" ry="0.275">
+                <title>Highlight</title>
+              </ellipse>
+            </g>
+            <path style="stroke-linecap: round; stroke-linejoin: round; fill: url(&quot;#bg_main&quot;); stroke: url(&quot;#bg_focus&quot;); stroke-width: 1.5px;" d="M 75.723 54.911 C 80.623 55.758 82.629 55.78 88.581 55.621 C 90.64 55.566 92.098 55.468 94.29 55.089 M 58.911 52.262 C 60.39 53.023 62.601 53.716 65.191 54.164">
+              <title>Belly</title>
+            </path>
+            <path style="stroke-linecap: round; stroke-linejoin: round; fill: url(&quot;#bg_main&quot;); stroke: url(&quot;#bg_focus&quot;); stroke-width: 1.5px;" d="M 55.591 42.274 C 54.638 43.537 54.104 43.621 53.987 44.847 C 50.951 45.903 48.208 47.422 46.392 49.782 C 44.281 49.863 42.74 54.727 46.331 55.571 C 46.658 55.648 49.562 55.628 50.484 55.247 C 52.727 55.535 55.937 54.761 59.47 53.971 C 60.047 53.842 61.461 52.73 61.79 52.324">
+              <title>Front Leg</title>
+            </path>
+            <path style="stroke-linecap: round; stroke-linejoin: round; fill: url(&quot;#bg_main&quot;); stroke: url(&quot;#bg_focus&quot;); stroke-width: 1.5px;" d="M 50.511 50.245 C 50.102 49.677 47.645 49.491 46.354 49.766">
+              <title>Paw</title>
+            </path>
+            <path style="stroke-linecap: round; stroke-linejoin: round; fill: url(&quot;#bg_main&quot;); stroke: url(&quot;#bg_focus&quot;); stroke-width: 1.5px;" d="M 65.395 50.444 C 65.516 51.073 65.569 51.527 65.569 51.527 C 65.439 53.77 65.069 56.103 64.211 59.546 C 64.211 59.546 62.99 59.99 62.648 60.988 C 61.841 63.338 65.437 64.419 68.476 63.71 C 69.107 63.563 71.406 63.052 71.702 61.136 C 74.86 57.866 76.829 56.633 77.801 53.322 C 77.983 52.704 78.263 51.792 78.291 50.801">
+              <title>Front Leg</title>
+            </path>
+            <path style="stroke-linecap: round; stroke-linejoin: round; fill: url(&quot;#bg_main&quot;); stroke: url(&quot;#bg_focus&quot;); stroke-width: 1.5px;" d="M 106.292 43.948 C 106.409 45.358 106.885 49.238 106.922 49.576 C 107.681 56.478 102.899 59.96 100.139 61.1 C 97.483 62.197 94.433 63.234 92.888 63.531 C 89.97 64.091 88.134 62.423 89.135 60.557 C 89.405 60.054 91.212 59.168 91.212 59.168 C 92.843 57.998 92.818 58.045 94.986 56.637 C 94.408 56.013 94.394 54.413 94.394 54.413">
+              <title>Back Leg</title>
+            </path>
+            <path style="stroke-linecap: round; stroke-linejoin: round; fill: url(&quot;#bg_main&quot;); stroke: url(&quot;#bg_focus&quot;); stroke-width: 1.5px;" d="M 73.071 30.829 C 74.574 31.647 74.761 32.371 77.364 32.89 C 82.826 33.979 83.881 33.865 88.215 33.768 C 91.86 33.686 94.632 32.902 98.654 33.405 C 104.507 34.137 106.708 39.063 106.708 39.063 C 108.847 40.23 112.394 44.117 114.27 47.145 C 115.413 48.99 117.641 57.872 112.202 61.915 C 106.189 66.385 93.522 66.957 87.628 66.096 C 85.538 65.791 84.839 62.323 87.132 61.245 C 87.89 60.888 88.946 60.347 90.49 60.302 C 93.936 60.201 105.085 60.553 108.342 57.83 C 111.162 55.472 110.412 51.382 109.322 49.465 C 108.533 48.076 106.961 46.154 106.433 45.328">
+              <title>Back &amp; Tail</title>
+            </path>
+            <path style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.5px; fill: url(&quot;#bg_main&quot;); stroke: url(&quot;#bg_focus&quot;);" d="M 106.265 43.948 C 106.348 44.563 106.346 44.536 106.395 45.01">
+              <title>Tail Crease</title>
+            </path>
+          </g>
+          <text style="fill: url(&quot;#bg_main&quot;); font-family: &quot;Open Gorton&quot;; font-size: 12px; font-weight: 700; white-space: pre;" x="99.654" y="30.433"><title>Question Mark</title>?</text>
+          <text style="fill: url(&quot;#bg_main&quot;); font-family: &quot;Open Gorton&quot;; font-size: 21px; font-weight: 700; text-anchor: middle;" xml:space="preserve" x="58.877" y="72.519" dx="0 0 0.3">SUPER</text>
+          <g transform="matrix(1, 0, 0, 1, -5.094755, 8.990747)">
+            <title>Tux</title>
+            <path style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px; fill: url(&quot;#fg_dark&quot;);" d="M 52.068 15.337 C 54.546 15.378 57.465 16.711 57.713 20.888 C 57.895 23.942 58.421 25.19 58.887 26.706 C 59.352 28.222 62.79 32.318 62.8 39.914 C 62.8 39.914 65.389 42.926 62.246 45.995 C 62.246 45.995 55.364 49.261 52.068 49.105 C 48.435 48.934 41.041 45.75 41.041 45.75 L 41.83 40.417 C 37.967 38.18 39.512 35.094 40.386 32.66 C 41.438 29.733 43.741 27.35 43.972 26.585 C 44.511 24.79 44.797 23.362 45.079 20.993 C 45.466 17.724 48.169 15.272 52.068 15.337 Z">
+              <title>Body</title>
+            </path>
+            <g style="" transform="matrix(1.281542, 0, 0, 1.281542, -16.510378, -18.755349)">
+              <title>Left Eye</title>
+              <ellipse style="fill: url(&quot;#bg_main&quot;);" cx="51.247" cy="31.747" rx="1.367" ry="1.576">
+                <title>Eye</title>
+              </ellipse>
+              <path d="M 52.646 31.778 C 52.646 32.617 52.319 33.259 51.75 33.259 C 51.179 33.259 50.792 32.662 50.792 31.824 C 50.792 30.986 51.247 30.539 51.701 30.529 C 52.271 30.517 52.646 30.939 52.646 31.778 Z" style="fill: url(&quot;#fg_dark&quot;);">
+                <title>Pupil</title>
+              </path>
+              <ellipse style="fill: url(&quot;#bg_main&quot;);" cx="51.835" cy="31.261" rx="0.241" ry="0.268">
+                <title>Highlight</title>
+              </ellipse>
+            </g>
+            <g style="" transform="matrix(1.281542, 0, 0, 1.281542, -16.510378, -18.755349)">
+              <title>Right Eye</title>
+              <ellipse style="fill: url(&quot;#bg_main&quot;);" cx="55.65" cy="31.709" rx="1.367" ry="1.583">
+                <title>Eye</title>
+              </ellipse>
+              <path d="M 57.079 31.765 C 57.079 32.591 56.732 33.222 56.126 33.222 C 55.519 33.222 55.107 32.635 55.107 31.811 C 55.107 30.987 55.59 30.547 56.074 30.538 C 56.68 30.525 57.079 30.941 57.079 31.765 Z" style="fill: url(&quot;#fg_dark&quot;);">
+                <title>Pupil</title>
+              </path>
+              <ellipse style="fill: url(&quot;#bg_main&quot;);" cx="56.259" cy="31.216" rx="0.241" ry="0.268">
+                <title>Highlight</title>
+              </ellipse>
+            </g>
+            <g style="" transform="matrix(1.281542, 0, 0, 1.281542, -16.510378, -18.755349)">
+              <title>Beak</title>
+              <path style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px; fill: url(&quot;#fg_lighter&quot;);" d="M 53.386 32.622 C 54.494 32.62 55.558 33.167 56.641 33.663 C 57.149 33.896 57.649 33.993 57.646 34.244 C 57.631 35.517 54.911 36.055 53.386 36.06 C 51.861 36.064 49.351 35.561 49.351 34.244 C 49.351 34.058 50.022 33.819 50.379 33.654 C 51.255 33.247 52.307 32.625 53.386 32.622 Z">
+                <title>Beak</title>
+              </path>
+              <ellipse style="fill: url(&quot;#fg_dark&quot;);" cx="53.028" cy="33.464" rx="0.35" ry="0.5">
+                <title>Nostril</title>
+              </ellipse>
+              <ellipse style="fill: url(&quot;#fg_dark&quot;);" cx="54.067" cy="33.459" rx="0.35" ry="0.5">
+                <title>Nostril</title>
+              </ellipse>
+            </g>
+            <path style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px; fill: url(&quot;#bg_main&quot;);" d="M 47 45.856 C 50.179 46.758 52.068 47.069 54.076 46.498 C 53.362 45.309 53.58 41.67 59.279 38.338 C 59.45 32.925 57.098 31.711 56.457 28.064 C 54.769 28.722 53.777 28.942 52.068 28.942 C 50.375 28.942 49.242 28.722 47.54 28.13 C 47.243 32.107 43.954 33.079 44.021 40.769 L 47 45.856 Z">
+              <title>Belly</title>
+            </path>
+            <path style="stroke-linecap: round; stroke-linejoin: round; stroke: url(&quot;#fg_dark&quot;); transform-origin: 61.814px 40.724px; stroke-width: 2px; fill: url(&quot;#fg_lighter&quot;);" d="M 57.564 39.904 C 58.18 40.585 59.203 40.475 59.653 40.829 C 60.103 41.182 60.521 41.828 61.628 41.828 C 62.968 41.828 65.689 38.312 66.166 37.727 C 66.642 37.141 69.248 35.175 68.317 33.314 C 67.384 31.452 64.271 32.496 63.219 32.605 C 62.168 32.714 56.907 33.591 56.376 35.228 C 55.896 36.713 56.889 37.387 57.013 37.828 C 57.137 38.271 56.825 39.088 57.564 39.904 Z" transform="matrix(-0.99644, 0.0843, -0.0843, -0.99644, 0.000001, 0.000006)">
+              <title>Foot</title>
+            </path>
+            <path style="stroke-linecap: round; stroke-linejoin: round; stroke: url(&quot;#fg_dark&quot;); transform-box: fill-box; transform-origin: 50% 50%; stroke-width: 2px; fill: url(&quot;#fg_lighter&quot;);" d="M 40.397 40.925 C 41.013 40.243 42.035 40.354 42.485 40 C 42.936 39.646 43.354 39 44.46 39 C 45.801 39 48.522 42.515 48.998 43.102 C 49.475 43.687 52.08 45.654 51.148 47.514 C 50.216 49.377 47.104 48.332 46.051 48.223 C 44.999 48.115 39.738 47.238 39.208 45.6 C 38.728 44.116 39.721 43.441 39.844 43 C 39.97 42.558 39.658 41.739 40.397 40.925 Z" transform="matrix(0.95175, 0.306875, -0.306875, 0.95175, 0.000001, 0)">
+              <title>Foot</title>
+            </path>
+            <path style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px; fill: url(&quot;#fg_dark&quot;);" d="M 39.587 35.081 L 44.723 37.6 C 47.506 38.555 46.038 41.897 43.484 41.137 C 39.699 40.008 39.018 37.687 39.587 35.081 Z">
+              <title>Arm</title>
+            </path>
+          </g>
+          <use href="#paw_print" width="7" height="6.5" transform="matrix(1.3051469326019287, -0.5808680057525635, 0.5808699727058411, 1.3051509857177734, 171.34203776677631, 67.82729973930441)" style="fill: url(&quot;#fg_lighter&quot;); transform-origin: 3.5px 3.25px;">
+            <title>Paw</title>
+          </use>
+          <use href="#paw_print" width="7" height="6.5" transform="matrix(1.428406000137329, -0.0217290036380291, 0.021731004118919373, 1.4284119606018066, 185.95350294382715, 79.82066193865381)" style="fill: url(&quot;#fg_lighter&quot;); transform-origin: 3.5px 3.25px;">
+            <title>Paw</title>
+          </use>
+          <use href="#paw_print" width="7" height="6.5" transform="matrix(1.420606017112732, 0.1506519764661789, -0.15064898133277893, 1.420612096786499, 173.7612882091857, 96.42251404085516)" style="fill: url(&quot;#fg_lighter&quot;); transform-origin: 3.5px 3.25px;">
+            <title>Paw</title>
+          </use>
         </svg>
       </g>
     </g>
@@ -1023,7 +1316,6 @@
       <rect class="surface" width="150" height="100" />
       <g transform="translate(0, 100) rotate(-90)">
         <svg id="icon_¨" viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="25">
-          <rect class="icon-bounding-box" width="100" height="100" fill="none" />
           <text style="font-weight:400;font-size:46px;font-family:Open Gorton;fill:url(#fg_main);white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="66.19200000000001" text-anchor="middle" xml:space="preserve"><tspan>¨</tspan></text>
         </svg>
       </g>
@@ -1035,7 +1327,6 @@
       <rect class="surface" width="150" height="100" />
       <g transform="translate(0, 100) rotate(-90)">
         <svg id="icon__" viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="25">
-          <rect class="icon-bounding-box" width="100" height="100" fill="none" />
           <text style="font-weight:400;font-size:46px;font-family:Open Gorton;fill:url(#fg_main);white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="66.19200000000001" text-anchor="middle" xml:space="preserve"><tspan>_</tspan></text>
         </svg>
       </g>

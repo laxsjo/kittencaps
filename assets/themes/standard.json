@@ -11,6 +11,11 @@
     "bg_accent": "#dee0ed",
     "bg_focus": "#7d787c",
     "fg_main": "#7d787c",
-    "fg_lighter": "#d5d5df"
+    "fg_main_lighter": "#969095",
+    "fg_lighter": "#d5d5df",
+    "fg_dark": "#4f4d4f",
+    "fg_orange": "#ffc867",
+    "fg_color": "#d8cfe5",
+    "fg_color_lighter": "#f9f0ff"
   }
 }

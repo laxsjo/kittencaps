@@ -67,7 +67,7 @@
   </path>
   <svg id="icon" viewBox="0 0 100 100" width="100" height="100" style="overflow:visible;" version="1.1">
     <rect class="icon-bounding-box" width="100" height="100" fill="none" id="rect10" x="0" y="0"/>
-    <text style="font-weight: 400; font-size: 46px; font-family: &quot;Open Gorton&quot;; fill: url(&quot;#fg_main&quot;); white-space: pre;" x="50" y="66.192" text-anchor="middle" id="text10" inkscape:label="text"><tspan id="tspan10">Q</tspan></text>
+    <text style="fill: rgb(83, 55, 125); font-family: &quot;Open Gorton&quot;; font-size: 46px; text-anchor: middle; white-space: pre; visibility: hidden;" id="text10" inkscape:label="text" x="50" y="66.192">Q</text>
     <path style="fill: url(&quot;#fg_main&quot;); fill-rule: nonzero; stroke: url(&quot;#fg_main&quot;); stroke-linecap: round; stroke-linejoin: round; stroke-dasharray: none; stroke-width: 3px;" d="M 38.886 39.933 L 40.269 35.171 L 44.936 35.572" id="path1" inkscape:label="Ear">
       <title>Ear</title>
     </path>
@@ -80,5 +80,12 @@
     <ellipse style="fill:url(#fg_main);fill-rule:nonzero;stroke:none;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none" id="ellipse16" cy="46.534" cx="44.576" rx="2.281" ry="3.362" inkscape:label="Eye">
       <title>Eye</title>
     </ellipse>
+    <path d="M 49.973 49.096 m -15.672 0 a 15.672 15.672 0 1 0 31.344 0 a 15.672 15.672 0 1 0 -31.344 0 Z M 49.973 49.096 m -12.49 0 a 12.49 12.49 0 0 1 24.98 0 a 12.49 12.49 0 0 1 -24.98 0 Z" bx:shape="ring 49.973 49.096 12.49 12.49 15.672 15.672 1@f7b8829c" style="fill: url(&quot;#bg_focus&quot;);"/>
+    <path style="fill: none; stroke-linecap: round; stroke-linejoin: round; stroke: url(&quot;#fg_main&quot;); stroke-width: 3.3px;" d="M 55.457 57.554 L 59.198 61.637 C 59.198 61.637 61.51 64.512 64.853 64.236 C 67.499 64.018 68.344 62.884 73.13 62.138">
+      <title>Tail</title>
+    </path>
+    <path style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px; fill: url(&quot;#fg_main&quot;);" d="M 55.295 59.821 C 55.474 60.044 55.445 60.318 55.175 60.448 L 57.468 62.852 C 57.674 62.734 57.966 62.717 58.129 62.921 L 60.782 60.919 C 60.622 60.749 60.667 60.507 60.876 60.337 L 58.736 58 C 58.544 58.152 58.241 58.149 58.089 57.983 L 55.295 59.821 Z">
+      <title>Bevel</title>
+    </path>
   </svg>
 </svg>

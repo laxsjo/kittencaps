@@ -38,11 +38,11 @@
       "type": "string"
     },
     "font_weight": {
-      "description": "The CSS font weight to use when rendering text.",
+      "description": "The CSS font weight to use when rendering the default text.",
       "type": "integer"
     },
     "font_size_px": {
-      "description": "The size of the font in pixels to use when rendering text.",
+      "description": "The size of the font in pixels to use when rendering the default text.",
       "type": "number"
     },
     "unit_size": {

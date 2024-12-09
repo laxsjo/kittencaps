@@ -5,6 +5,8 @@ import pathlib
 import base64
 from fontTools import ttLib
 from fontTools.pens.boundsPen import BoundsPen
+from decimal import Decimal
+import functools
 
 from .utils import *
 from .error import *
@@ -69,90 +71,66 @@ class TTFontWrapper:
 class FontMetrics:
     tables: TTFontWrapper
     
-    computed_values: dict[str, Any] = {}
-    
     def __init__(self, font_file: pathlib.Path) -> None:
         self.tables = TTFontWrapper(font_file)
     
-    def _memoize_value[T](self, key: str, value_fn: Callable[[], T]) -> T:
-        if key in self.computed_values:
-            return self.computed_values[key]
-        else:
-            value = value_fn()
-            self.computed_values[key] = value
-            return value
-    
+    @functools.cache
     def units_per_em(self) -> int:
-        def get() -> int:
-            head = self.tables.head()
-            return assert_instance(int, head.unitsPerEm) # type: ignore
-            # hhea = self.tables.hhea()
-            # return hhea.ascent - hhea.descent
-        return self._memoize_value("units_per_em", get)
+        head = self.tables.head()
+        return assert_instance(int, head.unitsPerEm) # type: ignore
     
     # Get the distance for the baseline to the highest ascender in em.
-    def ascenders(self) -> float:
-        def get() -> float:
-            hhea = self.tables.hhea()
-            
-            return hhea.ascent / self.units_per_em()
-        return self._memoize_value("ascenders", get)
+    @functools.cache
+    def ascenders(self) -> Decimal:
+        hhea = self.tables.hhea()
+        
+        return Decimal(hhea.ascent) / self.units_per_em()
     
     # Get the distance for the baseline to the lowest descender in em.
-    def descenders(self) -> float:
-        def get() -> float:
-            hhea = self.tables.hhea()
-            return hhea.descent / self.units_per_em()
-        return self._memoize_value("descenders", get)
-
+    @functools.cache
+    def descenders(self) -> Decimal:
+        hhea = self.tables.hhea()
+        return Decimal(hhea.descent) / self.units_per_em()
+    
     # Get the height of the letter with the name glyph_name in the unit em.
-    def glyph_height(self, glyph_name: str) -> float:
+    @functools.cache
+    def glyph_height(self, glyph_name: str) -> Decimal:
         glyphs = self.tables.getGlyphSet()
         bounds_pen = BoundsPen(glyphs)
         glyphs[glyph_name].draw(bounds_pen)
         height_units = assert_instance(int, bounds_pen.bounds[3])
         
         
-        return height_units / self.units_per_em() 
-        
+        return Decimal(height_units) / self.units_per_em() 
+    
     # The height of the letter H in em.
-    def cap_height(self) -> float:
-        return self._memoize_value(
-            "cap_height",
-            lambda: self.glyph_height("H")
-        )
-        
+    @functools.cache
+    def cap_height(self) -> Decimal:
+        return self.glyph_height("H")
+    
     # The height of the letter x in em.
-    def x_height(self) -> float:
-        return self._memoize_value(
-            "x_height",
-            lambda: self.glyph_height("x")
-        )
+    @functools.cache
+    def x_height(self) -> Decimal:
+        return self.glyph_height("x")
     
     # Get the offset of the center point of the bounding box defined by the fonts ascent
     # and descent metrics in the unit em.
-    def center_offset(self) -> float:
-        return self._memoize_value(
-            "center_offset",
-            lambda: (self.ascenders() + self.descenders()) / 2
-        )
+    @functools.cache
+    def center_offset(self) -> Decimal:
+        return (self.ascenders() + self.descenders()) / 2
     
     # Get the offset of the center point of the bounding box of 'H' from the baseline in
     # the unit em.
-    def cap_center_offset(self) -> float:
-        return self._memoize_value(
-            "cap_center_offset",
-            lambda: self.cap_height() / 2
-        )
-
+    @functools.cache
+    def cap_center_offset(self) -> Decimal:
+        return self.cap_height() / 2
+    
     # Get the offset of the center point of the bounding box of 'x' from the baseline in
     # the unit em.
-    def x_center_offset(self) -> float:
-        return self._memoize_value(
-            "x_center_offset",
-            lambda: self.x_height() / 2
-        )
-    
+    @functools.cache
+    def x_center_offset(self) -> Decimal:
+        return self.x_height() / 2
+
 @dataclass
 class FontDefinition:
     family: str

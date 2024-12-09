@@ -1,19 +1,20 @@
 help:
     just --list
 
-# Create a new icon with the specified name in assets/icons. Size should be in u, may specify two dimensions for vertical keycaps, see `python -m src.generate_icon --help` for more details.
-create-icon name size="1u":
+# Create a new icon with the specified name in assets/icons. Size should be in u, may specify two dimensions for vertical keycaps, and bg-size should be a valid color name from the standard theme. see `python -m src.generate_icon --help` for more details.
+create-icon name size="1u" bg-color="":
     nix build .#open-gorton
-    python -m src.generate_icon --size {{size}} --out "assets/icons/[{{name}}].svg" \
+    python -m src.generate_icon --size {{size}} --bg-color "{{bg-color}}" --out "assets/icons/[{{name}}].svg" \
         --font result/share/fonts/opentype/OpenGorton-Regular.otf \
         --font result/share/fonts/opentype/OpenGorton-Bold.otf
     @echo "Created 'assets/icons/[{{name}}].svg', edit it by running 'just edit-icon {{name}}'"
 
-# Open icon `name` in the specified editor, with the required Open Gorton font installed.
-edit-icon name editor="boxy-svg":
-    nix develop -c just _edit-icon-inner "{{name}}" "{{editor}}"
+# Calculate the position of a text line's baseline, such that the character 'H' is visually centered in a box with the given height.
+calculate-centered-text-pos height font-size font-family:
+    python -m src.calculate_centered_font_pos --height "{{height}}" --font-size "{{font-size}}" --family "{{font-family}}"
 
-_edit-icon-inner name editor:
+# Open icon `name` in the specified editor, make sure to have ran nix develop before, so that Open Gorton is installed.
+edit-icon name editor="boxy-svg":
     #!/usr/bin/env bash
     if [[ ! -f assets/icons/[{{name}}].svg ]]; then
         just create-icon {{name}};
