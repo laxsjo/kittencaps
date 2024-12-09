@@ -24,6 +24,7 @@ damsenviet-kle = {git = "https://github.com/DamSenViet/kle-py", rev = "v1.0.1"}
 colour = "^0.1.5"
 jsonschema = "^3.2.0"
 json5 = "^0.9.25 "
+rich = "^13.9.4"
 
 [build-system]
 requires = ["poetry-core"]

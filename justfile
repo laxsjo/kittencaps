@@ -10,8 +10,8 @@ create-icon name size="1u" bg-color="":
     @echo "Created 'assets/icons/[{{name}}].svg', edit it by running 'just edit-icon {{name}}'"
 
 # Calculate the position of a text line's baseline, such that the character 'H' is visually centered in a box with the given height.
-calculate-centered-text-pos height font-size font-family:
-    python -m src.calculate_centered_font_pos --height "{{height}}" --font-size "{{font-size}}" --family "{{font-family}}"
+calculate-centered-text-pos height font-family font-size font-weight:
+    python -m src.calculate_centered_font_pos --height "{{height}}" --family "{{font-family}}" --font-size "{{font-size}}" --weight "{{font-weight}}"
 
 # Open icon `name` in the specified editor, make sure to have ran nix develop before, so that Open Gorton is installed.
 edit-icon name editor="boxy-svg":

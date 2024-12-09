@@ -68,6 +68,17 @@ class TTFontWrapper:
     def getGlyphSet(self) -> _TTGlyphSetVARC | _TTGlyphSetCFF | _TTGlyphSetGlyf:
         return self.tt.getGlyphSet()
 
+@dataclass
+class Extenders:
+    descenders: Decimal
+    ascenders: Decimal
+    
+    # For a glyph with these ascenders and descenders, get the offset of its bounding box's
+    # center point from the baseline in the unit em. The bounding box is formed
+    # tightly around the extenders.
+    def center_offset(self) -> Decimal:
+        return (self.ascenders + self.descenders) / 2
+
 class FontMetrics:
     tables: TTFontWrapper
     
@@ -79,29 +90,36 @@ class FontMetrics:
         head = self.tables.head()
         return assert_instance(int, head.unitsPerEm) # type: ignore
     
-    # Get the distance for the baseline to the highest ascender in em.
+    # Get the extends of this font in em, i.e. the distance from the baseline to
+    # the highest ascender and lowest descender.
     @functools.cache
-    def ascenders(self) -> Decimal:
+    def extenders(self) -> Extenders:
         hhea = self.tables.hhea()
         
-        return Decimal(hhea.ascent) / self.units_per_em()
+        return Extenders(
+            Decimal(hhea.ascent) / self.units_per_em(),
+            Decimal(hhea.descent) / self.units_per_em(),
+        )
     
-    # Get the distance for the baseline to the lowest descender in em.
+    # Get the ascenders and descenders of the letter with the given glyph name
+    # in em.
     @functools.cache
-    def descenders(self) -> Decimal:
-        hhea = self.tables.hhea()
-        return Decimal(hhea.descent) / self.units_per_em()
+    def glyph_extenders(self, glyph_name: str) -> Extenders:
+        glyphs = self.tables.getGlyphSet()
+        bounds_pen = BoundsPen(glyphs)
+        glyphs[glyph_name].draw(bounds_pen)
+        y_min_units = assert_instance(int, bounds_pen.bounds[1])
+        y_max_units = assert_instance(int, bounds_pen.bounds[3])
+        return Extenders(
+            Decimal(y_min_units) / self.units_per_em(),
+            Decimal(y_max_units) / self.units_per_em(),
+        )
     
     # Get the height of the letter with the name glyph_name in the unit em.
     @functools.cache
     def glyph_height(self, glyph_name: str) -> Decimal:
-        glyphs = self.tables.getGlyphSet()
-        bounds_pen = BoundsPen(glyphs)
-        glyphs[glyph_name].draw(bounds_pen)
-        height_units = assert_instance(int, bounds_pen.bounds[3])
-        
-        
-        return Decimal(height_units) / self.units_per_em() 
+        extenders = self.glyph_extenders(glyph_name)
+        return extenders.ascenders - extenders.descenders
     
     # The height of the letter H in em.
     @functools.cache
@@ -117,19 +135,19 @@ class FontMetrics:
     # and descent metrics in the unit em.
     @functools.cache
     def center_offset(self) -> Decimal:
-        return (self.ascenders() + self.descenders()) / 2
+        return self.extenders().center_offset()
     
     # Get the offset of the center point of the bounding box of 'H' from the baseline in
     # the unit em.
     @functools.cache
     def cap_center_offset(self) -> Decimal:
-        return self.cap_height() / 2
+        return self.glyph_extenders("H").center_offset()
     
     # Get the offset of the center point of the bounding box of 'x' from the baseline in
     # the unit em.
     @functools.cache
     def x_center_offset(self) -> Decimal:
-        return self.x_height() / 2
+        return self.glyph_extenders("x").center_offset()
 
 @dataclass
 class FontDefinition:

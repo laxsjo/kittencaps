@@ -8,17 +8,13 @@ import argparse
 import xml.etree.ElementTree as ET
 from decimal import Decimal
 
-# from fontTools import ttLib
+from rich.console import Console
 
 from .lib.utils import *
-# from .lib import font as Font
-# from .lib.svg_builder import *
-# from .lib.keyboard_builder import *
-# from .lib.pos import *
-# from .lib.theme import *
-# from .lib.color import *
 from .lib.error import *
 from .lib.font import *
+
+console = Console()
 
 def main() -> None:
     parser = argparse.ArgumentParser(description="Calculate the baseline offset from the top of a box with given height, such that the character 'H' is visually centered.")
@@ -77,7 +73,10 @@ def main() -> None:
             panic(f"There is no font with weight {font_weight} installed for the family '{font_family}'")
     
     centered_pos = height / 2 + (font_size * font.metrics.cap_center_offset())
-    print(centered_pos)
+    cap_height = font_size * font.metrics.cap_height()
+    
+    console.print(f"Glyph 'H' with height [bold cyan]{cap_height}[/bold cyan]")
+    console.print(f"should be offset [bold cyan]{centered_pos}[/bold cyan]")
 
 def run() -> None:
     try:
