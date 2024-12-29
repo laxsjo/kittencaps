@@ -9,6 +9,10 @@
       <title>bg_accent</title>
       <stop style="stop-color:#dee0ed;"/>
     </linearGradient>
+    <linearGradient id="color-2" bx:pinned="true" gradientUnits="userSpaceOnUse">
+      <title>bg_accent_lighter</title>
+      <stop style="stop-color: rgb(234, 235, 245);"/>
+    </linearGradient>
     <linearGradient id="bg_focus" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
       <title>bg_focus</title>
       <stop style="stop-color:#7d787c;"/>
@@ -33,11 +37,15 @@
       <title>fg_main_lighter</title>
       <stop style="stop-color: rgb(150, 144, 149);"/>
     </linearGradient>
-    <linearGradient id="color-0" bx:pinned="true" gradientUnits="userSpaceOnUse">
-      <title>fg_color</title>
-      <stop style="stop-color: rgb(216, 207, 229);"/>
+    <linearGradient id="fg_color_darker" bx:pinned="true" gradientUnits="userSpaceOnUse">
+      <title>fg_color_darker</title>
+      <stop style="stop-color: oklch(0.633 0.068 310);"/>
     </linearGradient>
-    <linearGradient id="color-1" gradientUnits="userSpaceOnUse" bx:pinned="true">
+    <linearGradient id="fg_color" bx:pinned="true" gradientUnits="userSpaceOnUse">
+      <title>fg_color</title>
+      <stop style="stop-color: oklch(0.698 0.068 315);"/>
+    </linearGradient>
+    <linearGradient id="fg_color_lighter" gradientUnits="userSpaceOnUse" bx:pinned="true">
       <title>fg_color_lighter</title>
       <stop style="stop-color: rgb(252, 248, 255);"/>
     </linearGradient>
@@ -60,30 +68,27 @@
   <svg id="icon" viewBox="0 0 100 100" width="100" height="100" style="overflow:visible;" transform="matrix(1, 0, 0, 1, 0.29027465163380306, -0.5805493032676043)">
     <g>
       <title>Record</title>
-      <ellipse style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 3px; fill: url(&quot;#color-0&quot;); stroke: url(&quot;#color-1&quot;);" cx="50" cy="50" rx="28" ry="28"/>
-      <path style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 10px; fill: url(&quot;#color-1&quot;);" transform="matrix(0.148844, 0, 0, 0.148844, -130.640943, -13.4205)" d="M 1050.709765142 332.029 A 188.116 188.116 0 0 1 1213.623 237.971 L 1213.623 426.087 Z" bx:shape="pie 1213.623 426.087 0 188.116 300 360 1@cf35a006">
+      <ellipse style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 3px; fill: url(&quot;#bg_accent&quot;); stroke: url(&quot;#fg_dark&quot;);" cx="50" cy="50" rx="28" ry="28"/>
+      <path style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 10px; fill: url(&quot;#bg_main&quot;);" transform="matrix(0.148844, 0, 0, 0.148844, -130.640943, -13.4205)" d="M 1059.436876341 337.0676 A 178.0388 178.0388 0 0 1 1213.623 248.0482 L 1213.623 426.087 Z" bx:shape="pie 1213.623 426.087 0 178.0388 300 360 1@6086b794">
         <title>HiglightBG</title>
       </path>
-      <path style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 10px; fill: url(&quot;#color-1&quot;);" transform="matrix(0.148844, 0, 0, 0.148844, -130.640943, -13.4205)" d="M 1376.536234858 520.145 A 188.116 188.116 0 0 1 1213.623 614.203 L 1213.623 426.087 Z" bx:shape="pie 1213.623 426.087 0 188.116 120 180 1@5700c6e3">
+      <path style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 10px; fill: url(&quot;#bg_main&quot;);" transform="matrix(0.148844, 0, 0, 0.148844, -130.640943, -13.4205)" d="M 1367.809123659 515.1064 A 178.0388 178.0388 0 0 1 1213.623 604.1258 L 1213.623 426.087 Z" bx:shape="pie 1213.623 426.087 0 178.0388 120 180 1@3154acc5">
         <title>HiglightBG</title>
       </path>
-      <ellipse style="stroke-linecap: round; stroke-linejoin: round; paint-order: stroke; stroke-width: 11px; fill: url(&quot;#fg_orange&quot;);" cx="50" cy="50" rx="12" ry="12">
-        <title>Center</title>
-      </ellipse>
       <g>
         <title>Rings</title>
         <ellipse style="stroke-linecap: round; stroke-linejoin: round; fill: none; stroke: rgb(230, 218, 238); stroke-width: 2px; visibility: hidden;" cx="50" cy="50" rx="23" ry="23"/>
         <ellipse style="stroke-linecap: round; stroke-linejoin: round; fill: none; stroke: rgb(230, 218, 238); stroke-width: 2px; visibility: hidden;" cx="50" cy="50" rx="19" ry="19"/>
         <ellipse style="stroke-linecap: round; stroke-linejoin: round; fill: none; stroke: rgb(230, 218, 238); stroke-width: 2px; visibility: hidden;" cx="50" cy="50" rx="15" ry="15"/>
-        <path d="M 68.745 63.331 C 66.859 65.979 64.426 68.209 61.611 69.859 M 57.869 71.619 C 55.75 72.39 53.486 72.859 51.129 72.973 M 31.642 36.142 C 33.017 34.324 34.655 32.717 36.5 31.377 M 38.551 30.048 C 41.545 28.326 44.964 27.259 48.611 27.042 M 34.2 39.444 C 34.904 38.392 35.711 37.414 36.606 36.524 M 38.763 34.677 C 41.021 33.019 43.658 31.848 46.521 31.318 M 65.991 60.264 C 65.033 61.753 63.873 63.1 62.55 64.265 M 58.144 67.171 C 56.264 68.064 54.215 68.658 52.058 68.89 M 37.527 41.666 C 40.058 37.885 44.262 35.319 49.08 35.028 M 62.473 58.334 C 60.936 60.63 58.782 62.478 56.248 63.641 M 53.646 64.554 C 52.479 64.845 51.257 65 50 65 C 49.753 65 49.508 64.994 49.264 64.982" style="stroke-linecap: round; stroke-linejoin: round; fill: none; stroke-width: 2.5px; stroke: rgb(235, 225, 246);">
+        <path d="M 68.745 63.331 C 66.859 65.979 64.426 68.209 61.611 69.859 M 57.869 71.619 C 55.75 72.39 53.486 72.859 51.129 72.973 M 31.642 36.142 C 33.017 34.324 34.655 32.717 36.5 31.377 M 38.551 30.048 C 41.545 28.326 44.964 27.259 48.611 27.042 M 34.2 39.444 C 34.904 38.392 35.711 37.414 36.606 36.524 M 38.763 34.677 C 41.021 33.019 43.658 31.848 46.521 31.318 M 65.991 60.264 C 65.033 61.753 63.873 63.1 62.55 64.265 M 58.144 67.171 C 56.264 68.064 54.215 68.658 52.058 68.89 M 37.527 41.666 C 40.058 37.885 44.262 35.319 49.08 35.028 M 62.473 58.334 C 60.936 60.63 58.782 62.478 56.248 63.641 M 53.646 64.554 C 52.479 64.845 51.257 65 50 65 C 49.753 65 49.508 64.994 49.264 64.982" style="stroke-linecap: round; stroke-linejoin: round; fill: none; stroke-width: 2.5px; stroke: url(&quot;#color-2&quot;);">
           <title>Groves</title>
         </path>
       </g>
+      <ellipse style="stroke-linecap: round; stroke-linejoin: round; fill: url(&quot;#fg_color&quot;); stroke: url(&quot;#fg_color_darker&quot;); stroke-width: 2px; paint-order: fill;" cx="50" cy="50" rx="13" ry="13">
+        <title>Center</title>
+      </ellipse>
     </g>
     <g style="" transform="matrix(0.550031, 0, 0, 0.550031, 22.565954, 22.498226)">
-      <path d="M 24.631 36.638 L 33.252 48.46 L 16.01 48.46 L 24.631 36.638 Z" bx:shape="triangle 16.01 36.638 17.242 11.822 0.5 0 1@eae8573c" style="stroke-linecap: round; stroke-linejoin: round; transform-origin: 24.631px 42.549px; stroke-width: 16.3627px; fill: none; stroke: url(&quot;#fg_orange&quot;);" transform="matrix(0, 1, -1, 0, 16.879996, 7.450469)"/>
-      <path d="M 55.694 41.46 L 55.694 58.54 L 55.694 41.46 Z" style="stroke-linejoin: round; stroke-width: 16.3627px; fill: none; stroke: url(&quot;#fg_orange&quot;);" transform="matrix(1.000001, 0, 0, 1, -0.000047, -0.00003)"/>
-      <path d="M 64.7 41.458 L 64.7 58.542 L 64.7 41.458 Z" style="stroke-linejoin: round; stroke-width: 16.3627px; fill: none; stroke: url(&quot;#fg_orange&quot;);" transform="matrix(1, 0, 0, 1, -0.000051, -0.000013)"/>
       <path d="M 24.631 36.638 L 33.252 48.46 L 16.01 48.46 L 24.631 36.638 Z" bx:shape="triangle 16.01 36.638 17.242 11.822 0.5 0 1@eae8573c" style="stroke-linecap: round; stroke-linejoin: round; fill: url(&quot;#bg_main&quot;); stroke: url(&quot;#bg_main&quot;); stroke-width: 4px; transform-box: fill-box; transform-origin: 50% 50%;" transform="matrix(0, 1, -1, 0, 16.879996, 7.450478)"/>
       <path d="M 55.694 41.46 L 55.694 58.54 L 55.694 41.46 Z" style="stroke-linejoin: round; fill: url(&quot;#bg_main&quot;); stroke: url(&quot;#bg_main&quot;); stroke-width: 5.5px;"/>
       <path d="M 64.7 41.458 L 64.7 58.542 L 64.7 41.458 Z" style="stroke-linejoin: round; fill: url(&quot;#bg_main&quot;); stroke: url(&quot;#bg_main&quot;); stroke-width: 5.5px;"/>

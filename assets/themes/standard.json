@@ -2,20 +2,24 @@
   "$schema": "./theme-schema.json",
   "font_family": "Open Gorton",
   "font_weight": 400,
-  "font_size_px": 46,
+  "font_size_px": 40,
   "unit_size": 100,
   "base_size": 95.5555555555555,
-  "top_size": 66.66666666666666,
+  "top_size": 65.90038314,
   "colors": {
     "bg_main": "#f5f7f7",
+    "bg_accent_darker": "oklch(71.7% 6.5% 279deg)",
+    "bg_accent_dark": "oklch(78.7% 6.5% 279deg)",
     "bg_accent": "#dee0ed",
+    "bg_accent_lighter": "#eaebf5",
     "bg_focus": "#7d787c",
     "fg_main": "#7d787c",
-    "fg_main_lighter": "#969095",
+    "fg_main_lighter": "oklch(82.7% 6.5% 290deg)",
     "fg_lighter": "#d5d5df",
     "fg_dark": "#4f4d4f",
     "fg_orange": "#ffc867",
-    "fg_color": "#d8cfe5",
+    "fg_color_darker": "oklch(63.3% 17% 310deg)",
+    "fg_color": "oklch(69.8% 17% 315deg)",
     "fg_color_lighter": "#f9f0ff"
   }
 }

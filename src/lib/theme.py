@@ -1,8 +1,6 @@
 from __future__ import annotations
 from typing import *
 from dataclasses import dataclass
-import dataclasses
-from colour import Color, RGB_color_picker, hash_or_str
 import os
 import json5
 import jsonschema

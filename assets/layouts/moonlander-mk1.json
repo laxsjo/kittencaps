@@ -3,14 +3,14 @@
     "name": "Kittencaps",
     "switchMount": "cherry"
   },
-  [{"a":7,"c":"bg_accent"}, "", {"c":"bg_main"}, "1", "2", "[:3]", "4", "5", "", {"x":4}, "", "6", "7", "8", "9", "0", {"c":"bg_accent"}, ""],
-  ["[del]", {"c":"bg_main"}, "[Q]", "D", "R", "[w]", "B", {"c":"bg_accent"},"", {"x":4}, "", {"c":"bg_main"}, "J", "F", "U", "P", {"c":"bg_accent"}, "", ""],
-  ["[tab]", {"c":"bg_main"}, "A", "S", "H", "T", "G", {"c":"bg_focus"}, "[esc]", {"x":4}, "[play]", {"c":"bg_main"}, "Y", "N", "E", "O", "I", {"c":"bg_focus"}, "[enter]"],
-  [{"c":"bg_accent"}, "", {"c":"bg_main"}, "Z", "X", "M", "C", "V", {"x":6}, "K", "L", "[.]", "[,]", {"c":"bg_accent"}, "", {"c":"bg_focus"}, "[below_enter]"],
-  [{"c":"bg_accent"}, "[gaming]", "", "", "", "", {"x":8}, "", "", "", "", {"c":"bg_focus"}, "[below_enter2]"],
+  [{"a":7,"c":"bg_focus"}, "[sleep]", {"c":"bg_main"}, "1", "2", "[:3]", "4", "5", "[white_wedge_left]", {"x":4}, "[white_wedge_right]", "6", "7", "8", "9", "0", {"c":"bg_focus"}, ""],
+  ["[del]", {"c":"bg_main"}, "[Q]", "D", "R", "[w]", "B", {"c":"bg_focus"},"", {"x":4}, "[ghost]", {"c":"bg_main"}, "J", "F", "U", "P", {"c":"bg_focus"}, "", "[numpad]"],
+  ["[tab]", {"c":"bg_main"}, "A", "S", "H", "T", "G", {"c":"bg_focus"}, "[esc]", {"x":4}, "[play]", {"c":"bg_main"}, "Y", "[n_with_ö]", "[e_with_ä]", "[o_with_å]", "I", {"c":"bg_focus"}, "[enter]"],
+  [{"c":"bg_focus"}, "[altgr]", {"c":"bg_main"}, "Z", "X", "M", "C", "V", {"x":6}, "K", "L", "[.]", "[,]", {"c":"bg_accent"}, "", {"c":"bg_focus"}, "[below_enter]"],
+  [{"c":"bg_focus"}, "[gaming]", "[emoji]", "[numpad]", "[hyper]", "[num]", {"x":8}, "[sym]", "", "", "", {"c":"bg_focus"}, "[below_enter2]"],
   
-  [{"r":45, "rx":5, "ry":5, "y":-2.5, "x":0.25, "w":2, "c":"bg_focus"}, ""],
-  [{"x":0.25, "h":1.5, "c":"bg_accent"}, "Sh", {"h":1.5}, "Ct", {"h":1.5,"c":"bg_focus"}, "Al"],
-  [{"r":-45, "rx":13, "y":-2.5, "x":-2.25, "w":2, "c":"bg_focus"}, "[super]"],
-  [{"x":-3.25, "h":1.5}, "¨", {"h":1.5, "c":"bg_accent"}, "_", {"h":1.5}, "[nav]"]
+  [{"r":45, "rx":5, "ry":5, "y":-2.5, "x":0.25, "w":2, "c":"bg_accent"}, "[cat_face]"],
+  [{"x":0.25, "h":1.5, "c":"bg_focus"}, "[shift]", {"h":1.5}, "[ctrl]", {"h":1.5}, "[alt]"],
+  [{"r":-45, "rx":13, "y":-2.5, "x":-2.25, "w":2, "c":"bg_accent"}, "[super]"],
+  [{"x":-3.25, "h":1.5, "c":"bg_focus"}, "[umlaut]", {"h":1.5}, "[space]", {"h":1.5}, "[nav]"]
 ]

@@ -32,7 +32,9 @@
           allowUnfree = true;
         };
       };
-      pypkgsBuildRequirements = {};
+      pypkgsBuildRequirements = {
+        coloraide = [ "hatchling" ];
+      };
       pythonEnv = (pkgs.poetry2nix.mkPoetryEnv {
         overrides = lib.mkPoetry2nixOverrides pypkgsBuildRequirements;
         projectDir = self;

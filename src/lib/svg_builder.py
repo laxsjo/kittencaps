@@ -210,7 +210,7 @@ def element_update_outgoing_id(element: ET.Element, old_id: str, new_id: str):
     def update_single_element_id(element: ET.Element, old_id: str, new_id: str):        
         attrib = element.attrib
         
-        for name, value in attrib:
+        for name, value in attrib.items():
             if name == "style":
                 styles = CssStyles.from_style(value)
                 for property, value in styles.items():

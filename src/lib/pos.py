@@ -2,6 +2,7 @@ from __future__ import annotations
 from typing import *
 from dataclasses import dataclass, field
 from collections import namedtuple
+from collections.abc import Sequence
 from enum import IntEnum
 import math
 import operator
@@ -25,7 +26,7 @@ def number_to_str(number: float) -> str:
     return str(number).removesuffix(".0")
 
 @dataclass
-class Vec3():
+class Vec3(Sequence[float]):
     x: float
     y: float
     z: float
@@ -34,6 +35,15 @@ class Vec3():
         yield self.x
         yield self.y
         yield self.z
+    
+    @overload
+    def __getitem__(self, index: int) -> float:
+        ...
+    @overload
+    def __getitem__(self, index: slice) -> Sequence:
+        ...
+    def __getitem__(self, index: int|slice) -> float|Sequence:
+        return (*self,)[index]
     
     def __len__(self) -> int:
         return 3
@@ -80,6 +90,15 @@ class Vec2():
     def __iter__(self):
         yield self.x
         yield self.y
+    
+    @overload
+    def __getitem__(self, index: int) -> float:
+        ...
+    @overload
+    def __getitem__(self, index: slice) -> Sequence:
+        ...
+    def __getitem__(self, index: int|slice) -> float|Sequence:
+        return (*self,)[index]
         
     def __add__(self, other: Vec2) -> Vec2:
         return Vec2(

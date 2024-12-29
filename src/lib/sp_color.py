@@ -1,5 +1,5 @@
 from dataclasses import dataclass
-from colour import Color
+from coloraide import Color
 from .utils import *
 
 # Signature Plastics color codes

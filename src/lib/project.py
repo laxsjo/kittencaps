@@ -3,7 +3,6 @@ import os
 from dataclasses import dataclass
 from typing import TypedDict
 from pathlib import Path
-from colour import Color, RGB_color_picker, hash_or_str
 
 from .error import *
 from .utils import *

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <svg version="1.1" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:bx="https://boxy-svg.com" style="">
   <defs id="palette-colors">
-    <linearGradient id="bg_main" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
+    <linearGradient id="bg_main" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse" gradientTransform="matrix(2.370369, 0, 0, 2.370369, 428.949126, 42.144264)">
       <title>bg_main</title>
       <stop style="stop-color:#f5f7f7;"/>
     </linearGradient>
@@ -9,7 +9,7 @@
       <title>bg_accent</title>
       <stop style="stop-color:#dee0ed;"/>
     </linearGradient>
-    <linearGradient id="bg_focus" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
+    <linearGradient id="bg_focus" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse" gradientTransform="matrix(1.229167, 0, 0, 1.62759, -11.45834, -31.379471)">
       <title>bg_focus</title>
       <stop style="stop-color:#7d787c;"/>
     </linearGradient>
@@ -25,7 +25,7 @@
       <title>fg_lighter</title>
       <stop style="stop-color:#d5d5df;"/>
     </linearGradient>
-    <linearGradient id="fg_dark" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
+    <linearGradient id="fg_dark" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse" gradientTransform="matrix(0.4, 0, 0, 0.4, 0.000091, 0.000011)">
       <title>fg_dark</title>
       <stop style="stop-color:#4f4d4f;"/>
     </linearGradient>
@@ -33,6 +33,14 @@
       <title>fg_orange</title>
       <stop style="stop-color:#d8b143;"/>
     </linearGradient>
+    <pattern id="pattern-0" patternUnits="userSpaceOnUse" width="40" height="40" bx:pinned="true" viewBox="0 0 40 40">
+      <title>Stripes</title>
+      <rect width="40" height="40" style="stroke-linecap: round; stroke-linejoin: bevel; stroke-width: 10px; fill: url(&quot;#bg_focus&quot;);"/>
+      <line style="fill: none; stroke-linejoin: round; stroke-linecap: square; stroke-width: 9.5px; stroke: url(&quot;#bg_accent&quot;);" x1="40" y1="0" x2="0" y2="40"/>
+      <line style="fill: none; stroke-linejoin: round; stroke-linecap: square; stroke-width: 9.5px; stroke: url(&quot;#bg_accent&quot;);" x1="0" y1="0" x2="-40" y2="40"/>
+      <line style="fill: none; stroke-linejoin: round; stroke-linecap: square; stroke-width: 9.5px; stroke: url(&quot;#bg_accent&quot;);" x1="80" y1="0" x2="40" y2="40"/>
+    </pattern>
+    <pattern id="pattern-0-0" href="#pattern-0" patternTransform="matrix(0.9, 0, 0, 0.9, 5, 5)"/>
   </defs>
   <style type="text/css" id="font_style">
     @font-face {
@@ -50,16 +58,13 @@
     <title>BG</title>
   </rect>
   <svg id="icon" viewBox="0 0 100 100" width="100" height="100" style="overflow:visible;">
-    <text style="fill: url(&quot;#bg_main&quot;); font-family: &quot;Open Gorton&quot;; font-size: 23px; font-weight: 700; text-anchor: middle; white-space: pre;" xml:space="preserve" x="50" y="58.096">ESC</text>
-    <line style="fill: none; stroke-linejoin: round; stroke-width: 4px; stroke-linecap: square; stroke: url(&quot;#bg_main&quot;);" x1="10" y1="0" x2="10" y2="100">
-      <title>Bar</title>
-    </line>
-    <line style="fill: none; stroke-linejoin: round; stroke-width: 4px; stroke-linecap: square; stroke: url(&quot;#bg_main&quot;);" x1="90.001" y1="0" x2="90.001" y2="100">
-      <title>Bar</title>
-    </line>
-    <path style="fill: none; stroke-linejoin: round; stroke-width: 4px; stroke-linecap: round; stroke: url(&quot;#bg_main&quot;);" d="M 30 0 C 30 0 28.891 8.397 28.891 13.87 C 28.891 24.264 25.627 19.46 23.317 30.895 M 23.927 60.79 C 25.221 67.729 27.894 66.383 28.67 76.387 C 29.446 86.391 30 100 30 100"/>
-    <path style="fill: none; stroke-linejoin: round; stroke-width: 4px; stroke-linecap: round; stroke: url(&quot;#bg_main&quot;);" d="M 50 0 L 50 15.442 C 50 20.3 50.466 22.589 51.392 26.65 M 52.749 68.63 C 50.71 72.72 50 73.196 50 77.832 L 50 100"/>
-    <path style="fill: none; stroke-linejoin: round; stroke-width: 4px; stroke-linecap: round; stroke: url(&quot;#bg_main&quot;);" d="M 70 0 L 70 26.079 C 69.908 28.521 69.389 29.992 67.415 32.079 M 64.818 66.67 C 64.034 68.266 64.167 70.586 66.387 72.385 C 69.212 74.674 70.619 74.227 70.619 79.479 C 70.619 84.289 70 100 70 100"/>
+    <rect width="100" height="100" style="stroke-linecap: round; stroke-linejoin: bevel; stroke-width: 10px; fill: url(&quot;#pattern-0-0&quot;);">
+      <title>Pattern</title>
+    </rect>
+    <rect style="stroke-linejoin: bevel; stroke-width: 10px; stroke-linecap: round; fill: url(&quot;#bg_focus&quot;);" x="20.5" y="35.7" width="59" height="28.6" rx="7" ry="7">
+      <title>Cover</title>
+    </rect>
+    <text style="fill: url(&quot;#bg_accent&quot;); font-family: &quot;Open Gorton&quot;; font-size: 23px; font-weight: 700; text-anchor: middle;" xml:space="preserve" x="50" y="58.096">ESC</text>
   </svg>
   <path d="M 50 -40 C 50 -45.5 45.5 -50 40 -50 L -40 -50 C -45.5 -50 -50 -45.5 -50 -40 L -50 40 C -50 45.5 -45.5 50 -40 50 L 40 50 C 45.5 50 50 45.5 50 40 L 50 -40 Z" transform="translate(50, 50) scale(0.6666666666666665)" stroke="black" stroke-opacity="0.5" fill="none" inkscape:label="outline">
     <title>Outline</title>
