@@ -40,7 +40,7 @@ generate-keycaps layout="moonlander-mk1" theme="standard":
     python -m src.package_keycaps \
         ./assets/layouts/{{layout}}.json \
         --theme=./assets/themes/{{theme}}.json \
-        --out=./generated/{{layout}}_{{theme}}.svg
+        --out=./generated/{{layout}}_{{theme}}
 
 # Open the reference images in pureref
 open-refs:

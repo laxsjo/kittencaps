@@ -29,6 +29,8 @@ coloraide = "^4.1"
 # to build it, and I haven't found a way of circumventing it... So we manually
 # lock it at the lower version here and hope that it still works with coloraide.
 attrs = "24.2.0"
+# To match the version on nixpkgs
+playwright = "=1.47.0"
 
 [build-system]
 requires = ["poetry-core"]

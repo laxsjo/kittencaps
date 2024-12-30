@@ -36,7 +36,13 @@
         coloraide = [ "hatchling" ];
       };
       pythonEnv = (pkgs.poetry2nix.mkPoetryEnv {
-        overrides = lib.mkPoetry2nixOverrides pypkgsBuildRequirements;
+        overrides = (lib.mkPoetry2nixOverrides pypkgsBuildRequirements).extend
+          (final: prev: {
+            # Override with the one from nixpkgs, since it does some special
+            # patches to avoid `playwright install`, which I don't know how to
+            # replicate via poetry. 
+            playwright = pkgs.python312Packages.playwright;
+          });
         projectDir = self;
         python = pkgs.python312;
       });
@@ -70,6 +76,10 @@
             pureref
             inkscape
           ]);
+          
+          shellHook = ''
+            export PLAYWRIGHT_BROWSERS_PATH=${pkgs.playwright-driver.browsers}
+          '';
         };
         no-editors = pkgs.mkShellNoCC {
           packages = devPackages;

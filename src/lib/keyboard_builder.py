@@ -413,14 +413,11 @@ class KeyboardBuilder():
                 .indentation(1, "  ")\
                 .statement(*map(Font.generate_css_rule, self.theme.font_family))\
                 .rule(*(
-                    CssRule(f".keycap-color-{name}", CssStyles({
-                        "--surface": f"url(#{name})",
+                    CssRule(f".keycap-color-{name} .surface", CssStyles({
+                        "fill": f"url(#{name})",
                     }))
                     for name, color in self.theme.colors.keycap_colors()
                 ))
-                .rule(CssRule(".surface", CssStyles({
-                    "fill": "var(--surface)",
-                })))
                 # .rule(
                 #     ".icon-bounding-box {stroke: red; stroke-width: 1px;}"
                 # )\
@@ -440,7 +437,4 @@ class KeyboardBuilder():
 def build_keyboard_svg(keyboard: kle.Keyboard, theme: Theme, key_templates: SvgSymbolSet) -> ET.ElementTree:
     return (KeyboardBuilder(theme,  key_templates)\
         .keys(*keyboard.keys)\
-        # TODO: This is pretty hacky
-        .builder_extra(lambda builder: \
-            builder.root_styles(theme.colors.as_css_styles()))\
         .build())

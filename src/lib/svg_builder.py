@@ -20,7 +20,9 @@ __all__ = [
     "tree_resolve_namespaces",
     "make_element",
     "remove_element_in_tree",
+    "tree_get_id",
     "untangle_gradient_links",
+    "tree_get_viewbox",
     "DefsSet",
     "element_add_label",
     "element_append_css_properties",
@@ -230,6 +232,15 @@ def element_update_outgoing_id(element: ET.Element, old_id: str, new_id: str):
     for child in element.iter():
         update_single_element_id(child, old_id, new_id)
 
+def tree_get_viewbox(tree: MaybeElementTree) -> ViewBox:
+    root = resolve_element_tree(tree)
+    
+    match ViewBox.parse_svg_value(root.attrib["viewBox"]):
+        case Ok(value):
+            return value
+        case Error(reason):
+            panic(f"Tree svg element contained invalid viewBox '{root.attrib["viewBox"]}': {reason}")
+
 # class DefsSet(list[ET.Element]):
 #     def append(self, object):
 #         if object not in self:
@@ -429,7 +440,9 @@ def element_apply_style(element: ET.Element, styles: CssStyles) -> None:
     if len(previous_style) > 0 and not previous_style.endswith(";"):
         previous_style += ";"
     
-    element.attrib["style"] = previous_style + " ".join(style_statements)
+    new_style = previous_style + " ".join(style_statements)
+    if new_style != "":
+        element.attrib["style"] = previous_style + " ".join(style_statements)
 
 @dataclass
 class ViewBox:
@@ -441,6 +454,24 @@ class ViewBox:
             pos=self.pos - Vec2(padding, padding),
             size=self.size + Scaling(padding) * 2
         )
+    
+    @classmethod
+    def parse_svg_value(cls, value: str) -> Result[Self, str]:
+        try:
+            components = tuple(map(float, re.sub(r"[\s,]+", " ", value).split(" ")))
+        except ValueError as error:
+            return Error(
+                f"Value contained non-numeric component: {" ".join(error.args)}"
+            )
+        
+        if len(components) != 4:
+            return Error(f"Value did not contained 4 components: Got {len(components)}")
+        
+        x, y, width, height = components
+        return Ok(cls(
+            Vec2(x, y),
+            Scaling(width, height),
+        ))
     
     @classmethod
     def from_bounds(cls, bounds: Bounds) -> Self:
