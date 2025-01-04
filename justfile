@@ -42,6 +42,14 @@ generate-keycaps layout="moonlander-mk1" theme="standard":
         --theme=./assets/themes/{{theme}}.json \
         --out=./generated/{{layout}}_{{theme}}
 
+generate-render-scene layout="moonlander-mk1" theme="standard":
+    BLENDER_SYSTEM_PYTHON="$VIRTUAL_ENV" PYTHONPATH="$(python -c "import sys; print(\":\".join(sys.path))")" blender \
+        assets/templates/render/scene-template.blend \
+        --background \
+        --python "src/blender/assemble_render_keyboard.py" -- \
+        --directory ./generated/moonlander-mk1_standard/ \
+        --out ./generated/moonlander-mk1_standard/scene.blend
+
 # Open the reference images in pureref
 open-refs:
     pureref references/references.pur &>> /dev/null &

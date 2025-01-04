@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema",
+  "title": "Generation Metadata",
+  "description": "An object describing the settings used during a keycap generation invokation",
+  "type": "object",
+  "properties": {
+    "layout_path": {
+      "description": "Path to the used KLE layout definition JSON file.",
+      "type": "string"
+    },
+    "theme_path": {
+      "description": "Path to the used theme JSON file. This file must follow the schema 'assets/themes/theme-schema.json'.",
+      "type": "string"
+    }
+  },
+  "required": [
+    "layout_path",
+    "theme_path"
+  ]
+}

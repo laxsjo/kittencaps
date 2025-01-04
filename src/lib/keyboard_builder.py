@@ -6,7 +6,7 @@ import damsenviet.kle as kle
 import itertools
 import re
 
-from . import project
+from . import project, magic
 from .theme import *
 from typing import *
 from .error import *
@@ -18,7 +18,9 @@ from .color import *
 
 __all__ = [
     "KeycapGeometry",
+    "KeycapInfo",
     "create_text_icon_svg",
+    "place_keys",
     "build_keyboard_svg",
 ]
 
@@ -51,7 +53,7 @@ def lookup_icon_id(id: str, defs: DefsSet) -> SvgElement | None:
     return SvgElement(element)
 
 # id defaults to text
-def create_text_icon_svg(text: str, id: str|None, keycap_size: Vec2, font: Font.FontDefinition, font_size_px: int) -> SvgElement:
+def create_text_icon_svg(text: str, id: str|None, keycap_size: Vec2, font: Font.FontDefinition, font_size_px: float) -> SvgElement:
     id = id if id != None else text
     id = f"icon_{id}" if id != "" else "icon"
     
@@ -347,6 +349,18 @@ def border_from_bounds(bounds: Bounds|ViewBox) -> ET.Element:
         "fill": "rgba(255, 0, 0, 0.2)",
     })
 
+def place_keys[T](keys: Iterable[kle.Key], unit_size: float, placer: Callable[[KeycapInfo, Transform], T]) -> list[T]:
+    result: list[T] = []
+    for key in keys:
+        pos = resolve_key_position(key) * unit_size
+        
+        result.append(placer(KeycapInfo(key), Transform(
+            translate=pos,
+            rotate=Rotation(key.rotation_angle),
+        )))
+    
+    return result
+
 @dataclass
 class KeyboardBuilder():
     theme: Theme
@@ -358,18 +372,13 @@ class KeyboardBuilder():
     def __post_init__(self):
         self._factory = KeycapFactory(self.key_templates, self.theme)
     
-    def key(self, key: kle.Key) -> Self:
-        element = self._factory.create(KeycapInfo(key))
-        pos = resolve_key_position(key) * self.theme.unit_size
-        
-        return self.component(PlacedComponent(element, Transform(
-            translate=pos,
-            rotate=Rotation(key.rotation_angle),
-        )))
-    
     def keys(self, *keys: kle.Key) -> Self:
-        for key in keys:
-            self.key(key)
+        def placer(key: KeycapInfo, transform: Transform) -> None:
+            element = self._factory.create(key)
+            
+            self.component(PlacedComponent(element, transform))
+        place_keys(keys, self.theme.unit_size, placer)
+        
         return self
     
     def component(self, *components: PlacedComponent) -> Self:
@@ -390,10 +399,7 @@ class KeyboardBuilder():
             (component.bounds() for component in self._components),
         )
         
-        # Magic Number: Extra whitespace around generated keymap in pixels.
-        padding = 40
-        
-        viewbox = ViewBox.from_bounds(bounds).add_padding(padding)
+        viewbox = ViewBox.from_bounds(bounds).add_padding(magic.padding)
 
         builder = SvgDocumentBuilder()\
             .set_viewbox(viewbox)\

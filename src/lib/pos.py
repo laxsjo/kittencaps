@@ -131,6 +131,11 @@ class Vec2():
             -self.x,
             -self.y,
         )
+    def per_component(self, map_x: Callable[[float], float]|None, map_y: Callable[[float], float]|None) -> Self:
+        return self.__class__(
+            (map_x or (lambda x: x))(self.x),
+            (map_y or (lambda y: y))(self.y),
+        )
     
     @classmethod
     def promote_float(cls, component: float|Self) -> Self:
@@ -157,11 +162,11 @@ class Rotation:
     
     def __add__(self, other: Rotation|float) -> Rotation:
         return Rotation(
-            self.deg + other.deg if isinstance(other, Rotation) else other
+            self.deg + (other.deg if isinstance(other, Rotation) else other)
         )
     def __sub__(self, other: Rotation|float) -> Rotation:
         return Rotation(
-            self.deg - other.deg if isinstance(other, Rotation) else other
+            self.deg - (other.deg if isinstance(other, Rotation) else other)
         )
     def __mult__(self, other: float) -> Rotation:
         return Rotation(
@@ -179,6 +184,10 @@ class Rotation:
     
     def is_identity(self) -> bool:
         return self.deg == 0
+    
+    def rad(self) -> float:
+        import math
+        return math.radians(self.deg)
 
 @dataclass
 class Scaling():

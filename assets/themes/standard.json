@@ -1,11 +1,12 @@
 {
-  "$schema": "./theme-schema.json",
+  "$schema": "./../schemas/theme-schema.json",
   "font_family": "Open Gorton",
   "font_weight": 400,
   "font_size_px": 40,
   "unit_size": 100,
   "base_size": 95.5555555555555,
   "top_size": 65.90038314,
+  "scale": 3,
   "colors": {
     "bg_main": "#f5f7f7",
     "bg_accent_darker": "oklch(71.7% 6.5% 279deg)",
@@ -20,6 +21,8 @@
     "fg_orange": "#ffc867",
     "fg_color_darker": "oklch(63.3% 17% 310deg)",
     "fg_color": "oklch(69.8% 17% 315deg)",
-    "fg_color_lighter": "#f9f0ff"
+    "fg_color_lighter": "#f9f0ff",
+    
+    "case": "#000000"
   }
 }

@@ -34,24 +34,36 @@
       };
       pypkgsBuildRequirements = {
         coloraide = [ "hatchling" ];
+        fake-bpy-module-4-2 = [ "setuptools" ];
       };
+      poetryOverrides = (lib.mkPoetry2nixOverrides pypkgsBuildRequirements).extend
+        (final: prev: {
+          # Override with the one from nixpkgs, since it does some special
+          # patches to avoid `playwright install`, which I don't know how to
+          # replicate via poetry. 
+          playwright = pkgs.python312Packages.playwright;
+        });
+      
       pythonEnv = (pkgs.poetry2nix.mkPoetryEnv {
-        overrides = (lib.mkPoetry2nixOverrides pypkgsBuildRequirements).extend
-          (final: prev: {
-            # Override with the one from nixpkgs, since it does some special
-            # patches to avoid `playwright install`, which I don't know how to
-            # replicate via poetry. 
-            playwright = pkgs.python312Packages.playwright;
-          });
+        overrides = poetryOverrides;
         projectDir = self;
         python = pkgs.python312;
       });
       pythonApp = pkgs.poetry2nix.mkPoetryApplication { projectDir = ./.; };
+      # Override python version used by blender to match project. This is
+      # probably a very bad idea but I don't care. :3
+      blender = (pkgs.blender.override {
+        python3Packages = pkgs.python312Packages;
+      }).overrideAttrs {
+        # This disables the python version check.
+        preConfigure = "";
+      };
       devPackages = [
         pythonEnv
         pkgs.poetry
         pkgs.just
         pkgs.open-gorton
+        blender
       ];
     in {
       lib = pkgsNoOverlay.callPackage ./lib.nix {};

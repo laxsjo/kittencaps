@@ -37,6 +37,7 @@ class ThemeDeclaration(TypedDict):
     unit_size: float
     base_size: float
     top_size: float
+    scale: float
     colors: PaletteDeclaration
 
 class Palette(dict[str, HideableColor]):
@@ -74,7 +75,7 @@ class Palette(dict[str, HideableColor]):
 class Theme():
     default_font: FontDefinition
     font_family: list[FontDefinition]
-    font_size_px: int
+    font_size_px: float
     unit_size: float
     base_size: float
     top_size: float
@@ -97,13 +98,15 @@ class Theme():
                 
                 font = matching_fonts[0]
         
+        scale = declaration["scale"]
+        
         return cls(
             default_font=font,
             font_family=fonts,
             font_size_px=declaration["font_size_px"],
-            unit_size=declaration["unit_size"],
-            base_size=declaration["base_size"],
-            top_size=declaration["top_size"],
+            unit_size=declaration["unit_size"] * scale,
+            base_size=declaration["base_size"] * scale,
+            top_size=declaration["top_size"] * scale,
             colors=Palette(declaration["colors"]),
         )
     
@@ -113,7 +116,7 @@ class Theme():
         # type JsonValueSimple = str | int | None
         # type JsonValue = JsonValueSimple | dict[str, JsonValue] | list[JsonValue]
         
-        with open(project.path_to_absolute("assets/themes/theme-schema.json")) as file:
+        with open(project.path_to_absolute("assets/schemas/theme-schema.json")) as file:
             schema = json5.load(file)
         
         path = pathlib.Path(theme_path)

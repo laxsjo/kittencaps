@@ -1,0 +1,82 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema",
+  "title": "JSON Text",
+  "description": "An object describing the colors and fonts used in a keycap set",
+  "type": "object",
+  "definitions": {
+    "color": {
+      "anyOf": [
+        {
+          "description": "A valid CSS color.",
+          "type": "string"
+        },
+        {
+          "enum": [{ "hidden": true }]
+        }
+      ]
+    },
+    "maybeSPColor": {
+      "anyOf": [
+        {
+          "$ref": "#/definitions/color"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "SPColor": {
+              "type": "string"
+            }
+          },
+          "required": [ "SPColor" ]
+        }
+      ]
+    }
+  },
+  "properties": {
+    "font_family": {
+      "description": "The font family to use when rendering text. Must be installed.",
+      "type": "string"
+    },
+    "font_weight": {
+      "description": "The CSS font weight to use when rendering the default text.",
+      "type": "integer"
+    },
+    "font_size_px": {
+      "description": "The size of the font in pixels to use when rendering the default text.",
+      "type": "number"
+    },
+    "unit_size": {
+      "description": "The total width in pixels a single 1u keycap occupies, including any margin. The 100x100 icon SVGs are scaled to this dimension.",
+      "type": "number"
+    },
+    "base_size": {
+      "description": "The base width in pixels of a 1u keycap",
+      "type": "number"
+    },
+    "top_size": {
+      "description": "The width in pixels of the top surface of a 1u keycap in pixels",
+      "type": "number"
+    },
+    "scale": {
+      "description": "All dimensions in the final SVG are scaled by this factor, effectively increasing the resolution of the generated PNG.",
+      "type": "number"
+    },
+    "colors": {
+      "description": "The colors to bind to named color variables used in the keycap set. If a color is not given it defaults to hidden.",
+      "type": "object",
+      "additionalProperties": {
+        "$ref": "#/definitions/maybeSPColor"
+      }
+    }
+  },
+  "required": [
+    "font_family",
+    "font_weight",
+    "font_size_px",
+    "unit_size",
+    "base_size",
+    "top_size",
+    "scale",
+    "colors"
+  ]
+}

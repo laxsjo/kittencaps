@@ -4,14 +4,15 @@ from typing import *
 import json5
 import argparse
 import pathlib
+import re
 import xml.etree.ElementTree as ET
-import damsenviet.kle as kle
 
 from .lib import project, svg
 from .lib.svg_builder import *
 from .lib.keyboard_builder import build_keyboard_svg
 from .lib.theme import *
 from .lib.utils import *
+from .lib.generation_metadata import *
 
 def main() -> None:
     parser = argparse.ArgumentParser(
@@ -42,7 +43,7 @@ def main() -> None:
         metavar="DIRECTORY",
         type=pathlib.Path,
         required=True,
-        help="Write the generated images to this directory."
+        help="Write the generated files to this directory."
     )
     
     args = parser.parse_args()
@@ -53,15 +54,16 @@ def main() -> None:
     template_path: pathlib.Path = args.templates
     out: pathlib.Path = args.out
 
-    theme = Theme.load_file(theme_path)
+    metadata = GenerationMetadata(
+        layout_path=layout_path,
+        theme_path=theme_path
+    )
+
+    theme = metadata.load_theme()
+    layout = metadata.load_layout()
 
     with open(template_path, "r") as file:
         key_templates = SvgSymbolSet(ET.parse(file))
-        
-    with open(layout_path, "r") as file:
-        layout = kle.Keyboard.from_json(
-            json5.load(file)
-        )
 
     result = build_keyboard_svg(layout, theme, key_templates)
     
@@ -70,21 +72,37 @@ def main() -> None:
     with open(out / "preview.svg", "w") as file:
         result.write(file, encoding="unicode", xml_declaration=True)
     
-    png_blob = svg.convert_tree_to_png(result)
-    (out / "preview.png").write_bytes(png_blob)
-    
-    # Remove filter effect
+    # Remove shading effect
     match tree_get_id(result, "sideShading"):
         case None:
             panic("Tree did not have id ")
         case shading_filter:
             shading_filter[:] = []
     
+    # Remove masks
+    masks = filter(
+        lambda element: \
+            re.match(r"^[0-9]+(\.[0-9]+)?u-base$", element.attrib.get("id", "")),
+        result.findall(".//mask")
+    )
+    white_rect = ET.Element("rect", {
+        "width": "1",
+        "height": "1",
+        "fill": "white",
+    })
+    for mask in masks:
+        mask.attrib["maskContentUnits"] = "objectBoundingBox"
+        mask[:] = [white_rect]
+    
     with open(out / "texture.svg", "w") as file:
         result.write(file, encoding="unicode", xml_declaration=True)
     
-    png_blob = svg.convert_tree_to_png(result)
-    (out / "texture.png").write_bytes(png_blob)
+    svg.render_many_files_as_png((
+        (out / "preview.svg", out / "preview.png"),
+        (out / "texture.svg", out / "texture.png"),
+    ))
+    
+    metadata.store_at(out / "metadata.json5")
 
 def run() -> None:
     try:

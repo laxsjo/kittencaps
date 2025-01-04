@@ -1,19 +1,23 @@
 {
     "cSpell.words": [
-        "altgr",
-        "damsenviet",
-        "glyf",
-        "hhea",
-        "ipython",
-        "lxml",
-        "num",
-        "numpad",
-        "pypkgs",
-        "sdist",
-        "tspan",
-        "VARC",
-        "Vec",
-        "virtualenvwrapper"
+      "altgr",
+      "damsenviet",
+      "DSA",
+      "glyf",
+      "hhea",
+      "ipython",
+      "lxml",
+      "materialx",
+      "num",
+      "numpad",
+      "numpy",
+      "pypkgs",
+      "sdist",
+      "tspan",
+      "VARC",
+      "Vec",
+      "virtualenvwrapper",
+      "zstandard"
     ],
     "svg.preview.background": "editor"
 }

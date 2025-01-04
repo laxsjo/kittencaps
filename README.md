@@ -42,3 +42,5 @@ You can then open the reference image board using `pureref references/references
 
 ## Credits
 Key template from https://github.com/Maximillian/keycap-set-templates/
+keycap 3D models from https://www.thingiverse.com/thing:2172302 (CC BY-NC-SA)
+Moonlander mk1 case 3D model from https://www.zsa.io/moonlander/printables (license is IDK, but it's probably fine...)

@@ -1,16 +1,60 @@
 [
   {
     "name": "Kittencaps",
-    "switchMount": "cherry"
+    "switchMount": "cherry",
+    "case": {
+      "modelPath": "../cases/moonlander-mk1.stl",
+      "modelUnitScale": 1,
+      "modelUpAxis": "z",
+      // Origin is offset (along y) 6mm from the first column's first key 
+      // = 0.316u
+      "position": [14.5, 2.316],
+      "verticalOffsetMM": 14,
+      "mirrorAroundX": 9,
+      "color": "case"
+    }
   },
-  [{"a":7,"c":"bg_focus"}, "[sleep]", {"c":"bg_main"}, "1", "2", "[:3]", "4", "5", "[white_wedge_left]", {"x":4}, "[white_wedge_right]", "6", "7", "8", "9", "0", {"c":"bg_focus"}, ""],
-  ["[del]", {"c":"bg_main"}, "[Q]", "D", "R", "[w]", "B", {"c":"bg_focus"},"", {"x":4}, "[ghost]", {"c":"bg_main"}, "J", "F", "U", "P", {"c":"bg_focus"}, "", "[numpad]"],
-  ["[tab]", {"c":"bg_main"}, "A", "S", "H", "T", "G", {"c":"bg_focus"}, "[esc]", {"x":4}, "[play]", {"c":"bg_main"}, "Y", "[n_with_ö]", "[e_with_ä]", "[o_with_å]", "I", {"c":"bg_focus"}, "[enter]"],
-  [{"c":"bg_focus"}, "[altgr]", {"c":"bg_main"}, "Z", "X", "M", "C", "V", {"x":6}, "K", "L", "[.]", "[,]", {"c":"bg_accent"}, "", {"c":"bg_focus"}, "[below_enter]"],
-  [{"c":"bg_focus"}, "[gaming]", "[emoji]", "[numpad]", "[hyper]", "[num]", {"x":8}, "[sym]", "", "", "", {"c":"bg_focus"}, "[below_enter2]"],
+  // Column delta positions (mm) (-y is upwards)
+  // 0
+  // -1.5
+  // -3
+  // -1.5
+  // +1.5
+  // +3
+  // +1.5
+  // 
+  // u = 19mm
+  // -0.079
+  // -0.158
+  // -0.079
+  // 0.079
+  // 0.158
+  // 0.079
   
-  [{"r":45, "rx":5, "ry":5, "y":-2.5, "x":0.25, "w":2, "c":"bg_accent"}, "[cat_face]"],
-  [{"x":0.25, "h":1.5, "c":"bg_focus"}, "[shift]", {"h":1.5}, "[ctrl]", {"h":1.5}, "[alt]"],
-  [{"r":-45, "rx":13, "y":-2.5, "x":-2.25, "w":2, "c":"bg_accent"}, "[super]"],
-  [{"x":-3.25, "h":1.5, "c":"bg_focus"}, "[umlaut]", {"h":1.5}, "[space]", {"h":1.5}, "[nav]"]
+  [{"a":7,"c":"bg_focus"}, "[sleep]", {"x":-1,"y":1}, "[del]", {"x":-1,"y":1}, "[tab]", {"x":-1,"y":1}, "[altgr]", {"x":-1,"y":1}, "[gaming]", {"y":-5}],
+  [{"x":1},{"y":-0.079,"c":"bg_main"}, "1", {"x":-1,"y":1}, "[Q]", {"x":-1,"y":1}, "A", {"x":-1,"y":1}, "Z", {"x":-1,"y":1}, {"c":"bg_focus"}, "[emoji]", {"y":-5}],
+  [{"x":2},{"y":-0.158,"c":"bg_main"}, "2", {"x":-1,"y":1}, "D", {"x":-1,"y":1}, "S", {"x":-1,"y":1}, "X", {"x":-1,"y":1}, {"c":"bg_focus"}, "[numpad]", {"y":-5}],
+  [{"x":3},{"y":-0.079,"c":"bg_main"}, "[:3]", {"x":-1,"y":1}, "R", {"x":-1,"y":1}, "H", {"x":-1,"y":1}, "M", {"x":-1,"y":1}, {"c":"bg_focus"}, "[hyper]", {"y":-5}],
+  [{"x":4},{"y":0.079,"c":"bg_main"}, "4", {"x":-1,"y":1}, "[w]", {"x":-1,"y":1}, "T", {"x":-1,"y":1}, "C", {"x":-1,"y":1}, {"c":"bg_focus"}, "[num]", {"y":-5}],
+  [{"x":5},{"y":0.158,"c":"bg_main"}, "5", {"x":-1,"y":1}, "B", {"x":-1,"y":1}, "G", {"x":-1,"y":1}, "V", {"y":-4}],
+  [{"x":6},{"y":0.079,"c":"bg_main"}, "[white_wedge_left]", {"x":-1,"y":1}, {"c":"bg_focus"}, "", {"x":-1,"y":1}, "[esc]", {"y":-3}],
+  
+  [{"x":11},{"y":0,"c":"bg_main"}, "[white_wedge_right]", {"x":-1,"y":1}, {"c":"bg_focus"}, "[ghost]", {"x":-1,"y":1}, "[play]", {"y":-3}],
+  [{"x":12},{"y":-0.079,"c":"bg_main"}, "6", {"x":-1,"y":1}, "J", {"x":-1,"y":1}, "Y", {"x":-1,"y":1}, "K", {"y":-4}],
+  [{"x":13},{"y":-0.158,"c":"bg_main"}, "7", {"x":-1,"y":1}, "F", {"x":-1,"y":1}, "[n_with_ö]", {"x":-1,"y":1}, "L", {"x":-1,"y":1}, {"c":"bg_focus"}, "[sym]", {"y":-5}],
+  [{"x":14},{"y":-0.079,"c":"bg_main"}, "8", {"x":-1,"y":1}, "U", {"x":-1,"y":1}, "[e_with_ä]", {"x":-1,"y":1}, "[.]", {"x":-1,"y":1}, {"c":"bg_focus"}, "", {"y":-5}],
+  [{"x":15},{"y":0.079,"c":"bg_main"}, "9", {"x":-1,"y":1}, "P", {"x":-1,"y":1}, "[o_with_å]", {"x":-1,"y":1}, "[,]", {"x":-1,"y":1}, {"c":"bg_focus"}, "", {"y":-5}],
+  [{"x":16},{"y":0.158,"c":"bg_main"}, "0", {"x":-1,"y":1}, {"c":"bg_focus"}, "", {"x":-1,"y":1}, {"c":"bg_main"}, "I", {"x":-1,"y":1}, {"c": "bg_focus"}, "", {"x":-1,"y":1}, "", {"y":-5}],
+  [{"x":17},{"y":0.079,"c":"bg_focus"}, "", {"x":-1,"y":1}, "[numpad]", {"x":-1,"y":1}, "[enter]", {"x":-1,"y":1}, "[below_enter]", {"x":-1,"y":1}, "[below_enter2]", {"y":-5}],
+
+  // For the left half, offset from the point (5u,5u):
+  // x: +3.3127894736842105
+  // y: -0.007707842105263158
+
+  [{"r":50, "rx":8.313, "ry":4.992, "x":-2, "y":0, "w":2, "c":"bg_accent"}, "[cat_face]"],
+  [{"x":-2, "h":1.5, "c":"bg_focus"}, "[shift]", {"h":1.5}, "[ctrl]", {"h":1.5}, "[alt]"],
+  
+  
+  [{"r":-50, "rx":9.687, "ry":4.992, "x":0, "y":0, "w":2, "c":"bg_accent"}, "[super]"],
+  [{"x":-1, "h":1.5, "c":"bg_focus"}, "[umlaut]", {"h":1.5}, "[space]", {"h":1.5}, "[nav]"]
 ]

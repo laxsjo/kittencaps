@@ -10,6 +10,8 @@ __all__ = [
     "Result",
     "Error",
     "Ok",
+    "Option",
+    "map_some",
     "unwrap"
 ]
 
@@ -35,9 +37,22 @@ class Ok[T]:
     def unwrap_err(self) -> Never:
         return panic(f"Tried to unwrap_err {self}")
 
-def unwrap[T](option: T|Error[Any]|None) -> T:
-    if isinstance(option, Error):
-        panic(f"Tried to unwrap error {option}", 1)
-    if option == None:
-        panic(f"Tried to unwrap None", 1)
-    return option
+type Option[T] = T | None
+
+def map_some[T, R](value: Option[T], f: Callable[[T], R]) -> Option[R]:
+    match value:
+        case None:
+            return value
+        case some_value:
+            return f(some_value)
+
+def unwrap[T](value: Result[T, Any]|Option[T]) -> T:
+    match value:
+        case Error(error):
+            panic(f"Tried to unwrap error({error})", 1)
+        case None:
+            panic(f"Tried to unwrap None", 1)
+        case Ok(ok):
+            return ok
+        case some:
+            return some
