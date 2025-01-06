@@ -20,6 +20,7 @@ __all__ = [
     "tree_resolve_namespaces",
     "make_element",
     "remove_element_in_tree",
+    "remove_element_by_id_in_tree",
     "tree_get_id",
     "untangle_gradient_links",
     "tree_get_viewbox",
@@ -27,6 +28,8 @@ __all__ = [
     "element_add_label",
     "element_append_css_properties",
     "element_remove_css_properties",
+    "tree_remove_indentation",
+    "tree_filtered_indent",
     "Transform",
     "Placement",
     "element_apply_transform",
@@ -36,6 +39,7 @@ __all__ = [
     "SvgSymbol",
     "SvgSymbolSet",
     "SvgStyleBuilder",
+    "build_palette_def",
     "SvgDocumentBuilder",
 ]
 
@@ -145,6 +149,12 @@ def remove_element_in_tree(element: ET.Element, tree: ET.ElementTree|ET.Element)
         # Removes element it if it's a child of parent 
         if element in parent:
             parent.remove(element)
+
+def remove_element_by_id_in_tree(id: str, tree: ET.ElementTree|ET.Element):
+    for parent in tree.iter():
+        for child in parent:
+            if child.get("id", None) == id:
+                parent.remove(child)
 
 def tree_get_id(tree: MaybeElementTree, id: str) -> ET.Element|None:
     for element in resolve_element_tree(tree).iter():
@@ -334,7 +344,21 @@ def element_remove_css_properties(element: ET.Element, properties: set[str]) -> 
     else:
         element.set("style", styles.to_style())
 
-def tree_filtered_indent(tree: ET.Element|ET.ElementTree, predicate: Callable[[ET.Element], bool], space: str="  ", level: int=0) -> None:
+def tree_remove_indentation(tree: ET.ElementTree|ET.Element) -> None:
+    root = tree.getroot() if isinstance(tree, ET.ElementTree) else tree
+    
+    for child in root.iter():
+        if child.tail and not child.tail.strip():
+            child.tail = ""
+        if child.text and not child.text.strip():
+            child.text = ""
+
+def tree_filtered_indent(
+        tree: ET.Element|ET.ElementTree,
+        predicate: Callable[[ET.Element], bool] = lambda element: element.tag not in ["text"],
+        space: str="  ",
+        level: int=0,
+        add_to_existing: bool = False) -> None:
     """Indent an XML document by inserting newlines and indentation space
     after elements.
 
@@ -351,6 +375,10 @@ def tree_filtered_indent(tree: ET.Element|ET.ElementTree, predicate: Callable[[E
     *level* is the initial indentation level. Setting this to a higher
     value than 0 can be used for indenting subtrees that are more deeply
     nested inside of a document.
+    
+    *add_to_existing* specifies if the indenation white space should be added
+    onto any existing whitespace. If false this operation
+    is idempotent. (default is False)
     """
     root = tree.getroot() if isinstance(tree, ET.ElementTree) else tree
     
@@ -378,16 +406,17 @@ def tree_filtered_indent(tree: ET.Element|ET.ElementTree, predicate: Callable[[E
             elem.text = child_indentation
 
         child = None
-        for child in elem:
+        for i, child in enumerate(elem):
             if len(child):
                 _indent_children(child, child_level)
             if not child.tail or not child.tail.strip():
-                child.tail = child_indentation
-        
-        # Dedent after the last child by overwriting the previous indentation.
-        if child != None and not (child.tail or "").strip():
-            child.tail = indentations[level]
-
+                if not add_to_existing:
+                    child.tail = ""
+                
+                if i == len(elem) - 1:
+                    child.tail = (child.tail or "") + indentations[level]
+                else:
+                    child.tail = (child.tail or "") + child_indentation
 
     _indent_children(root, 0)
 
@@ -535,6 +564,8 @@ class SvgSymbolSet:
         tree_resolve_namespaces(source)
         
         elements = source.findall("symbol")
+        for element in elements:
+            tree_remove_indentation(element)
         self.symbols = dict(map(lambda icon: (icon.id, icon), map(SvgSymbol, elements)))
         
         self.other_elements = []

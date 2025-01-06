@@ -8,13 +8,10 @@ import argparse
 import xml.etree.ElementTree as ET
 from decimal import Decimal
 
-from rich.console import Console
-
 from .lib.utils import *
 from .lib.error import *
 from .lib.font import *
-
-console = Console()
+from .lib.shell import console
 
 def main() -> None:
     parser = argparse.ArgumentParser(description="Calculate the baseline offset from the top of a box with given height, such that the character 'H' is visually centered.")

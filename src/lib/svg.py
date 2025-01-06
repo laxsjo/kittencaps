@@ -5,14 +5,25 @@ from playwright.sync_api import sync_playwright
 from . import svg_builder
 from .utils import *
 from .error import *
+import io
 
 # TODO: Should probably move a lot of the basic SVG utils from svg_builder.py
 # into here. Or rename this module to something more specific like converting
 # formats.
 
 __all__ = [
+    "tree_to_str",
     "render_many_files_as_png",
 ]
+
+import xml.dom.minidom as minidom
+
+def tree_to_str(tree: ET.Element|ET.ElementTree) -> str:
+    tree = tree if isinstance(tree, ET.ElementTree) else ET.ElementTree(tree)
+    
+    output = io.StringIO()
+    tree.write(output, encoding="unicode")
+    return output.getvalue()
 
 def render_many_files_as_png(in_out_path_pairs: Iterable[tuple[Path, Path]]):
     with sync_playwright() as p:

@@ -5,15 +5,15 @@
       <title>bg_main</title>
       <stop style="stop-color:#f5f7f7;"/>
     </linearGradient>
-    <linearGradient id="bg_accent_darker" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse" gradientTransform="matrix(-1.178743, 0.76547, -0.765466, -1.178743, 1589.268511, -226.520163)">
+    <linearGradient id="bg_accent_darker" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
       <title>bg_accent_darker</title>
       <stop style="stop-color:oklch(0.717 0.026 279);"/>
     </linearGradient>
-    <linearGradient id="bg_accent_dark" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse" gradientTransform="matrix(0.302294, 0, 0, 0.302294, 47.865826, 37.678689)">
+    <linearGradient id="bg_accent_dark" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
       <title>bg_accent_dark</title>
       <stop style="stop-color:oklch(0.787 0.026 279);"/>
     </linearGradient>
-    <linearGradient id="bg_accent" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse" gradientTransform="matrix(-0.001914, 0.001243, -0.001243, -0.001914, 141.428863, 89.056115)">
+    <linearGradient id="bg_accent" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
       <title>bg_accent</title>
       <stop style="stop-color:#dee0ed;"/>
     </linearGradient>
@@ -49,13 +49,17 @@
       <title>fg_color_darker</title>
       <stop style="stop-color:oklch(0.633 0.068 310);"/>
     </linearGradient>
-    <linearGradient id="fg_color" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse" gradientTransform="matrix(1.138263, 0, 0, 1.266775, -5.30335, -14.197033)">
+    <linearGradient id="fg_color" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
       <title>fg_color</title>
       <stop style="stop-color:oklch(0.698 0.068 315);"/>
     </linearGradient>
     <linearGradient id="fg_color_lighter" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
       <title>fg_color_lighter</title>
       <stop style="stop-color:#f9f0ff;"/>
+    </linearGradient>
+    <linearGradient id="case" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
+      <title>case</title>
+      <stop style="stop-color:#000000;"/>
     </linearGradient>
   </defs>
   <style type="text/css" id="font_style">

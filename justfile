@@ -42,6 +42,7 @@ generate-keycaps layout="moonlander-mk1" theme="standard":
         --theme=./assets/themes/{{theme}}.json \
         --out=./generated/{{layout}}_{{theme}}
 
+# TODO: This command should save the hashes of it's inputs, and only generate a new .blend file if it changes, since creating the blend file is non-deterministic.
 generate-render-scene layout="moonlander-mk1" theme="standard":
     BLENDER_SYSTEM_PYTHON="$VIRTUAL_ENV" PYTHONPATH="$(python -c "import sys; print(\":\".join(sys.path))")" blender \
         assets/templates/render/scene-template.blend \
@@ -49,6 +50,15 @@ generate-render-scene layout="moonlander-mk1" theme="standard":
         --python "src/blender/assemble_render_keyboard.py" -- \
         --directory ./generated/moonlander-mk1_standard/ \
         --out ./generated/moonlander-mk1_standard/scene.blend
+
+# Update the palette colors in the specified icon SVG files to match the colors defined in the standard theme. The icon names should be the text in between the [brackets], i.e. to update assets/icons/[tab].svg run `just update-icon-palettes tab`. Default is to update all icons.
+update-icon-palettes *icons:
+    python -m src.update_icon_palettes {{icons}} \
+        --theme=./assets/themes/standard.json
+
+# Synchronies all generated assets and update icon SVG file colors. Essentially a wrapper around `generate-keycaps` and `generate-render-scene` but for all theme and layout variations, and finally running `update-icon-palettes`. You should essentially run this before every commit to make sure all files are updated. Take note of reverting the generated blend file if none of the input files changed, since unfortunately saving .blend files is non-deterministic, meaning they will always be marked as changed.
+sync:
+    python -m src.sync
 
 # Open the reference images in pureref
 open-refs:

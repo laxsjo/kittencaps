@@ -33,6 +33,10 @@ attrs = "24.2.0"
 playwright = "=1.47.0"
 fake-bpy-module-4-2 = "^20241010"
 pillow = "^11.0.0"
+more-itertools = "^10.5.0"
+tree-sitter = "^0.23.2"
+# Lock version since we manually override in flake.nix
+tree-sitter-xml = "=0.7.0"
 
 [build-system]
 requires = ["poetry-core"]

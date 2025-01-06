@@ -42,6 +42,26 @@
           # patches to avoid `playwright install`, which I don't know how to
           # replicate via poetry. 
           playwright = pkgs.python312Packages.playwright;
+          
+          # There seems to be a bug (?) in tree-sitter-xml which causes its
+          # build to fail when done via poetry. Building it manually seems to
+          # work for some reason though...
+          tree-sitter-xml = with pkgs.python312Packages; buildPythonPackage rec {
+            pname = "tree-sitter-xml";
+            version = "0.7.0";
+            pyproject = true;
+            
+            src = pkgs.fetchFromGitHub {
+              owner = "tree-sitter-grammars";
+              repo = "tree-sitter-xml";
+              rev = "v0.7.0";
+              hash = "sha256-/0IQsTkvFQOWnkLc2srjg2bn1sB1sNA6Sm3nwKGUDj4=";
+            };
+            
+            build-system = [
+              setuptools
+            ];
+          };
         });
       
       pythonEnv = (pkgs.poetry2nix.mkPoetryEnv {

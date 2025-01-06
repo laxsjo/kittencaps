@@ -1,13 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <svg version="1.1" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:bx="https://boxy-svg.com" style="">
   <defs id="palette-colors">
-    <linearGradient id="bg_main" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse" gradientTransform="matrix(0.32072, 0, 0, 0.438679, 25.589058, 23.634753)">
+    <linearGradient id="bg_main" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
       <title>bg_main</title>
       <stop style="stop-color:#f5f7f7;"/>
+    </linearGradient>
+    <linearGradient id="bg_accent_darker" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
+      <title>bg_accent_darker</title>
+      <stop style="stop-color:oklch(0.717 0.026 279);"/>
+    </linearGradient>
+    <linearGradient id="bg_accent_dark" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
+      <title>bg_accent_dark</title>
+      <stop style="stop-color:oklch(0.787 0.026 279);"/>
     </linearGradient>
     <linearGradient id="bg_accent" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
       <title>bg_accent</title>
       <stop style="stop-color:#dee0ed;"/>
+    </linearGradient>
+    <linearGradient id="bg_accent_lighter" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
+      <title>bg_accent_lighter</title>
+      <stop style="stop-color:#eaebf5;"/>
     </linearGradient>
     <linearGradient id="bg_focus" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
       <title>bg_focus</title>
@@ -17,9 +29,37 @@
       <title>fg_main</title>
       <stop style="stop-color:#7d787c;"/>
     </linearGradient>
+    <linearGradient id="fg_main_lighter" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
+      <title>fg_main_lighter</title>
+      <stop style="stop-color:oklch(0.827 0.026 290);"/>
+    </linearGradient>
     <linearGradient id="fg_lighter" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
       <title>fg_lighter</title>
       <stop style="stop-color:#d5d5df;"/>
+    </linearGradient>
+    <linearGradient id="fg_dark" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
+      <title>fg_dark</title>
+      <stop style="stop-color:#4f4d4f;"/>
+    </linearGradient>
+    <linearGradient id="fg_orange" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
+      <title>fg_orange</title>
+      <stop style="stop-color:#ffc867;"/>
+    </linearGradient>
+    <linearGradient id="fg_color_darker" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
+      <title>fg_color_darker</title>
+      <stop style="stop-color:oklch(0.633 0.068 310);"/>
+    </linearGradient>
+    <linearGradient id="fg_color" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
+      <title>fg_color</title>
+      <stop style="stop-color:oklch(0.698 0.068 315);"/>
+    </linearGradient>
+    <linearGradient id="fg_color_lighter" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
+      <title>fg_color_lighter</title>
+      <stop style="stop-color:#f9f0ff;"/>
+    </linearGradient>
+    <linearGradient id="case" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
+      <title>case</title>
+      <stop style="stop-color:#000000;"/>
     </linearGradient>
   </defs>
   <style type="text/css" id="font_style">

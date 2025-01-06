@@ -5,14 +5,6 @@
       <title>bg_main</title>
       <stop style="stop-color:#f5f7f7;"/>
     </linearGradient>
-    <linearGradient id="bg_accent" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
-      <title>bg_accent</title>
-      <stop style="stop-color:#dee0ed;"/>
-    </linearGradient>
-    <linearGradient id="bg_accent_lighter" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
-      <title>bg_accent_lighter</title>
-      <stop style="stop-color:#eaebf5;"/>
-    </linearGradient>
     <linearGradient id="bg_accent_darker" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
       <title>bg_accent_darker</title>
       <stop style="stop-color:oklch(0.717 0.026 279);"/>
@@ -20,6 +12,14 @@
     <linearGradient id="bg_accent_dark" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
       <title>bg_accent_dark</title>
       <stop style="stop-color:oklch(0.787 0.026 279);"/>
+    </linearGradient>
+    <linearGradient id="bg_accent" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
+      <title>bg_accent</title>
+      <stop style="stop-color:#dee0ed;"/>
+    </linearGradient>
+    <linearGradient id="bg_accent_lighter" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
+      <title>bg_accent_lighter</title>
+      <stop style="stop-color:#eaebf5;"/>
     </linearGradient>
     <linearGradient id="bg_focus" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
       <title>bg_focus</title>
@@ -56,6 +56,10 @@
     <linearGradient id="fg_color_lighter" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
       <title>fg_color_lighter</title>
       <stop style="stop-color:#f9f0ff;"/>
+    </linearGradient>
+    <linearGradient id="case" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
+      <title>case</title>
+      <stop style="stop-color:#000000;"/>
     </linearGradient>
     <bx:guide x="41.342" y="32.1147" angle="90"/>
     <bx:guide x="45.594" y="33.0088" angle="90"/>
