@@ -9,7 +9,7 @@ import xml.etree.ElementTree as ET
 
 from .lib import project, svg
 from .lib.svg_builder import *
-from .lib.keyboard_builder import build_keyboard_svg
+from .lib.keyboard_builder import build_keyboard_svg, create_keycap_mask
 from .lib.theme import *
 from .lib.utils import *
 from .lib.generation_metadata import *
@@ -79,20 +79,17 @@ def main() -> None:
         case shading_filter:
             shading_filter[:] = []
     
-    # Remove masks
+    # Make keycap masks cover entire 1u square
     masks = filter(
         lambda element: \
             re.match(r"^[0-9]+(\.[0-9]+)?u-base$", element.attrib.get("id", "")),
         result.findall(".//mask")
     )
-    white_rect = ET.Element("rect", {
-        "width": "1",
-        "height": "1",
-        "fill": "white",
-    })
+    theme.base_size = theme.unit_size
     for mask in masks:
-        mask.attrib["maskContentUnits"] = "objectBoundingBox"
-        mask[:] = [white_rect]
+        size_u = mask.attrib["id"].removesuffix("-base")
+        new_mask = create_keycap_mask(size_u, theme)
+        mask[:] = new_mask[:]
     
     with open(out / "texture.svg", "w") as file:
         result.write(file, encoding="unicode", xml_declaration=True)

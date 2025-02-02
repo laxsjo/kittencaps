@@ -7,27 +7,27 @@
     </linearGradient>
     <linearGradient id="bg_accent_darker" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
       <title>bg_accent_darker</title>
-      <stop style="stop-color:oklch(0.717 0.026 279);"/>
+      <stop style="stop-color:oklch(0.552 0.0672 278);"/>
     </linearGradient>
     <linearGradient id="bg_accent_dark" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
       <title>bg_accent_dark</title>
-      <stop style="stop-color:oklch(0.787 0.026 279);"/>
+      <stop style="stop-color:oklch(0.71 0.0568 282);"/>
     </linearGradient>
     <linearGradient id="bg_accent" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
       <title>bg_accent</title>
-      <stop style="stop-color:#dee0ed;"/>
+      <stop style="stop-color:oklch(0.899 0.035 285);"/>
     </linearGradient>
     <linearGradient id="bg_accent_lighter" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
       <title>bg_accent_lighter</title>
-      <stop style="stop-color:#eaebf5;"/>
+      <stop style="stop-color:oklch(0.942 0.013 290);"/>
     </linearGradient>
     <linearGradient id="bg_focus" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
       <title>bg_focus</title>
-      <stop style="stop-color:#7d787c;"/>
+      <stop style="stop-color:oklch(0.306 0.005 257);"/>
     </linearGradient>
     <linearGradient id="fg_main" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
       <title>fg_main</title>
-      <stop style="stop-color:#7d787c;"/>
+      <stop style="stop-color:oklch(0.306 0.005 257);"/>
     </linearGradient>
     <linearGradient id="fg_main_lighter" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
       <title>fg_main_lighter</title>
@@ -47,15 +47,27 @@
     </linearGradient>
     <linearGradient id="fg_color_darker" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
       <title>fg_color_darker</title>
-      <stop style="stop-color:oklch(0.633 0.068 310);"/>
+      <stop style="stop-color:oklch(0.633 0.086 347);"/>
     </linearGradient>
     <linearGradient id="fg_color" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
       <title>fg_color</title>
-      <stop style="stop-color:oklch(0.698 0.068 315);"/>
+      <stop style="stop-color:oklch(0.698 0.1192 342);"/>
     </linearGradient>
     <linearGradient id="fg_color_lighter" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
       <title>fg_color_lighter</title>
-      <stop style="stop-color:#f9f0ff;"/>
+      <stop style="stop-color:oklch(0.966 0.022 336);"/>
+    </linearGradient>
+    <linearGradient id="accent_sec_darker" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
+      <title>accent_sec_darker</title>
+      <stop style="stop-color:oklch(0.71 0.1392 89.9);"/>
+    </linearGradient>
+    <linearGradient id="accent_sec_dark" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
+      <title>accent_sec_dark</title>
+      <stop style="stop-color:oklch(0.71 0.1392 99.9);"/>
+    </linearGradient>
+    <linearGradient id="accent_sec" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
+      <title>accent_sec</title>
+      <stop style="stop-color:oklch(0.892 0.12 105);"/>
     </linearGradient>
     <linearGradient id="case" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
       <title>case</title>
@@ -84,7 +96,7 @@
     <path style="fill: none; stroke-linejoin: round; stroke-width: 3px; stroke: url(&quot;#fg_dark&quot;); stroke-linecap: square; visibility: hidden;" d="M 0 100 L 43 57 C 52.9105 48.158 60 45 72 45 L 100 45">
       <title>Outline</title>
     </path>
-    <path style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 3px; fill: url(&quot;#bg_focus&quot;);" d="M 100 100 L -0.0002 100 C -0.0002 100 61.5303 3.3819 100 0 L 100 100 Z">
+    <path style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 3px; fill: url(&quot;#bg_focus&quot;);" d="M 100 100 L -0.0002 100 L 100 0 L 100 100 Z">
       <title>BG</title>
     </path>
   </svg>

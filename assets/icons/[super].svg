@@ -7,27 +7,27 @@
     </linearGradient>
     <linearGradient id="bg_accent_darker" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
       <title>bg_accent_darker</title>
-      <stop style="stop-color:oklch(0.717 0.026 279);"/>
+      <stop style="stop-color:oklch(0.552 0.0672 278);"/>
     </linearGradient>
     <linearGradient id="bg_accent_dark" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
       <title>bg_accent_dark</title>
-      <stop style="stop-color:oklch(0.787 0.026 279);"/>
+      <stop style="stop-color:oklch(0.71 0.0568 282);"/>
     </linearGradient>
     <linearGradient id="bg_accent" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
       <title>bg_accent</title>
-      <stop style="stop-color:#dee0ed;"/>
+      <stop style="stop-color:oklch(0.899 0.035 285);"/>
     </linearGradient>
     <linearGradient id="bg_accent_lighter" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
       <title>bg_accent_lighter</title>
-      <stop style="stop-color:#eaebf5;"/>
+      <stop style="stop-color:oklch(0.942 0.013 290);"/>
     </linearGradient>
     <linearGradient id="bg_focus" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
       <title>bg_focus</title>
-      <stop style="stop-color:#7d787c;"/>
+      <stop style="stop-color:oklch(0.306 0.005 257);"/>
     </linearGradient>
     <linearGradient id="fg_main" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
       <title>fg_main</title>
-      <stop style="stop-color:#7d787c;"/>
+      <stop style="stop-color:oklch(0.306 0.005 257);"/>
     </linearGradient>
     <linearGradient id="fg_main_lighter" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
       <title>fg_main_lighter</title>
@@ -47,15 +47,27 @@
     </linearGradient>
     <linearGradient id="fg_color_darker" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
       <title>fg_color_darker</title>
-      <stop style="stop-color:oklch(0.633 0.068 310);"/>
+      <stop style="stop-color:oklch(0.633 0.086 347);"/>
     </linearGradient>
     <linearGradient id="fg_color" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
       <title>fg_color</title>
-      <stop style="stop-color:oklch(0.698 0.068 315);"/>
+      <stop style="stop-color:oklch(0.698 0.1192 342);"/>
     </linearGradient>
     <linearGradient id="fg_color_lighter" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
       <title>fg_color_lighter</title>
-      <stop style="stop-color:#f9f0ff;"/>
+      <stop style="stop-color:oklch(0.966 0.022 336);"/>
+    </linearGradient>
+    <linearGradient id="accent_sec_darker" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
+      <title>accent_sec_darker</title>
+      <stop style="stop-color:oklch(0.71 0.1392 89.9);"/>
+    </linearGradient>
+    <linearGradient id="accent_sec_dark" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
+      <title>accent_sec_dark</title>
+      <stop style="stop-color:oklch(0.71 0.1392 99.9);"/>
+    </linearGradient>
+    <linearGradient id="accent_sec" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
+      <title>accent_sec</title>
+      <stop style="stop-color:oklch(0.892 0.12 105);"/>
     </linearGradient>
     <linearGradient id="case" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
       <title>case</title>
@@ -64,10 +76,15 @@
     <bx:guide x="53.511" y="41.349" angle="0"/>
     <symbol id="paw_print" viewBox="0 0 7 6.5" bx:pinned="true">
       <title>Paw Print</title>
-      <path d="M 5.971 3.823 C 6.005 5.183 4.835 6.337 3.474 6.337 C 2.113 6.337 1.029 5.234 1.01 3.873 C 1.005 3.538 1.346 3.351 1.669 3.137 C 2.247 2.752 3.026 2.474 3.493 2.474 C 3.988 2.474 4.667 2.716 5.272 3.086 C 5.551 3.257 5.962 3.482 5.971 3.823 Z" style="fill: inherit;"/>
-      <ellipse style="fill: inherit; transform-box: fill-box; transform-origin: 50% 50%;" cx="188.09" cy="77.524" rx="0.897" ry="1.039" transform="matrix(0.993581, -0.113127, 0.113127, 0.993581, -186.714024, -75.673454)"/>
-      <ellipse style="fill: inherit;" cx="3.542" cy="1.203" rx="0.944" ry="1.04"/>
-      <ellipse style="fill: inherit; transform-origin: 188.09px 77.524px;" cx="188.09" cy="77.524" rx="0.873" ry="1.012" transform="matrix(-0.993581, -0.113127, -0.113127, 0.993581, -182.438609, -75.686071)"/>
+      <rect width="7" height="6.5" style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px; fill: rgb(186, 218, 85); visibility: hidden;" transform="matrix(-1, 0, 0, 1, 0, 0)" x="-7">
+        <title>Reference</title>
+      </rect>
+      <path d="M 5.4667 4.146 C 5.4938 5.2294 4.5617 5.9443 3.4775 5.9443 C 2.3932 5.9443 1.5296 5.27 1.5144 4.1858 C 1.5104 3.9189 2.0035 3.77 2.2609 3.5994 C 2.7213 3.2928 3.1206 2.8667 3.4926 2.8667 C 3.8869 2.8667 4.1794 3.264 4.6614 3.5588 C 4.8837 3.6951 5.4595 3.8743 5.4667 4.146 Z" style="fill: inherit;"/>
+      <bx:guide x="3.508653461901895" y="2.4461445122628516" angle="0"/>
+      <ellipse style="fill: inherit; transform-origin: 188.089px 77.524px;" cx="188.09" cy="77.524" rx="0.5419" ry="0.7074" transform="matrix(-0.997325, -0.073093, -0.073094, 0.997325, -182.391536, -74.65135)"/>
+      <ellipse style="fill: inherit; transform-origin: 188.09px 77.5238px;" cx="188.09" cy="77.524" rx="0.6505" ry="0.8492" transform="matrix(-0.992133, -0.125192, -0.125192, 0.992133, -183.724687, -75.66933)"/>
+      <ellipse style="fill: inherit; transform-origin: 188.089px 77.524px;" cx="188.09" cy="77.524" rx="0.5419" ry="0.7074" transform="matrix(0.997325, -0.073093, 0.073094, 0.997325, -186.786428, -74.651334)"/>
+      <ellipse style="fill: inherit; transform-origin: 188.09px 77.5238px;" cx="188.09" cy="77.524" rx="0.6505" ry="0.8492" transform="matrix(0.992133, -0.125192, 0.125192, 0.992133, -185.455016, -75.669299)"/>
     </symbol>
     <symbol id="eye" viewBox="0 0 1.9588 3.1008" bx:pinned="true">
       <title>Eye</title>

@@ -7,27 +7,27 @@
     </linearGradient>
     <linearGradient id="bg_accent_darker" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
       <title>bg_accent_darker</title>
-      <stop style="stop-color:oklch(0.717 0.026 279);"/>
+      <stop style="stop-color:oklch(0.552 0.0672 278);"/>
     </linearGradient>
     <linearGradient id="bg_accent_dark" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
       <title>bg_accent_dark</title>
-      <stop style="stop-color:oklch(0.787 0.026 279);"/>
+      <stop style="stop-color:oklch(0.71 0.0568 282);"/>
     </linearGradient>
     <linearGradient id="bg_accent" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
       <title>bg_accent</title>
-      <stop style="stop-color:#dee0ed;"/>
+      <stop style="stop-color:oklch(0.899 0.035 285);"/>
     </linearGradient>
     <linearGradient id="bg_accent_lighter" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
       <title>bg_accent_lighter</title>
-      <stop style="stop-color:#eaebf5;"/>
+      <stop style="stop-color:oklch(0.942 0.013 290);"/>
     </linearGradient>
     <linearGradient id="bg_focus" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
       <title>bg_focus</title>
-      <stop style="stop-color:#7d787c;"/>
+      <stop style="stop-color:oklch(0.306 0.005 257);"/>
     </linearGradient>
     <linearGradient id="fg_main" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
       <title>fg_main</title>
-      <stop style="stop-color:#7d787c;"/>
+      <stop style="stop-color:oklch(0.306 0.005 257);"/>
     </linearGradient>
     <linearGradient id="fg_main_lighter" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
       <title>fg_main_lighter</title>
@@ -47,24 +47,42 @@
     </linearGradient>
     <linearGradient id="fg_color_darker" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
       <title>fg_color_darker</title>
-      <stop style="stop-color:oklch(0.633 0.068 310);"/>
+      <stop style="stop-color:oklch(0.633 0.086 347);"/>
     </linearGradient>
     <linearGradient id="fg_color" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
       <title>fg_color</title>
-      <stop style="stop-color:oklch(0.698 0.068 315);"/>
+      <stop style="stop-color:oklch(0.698 0.1192 342);"/>
     </linearGradient>
     <linearGradient id="fg_color_lighter" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
       <title>fg_color_lighter</title>
-      <stop style="stop-color:#f9f0ff;"/>
+      <stop style="stop-color:oklch(0.966 0.022 336);"/>
+    </linearGradient>
+    <linearGradient id="accent_sec_darker" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
+      <title>accent_sec_darker</title>
+      <stop style="stop-color:oklch(0.71 0.1392 89.9);"/>
+    </linearGradient>
+    <linearGradient id="accent_sec_dark" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
+      <title>accent_sec_dark</title>
+      <stop style="stop-color:oklch(0.71 0.1392 99.9);"/>
+    </linearGradient>
+    <linearGradient id="accent_sec" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
+      <title>accent_sec</title>
+      <stop style="stop-color:oklch(0.892 0.12 105);"/>
     </linearGradient>
     <linearGradient id="case" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
       <title>case</title>
       <stop style="stop-color:#000000;"/>
     </linearGradient>
-    <linearGradient id="color-2" bx:pinned="true" gradientUnits="userSpaceOnUse">
-      <title>bg_accent_lighter</title>
-      <stop style="stop-color: rgb(234, 235, 245);"/>
-    </linearGradient>
+    <pattern id="pattern-0" patternUnits="userSpaceOnUse" width="40" height="40" bx:pinned="true" viewBox="0 0 40 40">
+      <title>Waves</title>
+      <rect width="40" height="40" style="stroke-linecap: round; stroke-linejoin: bevel; stroke-width: 10px; fill: url(&quot;#bg_focus&quot;); pointer-events: none;"/>
+      <path style="fill: none; stroke-linejoin: round; stroke-linecap: square; stroke: url(&quot;#bg_accent&quot;); stroke-width: 4.5px;" d="M 20 -20 C 15 -15 13 -17 8 -12 C 3 -7 5 -5 0 0 C -5 5 -7 3 -12 8 C -17 13 -15 15 -20 20"/>
+      <path style="fill: none; stroke-linejoin: round; stroke-linecap: square; stroke: url(&quot;#bg_accent&quot;); stroke-width: 4.5px;" d="M 30 -10 C 25 -5 23 -7 18 -2 C 13 3 15 5 10 10 C 5 15 3 13 -2 18 C -7 23 -5 25 -10 30"/>
+      <path style="fill: none; stroke-linejoin: round; stroke-linecap: square; stroke: url(&quot;#bg_accent&quot;); stroke-width: 4.5px;" d="M 40 0 C 35 5 33 3 28 8 C 23 13 25 15 20 20 C 15 25 13 23 8 28 C 3 33 5 35 0 40"/>
+      <path style="fill: none; stroke-linejoin: round; stroke-linecap: square; stroke: url(&quot;#bg_accent&quot;); stroke-width: 4.5px;" d="M 50 10 C 45 15 43 13 38 18 C 33 23 35 25 30 30 C 25 35 23 33 18 38 C 13 43 15 45 10 50"/>
+      <path style="fill: none; stroke-linejoin: round; stroke-linecap: square; stroke: url(&quot;#bg_accent&quot;); stroke-width: 4.5px;" d="M 60 20 C 55 25 53 23 48 28 C 43 33 45 35 40 40 C 35 45 33 43 28 48 C 23 53 25 55 20 60"/>
+    </pattern>
+    <pattern id="pattern-0-0" href="#pattern-0" patternTransform="matrix(0, -1.8, 1.8, 0, 5, 95)"/>
   </defs>
   <style type="text/css" id="font_style">
     @font-face {
@@ -78,36 +96,53 @@
       src: url(data:font/otf;base64,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)
     }
   </style>
-  <rect class="icon-bounding-box" width="100" height="100" style="fill: url(&quot;#bg_focus&quot;);">
+  <rect class="icon-bounding-box" width="100" height="100" style="fill: url(&quot;#bg_accent&quot;);">
     <title>BG</title>
   </rect>
   <svg id="icon" viewBox="0 0 100 100" width="100" height="100" style="overflow:visible;" transform="matrix(1, 0, 0, 1, 0.29027465163380306, -0.5805493032676043)">
-    <g>
+    <rect width="100" height="100" style="stroke-linecap: round; stroke-linejoin: bevel; stroke-width: 10px; fill: url(&quot;#pattern-0-0&quot;);">
+      <title>Pattern</title>
+    </rect>
+    <g style="">
       <title>Record</title>
-      <ellipse style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 3px; fill: url(&quot;#bg_accent&quot;); stroke: url(&quot;#fg_dark&quot;);" cx="50" cy="50" rx="28" ry="28"/>
-      <path style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 10px; fill: url(&quot;#bg_main&quot;);" transform="matrix(0.148844, 0, 0, 0.148844, -130.640943, -13.4205)" d="M 1059.436876341 337.0676 A 178.0388 178.0388 0 0 1 1213.623 248.0482 L 1213.623 426.087 Z" bx:shape="pie 1213.623 426.087 0 178.0388 300 360 1@6086b794">
+      <ellipse style="stroke-linecap: round; stroke-linejoin: round; fill: url(&quot;#fg_main&quot;); paint-order: stroke; stroke: url(&quot;#bg_focus&quot;); stroke-width: 6px;" cx="50" cy="50" rx="27" ry="27"/>
+      <path style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 10px; fill: url(&quot;#bg_accent_dark&quot;);" transform="matrix(0.148844, 0, 0, 0.148844, -130.640943, -13.4205)" d="M 1056.527723804 335.388 A 181.398 181.398 0 0 1 1213.623 244.689 L 1213.623 426.087 Z" bx:shape="pie 1213.623 426.087 0 181.398 300 0 1@ff70ddfc">
         <title>HiglightBG</title>
       </path>
-      <path style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 10px; fill: url(&quot;#bg_main&quot;);" transform="matrix(0.148844, 0, 0, 0.148844, -130.640943, -13.4205)" d="M 1367.809123659 515.1064 A 178.0388 178.0388 0 0 1 1213.623 604.1258 L 1213.623 426.087 Z" bx:shape="pie 1213.623 426.087 0 178.0388 120 180 1@3154acc5">
+      <path style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 10px; fill: url(&quot;#bg_accent_dark&quot;);" transform="matrix(0.148844, 0, 0, 0.148844, -130.640943, -13.4205)" d="M 1370.718276196 516.786 A 181.398 181.398 0 0 1 1213.623 607.485 L 1213.623 426.087 Z" bx:shape="pie 1213.623 426.087 0 181.398 120 180 1@de2cfe83">
         <title>HiglightBG</title>
       </path>
-      <g>
+      <g style="visibility: hidden;">
         <title>Rings</title>
-        <ellipse style="stroke-linecap: round; stroke-linejoin: round; fill: none; stroke: rgb(230, 218, 238); stroke-width: 2px; visibility: hidden;" cx="50" cy="50" rx="23" ry="23"/>
-        <ellipse style="stroke-linecap: round; stroke-linejoin: round; fill: none; stroke: rgb(230, 218, 238); stroke-width: 2px; visibility: hidden;" cx="50" cy="50" rx="19" ry="19"/>
-        <ellipse style="stroke-linecap: round; stroke-linejoin: round; fill: none; stroke: rgb(230, 218, 238); stroke-width: 2px; visibility: hidden;" cx="50" cy="50" rx="15" ry="15"/>
-        <path d="M 68.745 63.331 C 66.859 65.979 64.426 68.209 61.611 69.859 M 57.869 71.619 C 55.75 72.39 53.486 72.859 51.129 72.973 M 31.642 36.142 C 33.017 34.324 34.655 32.717 36.5 31.377 M 38.551 30.048 C 41.545 28.326 44.964 27.259 48.611 27.042 M 34.2 39.444 C 34.904 38.392 35.711 37.414 36.606 36.524 M 38.763 34.677 C 41.021 33.019 43.658 31.848 46.521 31.318 M 65.991 60.264 C 65.033 61.753 63.873 63.1 62.55 64.265 M 58.144 67.171 C 56.264 68.064 54.215 68.658 52.058 68.89 M 37.527 41.666 C 40.058 37.885 44.262 35.319 49.08 35.028 M 62.473 58.334 C 60.936 60.63 58.782 62.478 56.248 63.641 M 53.646 64.554 C 52.479 64.845 51.257 65 50 65 C 49.753 65 49.508 64.994 49.264 64.982" style="stroke-linecap: round; stroke-linejoin: round; fill: none; stroke-width: 2.5px; stroke: url(&quot;#color-2&quot;);">
-          <title>Groves</title>
+        <ellipse style="stroke-linecap: round; stroke-linejoin: round; fill: none; stroke: rgb(230, 218, 238); stroke-width: 2px; visibility: hidden;" cx="50" cy="50" rx="24" ry="24"/>
+        <ellipse style="stroke-linecap: round; stroke-linejoin: round; fill: none; stroke: rgb(230, 218, 238); stroke-width: 2px; visibility: hidden;" cx="50" cy="50" rx="19.8" ry="19.8"/>
+        <ellipse style="stroke-linecap: round; stroke-linejoin: round; fill: none; stroke: rgb(230, 218, 238); stroke-width: 2px; visibility: hidden;" cx="50" cy="50" rx="15.6" ry="15.6"/>
+        <path d="M 49.8249 74.0053 C 55.9609 74.0006 62.289 71.6523 66.9706 66.9707 C 68.4385 65.5028 69.6765 63.892 70.6847 62.1831 M 67.195 59.834 C 63.652 66.174 56.941 69.926 49.676 69.802 M 50 65.6001 C 53.9924 65.6001 57.9848 64.077 61.0309 61.0309 C 61.9555 60.1062 62.7399 59.0944 63.3838 58.0218 M 50 34.4 C 46.008 34.4 42.015 35.923 38.969 38.969 C 38.044 39.894 37.26 40.906 36.616 41.978 M 32.817 40.125 C 36.346 33.762 42.845 30.028 50.087 30.203 M 49.411 26.007 C 43.467 26.152 37.566 28.493 33.029 33.029 C 31.462 34.597 30.156 36.328 29.113 38.168" style="stroke-linecap: round; stroke-linejoin: round; fill: none; stroke-width: 2.6px; stroke: url(&quot;#bg_accent_lighter&quot;); visibility: hidden;">
+          <title>Complete Path</title>
         </path>
+        <path d="M 49.3797 24.4691 C 43.0548 24.6234 36.7757 27.1144 31.948 31.941 C 30.2806 33.6096 28.8908 35.4514 27.781 37.4094 M 72.017 62.9633 C 70.9433 64.7819 69.626 66.4961 68.065 68.058 C 63.0829 73.0391 56.3495 75.5386 49.8203 75.5429" style="stroke-linejoin: round; fill: none; stroke: url(&quot;#bg_accent&quot;); stroke-linecap: round; stroke-width: 3px;"/>
+        <path d="M 50.0877 30.0269 C 42.7812 29.8502 36.2243 33.6174 32.664 40.037 M 67.348 59.9215 C 63.7735 66.318 57.0027 70.1033 49.6731 69.9781" style="stroke-linejoin: round; fill: none; stroke: url(&quot;#bg_accent&quot;); stroke-linecap: round; stroke-width: 3px;"/>
+        <path d="M 50 35.5765 C 46.3091 35.5765 42.6173 36.9847 39.8009 39.8009 C 38.9457 40.6561 38.2209 41.5919 37.6254 42.5831 M 62.3746 57.4169 C 61.7791 58.4081 61.0533 59.3439 60.1991 60.1991 C 57.3827 63.0153 53.6909 64.4235 50 64.4235" style="stroke-linejoin: round; fill: none; stroke: url(&quot;#bg_accent&quot;); stroke-linecap: round; stroke-width: 3px;"/>
+        <path d="M 49.8249 74.0053 C 51.2017 74.0042 52.5881 73.8852 53.9635 73.6483 M 56.839 73.0224 C 59.6914 72.193 62.27 70.8388 64.7058 68.961 M 66.8799 67.0614 C 68.3478 65.5935 69.6765 63.892 70.6847 62.1831 M 67.195 59.834 C 65.6462 62.6054 63.9878 64.5529 61.4467 66.2277 M 59.0199 67.6765 C 56.1856 69.1093 52.9884 69.8585 49.676 69.802 M 50 65.6001 C 51.0199 65.6001 52.0399 65.5007 53.044 65.3019 M 55.7942 64.4884 C 57.7007 63.727 59.4873 62.5745 61.0309 61.0309 C 61.9555 60.1062 62.7399 59.0944 63.3838 58.0218 M 50 34.4 C 46.008 34.4 42.7336 35.4439 39.5955 38.4346 M 37.5543 40.5911 C 37.214 41.0401 36.9013 41.5031 36.616 41.978 M 32.817 40.125 C 34.6917 36.7448 37.4045 34.1065 40.6216 32.402 M 43.281 31.2636 C 45.3721 30.5619 47.771 30.1471 50.087 30.203 M 49.411 26.007 C 49.089 26.0149 48.7696 26.0278 48.4528 26.0459 M 45.6262 26.2739 C 41.8638 26.8887 38.5848 28.44 35.2467 31.1031 M 33.029 33.029 C 31.462 34.597 30.156 36.328 29.113 38.168" style="stroke-linecap: round; stroke-linejoin: round; fill: none; stroke-dashoffset: 55px; stroke-width: 2.8px; stroke: url(&quot;#bg_accent_dark&quot;); visibility: hidden;"/>
       </g>
-      <ellipse style="stroke-linecap: round; stroke-linejoin: round; fill: url(&quot;#fg_color&quot;); stroke: url(&quot;#fg_color_darker&quot;); stroke-width: 2px; paint-order: fill;" cx="50" cy="50" rx="13" ry="13">
+      <ellipse style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px; paint-order: fill; fill: url(&quot;#bg_accent_darker&quot;);" cx="50" cy="50" rx="13" ry="13">
         <title>Center</title>
       </ellipse>
     </g>
-    <g style="" transform="matrix(0.550031, 0, 0, 0.550031, 22.565954, 22.498226)">
-      <path d="M 24.631 36.638 L 33.252 48.46 L 16.01 48.46 L 24.631 36.638 Z" bx:shape="triangle 16.01 36.638 17.242 11.822 0.5 0 1@eae8573c" style="stroke-linecap: round; stroke-linejoin: round; fill: url(&quot;#bg_main&quot;); stroke: url(&quot;#bg_main&quot;); stroke-width: 4px; transform-box: fill-box; transform-origin: 50% 50%;" transform="matrix(0, 1, -1, 0, 16.879996, 7.450478)"/>
-      <path d="M 55.694 41.46 L 55.694 58.54 L 55.694 41.46 Z" style="stroke-linejoin: round; fill: url(&quot;#bg_main&quot;); stroke: url(&quot;#bg_main&quot;); stroke-width: 5.5px;"/>
-      <path d="M 64.7 41.458 L 64.7 58.542 L 64.7 41.458 Z" style="stroke-linejoin: round; fill: url(&quot;#bg_main&quot;); stroke: url(&quot;#bg_main&quot;); stroke-width: 5.5px;"/>
+    <g style="" transform="matrix(0.550031, 0, 0, 0.550031, 21.125284, 22.498779)">
+      <title>Play Icon</title>
+      <path d="M 54.6854 41.46 L 54.6854 58.54 L 54.6854 41.46 Z" style="stroke-linejoin: round; fill: url(&quot;#bg_accent&quot;); stroke-width: 10.9085px; stroke: url(&quot;#bg_accent_darker&quot;);" transform="matrix(1.000001, 0, 0, 1, -0.000038, -0.00003)">
+        <title>Cover</title>
+      </path>
+      <path d="M 63.6914 41.458 L 63.6914 58.542 L 63.6914 41.458 Z" style="stroke-linejoin: round; fill: url(&quot;#bg_accent&quot;); stroke-width: 10.9085px; stroke: url(&quot;#bg_accent_darker&quot;);" transform="matrix(1, 0, 0, 1, 0.000034, 0.000009)">
+        <title>Cover</title>
+      </path>
+      <path d="M 54.6854 41.46 L 54.6854 58.54 L 54.6854 41.46 Z" style="stroke-linejoin: round; stroke-width: 5.5px; stroke: url(&quot;#bg_accent&quot;); fill: url(&quot;#bg_accent&quot;);"/>
+      <path d="M 63.6914 41.458 L 63.6914 58.542 L 63.6914 41.458 Z" style="stroke-linejoin: round; stroke-width: 5.5px; stroke: url(&quot;#bg_accent&quot;); fill: url(&quot;#bg_accent&quot;);"/>
+      <path d="M 59.3785 53.0312 C 60.0728 54.413 60.248 56.5685 59.8092 58.0306 L 59.7644 58.1799 L 59.67 58.304 C 58.7434 59.5223 56.8979 60.6505 55.3759 60.9012 L 55.3201 60.9104 L 38.0407 60.9104 L 37.9841 60.901 C 36.4585 60.6481 34.6129 59.5192 33.6901 58.3032 L 33.5959 58.1791 L 33.5512 58.0296 C 33.113 56.5638 33.2888 54.4078 33.9831 53.03 L 34.0086 52.9794 L 42.6466 41.134 L 42.6837 41.0955 C 43.6048 40.138 45.3649 39.0884 46.6805 39.0884 C 47.9746 39.0884 49.7532 40.1382 50.6758 41.094 L 50.7133 41.1328 L 59.3527 52.9798 Z" style="fill: url(&quot;#bg_accent_darker&quot;); transform-box: fill-box; transform-origin: 50% 50%;" transform="matrix(0, 1.000005, -0.999995, 0, 0, 0.000001)">
+        <title>Cover</title>
+      </path>
+      <path d="M 24.631 36.638 L 33.252 48.46 L 16.01 48.46 L 24.631 36.638 Z" bx:shape="triangle 16.01 36.638 17.242 11.822 0.5 0 1@eae8573c" style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 4px; stroke: url(&quot;#bg_accent&quot;); fill: url(&quot;#bg_accent&quot;); transform-box: fill-box; transform-origin: 50% 50%;" transform="matrix(0, 1, -1, 0, 22.049368, 7.450474)"/>
     </g>
   </svg>
   <path d="M 50 -40 C 50 -45.5 45.5 -50 40 -50 L -40 -50 C -45.5 -50 -50 -45.5 -50 -40 L -50 40 C -50 45.5 -45.5 50 -40 50 L 40 50 C 45.5 50 50 45.5 50 40 L 50 -40 Z" transform="translate(50, 50) scale(0.6666666666666665)" stroke="black" stroke-opacity="0.5" fill="none" inkscape:label="outline">

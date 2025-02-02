@@ -17,7 +17,35 @@
       "VARC",
       "Vec",
       "virtualenvwrapper",
-      "zstandard"
+      "zstandard",
+      "BSDF",
+      "HDRI"
     ],
-    "svg.preview.background": "editor"
+    "svg.preview.background": "editor",
+    "colorInfo.languages": [
+      {
+        "selector": "css",
+        "colors": "css"
+      },
+      {
+        "selector": "sass",
+        "colors": "css"
+      },
+      {
+        "selector": "scss",
+        "colors": "css"
+      },
+      {
+        "selector": "less",
+        "colors": "css"
+      },
+      {
+        "selector": "json",
+        "colors": "css"
+      },
+      {
+        "selector": "json5",
+        "colors": "css"
+      }
+    ]
 }

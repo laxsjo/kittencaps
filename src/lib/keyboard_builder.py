@@ -19,6 +19,7 @@ from .color import *
 __all__ = [
     "KeycapGeometry",
     "KeycapInfo",
+    "create_keycap_mask",
     "create_text_icon_svg",
     "place_keys",
     "build_keyboard_svg",
@@ -138,6 +139,31 @@ class KeycapInfo:
         size = float(f"{float(self.major_size):.2}")
         return f"{size}".removesuffix(".0") + "u"
 
+# Create mask for keycap bounding box
+def create_keycap_mask(size_u: str, theme: Theme) -> ET.Element:
+    id = f"{size_u}-base"
+    
+    size = float(size_u.removesuffix("u"))
+    
+    offset = (theme.unit_size - theme.base_size) / 2
+    width = theme.unit_size * size - offset * 2
+    height = theme.base_size
+    
+    rect = ET.Element("rect", {
+        "width": f"{width:g}",
+        "height": f"{height:g}",
+        "x": f"{offset:g}",
+        "y": f"{offset:g}",
+        "fill": "white",
+    })
+    
+    mask = ET.Element("mask", {
+        "id": id,
+    })
+    mask.append(rect)
+    
+    return mask
+
 @dataclass
 class KeycapFactory:
     """
@@ -176,30 +202,10 @@ class KeycapFactory:
         if size_u in self._masks:
             return self._masks[size_u].attrib["id"]
         
-        id = f"{size_u}-base"
-        
-        size = float(size_u.removesuffix("u"))
-        
-        offset = (self.theme.unit_size - self.theme.base_size) / 2
-        width = self.theme.unit_size * size - offset * 2
-        height = self.theme.base_size
-        
-        rect = ET.Element("rect", {
-            "width": f"{width:g}",
-            "height": f"{height:g}",
-            "x": f"{offset:g}",
-            "y": f"{offset:g}",
-            "fill": "white",
-        })
-        
-        mask = ET.Element("mask", {
-            "id": id,
-        })
-        mask.append(rect)
-        
+        mask = create_keycap_mask(size_u, self.theme)
         
         self._masks[size_u] = mask
-        return id
+        return mask.attrib["id"]
     
     # Creates a mask and return its id
     def _get_shading_mask(self, size_u: str) -> str:

@@ -7,27 +7,27 @@
     </linearGradient>
     <linearGradient id="bg_accent_darker" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
       <title>bg_accent_darker</title>
-      <stop style="stop-color:oklch(0.717 0.026 279);"/>
+      <stop style="stop-color:oklch(0.552 0.0672 278);"/>
     </linearGradient>
     <linearGradient id="bg_accent_dark" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
       <title>bg_accent_dark</title>
-      <stop style="stop-color:oklch(0.787 0.026 279);"/>
+      <stop style="stop-color:oklch(0.71 0.0568 282);"/>
     </linearGradient>
     <linearGradient id="bg_accent" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
       <title>bg_accent</title>
-      <stop style="stop-color:#dee0ed;"/>
+      <stop style="stop-color:oklch(0.899 0.035 285);"/>
     </linearGradient>
     <linearGradient id="bg_accent_lighter" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
       <title>bg_accent_lighter</title>
-      <stop style="stop-color:#eaebf5;"/>
+      <stop style="stop-color:oklch(0.942 0.013 290);"/>
     </linearGradient>
     <linearGradient id="bg_focus" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
       <title>bg_focus</title>
-      <stop style="stop-color:#7d787c;"/>
+      <stop style="stop-color:oklch(0.306 0.005 257);"/>
     </linearGradient>
     <linearGradient id="fg_main" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
       <title>fg_main</title>
-      <stop style="stop-color:#7d787c;"/>
+      <stop style="stop-color:oklch(0.306 0.005 257);"/>
     </linearGradient>
     <linearGradient id="fg_main_lighter" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
       <title>fg_main_lighter</title>
@@ -47,15 +47,27 @@
     </linearGradient>
     <linearGradient id="fg_color_darker" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
       <title>fg_color_darker</title>
-      <stop style="stop-color:oklch(0.633 0.068 310);"/>
+      <stop style="stop-color:oklch(0.633 0.086 347);"/>
     </linearGradient>
     <linearGradient id="fg_color" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
       <title>fg_color</title>
-      <stop style="stop-color:oklch(0.698 0.068 315);"/>
+      <stop style="stop-color:oklch(0.698 0.1192 342);"/>
     </linearGradient>
     <linearGradient id="fg_color_lighter" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
       <title>fg_color_lighter</title>
-      <stop style="stop-color:#f9f0ff;"/>
+      <stop style="stop-color:oklch(0.966 0.022 336);"/>
+    </linearGradient>
+    <linearGradient id="accent_sec_darker" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
+      <title>accent_sec_darker</title>
+      <stop style="stop-color:oklch(0.71 0.1392 89.9);"/>
+    </linearGradient>
+    <linearGradient id="accent_sec_dark" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
+      <title>accent_sec_dark</title>
+      <stop style="stop-color:oklch(0.71 0.1392 99.9);"/>
+    </linearGradient>
+    <linearGradient id="accent_sec" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
+      <title>accent_sec</title>
+      <stop style="stop-color:oklch(0.892 0.12 105);"/>
     </linearGradient>
     <linearGradient id="case" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
       <title>case</title>
@@ -71,8 +83,30 @@
     <path d="M 65 54.5 L 65 57.5 L 35 57.5 L 35 54.5" style="fill: none; stroke-width: 3px; stroke-linecap: round; stroke-linejoin: round; stroke: url(&quot;#bg_accent&quot;);">
       <title>Icon</title>
     </path>
-    <text style="fill: url(&quot;#bg_accent&quot;); font-family: &quot;Open Gorton&quot;; font-size: 17px; font-weight: 700; text-anchor: middle;" xml:space="preserve" x="50" y="84.984">space</text>
-    <text style="fill: url(&quot;#fg_main&quot;); font-family: &quot;Open Gorton&quot;; font-size: 23px; font-weight: 700; text-anchor: middle; visibility: hidden;" xml:space="preserve" x="50" y="58.096"><title>Guide</title>test</text>
+    <text style="fill: url(&quot;#bg_accent&quot;); font-family: &quot;Open Gorton&quot;; font-size: 17px; font-weight: 700; text-anchor: middle; white-space: pre;" xml:space="preserve" x="50" y="84.984">space</text>
+    <text style="fill: url(&quot;#fg_main&quot;); font-family: &quot;Open Gorton&quot;; font-size: 23px; font-weight: 700; text-anchor: middle; visibility: hidden; white-space: pre;" xml:space="preserve" x="50" y="58.096"><title>Guide</title>test</text>
+    <g style="">
+      <title>Corner</title>
+      <path style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px; fill: url(&quot;#accent_sec&quot;); transform-box: fill-box; transform-origin: 50% 50%; visibility: hidden;" d="M 60.4098 108 L 60.4098 150 C 60.4098 150 80.4098 150 90.4098 150 C 96.4098 150 102.4098 144 102.4098 138 C 102.4098 128 102.4098 108 102.4098 108 L 60.4098 108 Z" transform="matrix(-1, 0, 0, -1, -2.40981, -0.000005)">
+        <title>BG</title>
+      </path>
+      <path style="fill: none; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px; stroke: url(&quot;#accent_sec_dark&quot;); visibility: hidden;" d="M 60.4098 150 C 60.4098 150 80.4098 150 90.4098 150 C 96.4098 150 102.4098 144 102.4098 138 C 102.4098 128 102.4098 108 102.4098 108" transform="matrix(-1, 0, 0, -1, 160.409794297851, 257.999990999999)">
+        <title>Outline</title>
+      </path>
+      <line style="fill: none; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px; stroke: url(&quot;#accent_sec&quot;);" x1="60.9" y1="118.2" x2="60.9" y2="123.6"/>
+      <path d="M 63.6 123.9 L 68.8 120.9 L 63.6 117.9 L 63.6 123.9 Z" style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 3.4px; fill: none; stroke: url(&quot;#bg_focus&quot;); transform-box: fill-box; transform-origin: 50% 50%;" transform="matrix(-1, 0, 0, -1, 0.000007, 0)">
+        <title>Cover</title>
+      </path>
+      <path d="M 63.6 123.9 L 68.8 120.9 L 63.6 117.9 L 63.6 123.9 Z" style="stroke-linecap: round; stroke-linejoin: round; stroke: url(&quot;#accent_sec&quot;); fill: url(&quot;#accent_sec&quot;); stroke-width: 1.4px; transform-box: fill-box; transform-origin: 50% 50%;" transform="matrix(-1, 0, 0, -1, 0.000007, 0)">
+        <title>Play Triangle</title>
+      </path>
+      <path d="M 69.6 123.9 L 74.8 120.9 L 69.6 117.9 L 69.6 123.9 Z" style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 3.4px; fill: none; stroke: url(&quot;#bg_focus&quot;); transform-box: fill-box; transform-origin: 50% 50%;" transform="matrix(-1, 0, 0, -1, 0.000005, 0)">
+        <title>Cover</title>
+      </path>
+      <path d="M 69.6 123.9 L 74.8 120.9 L 69.6 117.9 L 69.6 123.9 Z" style="stroke-linecap: round; stroke-linejoin: round; stroke: url(&quot;#accent_sec&quot;); fill: url(&quot;#accent_sec&quot;); stroke-width: 1.4px; transform-box: fill-box; transform-origin: 50% 50%;" transform="matrix(-1, 0, 0, -1, 0.000005, 0)">
+        <title>Play Triangle</title>
+      </path>
+    </g>
   </svg>
   <path d="M87.5-40c0-5.5-4.5-10-10-10h-155c-5.5,0-10,4.5-10,10v80c0,5.5,4.5,10,10,10h155   c5.5,0,10-4.5,10-10V-40z" transform="translate(50, 75) rotate(90) scale(0.6666666666666665)" stroke="black" stroke-opacity="0.5" fill="none" inkscape:label="Outline">
     <title>Outline</title>

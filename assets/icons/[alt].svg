@@ -7,27 +7,27 @@
     </linearGradient>
     <linearGradient id="bg_accent_darker" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
       <title>bg_accent_darker</title>
-      <stop style="stop-color:oklch(0.717 0.026 279);"/>
+      <stop style="stop-color:oklch(0.552 0.0672 278);"/>
     </linearGradient>
     <linearGradient id="bg_accent_dark" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
       <title>bg_accent_dark</title>
-      <stop style="stop-color:oklch(0.787 0.026 279);"/>
+      <stop style="stop-color:oklch(0.71 0.0568 282);"/>
     </linearGradient>
     <linearGradient id="bg_accent" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
       <title>bg_accent</title>
-      <stop style="stop-color:#dee0ed;"/>
+      <stop style="stop-color:oklch(0.899 0.035 285);"/>
     </linearGradient>
     <linearGradient id="bg_accent_lighter" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
       <title>bg_accent_lighter</title>
-      <stop style="stop-color:#eaebf5;"/>
+      <stop style="stop-color:oklch(0.942 0.013 290);"/>
     </linearGradient>
     <linearGradient id="bg_focus" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
       <title>bg_focus</title>
-      <stop style="stop-color:#7d787c;"/>
+      <stop style="stop-color:oklch(0.306 0.005 257);"/>
     </linearGradient>
     <linearGradient id="fg_main" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
       <title>fg_main</title>
-      <stop style="stop-color:#7d787c;"/>
+      <stop style="stop-color:oklch(0.306 0.005 257);"/>
     </linearGradient>
     <linearGradient id="fg_main_lighter" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
       <title>fg_main_lighter</title>
@@ -47,15 +47,27 @@
     </linearGradient>
     <linearGradient id="fg_color_darker" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
       <title>fg_color_darker</title>
-      <stop style="stop-color:oklch(0.633 0.068 310);"/>
+      <stop style="stop-color:oklch(0.633 0.086 347);"/>
     </linearGradient>
     <linearGradient id="fg_color" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
       <title>fg_color</title>
-      <stop style="stop-color:oklch(0.698 0.068 315);"/>
+      <stop style="stop-color:oklch(0.698 0.1192 342);"/>
     </linearGradient>
     <linearGradient id="fg_color_lighter" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
       <title>fg_color_lighter</title>
-      <stop style="stop-color:#f9f0ff;"/>
+      <stop style="stop-color:oklch(0.966 0.022 336);"/>
+    </linearGradient>
+    <linearGradient id="accent_sec_darker" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
+      <title>accent_sec_darker</title>
+      <stop style="stop-color:oklch(0.71 0.1392 89.9);"/>
+    </linearGradient>
+    <linearGradient id="accent_sec_dark" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
+      <title>accent_sec_dark</title>
+      <stop style="stop-color:oklch(0.71 0.1392 99.9);"/>
+    </linearGradient>
+    <linearGradient id="accent_sec" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
+      <title>accent_sec</title>
+      <stop style="stop-color:oklch(0.892 0.12 105);"/>
     </linearGradient>
     <linearGradient id="case" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
       <title>case</title>
@@ -76,9 +88,18 @@
   <svg id="icon" viewBox="0 0 100 150" width="100" height="150" style="overflow: visible;" transform="matrix(1, 0, 0, 1, 1.768546192413307, -11.20305138692285)">
     <g transform="matrix(1, 0, 0, 1, 0, 4)">
       <title>Shift</title>
-      <text style="fill: url(&quot;#bg_accent&quot;); font-family: &quot;Open Gorton&quot;; font-size: 17px; font-weight: 700; text-anchor: middle;" xml:space="preserve" x="50" y="80.984">Alt</text>
+      <text style="fill: url(&quot;#bg_accent&quot;); font-family: &quot;Open Gorton&quot;; font-size: 17px; font-weight: 700; text-anchor: middle; white-space: pre;" xml:space="preserve" x="50" y="80.984">Alt</text>
       <polyline style="fill: none; stroke-linecap: round; stroke-linejoin: round; stroke-width: 3px; stroke: url(&quot;#bg_accent&quot;);" points="35 36 43 36 57 54 65 54"/>
       <line style="fill: none; stroke-linecap: round; stroke-linejoin: round; stroke-width: 3px; stroke: url(&quot;#bg_accent&quot;);" x1="65" y1="36" x2="53" y2="36"/>
+    </g>
+    <g>
+      <title>Corner</title>
+      <path d="M 68.7 116.201 L 65.5 119.423 L 63 119.423 L 63 122.423 L 65.5 122.423 L 68.7 125.623 L 68.7 116.201 Z" style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px; stroke: url(&quot;#accent_sec&quot;); fill: url(&quot;#accent_sec&quot;);">
+        <title>Speaker</title>
+      </path>
+      <path style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px; transform-origin: 75px 120.923px; stroke: url(&quot;#accent_sec&quot;); fill: url(&quot;#accent_sec&quot;);" d="M 72.8787 123.044 L 77.1213 118.802 M 77.1213 123.044 L 72.8787 118.802">
+        <title>+</title>
+      </path>
     </g>
   </svg>
   <path d="M87.5-40c0-5.5-4.5-10-10-10h-155c-5.5,0-10,4.5-10,10v80c0,5.5,4.5,10,10,10h155   c5.5,0,10-4.5,10-10V-40z" transform="translate(50, 75) rotate(90) scale(0.6666666666666665)" stroke="black" stroke-opacity="0.5" fill="none" inkscape:label="Outline">

@@ -54,11 +54,30 @@ def get_modifidier_node_group_safe(name: str) -> bpy.types.NodeTree:
         node_group = cast(bpy.types.NodeTree, data_to.node_groups[0])
     return node_group
 
+def copy_modifiers(source: bpy.types.Object, destination: bpy.types.Object):
+    for source_modifier in source.modifiers:
+        destination_modifier = destination.modifiers.get(source_modifier.name, None)
+        if not destination_modifier:
+            destination_modifier = destination.modifiers.new(source_modifier.name, source_modifier.type)
+
+        # collect names of writable properties
+        properties = [p.identifier for p in source_modifier.bl_rna.properties
+                        if not p.is_readonly]
+
+        # copy those properties
+        for prop in properties:
+            setattr(destination_modifier, prop, getattr(source_modifier, prop))
+        destination_modifier = destination
+
 def create_keyboard(texture_path: Path, svg_viewbox: ViewBox, keyboard: kle.ExtendedKeyboard, theme: Theme, out_path: Path) -> None:
     with PIL.Image.open(texture_path) as image:
         texture_size = Vec2(*image.size)
     
     unit = magic.keycap_model_unit_size
+    
+    # Save immediately to new location. This is important to make sure that
+    # relative paths resolve correctly. 
+    bpy.ops.wm.save_as_mainfile(filepath=str(out_path), check_existing=False)
     
     keyboard_collection = bpy.data.collections["Keyboard"]
     keys_collection = bpy.data.collections["Keys"]
@@ -98,8 +117,12 @@ def create_keyboard(texture_path: Path, svg_viewbox: ViewBox, keyboard: kle.Exte
         # Doesn't work, due to the bug decsribed in
         # `get_modifidier_node_group_safe`
         # result = bpy.ops.object.shade_auto_smooth()
-        modifier = cast(bpy.types.NodesModifier, case_object.modifiers.new("Smooth by Angle", "NODES"))
-        modifier.node_group = get_modifidier_node_group_safe("Smooth by Angle")
+        smooth_by_angle_modifier = cast(bpy.types.NodesModifier, case_object.modifiers.new("Smooth by Angle", "NODES"))
+        smooth_by_angle_modifier.node_group = get_modifidier_node_group_safe("Smooth by Angle")
+        smooth_by_angle_modifier["Input_1"] = math.radians(magic.model_minimum_sharp_angle_deg)
+        
+        weighted_normals_modifier = cast(bpy.types.WeightedNormalModifier, case_object.modifiers.new("WeightedNormal", "WEIGHTED_NORMAL"))
+        weighted_normals_modifier.keep_sharp = True
         
         case_object.location = mathutils.Vector((*(case.position * Vec2(1, -1) * unit), 0))
         case_object.location -= center_position
@@ -113,12 +136,12 @@ def create_keyboard(texture_path: Path, svg_viewbox: ViewBox, keyboard: kle.Exte
         
         ### Apply mirror
         if case.mirror_around_x is not None or case.mirror_around_y is not None:
-            modifier = cast(bpy.types.MirrorModifier, case_object.modifiers.new("Mirror", "MIRROR"))
-            modifier.mirror_object = origin_object
+            smooth_by_angle_modifier = cast(bpy.types.MirrorModifier, case_object.modifiers.new("Mirror", "MIRROR"))
+            smooth_by_angle_modifier.mirror_object = origin_object
             if case.mirror_around_x is not None:
-                modifier.use_axis[0] = True
+                smooth_by_angle_modifier.use_axis[0] = True
             if case.mirror_around_y is not None:
-                modifier.use_axis[1] = True
+                smooth_by_angle_modifier.use_axis[1] = True
             
         case_object.select_set(False)
             
@@ -126,6 +149,8 @@ def create_keyboard(texture_path: Path, svg_viewbox: ViewBox, keyboard: kle.Exte
     
     ## Load and assign texture
     texture = bpy.data.images.load(str(texture_path))
+    relative_texture_path = (texture_path.relative_to(out_path.parent))
+    texture.filepath = f"//{relative_texture_path}"
     
     if (node_tree := bpy.data.materials['Keycap'].node_tree) == None:
         panic("Material 'Keycap' did not have a node tree.")
@@ -219,11 +244,9 @@ def create_keyboard(texture_path: Path, svg_viewbox: ViewBox, keyboard: kle.Exte
         object["texture_unit_size"] = theme.unit_size
         object["unit_size"] = magic.keycap_model_unit_size
         object["dimensions"] = (unit * key.major_size, unit)
-        
-        modifier = object.modifiers.new("Geometry Nodes", "NODES")
-        if not isinstance(modifier, bpy.types.NodesModifier):
-            panic("Impossible")
-        modifier.node_group = bpy.data.node_groups["Store Rotation"]
+
+        reference_object = bpy.data.objects[mesh_name]
+        copy_modifiers(reference_object, object)
         
         keys_collection.objects.link(object)
     
@@ -240,7 +263,7 @@ def create_keyboard(texture_path: Path, svg_viewbox: ViewBox, keyboard: kle.Exte
     space.region_3d.view_location = mathutils.Vector((0, 0, 0))
     space.region_3d.view_perspective = "CAMERA"
     
-    bpy.ops.wm.save_as_mainfile(filepath=str(out_path), check_existing=False)
+    bpy.ops.wm.save_mainfile(filepath=str(out_path))
     
 
 parser = argparse.ArgumentParser(

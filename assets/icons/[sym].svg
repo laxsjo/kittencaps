@@ -7,27 +7,27 @@
     </linearGradient>
     <linearGradient id="bg_accent_darker" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
       <title>bg_accent_darker</title>
-      <stop style="stop-color:oklch(0.717 0.026 279);"/>
+      <stop style="stop-color:oklch(0.552 0.0672 278);"/>
     </linearGradient>
     <linearGradient id="bg_accent_dark" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
       <title>bg_accent_dark</title>
-      <stop style="stop-color:oklch(0.787 0.026 279);"/>
+      <stop style="stop-color:oklch(0.71 0.0568 282);"/>
     </linearGradient>
     <linearGradient id="bg_accent" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
       <title>bg_accent</title>
-      <stop style="stop-color:#dee0ed;"/>
+      <stop style="stop-color:oklch(0.899 0.035 285);"/>
     </linearGradient>
     <linearGradient id="bg_accent_lighter" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
       <title>bg_accent_lighter</title>
-      <stop style="stop-color:#eaebf5;"/>
+      <stop style="stop-color:oklch(0.942 0.013 290);"/>
     </linearGradient>
     <linearGradient id="bg_focus" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
       <title>bg_focus</title>
-      <stop style="stop-color:#7d787c;"/>
+      <stop style="stop-color:oklch(0.306 0.005 257);"/>
     </linearGradient>
     <linearGradient id="fg_main" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
       <title>fg_main</title>
-      <stop style="stop-color:#7d787c;"/>
+      <stop style="stop-color:oklch(0.306 0.005 257);"/>
     </linearGradient>
     <linearGradient id="fg_main_lighter" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
       <title>fg_main_lighter</title>
@@ -47,15 +47,27 @@
     </linearGradient>
     <linearGradient id="fg_color_darker" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
       <title>fg_color_darker</title>
-      <stop style="stop-color:oklch(0.633 0.068 310);"/>
+      <stop style="stop-color:oklch(0.633 0.086 347);"/>
     </linearGradient>
     <linearGradient id="fg_color" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
       <title>fg_color</title>
-      <stop style="stop-color:oklch(0.698 0.068 315);"/>
+      <stop style="stop-color:oklch(0.698 0.1192 342);"/>
     </linearGradient>
     <linearGradient id="fg_color_lighter" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
       <title>fg_color_lighter</title>
-      <stop style="stop-color:#f9f0ff;"/>
+      <stop style="stop-color:oklch(0.966 0.022 336);"/>
+    </linearGradient>
+    <linearGradient id="accent_sec_darker" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
+      <title>accent_sec_darker</title>
+      <stop style="stop-color:oklch(0.71 0.1392 89.9);"/>
+    </linearGradient>
+    <linearGradient id="accent_sec_dark" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
+      <title>accent_sec_dark</title>
+      <stop style="stop-color:oklch(0.71 0.1392 99.9);"/>
+    </linearGradient>
+    <linearGradient id="accent_sec" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
+      <title>accent_sec</title>
+      <stop style="stop-color:oklch(0.892 0.12 105);"/>
     </linearGradient>
     <linearGradient id="case" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
       <title>case</title>
@@ -90,61 +102,64 @@
     <title>BG</title>
   </rect>
   <svg id="icon" viewBox="0 0 100 100" width="100" height="100" style="overflow:visible;">
-    <text style="fill: url(&quot;#bg_accent&quot;); font-family: &quot;Open Gorton&quot;; font-size: 14px; font-weight: 700; text-anchor: middle; visibility: hidden; white-space: pre;" xml:space="preserve" x="36.8746" y="40.7292"><title>Reference</title>#%*!</text>
-    <g transform="matrix(1, 0, 0, 1, -0.682231, -2.918049)" style="">
-      <title>#</title>
-      <line style="fill: none; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.5px; stroke: url(&quot;#bg_accent&quot;);" x1="22.9002" y1="34.0432" x2="30.3917" y2="34.029"/>
-      <line style="fill: none; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.5px; stroke: url(&quot;#bg_accent&quot;);" x1="21.9473" y1="37.2862" x2="29.3819" y2="37.3147"/>
-      <line style="fill: none; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.5px; stroke: url(&quot;#bg_accent&quot;);" x1="26.0152" y1="31.3124" x2="22.8533" y2="40.0029"/>
-      <line style="fill: none; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.5px; stroke: url(&quot;#bg_accent&quot;);" x1="29.467" y1="31.3124" x2="26.3051" y2="40.0029"/>
+    <g transform="matrix(1, 0, 0, 1, 26.217094, 0)">
+      <title>Swear</title>
+      <text style="fill: url(&quot;#bg_accent&quot;); font-family: &quot;Open Gorton&quot;; font-size: 14px; font-weight: 700; text-anchor: middle; white-space: pre; visibility: hidden;" xml:space="preserve" x="36.8746" y="38.0586"><title>Reference</title>#%*!</text>
+      <g transform="matrix(1, 0, 0, 1, -0.682231, -2.918049)" style="">
+        <title>#</title>
+        <line style="fill: none; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.5px; stroke: url(&quot;#bg_accent_dark&quot;);" x1="22.9002" y1="34.0432" x2="30.3917" y2="34.029"/>
+        <line style="fill: none; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.5px; stroke: url(&quot;#bg_accent_dark&quot;);" x1="21.9473" y1="37.2862" x2="29.3819" y2="37.3147"/>
+        <line style="fill: none; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.5px; stroke: url(&quot;#bg_accent_dark&quot;);" x1="26.0152" y1="31.3124" x2="22.8533" y2="40.0029"/>
+        <line style="fill: none; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.5px; stroke: url(&quot;#bg_accent_dark&quot;);" x1="29.467" y1="31.3124" x2="26.3051" y2="40.0029"/>
+      </g>
+      <g style="" transform="matrix(1, 0, 0, 1, 0.278049, -2.918049)">
+        <title>%</title>
+        <line style="fill: none; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.5px; stroke: url(&quot;#bg_accent_dark&quot;);" x1="33.1805" y1="39.6772" x2="40.0673" y2="32.7931"/>
+        <path d="M 986.087 323.478 m -2.2 0 a 2.2 2.2 0 1 0 4.4 0 a 2.2 2.2 0 1 0 -4.4 0 Z M 986.087 323.478 m -0.8 0 a 0.8 0.8 0 0 1 1.6 0 a 0.8 0.8 0 0 1 -1.6 0 Z" bx:shape="ring 986.087 323.478 0.8 0.8 2.2 2.2 1@a49036c8" style="transform-box: fill-box; transform-origin: 50% 50%; fill: url(&quot;#bg_accent_dark&quot;);" transform="matrix(1, 0.000072, -0.000072, 1, -952.183215, -289.948558)"/>
+        <path d="M 986.087 323.478 m -2.2 0 a 2.2 2.2 0 1 0 4.4 0 a 2.2 2.2 0 1 0 -4.4 0 Z M 986.087 323.478 m -0.8 0 a 0.8 0.8 0 0 1 1.6 0 a 0.8 0.8 0 0 1 -1.6 0 Z" bx:shape="ring 986.087 323.478 0.8 0.8 2.2 2.2 1@a49036c8" style="transform-origin: 986.087px 323.478px; fill: url(&quot;#bg_accent_dark&quot;);" transform="matrix(1, 0.000072, -0.000072, 1, -946.561297, -284.867259)"/>
+      </g>
+      <g transform="matrix(1, 0, 0, 1, 0.892598, -2.918049)">
+        <title>*</title>
+        <line style="fill: none; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.5px; stroke: url(&quot;#bg_accent_dark&quot;);" x1="45.3671" y1="31.2762" x2="45.3671" y2="37.6136"/>
+        <line style="fill: none; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.5px; transform-origin: 45.3671px 34.4449px; stroke: url(&quot;#bg_accent_dark&quot;);" x1="47.6076" y1="32.2044" x2="43.1266" y2="36.6854"/>
+        <line style="fill: none; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.5px; transform-origin: 45.3671px 34.4449px; stroke: url(&quot;#bg_accent_dark&quot;);" x1="48.5357" y1="34.4449" x2="42.1985" y2="34.4449"/>
+        <line style="fill: none; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.5px; transform-origin: 45.3671px 34.4449px; stroke: url(&quot;#bg_accent_dark&quot;);" x1="47.6076" y1="36.6854" x2="43.1266" y2="32.2044"/>
+      </g>
+      <g style="" transform="matrix(1, 0, 0, 1, 0, -2.918049)">
+        <title>!</title>
+        <ellipse style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 10px; fill: url(&quot;#bg_accent_dark&quot;);" cx="52.2865" cy="39.4495" rx="1.3" ry="1.3"/>
+        <path d="M 52.2543 37.4498 C 51.702 37.4498 51.2543 37.0021 51.2543 36.4498 L 50.9921 31.614 C 50.9921 31.0501 51.5302 30.3647 52.2543 30.3647 C 52.9784 30.3647 53.5786 30.9431 53.5786 31.614 L 53.2543 36.4498 C 53.2543 37.0021 52.8066 37.4498 52.2543 37.4498 Z" style="fill: url(&quot;#bg_accent_dark&quot;);"/>
+        <ellipse style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 10px; opacity: 0.63; visibility: hidden; fill: url(&quot;#bg_accent_dark&quot;);" cx="52.2865" cy="31.6668" rx="1.3" ry="1.3"/>
+      </g>
     </g>
-    <g style="" transform="matrix(1, 0, 0, 1, 0.278049, -2.918049)">
-      <title>%</title>
-      <line style="fill: none; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.5px; stroke: url(&quot;#bg_accent&quot;);" x1="33.1805" y1="39.6772" x2="40.0673" y2="32.7931"/>
-      <path d="M 986.087 323.478 m -2.2 0 a 2.2 2.2 0 1 0 4.4 0 a 2.2 2.2 0 1 0 -4.4 0 Z M 986.087 323.478 m -0.8 0 a 0.8 0.8 0 0 1 1.6 0 a 0.8 0.8 0 0 1 -1.6 0 Z" bx:shape="ring 986.087 323.478 0.8 0.8 2.2 2.2 1@a49036c8" style="transform-box: fill-box; transform-origin: 50% 50%; fill: url(&quot;#bg_accent&quot;);" transform="matrix(1, 0.000072, -0.000072, 1, -952.183215, -289.948558)"/>
-      <path d="M 986.087 323.478 m -2.2 0 a 2.2 2.2 0 1 0 4.4 0 a 2.2 2.2 0 1 0 -4.4 0 Z M 986.087 323.478 m -0.8 0 a 0.8 0.8 0 0 1 1.6 0 a 0.8 0.8 0 0 1 -1.6 0 Z" bx:shape="ring 986.087 323.478 0.8 0.8 2.2 2.2 1@a49036c8" style="transform-origin: 986.087px 323.478px; fill: url(&quot;#bg_accent&quot;);" transform="matrix(1, 0.000072, -0.000072, 1, -946.561297, -284.867259)"/>
-    </g>
-    <g transform="matrix(1, 0, 0, 1, 0.892598, -2.918049)">
-      <title>*</title>
-      <line style="fill: none; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.5px; stroke: url(&quot;#bg_accent&quot;);" x1="45.3671" y1="31.2762" x2="45.3671" y2="37.6136"/>
-      <line style="fill: none; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.5px; transform-origin: 45.3671px 34.4449px; stroke: url(&quot;#bg_accent&quot;);" x1="47.6076" y1="32.2044" x2="43.1266" y2="36.6854"/>
-      <line style="fill: none; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.5px; transform-origin: 45.3671px 34.4449px; stroke: url(&quot;#bg_accent&quot;);" x1="48.5357" y1="34.4449" x2="42.1985" y2="34.4449"/>
-      <line style="fill: none; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.5px; transform-origin: 45.3671px 34.4449px; stroke: url(&quot;#bg_accent&quot;);" x1="47.6076" y1="36.6854" x2="43.1266" y2="32.2044"/>
-    </g>
-    <g style="" transform="matrix(1, 0, 0, 1, 0, -2.918049)">
-      <title>!</title>
-      <ellipse style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 10px; fill: url(&quot;#bg_accent&quot;);" cx="52.2865" cy="39.4495" rx="1.3" ry="1.3"/>
-      <path d="M 52.2543 37.4498 C 51.702 37.4498 51.2543 37.0021 51.2543 36.4498 L 50.9921 31.614 C 50.9921 31.0501 51.5302 30.3647 52.2543 30.3647 C 52.9784 30.3647 53.5786 30.9431 53.5786 31.614 L 53.2543 36.4498 C 53.2543 37.0021 52.8066 37.4498 52.2543 37.4498 Z" style="fill: url(&quot;#bg_accent&quot;);"/>
-      <ellipse style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 10px; opacity: 0.63; visibility: hidden; fill: url(&quot;#bg_accent&quot;);" cx="52.2865" cy="31.6668" rx="1.3" ry="1.3"/>
-    </g>
-    <text style="fill: url(&quot;#bg_accent&quot;); font-family: &quot;Open Gorton&quot;; font-size: 20px; font-weight: 700; white-space: pre;" x="23.9129" y="73.5587">sym</text>
-    <g transform="matrix(1.134828, 0, 0, 1.134828, -102.150846, 9.535709)" style="">
+    <text style="fill: url(&quot;#bg_accent&quot;); font-family: &quot;Open Gorton&quot;; font-size: 17px; font-weight: 700; white-space: pre; text-anchor: end;" x="77" y="75">sym</text>
+    <g transform="matrix(1.134828, 0, 0, 1.134828, -138.270063, 9.535709)" style="">
       <title>Cat</title>
-      <path style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px; fill: url(&quot;#bg_accent_dark&quot;);" d="M 141.4717 25.9716 C 141.3554 26.1697 141.3243 26.4808 141.2217 26.7378 C 140.2614 29.144 139.9488 35.05 142.13 37.334 C 145.483 40.8451 154.1284 40.9467 157.8166 37.2733 C 160.0574 35.0414 159.6777 28.2311 158.9164 26.8461 C 158.8187 26.6684 158.5395 26.2944 158.4903 25.8982 C 159.5873 24.6513 160.0792 23.425 159.8308 22.893 C 159.6785 22.5668 156.2241 23.1676 154.4683 23.9836 C 151.6466 23.1975 148.2747 23.06 145.445 23.8106 C 143.5071 22.9329 140.3141 22.5883 140.1501 22.9145 C 139.8882 23.4354 140.489 24.8269 141.4717 25.9716 Z">
+      <path style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px; fill: none; stroke: url(&quot;#bg_accent&quot;);" d="M 141.4717 25.9716 C 141.3554 26.1697 141.3243 26.4808 141.2217 26.7378 C 140.2614 29.144 139.9488 35.05 142.13 37.334 C 145.483 40.8451 154.1284 40.9467 157.8166 37.2733 C 160.0574 35.0414 159.6777 28.2311 158.9164 26.8461 C 158.8187 26.6684 158.5395 26.2944 158.4903 25.8982 C 159.5873 24.6513 160.0792 23.425 159.8308 22.893 C 159.6785 22.5668 156.2241 23.1676 154.4683 23.9836 C 151.6466 23.1975 148.2747 23.06 145.445 23.8106 C 143.5071 22.9329 140.3141 22.5883 140.1501 22.9145 C 139.8882 23.4354 140.489 24.8269 141.4717 25.9716 Z">
         <title>BG</title>
       </path>
-      <path style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 3px; fill: url(&quot;#bg_accent_darker&quot;);" d="M 141.9184 27.4549 L 144.1319 28.5476 C 143.2753 29.4566 142.5158 30.3746 141.4692 30.5396 C 141.4692 30.5396 141.9405 27.5877 141.9184 27.4549 Z">
+      <path style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 3px; fill: url(&quot;#bg_accent_darker&quot;); visibility: hidden;" d="M 141.9184 27.4549 L 144.1319 28.5476 C 143.2753 29.4566 142.5158 30.3746 141.4692 30.5396 C 141.4692 30.5396 141.9405 27.5877 141.9184 27.4549 Z">
         <title>Shadow</title>
       </path>
-      <path style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 3px; fill: url(&quot;#bg_accent_darker&quot;);" d="M 158.3652 28.2593 L 158.1958 27.4289 L 155.4218 28.3219 C 155.4218 28.3219 156.2551 28.8055 156.9358 28.6768 C 157.9659 28.4821 158.3652 28.2593 158.3652 28.2593 Z">
+      <path style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 3px; fill: url(&quot;#bg_accent_darker&quot;); visibility: hidden;" d="M 158.3652 28.2593 L 158.1958 27.4289 L 155.4218 28.3219 C 155.4218 28.3219 156.2551 28.8055 156.9358 28.6768 C 157.9659 28.4821 158.3652 28.2593 158.3652 28.2593 Z">
         <title>Shadow</title>
       </path>
-      <path style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 3px; fill: url(&quot;#bg_accent_darker&quot;);" d="M 142.371 29.9389 C 142.371 29.9389 140.8501 30.5236 140.848 30.8118 C 140.7991 37.5522 143.3786 39.4652 150.0798 39.4652 C 155.0489 39.4652 157.0834 38.9827 157.0511 36.8697 C 149.8012 38.2287 146.0621 35.0099 143.4495 32.3945 C 142.7883 31.7326 142.5784 31.1133 142.371 29.9389 Z">
+      <path style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 3px; fill: url(&quot;#bg_accent_darker&quot;); visibility: hidden;" d="M 142.371 29.9389 C 142.371 29.9389 140.8501 30.5236 140.848 30.8118 C 140.7991 37.5522 143.3786 39.4652 150.0798 39.4652 C 155.0489 39.4652 157.0834 38.9827 157.0511 36.8697 C 149.8012 38.2287 146.0621 35.0099 143.4495 32.3945 C 142.7883 31.7326 142.5784 31.1133 142.371 29.9389 Z">
         <title>Shadow</title>
       </path>
       <path style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px; fill: none; stroke: url(&quot;#bg_accent&quot;);" d="M 141.5496 26.058 C 141.4333 26.2561 141.3243 26.4808 141.2217 26.7378 C 140.2614 29.144 139.9488 35.05 142.13 37.334 C 145.483 40.8451 154.1284 40.9467 157.8166 37.2733 C 160.0574 35.0414 159.6777 28.2311 158.9164 26.8461 C 158.8187 26.6684 158.5395 26.2944 158.3833 26.0543">
         <title>Head</title>
       </path>
-      <path style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px; stroke: url(&quot;#bg_accent&quot;); fill: none;" d="M 155.9515 27.5224 C 158.5708 26.649 160.2487 23.7881 159.8308 22.893 C 159.6785 22.5668 156.2241 23.1676 154.4683 23.9836 C 151.6466 23.1975 148.2747 23.06 145.445 23.8106 C 143.5071 22.9329 140.3141 22.5883 140.1501 22.9145 C 139.7001 23.8096 141.5671 27.02 144.1031 27.7536">
+      <path style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px; fill: none; stroke: url(&quot;#bg_accent&quot;);" d="M 155.9515 27.5224 C 158.5708 26.649 160.2487 23.7881 159.8308 22.893 C 159.6785 22.5668 156.2241 23.1676 154.4683 23.9836 C 151.6466 23.1975 148.2747 23.06 145.445 23.8106 C 143.5071 22.9329 140.3141 22.5883 140.1501 22.9145 C 139.7001 23.8096 141.5671 27.02 144.1031 27.7536">
         <title>Ears</title>
       </path>
-      <path d="M 147.04 33.2861 C 147.04 34.0225 146.592 34.6194 146.04 34.6194 C 145.488 34.6194 145.04 34.0225 145.04 33.2861 C 145.04 32.9514 145.133 32.6454 145.285 32.4113 L 147.04 33.2861 Z" style="stroke-linecap: round; stroke-linejoin: round; fill: url(&quot;#bg_accent&quot;); stroke: url(&quot;#bg_accent&quot;); stroke-width: 2px;">
+      <path d="M 147.04 33.2861 C 147.04 34.0225 146.592 34.6194 146.04 34.6194 C 145.488 34.6194 145.04 34.0225 145.04 33.2861 C 145.04 32.9514 145.133 32.6454 145.285 32.4113 L 147.04 33.2861 Z" style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px; fill: url(&quot;#bg_accent_lighter&quot;); stroke: url(&quot;#bg_accent&quot;);">
         <title>Eye</title>
       </path>
-      <path d="M 155.036 33.6955 C 155.036 32.9591 154.588 32.3622 154.036 32.3622 C 153.484 32.3622 153.036 32.9591 153.036 33.6955 C 153.036 34.0303 153.129 34.3362 153.281 34.5703 L 155.036 33.6955 Z" style="stroke-linecap: round; stroke-linejoin: round; fill: url(&quot;#bg_accent&quot;); stroke: url(&quot;#bg_accent&quot;); stroke-width: 2px; transform-box: fill-box; transform-origin: 50% 50%;" transform="matrix(-1, 0, 0, -1, -0.000005, 0.000001)">
+      <path d="M 155.036 33.6955 C 155.036 32.9591 154.588 32.3622 154.036 32.3622 C 153.484 32.3622 153.036 32.9591 153.036 33.6955 C 153.036 34.0303 153.129 34.3362 153.281 34.5703 L 155.036 33.6955 Z" style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px; transform-box: fill-box; transform-origin: 50% 50%; fill: url(&quot;#bg_accent_lighter&quot;); stroke: url(&quot;#bg_accent&quot;);" transform="matrix(-1, 0, 0, -1, -0.000005, 0.000001)">
         <title>Eye</title>
       </path>
-      <path style="fill: none; stroke-linecap: round; stroke-linejoin: round; stroke: url(&quot;#bg_accent&quot;); stroke-width: 1.5px;" d="M 151.9067 38.1169 C 151.2951 37.7683 150.0498 37.6068 150.0498 37.6068 C 150.0498 37.6068 150.4838 36.5981 150.4838 36.0897 L 149.4913 36.0897 C 149.4913 36.5762 150.0328 37.6186 150.0328 37.6186 C 150.0328 37.6186 148.7718 37.7949 147.96 38.1877">
+      <path style="fill: none; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.5px; stroke: url(&quot;#bg_accent&quot;);" d="M 151.9067 38.1169 C 151.2951 37.7683 150.0498 37.6068 150.0498 37.6068 C 150.0498 37.6068 150.4838 36.5981 150.4838 36.0897 L 149.4913 36.0897 C 149.4913 36.5762 150.0328 37.6186 150.0328 37.6186 C 150.0328 37.6186 148.7718 37.7949 147.96 38.1877">
         <title>Mouth</title>
       </path>
     </g>
