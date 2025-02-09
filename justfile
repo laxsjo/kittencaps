@@ -1,5 +1,15 @@
+editor := `if [[ -f .svg-editor ]]; then cat .svg-editor; else printf "boxy-svg"; fi`
+
 help:
     just --list
+
+test +$args:
+    for x in $args; do echo $x; done
+
+# Define the editor used by edit-icon. Writes the given value to the hidden .svg-editor file. Either a path to an executable, an executable on you're path, or "boxy-svg", which will execute the flatpak (which needs to be installed for it to work). 
+set-editor $new_editor:
+    printf "%s" "$new_editor" > .svg-editor
+    @echo "Just edit-icon will now open '$new_editor'"
 
 # Create a new icon with the specified name in assets/icons. Size should be in u, may specify two dimensions for vertical keycaps, and bg-size should be a valid color name from the standard theme. see `python -m src.generate_icon --help` for more details.
 create-icon name size="1u" bg-color="":
@@ -13,28 +23,31 @@ create-icon name size="1u" bg-color="":
 calculate-centered-text-pos height font-family font-size font-weight:
     python -m src.calculate_centered_font_pos --height "{{height}}" --family "{{font-family}}" --font-size "{{font-size}}" --weight "{{font-weight}}"
 
-# Open icon `name` in the specified editor, make sure to have ran nix develop before, so that Open Gorton is installed.
-edit-icon name editor="boxy-svg":
+# Open icons with the given `names` in the configured editor (You can configure it via `just set-editor ...`, or by overriding the `editor` variable, i.e. `just editor=... edit-icon icon`). Make sure to have ran nix develop before, so that Open Gorton is installed.
+edit-icon +$names:
     #!/usr/bin/env bash
-    if [[ ! -f assets/icons/[{{name}}].svg ]]; then
-        just create-icon {{name}};
-    fi
-    if [[ "{{editor}}" == "boxy-svg" ]]; then
-        if ! command -v flatpak; then
-            echo "Flatpak not installed."
-            echo "If you want to edit icons using BoxySVG you need to install it using flatpak."
-            exit 1
+    for icon in $names; do    
+        if [[ ! -f "assets/icons/[$icon].svg" ]]; then
+            echo "Warning: icon '$icon' does not exit. Run 'just create-icon $icon' to create it!"
+        else
+            if [[ "{{editor}}" == "boxy-svg" ]]; then
+                if ! command -v flatpak; then
+                    echo "Flatpak not installed."
+                    echo "If you want to edit icons using BoxySVG (the default) you need to install it using flatpak."
+                    exit 1
+                fi
+                if ! flatpak info com.boxy_svg.BoxySVG > /dev/null 2> /dev/null; then
+                    echo "BoxySVG is not installed."
+                    echo "If you want to edit icons using BoxySVG (the default) you need to install com.boxy_svg.BoxySVG using flatpak."
+                    exit 1
+                fi
+                
+                flatpak run --filesystem=/nix/store --env=XDG_DATA_DIRS="$XDG_DATA_DIRS" --file-forwarding com.boxy_svg.BoxySVG @@ "assets/icons/[$icon].svg" @@ 2> /dev/null &
+            else
+                "{{editor}}" "assets/icons/[$icon].svg" 2> /dev/null &
+            fi
         fi
-        if ! flatpak info com.boxy_svg.BoxySVG > /dev/null 2> /dev/null; then
-            echo "BoxySVG is not installed."
-            echo "If you want to edit icons using BoxySVG you need to install com.boxy_svg.BoxySVG using flatpak."
-            exit 1
-        fi
-        
-        flatpak run --filesystem=/nix/store --env=XDG_DATA_DIRS="$XDG_DATA_DIRS" --file-forwarding com.boxy_svg.BoxySVG @@ "assets/icons/[{{name}}].svg" @@ 2> /dev/null &
-    else
-        "{{editor}}" "assets/icons/[{{name}}].svg" 2> /dev/null &
-    fi
+    done
 
 generate-keycaps layout="moonlander-mk1" theme="standard":
     python -m src.package_keycaps \
