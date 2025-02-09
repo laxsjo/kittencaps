@@ -90,9 +90,14 @@
     <title>BG</title>
   </rect>
   <svg id="icon" viewBox="0 0 100 100" width="100" height="100" style="overflow:visible;">
-    <text style="fill: url(&quot;#bg_accent&quot;); font-family: &quot;Open Gorton&quot;; font-size: 17px; font-weight: 700; white-space: pre; text-anchor: end;" xml:space="preserve" x="77" y="75">LAlt</text>
+    <g transform="matrix(1, 0, 0, 1, 51.00001, 25.000001)">
+      <title>Alt</title>
+      <polyline style="fill: none; stroke-linecap: round; stroke-linejoin: round; stroke: url(&quot;#bg_accent&quot;); stroke-width: 2.5px;" points="0 0 7 0 17 16 24 16"/>
+      <line style="fill: none; stroke-linecap: round; stroke-linejoin: round; stroke: url(&quot;#bg_accent&quot;); stroke-width: 2.5px;" x1="24" y1="0" x2="16" y2="0"/>
+    </g>
+    <text style="fill: url(&quot;#bg_accent&quot;); font-family: &quot;Open Gorton&quot;; font-size: 17px; font-weight: 700; white-space: pre; text-anchor: end;" x="77" y="75">LAlt</text>
   </svg>
-  <path d="M 50 -40 C 50 -45.5 45.5 -50 40 -50 L -40 -50 C -45.5 -50 -50 -45.5 -50 -40 L -50 40 C -50 45.5 -45.5 50 -40 50 L 40 50 C 45.5 50 50 45.5 50 40 L 50 -40 Z" transform="translate(50, 50) scale(0.6590038314000001)" stroke="black" stroke-opacity="0.5" fill="none" inkscape:label="Outline">
+  <path d="M 50 -40 C 50 -45.5 45.5 -50 40 -50 L -40 -50 C -45.5 -50 -50 -45.5 -50 -40 L -50 40 C -50 45.5 -45.5 50 -40 50 L 40 50 C 45.5 50 50 45.5 50 40 L 50 -40 Z" transform="translate(50, 50) scale(0.6590038314000001)" stroke="black" stroke-opacity="0.5" fill="none">
     <title>Outline</title>
   </path>
 </svg>

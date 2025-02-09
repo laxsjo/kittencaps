@@ -87,7 +87,7 @@
   </path>
   <svg id="icon" viewBox="0 0 100 150" width="100" height="150" style="overflow: visible;" transform="matrix(1, 0, 0, 1, 1.768546192413307, -11.20305138692285)">
     <g transform="matrix(1, 0, 0, 1, 0, 4)">
-      <title>Shift</title>
+      <title>Alt</title>
       <text style="fill: url(&quot;#bg_accent&quot;); font-family: &quot;Open Gorton&quot;; font-size: 17px; font-weight: 700; text-anchor: middle; white-space: pre;" xml:space="preserve" x="50" y="80.984">Alt</text>
       <polyline style="fill: none; stroke-linecap: round; stroke-linejoin: round; stroke-width: 3px; stroke: url(&quot;#bg_accent&quot;);" points="35 36 43 36 57 54 65 54"/>
       <line style="fill: none; stroke-linecap: round; stroke-linejoin: round; stroke-width: 3px; stroke: url(&quot;#bg_accent&quot;);" x1="65" y1="36" x2="53" y2="36"/>

@@ -100,32 +100,11 @@
     <title>BG</title>
   </rect>
   <svg id="icon" viewBox="0 0 100 150" width="100" height="150" style="overflow: visible;">
-    <path d="M 65 54.5 L 65 57.5 L 35 57.5 L 35 54.5" style="fill: none; stroke-width: 3px; stroke-linecap: round; stroke-linejoin: round; stroke: url(&quot;#fg_main&quot;); visibility: hidden;">
-      <title>Icon</title>
-    </path>
-    <use href="#symbol-0" width="24" height="30" transform="matrix(0.8249577879905701, 0.8249569535255432, -0.754247784614563, 0.7542469501495361, 37.99999551433864, 26.999995708565113)" style="transform-box: fill-box; transform-origin: 50% 50%; fill: url(&quot;#bg_accent_lighter&quot;);">
+    <use href="#symbol-0" width="24" height="30" transform="matrix(0.8249577283859253, 0.8249569535255432, -0.7542477250099182, 0.7542469501495361, 37.99999551433864, 26.999995708565113)" style="transform-box: fill-box; transform-origin: 50% 50%; fill: url(&quot;#bg_accent_lighter&quot;);">
       <title>Icon</title>
     </use>
     <text style="fill: url(&quot;#bg_accent&quot;); font-family: &quot;Open Gorton&quot;; font-size: 17px; font-weight: 700; text-anchor: middle; white-space: pre;" xml:space="preserve" x="50" y="84.984">Nav</text>
     <text style="fill: url(&quot;#fg_main&quot;); font-family: &quot;Open Gorton&quot;; font-size: 23px; font-weight: 700; text-anchor: middle; visibility: hidden; white-space: pre;" xml:space="preserve" x="50" y="58.096"><title>Guide</title>test</text>
-    <use href="#paw_print" width="7" height="6.5" transform="matrix(1.420606017112732, 0.1506519615650177, -0.15064896643161774, 1.420612096786499, 73.77921927833857, -3.599999841067545)" style="fill: url(&quot;#bg_accent_dark&quot;);">
-      <title>Paw</title>
-    </use>
-    <use href="#paw_print" width="7" height="6.5" transform="matrix(1.4284570217132568, 0.01809300296008587, -0.018091000616550446, 1.4284629821777344, 85.83689728809298, 18.34526411089301)" style="transform-box: fill-box; transform-origin: 50% 50%; fill: url(&quot;#bg_accent_dark&quot;);">
-      <title>Paw</title>
-    </use>
-    <use href="#paw_print" width="7" height="6.5" transform="matrix(1.4174339771270752, 0.17804400622844696, -0.1780410259962082, 1.4174399375915527, 72.02990595473392, 33.671149612989666)" style="transform-origin: 3.5px 3.25px; fill: url(&quot;#bg_accent_dark&quot;);">
-      <title>Paw</title>
-    </use>
-    <use href="#paw_print" width="7" height="6.5" transform="matrix(1.427150011062622, -0.06373701244592667, 0.06373900175094604, 1.4271550178527832, 81.15109109641597, 53.717806821282664)" style="transform-origin: 3.5px 3.25px; fill: url(&quot;#bg_accent_dark&quot;);">
-      <title>Paw</title>
-    </use>
-    <use href="#paw_print" width="7" height="6.5" transform="matrix(1.3777530193328857, -0.37764599919319153, 0.37764599919319153, 1.3777580261230469, 75.63828906973181, 75.86936816721416)" style="transform-origin: 3.5px 3.25px; fill: url(&quot;#bg_accent_dark&quot;);">
-      <title>Paw</title>
-    </use>
-    <use href="#paw_print" width="7" height="6.5" transform="matrix(0.8992998600006104, -1.10999596118927, 1.1099900007247925, 0.8993020057678223, 88.61472927029493, 82.42890784631456)" style="transform-origin: 3.5px 3.25px; fill: url(&quot;#bg_accent_dark&quot;);">
-      <title>Paw</title>
-    </use>
     <g style="">
       <title>Corner</title>
       <path style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px; fill: url(&quot;#accent_sec&quot;); transform-box: fill-box; transform-origin: 50% 50%; visibility: hidden;" d="M 60.4098 108 L 60.4098 150 C 60.4098 150 80.4098 150 90.4098 150 C 96.4098 150 102.4098 144 102.4098 138 C 102.4098 128 102.4098 108 102.4098 108 L 60.4098 108 Z" transform="matrix(-1, 0, 0, -1, -2.40981, -0.000005)">

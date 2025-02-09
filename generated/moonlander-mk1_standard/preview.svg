@@ -122,10 +122,6 @@
       <rect width="600" height="300" fill="white" />
       <use width="497.701" height="197.701" x="51.1494" y="51.1494" href="#2u-top" fill="black" />
     </mask>
-    <linearGradient id="accent_sec_light" gradientUnits="userSpaceOnUse" bx:pinned="true">
-      <title>accent_sec_light</title>
-      <stop style="stop-color: oklch(0.972 0.07 105);" />
-    </linearGradient>
     <linearGradient id="fg_color_invert" gradientUnits="userSpaceOnUse">
       <title>fg_color_invert</title>
       <stop style="stop-color: oklch(0.834 0.045 342);" />
@@ -165,17 +161,9 @@
       <stop offset="0" style="stop-color:rgb(222, 224, 237)" />
     </linearGradient>
     <linearGradient x1="0" x2="0" y1="0" y2="1" id="gradient-1">
-      <stop offset="0" style="stop-color:rgb(222, 224, 237)" />
+      <stop offset="0" style="stop-color: rgb(222, 224, 237);" />
     </linearGradient>
-    <clipPath id="clip-0-0">
-      <path style="stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;fill:url(&quot;#accent_sec&quot;)" d="M 5.5 4.5 H 8.5 V 6.5 A 2 2 0 0 1 6.5 8.5 H 4.5 V 5.5 A 1 1 0 0 1 5.5 4.5 Z" bx:shape="rect 4.5 4.5 4 4 1 0 2 0 1@016dacb0">
-        <title>Accent</title>
-      </path>
-    </clipPath>
     <linearGradient x1="0" x2="0" y1="0" y2="1" id="gradient-0-1">
-      <stop offset="0" style="stop-color:rgb(222, 224, 237)" />
-    </linearGradient>
-    <linearGradient x1="0" x2="0" y1="0" y2="1" id="gradient-0-2">
       <stop offset="0" style="stop-color:rgb(222, 224, 237)" />
     </linearGradient>
     <symbol id="paw_print" viewBox="0 0 7 6.5" bx:pinned="true">
@@ -223,11 +211,6 @@
         <title>Highlight</title>
       </ellipse>
     </symbol>
-    <symbol id="symbol-0" viewBox="-14 -17 28 34" bx:pinned="true">
-      <title>Icon</title>
-      <path d="M 0 9 L -12 15 L 0 -15" style="stroke-linecap:round;stroke-linejoin:round;stroke-width:3px;stroke:url(&quot;#bg_accent&quot;);fill:url(&quot;#bg_accent&quot;)" />
-      <path d="M 0 9 L 12 15 L 0 -15" style="stroke-linecap:round;stroke-linejoin:round;stroke-width:3px;stroke:url(&quot;#bg_accent&quot;);fill:url(&quot;#bg_accent_dark&quot;)" />
-    </symbol>
     <symbol id="paw_print-2" viewBox="0 0 7 6.5" bx:pinned="true">
       <title>Paw Print</title>
       <rect width="7" height="6.5" style="stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;fill:rgb(186, 218, 85);visibility:hidden" transform="matrix(-1, 0, 0, 1, 0, 0)" x="-7">
@@ -239,6 +222,34 @@
       <ellipse style="fill:inherit;transform-origin:188.09px 77.5238px" cx="188.09" cy="77.524" rx="0.6505" ry="0.8492" transform="matrix(-0.992133, -0.125192, -0.125192, 0.992133, -183.724687, -75.66933)" />
       <ellipse style="fill:inherit;transform-origin:188.089px 77.524px" cx="188.09" cy="77.524" rx="0.5419" ry="0.7074" transform="matrix(0.997325, -0.073093, 0.073094, 0.997325, -186.786428, -74.651334)" />
       <ellipse style="fill:inherit;transform-origin:188.09px 77.5238px" cx="188.09" cy="77.524" rx="0.6505" ry="0.8492" transform="matrix(0.992133, -0.125192, 0.125192, 0.992133, -185.455016, -75.669299)" />
+    </symbol>
+    <mask id="mask-0">
+      <g transform="matrix(1, 0, 0, 1, 24.692199, 0)">
+        <title>Mask</title>
+        <use href="#paw_print-2" width="7" height="6.5" transform="matrix(-1.0293519496917725, -1.0977129936218262, -1.5680749416351318, 0.5277490019798279, 39.843188535992695, 66.57584263550872)" style="transform-origin:3.5px 3.25px;fill:rgb(255, 255, 255)">
+          <title>Paw</title>
+        </use>
+        <use href="#paw_print-2" width="7" height="6.5" transform="matrix(-0.8998729586601257, -1.2061389684677124, -1.617332935333252, 0.3487239480018616, 21.992290108509366, 72.96128716387452)" style="transform-origin:3.5px 3.25px;fill:rgb(255, 255, 255)">
+          <title>Paw</title>
+        </use>
+      </g>
+    </mask>
+    <symbol id="paw_print-3" viewBox="0 0 7 6.5" bx:pinned="true">
+      <title>Paw Print</title>
+      <rect width="7" height="6.5" style="stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;fill:rgb(186, 218, 85);visibility:hidden" transform="matrix(-1, 0, 0, 1, 0, 0)" x="-7">
+        <title>Reference</title>
+      </rect>
+      <path d="M 5.4667 4.146 C 5.4938 5.2294 4.5617 5.9443 3.4775 5.9443 C 2.3932 5.9443 1.5296 5.27 1.5144 4.1858 C 1.5104 3.9189 2.0035 3.77 2.2609 3.5994 C 2.7213 3.2928 3.1206 2.8667 3.4926 2.8667 C 3.8869 2.8667 4.1794 3.264 4.6614 3.5588 C 4.8837 3.6951 5.4595 3.8743 5.4667 4.146 Z" style="fill:inherit" />
+      <bx:guide x="3.508653461901895" y="2.4461445122628516" angle="0" />
+      <ellipse style="fill:inherit;transform-origin:188.089px 77.524px" cx="188.09" cy="77.524" rx="0.5419" ry="0.7074" transform="matrix(-0.997325, -0.073093, -0.073094, 0.997325, -182.391536, -74.65135)" />
+      <ellipse style="fill:inherit;transform-origin:188.09px 77.5238px" cx="188.09" cy="77.524" rx="0.6505" ry="0.8492" transform="matrix(-0.992133, -0.125192, -0.125192, 0.992133, -183.724687, -75.66933)" />
+      <ellipse style="fill:inherit;transform-origin:188.089px 77.524px" cx="188.09" cy="77.524" rx="0.5419" ry="0.7074" transform="matrix(0.997325, -0.073093, 0.073094, 0.997325, -186.786428, -74.651334)" />
+      <ellipse style="fill:inherit;transform-origin:188.09px 77.5238px" cx="188.09" cy="77.524" rx="0.6505" ry="0.8492" transform="matrix(0.992133, -0.125192, 0.125192, 0.992133, -185.455016, -75.669299)" />
+    </symbol>
+    <symbol id="symbol-0" viewBox="-14 -17 28 34" bx:pinned="true">
+      <title>Icon</title>
+      <path d="M 0 9 L -12 15 L 0 -15" style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 3px; stroke: url(&quot;#bg_accent&quot;); fill: url(&quot;#bg_accent&quot;);" />
+      <path d="M 0 9 L 12 15 L 0 -15" style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 3px; stroke: url(&quot;#bg_accent&quot;); fill: url(&quot;#bg_accent_dark&quot;);" />
     </symbol>
   </defs>
   <style type="text/css">
@@ -354,22 +365,31 @@
           </g>
           <g style="">
             <title>Moon</title>
-            <path style="stroke-miterlimit: 8; stroke-linejoin: round; stroke-width: 2px; transform-origin: 1039.26px 434.203px; fill: url(&quot;#accent_sec&quot;);" d="M 70.1219 51.0719 C 68.3913 65.1655 52.0529 72.1005 40.7128 63.555 C 29.3727 55.0095 31.536 37.3925 44.6067 31.8444 C 48.5986 30.15 53.0598 29.9162 57.207 31.1842 C 47.0347 32.2785 41.8616 43.9742 47.8954 52.2365 C 53.5532 59.9839 65.3048 59.3681 70.1219 51.0719 Z">
+            <g>
+              <title>Old</title>
+              <path style="stroke-miterlimit: 8; stroke-linejoin: round; stroke-width: 2px; fill: url(&quot;#bg_accent&quot;); visibility: hidden; transform-origin: 1039.26px 434.203px;" d="M 70.1219 51.0719 C 68.3913 65.1655 52.0529 72.1005 40.7128 63.555 C 29.3727 55.0095 31.536 37.3925 44.6067 31.8444 C 48.5986 30.15 53.0598 29.9162 57.207 31.1842 C 47.0347 32.2785 41.8616 43.9742 47.8954 52.2365 C 53.5532 59.9839 65.3048 59.3681 70.1219 51.0719 Z">
+                <title>BG</title>
+              </path>
+              <path style="stroke-miterlimit: 8; stroke-linejoin: round; stroke-width: 2px; fill: url(&quot;#bg_accent_lighter&quot;); visibility: hidden;" d="M 68.2703 54.7932 C 63.2644 62.5864 53.1335 60.8411 48.9115 57.9578 C 45.5942 55.6924 43.3891 52.5906 43.2115 47.6498 C 43.1316 45.4293 43.3924 41.6643 46.3085 37.1402 C 44.498 41.2337 44.2248 48.6974 47.2417 52.8286 C 52.8995 60.576 63.6089 59.476 68.2703 54.7932 Z">
+                <title>Highlight</title>
+              </path>
+              <path style="stroke-miterlimit: 8; stroke-linejoin: round; stroke-width: 2px; fill: url(&quot;#bg_accent_dark&quot;); visibility: hidden;" d="M 39.2333 57.0635 C 43.389 62.408 50.4034 68.2978 61.5838 64.5115 C 55.466 68.3656 47.3013 68.5199 40.7128 63.555 C 29.8626 55.3787 31.3383 38.8694 42.9379 32.601 C 35.173 38.5625 34.4206 50.8741 39.2333 57.0635 Z">
+                <title>Shadow</title>
+              </path>
+              <path style="stroke-miterlimit: 8; stroke-linejoin: round; stroke-width: 2px; fill: none; stroke: url(&quot;#bg_accent&quot;); visibility: hidden; transform-origin: 1039.26px 434.203px;" d="M 70.1219 51.0719 C 68.3913 65.1655 52.0529 72.1005 40.7128 63.555 C 29.3727 55.0095 31.536 37.3925 44.6067 31.8444 C 48.5986 30.15 53.0598 29.9162 57.207 31.1842 C 47.0347 32.2785 41.8616 43.9742 47.8954 52.2365 C 53.5532 59.9839 65.3048 59.3681 70.1219 51.0719 Z">
+                <title>Edge</title>
+              </path>
+            </g>
+            <path style="stroke-miterlimit: 8; stroke-linejoin: round; stroke-width: 2px; stroke: url(&quot;#bg_accent&quot;); transform-origin: 1039.26px 434.203px; fill: url(&quot;#bg_accent&quot;);" d="M 70.1219 51.0719 C 68.3913 65.1655 52.0529 72.1005 40.7128 63.555 C 29.3727 55.0095 31.536 37.3925 44.6067 31.8444 C 48.5986 30.15 53.0598 29.9162 57.207 31.1842 C 47.0347 32.2785 41.8616 43.9742 47.8954 52.2365 C 53.5532 59.9839 65.3048 59.3681 70.1219 51.0719 Z">
               <title>BG</title>
             </path>
-            <path style="stroke-miterlimit: 8; stroke-linejoin: round; stroke-width: 2px; fill: url(&quot;#bg_accent_lighter&quot;); visibility: hidden;" d="M 68.2703 54.7932 C 63.2644 62.5864 53.1335 60.8411 48.9115 57.9578 C 45.5942 55.6924 43.3891 52.5906 43.2115 47.6498 C 43.1316 45.4293 43.3924 41.6643 46.3085 37.1402 C 44.498 41.2337 44.2248 48.6974 47.2417 52.8286 C 52.8995 60.576 63.6089 59.476 68.2703 54.7932 Z">
-              <title>Highlight</title>
-            </path>
-            <path style="stroke-miterlimit: 8; stroke-linejoin: round; stroke-width: 2px; fill: url(&quot;#accent_sec_dark&quot;);" d="M 39.2333 57.0635 C 43.389 62.408 50.4034 68.2978 61.5838 64.5115 C 55.466 68.3656 47.3013 68.5199 40.7128 63.555 C 29.8626 55.3787 31.3383 38.8694 42.9379 32.601 C 35.173 38.5625 34.4206 50.8741 39.2333 57.0635 Z">
+            <path style="stroke-miterlimit: 8; stroke-linejoin: round; stroke-width: 2px; fill: url(&quot;#bg_accent_dark&quot;);" d="M 39.233 57.064 C 43.184 62.887 56.57 69.173 66.206 61.996 C 57.313 71.202 44.914 69.041 38.856 63.441 C 28.004 53.41 31.469 36.695 43.711 31.128 C 35.002 35.821 34.831 50.576 39.233 57.064 Z">
               <title>Shadow</title>
             </path>
-            <path style="stroke-miterlimit: 8; stroke-linejoin: round; stroke-width: 2px; fill: none; transform-origin: 1039.26px 434.203px; stroke: url(&quot;#accent_sec_light&quot;);" d="M 70.1219 51.0719 C 68.3913 65.1655 52.0529 72.1005 40.7128 63.555 C 29.3727 55.0095 31.536 37.3925 44.6067 31.8444 C 48.5986 30.15 53.0598 29.9162 57.207 31.1842 C 47.0347 32.2785 41.8616 43.9742 47.8954 52.2365 C 53.5532 59.9839 65.3048 59.3681 70.1219 51.0719 Z">
-              <title>Edge</title>
-            </path>
-            <path style="fill: none; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.5px; stroke: url(&quot;#fg_dark&quot;);" d="M 42.5573 49.1986 C 42.9778 49.1953 43.6323 49.0546 44.1159 48.7259">
+            <path style="fill: none; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.5px; stroke: url(&quot;#bg_focus&quot;);" d="M 43.314 49.067 C 43.734 49.064 44.389 48.923 44.872 48.594">
               <title>Eye</title>
             </path>
-            <path style="fill: none; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.5px; stroke: url(&quot;#fg_dark&quot;);" d="M 38.4444 50.4627 C 38.9016 50.46 39.5724 50.3425 40.003 49.99">
+            <path style="fill: none; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.5px; stroke: url(&quot;#bg_focus&quot;);" d="M 39.201 50.331 C 39.658 50.328 40.329 50.211 40.759 49.858">
               <title>Eye</title>
             </path>
             <ellipse style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 10px; fill: url(&quot;#fg_color&quot;); opacity: 0.8; transform-origin: 38.3542px 53.2179px; visibility: hidden;" cx="38.3542" cy="53.2179" rx="1.5729" ry="0.7294" transform="matrix(0.955583, -0.294723, 0.294721, 0.955583, 6.702701, -2.677703)">
@@ -378,7 +398,7 @@
             <ellipse style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 10px; fill: url(&quot;#fg_color&quot;); opacity: 0.8; transform-origin: 38.3542px 53.2179px; visibility: hidden;" cx="38.3542" cy="53.2179" rx="1.5729" ry="0.7294" transform="matrix(0.955583, -0.294723, 0.294721, 0.955583, 0.713023, -0.862224)">
               <title>Blush</title>
             </ellipse>
-            <path style="fill: none; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.5px; stroke: url(&quot;#fg_dark&quot;);" d="M 41.3044 54.1464 C 42.1722 54.1581 42.8722 53.7578 43.0144 53.0701 C 43.8034 53.4919 44.6158 53.2906 45.1351 52.8039">
+            <path style="fill: none; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.5px; stroke: url(&quot;#bg_focus&quot;);" d="M 42.061 54.015 C 42.929 54.027 43.629 53.626 43.771 52.939 C 44.56 53.36 45.372 53.159 45.892 52.672">
               <title>Mouth</title>
             </path>
           </g>
@@ -412,7 +432,7 @@
               <ellipse style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 10px; fill: url(&quot;#bg_focus&quot;);" cx="44.1521" cy="73.5732" rx="3.8975" ry="3.8975" />
             </g>
           </g>
-          <text style="fill: url(&quot;#accent_sec&quot;); font-family: &quot;Open Gorton&quot;; font-size: 12px; font-weight: 700; pointer-events: none; white-space: pre;" transform="matrix(1, 0, 0, 1, -20.410015, 0.836491)"><tspan x="50.1671" y="76.5011">Sleep</tspan><tspan x="50.1671" dy="1em">​</tspan></text>
+          <text style="fill: url(&quot;#accent_sec&quot;); font-family: &quot;Open Gorton&quot;; font-size: 12px; font-weight: 700; white-space: pre;" transform="matrix(1, 0, 0, 1, -20.410015, 0.836491)"><tspan x="50.1671" y="76.5011">Sleep</tspan><tspan x="50.1671" dy="1em">​</tspan></text>
         </svg>
       </g>
     </g>
@@ -423,19 +443,23 @@
       <rect class="surface" width="300" height="300" />
       <g transform="">
         <svg id="icon_del" viewBox="0 0 100 100" width="300.0" height="300.0" style="overflow:visible;" x="0" y="0">
-          <path style="fill: none; stroke-linecap: round; stroke-width: 3px; stroke-linejoin: round; transform-box: fill-box; transform-origin: 50% 50%; stroke: url(&quot;#bg_accent&quot;);" d="M 37.693 27.49 L 66.817 27.49 L 66.817 48.51 L 37.693 48.51 L 27.182 38 L 37.693 27.49 Z" transform="matrix(-1, 0, 0, -1, 0.00001, 0.000004)">
+          <path style="fill: none; stroke-linecap: round; stroke-linejoin: round; transform-box: fill-box; transform-origin: 50% 50%; stroke: url(&quot;#bg_accent&quot;); stroke-width: 2.25px;" d="M 37.693 27.49 L 66.817 27.49 L 66.817 48.51 L 37.693 48.51 L 27.182 38 L 37.693 27.49 Z" transform="matrix(-1, 0, 0, -1, 0.00001, 0.000004)">
             <title>Frame</title>
           </path>
-          <path style="fill: none; stroke-linecap: round; stroke-linejoin: round; stroke-width: 3px; stroke: url(&quot;#bg_accent&quot;);" d="M 47.685 32.937 L 37.559 43.063 M 37.559 32.937 L 47.685 43.063">
+          <path style="fill: none; stroke-linecap: round; stroke-linejoin: round; stroke: url(&quot;#bg_accent&quot;); stroke-width: 2.25px;" d="M 47.685 32.937 L 37.559 43.063 M 37.559 32.937 L 47.685 43.063">
             <title>Cross</title>
           </path>
-          <path style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px; fill: none; stroke: url(&quot;#bg_accent&quot;); stroke-dashoffset: -52px; stroke-dasharray: 1.5, 3;" d="M 60.384 58.8529 C 62.8726 58.9646 64.184 59.5141 65.7854 60.5831 C 68.2079 58.6315 69.4837 58.9717 69.4084 61.4704 C 69.3291 64.1038 69.6218 66.7934 68.5074 68.9176 C 68.5074 68.9176 69.435 69.291 72.332 70.223 C 75.218 71.153 74.207 73.681 71.365 72.791 C 69.372 72.166 67.626 71.752 67.626 71.752 C 67.102 73.515 66.297 77.666 63.196 76.568 C 63.196 76.568 63.2901 76.8026 62.62 78.625 C 61.886 80.6211 59.068 79.985 59.81 77.571 C 60.172 76.395 60.345 76.023 60.345 76.023 C 58.685 75.688 58.391 75.523 57.263 75.096 C 57.263 75.096 56.959 75.833 56.755 76.651 C 56.195 78.896 53.286 77.493 53.824 75.611 C 54.057 74.794 54.341 73.916 54.341 73.916 C 51.87 72.084 53.013 70.46 53.507 67.948 C 53.507 67.948 51.673 67.477 49.016 66.658 C 46.358 65.839 47.108 63.09 50.214 64.02 C 53.32 64.95 54.0354 64.8997 54.0354 64.8997 C 54.6952 62.0261 55.9607 60.1682 57.2252 58.0248 C 58.6311 55.6416 60.2404 56.0868 60.384 58.8529 Z">
-            <title>Body</title>
-          </path>
-          <path style="fill: none; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px; stroke-dashoffset: -0.1px; stroke: url(&quot;#bg_accent&quot;);" d="M 59.6003 65.6613 C 60.6383 65.3173 62.2383 65.6523 62.9353 66.5423">
-            <title>Mouth</title>
-          </path>
-          <path style="stroke-linecap: round; fill: none; stroke: url(&quot;#bg_accent_dark&quot;);" d="M 75.264 54.91 L 71.404 57.33 M 75.46 56.301 L 72.684 58.126 M 74.202 54.135 C 74.386 53.951 74.91 53.188 75.397 53.386 C 75.943 53.609 76.163 54.241 76.121 54.218 M 77.268 54.514 C 77.757 54.402 78.636 54.393 78.728 54.837 C 78.812 55.245 78.03 55.54 78.03 55.54 M 77.386 56.445 C 77.575 57.077 76.986 57.009 76.645 57.126 C 76.454 57.192 76.262 57.185 75.947 56.959">
+          <g>
+            <title>Cat</title>
+            <ellipse style="transform-box: fill-box; transform-origin: 50% 50%; fill: none; stroke: rgb(255, 0, 0); pointer-events: none; visibility: hidden;" cx="59.114" cy="69.503" rx="9.492" ry="8.807" transform="matrix(0.961618, 0.274392, -0.274392, 0.961618, 1.723547, -2.42291)" />
+            <path style="stroke-linecap: round; stroke-linejoin: round; fill: none; stroke: url(&quot;#bg_accent&quot;); stroke-width: 2px; stroke-dasharray: 1.6, 3.6; stroke-dashoffset: -71.8px;" d="M 61.065 58.297 C 63.246 58.409 64.265 58.891 65.759 59.763 C 68.149 56.987 70.691 55.539 69.838 64.588 C 69.584 67.21 70.69 68.647 69.313 71.572 C 67.702 74.993 62.125 77.417 57.062 75.103 C 51.999 72.789 50.997 69.025 51.452 65.856 C 52.033 61.813 53.102 62.699 54.712 59.925 C 58.979 52.947 61.422 54.506 61.065 58.297 Z">
+              <title>Body</title>
+            </path>
+            <path style="fill: none; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px; stroke-dashoffset: -0.1px; stroke: url(&quot;#bg_accent&quot;);" d="M 59.21 66.293 C 60.248 65.949 61.848 66.284 62.545 67.174">
+              <title>Mouth</title>
+            </path>
+          </g>
+          <path style="stroke-linecap: round; fill: none; stroke: url(&quot;#bg_accent_dark&quot;);" d="M 77.394 58.872 L 73.534 61.292 M 77.59 60.263 L 74.814 62.088 M 76.332 58.097 C 76.516 57.913 77.04 57.15 77.527 57.348 C 78.073 57.571 78.293 58.203 78.251 58.18 M 79.398 58.476 C 79.887 58.364 80.766 58.355 80.858 58.799 C 80.942 59.207 80.16 59.502 80.16 59.502 M 79.516 60.407 C 79.705 61.039 79.116 60.971 78.775 61.088 C 78.584 61.154 78.392 61.147 78.077 60.921">
             <title>Cloud</title>
           </path>
           <path style="stroke-linecap: round; fill: none; stroke: url(&quot;#bg_accent_dark&quot;);" d="M 45.224 58.185 L 46.799 59.651 M 45.567 56.809 L 48.537 59.389 M 46.164 55.696 C 46.569 55.627 46.397 55.166 47.089 55.097 C 47.634 55.043 47.752 56.219 47.16 56.495 M 43.911 56.772 C 43.659 56.341 44.073 55.181 44.462 54.957 C 44.819 54.752 45.317 55.731 45.317 55.731 M 43.821 57.835 C 42.66 57.678 42.897 58.679 43.11 58.968 C 43.23 59.129 43.907 59.361 44.525 59.28">
@@ -853,8 +877,8 @@
       <rect class="surface" width="300" height="300" />
       <g transform="">
         <svg id="icon_hyper" viewBox="0 0 100 100" width="300.0" height="300.0" style="overflow:visible;" x="0" y="0">
-          <text style="fill: url(&quot;#bg_accent&quot;); font-family: &quot;Open Gorton&quot;; font-size: 17px; font-weight: 700; text-anchor: middle; white-space: pre;" xml:space="preserve" x="50" y="75">HYPER</text>
-          <g transform="matrix(1, 0, 0, 1, 0.875678, 13.937729)">
+          <text style="fill: url(&quot;#bg_accent&quot;); font-family: &quot;Open Gorton&quot;; font-size: 17px; font-weight: 700; text-anchor: middle; white-space: pre;" x="50" y="75">HYPER</text>
+          <g transform="matrix(-1, 0, 0, 1, 99.124325, 13.937732)" style="">
             <title>Goober</title>
             <path style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px; fill: none;" d="M 55.4285 37.7571 C 55.1753 38.3698 54.0335 38.0955 53.1423 37.9879 C 51.7607 37.8212 51.1989 36.5602 50.6199 32.9021 C 50.1304 29.08 50.1386 28.108 50.25 25.081 C 50.958 20.209 54.577 21.008 54.931 23.693 C 57.379 23.87 55.889 24.074 58.842 23.666 C 59.322 20.073 63.6868 21.532 64.2677 25.2707 C 65.0927 27.7597 66.3779 27.8877 67.4742 28.5477 C 70.9122 29.6547 72.448 35.288 67.676 36.829 C 66.7581 37.0505 66.3309 37.0153 65.1918 37.2141 C 64.2972 39.0184 62.6206 39.0632 61.0338 37.5289 C 59.3851 37.5507 57.5265 37.9291 55.4285 37.7571 Z">
               <title>BG</title>
@@ -899,7 +923,7 @@
               <title>Eye</title>
             </ellipse>
           </g>
-          <g>
+          <g style="" transform="matrix(-1, 0, 0, 1, 100.000004, 0)">
             <title>Emphasis</title>
             <path style="stroke-linecap: round; stroke-linejoin: round; stroke: url(&quot;#bg_accent_dark&quot;); stroke-width: 1.5px; fill: url(&quot;#bg_accent_dark&quot;); transform-origin: 42.4425px 52.3272px;" d="M 39.7539 54.7326 L 46.6862 49.2566 L 38.7024 53.4876 C 37.6564 54.0902 38.7579 55.5562 39.7539 54.7326 Z" />
             <path style="stroke-linecap: round; stroke-linejoin: round; stroke: url(&quot;#bg_accent_dark&quot;); stroke-width: 1.5px; fill: url(&quot;#bg_accent_dark&quot;); transform-origin: 39.1055px 40.5355px;" d="M 30.9982 37.5781 L 42.8002 39.9754 L 31.9216 35.324 C 30.281 34.7597 29.5768 37.0652 30.9982 37.5781 Z" />
@@ -974,7 +998,20 @@
       <rect class="surface" width="300" height="300" />
       <g transform="">
         <svg id="icon_num" viewBox="0 0 100 100" width="300.0" height="300.0" style="overflow:visible;" x="0" y="0">
-          <text style="fill: url(&quot;#bg_accent&quot;); font-family: &quot;Open Gorton&quot;; font-size: 17px; font-weight: 700; white-space: pre;" xml:space="preserve" x="23" y="75"><title>NUM</title>num<tspan x="50" dy="1em">​</tspan></text>
+          <text style="fill: url(&quot;#bg_accent&quot;); font-family: &quot;Open Gorton&quot;; font-size: 17px; font-weight: 700; white-space: pre;" x="23" y="75"><title>NUM</title>num<tspan x="50" dy="1em">​</tspan></text>
+          <g transform="matrix(1, 0, 0, 1, 24.000005, 24.000001)">
+            <title>Keypad</title>
+            <path style="fill: url(&quot;#bg_accent&quot;);" d="M 8.5 0 H 10 A 1 1 0 0 1 11 1 V 4 A 1 1 0 0 1 10 5 H 7 A 1 1 0 0 1 6 4 V 2.5 A 2.5 2.5 0 0 1 8.5 0 Z" bx:shape="rect 6 0 5 5 2.5 1 1 1 1@9a56c6cc" />
+            <rect style="fill: url(&quot;#bg_accent&quot;);" x="12" y="0" width="5" height="5" rx="1" ry="1" />
+            <path style="fill: url(&quot;#bg_accent&quot;);" d="M 19 0 H 20.5 A 2.5 2.5 0 0 1 23 2.5 V 4 A 1 1 0 0 1 22 5 H 19 A 1 1 0 0 1 18 4 V 1 A 1 1 0 0 1 19 0 Z" bx:shape="rect 18 0 5 5 1 2.5 1 1 1@d1bea91f" />
+            <rect style="fill: url(&quot;#bg_accent&quot;);" x="6" y="6" width="5" height="5" rx="1" ry="1" />
+            <rect style="fill: url(&quot;#bg_accent&quot;);" x="12" y="6" width="5" height="5" rx="1" ry="1" />
+            <rect style="fill: url(&quot;#bg_accent&quot;);" x="18" y="6" width="5" height="5" rx="1" ry="1" />
+            <path style="fill: url(&quot;#bg_accent&quot;);" d="M 7 12 H 10 A 1 1 0 0 1 11 13 V 16 A 1 1 0 0 1 10 17 H 8 A 2 2 0 0 1 6 15 V 13 A 1 1 0 0 1 7 12 Z" bx:shape="rect 6 12 5 5 1 1 1 2 1@12afa5a1" />
+            <rect style="fill: url(&quot;#bg_accent&quot;);" x="12" y="12" width="5" height="5" rx="1" ry="1" />
+            <path style="fill: url(&quot;#bg_accent&quot;);" d="M 19 12 H 22 A 1 1 0 0 1 23 13 V 15 A 2 2 0 0 1 21 17 H 19 A 1 1 0 0 1 18 16 V 13 A 1 1 0 0 1 19 12 Z" bx:shape="rect 18 12 5 5 1 1 2 1 1@f0591ae1" />
+            <path style="fill: url(&quot;#bg_accent&quot;);" d="M 2.5 6 H 4 A 1 1 0 0 1 5 7 V 10 A 1 1 0 0 1 4 11 H 2.5 A 2.5 2.5 0 0 1 0 8.5 V 8.5 A 2.5 2.5 0 0 1 2.5 6 Z" bx:shape="rect 0 6 5 5 2.5 1 1 2.5 1@83fc3cea" />
+          </g>
         </svg>
       </g>
     </g>
@@ -1226,24 +1263,15 @@
       <rect class="surface" width="300" height="300" />
       <g transform="">
         <svg id="icon_n_with_ö" viewBox="0 0 100 100" width="300.0" height="300.0" style="overflow:visible;" x="0" y="0">
-          <text style="fill: url(&quot;#fg_main&quot;); font-family: &quot;Open Gorton&quot;; font-size: 40px; text-anchor: middle;" xml:space="preserve" x="50" y="64.080">N</text>
-          <path style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px; fill: url(&quot;#bg_accent&quot;);" d="M 0 100 L 0 58 C 0 58 17.5902 58 27.5902 58 C 33.5902 58 39.5902 64 39.5902 70 C 39.5902 80 39.5902 100 39.5902 100 L 0 100 Z">
-            <title>BG</title>
-          </path>
-          <path style="fill: none; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px; stroke: url(&quot;#bg_accent_darker&quot;);" d="M 0 58 C 0 58 17.5902 58 27.5902 58 C 33.5902 58 39.5902 64 39.5902 70 C 39.5902 80 39.5902 100 39.5902 100">
-            <title>Outline</title>
-          </path>
+          <text style="fill: url(&quot;#fg_main&quot;); font-family: &quot;Open Gorton&quot;; font-size: 40px; text-anchor: middle; white-space: pre;" x="50" y="64.080">N</text>
           <g>
-            <title>Ö</title>
-            <text style="fill: url(&quot;#fg_main&quot;); font-family: &quot;Open Gorton&quot;; font-size: 20px; font-weight: 700; text-anchor: middle;" xml:space="preserve" x="27.864" y="78.3606">O</text>
-            <ellipse style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 10px; fill: url(&quot;#fg_main&quot;);" cx="25.3778" cy="61.7803" rx="1.5" ry="1.5" />
-            <ellipse style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 10px; fill: url(&quot;#fg_main&quot;);" cx="-30.35" cy="61.7803" rx="1.5" ry="1.5" transform="matrix(-1, 0, 0, 1, 0, 0)" />
-          </g>
-          <g style="visibility: hidden;">
-            <title>Ä</title>
-            <text style="fill: url(&quot;#fg_main&quot;); font-family: &quot;Open Gorton&quot;; font-size: 20px; text-anchor: middle;" xml:space="preserve" x="27.864" y="78.3606">A</text>
-            <ellipse style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 10px; fill: url(&quot;#fg_main&quot;);" cx="25.3778" cy="62.7803" rx="1" ry="1" />
-            <ellipse style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 10px; fill: url(&quot;#fg_main&quot;);" cx="-30.35" cy="62.7803" rx="1" ry="1" transform="matrix(-1, 0, 0, 1, 0, 0)" />
+            <title>Corner</title>
+            <g>
+              <title>Ö</title>
+              <text style="fill: url(&quot;#bg_accent_darker&quot;); font-family: &quot;Open Gorton&quot;; font-size: 20px; font-weight: 700; text-anchor: middle; white-space: pre;" x="27.864" y="78.3606">O</text>
+              <ellipse style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 10px; fill: url(&quot;#bg_accent_darker&quot;);" cx="25.3778" cy="61.7803" rx="1.5" ry="1.5" />
+              <ellipse style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 10px; fill: url(&quot;#bg_accent_darker&quot;);" cx="-30.35" cy="61.7803" rx="1.5" ry="1.5" transform="matrix(-1, 0, 0, 1, 0, 0)" />
+            </g>
           </g>
         </svg>
       </g>
@@ -1347,8 +1375,22 @@
     <g id="keycap-unshaded-45">
       <rect class="surface" width="300" height="300" />
       <g transform="">
-        <svg id="icon_U" viewBox="0 0 100 100" width="300.0" height="300.0" style="overflow:visible;" x="0" y="0">
-          <text style="font-weight:400;font-size:40px;font-family:Open Gorton;fill:url(#fg_main);white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="64.08" text-anchor="middle" xml:space="preserve"><tspan>U</tspan></text>
+        <svg id="icon_u_with_umlaut" viewBox="0 0 100 100" width="300.0" height="300.0" style="overflow:visible;" x="0" y="0">
+          <text style="font-weight: 400; font-size: 40px; font-family: &quot;Open Gorton&quot;; fill: url(&quot;#fg_main&quot;); white-space: pre;" x="50" y="64.08" text-anchor="middle"><tspan>U</tspan></text>
+          <g>
+            <title>Corner</title>
+            <g style="visibility: hidden;">
+              <title>Ö</title>
+              <text style="fill: url(&quot;#bg_accent_darker&quot;); font-family: &quot;Open Gorton&quot;; font-size: 20px; font-weight: 700; text-anchor: middle; white-space: pre;" x="27.864" y="78.3606">O</text>
+              <ellipse style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 10px; fill: url(&quot;#bg_accent_darker&quot;);" cx="25.3778" cy="61.7803" rx="1.5" ry="1.5" />
+              <ellipse style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 10px; fill: url(&quot;#bg_accent_darker&quot;);" cx="-30.35" cy="61.7803" rx="1.5" ry="1.5" transform="matrix(-1, 0, 0, 1, 0, 0)" />
+            </g>
+            <g>
+              <title>¨</title>
+              <ellipse style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 10px; fill: url(&quot;#bg_accent_darker&quot;);" cx="25.378" cy="65.622" rx="1.5" ry="1.5" />
+              <ellipse style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 10px; fill: url(&quot;#bg_accent_darker&quot;);" cx="-30.35" cy="65.622" rx="1.5" ry="1.5" transform="matrix(-1, 0, 0, 1, 0, 0)" />
+            </g>
+          </g>
         </svg>
       </g>
     </g>
@@ -1359,18 +1401,15 @@
       <rect class="surface" width="300" height="300" />
       <g transform="">
         <svg id="icon_e_with_ä" viewBox="0 0 100 100" width="300.0" height="300.0" style="overflow:visible;" x="0" y="0">
-          <text style="fill: url(&quot;#fg_main&quot;); font-family: &quot;Open Gorton&quot;; font-size: 40px; text-anchor: middle; white-space: pre;" xml:space="preserve" x="50" y="64.080">e</text>
-          <path style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px; fill: url(&quot;#bg_accent&quot;);" d="M 0 100 L 0 58 C 0 58 17.5902 58 27.5902 58 C 33.5902 58 39.5902 64 39.5902 70 C 39.5902 80 39.5902 100 39.5902 100 L 0 100 Z">
-            <title>BG</title>
-          </path>
-          <path style="fill: none; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px; stroke: url(&quot;#bg_accent_darker&quot;);" d="M 0 58 C 0 58 17.5902 58 27.5902 58 C 33.5902 58 39.5902 64 39.5902 70 C 39.5902 80 39.5902 100 39.5902 100">
-            <title>Outline</title>
-          </path>
+          <text style="fill: url(&quot;#fg_main&quot;); font-family: &quot;Open Gorton&quot;; font-size: 40px; text-anchor: middle; white-space: pre;" x="50" y="64.080">e</text>
           <g>
-            <title>Ö</title>
-            <text style="fill: url(&quot;#fg_main&quot;); font-family: &quot;Open Gorton&quot;; font-size: 20px; font-weight: 700; text-anchor: middle; white-space: pre;" xml:space="preserve" x="27.864" y="78.3606">A</text>
-            <ellipse style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 10px; fill: url(&quot;#fg_main&quot;);" cx="25.3778" cy="61.7803" rx="1.5" ry="1.5" />
-            <ellipse style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 10px; fill: url(&quot;#fg_main&quot;);" cx="-30.35" cy="61.7803" rx="1.5" ry="1.5" transform="matrix(-1, 0, 0, 1, 0, 0)" />
+            <title>Corner</title>
+            <g>
+              <title>Ö</title>
+              <text style="fill: url(&quot;#bg_accent_darker&quot;); font-family: &quot;Open Gorton&quot;; font-size: 20px; font-weight: 700; text-anchor: middle; white-space: pre;" x="27.864" y="78.3606">A</text>
+              <ellipse style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 10px; fill: url(&quot;#bg_accent_darker&quot;);" cx="25.3778" cy="61.7803" rx="1.5" ry="1.5" />
+              <ellipse style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 10px; fill: url(&quot;#bg_accent_darker&quot;);" cx="-30.35" cy="61.7803" rx="1.5" ry="1.5" transform="matrix(-1, 0, 0, 1, 0, 0)" />
+            </g>
           </g>
         </svg>
       </g>
@@ -1395,7 +1434,12 @@
       <rect class="surface" width="300" height="300" />
       <g transform="">
         <svg id="icon_lalt" viewBox="0 0 100 100" width="300.0" height="300.0" style="overflow:visible;" x="0" y="0">
-          <text style="fill: url(&quot;#bg_accent&quot;); font-family: &quot;Open Gorton&quot;; font-size: 17px; font-weight: 700; white-space: pre; text-anchor: end;" xml:space="preserve" x="77" y="75">LAlt</text>
+          <g transform="matrix(1, 0, 0, 1, 51.00001, 25.000001)">
+            <title>Alt</title>
+            <polyline style="fill: none; stroke-linecap: round; stroke-linejoin: round; stroke: url(&quot;#bg_accent&quot;); stroke-width: 2.5px;" points="0 0 7 0 17 16 24 16" />
+            <line style="fill: none; stroke-linecap: round; stroke-linejoin: round; stroke: url(&quot;#bg_accent&quot;); stroke-width: 2.5px;" x1="24" y1="0" x2="16" y2="0" />
+          </g>
+          <text style="fill: url(&quot;#bg_accent&quot;); font-family: &quot;Open Gorton&quot;; font-size: 17px; font-weight: 700; white-space: pre; text-anchor: end;" x="77" y="75">LAlt</text>
         </svg>
       </g>
     </g>
@@ -1416,8 +1460,20 @@
     <g id="keycap-unshaded-50">
       <rect class="surface" width="300" height="300" />
       <g transform="">
-        <svg id="icon_P" viewBox="0 0 100 100" width="300.0" height="300.0" style="overflow:visible;" x="0" y="0">
-          <text style="font-weight:400;font-size:40px;font-family:Open Gorton;fill:url(#fg_main);white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="64.08" text-anchor="middle" xml:space="preserve"><tspan>P</tspan></text>
+        <svg id="icon_p_with_acute" viewBox="0 0 100 100" width="300.0" height="300.0" style="overflow:visible;" x="0" y="0">
+          <text style="font-weight: 400; font-size: 40px; font-family: &quot;Open Gorton&quot;; fill: url(&quot;#fg_main&quot;); white-space: pre;" x="50" y="64.08" text-anchor="middle"><tspan>P</tspan></text>
+          <g>
+            <title>Corner</title>
+            <g style="visibility: hidden;">
+              <title>Ö</title>
+              <text style="fill: url(&quot;#bg_accent_darker&quot;); font-family: &quot;Open Gorton&quot;; font-size: 20px; font-weight: 700; text-anchor: middle; white-space: pre;" x="27.864" y="78.3606">O</text>
+              <ellipse style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 10px; fill: url(&quot;#bg_accent_darker&quot;);" cx="25.3778" cy="61.7803" rx="1.5" ry="1.5" />
+              <ellipse style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 10px; fill: url(&quot;#bg_accent_darker&quot;);" cx="-30.35" cy="61.7803" rx="1.5" ry="1.5" transform="matrix(-1, 0, 0, 1, 0, 0)" />
+            </g>
+            <path d="M 29.4286 64.5837 C 29.2135 64.8895 28.7912 64.963 28.4854 64.7478 C 28.1796 64.5327 28.1061 64.1104 28.3212 63.8046 L 30.2144 61.7582 C 30.3254 61.5992 30.5444 61.5612 30.7034 61.6732 C 30.8614 61.7842 30.9004 62.0032 30.7884 62.1622 L 29.4286 64.5837 Z" style="stroke-linecap: round; stroke-linejoin: round; transform-origin: 28.693px 64.2761px; fill: url(&quot;#bg_accent_darker&quot;); stroke: url(&quot;#bg_accent_darker&quot;);" transform="matrix(-1, 0, 0, -1, 0.000001, 0.000001)">
+              <title>´</title>
+            </path>
+          </g>
         </svg>
       </g>
     </g>
@@ -1428,23 +1484,14 @@
       <rect class="surface" width="300" height="300" />
       <g transform="">
         <svg id="icon_o_with_å" viewBox="0 0 100 100" width="300.0" height="300.0" style="overflow:visible;" x="0" y="0">
-          <text style="fill: url(&quot;#fg_main&quot;); font-family: &quot;Open Gorton&quot;; font-size: 40px; text-anchor: middle; white-space: pre;" xml:space="preserve" x="50" y="64.080">O</text>
-          <path style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px; fill: url(&quot;#bg_accent&quot;);" d="M 0 100 L 0 58 C 0 58 17.5902 58 27.5902 58 C 33.5902 58 39.5902 64 39.5902 70 C 39.5902 80 39.5902 100 39.5902 100 L 0 100 Z">
-            <title>BG</title>
-          </path>
-          <path style="fill: none; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px; stroke: url(&quot;#bg_accent_darker&quot;);" d="M 0 58 C 0 58 17.5902 58 27.5902 58 C 33.5902 58 39.5902 64 39.5902 70 C 39.5902 80 39.5902 100 39.5902 100">
-            <title>Outline</title>
-          </path>
+          <text style="fill: url(&quot;#fg_main&quot;); font-family: &quot;Open Gorton&quot;; font-size: 40px; text-anchor: middle; white-space: pre;" x="50" y="64.080">O</text>
           <g>
-            <title>Ö</title>
-            <text style="fill: url(&quot;#fg_main&quot;); font-family: &quot;Open Gorton&quot;; font-size: 20px; font-weight: 700; text-anchor: middle; white-space: pre;" xml:space="preserve" x="27.864" y="78.3606">A</text>
-            <ellipse style="stroke-linecap: round; stroke-linejoin: round; fill: none; stroke: url(&quot;#fg_main&quot;); stroke-width: 1.2px;" cx="27.864" cy="62.3303" rx="1.5" ry="1.5" />
-          </g>
-          <g style="visibility: hidden;">
-            <title>Ä</title>
-            <text style="fill: url(&quot;#fg_main&quot;); font-family: &quot;Open Gorton&quot;; font-size: 20px; text-anchor: middle; white-space: pre;" xml:space="preserve" x="27.864" y="78.3606">A</text>
-            <ellipse style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 10px; fill: url(&quot;#fg_main&quot;);" cx="25.3778" cy="62.7803" rx="1" ry="1" />
-            <ellipse style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 10px; fill: url(&quot;#fg_main&quot;);" cx="-30.35" cy="62.7803" rx="1" ry="1" transform="matrix(-1, 0, 0, 1, 0, 0)" />
+            <title>Corner</title>
+            <g>
+              <title>Å</title>
+              <text style="fill: url(&quot;#bg_accent_darker&quot;); font-family: &quot;Open Gorton&quot;; font-size: 20px; font-weight: 700; text-anchor: middle; white-space: pre;" x="27.864" y="78.3606">A</text>
+              <ellipse style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.2px; fill: none; stroke: url(&quot;#bg_accent_darker&quot;);" cx="27.864" cy="62.3303" rx="1.5" ry="1.5" />
+            </g>
           </g>
         </svg>
       </g>
@@ -1517,79 +1564,65 @@
     <g id="keycap-unshaded-57">
       <rect class="surface" width="300" height="300" />
       <g transform="">
-        <svg id="icon_fn" viewBox="0 0 100 100" width="300.0" height="300.0" style="overflow:visible" x="0" y="0">
-          <g style="visibility:hidden">
+        <svg id="icon_fn" viewBox="0 0 100 100" width="300.0" height="300.0" style="overflow:visible;" x="0" y="0">
+          <g style="visibility: hidden;">
             <title>Definition Old</title>
-            <text style="fill:url(&quot;#bg_accent_dark&quot;);font-family:&quot;Open Gorton&quot;;font-size:17px;white-space:pre" xml:space="preserve" x="23.0472" y="37.8078"><title>F</title>F<tspan x="23.047199249267578" dy="1em">​</tspan></text>
+            <text style="fill: url(&quot;#bg_accent_dark&quot;); font-family: &quot;Open Gorton&quot;; font-size: 17px; white-space: pre;" x="23.0472" y="37.8078"><title>F</title>F<tspan x="23.047199249267578" dy="1em">​</tspan></text>
             <g>
               <title>Colon</title>
-              <ellipse style="stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;fill:url(&quot;#bg_accent_dark&quot;)" cx="33.1871" cy="29.5137" rx="0.8" ry="0.8" />
-              <ellipse style="stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;fill:url(&quot;#bg_accent_dark&quot;)" cx="33.1871" cy="34.522" rx="0.8" ry="0.8" />
+              <ellipse style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px; fill: url(&quot;#bg_accent_dark&quot;);" cx="33.1871" cy="29.5137" rx="0.8" ry="0.8" />
+              <ellipse style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px; fill: url(&quot;#bg_accent_dark&quot;);" cx="33.1871" cy="34.522" rx="0.8" ry="0.8" />
             </g>
             <g transform="matrix(1, 0, 0, 1, 3.1549, 0)">
               <title>Colon</title>
-              <ellipse style="stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;fill:url(&quot;#bg_accent_dark&quot;)" cx="33.1871" cy="29.5137" rx="0.8" ry="0.8" />
-              <ellipse style="stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;fill:url(&quot;#bg_accent_dark&quot;)" cx="33.1871" cy="34.522" rx="0.8" ry="0.8" />
+              <ellipse style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px; fill: url(&quot;#bg_accent_dark&quot;);" cx="33.1871" cy="29.5137" rx="0.8" ry="0.8" />
+              <ellipse style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px; fill: url(&quot;#bg_accent_dark&quot;);" cx="33.1871" cy="34.522" rx="0.8" ry="0.8" />
             </g>
             <g transform="matrix(1, 0, 0, 1, 40.329055, 27.793228)">
               <title>Key</title>
-              <rect style="fill:none;stroke-linecap:round;stroke-linejoin:round;stroke:url(&quot;#bg_accent_dark&quot;)" x="0" y="0" width="8" height="8" rx="2" ry="2" />
-              <text style="fill:url(&quot;#bg_accent_dark&quot;);font-family:&quot;Open Gorton&quot;;font-size:5px;font-weight:700;text-anchor:middle;white-space:pre" x="4" y="5.760">K</text>
+              <rect style="fill: none; stroke-linecap: round; stroke-linejoin: round; stroke: url(&quot;#bg_accent_dark&quot;);" x="0" y="0" width="8" height="8" rx="2" ry="2" />
+              <text style="fill: url(&quot;#bg_accent_dark&quot;); font-family: &quot;Open Gorton&quot;; font-size: 5px; font-weight: 700; text-anchor: middle; white-space: pre;" x="4" y="5.760">K</text>
             </g>
             <g>
               <title>Arrow</title>
-              <line style="fill:none;stroke-linecap:round;stroke-linejoin:round;stroke:url(&quot;#bg_accent_dark&quot;)" x1="51.3" y1="32" x2="58" y2="32" />
-              <polyline style="fill:none;stroke-linecap:round;stroke-linejoin:round;stroke:url(&quot;#bg_accent_dark&quot;)" points="56 30 58 32 56.1 34" />
+              <line style="fill: none; stroke-linecap: round; stroke-linejoin: round; stroke: url(&quot;#bg_accent_dark&quot;);" x1="51.3" y1="32" x2="58" y2="32" />
+              <polyline style="fill: none; stroke-linecap: round; stroke-linejoin: round; stroke: url(&quot;#bg_accent_dark&quot;);" points="56 30 58 32 56.1 34" />
             </g>
-            <path d="M 837.764 262.3674 L 838.2446 264.1835 L 840.1203 264.0794 L 838.5416 265.0977 L 839.2203 266.8494 L 837.764 265.6626 L 836.3077 266.8494 L 836.9864 265.0977 L 835.4077 264.0794 L 837.2834 264.1835 Z" bx:shape="star 837.764 264.845 2.4776 2.4776 0.33 5 1@06cd2d4a" style="stroke-linecap:round;stroke-linejoin:round;stroke:url(&quot;#bg_accent_dark&quot;);fill:url(&quot;#bg_accent_dark&quot;);transform-box:fill-box;transform-origin:50% 50%" transform="matrix(1, -0.000014, 0.000013, 1, -774.517512, -232.957846)" />
-            <rect x="13.4103" y="32.7385" width="48.9608" height="11.9901" style="fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;vector-effect:non-scaling-stroke;stroke:url(&quot;#gradient-1&quot;)">
+            <path d="M 837.764 262.3674 L 838.2446 264.1835 L 840.1203 264.0794 L 838.5416 265.0977 L 839.2203 266.8494 L 837.764 265.6626 L 836.3077 266.8494 L 836.9864 265.0977 L 835.4077 264.0794 L 837.2834 264.1835 Z" bx:shape="star 837.764 264.845 2.4776 2.4776 0.33 5 1@06cd2d4a" style="stroke-linecap: round; stroke-linejoin: round; stroke: url(&quot;#bg_accent_dark&quot;); fill: url(&quot;#bg_accent_dark&quot;); transform-box: fill-box; transform-origin: 50% 50%;" transform="matrix(1, -0.000014, 0.000013, 1, -774.517512, -232.957846)" />
+            <rect x="13.4103" y="32.7385" width="48.9608" height="11.9901" style="fill: none; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px; vector-effect: non-scaling-stroke; stroke: url(&quot;#gradient-1&quot;);">
               <title>Reference</title>
             </rect>
           </g>
-          <g>
+          <g style="" transform="matrix(1, 0, 0, 1, 9.918955, -0.489979)">
             <title>Definition</title>
-            <text style="fill:url(&quot;#bg_accent_dark&quot;);font-family:&quot;Open Gorton&quot;;font-size:14px;font-weight:700" xml:space="preserve" transform="matrix(1, 0, 0, 1, 0.133846, -3.142468)"><title>F</title><tspan x="23.0472" y="37.8078">F</tspan><tspan x="23.0472" dy="1em">​</tspan></text>
+            <text style="fill: url(&quot;#bg_accent_dark&quot;); font-family: &quot;Open Gorton&quot;; font-size: 14px; font-weight: 700; white-space: pre;" transform="matrix(1, 0, 0, 1, 0.133846, -3.142468)"><title>F</title><tspan x="23.0472" y="37.8078">F</tspan><tspan x="23.0472" dy="1em">​</tspan></text>
             <g transform="matrix(1, 0, 0, 1, 0, -2.252205)">
               <title>Colon</title>
-              <ellipse style="stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;fill:url(&quot;#bg_accent_dark&quot;)" cx="33.1871" cy="29.887" rx="1" ry="1" />
-              <ellipse style="stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;fill:url(&quot;#bg_accent_dark&quot;)" cx="33.1871" cy="34.522" rx="1" ry="1" />
+              <ellipse style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px; fill: url(&quot;#bg_accent_dark&quot;);" cx="33.1871" cy="29.887" rx="1" ry="1" />
+              <ellipse style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px; fill: url(&quot;#bg_accent_dark&quot;);" cx="33.1871" cy="34.522" rx="1" ry="1" />
             </g>
             <g transform="matrix(1, 0, 0, 1, 3.1549, -2.252205)">
               <title>Colon</title>
-              <ellipse style="stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;fill:url(&quot;#bg_accent_dark&quot;)" cx="33.1871" cy="29.887" rx="1" ry="1" />
-              <ellipse style="stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;fill:url(&quot;#bg_accent_dark&quot;)" cx="33.1871" cy="34.522" rx="1" ry="1" />
+              <ellipse style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px; fill: url(&quot;#bg_accent_dark&quot;);" cx="33.1871" cy="29.887" rx="1" ry="1" />
+              <ellipse style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px; fill: url(&quot;#bg_accent_dark&quot;);" cx="33.1871" cy="34.522" rx="1" ry="1" />
             </g>
-            <g transform="matrix(1, 0, 0, 1, 40.329055, 25.728786)">
+            <g transform="matrix(-0.8, 0, 0, 0.8, 48.353258, 25.784761)" style="">
               <title>Key</title>
-              <rect style="fill:none;stroke-linecap:round;stroke-linejoin:round;stroke:url(&quot;#bg_accent_dark&quot;);visibility:hidden" x="0" y="0" width="8" height="8" rx="1.5" ry="1.5" />
-              <path d="M 4.5 4.5 M 4.5 8 L 1.5 8 C 0.6716 8 0 7.3284 0 6.5 L 0 1.5 C 0 0.6716 0.6716 0 1.5 0 L 6.5 0 C 7.3284 0 8 0.6716 8 1.5 L 8 4.5" style="fill:none;stroke-linecap:round;stroke-linejoin:round;stroke:url(&quot;#bg_accent_dark&quot;)">
-                <title>Border</title>
+              <path d="M 10 5 C 10 9.908 9.9051 10.003 5 9.998 C 0.095 9.995 0 9.908 0 5 C 0 0.09 0.09 0 5 0 C 9.91 0 10 0.09 10 5 Z" style="stroke-linecap: round; stroke-linejoin: round; vector-effect: non-scaling-stroke; stroke-width: 2px; fill: url(&quot;#accent_sec&quot;);">
+                <title>BG</title>
               </path>
-              <ellipse style="stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;fill:url(&quot;#accent_sec&quot;);visibility:hidden" cx="6.5" cy="6.5" rx="2" ry="2">
+              <path d="M 0 5 C 0 4.9993 0 4.9987 0 4.998 L 2.5 4.998 L 2.5 5 C 4.955 5 5 5.045 5 7.5 L 5 9.998 C 0.095 9.995 0 9.908 0 5 Z" style="stroke-linecap: round; stroke-linejoin: round; vector-effect: non-scaling-stroke; stroke-width: 2px; fill: url(&quot;#accent_sec_dark&quot;);">
                 <title>Accent</title>
-              </ellipse>
-              <path style="stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;fill:url(&quot;#accent_sec&quot;)" d="M 5.5 4.5 H 8 V 6.25 A 1.75 1.75 0 0 1 6.25 8 H 4.5 V 5.5 A 1 1 0 0 1 5.5 4.5 Z" bx:shape="rect 4.5 4.5 3.5 3.5 1 0 1.8 0 1@ce57fde7">
-                <title>Accent</title>
-              </path>
-              <rect style="fill:none;stroke-linecap:round;stroke-linejoin:round;stroke:url(&quot;#accent_sec_dark&quot;);clip-path:url(#clip-0-0)" x="0" y="0" width="8" height="8" rx="1.5" ry="1.5">
-                <title>Accent Border</title>
-              </rect>
-              <text style="fill:url(&quot;#bg_accent_dark&quot;);font-family:&quot;Open Gorton&quot;;font-size:5px;font-weight:700;text-anchor:middle;white-space:pre;visibility:hidden" x="4" y="5.760"><title>Reference</title>K</text>
-              <path d="M 2.7102 2.4125 L 2.7102 5.5869 M 5.1827 2.4189 L 2.7353 4.4858 M 3.7355 3.7565 L 5.2965 5.5869" style="fill:none;stroke-linecap:round;stroke-linejoin:round;stroke:url(&quot;#bg_accent_dark&quot;)">
-                <title>K</title>
               </path>
             </g>
             <g transform="matrix(1, 0, 0, 1, 0, -2.288297)">
               <title>Arrow</title>
-              <line style="fill:none;stroke-linecap:round;stroke-linejoin:round;stroke:url(&quot;#bg_accent_dark&quot;);stroke-width:1.4px" x1="51.3" y1="32" x2="58" y2="32" />
-              <polyline style="fill:none;stroke-linecap:round;stroke-linejoin:round;stroke:url(&quot;#bg_accent_dark&quot;);stroke-width:1.4px" points="56 30 58 32 56.1 34" />
+              <line style="fill: none; stroke-linecap: round; stroke-linejoin: round; stroke: url(&quot;#bg_accent_dark&quot;); stroke-width: 1.4px;" x1="51.3" y1="32" x2="58" y2="32" />
+              <polyline style="fill: none; stroke-linecap: round; stroke-linejoin: round; stroke: url(&quot;#bg_accent_dark&quot;); stroke-width: 1.4px;" points="56 30 58 32 56.1 34" />
             </g>
-            <path d="M 837.764 262.3674 L 838.2446 264.1835 L 840.1203 264.0794 L 838.5416 265.0977 L 839.2203 266.8494 L 837.764 265.6626 L 836.3077 266.8494 L 836.9864 265.0977 L 835.4077 264.0794 L 837.2834 264.1835 Z" bx:shape="star 837.764 264.845 2.4776 2.4776 0.33 5 1@06cd2d4a" style="stroke-linecap:round;stroke-linejoin:round;transform-box:fill-box;transform-origin:50% 50%;fill:url(&quot;#accent_sec&quot;);stroke:url(&quot;#accent_sec&quot;)" transform="matrix(1, -0.000014, 0.000013, 1, -774.517512, -234.880789)" />
-            <rect x="24.1433" y="24.3604" width="48.9608" height="10.7273" style="fill:none;stroke:url(&quot;#gradient-0&quot;);stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;vector-effect:non-scaling-stroke;visibility:hidden">
-              <title>Reference</title>
-            </rect>
+            <path d="M 837.764 262.3674 L 838.2446 264.1835 L 840.1203 264.0794 L 838.5416 265.0977 L 839.2203 266.8494 L 837.764 265.6626 L 836.3077 266.8494 L 836.9864 265.0977 L 835.4077 264.0794 L 837.2834 264.1835 Z" bx:shape="star 837.764 264.845 2.4776 2.4776 0.33 5 1@06cd2d4a" style="stroke-linecap: round; stroke-linejoin: round; transform-box: fill-box; transform-origin: 50% 50%; fill: url(&quot;#accent_sec&quot;); stroke: url(&quot;#accent_sec&quot;);" transform="matrix(1, -0.000014, 0.000013, 1, -774.517512, -234.880789)" />
           </g>
-          <text style="fill:url(&quot;#bg_accent&quot;);font-family:&quot;Open Gorton&quot;;font-size:17px;font-weight:700;text-anchor:end;white-space:pre" xml:space="preserve" x="77" y="75">FN</text>
+          <text style="fill: url(&quot;#bg_accent&quot;); font-family: &quot;Open Gorton&quot;; font-size: 17px; font-weight: 700; text-anchor: end; white-space: pre;" x="77" y="75">FN</text>
         </svg>
       </g>
     </g>
@@ -1661,7 +1694,7 @@
               <path d="m231-330c0.013 0.74 0.249 2.18 0.603 3.3 0.744 2.38 2.01 4.58 3.76 6.51 1.8 1.99 4.02 3.59 6.58 4.73 2.69 1.19 5.61 1.8 8.64 1.8 3.03-4e-3 5.95-0.624 8.64-1.83 2.56-1.15 4.78-2.75 6.58-4.75 1.76-1.95 3.02-4.15 3.76-6.53 0.375-1.2 0.612-2.42 0.707-3.64 0.093-1.2 0.054-2.41-0.117-3.62-0.334-2.35-1.15-4.56-2.4-6.56-1.14-1.85-2.62-3.46-4.38-4.82l4e-3 -3e-3 -17.7-13.6c-0.016-0.012-0.029-0.025-0.046-0.036-1.16-0.892-3.12-0.889-4.39 5e-3 -1.29 0.904-1.44 2.4-0.29 3.34l-5e-3 5e-3 7.39 6.01-22.5 0.024h-0.03c-1.86 2e-3 -3.65 1.22-4 2.77-0.364 1.57 0.9 2.88 2.84 2.88l-3e-3 7e-3 11.4-0.022-20.4 15.6c-0.026 0.019-0.054 0.039-0.078 0.058-1.92 1.47-2.54 3.92-1.33 5.46 1.23 1.57 3.84 1.58 5.78 9e-3l11.1-9.1s-0.162 1.23-0.149 1.96zm28.6 4.11c-2.29 2.33-5.5 3.66-8.96 3.66-3.47 6e-3 -6.68-1.3-8.97-3.63-1.12-1.14-1.94-2.44-2.45-3.83-0.497-1.37-0.69-2.82-0.562-4.28 0.121-1.43 0.547-2.8 1.23-4.03 0.668-1.21 1.59-2.31 2.72-3.24 2.23-1.81 5.06-2.8 8.02-2.8 2.97-4e-3 5.8 0.969 8.03 2.78 1.13 0.924 2.05 2.02 2.72 3.23 0.683 1.23 1.11 2.59 1.23 4.03 0.126 1.46-0.067 2.91-0.564 4.28-0.508 1.4-1.33 2.7-2.45 3.84z" style="fill-rule:nonzero;fill:url(&quot;#bg_accent_dark&quot;)" />
             </g>
           </g>
-          <rect x="24.2493" y="45.5579" width="37.3014" height="29.9807" style="fill:none;stroke:url(#gradient-0-2);stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;vector-effect:non-scaling-stroke;visibility:hidden">
+          <rect x="24.2493" y="45.5579" width="37.3014" height="29.9807" style="fill:none;stroke:url(#gradient-0-1);stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;vector-effect:non-scaling-stroke;visibility:hidden">
             <title>Reference</title>
           </rect>
           <rect style="stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;fill:url(&quot;#bg_focus&quot;)" x="34.9" y="42.0482" width="44.3" height="37" rx="3" ry="3">
@@ -1766,7 +1799,7 @@
     <g id="keycap-unshaded-64">
       <rect class="surface" width="600" height="300" />
       <g transform="">
-        <svg id="icon_cat_face" viewBox="0 0 200 100" width="600.0" height="300.0" style="overflow: visible;" transform="matrix(0.9742441176795182, 0, 0, 0.9742441176795182, -4.05971587961915, 2.5755883577695347)" x="0" y="0">
+        <svg id="icon_cat_face" viewBox="0 0 200 100" width="600.0" height="300.0" style="overflow: visible;" transform="matrix(0.9742441177368163, 0, 0, 0.9742441177368163, -3.030572342170558, 3.4332079974112375)" x="0" y="0">
           <path style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 3px; fill: url(&quot;#bg_main&quot;); stroke: url(&quot;#fg_main&quot;);" d="M 30.9758 100 C 30.9758 100 34.1473 44.9319 54.4983 38.0379 C 55.8028 32.0919 59.9662 26.332 62.3333 26.332 C 65.0506 26.332 67.933 28.3765 70.3884 34.3222 C 87.7332 30.9913 113.035 31.0845 130.417 34.3222 C 133.749 28.7214 135.908 26.2699 138.849 26.2699 C 141.797 26.2699 145.201 32.1636 147.567 37.7285 C 166.65 45.6689 169.221 100 169.221 100">
             <title>Body</title>
           </path>
@@ -1776,12 +1809,18 @@
             <ellipse style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 10px; fill: url(&quot;#fg_main&quot;);" cx="129.752" cy="46.7906" rx="4" ry="6" />
             <g style="">
               <title>Tounge</title>
-              <path style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 3px; fill: url(&quot;#fg_main_lighter&quot;); stroke: url(&quot;#fg_main&quot;);" d="M 96.8641 54.9199 C 96.8641 54.9199 96.8 55.9051 96.8 57.0938 C 96.8 60.708 103.075 60.8431 103.075 57.1475 C 103.075 55.9851 103.156 54.8342 103.156 54.8342 L 100.052 52.1842 L 96.8641 54.9199 Z">
+              <path style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 3px; stroke: url(&quot;#fg_main&quot;); fill: url(&quot;#bg_accent_dark&quot;);" d="M 96.8641 54.9199 C 96.8641 54.9199 96.8 55.9051 96.8 57.0938 C 96.8 60.708 103.075 60.8431 103.075 57.1475 C 103.075 55.9851 103.156 54.8342 103.156 54.8342 L 100.052 52.1842 L 96.8641 54.9199 Z">
                 <title>Tounge</title>
               </path>
             </g>
             <path style="fill: none; stroke-linecap: round; stroke-linejoin: round; stroke: url(&quot;#fg_main&quot;); stroke-width: 3px;" d="M 82 52.2 C 82 52.2 90 61 100 52.1 C 110 61 118 52.2 118 52.2" />
           </g>
+          <path style="stroke-linecap: round; stroke-linejoin: round; stroke: url(&quot;#fg_main&quot;); stroke-width: 2.5px; transform-origin: 156.034px 25.452px; fill: url(&quot;#bg_accent_dark&quot;);" d="M 154.496 29.783 C 154.496 29.783 149.685 27.971 150.05 25.303 C 150.239 23.925 151.121 23.314 152.468 23.242 C 153.815 23.172 154.408 23.723 154.916 24.299 C 155.229 24.649 155.691 24.695 155.869 24.269 C 156.139 23.625 157.05 22.796 158.636 22.955 C 160.223 23.112 160.938 24.386 160.311 25.55 C 159.083 27.828 154.496 29.783 154.496 29.783 Z" transform="matrix(0.9851, 0.171985, -0.171985, 0.9851, 0, 0)">
+            <title>Heart Bigger</title>
+          </path>
+          <path style="stroke: url(&quot;#fg_main&quot;); stroke-linecap: round; stroke-linejoin: round; stroke-width: 2.5px; transform-origin: 168.964px 31.635px; fill: url(&quot;#bg_accent_dark&quot;);" d="M 168.417 34.815 C 168.417 34.815 165.731 33.582 165.394 32.172 C 165.177 31.263 165.362 30.444 166.514 30.239 C 166.963 30.16 167.592 30.486 168.469 31.168 C 169.454 30.608 169.967 30.326 171.051 30.237 C 172.183 30.144 172.148 30.941 171.934 32.007 C 171.668 33.333 168.417 34.815 168.417 34.815 Z" transform="matrix(0.9661, 0.258167, -0.258167, 0.9661, 0, 0.000001)">
+            <title>Heart</title>
+          </path>
         </svg>
       </g>
     </g>
@@ -1846,7 +1885,7 @@
       <g transform="translate(0, 300) rotate(-90)">
         <svg id="icon_alt" viewBox="0 0 100 150" width="300.0" height="450.0" style="overflow: visible;" transform="matrix(1, 0, 0, 1, 1.768546192413307, -11.20305138692285)" x="0" y="0">
           <g transform="matrix(1, 0, 0, 1, 0, 4)">
-            <title>Shift</title>
+            <title>Alt</title>
             <text style="fill: url(&quot;#bg_accent&quot;); font-family: &quot;Open Gorton&quot;; font-size: 17px; font-weight: 700; text-anchor: middle; white-space: pre;" xml:space="preserve" x="50" y="80.984">Alt</text>
             <polyline style="fill: none; stroke-linecap: round; stroke-linejoin: round; stroke-width: 3px; stroke: url(&quot;#bg_accent&quot;);" points="35 36 43 36 57 54 65 54" />
             <line style="fill: none; stroke-linecap: round; stroke-linejoin: round; stroke-width: 3px; stroke: url(&quot;#bg_accent&quot;);" x1="65" y1="36" x2="53" y2="36" />
@@ -1870,8 +1909,13 @@
       <rect class="surface" width="600" height="300" />
       <g transform="">
         <svg id="icon_super" viewBox="0 0 200 100" width="600.0" height="300.0" style="overflow:visible" transform="matrix(1, 0, 0, 0.9999999999999999, 14.785905464222736, 9.023905317410456)" x="0" y="0">
-          <use href="#paw_print-1" width="7" height="6.5" transform="matrix(0.5253767967224121, -1.3284560441970825, 1.3284560441970825, 0.5253767967224121, 172.52984292003538, 49.25199415279358)" style="transform-box:fill-box;transform-origin:50% 50%;fill:url(&quot;#bg_accent_dark&quot;)" />
-          <g transform="matrix(1, 0, 0, 1, 57.983207, -2.939922)">
+          <use href="#paw_print-1" width="7" height="6.5" transform="matrix(-0.525377, -1.328456, -1.478144, 0.14688, 23.348686, 58.307456)" style="transform-origin:3.5px 3.25px;fill:url(&quot;#bg_accent_dark&quot;)">
+            <title>Paw</title>
+          </use>
+          <use href="#paw_print-1" width="7" height="6.5" transform="matrix(-0.398616, -1.007931, -1.482974, 0.134666, 56.398417, 62.096537)" style="fill:url(&quot;#bg_accent_dark&quot;);transform-origin:3.5px 3.25px">
+            <title>Paw</title>
+          </use>
+          <g transform="matrix(-1, 0, 0, 1, 142.244687, 8.082873)" style="">
             <title>Cat</title>
             <path style="stroke-linecap:round;stroke-linejoin:round;fill:url(&quot;#bg_main&quot;);stroke-width:2px" d="M 72.976 31.177 C 74.479 31.995 74.656 32.304 77.259 32.823 C 82.721 33.912 84.419 33.763 88.753 33.666 C 92.398 33.584 94.536 32.578 99.061 33.235 C 104.865 34.078 105.939 38.393 105.939 38.393 L 106.414 45.357 L 95.873 54.617 C 93.681 54.996 90.69 55.265 88.631 55.32 C 82.679 55.479 80.763 55.616 75.863 54.769 C 65.443 53.922 70.933 53.691 65.26 53.783 C 62.67 53.335 60.201 52.553 58.722 51.792 C 58.661 51.8 55.517 41.971 55.517 41.971 C 52.748 40.836 54.019 30.687 55.478 29.115 C 56.23 28.671 72.635 29.443 72.976 31.177 Z">
               <title>Body BG</title>
@@ -1919,10 +1963,10 @@
                 <title>Highlight</title>
               </ellipse>
             </g>
-            <use href="#eye" width="1.9588000774383545" height="3.100800037384033" transform="matrix(1.2109010219573975, 0.1094980239868164, -0.1323700249195099, 1.2088329792022705, 55.69711961042032, 32.017680514732895)" style="transform-box:fill-box;transform-origin:50% 50%;fill:none">
+            <use href="#eye" width="1.9588000774383545" height="3.100800037384033" transform="matrix(1.2109010219573975, 0.109498031437397, -0.1323700249195099, 1.2088329792022705, 55.69711968306255, 32.017680556491534)" style="transform-box:fill-box;transform-origin:50% 50%;fill:none">
               <title>Left Eye</title>
             </use>
-            <use href="#eye" width="1.9588000774383545" height="3.100800037384033" transform="matrix(1.3212870359420776, -0.02519100531935692, -0.04629100114107132, 1.2169450521469116, 61.91533543489837, 33.502524694342156)" style="transform-origin:0.979px 1.55px;fill:none">
+            <use href="#eye" width="1.9588000774383545" height="3.100800037384033" transform="matrix(1.3212870359420776, -0.025191007182002068, -0.04629100114107132, 1.2169450521469116, 61.915335515650625, 33.50252473803738)" style="transform-origin:0.979px 1.55px;fill:none">
               <title>Right Eye</title>
             </use>
             <g style="transform-origin:56.522px 33.941px;visibility:hidden" transform="matrix(0.999547, 0.030088, -0.030087, 0.999547, 0, 0)">
@@ -2018,11 +2062,11 @@
               <title>Tail Crease</title>
             </path>
           </g>
-          <text style="fill:url(&quot;#fg_main&quot;);font-family:&quot;Open Gorton&quot;;font-size:12px;font-weight:700;white-space:pre" x="99.654" y="30.433"><title>Question Mark</title>?</text>
-          <text style="fill:url(&quot;#fg_main&quot;);font-family:&quot;Open Gorton&quot;;font-size:21px;font-weight:700;text-anchor:middle" xml:space="preserve" x="58.877" y="72.519" dx="0 0 0.3">SUPER</text>
-          <g transform="matrix(1, 0, 0, 1, -5.094755, 8.990747)">
+          <text style="fill:url(&quot;#fg_main&quot;);font-family:&quot;Open Gorton&quot;;font-size:12px;font-weight:700;white-space:pre" x="94.8278" y="33.8498"><title>Question Mark</title>?</text>
+          <text style="fill:url(&quot;#fg_main&quot;);font-family:&quot;Open Gorton&quot;;font-size:17px;font-weight:700;text-anchor:end" xml:space="preserve" x="177" y="75" dx="0 0 0.3">SUPER</text>
+          <g transform="matrix(-1, 0, 0, 1, 213.833508, 13.051693)" style="">
             <title>Tux</title>
-            <path style="stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;fill:url(&quot;#fg_dark&quot;)" d="M 52.068 15.337 C 54.546 15.378 57.465 16.711 57.713 20.888 C 57.895 23.942 58.421 25.19 58.887 26.706 C 59.352 28.222 62.79 32.318 62.8 39.914 C 62.8 39.914 65.389 42.926 62.246 45.995 C 62.246 45.995 55.364 49.261 52.068 49.105 C 48.435 48.934 41.041 45.75 41.041 45.75 L 41.83 40.417 C 37.967 38.18 39.512 35.094 40.386 32.66 C 41.438 29.733 43.741 27.35 43.972 26.585 C 44.511 24.79 44.797 23.362 45.079 20.993 C 45.466 17.724 48.169 15.272 52.068 15.337 Z">
+            <path style="stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;fill:url(&quot;#bg_focus&quot;)" d="M 52.068 15.337 C 54.546 15.378 57.465 16.711 57.713 20.888 C 57.895 23.942 58.421 25.19 58.887 26.706 C 59.352 28.222 62.79 32.318 62.8 39.914 C 62.8 39.914 65.389 42.926 62.246 45.995 C 62.246 45.995 55.364 49.261 52.068 49.105 C 48.435 48.934 41.041 45.75 41.041 45.75 L 41.83 40.417 C 37.967 38.18 39.512 35.094 40.386 32.66 C 41.438 29.733 43.741 27.35 43.972 26.585 C 44.511 24.79 44.797 23.362 45.079 20.993 C 45.466 17.724 48.169 15.272 52.068 15.337 Z">
               <title>Body</title>
             </path>
             <g style="" transform="matrix(1.281542, 0, 0, 1.281542, -16.510378, -18.755349)">
@@ -2030,7 +2074,7 @@
               <ellipse style="fill:url(&quot;#bg_main&quot;)" cx="51.247" cy="31.747" rx="1.367" ry="1.576">
                 <title>Eye</title>
               </ellipse>
-              <path d="M 52.646 31.778 C 52.646 32.617 52.319 33.259 51.75 33.259 C 51.179 33.259 50.792 32.662 50.792 31.824 C 50.792 30.986 51.247 30.539 51.701 30.529 C 52.271 30.517 52.646 30.939 52.646 31.778 Z" style="fill:url(&quot;#fg_dark&quot;)">
+              <path d="M 52.646 31.778 C 52.646 32.617 52.319 33.259 51.75 33.259 C 51.179 33.259 50.792 32.662 50.792 31.824 C 50.792 30.986 51.247 30.539 51.701 30.529 C 52.271 30.517 52.646 30.939 52.646 31.778 Z" style="fill:url(&quot;#bg_focus&quot;)">
                 <title>Pupil</title>
               </path>
               <ellipse style="fill:url(&quot;#bg_main&quot;)" cx="51.835" cy="31.261" rx="0.241" ry="0.268">
@@ -2042,7 +2086,7 @@
               <ellipse style="fill:url(&quot;#bg_main&quot;)" cx="55.65" cy="31.709" rx="1.367" ry="1.583">
                 <title>Eye</title>
               </ellipse>
-              <path d="M 57.079 31.765 C 57.079 32.591 56.732 33.222 56.126 33.222 C 55.519 33.222 55.107 32.635 55.107 31.811 C 55.107 30.987 55.59 30.547 56.074 30.538 C 56.68 30.525 57.079 30.941 57.079 31.765 Z" style="fill:url(&quot;#fg_dark&quot;)">
+              <path d="M 57.079 31.765 C 57.079 32.591 56.732 33.222 56.126 33.222 C 55.519 33.222 55.107 32.635 55.107 31.811 C 55.107 30.987 55.59 30.547 56.074 30.538 C 56.68 30.525 57.079 30.941 57.079 31.765 Z" style="fill:url(&quot;#bg_focus&quot;)">
                 <title>Pupil</title>
               </path>
               <ellipse style="fill:url(&quot;#bg_main&quot;)" cx="56.259" cy="31.216" rx="0.241" ry="0.268">
@@ -2051,7 +2095,7 @@
             </g>
             <g style="" transform="matrix(1.281542, 0, 0, 1.281542, -16.510378, -18.755349)">
               <title>Beak</title>
-              <path style="stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;fill:url(&quot;#fg_lighter&quot;)" d="M 53.386 32.622 C 54.494 32.62 55.558 33.167 56.641 33.663 C 57.149 33.896 57.649 33.993 57.646 34.244 C 57.631 35.517 54.911 36.055 53.386 36.06 C 51.861 36.064 49.351 35.561 49.351 34.244 C 49.351 34.058 50.022 33.819 50.379 33.654 C 51.255 33.247 52.307 32.625 53.386 32.622 Z">
+              <path style="stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;fill:url(&quot;#accent_sec&quot;)" d="M 53.386 32.622 C 54.494 32.62 55.558 33.167 56.641 33.663 C 57.149 33.896 57.649 33.993 57.646 34.244 C 57.631 35.517 54.911 36.055 53.386 36.06 C 51.861 36.064 49.351 35.561 49.351 34.244 C 49.351 34.058 50.022 33.819 50.379 33.654 C 51.255 33.247 52.307 32.625 53.386 32.622 Z">
                 <title>Beak</title>
               </path>
               <ellipse style="fill:url(&quot;#fg_dark&quot;)" cx="53.028" cy="33.464" rx="0.35" ry="0.5">
@@ -2064,23 +2108,23 @@
             <path style="stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;fill:url(&quot;#bg_main&quot;)" d="M 47 45.856 C 50.179 46.758 52.068 47.069 54.076 46.498 C 53.362 45.309 53.58 41.67 59.279 38.338 C 59.45 32.925 57.098 31.711 56.457 28.064 C 54.769 28.722 53.777 28.942 52.068 28.942 C 50.375 28.942 49.242 28.722 47.54 28.13 C 47.243 32.107 43.954 33.079 44.021 40.769 L 47 45.856 Z">
               <title>Belly</title>
             </path>
-            <path style="stroke-linecap:round;stroke-linejoin:round;stroke:url(&quot;#fg_dark&quot;);transform-origin:61.814px 40.724px;stroke-width:2px;fill:url(&quot;#fg_lighter&quot;)" d="M 57.564 39.904 C 58.18 40.585 59.203 40.475 59.653 40.829 C 60.103 41.182 60.521 41.828 61.628 41.828 C 62.968 41.828 65.689 38.312 66.166 37.727 C 66.642 37.141 69.248 35.175 68.317 33.314 C 67.384 31.452 64.271 32.496 63.219 32.605 C 62.168 32.714 56.907 33.591 56.376 35.228 C 55.896 36.713 56.889 37.387 57.013 37.828 C 57.137 38.271 56.825 39.088 57.564 39.904 Z" transform="matrix(-0.99644, 0.0843, -0.0843, -0.99644, 0.000001, 0.000006)">
+            <path style="stroke-linecap:round;stroke-linejoin:round;transform-origin:61.814px 40.724px;stroke-width:2px;fill:url(&quot;#accent_sec&quot;);stroke:url(&quot;#bg_focus&quot;)" d="M 57.564 39.904 C 58.18 40.585 59.203 40.475 59.653 40.829 C 60.103 41.182 60.521 41.828 61.628 41.828 C 62.968 41.828 65.689 38.312 66.166 37.727 C 66.642 37.141 69.248 35.175 68.317 33.314 C 67.384 31.452 64.271 32.496 63.219 32.605 C 62.168 32.714 56.907 33.591 56.376 35.228 C 55.896 36.713 56.889 37.387 57.013 37.828 C 57.137 38.271 56.825 39.088 57.564 39.904 Z" transform="matrix(-0.99644, 0.0843, -0.0843, -0.99644, 0.000001, 0.000006)">
               <title>Foot</title>
             </path>
-            <path style="stroke-linecap:round;stroke-linejoin:round;stroke:url(&quot;#fg_dark&quot;);transform-box:fill-box;transform-origin:50% 50%;stroke-width:2px;fill:url(&quot;#fg_lighter&quot;)" d="M 40.397 40.925 C 41.013 40.243 42.035 40.354 42.485 40 C 42.936 39.646 43.354 39 44.46 39 C 45.801 39 48.522 42.515 48.998 43.102 C 49.475 43.687 52.08 45.654 51.148 47.514 C 50.216 49.377 47.104 48.332 46.051 48.223 C 44.999 48.115 39.738 47.238 39.208 45.6 C 38.728 44.116 39.721 43.441 39.844 43 C 39.97 42.558 39.658 41.739 40.397 40.925 Z" transform="matrix(0.95175, 0.306875, -0.306875, 0.95175, 0.000001, 0)">
+            <path style="stroke-linecap:round;stroke-linejoin:round;transform-box:fill-box;transform-origin:50% 50%;stroke-width:2px;fill:url(&quot;#accent_sec&quot;);stroke:url(&quot;#bg_focus&quot;)" d="M 40.397 40.925 C 41.013 40.243 42.035 40.354 42.485 40 C 42.936 39.646 43.354 39 44.46 39 C 45.801 39 48.522 42.515 48.998 43.102 C 49.475 43.687 52.08 45.654 51.148 47.514 C 50.216 49.377 47.104 48.332 46.051 48.223 C 44.999 48.115 39.738 47.238 39.208 45.6 C 38.728 44.116 39.721 43.441 39.844 43 C 39.97 42.558 39.658 41.739 40.397 40.925 Z" transform="matrix(0.95175, 0.306875, -0.306875, 0.95175, 0.000001, 0)">
               <title>Foot</title>
             </path>
-            <path style="stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;fill:url(&quot;#fg_dark&quot;)" d="M 39.587 35.081 L 44.723 37.6 C 47.506 38.555 46.038 41.897 43.484 41.137 C 39.699 40.008 39.018 37.687 39.587 35.081 Z">
+            <path style="stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;fill:url(&quot;#bg_focus&quot;)" d="M 39.587 35.081 L 44.723 37.6 C 47.506 38.555 46.038 41.897 43.484 41.137 C 39.699 40.008 39.018 37.687 39.587 35.081 Z">
               <title>Arm</title>
             </path>
           </g>
-          <use href="#paw_print-1" width="7" height="6.5" transform="matrix(1.3051469326019287, -0.5808680057525635, 0.5808699727058411, 1.3051509857177734, 171.34203776677631, 67.82729973930441)" style="transform-origin:3.5px 3.25px;fill:url(&quot;#bg_accent_dark&quot;)">
+          <use href="#paw_print-1" width="7" height="6.5" transform="matrix(-1.305147, -0.580868, -0.891781, 1.166777, 15.695211, 68.241423)" style="transform-origin:3.5px 3.25px;fill:url(&quot;#bg_accent_dark&quot;)">
             <title>Paw</title>
           </use>
-          <use href="#paw_print-1" width="7" height="6.5" transform="matrix(1.428406000137329, -0.021729009225964546, 0.02173100970685482, 1.4284119606018066, 185.95350294382715, 79.82066193865381)" style="transform-origin:3.5px 3.25px;fill:url(&quot;#bg_accent_dark&quot;)">
+          <use href="#paw_print-1" width="7" height="6.5" transform="matrix(-1.428406, -0.021729, -0.021731, 1.428412, 7.516838, 79.711028)" style="transform-origin:3.5px 3.25px;fill:url(&quot;#bg_accent_dark&quot;)">
             <title>Paw</title>
           </use>
-          <use href="#paw_print-1" width="7" height="6.5" transform="matrix(1.420606017112732, 0.1506519317626953, -0.15064893662929535, 1.420612096786499, 173.7612882091857, 96.42251404085516)" style="transform-origin:3.5px 3.25px;fill:url(&quot;#bg_accent_dark&quot;)">
+          <use href="#paw_print-1" width="7" height="6.5" transform="matrix(-1.420606, 0.150652, 0.150649, 1.420612, 10.700557, 95.712652)" style="transform-origin:3.5px 3.25px;fill:url(&quot;#bg_accent_dark&quot;)">
             <title>Paw</title>
           </use>
         </svg>
@@ -2092,25 +2136,77 @@
     <g id="keycap-unshaded-69">
       <rect class="surface" width="450" height="300" />
       <g transform="translate(0, 300) rotate(-90)">
-        <svg id="icon_umlaut" viewBox="0 0 100 150" width="300.0" height="450.0" style="overflow: visible;" transform="matrix(1, 0, 0, 1, 1.768546192413307, -11.20305138692285)" x="0" y="0">
+        <svg id="icon_umlaut" viewBox="0 0 100 150" width="300.0" height="450.0" style="overflow:visible" transform="matrix(0.9999999999999999, 0, 0, 1, 1.9604572475505542, -11.861032098774828)" x="0" y="0">
+          <use href="#paw_print-2" width="7" height="6.5" transform="matrix(-1.4119009971618652, -0.21761199831962585, -0.21761199831962585, 1.4119060039520264, 102.14889346003379, 19.583110463548135)" style="fill:url(&quot;#bg_accent_dark&quot;);transform-origin:3.5px 3.25px">
+            <title>Paw</title>
+          </use>
+          <use href="#paw_print-2" width="7" height="6.5" transform="matrix(-1.3810169696807861, -0.37080901861190796, -0.4302750527858734, 1.3622390031814575, 89.6647017859353, 38.44741371932923)" style="fill:url(&quot;#bg_accent_dark&quot;);transform-origin:3.5px 3.25px">
+            <title>Paw</title>
+          </use>
+          <use href="#paw_print-2" width="7" height="6.5" transform="matrix(-1.1291550397872925, -0.9947590231895447, -1.3272969722747803, 0.836197018623352, 69.43524047320406, 56.303824384264054)" style="fill:url(&quot;#bg_accent_dark&quot;);transform-origin:3.5px 3.25px">
+            <title>Paw</title>
+          </use>
+          <use href="#paw_print-2" width="7" height="6.5" transform="matrix(-1.0293519496917725, -1.0977129936218262, -1.5680749416351318, 0.5277490019798279, 47.23920357263794, 69.18519470125192)" style="fill:url(&quot;#bg_accent_dark&quot;);transform-origin:3.5px 3.25px">
+            <title>Paw</title>
+          </use>
+          <use href="#paw_print-2" width="7" height="6.5" transform="matrix(-0.8998729586601257, -1.2061389684677124, -1.617332935333252, 0.3487239480018616, 23.175605364715235, 75.16209278907749)" style="fill:url(&quot;#bg_accent_dark&quot;);transform-origin:3.5px 3.25px">
+            <title>Paw</title>
+          </use>
+          <use href="#paw_print-2" width="7" height="6.5" transform="matrix(-0.8998729586601257, -1.2061389684677124, -0.9761680960655212, 0.2104780375957489, -2.676273775529587, 81.39001321133796)" style="fill:url(&quot;#bg_accent_dark&quot;);transform-origin:3.5px 3.25px">
+            <title>Paw</title>
+          </use>
+          <ellipse style="stroke-linecap:round;stroke-linejoin:round;stroke-width:10px;fill:url(&quot;#bg_accent&quot;)" cx="44" cy="36.6" rx="2" ry="2">
+            <title>Dot</title>
+          </ellipse>
+          <ellipse style="stroke-linecap:round;stroke-linejoin:round;stroke-width:10px;fill:url(&quot;#bg_accent&quot;)" cx="56" cy="36.6" rx="2" ry="2">
+            <title>Dot</title>
+          </ellipse>
+          <ellipse style="fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:2.5px;stroke-dashoffset:-10px;stroke-dasharray:2, 4.3;stroke:url(&quot;#bg_accent&quot;)" cx="50" cy="51.5188" rx="9" ry="9">
+            <title>Ring</title>
+          </ellipse>
           <g transform="matrix(1, 0, 0, 1, 0, 4)">
-            <title>Shift</title>
-            <ellipse style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 10px; fill: url(&quot;#bg_accent&quot;);" cx="44" cy="32.6" rx="2" ry="2">
-              <title>Dot</title>
-            </ellipse>
-            <ellipse style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 10px; fill: url(&quot;#bg_accent&quot;);" cx="56" cy="32.6" rx="2" ry="2">
-              <title>Dot</title>
-            </ellipse>
-            <ellipse style="fill: none; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2.5px; stroke-dashoffset: -10px; stroke-dasharray: 2, 4.3; stroke: url(&quot;#bg_accent&quot;);" cx="50" cy="47.5188" rx="9" ry="9">
-              <title>Ring</title>
-            </ellipse>
-            <g>
-              <title>Text</title>
-              <text style="fill: url(&quot;#bg_accent&quot;); font-family: &quot;Open Gorton&quot;; font-size: 17px; font-weight: 700;" xml:space="preserve" transform="matrix(1, 0, 0, 1, -24.692159, 0)"><tspan x="50" y="80.984">um</tspan><tspan x="50" dy="1em">​</tspan><tspan>laut</tspan></text>
-              <line style="fill: none; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2.2px; stroke: url(&quot;#bg_accent&quot;);" x1="55.1954" y1="74.8" x2="58.2051" y2="74.8">
-                <title>Hyphen</title>
-              </line>
-            </g>
+            <title>Text</title>
+            <path style="fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:4.25px;stroke:url(&quot;#bg_focus&quot;)" d="M 27.6019 69.6112 L 27.6019 76.9566 C 27.6019 82.3366 35.7686 82.3198 35.7686 76.9566 L 35.7686 69.6373 M 40.382 80.381 L 40.382 69.634 L 45.504 79.355 L 50.6 69.6 L 50.575 80.373">
+              <title>Cover</title>
+            </path>
+            <text style="fill:url(&quot;#bg_accent&quot;);font-family:&quot;Open Gorton&quot;;font-size:17px;font-weight:700;white-space:pre;pointer-events:none" xml:space="preserve" transform="matrix(1, 0, 0, 1, -24.692159, 0)"><tspan x="50" y="80.984">um</tspan><tspan x="50" dy="1em">​</tspan><tspan>laut</tspan></text>
+            <line style="fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:2.2px;stroke:url(&quot;#bg_accent&quot;)" x1="55.1954" y1="74.8" x2="58.2051" y2="74.8">
+              <title>Hyphen</title>
+            </line>
+            <text style="fill:url(&quot;#bg_focus&quot;);font-family:&quot;Open Gorton&quot;;font-size:17px;font-weight:700;pointer-events:none;mask:url(&quot;#mask-0&quot;);visibility:hidden;white-space:pre" xml:space="preserve" transform="matrix(1, 0, 0, 1, -24.6922, 0)"><title>Inverted Text</title><tspan x="50" y="80.984">um</tspan><tspan x="50" dy="1em">​</tspan><tspan>laut</tspan></text>
+          </g>
+          <g transform="matrix(1, 0, 0, 1, 45.999999, 109.999998)">
+            <title>Key</title>
+            <path d="M 10 5 C 10 9.908 9.9051 10.003 5 9.998 C 0.095 9.995 0 9.908 0 5 C 0 0.09 0.09 0 5 0 C 9.91 0 10 0.09 10 5 Z" style="stroke-linecap:round;stroke-linejoin:round;vector-effect:non-scaling-stroke;stroke-width:2px;fill:url(&quot;#bg_accent&quot;);visibility:hidden">
+              <title>Key</title>
+            </path>
+            <path d="M 5 9.998 C 0.095 9.995 0 9.908 0 5 C 4.9093 5 5 5.09 5 9.998 Z" style="stroke-linecap:round;stroke-linejoin:round;vector-effect:non-scaling-stroke;stroke-width:2px;fill:url(&quot;#bg_accent_darker&quot;);visibility:hidden">
+              <title>Accent</title>
+            </path>
+            <rect style="stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px;stroke:url(&quot;#bg_accent&quot;);fill:url(&quot;#bg_accent&quot;);visibility:hidden" x="0" y="0" width="10" height="10" rx="4" ry="4" />
+            <path d="M 4 10.75 C 2.6326 10.75 1.4596 10.1771 0.6412 9.3588 C -0.1771 8.5404 -0.75 7.4342 -0.75 6 L -0.75 5 L 2.5 5 C 3.8807 5 5 6.1193 5 7.5 L 5 10.75 L 4 10.75 Z" style="fill:url(&quot;#bg_accent_darker&quot;);visibility:hidden">
+              <title>Accent</title>
+            </path>
+            <path style="stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;fill:url(&quot;#accent_sec&quot;);visibility:hidden" d="M 0 5 H 4 A 1 1 0 0 1 5 6 V 10 H 2.5 A 2.5 2.5 0 0 1 0 7.5 V 5 Z" bx:shape="rect 0 5 5 5 0 1 0 2.5 1@c6f4cc76">
+              <title>Accent</title>
+            </path>
+            <path d="M 5 10 L 4 10 C 1.7909 10 0 8.2091 0 6 L 0 4.9999 L 5 4.9999 Z" style="stroke-linecap:round;stroke-width:1.5px;stroke:url(&quot;#bg_accent_darker&quot;);fill:url(&quot;#bg_accent_darker&quot;);visibility:hidden" />
+            <path style="stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;fill:rgb(186, 218, 85);visibility:hidden" d="M -5 5 H 2.5 A 2.5 2.5 0 0 1 5 7.5 V 15 H -5 V 5 Z" bx:shape="rect -5 5 10 10 0 2.5 0 0 1@8922ad48" />
+            <path d="M 10 5 C 10 9.908 9.9051 10.003 5 9.998 C 0.095 9.995 0 9.908 0 5 C 0 0.09 0.09 0 5 0 C 9.91 0 10 0.09 10 5 Z" style="stroke-linecap:round;stroke-linejoin:round;vector-effect:non-scaling-stroke;stroke-width:2px;fill:url(&quot;#bg_accent&quot;)">
+              <title>Key</title>
+            </path>
+            <path d="M 0 5 C 0 4.9993 0 4.9987 0 4.998 L 2.5 4.998 L 2.5 5 C 4.955 5 5 5.045 5 7.5 L 5 9.998 C 0.095 9.995 0 9.908 0 5 Z" style="stroke-linecap:round;stroke-linejoin:round;vector-effect:non-scaling-stroke;stroke-width:2px;fill:url(&quot;#bg_accent_darker&quot;)" />
+          </g>
+          <g transform="matrix(1, 0, 0, 1, 45.999999, 109.999998)" style="visibility:hidden">
+            <title>Key</title>
+            <rect style="fill:none;stroke-linecap:round;stroke-linejoin:round;stroke:url(&quot;#bg_accent_dark&quot;);visibility:hidden" x="0" y="0" width="8" height="8" rx="1.5" ry="1.5" />
+            <path d="M 4.5 4.5 M 4.5 8 L 1.5 8 C 0.6716 8 0 7.3284 0 6.5 L 0 1.5 C 0 0.6716 0.6716 0 1.5 0 L 6.5 0 C 7.3284 0 8 0.6716 8 1.5 L 8 4.5" style="fill:none;stroke-linecap:round;stroke-linejoin:round;stroke:url(&quot;#bg_accent_dark&quot;)">
+              <title>Border</title>
+            </path>
+            <text style="fill:url(&quot;#bg_accent_dark&quot;);font-family:&quot;Open Gorton&quot;;font-size:5px;font-weight:700;text-anchor:middle;white-space:pre;visibility:hidden" x="4" y="5.760"><title>Reference</title>K</text>
+            <path d="M 2.7102 2.4125 L 2.7102 5.5869 M 5.1827 2.4189 L 2.7353 4.4858 M 3.7355 3.7565 L 5.2965 5.5869" style="fill:none;stroke-linecap:round;stroke-linejoin:round;stroke:url(&quot;#bg_accent_dark&quot;)">
+              <title>K</title>
+            </path>
           </g>
         </svg>
       </g>
@@ -2121,34 +2217,40 @@
     <g id="keycap-unshaded-70">
       <rect class="surface" width="450" height="300" />
       <g transform="translate(0, 300) rotate(-90)">
-        <svg id="icon_space" viewBox="0 0 100 150" width="300.0" height="450.0" style="overflow: visible;" x="0" y="0">
-          <path d="M 65 54.5 L 65 57.5 L 35 57.5 L 35 54.5" style="fill: none; stroke-width: 3px; stroke-linecap: round; stroke-linejoin: round; stroke: url(&quot;#bg_accent&quot;);">
+        <svg id="icon_space" viewBox="0 0 100 150" width="300.0" height="450.0" style="overflow:visible" x="0" y="0">
+          <path d="M 65 54.5 L 65 57.5 L 35 57.5 L 35 54.5" style="fill:none;stroke-width:3px;stroke-linecap:round;stroke-linejoin:round;stroke:url(&quot;#bg_accent&quot;)">
             <title>Icon</title>
           </path>
-          <text style="fill: url(&quot;#bg_accent&quot;); font-family: &quot;Open Gorton&quot;; font-size: 17px; font-weight: 700; text-anchor: middle; white-space: pre;" xml:space="preserve" x="50" y="84.984">space</text>
-          <text style="fill: url(&quot;#fg_main&quot;); font-family: &quot;Open Gorton&quot;; font-size: 23px; font-weight: 700; text-anchor: middle; visibility: hidden; white-space: pre;" xml:space="preserve" x="50" y="58.096"><title>Guide</title>test</text>
+          <text style="fill:url(&quot;#bg_accent&quot;);font-family:&quot;Open Gorton&quot;;font-size:17px;font-weight:700;text-anchor:middle;white-space:pre" xml:space="preserve" x="50" y="84.984">space</text>
+          <text style="fill:url(&quot;#fg_main&quot;);font-family:&quot;Open Gorton&quot;;font-size:23px;font-weight:700;text-anchor:middle;visibility:hidden;white-space:pre" xml:space="preserve" x="50" y="58.096"><title>Guide</title>test</text>
           <g style="">
             <title>Corner</title>
-            <path style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px; fill: url(&quot;#accent_sec&quot;); transform-box: fill-box; transform-origin: 50% 50%; visibility: hidden;" d="M 60.4098 108 L 60.4098 150 C 60.4098 150 80.4098 150 90.4098 150 C 96.4098 150 102.4098 144 102.4098 138 C 102.4098 128 102.4098 108 102.4098 108 L 60.4098 108 Z" transform="matrix(-1, 0, 0, -1, -2.40981, -0.000005)">
+            <path style="stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;fill:url(&quot;#accent_sec&quot;);transform-box:fill-box;transform-origin:50% 50%;visibility:hidden" d="M 60.4098 108 L 60.4098 150 C 60.4098 150 80.4098 150 90.4098 150 C 96.4098 150 102.4098 144 102.4098 138 C 102.4098 128 102.4098 108 102.4098 108 L 60.4098 108 Z" transform="matrix(-1, 0, 0, -1, -2.40981, -0.000005)">
               <title>BG</title>
             </path>
-            <path style="fill: none; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px; stroke: url(&quot;#accent_sec_dark&quot;); visibility: hidden;" d="M 60.4098 150 C 60.4098 150 80.4098 150 90.4098 150 C 96.4098 150 102.4098 144 102.4098 138 C 102.4098 128 102.4098 108 102.4098 108" transform="matrix(-1, 0, 0, -1, 160.409794297851, 257.999990999999)">
+            <path style="fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;stroke:url(&quot;#accent_sec_dark&quot;);visibility:hidden" d="M 60.4098 150 C 60.4098 150 80.4098 150 90.4098 150 C 96.4098 150 102.4098 144 102.4098 138 C 102.4098 128 102.4098 108 102.4098 108" transform="matrix(-1, 0, 0, -1, 160.409794297851, 257.999990999999)">
               <title>Outline</title>
             </path>
-            <line style="fill: none; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px; stroke: url(&quot;#accent_sec&quot;);" x1="60.9" y1="118.2" x2="60.9" y2="123.6" />
-            <path d="M 63.6 123.9 L 68.8 120.9 L 63.6 117.9 L 63.6 123.9 Z" style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 3.4px; fill: none; stroke: url(&quot;#bg_focus&quot;); transform-box: fill-box; transform-origin: 50% 50%;" transform="matrix(-1, 0, 0, -1, 0.000007, 0)">
+            <line style="fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;stroke:url(&quot;#accent_sec&quot;)" x1="60.9" y1="118.2" x2="60.9" y2="123.6" />
+            <path d="M 63.6 123.9 L 68.8 120.9 L 63.6 117.9 L 63.6 123.9 Z" style="stroke-linecap:round;stroke-linejoin:round;stroke-width:3.4px;fill:none;stroke:url(&quot;#bg_focus&quot;);transform-box:fill-box;transform-origin:50% 50%" transform="matrix(-1, 0, 0, -1, 0.000007, 0)">
               <title>Cover</title>
             </path>
-            <path d="M 63.6 123.9 L 68.8 120.9 L 63.6 117.9 L 63.6 123.9 Z" style="stroke-linecap: round; stroke-linejoin: round; stroke: url(&quot;#accent_sec&quot;); fill: url(&quot;#accent_sec&quot;); stroke-width: 1.4px; transform-box: fill-box; transform-origin: 50% 50%;" transform="matrix(-1, 0, 0, -1, 0.000007, 0)">
+            <path d="M 63.6 123.9 L 68.8 120.9 L 63.6 117.9 L 63.6 123.9 Z" style="stroke-linecap:round;stroke-linejoin:round;stroke:url(&quot;#accent_sec&quot;);fill:url(&quot;#accent_sec&quot;);stroke-width:1.4px;transform-box:fill-box;transform-origin:50% 50%" transform="matrix(-1, 0, 0, -1, 0.000007, 0)">
               <title>Play Triangle</title>
             </path>
-            <path d="M 69.6 123.9 L 74.8 120.9 L 69.6 117.9 L 69.6 123.9 Z" style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 3.4px; fill: none; stroke: url(&quot;#bg_focus&quot;); transform-box: fill-box; transform-origin: 50% 50%;" transform="matrix(-1, 0, 0, -1, 0.000005, 0)">
+            <path d="M 69.6 123.9 L 74.8 120.9 L 69.6 117.9 L 69.6 123.9 Z" style="stroke-linecap:round;stroke-linejoin:round;stroke-width:3.4px;fill:none;stroke:url(&quot;#bg_focus&quot;);transform-box:fill-box;transform-origin:50% 50%" transform="matrix(-1, 0, 0, -1, 0.000005, 0)">
               <title>Cover</title>
             </path>
-            <path d="M 69.6 123.9 L 74.8 120.9 L 69.6 117.9 L 69.6 123.9 Z" style="stroke-linecap: round; stroke-linejoin: round; stroke: url(&quot;#accent_sec&quot;); fill: url(&quot;#accent_sec&quot;); stroke-width: 1.4px; transform-box: fill-box; transform-origin: 50% 50%;" transform="matrix(-1, 0, 0, -1, 0.000005, 0)">
+            <path d="M 69.6 123.9 L 74.8 120.9 L 69.6 117.9 L 69.6 123.9 Z" style="stroke-linecap:round;stroke-linejoin:round;stroke:url(&quot;#accent_sec&quot;);fill:url(&quot;#accent_sec&quot;);stroke-width:1.4px;transform-box:fill-box;transform-origin:50% 50%" transform="matrix(-1, 0, 0, -1, 0.000005, 0)">
               <title>Play Triangle</title>
             </path>
           </g>
+          <use href="#paw_print-3" width="7" height="6.5" transform="matrix(-1.420606, 0.150652, 0.150649, 1.420612, 10.700557, -4.305727)" style="transform-origin:3.5px 3.25px;fill:url(&quot;#bg_accent_dark&quot;)">
+            <title>Paw</title>
+          </use>
+          <use href="#paw_print-3" width="7" height="6.5" transform="matrix(-1.411901, -0.217612, -0.217612, 1.411906, 2.148892, 19.58311)" style="fill:url(&quot;#bg_accent_dark&quot;);transform-origin:3.5px 3.25px">
+            <title>Paw</title>
+          </use>
         </svg>
       </g>
     </g>
@@ -2158,52 +2260,31 @@
     <g id="keycap-unshaded-71">
       <rect class="surface" width="450" height="300" />
       <g transform="translate(0, 300) rotate(-90)">
-        <svg id="icon_nav" viewBox="0 0 100 150" width="300.0" height="450.0" style="overflow:visible" x="0" y="0">
-          <path d="M 65 54.5 L 65 57.5 L 35 57.5 L 35 54.5" style="fill:none;stroke-width:3px;stroke-linecap:round;stroke-linejoin:round;stroke:url(&quot;#fg_main&quot;);visibility:hidden">
-            <title>Icon</title>
-          </path>
-          <use href="#symbol-0" width="24" height="30" transform="matrix(0.8249577879905701, 0.8249569535255432, -0.754247784614563, 0.7542469501495361, 37.99999551433864, 26.999995708565113)" style="transform-box:fill-box;transform-origin:50% 50%;fill:url(&quot;#bg_accent_lighter&quot;)">
+        <svg id="icon_nav" viewBox="0 0 100 150" width="300.0" height="450.0" style="overflow: visible;" x="0" y="0">
+          <use href="#symbol-0" width="24" height="30" transform="matrix(0.8249577283859253, 0.8249569535255432, -0.7542477250099182, 0.7542469501495361, 37.99999551433864, 26.999995708565113)" style="transform-box: fill-box; transform-origin: 50% 50%; fill: url(&quot;#bg_accent_lighter&quot;);">
             <title>Icon</title>
           </use>
-          <text style="fill:url(&quot;#bg_accent&quot;);font-family:&quot;Open Gorton&quot;;font-size:17px;font-weight:700;text-anchor:middle;white-space:pre" xml:space="preserve" x="50" y="84.984">Nav</text>
-          <text style="fill:url(&quot;#fg_main&quot;);font-family:&quot;Open Gorton&quot;;font-size:23px;font-weight:700;text-anchor:middle;visibility:hidden;white-space:pre" xml:space="preserve" x="50" y="58.096"><title>Guide</title>test</text>
-          <use href="#paw_print-2" width="7" height="6.5" transform="matrix(1.420606017112732, 0.1506519615650177, -0.15064896643161774, 1.420612096786499, 73.77921927833857, -3.599999841067545)" style="fill:url(&quot;#bg_accent_dark&quot;)">
-            <title>Paw</title>
-          </use>
-          <use href="#paw_print-2" width="7" height="6.5" transform="matrix(1.4284570217132568, 0.01809300296008587, -0.018091000616550446, 1.4284629821777344, 85.83689728809298, 18.34526411089301)" style="transform-box:fill-box;transform-origin:50% 50%;fill:url(&quot;#bg_accent_dark&quot;)">
-            <title>Paw</title>
-          </use>
-          <use href="#paw_print-2" width="7" height="6.5" transform="matrix(1.4174339771270752, 0.17804400622844696, -0.1780410259962082, 1.4174399375915527, 72.02990595473392, 33.671149612989666)" style="transform-origin:3.5px 3.25px;fill:url(&quot;#bg_accent_dark&quot;)">
-            <title>Paw</title>
-          </use>
-          <use href="#paw_print-2" width="7" height="6.5" transform="matrix(1.427150011062622, -0.06373701244592667, 0.06373900175094604, 1.4271550178527832, 81.15109109641597, 53.717806821282664)" style="transform-origin:3.5px 3.25px;fill:url(&quot;#bg_accent_dark&quot;)">
-            <title>Paw</title>
-          </use>
-          <use href="#paw_print-2" width="7" height="6.5" transform="matrix(1.3777530193328857, -0.37764599919319153, 0.37764599919319153, 1.3777580261230469, 75.63828906973181, 75.86936816721416)" style="transform-origin:3.5px 3.25px;fill:url(&quot;#bg_accent_dark&quot;)">
-            <title>Paw</title>
-          </use>
-          <use href="#paw_print-2" width="7" height="6.5" transform="matrix(0.8992998600006104, -1.10999596118927, 1.1099900007247925, 0.8993020057678223, 88.61472927029493, 82.42890784631456)" style="transform-origin:3.5px 3.25px;fill:url(&quot;#bg_accent_dark&quot;)">
-            <title>Paw</title>
-          </use>
+          <text style="fill: url(&quot;#bg_accent&quot;); font-family: &quot;Open Gorton&quot;; font-size: 17px; font-weight: 700; text-anchor: middle; white-space: pre;" xml:space="preserve" x="50" y="84.984">Nav</text>
+          <text style="fill: url(&quot;#fg_main&quot;); font-family: &quot;Open Gorton&quot;; font-size: 23px; font-weight: 700; text-anchor: middle; visibility: hidden; white-space: pre;" xml:space="preserve" x="50" y="58.096"><title>Guide</title>test</text>
           <g style="">
             <title>Corner</title>
-            <path style="stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;fill:url(&quot;#accent_sec&quot;);transform-box:fill-box;transform-origin:50% 50%;visibility:hidden" d="M 60.4098 108 L 60.4098 150 C 60.4098 150 80.4098 150 90.4098 150 C 96.4098 150 102.4098 144 102.4098 138 C 102.4098 128 102.4098 108 102.4098 108 L 60.4098 108 Z" transform="matrix(-1, 0, 0, -1, -2.40981, -0.000005)">
+            <path style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px; fill: url(&quot;#accent_sec&quot;); transform-box: fill-box; transform-origin: 50% 50%; visibility: hidden;" d="M 60.4098 108 L 60.4098 150 C 60.4098 150 80.4098 150 90.4098 150 C 96.4098 150 102.4098 144 102.4098 138 C 102.4098 128 102.4098 108 102.4098 108 L 60.4098 108 Z" transform="matrix(-1, 0, 0, -1, -2.40981, -0.000005)">
               <title>BG</title>
             </path>
-            <path style="fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;stroke:url(&quot;#accent_sec_dark&quot;);visibility:hidden" d="M 60.4098 150 C 60.4098 150 80.4098 150 90.4098 150 C 96.4098 150 102.4098 144 102.4098 138 C 102.4098 128 102.4098 108 102.4098 108" transform="matrix(-1, 0, 0, -1, 160.409794297851, 257.999990999999)">
+            <path style="fill: none; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px; stroke: url(&quot;#accent_sec_dark&quot;); visibility: hidden;" d="M 60.4098 150 C 60.4098 150 80.4098 150 90.4098 150 C 96.4098 150 102.4098 144 102.4098 138 C 102.4098 128 102.4098 108 102.4098 108" transform="matrix(-1, 0, 0, -1, 160.409794297851, 257.999990999999)">
               <title>Outline</title>
             </path>
-            <line style="fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;stroke:url(&quot;#accent_sec&quot;)" x1="74.8" y1="118.2" x2="74.8" y2="123.6" />
-            <path d="M 66.9 117.9 L 72.1 120.9 L 66.9 123.9 L 66.9 117.9 Z" style="stroke-linecap:round;stroke-linejoin:round;stroke-width:3.4px;fill:none;stroke:url(&quot;#bg_focus&quot;)">
+            <line style="fill: none; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px; stroke: url(&quot;#accent_sec&quot;);" x1="74.8" y1="118.2" x2="74.8" y2="123.6" />
+            <path d="M 66.9 117.9 L 72.1 120.9 L 66.9 123.9 L 66.9 117.9 Z" style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 3.4px; fill: none; stroke: url(&quot;#bg_focus&quot;);">
               <title>Cover</title>
             </path>
-            <path d="M 66.9 117.9 L 72.1 120.9 L 66.9 123.9 L 66.9 117.9 Z" style="stroke-linecap:round;stroke-linejoin:round;stroke:url(&quot;#accent_sec&quot;);fill:url(&quot;#accent_sec&quot;);stroke-width:1.4px">
+            <path d="M 66.9 117.9 L 72.1 120.9 L 66.9 123.9 L 66.9 117.9 Z" style="stroke-linecap: round; stroke-linejoin: round; stroke: url(&quot;#accent_sec&quot;); fill: url(&quot;#accent_sec&quot;); stroke-width: 1.4px;">
               <title>Play Triangle</title>
             </path>
-            <path d="M 60.9 117.9 L 66.1 120.9 L 60.9 123.9 L 60.9 117.9 Z" style="stroke-linecap:round;stroke-linejoin:round;stroke-width:3.4px;fill:none;stroke:url(&quot;#bg_focus&quot;)">
+            <path d="M 60.9 117.9 L 66.1 120.9 L 60.9 123.9 L 60.9 117.9 Z" style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 3.4px; fill: none; stroke: url(&quot;#bg_focus&quot;);">
               <title>Cover</title>
             </path>
-            <path d="M 60.9 117.9 L 66.1 120.9 L 60.9 123.9 L 60.9 117.9 Z" style="stroke-linecap:round;stroke-linejoin:round;stroke:url(&quot;#accent_sec&quot;);fill:url(&quot;#accent_sec&quot;);stroke-width:1.4px">
+            <path d="M 60.9 117.9 L 66.1 120.9 L 60.9 123.9 L 60.9 117.9 Z" style="stroke-linecap: round; stroke-linejoin: round; stroke: url(&quot;#accent_sec&quot;); fill: url(&quot;#accent_sec&quot;); stroke-width: 1.4px;">
               <title>Play Triangle</title>
             </path>
           </g>

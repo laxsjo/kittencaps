@@ -112,8 +112,13 @@
     <title>BG</title>
   </rect>
   <svg id="icon" viewBox="0 0 200 100" width="200" height="100" style="overflow:visible;" transform="matrix(1, 0, 0, 0.9999999999999999, 14.785905464222736, 9.023905317410456)">
-    <use href="#paw_print" width="7" height="6.5" transform="matrix(0.5253767967224121, -1.3284560441970825, 1.3284560441970825, 0.5253767967224121, 172.52984292003538, 49.25199415279358)" style="transform-box: fill-box; transform-origin: 50% 50%; fill: url(&quot;#bg_accent_dark&quot;);"/>
-    <g transform="matrix(1, 0, 0, 1, 57.983207, -2.939922)">
+    <use href="#paw_print" width="7" height="6.5" transform="matrix(-0.525377, -1.328456, -1.478144, 0.14688, 23.348686, 58.307456)" style="transform-origin: 3.5px 3.25px; fill: url(&quot;#bg_accent_dark&quot;);">
+      <title>Paw</title>
+    </use>
+    <use href="#paw_print" width="7" height="6.5" transform="matrix(-0.398616, -1.007931, -1.482974, 0.134666, 56.398417, 62.096537)" style="fill: url(&quot;#bg_accent_dark&quot;); transform-origin: 3.5px 3.25px;">
+      <title>Paw</title>
+    </use>
+    <g transform="matrix(-1, 0, 0, 1, 142.244687, 8.082873)" style="">
       <title>Cat</title>
       <path style="stroke-linecap: round; stroke-linejoin: round; fill: url(&quot;#bg_main&quot;); stroke-width: 2px;" d="M 72.976 31.177 C 74.479 31.995 74.656 32.304 77.259 32.823 C 82.721 33.912 84.419 33.763 88.753 33.666 C 92.398 33.584 94.536 32.578 99.061 33.235 C 104.865 34.078 105.939 38.393 105.939 38.393 L 106.414 45.357 L 95.873 54.617 C 93.681 54.996 90.69 55.265 88.631 55.32 C 82.679 55.479 80.763 55.616 75.863 54.769 C 65.443 53.922 70.933 53.691 65.26 53.783 C 62.67 53.335 60.201 52.553 58.722 51.792 C 58.661 51.8 55.517 41.971 55.517 41.971 C 52.748 40.836 54.019 30.687 55.478 29.115 C 56.23 28.671 72.635 29.443 72.976 31.177 Z">
         <title>Body BG</title>
@@ -161,10 +166,10 @@
           <title>Highlight</title>
         </ellipse>
       </g>
-      <use href="#eye" width="1.9588000774383545" height="3.100800037384033" transform="matrix(1.2109010219573975, 0.1094980239868164, -0.1323700249195099, 1.2088329792022705, 55.69711961042032, 32.017680514732895)" style="transform-box: fill-box; transform-origin: 50% 50%; fill: none;">
+      <use href="#eye" width="1.9588000774383545" height="3.100800037384033" transform="matrix(1.2109010219573975, 0.109498031437397, -0.1323700249195099, 1.2088329792022705, 55.69711968306255, 32.017680556491534)" style="transform-box: fill-box; transform-origin: 50% 50%; fill: none;">
         <title>Left Eye</title>
       </use>
-      <use href="#eye" width="1.9588000774383545" height="3.100800037384033" transform="matrix(1.3212870359420776, -0.02519100531935692, -0.04629100114107132, 1.2169450521469116, 61.91533543489837, 33.502524694342156)" style="transform-origin: 0.979px 1.55px; fill: none;">
+      <use href="#eye" width="1.9588000774383545" height="3.100800037384033" transform="matrix(1.3212870359420776, -0.025191007182002068, -0.04629100114107132, 1.2169450521469116, 61.915335515650625, 33.50252473803738)" style="transform-origin: 0.979px 1.55px; fill: none;">
         <title>Right Eye</title>
       </use>
       <g style="transform-origin: 56.522px 33.941px; visibility: hidden;" transform="matrix(0.999547, 0.030088, -0.030087, 0.999547, 0, 0)">
@@ -260,11 +265,11 @@
         <title>Tail Crease</title>
       </path>
     </g>
-    <text style="fill: url(&quot;#fg_main&quot;); font-family: &quot;Open Gorton&quot;; font-size: 12px; font-weight: 700; white-space: pre;" x="99.654" y="30.433"><title>Question Mark</title>?</text>
-    <text style="fill: url(&quot;#fg_main&quot;); font-family: &quot;Open Gorton&quot;; font-size: 21px; font-weight: 700; text-anchor: middle;" xml:space="preserve" x="58.877" y="72.519" dx="0 0 0.3">SUPER</text>
-    <g transform="matrix(1, 0, 0, 1, -5.094755, 8.990747)">
+    <text style="fill: url(&quot;#fg_main&quot;); font-family: &quot;Open Gorton&quot;; font-size: 12px; font-weight: 700; white-space: pre;" x="94.8278" y="33.8498"><title>Question Mark</title>?</text>
+    <text style="fill: url(&quot;#fg_main&quot;); font-family: &quot;Open Gorton&quot;; font-size: 17px; font-weight: 700; text-anchor: end;" xml:space="preserve" x="177" y="75" dx="0 0 0.3">SUPER</text>
+    <g transform="matrix(-1, 0, 0, 1, 213.833508, 13.051693)" style="">
       <title>Tux</title>
-      <path style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px; fill: url(&quot;#fg_dark&quot;);" d="M 52.068 15.337 C 54.546 15.378 57.465 16.711 57.713 20.888 C 57.895 23.942 58.421 25.19 58.887 26.706 C 59.352 28.222 62.79 32.318 62.8 39.914 C 62.8 39.914 65.389 42.926 62.246 45.995 C 62.246 45.995 55.364 49.261 52.068 49.105 C 48.435 48.934 41.041 45.75 41.041 45.75 L 41.83 40.417 C 37.967 38.18 39.512 35.094 40.386 32.66 C 41.438 29.733 43.741 27.35 43.972 26.585 C 44.511 24.79 44.797 23.362 45.079 20.993 C 45.466 17.724 48.169 15.272 52.068 15.337 Z">
+      <path style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px; fill: url(&quot;#bg_focus&quot;);" d="M 52.068 15.337 C 54.546 15.378 57.465 16.711 57.713 20.888 C 57.895 23.942 58.421 25.19 58.887 26.706 C 59.352 28.222 62.79 32.318 62.8 39.914 C 62.8 39.914 65.389 42.926 62.246 45.995 C 62.246 45.995 55.364 49.261 52.068 49.105 C 48.435 48.934 41.041 45.75 41.041 45.75 L 41.83 40.417 C 37.967 38.18 39.512 35.094 40.386 32.66 C 41.438 29.733 43.741 27.35 43.972 26.585 C 44.511 24.79 44.797 23.362 45.079 20.993 C 45.466 17.724 48.169 15.272 52.068 15.337 Z">
         <title>Body</title>
       </path>
       <g style="" transform="matrix(1.281542, 0, 0, 1.281542, -16.510378, -18.755349)">
@@ -272,7 +277,7 @@
         <ellipse style="fill: url(&quot;#bg_main&quot;);" cx="51.247" cy="31.747" rx="1.367" ry="1.576">
           <title>Eye</title>
         </ellipse>
-        <path d="M 52.646 31.778 C 52.646 32.617 52.319 33.259 51.75 33.259 C 51.179 33.259 50.792 32.662 50.792 31.824 C 50.792 30.986 51.247 30.539 51.701 30.529 C 52.271 30.517 52.646 30.939 52.646 31.778 Z" style="fill: url(&quot;#fg_dark&quot;);">
+        <path d="M 52.646 31.778 C 52.646 32.617 52.319 33.259 51.75 33.259 C 51.179 33.259 50.792 32.662 50.792 31.824 C 50.792 30.986 51.247 30.539 51.701 30.529 C 52.271 30.517 52.646 30.939 52.646 31.778 Z" style="fill: url(&quot;#bg_focus&quot;);">
           <title>Pupil</title>
         </path>
         <ellipse style="fill: url(&quot;#bg_main&quot;);" cx="51.835" cy="31.261" rx="0.241" ry="0.268">
@@ -284,7 +289,7 @@
         <ellipse style="fill: url(&quot;#bg_main&quot;);" cx="55.65" cy="31.709" rx="1.367" ry="1.583">
           <title>Eye</title>
         </ellipse>
-        <path d="M 57.079 31.765 C 57.079 32.591 56.732 33.222 56.126 33.222 C 55.519 33.222 55.107 32.635 55.107 31.811 C 55.107 30.987 55.59 30.547 56.074 30.538 C 56.68 30.525 57.079 30.941 57.079 31.765 Z" style="fill: url(&quot;#fg_dark&quot;);">
+        <path d="M 57.079 31.765 C 57.079 32.591 56.732 33.222 56.126 33.222 C 55.519 33.222 55.107 32.635 55.107 31.811 C 55.107 30.987 55.59 30.547 56.074 30.538 C 56.68 30.525 57.079 30.941 57.079 31.765 Z" style="fill: url(&quot;#bg_focus&quot;);">
           <title>Pupil</title>
         </path>
         <ellipse style="fill: url(&quot;#bg_main&quot;);" cx="56.259" cy="31.216" rx="0.241" ry="0.268">
@@ -293,7 +298,7 @@
       </g>
       <g style="" transform="matrix(1.281542, 0, 0, 1.281542, -16.510378, -18.755349)">
         <title>Beak</title>
-        <path style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px; fill: url(&quot;#fg_lighter&quot;);" d="M 53.386 32.622 C 54.494 32.62 55.558 33.167 56.641 33.663 C 57.149 33.896 57.649 33.993 57.646 34.244 C 57.631 35.517 54.911 36.055 53.386 36.06 C 51.861 36.064 49.351 35.561 49.351 34.244 C 49.351 34.058 50.022 33.819 50.379 33.654 C 51.255 33.247 52.307 32.625 53.386 32.622 Z">
+        <path style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px; fill: url(&quot;#accent_sec&quot;);" d="M 53.386 32.622 C 54.494 32.62 55.558 33.167 56.641 33.663 C 57.149 33.896 57.649 33.993 57.646 34.244 C 57.631 35.517 54.911 36.055 53.386 36.06 C 51.861 36.064 49.351 35.561 49.351 34.244 C 49.351 34.058 50.022 33.819 50.379 33.654 C 51.255 33.247 52.307 32.625 53.386 32.622 Z">
           <title>Beak</title>
         </path>
         <ellipse style="fill: url(&quot;#fg_dark&quot;);" cx="53.028" cy="33.464" rx="0.35" ry="0.5">
@@ -306,23 +311,23 @@
       <path style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px; fill: url(&quot;#bg_main&quot;);" d="M 47 45.856 C 50.179 46.758 52.068 47.069 54.076 46.498 C 53.362 45.309 53.58 41.67 59.279 38.338 C 59.45 32.925 57.098 31.711 56.457 28.064 C 54.769 28.722 53.777 28.942 52.068 28.942 C 50.375 28.942 49.242 28.722 47.54 28.13 C 47.243 32.107 43.954 33.079 44.021 40.769 L 47 45.856 Z">
         <title>Belly</title>
       </path>
-      <path style="stroke-linecap: round; stroke-linejoin: round; stroke: url(&quot;#fg_dark&quot;); transform-origin: 61.814px 40.724px; stroke-width: 2px; fill: url(&quot;#fg_lighter&quot;);" d="M 57.564 39.904 C 58.18 40.585 59.203 40.475 59.653 40.829 C 60.103 41.182 60.521 41.828 61.628 41.828 C 62.968 41.828 65.689 38.312 66.166 37.727 C 66.642 37.141 69.248 35.175 68.317 33.314 C 67.384 31.452 64.271 32.496 63.219 32.605 C 62.168 32.714 56.907 33.591 56.376 35.228 C 55.896 36.713 56.889 37.387 57.013 37.828 C 57.137 38.271 56.825 39.088 57.564 39.904 Z" transform="matrix(-0.99644, 0.0843, -0.0843, -0.99644, 0.000001, 0.000006)">
+      <path style="stroke-linecap: round; stroke-linejoin: round; transform-origin: 61.814px 40.724px; stroke-width: 2px; fill: url(&quot;#accent_sec&quot;); stroke: url(&quot;#bg_focus&quot;);" d="M 57.564 39.904 C 58.18 40.585 59.203 40.475 59.653 40.829 C 60.103 41.182 60.521 41.828 61.628 41.828 C 62.968 41.828 65.689 38.312 66.166 37.727 C 66.642 37.141 69.248 35.175 68.317 33.314 C 67.384 31.452 64.271 32.496 63.219 32.605 C 62.168 32.714 56.907 33.591 56.376 35.228 C 55.896 36.713 56.889 37.387 57.013 37.828 C 57.137 38.271 56.825 39.088 57.564 39.904 Z" transform="matrix(-0.99644, 0.0843, -0.0843, -0.99644, 0.000001, 0.000006)">
         <title>Foot</title>
       </path>
-      <path style="stroke-linecap: round; stroke-linejoin: round; stroke: url(&quot;#fg_dark&quot;); transform-box: fill-box; transform-origin: 50% 50%; stroke-width: 2px; fill: url(&quot;#fg_lighter&quot;);" d="M 40.397 40.925 C 41.013 40.243 42.035 40.354 42.485 40 C 42.936 39.646 43.354 39 44.46 39 C 45.801 39 48.522 42.515 48.998 43.102 C 49.475 43.687 52.08 45.654 51.148 47.514 C 50.216 49.377 47.104 48.332 46.051 48.223 C 44.999 48.115 39.738 47.238 39.208 45.6 C 38.728 44.116 39.721 43.441 39.844 43 C 39.97 42.558 39.658 41.739 40.397 40.925 Z" transform="matrix(0.95175, 0.306875, -0.306875, 0.95175, 0.000001, 0)">
+      <path style="stroke-linecap: round; stroke-linejoin: round; transform-box: fill-box; transform-origin: 50% 50%; stroke-width: 2px; fill: url(&quot;#accent_sec&quot;); stroke: url(&quot;#bg_focus&quot;);" d="M 40.397 40.925 C 41.013 40.243 42.035 40.354 42.485 40 C 42.936 39.646 43.354 39 44.46 39 C 45.801 39 48.522 42.515 48.998 43.102 C 49.475 43.687 52.08 45.654 51.148 47.514 C 50.216 49.377 47.104 48.332 46.051 48.223 C 44.999 48.115 39.738 47.238 39.208 45.6 C 38.728 44.116 39.721 43.441 39.844 43 C 39.97 42.558 39.658 41.739 40.397 40.925 Z" transform="matrix(0.95175, 0.306875, -0.306875, 0.95175, 0.000001, 0)">
         <title>Foot</title>
       </path>
-      <path style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px; fill: url(&quot;#fg_dark&quot;);" d="M 39.587 35.081 L 44.723 37.6 C 47.506 38.555 46.038 41.897 43.484 41.137 C 39.699 40.008 39.018 37.687 39.587 35.081 Z">
+      <path style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px; fill: url(&quot;#bg_focus&quot;);" d="M 39.587 35.081 L 44.723 37.6 C 47.506 38.555 46.038 41.897 43.484 41.137 C 39.699 40.008 39.018 37.687 39.587 35.081 Z">
         <title>Arm</title>
       </path>
     </g>
-    <use href="#paw_print" width="7" height="6.5" transform="matrix(1.3051469326019287, -0.5808680057525635, 0.5808699727058411, 1.3051509857177734, 171.34203776677631, 67.82729973930441)" style="transform-origin: 3.5px 3.25px; fill: url(&quot;#bg_accent_dark&quot;);">
+    <use href="#paw_print" width="7" height="6.5" transform="matrix(-1.305147, -0.580868, -0.891781, 1.166777, 15.695211, 68.241423)" style="transform-origin: 3.5px 3.25px; fill: url(&quot;#bg_accent_dark&quot;);">
       <title>Paw</title>
     </use>
-    <use href="#paw_print" width="7" height="6.5" transform="matrix(1.428406000137329, -0.021729009225964546, 0.02173100970685482, 1.4284119606018066, 185.95350294382715, 79.82066193865381)" style="transform-origin: 3.5px 3.25px; fill: url(&quot;#bg_accent_dark&quot;);">
+    <use href="#paw_print" width="7" height="6.5" transform="matrix(-1.428406, -0.021729, -0.021731, 1.428412, 7.516838, 79.711028)" style="transform-origin: 3.5px 3.25px; fill: url(&quot;#bg_accent_dark&quot;);">
       <title>Paw</title>
     </use>
-    <use href="#paw_print" width="7" height="6.5" transform="matrix(1.420606017112732, 0.1506519317626953, -0.15064893662929535, 1.420612096786499, 173.7612882091857, 96.42251404085516)" style="transform-origin: 3.5px 3.25px; fill: url(&quot;#bg_accent_dark&quot;);">
+    <use href="#paw_print" width="7" height="6.5" transform="matrix(-1.420606, 0.150652, 0.150649, 1.420612, 10.700557, 95.712652)" style="transform-origin: 3.5px 3.25px; fill: url(&quot;#bg_accent_dark&quot;);">
       <title>Paw</title>
     </use>
   </svg>
