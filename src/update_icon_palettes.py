@@ -146,7 +146,8 @@ def main() -> None:
             "one of the icons under under 'assets/icons'. The names may be "
             "glob patterns, and will in that case be evaluated on the set of "
             "names, without said brackets and extensions. If not given "
-            "defaults to all icons."
+            "defaults to all icons. Individual items with spaces will be split "
+            "up into multiple."
         ),
     )
     parser.add_argument(
@@ -161,6 +162,12 @@ def main() -> None:
     
     file_patterns: list[str] = args.files
     theme = Theme.load_file(args.theme)
+    
+    file_patterns = [
+        pattern
+        for item in file_patterns
+        for pattern in item.split(" ")
+    ]
     
     all_names = [
         cast(str, match.group(1)) # For some fucking reason the return value of Match.group is set to str | Any, instead of the correct str | None.

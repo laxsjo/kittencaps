@@ -643,8 +643,12 @@
     <g id="keycap-unshaded-7">
       <rect class="surface" width="300" height="300" />
       <g transform="">
-        <svg id="icon_A" viewBox="0 0 100 100" width="300.0" height="300.0" style="overflow:visible;" x="0" y="0">
-          <text style="font-weight:400;font-size:40px;font-family:Open Gorton;fill:url(#fg_main);white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="64.08" text-anchor="middle" xml:space="preserve"><tspan>A</tspan></text>
+        <svg id="icon_a_with_#" viewBox="0 0 100 100" width="300.0" height="300.0" style="overflow:visible;" x="0" y="0">
+          <text style="font-weight: 400; font-size: 40px; font-family: &quot;Open Gorton&quot;; fill: url(&quot;#fg_main&quot;); white-space: pre;" x="50" y="64.08" text-anchor="middle" xml:space="preserve"><tspan>A</tspan></text>
+          <g>
+            <title>Corner</title>
+            <text style="fill: url(&quot;#dim&quot;); font-family: &quot;Open Gorton&quot;; font-size: 20px; font-weight: 700; stroke: url(&quot;#dim&quot;); stroke-width: 0.7px; text-anchor: middle; white-space: pre;" x="72.136" y="38.2073"><title>Symbol</title>#</text>
+          </g>
         </svg>
       </g>
     </g>
@@ -654,8 +658,12 @@
     <g id="keycap-unshaded-8">
       <rect class="surface" width="300" height="300" />
       <g transform="">
-        <svg id="icon_Z" viewBox="0 0 100 100" width="300.0" height="300.0" style="overflow:visible;" x="0" y="0">
-          <text style="font-weight:400;font-size:40px;font-family:Open Gorton;fill:url(#fg_main);white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="64.08" text-anchor="middle" xml:space="preserve"><tspan>Z</tspan></text>
+        <svg id="icon_z_with__" viewBox="0 0 100 100" width="300.0" height="300.0" style="overflow:visible;" x="0" y="0">
+          <text style="font-weight: 400; font-size: 40px; font-family: &quot;Open Gorton&quot;; fill: url(&quot;#fg_main&quot;); white-space: pre;" x="50" y="64.08" text-anchor="middle" xml:space="preserve"><tspan>Z</tspan></text>
+          <g>
+            <title>Corner</title>
+            <text style="fill: url(&quot;#dim&quot;); font-family: &quot;Open Gorton&quot;; font-size: 20px; font-weight: 700; stroke: url(&quot;#dim&quot;); stroke-width: 1px; text-anchor: middle; white-space: pre;" x="72.136" y="38.2073"><title>Symbol</title>_</text>
+          </g>
         </svg>
       </g>
     </g>
@@ -771,8 +779,12 @@
     <g id="keycap-unshaded-11">
       <rect class="surface" width="300" height="300" />
       <g transform="">
-        <svg id="icon_D" viewBox="0 0 100 100" width="300.0" height="300.0" style="overflow:visible;" x="0" y="0">
-          <text style="font-weight:400;font-size:40px;font-family:Open Gorton;fill:url(#fg_main);white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="64.08" text-anchor="middle" xml:space="preserve"><tspan>D</tspan></text>
+        <svg id="icon_d_with_@" viewBox="0 0 100 100" width="300.0" height="300.0" style="overflow:visible;" x="0" y="0">
+          <text style="font-weight: 400; font-size: 40px; font-family: &quot;Open Gorton&quot;; fill: url(&quot;#fg_main&quot;); white-space: pre;" x="50" y="64.08" text-anchor="middle" xml:space="preserve"><tspan>D</tspan></text>
+          <g>
+            <title>Corner</title>
+            <text style="fill: url(&quot;#dim&quot;); font-family: &quot;Open Gorton&quot;; font-size: 20px; font-weight: 700; stroke: url(&quot;#dim&quot;); stroke-width: 0.7px; text-anchor: middle; white-space: pre;" x="72.136" y="38.2073"><title>Symbol</title>@</text>
+          </g>
         </svg>
       </g>
     </g>
@@ -782,8 +794,12 @@
     <g id="keycap-unshaded-12">
       <rect class="surface" width="300" height="300" />
       <g transform="">
-        <svg id="icon_S" viewBox="0 0 100 100" width="300.0" height="300.0" style="overflow:visible;" x="0" y="0">
-          <text style="font-weight:400;font-size:40px;font-family:Open Gorton;fill:url(#fg_main);white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="64.08" text-anchor="middle" xml:space="preserve"><tspan>S</tspan></text>
+        <svg id="icon_s_with_$" viewBox="0 0 100 100" width="300.0" height="300.0" style="overflow:visible;" x="0" y="0">
+          <text style="font-weight: 400; font-size: 40px; font-family: &quot;Open Gorton&quot;; fill: url(&quot;#fg_main&quot;); white-space: pre;" x="50" y="64.08" text-anchor="middle" xml:space="preserve"><tspan>S</tspan></text>
+          <g>
+            <title>Corner</title>
+            <text style="fill: url(&quot;#dim&quot;); font-family: &quot;Open Gorton&quot;; font-size: 20px; font-weight: 700; stroke: url(&quot;#dim&quot;); stroke-width: 0.0px; text-anchor: middle; white-space: pre;" x="72.136" y="38.2073"><title>Symbol</title>$</text>
+          </g>
         </svg>
       </g>
     </g>
@@ -793,8 +809,12 @@
     <g id="keycap-unshaded-13">
       <rect class="surface" width="300" height="300" />
       <g transform="">
-        <svg id="icon_X" viewBox="0 0 100 100" width="300.0" height="300.0" style="overflow:visible;" x="0" y="0">
-          <text style="font-weight:400;font-size:40px;font-family:Open Gorton;fill:url(#fg_main);white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="64.08" text-anchor="middle" xml:space="preserve"><tspan>X</tspan></text>
+        <svg id="icon_x_with_%" viewBox="0 0 100 100" width="300.0" height="300.0" style="overflow:visible;" x="0" y="0">
+          <text style="font-weight: 400; font-size: 40px; font-family: &quot;Open Gorton&quot;; fill: url(&quot;#fg_main&quot;); white-space: pre;" x="50" y="64.08" text-anchor="middle" xml:space="preserve"><tspan>X</tspan></text>
+          <g>
+            <title>Corner</title>
+            <text style="fill: url(&quot;#dim&quot;); font-family: &quot;Open Gorton&quot;; font-size: 20px; font-weight: 700; stroke: url(&quot;#dim&quot;); stroke-width: 0.7px; text-anchor: middle; white-space: pre;" x="72.136" y="38.2073"><title>Symbol</title>%</text>
+          </g>
         </svg>
       </g>
     </g>
@@ -845,8 +865,12 @@
     <g id="keycap-unshaded-16">
       <rect class="surface" width="300" height="300" />
       <g transform="">
-        <svg id="icon_R" viewBox="0 0 100 100" width="300.0" height="300.0" style="overflow:visible;" x="0" y="0">
-          <text style="font-weight:400;font-size:40px;font-family:Open Gorton;fill:url(#fg_main);white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="64.08" text-anchor="middle" xml:space="preserve"><tspan>R</tspan></text>
+        <svg id="icon_r_with_{" viewBox="0 0 100 100" width="300.0" height="300.0" style="overflow:visible;" x="0" y="0">
+          <text style="font-weight: 400; font-size: 40px; font-family: &quot;Open Gorton&quot;; fill: url(&quot;#fg_main&quot;); white-space: pre;" x="50" y="64.08" text-anchor="middle" xml:space="preserve"><tspan>R</tspan></text>
+          <g>
+            <title>Corner</title>
+            <text style="fill: url(&quot;#dim&quot;); font-family: &quot;Open Gorton&quot;; font-size: 20px; font-weight: 700; stroke: url(&quot;#dim&quot;); stroke-width: 0.5px; text-anchor: middle; white-space: pre;" x="72.136" y="38.2073"><title>Symbol</title>{</text>
+          </g>
         </svg>
       </g>
     </g>
@@ -856,8 +880,12 @@
     <g id="keycap-unshaded-17">
       <rect class="surface" width="300" height="300" />
       <g transform="">
-        <svg id="icon_H" viewBox="0 0 100 100" width="300.0" height="300.0" style="overflow:visible;" x="0" y="0">
-          <text style="font-weight:400;font-size:40px;font-family:Open Gorton;fill:url(#fg_main);white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="64.08" text-anchor="middle" xml:space="preserve"><tspan>H</tspan></text>
+        <svg id="icon_h_with_(" viewBox="0 0 100 100" width="300.0" height="300.0" style="overflow:visible;" x="0" y="0">
+          <text style="font-weight: 400; font-size: 40px; font-family: &quot;Open Gorton&quot;; fill: url(&quot;#fg_main&quot;); white-space: pre;" x="50" y="64.08" text-anchor="middle" xml:space="preserve"><tspan>H</tspan></text>
+          <g>
+            <title>Corner</title>
+            <text style="fill: url(&quot;#dim&quot;); font-family: &quot;Open Gorton&quot;; font-size: 20px; font-weight: 700; stroke: url(&quot;#dim&quot;); stroke-width: 0.0px; text-anchor: middle; white-space: pre;" x="72.136" y="38.2073"><title>Symbol</title>(</text>
+          </g>
         </svg>
       </g>
     </g>
@@ -867,8 +895,12 @@
     <g id="keycap-unshaded-18">
       <rect class="surface" width="300" height="300" />
       <g transform="">
-        <svg id="icon_M" viewBox="0 0 100 100" width="300.0" height="300.0" style="overflow:visible;" x="0" y="0">
-          <text style="font-weight:400;font-size:40px;font-family:Open Gorton;fill:url(#fg_main);white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="64.08" text-anchor="middle" xml:space="preserve"><tspan>M</tspan></text>
+        <svg id="icon_m_with_[" viewBox="0 0 100 100" width="300.0" height="300.0" style="overflow:visible;" x="0" y="0">
+          <text style="font-weight: 400; font-size: 40px; font-family: &quot;Open Gorton&quot;; fill: url(&quot;#fg_main&quot;); white-space: pre;" x="50" y="64.08" text-anchor="middle" xml:space="preserve"><tspan>M</tspan></text>
+          <g>
+            <title>Corner</title>
+            <text style="fill: url(&quot;#dim&quot;); font-family: &quot;Open Gorton&quot;; font-size: 20px; font-weight: 700; stroke: url(&quot;#dim&quot;); stroke-width: 0.0px; text-anchor: middle; white-space: pre;" x="72.136" y="38.2073"><title>Symbol</title>[</text>
+          </g>
         </svg>
       </g>
     </g>
@@ -953,7 +985,7 @@
     <g id="keycap-unshaded-21">
       <rect class="surface" width="300" height="300" />
       <g transform="">
-        <svg id="icon_w" viewBox="0 0 100 100" width="300.0" height="300.0" style="overflow:visible;" x="0" y="0">
+        <svg id="icon_&gt;w&lt;_with_}" viewBox="0 0 100 100" width="300.0" height="300.0" style="overflow:visible;" x="0" y="0">
           <rect class="icon-bounding-box" width="100" height="100" fill="none" />
           <text style="fill: url(&quot;#fg_main&quot;); font-family: &quot;Open Gorton&quot;; font-size: 40px; text-anchor: middle; white-space: pre;" xml:space="preserve" x="50" y="64.08">w</text>
           <path style="fill: none; stroke-linecap: round; stroke-linejoin: round; stroke: url(&quot;#fg_main&quot;); stroke-width: 2.5px;" d="M 21.476 43.294 L 29.863 48.111 L 21.642 52.429">
@@ -968,6 +1000,10 @@
           <ellipse style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px; fill: url(&quot;#fg_color&quot;);" cx="-74.577" cy="57.1437" rx="6.2055" ry="2.1122" transform="matrix(-1, 0, 0, 1, 0, 0)">
             <title>Blush</title>
           </ellipse>
+          <g>
+            <title>Corner</title>
+            <text style="fill: url(&quot;#dim&quot;); font-family: &quot;Open Gorton&quot;; font-size: 20px; font-weight: 700; stroke: url(&quot;#dim&quot;); stroke-width: 0.5px; text-anchor: middle; white-space: pre;" x="72.136" y="38.2073"><title>Symbol</title>}</text>
+          </g>
         </svg>
       </g>
     </g>
@@ -977,8 +1013,12 @@
     <g id="keycap-unshaded-22">
       <rect class="surface" width="300" height="300" />
       <g transform="">
-        <svg id="icon_T" viewBox="0 0 100 100" width="300.0" height="300.0" style="overflow:visible;" x="0" y="0">
-          <text style="font-weight:400;font-size:40px;font-family:Open Gorton;fill:url(#fg_main);white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="64.08" text-anchor="middle" xml:space="preserve"><tspan>T</tspan></text>
+        <svg id="icon_t_with_)" viewBox="0 0 100 100" width="300.0" height="300.0" style="overflow:visible;" x="0" y="0">
+          <text style="font-weight: 400; font-size: 40px; font-family: &quot;Open Gorton&quot;; fill: url(&quot;#fg_main&quot;); white-space: pre;" x="50" y="64.08" text-anchor="middle" xml:space="preserve"><tspan>T</tspan></text>
+          <g>
+            <title>Corner</title>
+            <text style="fill: url(&quot;#dim&quot;); font-family: &quot;Open Gorton&quot;; font-size: 20px; font-weight: 700; stroke: url(&quot;#dim&quot;); stroke-width: 0.0px; text-anchor: middle; white-space: pre;" x="72.136" y="38.2073"><title>Symbol</title>)</text>
+          </g>
         </svg>
       </g>
     </g>
@@ -988,8 +1028,12 @@
     <g id="keycap-unshaded-23">
       <rect class="surface" width="300" height="300" />
       <g transform="">
-        <svg id="icon_C" viewBox="0 0 100 100" width="300.0" height="300.0" style="overflow:visible;" x="0" y="0">
-          <text style="font-weight:400;font-size:40px;font-family:Open Gorton;fill:url(#fg_main);white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="64.08" text-anchor="middle" xml:space="preserve"><tspan>C</tspan></text>
+        <svg id="icon_c_with_]" viewBox="0 0 100 100" width="300.0" height="300.0" style="overflow:visible;" x="0" y="0">
+          <text style="font-weight: 400; font-size: 40px; font-family: &quot;Open Gorton&quot;; fill: url(&quot;#fg_main&quot;); white-space: pre;" x="50" y="64.08" text-anchor="middle" xml:space="preserve"><tspan>C</tspan></text>
+          <g>
+            <title>Corner</title>
+            <text style="fill: url(&quot;#dim&quot;); font-family: &quot;Open Gorton&quot;; font-size: 20px; font-weight: 700; stroke: url(&quot;#dim&quot;); stroke-width: 0.0px; text-anchor: middle; white-space: pre;" x="72.136" y="38.2073"><title>Symbol</title>]</text>
+          </g>
         </svg>
       </g>
     </g>
@@ -1034,8 +1078,12 @@
     <g id="keycap-unshaded-26">
       <rect class="surface" width="300" height="300" />
       <g transform="">
-        <svg id="icon_B" viewBox="0 0 100 100" width="300.0" height="300.0" style="overflow:visible;" x="0" y="0">
-          <text style="font-weight:400;font-size:40px;font-family:Open Gorton;fill:url(#fg_main);white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="64.08" text-anchor="middle" xml:space="preserve"><tspan>B</tspan></text>
+        <svg id="icon_b_with_\" viewBox="0 0 100 100" width="300.0" height="300.0" style="overflow:visible;" x="0" y="0">
+          <text style="font-weight: 400; font-size: 40px; font-family: &quot;Open Gorton&quot;; fill: url(&quot;#fg_main&quot;); white-space: pre;" x="50" y="64.08" text-anchor="middle" xml:space="preserve"><tspan>B</tspan></text>
+          <g>
+            <title>Corner</title>
+            <text style="fill: url(&quot;#dim&quot;); font-family: &quot;Open Gorton&quot;; font-size: 20px; font-weight: 700; stroke: url(&quot;#dim&quot;); stroke-width: 0.7px; text-anchor: middle; white-space: pre;" x="72.136" y="38.2073"><title>Symbol</title>\</text>
+          </g>
         </svg>
       </g>
     </g>
@@ -1045,8 +1093,12 @@
     <g id="keycap-unshaded-27">
       <rect class="surface" width="300" height="300" />
       <g transform="">
-        <svg id="icon_G" viewBox="0 0 100 100" width="300.0" height="300.0" style="overflow:visible;" x="0" y="0">
-          <text style="font-weight:400;font-size:40px;font-family:Open Gorton;fill:url(#fg_main);white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="64.08" text-anchor="middle" xml:space="preserve"><tspan>G</tspan></text>
+        <svg id="icon_g_with_&amp;" viewBox="0 0 100 100" width="300.0" height="300.0" style="overflow:visible;" x="0" y="0">
+          <text style="font-weight: 400; font-size: 40px; font-family: &quot;Open Gorton&quot;; fill: url(&quot;#fg_main&quot;); white-space: pre;" x="50" y="64.08" text-anchor="middle" xml:space="preserve"><tspan>G</tspan></text>
+          <g>
+            <title>Corner</title>
+            <text style="fill: url(&quot;#dim&quot;); font-family: &quot;Open Gorton&quot;; font-size: 20px; font-weight: 700; stroke: url(&quot;#dim&quot;); stroke-width: 0.7px; text-anchor: middle; white-space: pre;" x="72.136" y="38.2073"><title>Symbol</title>&amp;</text>
+          </g>
         </svg>
       </g>
     </g>
@@ -1056,8 +1108,12 @@
     <g id="keycap-unshaded-28">
       <rect class="surface" width="300" height="300" />
       <g transform="">
-        <svg id="icon_V" viewBox="0 0 100 100" width="300.0" height="300.0" style="overflow:visible;" x="0" y="0">
-          <text style="font-weight:400;font-size:40px;font-family:Open Gorton;fill:url(#fg_main);white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="64.08" text-anchor="middle" xml:space="preserve"><tspan>V</tspan></text>
+        <svg id="icon_v_with_|" viewBox="0 0 100 100" width="300.0" height="300.0" style="overflow:visible;" x="0" y="0">
+          <text style="font-weight: 400; font-size: 40px; font-family: &quot;Open Gorton&quot;; fill: url(&quot;#fg_main&quot;); white-space: pre;" x="50" y="64.08" text-anchor="middle" xml:space="preserve"><tspan>V</tspan></text>
+          <g>
+            <title>Corner</title>
+            <text style="fill: url(&quot;#dim&quot;); font-family: &quot;Open Gorton&quot;; font-size: 20px; font-weight: 700; text-anchor: middle; white-space: pre;" x="72.136" y="38.2073"><title>Symbol</title>|</text>
+          </g>
         </svg>
       </g>
     </g>
@@ -1209,8 +1265,12 @@
     <g id="keycap-unshaded-36">
       <rect class="surface" width="300" height="300" />
       <g transform="">
-        <svg id="icon_J" viewBox="0 0 100 100" width="300.0" height="300.0" style="overflow:visible;" x="0" y="0">
-          <text style="font-weight:400;font-size:40px;font-family:Open Gorton;fill:url(#fg_main);white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="64.08" text-anchor="middle" xml:space="preserve"><tspan>J</tspan></text>
+        <svg id="icon_j_with_?" viewBox="0 0 100 100" width="300.0" height="300.0" style="overflow:visible;" x="0" y="0">
+          <text style="font-weight: 400; font-size: 40px; font-family: &quot;Open Gorton&quot;; fill: url(&quot;#fg_main&quot;); white-space: pre;" x="50" y="64.08" text-anchor="middle" xml:space="preserve"><tspan>J</tspan></text>
+          <g>
+            <title>Corner</title>
+            <text style="fill: url(&quot;#dim&quot;); font-family: &quot;Open Gorton&quot;; font-size: 20px; font-weight: 700; text-anchor: middle; white-space: pre;" x="72.136" y="38.2073"><title>Symbol</title>?</text>
+          </g>
         </svg>
       </g>
     </g>
@@ -1220,8 +1280,12 @@
     <g id="keycap-unshaded-37">
       <rect class="surface" width="300" height="300" />
       <g transform="">
-        <svg id="icon_Y" viewBox="0 0 100 100" width="300.0" height="300.0" style="overflow:visible;" x="0" y="0">
-          <text style="font-weight:400;font-size:40px;font-family:Open Gorton;fill:url(#fg_main);white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="64.08" text-anchor="middle" xml:space="preserve"><tspan>Y</tspan></text>
+        <svg id="icon_y_with_!" viewBox="0 0 100 100" width="300.0" height="300.0" style="overflow:visible;" x="0" y="0">
+          <text style="font-weight: 400; font-size: 40px; font-family: &quot;Open Gorton&quot;; fill: url(&quot;#fg_main&quot;); white-space: pre;" x="50" y="64.08" text-anchor="middle" xml:space="preserve"><tspan>Y</tspan></text>
+          <g>
+            <title>Corner</title>
+            <text style="fill: url(&quot;#dim&quot;); font-family: &quot;Open Gorton&quot;; font-size: 20px; font-weight: 700; stroke: url(&quot;#dim&quot;); stroke-width: 0.7px; text-anchor: middle; white-space: pre;" x="72.136" y="38.2073"><title>Symbol</title>!</text>
+          </g>
         </svg>
       </g>
     </g>
@@ -1231,8 +1295,12 @@
     <g id="keycap-unshaded-38">
       <rect class="surface" width="300" height="300" />
       <g transform="">
-        <svg id="icon_K" viewBox="0 0 100 100" width="300.0" height="300.0" style="overflow:visible;" x="0" y="0">
-          <text style="font-weight:400;font-size:40px;font-family:Open Gorton;fill:url(#fg_main);white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="64.08" text-anchor="middle" xml:space="preserve"><tspan>K</tspan></text>
+        <svg id="icon_k_with_=" viewBox="0 0 100 100" width="300.0" height="300.0" style="overflow:visible;" x="0" y="0">
+          <text style="font-weight: 400; font-size: 40px; font-family: &quot;Open Gorton&quot;; fill: url(&quot;#fg_main&quot;); white-space: pre;" x="50" y="64.08" text-anchor="middle" xml:space="preserve"><tspan>K</tspan></text>
+          <g>
+            <title>Corner</title>
+            <text style="fill: url(&quot;#dim&quot;); font-family: &quot;Open Gorton&quot;; font-size: 20px; font-weight: 700; stroke: url(&quot;#dim&quot;); stroke-width: 0.7px; text-anchor: middle; white-space: pre;" x="72.136" y="38.2073"><title>Symbol</title>=</text>
+          </g>
         </svg>
       </g>
     </g>
@@ -1253,8 +1321,13 @@
     <g id="keycap-unshaded-40">
       <rect class="surface" width="300" height="300" />
       <g transform="">
-        <svg id="icon_F" viewBox="0 0 100 100" width="300.0" height="300.0" style="overflow:visible;" x="0" y="0">
-          <text style="font-weight:400;font-size:40px;font-family:Open Gorton;fill:url(#fg_main);white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="64.08" text-anchor="middle" xml:space="preserve"><tspan>F</tspan></text>
+        <svg id="icon_f_with_&quot;" viewBox="0 0 100 100" width="300.0" height="300.0" style="overflow:visible;" x="0" y="0">
+          <text style="font-weight: 400; font-size: 40px; font-family: &quot;Open Gorton&quot;; fill: url(&quot;#fg_main&quot;); white-space: pre;" x="50" y="64.08" text-anchor="middle" xml:space="preserve"><tspan>F</tspan></text>
+          <g>
+            <title>Corner</title>
+            <text style="fill: oklch(0.76 0.138 220); font-family: &quot;Open Gorton&quot;; font-size: 20px; font-weight: 700; pointer-events: none; stroke: oklch(0.759 0.138 220); stroke-width: 0px; text-anchor: middle; white-space: pre; visibility: hidden;" x="72.136" y="38.2073"><title>Reference</title>"</text>
+            <text style="fill: url(&quot;#dim&quot;); font-family: &quot;Open Gorton&quot;; font-size: 20px; font-weight: 700; letter-spacing: -1.4px; stroke: url(&quot;#dim&quot;); stroke-width: 0.7px; text-anchor: middle; white-space: pre;" x="72.136" y="38.2073" dx="-0.7">''</text>
+          </g>
         </svg>
       </g>
     </g>
@@ -1264,8 +1337,13 @@
     <g id="keycap-unshaded-41">
       <rect class="surface" width="300" height="300" />
       <g transform="">
-        <svg id="icon_n_with_ö" viewBox="0 0 100 100" width="300.0" height="300.0" style="overflow:visible;" x="0" y="0">
+        <svg id="icon_n_with_ö_+" viewBox="0 0 100 100" width="300.0" height="300.0" style="overflow:visible;" x="0" y="0">
           <text style="fill: url(&quot;#fg_main&quot;); font-family: &quot;Open Gorton&quot;; font-size: 40px; text-anchor: middle; white-space: pre;" x="50" y="64.080">N</text>
+          <g>
+            <title>Corner</title>
+            <path d="M 72.1393 28.8738 H 72.1393 V 32.3393 H 75.6048 V 32.3393 H 72.1393 V 35.8048 H 72.1393 V 32.3393 H 68.6738 V 32.3393 H 72.1393 Z" bx:shape="cross 68.6738 28.8738 6.931 6.931 0 0 0.5 1@c85ec124" style="fill: none; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2.5px; stroke: url(&quot;#dim&quot;);" />
+            <text style="fill: url(&quot;#dim&quot;); font-family: &quot;Open Gorton&quot;; font-size: 20px; font-weight: 700; text-anchor: middle; white-space: pre; pointer-events: none; visibility: hidden;" x="72.136" y="38.2073"><title>Reference</title>+</text>
+          </g>
           <g>
             <title>Corner</title>
             <g>
@@ -1284,8 +1362,12 @@
     <g id="keycap-unshaded-42">
       <rect class="surface" width="300" height="300" />
       <g transform="">
-        <svg id="icon_L" viewBox="0 0 100 100" width="300.0" height="300.0" style="overflow:visible;" x="0" y="0">
-          <text style="font-weight:400;font-size:40px;font-family:Open Gorton;fill:url(#fg_main);white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="64.08" text-anchor="middle" xml:space="preserve"><tspan>L</tspan></text>
+        <svg id="icon_l_with_-" viewBox="0 0 100 100" width="300.0" height="300.0" style="overflow:visible;" x="0" y="0">
+          <text style="font-weight: 400; font-size: 40px; font-family: &quot;Open Gorton&quot;; fill: url(&quot;#fg_main&quot;); white-space: pre;" x="50" y="64.08" text-anchor="middle" xml:space="preserve"><tspan>L</tspan></text>
+          <g>
+            <title>Corner</title>
+            <text style="fill: url(&quot;#dim&quot;); font-family: &quot;Open Gorton&quot;; font-size: 20px; font-weight: 700; stroke: url(&quot;#dim&quot;); stroke-width: 1.2px; text-anchor: middle; white-space: pre;" x="72.136" y="38.2073"><title>Symbol</title>-</text>
+          </g>
         </svg>
       </g>
     </g>
@@ -1296,7 +1378,7 @@
       <rect class="surface" width="300" height="300" />
       <g transform="">
         <svg id="icon_sym" viewBox="0 0 100 100" width="300.0" height="300.0" style="overflow:visible;" x="0" y="0">
-          <g transform="matrix(1, 0, 0, 1, 26.217094, 0)">
+          <g transform="matrix(1, 0, 0, 1, 22.124588, -2.632781)">
             <title>Swear</title>
             <text style="fill: url(&quot;#bg_accent&quot;); font-family: &quot;Open Gorton&quot;; font-size: 14px; font-weight: 700; text-anchor: middle; white-space: pre; visibility: hidden;" xml:space="preserve" x="36.8746" y="38.0586"><title>Reference</title>#%*!</text>
             <g transform="matrix(1, 0, 0, 1, -0.682231, -2.918049)" style="">
@@ -1327,8 +1409,8 @@
             </g>
           </g>
           <text style="fill: url(&quot;#bg_accent&quot;); font-family: &quot;Open Gorton&quot;; font-size: 17px; font-weight: 700; white-space: pre; text-anchor: end;" x="77" y="75">sym</text>
-          <g transform="matrix(1.134828, 0, 0, 1.134828, -138.270063, 9.535709)" style="">
-            <title>Cat</title>
+          <g transform="matrix(1.134828, 0, 0, 1.134828, -138.270063, 9.535709)" style="visibility: hidden;">
+            <title>Cat Old Old</title>
             <path style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px; fill: none; stroke: url(&quot;#bg_accent&quot;);" d="M 141.4717 25.9716 C 141.3554 26.1697 141.3243 26.4808 141.2217 26.7378 C 140.2614 29.144 139.9488 35.05 142.13 37.334 C 145.483 40.8451 154.1284 40.9467 157.8166 37.2733 C 160.0574 35.0414 159.6777 28.2311 158.9164 26.8461 C 158.8187 26.6684 158.5395 26.2944 158.4903 25.8982 C 159.5873 24.6513 160.0792 23.425 159.8308 22.893 C 159.6785 22.5668 156.2241 23.1676 154.4683 23.9836 C 151.6466 23.1975 148.2747 23.06 145.445 23.8106 C 143.5071 22.9329 140.3141 22.5883 140.1501 22.9145 C 139.8882 23.4354 140.489 24.8269 141.4717 25.9716 Z">
               <title>BG</title>
             </path>
@@ -1357,6 +1439,82 @@
               <title>Mouth</title>
             </path>
           </g>
+          <g transform="matrix(1.134828, 0, 0, 1.134828, -137.724958, 4.296)" style="visibility: hidden;">
+            <title>Cat Old</title>
+            <path style="stroke-linecap: round; stroke-linejoin: round; fill: none; stroke: url(&quot;#bg_accent&quot;); stroke-width: 1.49802px; transform-origin: 176.308px 34.7091px;" d="M 177.789 33.6635 C 177.789 33.6635 177.6071 35.2894 176.799 35.7388 C 175.8656 36.258 174.827 34.4544 174.827 34.4544" transform="matrix(-1, 0, 0, -1, -0.000006, -0.000001)">
+              <title>Ear</title>
+            </path>
+            <path style="stroke-linecap: round; stroke-linejoin: round; fill: none; stroke: url(&quot;#bg_accent&quot;); stroke-width: 1.49802px; transform-origin: 184.094px 34.7091px;" d="M 185.575 35.7547 C 185.575 35.7547 185.3923 34.1301 184.585 33.6794 C 183.6808 33.1746 182.613 34.9638 182.613 34.9638">
+              <title>Ear</title>
+            </path>
+            <path d="M 178.252 38.1662 C 178.252 38.9026 177.952 39.4995 177.583 39.4995 C 177.214 39.4995 176.915 38.9026 176.915 38.1662 C 176.915 37.8315 176.977 37.5255 177.078 37.2914 L 178.252 38.1662 Z" style="stroke-linecap: round; stroke-linejoin: round; stroke: url(&quot;#bg_accent&quot;); stroke-width: 0.881191px; fill: url(&quot;#bg_accent&quot;);">
+              <title>Eye</title>
+            </path>
+            <path d="M 183.569 38.6247 C 183.569 37.8883 183.269 37.2914 182.9 37.2914 C 182.531 37.2914 182.232 37.8883 182.232 38.6247 C 182.232 38.9594 182.294 39.2654 182.395 39.4995 L 183.569 38.6247 Z" style="stroke-linecap: round; stroke-linejoin: round; stroke: url(&quot;#bg_accent&quot;); stroke-width: 0.881191px; fill: url(&quot;#bg_accent&quot;); transform-box: fill-box; transform-origin: 50% 50%;" transform="matrix(-1, 0, 0, -1, 0.000001, 0)">
+              <title>Eye</title>
+            </path>
+            <path d="M 176.903 37.3805 L 177.939 38.7916 C 177.835 39.21 177.622 39.497 177.377 39.497 C 177.03 39.497 176.75 38.9249 176.75 38.219 C 176.75 37.8983 176.807 37.605 176.903 37.3805 Z" style="stroke-linecap: round; stroke-linejoin: round; fill: url(&quot;#bg_accent_lighter&quot;); stroke: url(&quot;#bg_accent&quot;); stroke-width: 0.881191px; visibility: hidden;">
+              <title>Eye</title>
+            </path>
+            <path style="fill: none; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.5px; stroke: url(&quot;#bg_accent&quot;);" d="M 182.2958 42.6634 C 182.2958 42.6634 181.221 42.0946 180.379 42.0946 C 180.379 42.0946 180.813 41.0997 180.813 40.5913 L 179.821 40.5913 C 179.821 41.0778 180.3769 42.0964 180.3769 42.0964 C 179.5108 42.0964 178.3723 42.6444 178.3723 42.6444">
+              <title>Mouth</title>
+            </path>
+            <path style="stroke-linecap: round; stroke-linejoin: round; fill: none; stroke: url(&quot;#bg_accent&quot;); stroke-width: 1.32179px;" d="M 185.683 40.8208 L 187.882 40.656">
+              <title>Whisker</title>
+            </path>
+            <path style="stroke-linecap: round; stroke-linejoin: round; fill: none; stroke: url(&quot;#bg_accent&quot;); stroke-width: 1.32179px;" d="M 185.556 42.5938 L 187.755 42.968">
+              <title>Whisker</title>
+            </path>
+            <path style="stroke-linecap: round; stroke-linejoin: round; fill: none; stroke: url(&quot;#bg_accent&quot;); stroke-width: 1.32179px; transform-box: fill-box; transform-origin: 50% 50%;" d="M 173.097 40.6775 L 175.296 40.8423" transform="matrix(-1, 0, 0, -1, 0, -0.000005)">
+              <title>Whisker</title>
+            </path>
+            <path style="stroke-linecap: round; stroke-linejoin: round; fill: none; stroke: url(&quot;#bg_accent&quot;); stroke-width: 1.32179px; transform-box: fill-box; transform-origin: 50% 50%;" d="M 173.093 42.9788 L 175.293 42.6046" transform="matrix(-1, 0, 0, -1, 0.000016, -0.000004)">
+              <title>Whisker</title>
+            </path>
+          </g>
+          <g transform="matrix(1.134828, 0, 0, 1.134828, -137.724958, 3.397515)" style="">
+            <title>Cat</title>
+            <path style="stroke-linecap: round; stroke-linejoin: round; fill: none; stroke: url(&quot;#bg_accent&quot;); stroke-width: 1.76238px;" d="M 187.0492 34.444 C 187.0622 36.5132 186.249 38.4261 185.168 39.0209 C 183.916 39.7098 182.53 37.3026 182.53 37.3026 C 180.929 37.5549 179.354 37.568 177.914 37.302 C 177.914 37.302 176.488 39.6934 175.276 39.021 C 174.194 38.4204 173.5663 36.7172 173.5033 34.4928" transform="matrix(-1, 0, 0, -1, 360.621147971837, 72.841955728356)">
+              <title>Ears</title>
+            </path>
+            <path style="stroke-linecap: round; stroke-linejoin: round; fill: none; stroke: url(&quot;#bg_accent&quot;); stroke-width: 1.76238px;" d="M 185.449 46.6554 C 184.2336 45.8202 182.7665 45.2215 180.275 45.2215 C 177.7835 45.2215 176.2194 45.7953 175.0634 46.5896" transform="matrix(-1, 0, 0, -1, 360.668969279621, 91.644291443871)">
+              <title>Bottom</title>
+            </path>
+            <path d="M 178.25 38.5202 C 178.25 39.2566 177.949 39.8535 177.58 39.8535 C 177.211 39.8535 176.913 39.2566 176.913 38.5202 C 176.913 38.1855 176.974 37.8795 177.075 37.6454 L 178.25 38.5202 Z" style="stroke-linecap: round; stroke-linejoin: round; stroke: url(&quot;#bg_accent&quot;); fill: url(&quot;#bg_accent&quot;); stroke-width: 1.32179px;">
+              <title>Eye</title>
+            </path>
+            <path d="M 183.713 38.9787 C 183.713 38.2423 183.412 37.6454 183.043 37.6454 C 182.674 37.6454 182.375 38.2423 182.375 38.9787 C 182.375 39.3134 182.437 39.6194 182.538 39.8535 L 183.713 38.9787 Z" style="stroke-linecap: round; stroke-linejoin: round; stroke: url(&quot;#bg_accent&quot;); fill: url(&quot;#bg_accent&quot;); stroke-width: 1.32179px; transform-origin: 183.044px 38.7495px;" transform="matrix(-1, 0, 0, -1, -0.000012, -0.000001)">
+              <title>Eye</title>
+            </path>
+            <path d="M 177.81 38.5997 C 177.81 39.0807 177.614 39.4705 177.373 39.4705 C 177.132 39.4705 176.937 39.0807 176.937 38.5997 C 176.937 38.3811 176.977 38.1813 177.043 38.0284 L 177.81 38.5997 Z" style="stroke-linecap: round; stroke-linejoin: round; stroke: url(&quot;#bg_accent&quot;); fill: url(&quot;#bg_accent&quot;); stroke-width: 1.76238px; visibility: hidden;">
+              <title>Eye</title>
+            </path>
+            <path d="M 183.688 38.8992 C 183.688 38.4182 183.492 38.0284 183.251 38.0284 C 183.01 38.0284 182.815 38.4182 182.815 38.8992 C 182.815 39.1178 182.855 39.3176 182.921 39.4705 L 183.688 38.8992 Z" style="stroke-linecap: round; stroke-linejoin: round; stroke: url(&quot;#bg_accent&quot;); fill: url(&quot;#bg_accent&quot;); stroke-width: 1.76238px; transform-box: fill-box; transform-origin: 50% 50%; visibility: hidden;" transform="matrix(-1, 0, 0, -1, 0.000014, -0.000001)">
+              <title>Eye</title>
+            </path>
+            <path style="fill: none; stroke-linecap: round; stroke-linejoin: round; stroke: url(&quot;#bg_accent&quot;); stroke-width: 1.76238px;" d="M 182.296 43.2513 C 182.296 43.2513 181.221 42.6825 180.379 42.6825 C 180.379 42.6825 180.5943 41.7849 180.5943 41.2765 L 180.0872 41.2765 C 180.0872 41.763 180.377 42.6843 180.377 42.6843 C 179.511 42.6843 178.372 43.2323 178.372 43.2323">
+              <title>Mouth</title>
+            </path>
+            <path style="stroke-linecap: round; stroke-linejoin: round; fill: none; stroke: url(&quot;#bg_accent&quot;); stroke-width: 1.49802px;" d="M 186.682 40.7889 L 188.881 40.6241">
+              <title>Whisker</title>
+            </path>
+            <path style="stroke-linecap: round; stroke-linejoin: round; fill: none; stroke: url(&quot;#bg_accent&quot;); stroke-width: 1.49802px;" d="M 186.555 42.8174 L 188.754 43.1916">
+              <title>Whisker</title>
+            </path>
+            <path style="stroke-linecap: round; stroke-linejoin: round; fill: none; stroke: url(&quot;#bg_accent&quot;); stroke-width: 1.49802px; transform-box: fill-box; transform-origin: 50% 50%;" d="M 172.048 40.6456 L 174.247 40.8104" transform="matrix(-1, 0, 0, -1, 0.000014, 0)">
+              <title>Whisker</title>
+            </path>
+            <path style="stroke-linecap: round; stroke-linejoin: round; fill: none; stroke: url(&quot;#bg_accent&quot;); stroke-width: 1.49802px; transform-box: fill-box; transform-origin: 50% 50%;" d="M 172.164 43.2066 L 174.364 42.8324" transform="matrix(-1, 0, 0, -1, -0.000014, 0.000001)">
+              <title>Whisker</title>
+            </path>
+          </g>
+          <g transform="matrix(1, 0, 0, 1, 24, 24)">
+            <title>Key</title>
+            <path d="M 10 5 C 10 9.908 9.9051 10.003 5 9.998 C 0.095 9.995 0 9.908 0 5 C 0 0.09 0.09 0 5 0 C 9.91 0 10 0.09 10 5 Z" style="stroke-linecap: round; stroke-linejoin: round; vector-effect: non-scaling-stroke; stroke-width: 2px; fill: url(&quot;#dim_light&quot;);">
+              <title>Key</title>
+            </path>
+            <path d="M 0 5 C 0 4.9993 0 4.9987 0 4.998 L 2.5 4.998 L 2.5 5 C 4.955 5 5 5.045 5 7.5 L 5 9.998 C 0.095 9.995 0 9.908 0 5 Z" style="stroke-linecap: round; stroke-linejoin: round; vector-effect: non-scaling-stroke; stroke-width: 2px; transform-origin: 5px 5px; fill: url(&quot;#dim&quot;);" transform="matrix(-1, 0, 0, -1, -0.000001, -0.000001)" />
+          </g>
         </svg>
       </g>
     </g>
@@ -1377,8 +1535,12 @@
     <g id="keycap-unshaded-45">
       <rect class="surface" width="300" height="300" />
       <g transform="">
-        <svg id="icon_u_with_umlaut" viewBox="0 0 100 100" width="300.0" height="300.0" style="overflow:visible;" x="0" y="0">
+        <svg id="icon_u_with_umlaut_quote" viewBox="0 0 100 100" width="300.0" height="300.0" style="overflow:visible;" x="0" y="0">
           <text style="font-weight: 400; font-size: 40px; font-family: &quot;Open Gorton&quot;; fill: url(&quot;#fg_main&quot;); white-space: pre;" x="50" y="64.08" text-anchor="middle"><tspan>U</tspan></text>
+          <g>
+            <title>Corner</title>
+            <text style="fill: url(&quot;#dim&quot;); font-family: &quot;Open Gorton&quot;; font-size: 20px; font-weight: 700; stroke: url(&quot;#dim&quot;); text-anchor: middle; white-space: pre;" x="72.136" y="38.2073"><title>Symbol</title>'</text>
+          </g>
           <g>
             <title>Corner</title>
             <g style="visibility: hidden;">
@@ -1402,8 +1564,12 @@
     <g id="keycap-unshaded-46">
       <rect class="surface" width="300" height="300" />
       <g transform="">
-        <svg id="icon_e_with_ä" viewBox="0 0 100 100" width="300.0" height="300.0" style="overflow:visible;" x="0" y="0">
+        <svg id="icon_e_with_ä_*" viewBox="0 0 100 100" width="300.0" height="300.0" style="overflow:visible;" x="0" y="0">
           <text style="fill: url(&quot;#fg_main&quot;); font-family: &quot;Open Gorton&quot;; font-size: 40px; text-anchor: middle; white-space: pre;" x="50" y="64.080">e</text>
+          <g>
+            <title>Corner</title>
+            <text style="fill: url(&quot;#dim&quot;); font-family: &quot;Open Gorton&quot;; font-size: 20px; font-weight: 700; stroke: url(&quot;#dim&quot;); stroke-width: 0.3px; text-anchor: middle; white-space: pre;" x="72.136" y="38.2073"><title>Symbol</title>*</text>
+          </g>
           <g>
             <title>Corner</title>
             <g>
@@ -1426,6 +1592,10 @@
           <rect class="icon-bounding-box" width="100" height="100" fill="none" />
           <text style="font-weight: 400; font-size: 46px; font-family: &quot;Open Gorton&quot;; fill: url(&quot;#fg_main&quot;); white-space: pre;" x="50" y="68.192" text-anchor="middle" xml:space="preserve"><tspan style="font-size: 46px; word-spacing: 0px;">.</tspan></text>
           <text style="fill: url(&quot;#fg_main&quot;); font-family: &quot;Open Gorton&quot;; font-size: 32px; text-anchor: middle;" xml:space="preserve" x="50" y="48.192">&gt;</text>
+          <g>
+            <title>Corner</title>
+            <text style="fill: url(&quot;#dim&quot;); font-family: &quot;Open Gorton&quot;; font-size: 20px; font-weight: 700; stroke: url(&quot;#dim&quot;); stroke-width: 0.7px; text-anchor: middle; white-space: pre;" x="72.136" y="38.2073"><title>Symbol</title>/</text>
+          </g>
         </svg>
       </g>
     </g>
@@ -1462,8 +1632,12 @@
     <g id="keycap-unshaded-50">
       <rect class="surface" width="300" height="300" />
       <g transform="">
-        <svg id="icon_p_with_acute" viewBox="0 0 100 100" width="300.0" height="300.0" style="overflow:visible;" x="0" y="0">
+        <svg id="icon_p_with_acute_`" viewBox="0 0 100 100" width="300.0" height="300.0" style="overflow:visible;" x="0" y="0">
           <text style="font-weight: 400; font-size: 40px; font-family: &quot;Open Gorton&quot;; fill: url(&quot;#fg_main&quot;); white-space: pre;" x="50" y="64.08" text-anchor="middle"><tspan>P</tspan></text>
+          <g>
+            <title>Corner</title>
+            <text style="fill: url(&quot;#dim&quot;); font-family: &quot;Open Gorton&quot;; font-size: 20px; font-weight: 700; stroke: url(&quot;#dim&quot;); text-anchor: middle; white-space: pre;" x="72.136" y="38.2073"><title>Symbol</title>`</text>
+          </g>
           <g>
             <title>Corner</title>
             <g style="visibility: hidden;">
@@ -1485,8 +1659,17 @@
     <g id="keycap-unshaded-51">
       <rect class="surface" width="300" height="300" />
       <g transform="">
-        <svg id="icon_o_with_å" viewBox="0 0 100 100" width="300.0" height="300.0" style="overflow:visible;" x="0" y="0">
+        <svg id="icon_o_with_å_;" viewBox="0 0 100 100" width="300.0" height="300.0" style="overflow:visible;" x="0" y="0">
           <text style="fill: url(&quot;#fg_main&quot;); font-family: &quot;Open Gorton&quot;; font-size: 40px; text-anchor: middle; white-space: pre;" x="50" y="64.080">O</text>
+          <g>
+            <title>Corner</title>
+            <text style="fill: url(&quot;#bg_accent_dark&quot;); font-family: &quot;Open Gorton&quot;; font-size: 20px; font-weight: 700; text-anchor: middle; white-space: pre; pointer-events: none; visibility: hidden;" x="72.136" y="38.2073"><title>Reference</title>A</text>
+            <text style="fill: url(&quot;#dim&quot;); font-family: &quot;Open Gorton&quot;; font-size: 20px; font-weight: 700; stroke: url(&quot;#dim&quot;); stroke-width: 0.7px; text-anchor: middle; white-space: pre;" x="72.136" y="37.2905"><title>,</title>,</text>
+            <ellipse style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px; fill: url(&quot;#dim&quot;);" cx="71.9746" cy="28.3091" rx="1.5" ry="1.5">
+              <title>.</title>
+            </ellipse>
+            <text style="fill: url(&quot;#dim&quot;); font-family: &quot;Open Gorton&quot;; font-size: 20px; font-weight: 700; text-anchor: middle; white-space: pre; pointer-events: none; visibility: hidden;" x="72.136" y="38.2073"><title>Reference</title>;</text>
+          </g>
           <g>
             <title>Corner</title>
             <g>
@@ -1507,7 +1690,18 @@
         <svg id="icon_," viewBox="0 0 100 100" width="300.0" height="300.0" style="overflow:visible;" x="0" y="0">
           <rect class="icon-bounding-box" width="100" height="100" fill="none" />
           <text style="font-weight: 400; font-size: 46px; font-family: &quot;Open Gorton&quot;; fill: url(&quot;#fg_main&quot;); white-space: pre;" x="50" y="68.192" text-anchor="middle" xml:space="preserve"><tspan style="font-size: 46px; word-spacing: 0px;">,</tspan></text>
-          <text style="fill: url(&quot;#fg_main&quot;); font-family: &quot;Open Gorton&quot;; font-size: 32px; text-anchor: middle;" xml:space="preserve" x="50" y="48.224">&lt;</text>
+          <text style="fill: url(&quot;#fg_main&quot;); font-family: &quot;Open Gorton&quot;; font-size: 32px; text-anchor: middle; white-space: pre;" xml:space="preserve" x="50" y="48.224">&lt;</text>
+          <g>
+            <title>Corner</title>
+            <text style="fill: url(&quot;#bg_accent_dark&quot;); font-family: &quot;Open Gorton&quot;; font-size: 20px; font-weight: 700; text-anchor: middle; white-space: pre; pointer-events: none; visibility: hidden;" x="72.136" y="38.2073"><title>Reference</title>A</text>
+            <ellipse style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px; fill: url(&quot;#dim&quot;);" cx="71.9746" cy="28.3091" rx="1.5" ry="1.5">
+              <title>.</title>
+            </ellipse>
+            <ellipse style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px; fill: url(&quot;#dim&quot;);" cx="71.9746" cy="36.267" rx="1.5" ry="1.5">
+              <title>.</title>
+            </ellipse>
+            <text style="fill: url(&quot;#dim&quot;); font-family: &quot;Open Gorton&quot;; font-size: 20px; font-weight: 700; text-anchor: middle; white-space: pre; pointer-events: none; visibility: hidden;" x="72.136" y="38.2073"><title>Reference</title>;</text>
+          </g>
         </svg>
       </g>
     </g>
@@ -1544,8 +1738,11 @@
     <g id="keycap-unshaded-55">
       <rect class="surface" width="300" height="300" />
       <g transform="">
-        <svg id="icon" viewBox="0 0 100 100" width="300.0" height="300.0" style="overflow:visible;" x="0" y="0">
-          <text style="font-weight:400;font-size:40px;font-family:Open Gorton;fill:url(#fg_main);white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="64.08" text-anchor="middle" xml:space="preserve"><tspan /></text>
+        <svg id="icon_~" viewBox="0 0 100 100" width="300.0" height="300.0" style="overflow:visible;" x="0" y="0">
+          <g>
+            <title>Corner</title>
+            <text style="fill: url(&quot;#bg_accent&quot;); font-family: &quot;Open Gorton&quot;; font-size: 20px; font-weight: 700; stroke: url(&quot;#bg_accent&quot;); text-anchor: middle; white-space: pre;" x="72.136" y="38.2073"><title>Symbol</title>~</text>
+          </g>
         </svg>
       </g>
     </g>
@@ -1555,8 +1752,12 @@
     <g id="keycap-unshaded-56">
       <rect class="surface" width="300" height="300" />
       <g transform="">
-        <svg id="icon_I" viewBox="0 0 100 100" width="300.0" height="300.0" style="overflow:visible;" x="0" y="0">
-          <text style="font-weight:400;font-size:40px;font-family:Open Gorton;fill:url(#fg_main);white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="64.08" text-anchor="middle" xml:space="preserve"><tspan>I</tspan></text>
+        <svg id="icon_i_with_^" viewBox="0 0 100 100" width="300.0" height="300.0" style="overflow:visible;" x="0" y="0">
+          <text style="font-weight: 400; font-size: 40px; font-family: &quot;Open Gorton&quot;; fill: url(&quot;#fg_main&quot;); white-space: pre;" x="50" y="64.08" text-anchor="middle" xml:space="preserve"><tspan>I</tspan></text>
+          <g>
+            <title>Corner</title>
+            <text style="fill: url(&quot;#dim&quot;); font-family: &quot;Open Gorton&quot;; font-size: 20px; font-weight: 700; stroke: url(&quot;#dim&quot;); stroke-width: 0.7px; text-anchor: middle; white-space: pre;" x="72.136" y="38.2073"><title>Symbol</title>^</text>
+          </g>
         </svg>
       </g>
     </g>

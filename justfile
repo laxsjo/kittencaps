@@ -3,9 +3,6 @@ editor := `if [[ -f .svg-editor ]]; then cat .svg-editor; else printf "boxy-svg"
 help:
     just --list
 
-test +$args:
-    for x in $args; do echo $x; done
-
 # Define the editor used by edit-icon. Writes the given value to the hidden .svg-editor file. Either a path to an executable, an executable on you're path, or "boxy-svg", which will execute the flatpak (which needs to be installed for it to work). 
 set-editor $new_editor:
     printf "%s" "$new_editor" > .svg-editor
@@ -65,8 +62,8 @@ generate-render-scene layout="moonlander-mk1" theme="standard":
         --out ./generated/moonlander-mk1_standard/scene.blend
 
 # Update the palette colors in the specified icon SVG files to match the colors defined in the standard theme. The icon names should be the text in between the [brackets], i.e. to update assets/icons/[tab].svg run `just update-icon-palettes tab`. Default is to update all icons.
-update-icon-palettes *icons:
-    python -m src.update_icon_palettes {{icons}} \
+update-icon-palettes *icons="*":
+    python -m src.update_icon_palettes '{{icons}}' \
         --theme=./assets/themes/standard.json
 
 # Synchronies all generated assets and update icon SVG file colors. Essentially a wrapper around `generate-keycaps` and `generate-render-scene` but for all theme and layout variations, and finally running `update-icon-palettes`. You should essentially run this before every commit to make sure all files are updated. Take note of reverting the generated blend file if none of the input files changed, since unfortunately saving .blend files is non-deterministic, meaning they will always be marked as changed.
