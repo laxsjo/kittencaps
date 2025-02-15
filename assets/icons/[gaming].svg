@@ -126,7 +126,7 @@
     <title>BG</title>
   </rect>
   <svg id="icon" viewBox="0 0 100 100" width="100" height="100" style="overflow:visible;">
-    <path style="fill: url(&quot;#bg_main&quot;); stroke: url(&quot;#fg_main&quot;); stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px;" d="M 31.143 41.822 C 35.034 37.293 41.261 33.376 47.223 32.685 C 48.52 32.535 50.007 26.412 51.313 26.389 C 52.61 26.366 55.425 31.659 56.696 31.963 C 61.708 33.166 63.675 33.846 67.907 36.923 C 68.739 37.527 74.21 34.264 75.036 35.079 C 76.791 36.813 74.735 46.176 75.382 47.37 C 77.571 51.402 78.088 55.736 78.094 58.952 C 78.094 58.952 31.203 41.67 31.143 41.822 Z">
+    <path style="fill: url(&quot;#bg_main&quot;); stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px; stroke: url(&quot;#bg_main&quot;);" d="M 31.143 41.822 C 35.034 37.293 41.261 33.376 47.223 32.685 C 48.52 32.535 50.007 26.412 51.313 26.389 C 52.61 26.366 55.425 31.659 56.696 31.963 C 61.708 33.166 63.675 33.846 67.907 36.923 C 68.739 37.527 74.21 34.264 75.036 35.079 C 76.791 36.813 74.735 46.176 75.382 47.37 C 77.571 51.402 78.088 55.736 78.094 58.952 C 78.094 58.952 31.203 41.67 31.143 41.822 Z">
       <title>Body</title>
     </path>
     <path style="stroke: url(&quot;#fg_main&quot;); fill: url(&quot;#bg_main&quot;); stroke-linecap: round; transform-box: fill-box; transform-origin: 50% 50%; stroke-width: 2px;" d="M 34.556 32.299 C 30.942 34.868 28.204 37.302 29.518 40.113 C 31.195 43.7 37.473 41.781 43.127 39.512" transform="matrix(-0.308585, 0.951197, -0.951197, -0.308585, -0.000016, 0.00001)">
@@ -211,6 +211,9 @@
         <title>Outline</title>
       </path>
     </g>
+    <path d="M 28.5617 29.4563 C 28.5617 29.4563 29.6404 28.9605 30.34 27.6685 C 31.0307 26.393 30.9171 25.5052 29.8243 25.4209 C 28.8042 25.3422 28.1319 27.4606 28.1319 27.4606 C 28.1319 27.4606 26.7034 25.8142 25.6338 26.4748 C 24.8869 26.9361 24.9886 27.7536 26.103 28.454 C 27.5109 29.3388 28.5617 29.4563 28.5617 29.4563 Z" style="stroke-linecap: round; stroke-linejoin: round; fill: url(&quot;#bg_accent&quot;); stroke: url(&quot;#bg_accent&quot;); stroke-width: 2px;">
+      <title>Heart</title>
+    </path>
   </svg>
   <path d="M 83.333 23.333 C 83.333 19.667 80.333 16.667 76.667 16.667 L 23.333 16.667 C 19.667 16.667 16.667 19.667 16.667 23.333 L 16.667 76.667 C 16.667 80.333 19.667 83.333 23.333 83.333 L 76.667 83.333 C 80.333 83.333 83.333 80.333 83.333 76.667 L 83.333 23.333 Z" stroke="black" stroke-opacity="0.5" fill="none" inkscape:label="outline">
     <title>outline</title>

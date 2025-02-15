@@ -99,7 +99,7 @@
       <ellipse style="stroke-width: 0.5px; fill: url(&quot;#fg_main&quot;);" cx="56.522" cy="33.941" rx="0.934" ry="1.523" transform="matrix(0.9995470046997071, 0.030088001862168305, -0.030087001621723175, 0.9995470046997069, -54.495808913947414, -34.075845433619804)">
         <title>Pupil</title>
       </ellipse>
-      <ellipse style="fill: url(&quot;#bg_main&quot;);" cx="56.973" cy="33.193" rx="0.247" ry="0.275" transform="matrix(0.999547, 0.030088, -0.030087, 0.999547, -54.399759, -34.13989)">
+      <ellipse style="fill: url(&quot;#bg_main&quot;); visibility: hidden;" cx="56.973" cy="33.193" rx="0.247" ry="0.275" transform="matrix(0.999547, 0.030088, -0.030087, 0.999547, -54.399759, -34.13989)">
         <title>Highlight</title>
       </ellipse>
     </symbol>
@@ -120,10 +120,10 @@
     <title>BG</title>
   </rect>
   <svg id="icon" viewBox="0 0 200 100" width="200" height="100" style="overflow:visible;" transform="matrix(1, 0, 0, 0.9999999999999999, 14.785905464222736, 9.023905317410456)">
-    <use href="#paw_print" width="7" height="6.5" transform="matrix(-0.525377, -1.328456, -1.478144, 0.14688, 23.348686, 58.307456)" style="transform-origin: 3.5px 3.25px; fill: url(&quot;#bg_accent_dark&quot;);">
+    <use href="#paw_print" width="7" height="6.5" transform="matrix(-0.5253769159317017, -1.3284560441970825, -1.4781439304351807, 0.14688000082969666, 23.3486858059951, 58.30745594068291)" style="transform-origin: 3.5px 3.25px; fill: url(&quot;#bg_accent_dark&quot;);">
       <title>Paw</title>
     </use>
-    <use href="#paw_print" width="7" height="6.5" transform="matrix(-0.398616, -1.007931, -1.482974, 0.134666, 56.398417, 62.096537)" style="fill: url(&quot;#bg_accent_dark&quot;); transform-origin: 3.5px 3.25px;">
+    <use href="#paw_print" width="7" height="6.5" transform="matrix(-0.3986160159111023, -1.0079309940338135, -1.4829740524291992, 0.13466599583625793, 56.398417430689534, 62.096537447265604)" style="fill: url(&quot;#bg_accent_dark&quot;); transform-origin: 3.5px 3.25px;">
       <title>Paw</title>
     </use>
     <g transform="matrix(-1, 0, 0, 1, 142.244687, 8.082873)" style="">
@@ -174,10 +174,10 @@
           <title>Highlight</title>
         </ellipse>
       </g>
-      <use href="#eye" width="1.9588000774383545" height="3.100800037384033" transform="matrix(1.2109010219573975, 0.109498031437397, -0.1323700249195099, 1.2088329792022705, 55.69711968306255, 32.017680556491534)" style="transform-box: fill-box; transform-origin: 50% 50%; fill: none;">
+      <use href="#eye" width="1.9588000774383545" height="3.100800037384033" transform="matrix(1.2109010219573975, 0.1094980388879776, -0.1323700249195099, 1.2088329792022705, 55.69711968306255, 32.017680556491534)" style="transform-box: fill-box; transform-origin: 50% 50%; fill: none;">
         <title>Left Eye</title>
       </use>
-      <use href="#eye" width="1.9588000774383545" height="3.100800037384033" transform="matrix(1.3212870359420776, -0.025191007182002068, -0.04629100114107132, 1.2169450521469116, 61.915335515650625, 33.50252473803738)" style="transform-origin: 0.979px 1.55px; fill: none;">
+      <use href="#eye" width="1.9588000774383545" height="3.100800037384033" transform="matrix(1.3212870359420776, -0.025191009044647217, -0.04629100114107132, 1.2169450521469116, 61.915335515650625, 33.50252473803738)" style="transform-origin: 0.979px 1.55px; fill: none;">
         <title>Right Eye</title>
       </use>
       <g style="transform-origin: 56.522px 33.941px; visibility: hidden;" transform="matrix(0.999547, 0.030088, -0.030087, 0.999547, 0, 0)">
@@ -274,7 +274,7 @@
       </path>
     </g>
     <text style="fill: url(&quot;#fg_main&quot;); font-family: &quot;Open Gorton&quot;; font-size: 12px; font-weight: 700; white-space: pre;" x="94.8278" y="33.8498"><title>Question Mark</title>?</text>
-    <text style="fill: url(&quot;#fg_main&quot;); font-family: &quot;Open Gorton&quot;; font-size: 17px; font-weight: 700; text-anchor: end;" xml:space="preserve" x="177" y="75" dx="0 0 0.3">SUPER</text>
+    <text style="fill: url(&quot;#fg_main&quot;); font-family: &quot;Open Gorton&quot;; font-size: 17px; font-weight: 700; text-anchor: end;" xml:space="preserve" x="177" y="75" dx="0 0 -0.3 -0.6">Meta</text>
     <g transform="matrix(-1, 0, 0, 1, 213.833508, 13.051693)" style="">
       <title>Tux</title>
       <path style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px; fill: url(&quot;#bg_focus&quot;);" d="M 52.068 15.337 C 54.546 15.378 57.465 16.711 57.713 20.888 C 57.895 23.942 58.421 25.19 58.887 26.706 C 59.352 28.222 62.79 32.318 62.8 39.914 C 62.8 39.914 65.389 42.926 62.246 45.995 C 62.246 45.995 55.364 49.261 52.068 49.105 C 48.435 48.934 41.041 45.75 41.041 45.75 L 41.83 40.417 C 37.967 38.18 39.512 35.094 40.386 32.66 C 41.438 29.733 43.741 27.35 43.972 26.585 C 44.511 24.79 44.797 23.362 45.079 20.993 C 45.466 17.724 48.169 15.272 52.068 15.337 Z">
@@ -288,7 +288,7 @@
         <path d="M 52.646 31.778 C 52.646 32.617 52.319 33.259 51.75 33.259 C 51.179 33.259 50.792 32.662 50.792 31.824 C 50.792 30.986 51.247 30.539 51.701 30.529 C 52.271 30.517 52.646 30.939 52.646 31.778 Z" style="fill: url(&quot;#bg_focus&quot;);">
           <title>Pupil</title>
         </path>
-        <ellipse style="fill: url(&quot;#bg_main&quot;);" cx="51.835" cy="31.261" rx="0.241" ry="0.268">
+        <ellipse style="fill: url(&quot;#bg_main&quot;); visibility: hidden;" cx="51.835" cy="31.261" rx="0.241" ry="0.268">
           <title>Highlight</title>
         </ellipse>
       </g>
@@ -300,7 +300,7 @@
         <path d="M 57.079 31.765 C 57.079 32.591 56.732 33.222 56.126 33.222 C 55.519 33.222 55.107 32.635 55.107 31.811 C 55.107 30.987 55.59 30.547 56.074 30.538 C 56.68 30.525 57.079 30.941 57.079 31.765 Z" style="fill: url(&quot;#bg_focus&quot;);">
           <title>Pupil</title>
         </path>
-        <ellipse style="fill: url(&quot;#bg_main&quot;);" cx="56.259" cy="31.216" rx="0.241" ry="0.268">
+        <ellipse style="fill: url(&quot;#bg_main&quot;); visibility: hidden;" cx="56.259" cy="31.216" rx="0.241" ry="0.268">
           <title>Highlight</title>
         </ellipse>
       </g>
@@ -329,13 +329,13 @@
         <title>Arm</title>
       </path>
     </g>
-    <use href="#paw_print" width="7" height="6.5" transform="matrix(-1.305147, -0.580868, -0.891781, 1.166777, 15.695211, 68.241423)" style="transform-origin: 3.5px 3.25px; fill: url(&quot;#bg_accent_dark&quot;);">
+    <use href="#paw_print" width="7" height="6.5" transform="matrix(-1.3051469326019287, -0.5808680057525635, -0.8917809724807739, 1.1667770147323608, 15.695211133392874, 68.24142335561136)" style="transform-origin: 3.5px 3.25px; fill: url(&quot;#bg_accent_dark&quot;);">
       <title>Paw</title>
     </use>
-    <use href="#paw_print" width="7" height="6.5" transform="matrix(-1.428406, -0.021729, -0.021731, 1.428412, 7.516838, 79.711028)" style="transform-origin: 3.5px 3.25px; fill: url(&quot;#bg_accent_dark&quot;);">
+    <use href="#paw_print" width="7" height="6.5" transform="matrix(-1.428406000137329, -0.02172900177538395, -0.021731002256274223, 1.4284119606018066, 7.516837941006024, 79.71102764528061)" style="transform-origin: 3.5px 3.25px; fill: url(&quot;#bg_accent_dark&quot;);">
       <title>Paw</title>
     </use>
-    <use href="#paw_print" width="7" height="6.5" transform="matrix(-1.420606, 0.150652, 0.150649, 1.420612, 10.700557, 95.712652)" style="transform-origin: 3.5px 3.25px; fill: url(&quot;#bg_accent_dark&quot;);">
+    <use href="#paw_print" width="7" height="6.5" transform="matrix(-1.420606017112732, 0.1506519913673401, 0.15064899623394012, 1.420612096786499, 10.700556566126707, 95.71265242377585)" style="transform-origin: 3.5px 3.25px; fill: url(&quot;#bg_accent_dark&quot;);">
       <title>Paw</title>
     </use>
   </svg>

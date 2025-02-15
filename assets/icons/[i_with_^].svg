@@ -101,7 +101,7 @@
     <text style="font-weight: 400; font-size: 40px; font-family: &quot;Open Gorton&quot;; fill: url(&quot;#fg_main&quot;); white-space: pre;" x="50" y="64.08" text-anchor="middle" xml:space="preserve"><tspan>I</tspan></text>
     <g>
       <title>Corner</title>
-      <text style="fill: url(&quot;#dim&quot;); font-family: &quot;Open Gorton&quot;; font-size: 20px; font-weight: 700; stroke: url(&quot;#dim&quot;); stroke-width: 0.7px; text-anchor: middle; white-space: pre;" x="72.136" y="38.2073"><title>Symbol</title>^</text>
+      <text style="fill: url(&quot;#dim&quot;); font-family: &quot;Open Gorton&quot;; font-size: 20px; font-weight: 700; stroke: url(&quot;#dim&quot;); stroke-width: 1px; text-anchor: middle; white-space: pre;" x="72.136" y="38.2073"><title>Symbol</title>^</text>
     </g>
   </svg>
   <path d="M 50 -40 C 50 -45.5 45.5 -50 40 -50 L -40 -50 C -45.5 -50 -50 -45.5 -50 -40 L -50 40 C -50 45.5 -45.5 50 -40 50 L 40 50 C 45.5 50 50 45.5 50 40 L 50 -40 Z" transform="translate(50, 50) scale(0.6590038314000001)" stroke="black" stroke-opacity="0.5" fill="none" inkscape:label="Outline">

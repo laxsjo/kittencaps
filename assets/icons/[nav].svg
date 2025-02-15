@@ -84,8 +84,9 @@
     <bx:guide x="46.3621" y="68.5155" angle="90"/>
     <symbol id="symbol-0" viewBox="-14 -17 28 34" bx:pinned="true">
       <title>Icon</title>
-      <path d="M 0 9 L -12 15 L 0 -15" style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 3px; stroke: url(&quot;#bg_accent&quot;); fill: url(&quot;#bg_accent&quot;);"/>
-      <path d="M 0 9 L 12 15 L 0 -15" style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 3px; stroke: url(&quot;#bg_accent&quot;); fill: url(&quot;#bg_accent_dark&quot;);"/>
+      <path d="M 0 9 L -12 15 L 0 -15 L 12 15 L 0 9 Z" style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 3px; stroke: url(&quot;#bg_accent&quot;); fill: url(&quot;#bg_accent&quot;);"/>
+      <path d="M 0.75 -7.0716 L 7.7412 10.3617 L 0.75 6.8562 Z" style="stroke-linecap: round; stroke-linejoin: round; stroke: url(&quot;#bg_accent_dark&quot;); fill: url(&quot;#bg_accent_dark&quot;); stroke-width: 1.5px;"/>
+      <bx:guide x="0" y="0" angle="0"/>
     </symbol>
     <symbol id="paw_print" viewBox="0 0 7 6.5" bx:pinned="true">
       <title>Paw Print</title>
@@ -108,7 +109,7 @@
     <title>BG</title>
   </rect>
   <svg id="icon" viewBox="0 0 100 150" width="100" height="150" style="overflow: visible;">
-    <use href="#symbol-0" width="24" height="30" transform="matrix(0.8249577283859253, 0.8249569535255432, -0.7542477250099182, 0.7542469501495361, 37.99999551433864, 26.999995708565113)" style="transform-box: fill-box; transform-origin: 50% 50%; fill: url(&quot;#bg_accent_lighter&quot;);">
+    <use href="#symbol-0" width="24" height="30" transform="matrix(0.824957549571991, 0.8249569535255432, -0.7542475461959839, 0.7542469501495361, 37.99999551433864, 26.999995708565113)" style="transform-box: fill-box; transform-origin: 50% 50%; fill: url(&quot;#bg_accent_lighter&quot;);">
       <title>Icon</title>
     </use>
     <text style="fill: url(&quot;#bg_accent&quot;); font-family: &quot;Open Gorton&quot;; font-size: 17px; font-weight: 700; text-anchor: middle; white-space: pre;" xml:space="preserve" x="50" y="84.984">Nav</text>
@@ -121,19 +122,31 @@
       <path style="fill: none; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px; stroke: url(&quot;#accent_sec_dark&quot;); visibility: hidden;" d="M 60.4098 150 C 60.4098 150 80.4098 150 90.4098 150 C 96.4098 150 102.4098 144 102.4098 138 C 102.4098 128 102.4098 108 102.4098 108" transform="matrix(-1, 0, 0, -1, 160.409794297851, 257.999990999999)">
         <title>Outline</title>
       </path>
-      <line style="fill: none; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px; stroke: url(&quot;#accent_sec&quot;);" x1="74.8" y1="118.2" x2="74.8" y2="123.6"/>
-      <path d="M 66.9 117.9 L 72.1 120.9 L 66.9 123.9 L 66.9 117.9 Z" style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 3.4px; fill: none; stroke: url(&quot;#bg_focus&quot;);">
-        <title>Cover</title>
-      </path>
-      <path d="M 66.9 117.9 L 72.1 120.9 L 66.9 123.9 L 66.9 117.9 Z" style="stroke-linecap: round; stroke-linejoin: round; stroke: url(&quot;#accent_sec&quot;); fill: url(&quot;#accent_sec&quot;); stroke-width: 1.4px;">
-        <title>Play Triangle</title>
-      </path>
-      <path d="M 60.9 117.9 L 66.1 120.9 L 60.9 123.9 L 60.9 117.9 Z" style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 3.4px; fill: none; stroke: url(&quot;#bg_focus&quot;);">
-        <title>Cover</title>
-      </path>
-      <path d="M 60.9 117.9 L 66.1 120.9 L 60.9 123.9 L 60.9 117.9 Z" style="stroke-linecap: round; stroke-linejoin: round; stroke: url(&quot;#accent_sec&quot;); fill: url(&quot;#accent_sec&quot;); stroke-width: 1.4px;">
-        <title>Play Triangle</title>
-      </path>
+      <g style="">
+        <title>Icon</title>
+        <line style="fill: none; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px; stroke: url(&quot;#accent_sec&quot;);" x1="74.8" y1="118.2" x2="74.8" y2="123.6"/>
+        <path d="M 66.4 117.9 L 71.6 120.9 L 66.4 123.9 L 66.4 117.9 Z" style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 3.4px; fill: none; stroke: url(&quot;#bg_focus&quot;); visibility: hidden; pointer-events: none;">
+          <title>Cover Old</title>
+        </path>
+        <path d="M 66.7498 117.294 L 71.9498 120.294 C 72.1665 120.419 72.3 120.65 72.3 120.9 C 72.3 121.15 72.1665 121.381 71.9498 121.506 L 66.7498 124.506 C 66.5332 124.631 66.2664 124.631 66.0499 124.506 C 65.8334 124.381 65.7 124.15 65.7 123.9 L 65.7 117.9 C 65.7 117.65 65.8334 117.419 66.0499 117.294 C 66.2664 117.169 66.5332 117.169 66.7498 117.294 Z" style="fill: none; stroke: url(&quot;#bg_focus&quot;); stroke-width: 3px;">
+          <title>Cover</title>
+        </path>
+        <path d="M 66.4 117.9 L 71.6 120.9 L 66.4 123.9 L 66.4 117.9 Z" style="stroke-linecap: round; stroke-linejoin: round; stroke: url(&quot;#accent_sec&quot;); fill: url(&quot;#accent_sec&quot;); stroke-width: 1.4px;">
+          <title>Play Triangle</title>
+        </path>
+        <path d="M 60.4 117.9 L 65.6 120.9 L 60.4 123.9 L 60.4 117.9 Z" style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 3.4px; fill: none; stroke: url(&quot;#bg_focus&quot;); pointer-events: none; visibility: hidden;">
+          <title>Cover Old</title>
+        </path>
+        <path d="M 60.7498 117.294 L 65.9498 120.294 C 66.1665 120.419 66.3 120.65 66.3 120.9 C 66.3 121.15 66.1665 121.381 65.9498 121.506 L 60.7498 124.506 C 60.5332 124.631 60.2664 124.631 60.0499 124.506 C 59.8334 124.381 59.7 124.15 59.7 123.9 L 59.7 117.9 C 59.7 117.65 59.8334 117.419 60.0499 117.294 C 60.2664 117.169 60.5332 117.169 60.7498 117.294 Z" style="fill: none; stroke: url(&quot;#bg_focus&quot;); stroke-width: 3px;">
+          <title>Cover</title>
+        </path>
+        <path d="M 60.4 117.9 L 65.6 120.9 L 60.4 123.9 L 60.4 117.9 Z" style="stroke-linecap: round; stroke-linejoin: round; stroke: url(&quot;#accent_sec&quot;); fill: url(&quot;#accent_sec&quot;); stroke-width: 1.4px;">
+          <title>Play Triangle</title>
+        </path>
+        <rect x="59.7" y="117.2" width="16.1" height="7.3997" style="fill: none; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px; vector-effect: non-scaling-stroke; stroke: rgb(237, 52, 52); pointer-events: none; visibility: hidden;">
+          <title>Bounds</title>
+        </rect>
+      </g>
     </g>
   </svg>
   <path d="M87.5-40c0-5.5-4.5-10-10-10h-155c-5.5,0-10,4.5-10,10v80c0,5.5,4.5,10,10,10h155   c5.5,0,10-4.5,10-10V-40z" transform="translate(50, 75) rotate(90) scale(0.6666666666666665)" stroke="black" stroke-opacity="0.5" fill="none" inkscape:label="Outline">

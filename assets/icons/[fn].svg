@@ -88,11 +88,6 @@
     <linearGradient x1="0" x2="0" y1="0" y2="1" id="gradient-1">
       <stop offset="0" style="stop-color: rgb(222, 224, 237);"/>
     </linearGradient>
-    <clipPath id="clip-0">
-      <path style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px; fill: url(&quot;#accent_sec&quot;);" d="M 5.5 4.5 H 8.5 V 6.5 A 2 2 0 0 1 6.5 8.5 H 4.5 V 5.5 A 1 1 0 0 1 5.5 4.5 Z" bx:shape="rect 4.5 4.5 4 4 1 0 2 0 1@016dacb0">
-        <title>Accent</title>
-      </path>
-    </clipPath>
   </defs>
   <style type="text/css" id="font_style">
     @font-face {
@@ -140,18 +135,18 @@
     </g>
     <g style="" transform="matrix(1, 0, 0, 1, 9.918955, -0.489979)">
       <title>Definition</title>
-      <text style="fill: url(&quot;#bg_accent_dark&quot;); font-family: &quot;Open Gorton&quot;; font-size: 14px; font-weight: 700; white-space: pre;" transform="matrix(1, 0, 0, 1, 0.133846, -3.142468)"><title>F</title><tspan x="23.0472" y="37.8078">F</tspan><tspan x="23.0472" dy="1em">​</tspan></text>
-      <g transform="matrix(1, 0, 0, 1, 0, -2.252205)">
+      <text style="fill: url(&quot;#bg_accent_dark&quot;); font-family: &quot;Open Gorton&quot;; font-size: 14px; font-weight: 700; white-space: pre;" transform="matrix(1, 0, 0, 1, -0.613414, -3.142468)"><title>F</title><tspan x="23.0472" y="37.8078">F</tspan><tspan x="23.0472" dy="1em">​</tspan></text>
+      <g transform="matrix(1, 0, 0, 1, -0.044649, -2.252205)">
         <title>Colon</title>
-        <ellipse style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px; fill: url(&quot;#bg_accent_dark&quot;);" cx="33.1871" cy="29.887" rx="1" ry="1"/>
-        <ellipse style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px; fill: url(&quot;#bg_accent_dark&quot;);" cx="33.1871" cy="34.522" rx="1" ry="1"/>
+        <ellipse style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px; fill: url(&quot;#bg_accent_dark&quot;);" cx="33.1871" cy="29.887" rx="1.1" ry="1.1"/>
+        <ellipse style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px; fill: url(&quot;#bg_accent_dark&quot;);" cx="33.1871" cy="34.522" rx="1.1" ry="1.1"/>
       </g>
-      <g transform="matrix(1, 0, 0, 1, 3.1549, -2.252205)">
+      <g transform="matrix(1, 0, 0, 1, 3.110251, -2.252205)">
         <title>Colon</title>
-        <ellipse style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px; fill: url(&quot;#bg_accent_dark&quot;);" cx="33.1871" cy="29.887" rx="1" ry="1"/>
-        <ellipse style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px; fill: url(&quot;#bg_accent_dark&quot;);" cx="33.1871" cy="34.522" rx="1" ry="1"/>
+        <ellipse style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px; fill: url(&quot;#bg_accent_dark&quot;);" cx="33.1871" cy="29.887" rx="1.1" ry="1.1"/>
+        <ellipse style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px; fill: url(&quot;#bg_accent_dark&quot;);" cx="33.1871" cy="34.522" rx="1.1" ry="1.1"/>
       </g>
-      <g transform="matrix(-0.8, 0, 0, 0.8, 48.353258, 25.784761)" style="">
+      <g transform="matrix(-0.8, 0, 0, 0.8, 47.605994, 25.784761)" style="">
         <title>Key</title>
         <path d="M 10 5 C 10 9.908 9.9051 10.003 5 9.998 C 0.095 9.995 0 9.908 0 5 C 0 0.09 0.09 0 5 0 C 9.91 0 10 0.09 10 5 Z" style="stroke-linecap: round; stroke-linejoin: round; vector-effect: non-scaling-stroke; stroke-width: 2px; fill: url(&quot;#accent_sec&quot;);">
           <title>BG</title>
@@ -160,12 +155,12 @@
           <title>Accent</title>
         </path>
       </g>
-      <g transform="matrix(1, 0, 0, 1, 0, -2.288297)">
+      <g transform="matrix(1, 0, 0, 1, -0.74726, -2.288297)">
         <title>Arrow</title>
-        <line style="fill: none; stroke-linecap: round; stroke-linejoin: round; stroke: url(&quot;#bg_accent_dark&quot;); stroke-width: 1.4px;" x1="51.3" y1="32" x2="58" y2="32"/>
-        <polyline style="fill: none; stroke-linecap: round; stroke-linejoin: round; stroke: url(&quot;#bg_accent_dark&quot;); stroke-width: 1.4px;" points="56 30 58 32 56.1 34"/>
+        <line style="fill: none; stroke-linecap: round; stroke-linejoin: round; stroke: url(&quot;#bg_accent_dark&quot;); stroke-width: 1.8px;" x1="51.3" y1="32" x2="58" y2="32"/>
+        <polyline style="fill: none; stroke-linecap: round; stroke-linejoin: round; stroke: url(&quot;#bg_accent_dark&quot;); stroke-width: 1.8px;" points="55.6187 29.6187 58 32 55.7378 34.3813"/>
       </g>
-      <path d="M 837.764 262.3674 L 838.2446 264.1835 L 840.1203 264.0794 L 838.5416 265.0977 L 839.2203 266.8494 L 837.764 265.6626 L 836.3077 266.8494 L 836.9864 265.0977 L 835.4077 264.0794 L 837.2834 264.1835 Z" bx:shape="star 837.764 264.845 2.4776 2.4776 0.33 5 1@06cd2d4a" style="stroke-linecap: round; stroke-linejoin: round; transform-box: fill-box; transform-origin: 50% 50%; fill: url(&quot;#accent_sec&quot;); stroke: url(&quot;#accent_sec&quot;);" transform="matrix(1, -0.000014, 0.000013, 1, -774.517512, -234.880789)"/>
+      <path d="M 837.764 262.3674 L 838.2446 264.1835 L 840.1203 264.0794 L 838.5416 265.0977 L 839.2203 266.8494 L 837.764 265.6626 L 836.3077 266.8494 L 836.9864 265.0977 L 835.4077 264.0794 L 837.2834 264.1835 Z" bx:shape="star 837.764 264.845 2.4776 2.4776 0.33 5 1@06cd2d4a" style="stroke-linecap: round; stroke-linejoin: round; transform-box: fill-box; transform-origin: 50% 50%; fill: url(&quot;#accent_sec&quot;); stroke: url(&quot;#accent_sec&quot;); stroke-width: 1.8px;" transform="matrix(1, -0.000014, 0.000013, 1, -774.517512, -234.880789)"/>
     </g>
     <text style="fill: url(&quot;#bg_accent&quot;); font-family: &quot;Open Gorton&quot;; font-size: 17px; font-weight: 700; text-anchor: end; white-space: pre;" x="77" y="75">FN</text>
   </svg>

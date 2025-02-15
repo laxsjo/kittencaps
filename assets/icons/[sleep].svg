@@ -178,8 +178,8 @@
         <path style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 3px; fill: url(&quot;#bg_focus&quot;);" d="M 76.0018 70.5383 C 75.0402 71.6171 72.1072 74.1307 69.5235 71.0197 C 67.2378 74.871 63.5896 73.955 60.8889 72.0739 C 59.4479 73.8646 55.7766 76.3901 51.7774 72.9734 L 60.4249 64.7525 L 76.0018 70.5383 Z"/>
       </g>
     </g>
-    <g style="">
-      <title>Moon</title>
+    <g style="visibility: hidden;">
+      <title>Moon Old</title>
       <g>
         <title>Old</title>
         <path style="stroke-miterlimit: 8; stroke-linejoin: round; stroke-width: 2px; fill: url(&quot;#bg_accent&quot;); visibility: hidden; transform-origin: 1039.26px 434.203px;" d="M 70.1219 51.0719 C 68.3913 65.1655 52.0529 72.1005 40.7128 63.555 C 29.3727 55.0095 31.536 37.3925 44.6067 31.8444 C 48.5986 30.15 53.0598 29.9162 57.207 31.1842 C 47.0347 32.2785 41.8616 43.9742 47.8954 52.2365 C 53.5532 59.9839 65.3048 59.3681 70.1219 51.0719 Z">
@@ -214,6 +214,21 @@
         <title>Blush</title>
       </ellipse>
       <path style="fill: none; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.5px; stroke: url(&quot;#bg_focus&quot;);" d="M 42.061 54.015 C 42.929 54.027 43.629 53.626 43.771 52.939 C 44.56 53.36 45.372 53.159 45.892 52.672">
+        <title>Mouth</title>
+      </path>
+    </g>
+    <g style="">
+      <title>Moon</title>
+      <path style="fill: none; stroke: rgb(0, 0, 0); stroke-opacity: 0.5; visibility: visible; transform-origin: 1039.26px 434.2px;" transform="matrix(-0.607644, 0.794214, -0.794207, -0.607643, -987.164523, -385.032414)" d="M 1037.1 415.7574 A 18.4456 18.4456 0 1 1 1037.1 452.6486 A 26.7461 26.7461 0 0 0 1037.1 415.7574 Z" bx:shape="crescent 1037.1 434.203 18.4456 180 0.7 1@9cc6a5de"/>
+      <path style="transform-origin: 1039.26px 434.2px; fill: url(&quot;#bg_accent&quot;); stroke: url(&quot;#bg_accent&quot;); stroke-width: 2px; stroke-linecap: round; stroke-linejoin: round;" transform="matrix(-0.607644, 0.794214, -0.794207, -0.607643, -987.165726, -385.03199)" d="M 1037.1 415.7574 A 18.4456 18.4456 0 1 1 1037.1 452.6486 A 26.7461 26.7461 0 0 0 1037.1 415.7574 Z" bx:shape="crescent 1037.1 434.203 18.4456 180 0.7 1@9cc6a5de"/>
+      <path style="stroke-width: 2px; stroke-linecap: round; stroke-linejoin: round; fill: url(&quot;#bg_accent_dark&quot;); transform-origin: 1039.26px 434.201px;" transform="matrix(-0.641453, 0.838404, -0.838397, -0.641451, -987.239741, -384.939054)" d="M 1039.1881 415.876 A 18.4456 18.4456 0 0 1 1039.1881 452.53 A 19.5908 19.5908 0 0 0 1039.1881 415.876 Z" bx:shape="crescent 1037.1 434.203 18.4456 167 0.9 1@67914653"/>
+      <path style="fill: none; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.5px; stroke: url(&quot;#bg_focus&quot;);" d="M 43.4502 50.5138 C 43.9043 50.4733 44.5752 50.2929 45.0082 50.0408">
+        <title>Eye</title>
+      </path>
+      <path style="fill: none; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.5px; stroke: url(&quot;#bg_focus&quot;);" d="M 39.3372 51.7778 C 39.7773 51.7664 40.4231 51.6367 40.8952 51.3048">
+        <title>Eye</title>
+      </path>
+      <path style="fill: none; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.5px; stroke: url(&quot;#bg_focus&quot;);" d="M 42.1972 55.4618 C 43.0652 55.4738 43.7652 55.0728 43.9072 54.3858 C 44.6962 54.8068 45.5082 54.6058 46.0282 54.1188">
         <title>Mouth</title>
       </path>
     </g>

@@ -135,12 +135,12 @@
       <stop style="stop-color: oklch(0.834 0.045 342);" />
     </linearGradient>
     <clipPath id="clip-0">
-      <path d="M 61.7101 68.6882 L 59.9087 57.0322 C 59.457 54.1054 58.5748 52.3896 56.6863 51.7487 L 49.262 48.9154 C 48.9458 48.7312 48.5595 48.3751 48.4321 48.1101 C 48.3157 47.8678 48.234 47.4124 48.2142 47.1358 C 48.2339 46.8593 48.3156 46.4756 48.4318 46.2332 C 48.5591 45.9681 48.9451 45.6116 49.2616 45.427 L 56.6709 42.5996 C 58.5593 41.9596 59.4553 40.2474 59.907 37.3206 L 61.7101 25.6547 C 61.7786 25.3375 61.9474 24.9263 62.1248 24.7146 C 62.3265 24.4739 62.8126 24.2484 63.145 24.1737 C 63.1907 24.1705 63.2365 24.1705 63.2822 24.1737 C 63.6146 24.2484 64.1007 24.4739 64.3024 24.7146 C 64.4798 24.9263 64.6486 25.3374 64.7171 25.6547 L 66.5671 37.3043 C 67.0188 40.0608 68.0712 41.9779 69.7834 42.5571 L 77.1652 45.4269 C 77.4817 45.6114 77.8681 45.9681 77.9953 46.2332 C 78.1116 46.4756 78.1933 46.931 78.2129 47.2075 C 78.1932 47.4837 78.1115 47.8673 77.9952 48.1096 C 77.868 48.3744 77.482 48.7308 77.1655 48.9153 L 69.7563 51.7427 C 67.8411 52.4542 66.9183 54.7384 66.5559 57.0219 L 64.717 68.6886 C 64.6486 69.0052 64.4798 69.4159 64.3026 69.6276 C 64.1013 69.868 63.6156 70.0939 63.2831 70.1691 C 63.2368 70.1723 63.1904 70.1723 63.1441 70.1691 C 62.8123 70.0943 62.3267 69.869 62.1249 69.6284 C 61.9475 69.4167 61.7786 69.0055 61.7101 68.6882 Z" style="fill: url(&quot;#bg_accent&quot;);">
+      <path d="M 64.5747 38.6726 L 64.1134 35.6878 C 64.0121 34.9784 63.8647 34.6333 63.441 34.5216 L 61.5388 33.7957 C 61.4088 33.7143 61.2393 33.5637 61.1928 33.4669 C 61.1518 33.3815 61.1214 33.1976 61.1131 33.1029 C 61.1214 33.0083 61.1517 32.8604 61.1927 32.775 C 61.2391 32.6781 61.4081 32.5276 61.5382 32.4461 L 63.4334 31.7228 C 63.857 31.6114 64.0113 31.2684 64.1126 30.5589 L 64.5747 27.5692 C 64.6019 27.4555 64.6689 27.2877 64.735 27.2089 C 64.8131 27.1156 65.028 27.0191 65.166 26.9836 C 65.1892 26.982 65.2124 26.982 65.2355 26.9836 C 65.3735 27.0191 65.5884 27.1155 65.6667 27.2088 C 65.7327 27.2876 65.7998 27.4554 65.827 27.5691 L 66.2883 30.5538 C 66.3896 31.2633 66.5371 31.6084 66.9606 31.7199 L 68.8632 32.4459 C 68.9931 32.5274 69.1625 32.6781 69.209 32.7749 C 69.2499 32.8603 69.2803 33.0442 69.2886 33.139 C 69.2803 33.2336 69.2614 33.3873 69.2204 33.4726 C 69.1739 33.5693 69.0107 33.7255 68.8808 33.8069 L 66.9855 34.5359 C 66.562 34.6473 66.4334 35.0947 66.318 35.6827 L 65.8501 38.6785 C 65.8228 38.792 65.7327 38.9539 65.6667 39.0326 C 65.5887 39.1258 65.3738 39.2224 65.2355 39.258 C 65.2124 39.2596 65.1892 39.2596 65.166 39.258 C 65.0282 39.2226 64.8133 39.1262 64.7351 39.0329 C 64.669 38.9541 64.602 38.7863 64.5747 38.6726 Z" style="fill: url(&quot;#bg_accent&quot;);">
         <title>Clip</title>
       </path>
     </clipPath>
     <clipPath id="clip-1">
-      <path d="M 61.7101 68.6882 L 59.9087 57.0322 C 59.457 54.1054 58.5748 52.3896 56.6863 51.7487 L 49.262 48.9154 C 48.9458 48.7312 48.5595 48.3751 48.4321 48.1101 C 48.3157 47.8678 48.234 47.4124 48.2142 47.1358 C 48.2339 46.8593 48.3156 46.4756 48.4318 46.2332 C 48.5591 45.9681 48.9451 45.6116 49.2616 45.427 L 56.6709 42.5996 C 58.5593 41.9596 59.4553 40.2474 59.907 37.3206 L 61.7101 25.6547 C 61.7786 25.3375 61.9474 24.9263 62.1248 24.7146 C 62.3265 24.4739 62.8126 24.2484 63.145 24.1737 C 63.1907 24.1705 63.2365 24.1705 63.2822 24.1737 C 63.6146 24.2484 64.1007 24.4739 64.3024 24.7146 C 64.4798 24.9263 64.6486 25.3374 64.7171 25.6547 L 66.5671 37.3043 C 67.0188 40.0608 68.0712 41.9779 69.7834 42.5571 L 77.1652 45.4269 C 77.4817 45.6114 77.8681 45.9681 77.9953 46.2332 C 78.1116 46.4756 78.1933 46.931 78.2129 47.2075 C 78.1932 47.4837 78.1115 47.8673 77.9952 48.1096 C 77.868 48.3744 77.482 48.7308 77.1655 48.9153 L 69.7563 51.7427 C 67.8411 52.4542 66.9183 54.7384 66.5559 57.0219 L 64.717 68.6886 C 64.6486 69.0052 64.4798 69.4159 64.3026 69.6276 C 64.1013 69.868 63.6156 70.0939 63.2831 70.1691 C 63.2368 70.1723 63.1904 70.1723 63.1441 70.1691 C 62.8123 70.0943 62.3267 69.869 62.1249 69.6284 C 61.9475 69.4167 61.7786 69.0055 61.7101 68.6882 Z" style="fill: url(&quot;#bg_accent&quot;);">
+      <path d="M 64.8155 38.6354 L 64.3538 35.6481 C 64.2381 34.8979 64.012 34.4582 63.528 34.2939 L 61.6252 33.5678 C 61.5442 33.5206 61.4452 33.4293 61.4126 33.3614 C 61.3827 33.2993 61.3618 33.1826 61.3567 33.1117 C 61.3618 33.0408 61.3827 32.9425 61.4125 32.8804 C 61.4451 32.8124 61.544 32.7211 61.6251 32.6738 L 63.524 31.9491 C 64.008 31.7851 64.2376 31.3463 64.3534 30.5962 L 64.8155 27.6063 C 64.8331 27.525 64.8763 27.4196 64.9218 27.3654 C 64.9735 27.3037 65.0981 27.2459 65.1833 27.2268 C 65.195 27.2259 65.2067 27.2259 65.2184 27.2268 C 65.3036 27.2459 65.4282 27.3037 65.4799 27.3654 C 65.5254 27.4196 65.5686 27.525 65.5862 27.6063 L 66.0603 30.592 C 66.1761 31.2985 66.4458 31.7898 66.8846 31.9382 L 68.7764 32.6737 C 68.8576 32.721 68.9566 32.8124 68.9892 32.8804 C 69.019 32.9425 69.0399 33.0592 69.045 33.1301 C 69.0399 33.2009 69.019 33.2992 68.9892 33.3613 C 68.9566 33.4291 68.8576 33.5205 68.7765 33.5678 L 66.8776 34.2924 C 66.3868 34.4748 66.1503 35.0602 66.0574 35.6454 L 65.5861 38.6355 C 65.5686 38.7166 65.5254 38.8219 65.4799 38.8761 C 65.4284 38.9377 65.3039 38.9956 65.2187 39.0149 C 65.2068 39.0157 65.1949 39.0157 65.183 39.0149 C 65.098 38.9957 64.9735 38.938 64.9218 38.8763 C 64.8764 38.8221 64.8331 38.7167 64.8155 38.6354 Z" style="fill: url(&quot;#bg_accent&quot;);">
         <title>Clip</title>
       </path>
     </clipPath>
@@ -215,7 +215,7 @@
       <ellipse style="stroke-width:0.5px;fill:url(&quot;#fg_main&quot;)" cx="56.522" cy="33.941" rx="0.934" ry="1.523" transform="matrix(0.9995470046997071, 0.030088001862168305, -0.030087001621723175, 0.9995470046997069, -54.495808913947414, -34.075845433619804)">
         <title>Pupil</title>
       </ellipse>
-      <ellipse style="fill:url(&quot;#bg_main&quot;)" cx="56.973" cy="33.193" rx="0.247" ry="0.275" transform="matrix(0.999547, 0.030088, -0.030087, 0.999547, -54.399759, -34.13989)">
+      <ellipse style="fill:url(&quot;#bg_main&quot;);visibility:hidden" cx="56.973" cy="33.193" rx="0.247" ry="0.275" transform="matrix(0.999547, 0.030088, -0.030087, 0.999547, -54.399759, -34.13989)">
         <title>Highlight</title>
       </ellipse>
     </symbol>
@@ -237,7 +237,7 @@
         <use href="#paw_print-2" width="7" height="6.5" transform="matrix(-1.0293519496917725, -1.0977129936218262, -1.5680749416351318, 0.5277490019798279, 39.843188535992695, 66.57584263550872)" style="transform-origin:3.5px 3.25px;fill:rgb(255, 255, 255)">
           <title>Paw</title>
         </use>
-        <use href="#paw_print-2" width="7" height="6.5" transform="matrix(-0.8998729586601257, -1.2061389684677124, -1.617332935333252, 0.3487239480018616, 21.992290108509366, 72.96128716387452)" style="transform-origin:3.5px 3.25px;fill:rgb(255, 255, 255)">
+        <use href="#paw_print-2" width="7" height="6.5" transform="matrix(-0.8998729586601257, -1.2061389684677124, -1.617332935333252, 0.3487239181995392, 21.992290108509366, 72.96128716387452)" style="transform-origin:3.5px 3.25px;fill:rgb(255, 255, 255)">
           <title>Paw</title>
         </use>
       </g>
@@ -256,8 +256,9 @@
     </symbol>
     <symbol id="symbol-0" viewBox="-14 -17 28 34" bx:pinned="true">
       <title>Icon</title>
-      <path d="M 0 9 L -12 15 L 0 -15" style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 3px; stroke: url(&quot;#bg_accent&quot;); fill: url(&quot;#bg_accent&quot;);" />
-      <path d="M 0 9 L 12 15 L 0 -15" style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 3px; stroke: url(&quot;#bg_accent&quot;); fill: url(&quot;#bg_accent_dark&quot;);" />
+      <path d="M 0 9 L -12 15 L 0 -15 L 12 15 L 0 9 Z" style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 3px; stroke: url(&quot;#bg_accent&quot;); fill: url(&quot;#bg_accent&quot;);" />
+      <path d="M 0.75 -7.0716 L 7.7412 10.3617 L 0.75 6.8562 Z" style="stroke-linecap: round; stroke-linejoin: round; stroke: url(&quot;#bg_accent_dark&quot;); fill: url(&quot;#bg_accent_dark&quot;); stroke-width: 1.5px;" />
+      <bx:guide x="0" y="0" angle="0" />
     </symbol>
   </defs>
   <style type="text/css">
@@ -371,8 +372,8 @@
               <path style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 3px; fill: url(&quot;#bg_focus&quot;);" d="M 76.0018 70.5383 C 75.0402 71.6171 72.1072 74.1307 69.5235 71.0197 C 67.2378 74.871 63.5896 73.955 60.8889 72.0739 C 59.4479 73.8646 55.7766 76.3901 51.7774 72.9734 L 60.4249 64.7525 L 76.0018 70.5383 Z" />
             </g>
           </g>
-          <g style="">
-            <title>Moon</title>
+          <g style="visibility: hidden;">
+            <title>Moon Old</title>
             <g>
               <title>Old</title>
               <path style="stroke-miterlimit: 8; stroke-linejoin: round; stroke-width: 2px; fill: url(&quot;#bg_accent&quot;); visibility: hidden; transform-origin: 1039.26px 434.203px;" d="M 70.1219 51.0719 C 68.3913 65.1655 52.0529 72.1005 40.7128 63.555 C 29.3727 55.0095 31.536 37.3925 44.6067 31.8444 C 48.5986 30.15 53.0598 29.9162 57.207 31.1842 C 47.0347 32.2785 41.8616 43.9742 47.8954 52.2365 C 53.5532 59.9839 65.3048 59.3681 70.1219 51.0719 Z">
@@ -407,6 +408,21 @@
               <title>Blush</title>
             </ellipse>
             <path style="fill: none; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.5px; stroke: url(&quot;#bg_focus&quot;);" d="M 42.061 54.015 C 42.929 54.027 43.629 53.626 43.771 52.939 C 44.56 53.36 45.372 53.159 45.892 52.672">
+              <title>Mouth</title>
+            </path>
+          </g>
+          <g style="">
+            <title>Moon</title>
+            <path style="fill: none; stroke: rgb(0, 0, 0); stroke-opacity: 0.5; visibility: visible; transform-origin: 1039.26px 434.2px;" transform="matrix(-0.607644, 0.794214, -0.794207, -0.607643, -987.164523, -385.032414)" d="M 1037.1 415.7574 A 18.4456 18.4456 0 1 1 1037.1 452.6486 A 26.7461 26.7461 0 0 0 1037.1 415.7574 Z" bx:shape="crescent 1037.1 434.203 18.4456 180 0.7 1@9cc6a5de" />
+            <path style="transform-origin: 1039.26px 434.2px; fill: url(&quot;#bg_accent&quot;); stroke: url(&quot;#bg_accent&quot;); stroke-width: 2px; stroke-linecap: round; stroke-linejoin: round;" transform="matrix(-0.607644, 0.794214, -0.794207, -0.607643, -987.165726, -385.03199)" d="M 1037.1 415.7574 A 18.4456 18.4456 0 1 1 1037.1 452.6486 A 26.7461 26.7461 0 0 0 1037.1 415.7574 Z" bx:shape="crescent 1037.1 434.203 18.4456 180 0.7 1@9cc6a5de" />
+            <path style="stroke-width: 2px; stroke-linecap: round; stroke-linejoin: round; fill: url(&quot;#bg_accent_dark&quot;); transform-origin: 1039.26px 434.201px;" transform="matrix(-0.641453, 0.838404, -0.838397, -0.641451, -987.239741, -384.939054)" d="M 1039.1881 415.876 A 18.4456 18.4456 0 0 1 1039.1881 452.53 A 19.5908 19.5908 0 0 0 1039.1881 415.876 Z" bx:shape="crescent 1037.1 434.203 18.4456 167 0.9 1@67914653" />
+            <path style="fill: none; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.5px; stroke: url(&quot;#bg_focus&quot;);" d="M 43.4502 50.5138 C 43.9043 50.4733 44.5752 50.2929 45.0082 50.0408">
+              <title>Eye</title>
+            </path>
+            <path style="fill: none; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.5px; stroke: url(&quot;#bg_focus&quot;);" d="M 39.3372 51.7778 C 39.7773 51.7664 40.4231 51.6367 40.8952 51.3048">
+              <title>Eye</title>
+            </path>
+            <path style="fill: none; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.5px; stroke: url(&quot;#bg_focus&quot;);" d="M 42.1972 55.4618 C 43.0652 55.4738 43.7652 55.0728 43.9072 54.3858 C 44.6962 54.8068 45.5082 54.6058 46.0282 54.1188">
               <title>Mouth</title>
             </path>
           </g>
@@ -514,7 +530,7 @@
       <rect class="surface" width="300" height="300" />
       <g transform="">
         <svg id="icon_gaming" viewBox="0 0 100 100" width="300.0" height="300.0" style="overflow:visible;" x="0" y="0">
-          <path style="fill: url(&quot;#bg_main&quot;); stroke: url(&quot;#fg_main&quot;); stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px;" d="M 31.143 41.822 C 35.034 37.293 41.261 33.376 47.223 32.685 C 48.52 32.535 50.007 26.412 51.313 26.389 C 52.61 26.366 55.425 31.659 56.696 31.963 C 61.708 33.166 63.675 33.846 67.907 36.923 C 68.739 37.527 74.21 34.264 75.036 35.079 C 76.791 36.813 74.735 46.176 75.382 47.37 C 77.571 51.402 78.088 55.736 78.094 58.952 C 78.094 58.952 31.203 41.67 31.143 41.822 Z">
+          <path style="fill: url(&quot;#bg_main&quot;); stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px; stroke: url(&quot;#bg_main&quot;);" d="M 31.143 41.822 C 35.034 37.293 41.261 33.376 47.223 32.685 C 48.52 32.535 50.007 26.412 51.313 26.389 C 52.61 26.366 55.425 31.659 56.696 31.963 C 61.708 33.166 63.675 33.846 67.907 36.923 C 68.739 37.527 74.21 34.264 75.036 35.079 C 76.791 36.813 74.735 46.176 75.382 47.37 C 77.571 51.402 78.088 55.736 78.094 58.952 C 78.094 58.952 31.203 41.67 31.143 41.822 Z">
             <title>Body</title>
           </path>
           <path style="stroke: url(&quot;#fg_main&quot;); fill: url(&quot;#bg_main&quot;); stroke-linecap: round; transform-box: fill-box; transform-origin: 50% 50%; stroke-width: 2px;" d="M 34.556 32.299 C 30.942 34.868 28.204 37.302 29.518 40.113 C 31.195 43.7 37.473 41.781 43.127 39.512" transform="matrix(-0.308585, 0.951197, -0.951197, -0.308585, -0.000016, 0.00001)">
@@ -599,6 +615,9 @@
               <title>Outline</title>
             </path>
           </g>
+          <path d="M 28.5617 29.4563 C 28.5617 29.4563 29.6404 28.9605 30.34 27.6685 C 31.0307 26.393 30.9171 25.5052 29.8243 25.4209 C 28.8042 25.3422 28.1319 27.4606 28.1319 27.4606 C 28.1319 27.4606 26.7034 25.8142 25.6338 26.4748 C 24.8869 26.9361 24.9886 27.7536 26.103 28.454 C 27.5109 29.3388 28.5617 29.4563 28.5617 29.4563 Z" style="stroke-linecap: round; stroke-linejoin: round; fill: url(&quot;#bg_accent&quot;); stroke: url(&quot;#bg_accent&quot;); stroke-width: 2px;">
+            <title>Heart</title>
+          </path>
         </svg>
       </g>
     </g>
@@ -737,30 +756,21 @@
               <title>Mouth</title>
             </path>
           </g>
-          <g style="" transform="matrix(0.692766, 0, 0, 0.692766, 25.696191, 9.434365)">
+          <path style="stroke-linejoin: round; fill: url(&quot;#bg_accent&quot;); stroke-linecap: round; stroke: url(&quot;#bg_accent&quot;); stroke-width: 0.5px;" d="M 57.5569 29.5595 L 57.3223 28.0417 C 57.2726 27.6859 57.2073 27.5221 56.9992 27.4717 L 56.0316 27.1024 C 55.9316 27.0677 55.8663 26.9761 55.84 26.9226 C 55.8167 26.8753 55.7958 26.831 55.7958 26.7314 C 55.7958 26.6317 55.8166 26.5884 55.8396 26.5413 C 55.8653 26.4884 55.9327 26.3965 56.0315 26.3602 L 56.9949 25.9926 C 57.2029 25.9423 57.2721 25.7796 57.3219 25.4238 L 57.5569 23.9031 C 57.565 23.8224 57.6113 23.7456 57.6468 23.7036 C 57.6899 23.6526 57.7698 23.5794 57.9061 23.5794 C 58.0424 23.5794 58.123 23.6537 58.1665 23.7065 C 58.2025 23.7502 58.2464 23.8223 58.253 23.9032 L 58.4875 25.4209 C 58.5372 25.7767 58.6026 25.9406 58.8106 25.9908 L 59.7783 26.3602 C 59.8718 26.3988 59.9391 26.4774 59.9681 26.5342 C 59.9926 26.5824 60.014 26.6486 60.014 26.7314 C 60.014 26.8141 59.994 26.8752 59.9699 26.9225 C 59.9429 26.9755 59.8654 27.0707 59.7784 27.1024 L 58.815 27.47 C 58.607 27.5202 58.5377 27.683 58.488 28.0388 L 58.253 29.5595 C 58.2414 29.6256 58.2025 29.7123 58.1665 29.756 C 58.1232 29.8088 58.0281 29.8832 57.9049 29.8832 C 57.7818 29.8832 57.6874 29.8092 57.644 29.7567 C 57.6081 29.7133 57.568 29.6234 57.5569 29.5595 Z">
             <title>Star</title>
-            <path style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px; stroke-opacity: 0; fill: url(&quot;#bg_accent&quot;);" d="M 63.2136 69.1715 C 63.4433 69.1555 63.6718 68.9035 63.7288 68.5355 L 65.5319 56.8692 C 66.043 53.7755 67.248 51.6702 69.3844 50.8144 L 76.809 47.981 C 77.0417 47.8923 77.2008 47.5279 77.2136 47.1716 C 77.2008 46.8145 77.0417 46.45 76.809 46.3613 L 69.3844 43.5279 C 67.248 42.6721 66.043 40.567 65.5319 37.4734 L 63.7288 25.8074 C 63.6718 25.4384 63.4433 25.1871 63.2136 25.1713 C 62.9839 25.1871 62.7554 25.4384 62.6984 25.8074 L 60.8953 37.4734 C 60.3842 40.567 59.1792 42.6721 57.0428 43.5279 L 49.6182 46.3613 C 49.3855 46.45 49.2264 46.8145 49.2136 47.1716 C 49.2264 47.5287 49.3855 47.8923 49.6182 47.981 L 57.0428 50.8144 C 59.1792 51.671 60.3842 53.7755 60.8953 56.8692 L 62.6984 68.5355 C 62.7554 68.9045 62.9839 69.1555 63.2136 69.1715 Z">
+          </path>
+          <g>
+            <title>Star</title>
+            <path style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px; stroke-opacity: 0; fill: url(&quot;#bg_accent&quot;);" d="M 65.2008 38.7592 C 65.2597 38.7551 65.3183 38.6905 65.3329 38.5962 L 65.795 35.6063 C 65.926 34.8134 66.2348 34.2738 66.7823 34.0545 L 68.6852 33.3283 C 68.7448 33.3056 68.7856 33.2122 68.7889 33.1209 C 68.7856 33.0293 68.7448 32.9359 68.6852 32.9132 L 66.7823 32.187 C 66.2348 31.9677 65.926 31.4282 65.795 30.6353 L 65.3329 27.6455 C 65.3183 27.5509 65.2597 27.4865 65.2008 27.4824 C 65.142 27.4865 65.0834 27.5509 65.0688 27.6455 L 64.6067 30.6353 C 64.4757 31.4282 64.1669 31.9677 63.6193 32.187 L 61.7165 32.9132 C 61.6568 32.9359 61.6161 33.0293 61.6128 33.1209 C 61.6161 33.2124 61.6568 33.3056 61.7165 33.3283 L 63.6193 34.0545 C 64.1669 34.274 64.4757 34.8134 64.6067 35.6063 L 65.0688 38.5962 C 65.0834 38.6908 65.142 38.7551 65.2008 38.7592 Z">
               <title>BG</title>
             </path>
-            <path style="stroke-linecap: round; stroke-linejoin: round; fill: none; stroke-width: 2px; stroke: url(&quot;#bg_accent&quot;);" d="M 63.2136 69.1715 C 63.4433 69.1555 63.6718 68.9035 63.7288 68.5355 L 65.5319 56.8692 C 66.043 53.7755 67.248 51.6702 69.3844 50.8144 L 76.809 47.981 C 77.0417 47.8923 77.2008 47.5279 77.2136 47.1716 C 77.2008 46.8145 77.0417 46.45 76.809 46.3613 L 69.3844 43.5279 C 67.248 42.6721 66.043 40.567 65.5319 37.4734 L 63.7288 25.8074 C 63.6718 25.4384 63.4433 25.1871 63.2136 25.1713 C 62.9839 25.1871 62.7554 25.4384 62.6984 25.8074 L 60.8953 37.4734 C 60.3842 40.567 59.1792 42.6721 57.0428 43.5279 L 49.6182 46.3613 C 49.3855 46.45 49.2264 46.8145 49.2136 47.1716 C 49.2264 47.5287 49.3855 47.8923 49.6182 47.981 L 57.0428 50.8144 C 59.1792 51.671 60.3842 53.7755 60.8953 56.8692 L 62.6984 68.5355 C 62.7554 68.9045 62.9839 69.1555 63.2136 69.1715 Z">
+            <path style="stroke-linecap: round; stroke-linejoin: round; fill: none; stroke: url(&quot;#bg_accent&quot;);" d="M 65.2008 38.7592 C 65.2597 38.7551 65.3183 38.6905 65.3329 38.5962 L 65.795 35.6063 C 65.926 34.8134 66.2348 34.2738 66.7823 34.0545 L 68.6852 33.3283 C 68.7448 33.3056 68.7856 33.2122 68.7889 33.1209 C 68.7856 33.0293 68.7448 32.9359 68.6852 32.9132 L 66.7823 32.187 C 66.2348 31.9677 65.926 31.4282 65.795 30.6353 L 65.3329 27.6455 C 65.3183 27.5509 65.2597 27.4865 65.2008 27.4824 C 65.142 27.4865 65.0834 27.5509 65.0688 27.6455 L 64.6067 30.6353 C 64.4757 31.4282 64.1669 31.9677 63.6193 32.187 L 61.7165 32.9132 C 61.6568 32.9359 61.6161 33.0293 61.6128 33.1209 C 61.6161 33.2124 61.6568 33.3056 61.7165 33.3283 L 63.6193 34.0545 C 64.1669 34.274 64.4757 34.8134 64.6067 35.6063 L 65.0688 38.5962 C 65.0834 38.6908 65.142 38.7551 65.2008 38.7592 Z">
               <title>Outline</title>
             </path>
-            <path style="stroke-linecap: round; stroke-linejoin: round; clip-path: url(&quot;#clip-0&quot;); fill: url(&quot;#bg_accent_dark&quot;); stroke: url(&quot;#bg_accent_dark&quot;);" d="M 77.1068 48.4136 L 69.6078 51.2877 C 67.5502 52.1304 66.5817 53.9177 66.0575 56.8799 L 64.0822 70.4476 C 63.8219 71.2248 63.7317 69.7905 63.6912 65.1884 C 63.6912 65.1884 63.7168 58.7517 64.0708 56.553 C 64.6248 53.1119 66.3981 50.231 68.726 49.2114 C 70.3319 48.508 75.562 47.7188 75.5551 47.7211 C 76.1828 47.6135 78.8733 47.3687 79.1317 47.4639 C 79.685 47.6678 77.3229 48.358 77.1068 48.4136 Z">
+            <path style="stroke-linecap: round; stroke-linejoin: round; fill: url(&quot;#bg_accent_dark&quot;); stroke: url(&quot;#bg_accent_dark&quot;); clip-path: url(&quot;#clip-0&quot;); stroke-width: 0.5px;" d="M 69.1368 33.7728 L 67.1482 34.6679 C 66.6208 34.8839 66.5394 34.9749 66.4051 35.7341 L 66.1413 39.1834 L 65.4734 39.2114 C 65.4067 39.4105 65.3336 38.9178 65.3232 37.7384 C 65.3232 37.7384 65.3298 36.0887 65.4205 35.5252 C 65.5625 34.6433 66.017 33.905 66.6136 33.6436 C 67.0252 33.4634 68.3656 33.2611 68.3638 33.2617 C 68.5247 33.2341 69.2142 33.1714 69.2805 33.1958 C 69.4223 33.248 69.1922 33.7585 69.1368 33.7728 Z">
               <title>Shadow</title>
             </path>
-            <path style="stroke-linecap: round; stroke-linejoin: round; clip-path: url(&quot;#clip-1&quot;); fill: url(&quot;#bg_accent&quot;); stroke: url(&quot;#bg_accent&quot;); visibility: hidden;" d="M 79.592 46.5344 L 69.6078 43.0812 C 67.5502 42.2385 66.5817 40.3699 66.0575 37.4077 L 64.2113 25.5693 C 63.951 24.7924 63.5926 18.9186 63.5521 23.5202 C 63.5521 23.5202 64.1562 36.4779 64.3618 37.4922 C 65.013 40.7056 66.5132 44.2035 68.7987 45.0277 C 70.4126 45.6097 76.044 46.6051 76.044 46.6051 C 76.1823 46.6602 79.592 46.5344 79.592 46.5344 Z">
-              <title>Highlight</title>
-            </path>
-          </g>
-          <g transform="matrix(1, 0, 0, 1, 18.947645, -34.177528)">
-            <title>Star</title>
-            <path style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px; stroke-opacity: 0; fill: url(&quot;#bg_accent&quot;);" d="M 37.1067 66.4684 L 36.5966 63.1676 C 36.4885 62.3938 36.3464 62.0375 35.894 61.9279 L 33.7895 61.1248 C 33.572 61.0493 33.43 60.8501 33.3728 60.7337 C 33.3222 60.6308 33.2768 60.5345 33.2768 60.3178 C 33.2768 60.101 33.3219 60.0069 33.3719 59.9044 C 33.4279 59.7893 33.5744 59.5895 33.7893 59.5105 L 35.8845 58.711 C 36.3368 58.6017 36.4874 58.2479 36.5956 57.4741 L 37.1068 54.1669 C 37.1245 53.9913 37.225 53.8244 37.3023 53.733 C 37.3961 53.622 37.5699 53.4629 37.8663 53.4629 C 38.1627 53.4629 38.3379 53.6244 38.4325 53.7393 C 38.5108 53.8344 38.6063 53.9912 38.6206 54.167 L 39.1307 57.4678 C 39.2388 58.2415 39.381 58.598 39.8333 58.7073 L 41.938 59.5105 C 42.1413 59.5946 42.2876 59.7654 42.3506 59.889 C 42.404 59.9939 42.4505 60.1378 42.4505 60.3178 C 42.4505 60.4977 42.407 60.6306 42.3546 60.7334 C 42.2958 60.8488 42.1274 61.0557 41.9381 61.1247 L 39.8429 61.9242 C 39.3905 62.0334 39.2399 62.3874 39.1317 63.1612 L 38.6206 66.4684 C 38.5954 66.6121 38.5108 66.8007 38.4326 66.8957 C 38.3383 67.0105 38.1315 67.1724 37.8637 67.1724 C 37.5958 67.1724 37.3906 67.0114 37.2962 66.8972 C 37.2181 66.8028 37.1309 66.6073 37.1067 66.4684 Z">
-              <title>BG</title>
-            </path>
-            <path style="stroke-linecap: round; stroke-linejoin: round; fill: url(&quot;#bg_accent_dark&quot;);" d="M 41.9496 61.1155 L 39.8274 61.9294 C 39.2526 62.1495 39.2364 62.5399 39.1317 63.1682 L 38.6022 66.5914 C 38.5356 66.9557 38.2154 67.1724 37.8834 67.1724 C 37.8834 67.1724 37.9071 65.7577 37.9071 65.4207 C 37.9071 65.3356 38.1309 63.3436 38.1892 63.0561 C 38.3738 62.1452 38.8011 61.1619 39.447 60.9227 C 39.9072 60.7522 40.888 60.3118 41.2639 60.3118 C 41.3454 60.3118 42.4509 60.3086 42.4492 60.3121 C 42.4492 60.8522 42.0613 61.0743 41.9496 61.1155 Z">
-              <title>Shadow</title>
-            </path>
-            <path style="stroke-linecap: round; stroke-linejoin: round; fill: url(&quot;#bg_accent&quot;); visibility: hidden;" d="M 41.9496 59.5144 L 39.8274 58.7005 C 39.2526 58.4804 39.2364 58.0899 39.1317 57.4617 L 38.6022 54.0385 C 38.5356 53.6742 38.2154 53.4575 37.8834 53.4575 C 37.8834 53.4575 37.9071 54.8722 37.9071 55.2092 C 37.9071 55.2943 38.1309 57.2863 38.1892 57.5738 C 38.3738 58.4847 38.8011 59.468 39.447 59.7072 C 39.9072 59.8777 40.888 60.3181 41.2639 60.3181 C 41.3454 60.3181 42.4509 60.3213 42.4492 60.3178 C 42.4492 59.7777 42.0613 59.5556 41.9496 59.5144 Z">
+            <path style="stroke-linecap: round; stroke-linejoin: round; clip-path: url(&quot;#clip-1&quot;); fill: url(&quot;#bg_accent&quot;); stroke: url(&quot;#bg_accent&quot;); visibility: hidden;" d="M 69.3984 32.9576 L 66.8396 32.0725 C 66.3122 31.8566 66.064 31.3777 65.9297 30.6185 L 65.4565 27.5844 C 65.3898 27.3853 65.298 25.8799 65.2876 27.0593 C 65.2876 27.0593 65.4424 30.3802 65.4951 30.6401 C 65.662 31.4637 66.0465 32.3602 66.6322 32.5714 C 67.0458 32.7206 68.4891 32.9757 68.4891 32.9757 C 68.5246 32.9898 69.3984 32.9576 69.3984 32.9576 Z">
               <title>Highlight</title>
             </path>
           </g>
@@ -837,8 +847,8 @@
               <path d="m243-334c0.106-1.89 1.03-3.56 2.43-4.74 1.37-1.16 3.21-1.87 5.23-1.87 2.01 0 3.85 0.709 5.22 1.87 1.4 1.18 2.32 2.85 2.43 4.74 0.106 1.94-0.675 3.75-2.04 5.09-1.4 1.36-3.38 2.22-5.61 2.22s-4.22-0.854-5.61-2.22c-1.37-1.34-2.15-3.14-2.04-5.08z" style="fill-rule: nonzero; fill: url(&quot;#bg_focus&quot;);" />
             </g>
             <g transform="matrix(11.1 0 0 11.1 -2215 4153)">
-              <path d="m243-334c0.106-1.89 1.03-3.56 2.43-4.74 1.37-1.16 3.21-1.87 5.23-1.87 2.01 0 3.85 0.709 5.22 1.87 1.4 1.18 2.32 2.85 2.43 4.74 0.106 1.94-0.675 3.75-2.04 5.09-1.4 1.36-3.38 2.22-5.61 2.22s-4.22-0.854-5.61-2.22c-1.37-1.34-2.15-3.14-2.04-5.08z" style="fill-rule: nonzero; fill: url(&quot;#bg_accent&quot;);" />
-              <path d="m231-330c0.013 0.74 0.249 2.18 0.603 3.3 0.744 2.38 2.01 4.58 3.76 6.51 1.8 1.99 4.02 3.59 6.58 4.73 2.69 1.19 5.61 1.8 8.64 1.8 3.03-4e-3 5.95-0.624 8.64-1.83 2.56-1.15 4.78-2.75 6.58-4.75 1.76-1.95 3.02-4.15 3.76-6.53 0.375-1.2 0.612-2.42 0.707-3.64 0.093-1.2 0.054-2.41-0.117-3.62-0.334-2.35-1.15-4.56-2.4-6.56-1.14-1.85-2.62-3.46-4.38-4.82l4e-3 -3e-3 -17.7-13.6c-0.016-0.012-0.029-0.025-0.046-0.036-1.16-0.892-3.12-0.889-4.39 5e-3 -1.29 0.904-1.44 2.4-0.29 3.34l-5e-3 5e-3 7.39 6.01-22.5 0.024h-0.03c-1.86 2e-3 -3.65 1.22-4 2.77-0.364 1.57 0.9 2.88 2.84 2.88l-3e-3 7e-3 11.4-0.022-20.4 15.6c-0.026 0.019-0.054 0.039-0.078 0.058-1.92 1.47-2.54 3.92-1.33 5.46 1.23 1.57 3.84 1.58 5.78 9e-3l11.1-9.1s-0.162 1.23-0.149 1.96zm28.6 4.11c-2.29 2.33-5.5 3.66-8.96 3.66-3.47 6e-3 -6.68-1.3-8.97-3.63-1.12-1.14-1.94-2.44-2.45-3.83-0.497-1.37-0.69-2.82-0.562-4.28 0.121-1.43 0.547-2.8 1.23-4.03 0.668-1.21 1.59-2.31 2.72-3.24 2.23-1.81 5.06-2.8 8.02-2.8 2.97-4e-3 5.8 0.969 8.03 2.78 1.13 0.924 2.05 2.02 2.72 3.23 0.683 1.23 1.11 2.59 1.23 4.03 0.126 1.46-0.067 2.91-0.564 4.28-0.508 1.4-1.33 2.7-2.45 3.84z" style="fill-rule: nonzero; fill: url(&quot;#bg_accent_dark&quot;);" />
+              <path d="m243-334c0.106-1.89 1.03-3.56 2.43-4.74 1.37-1.16 3.21-1.87 5.23-1.87 2.01 0 3.85 0.709 5.22 1.87 1.4 1.18 2.32 2.85 2.43 4.74 0.106 1.94-0.675 3.75-2.04 5.09-1.4 1.36-3.38 2.22-5.61 2.22s-4.22-0.854-5.61-2.22c-1.37-1.34-2.15-3.14-2.04-5.08z" style="fill-rule: nonzero; fill: url(&quot;#bg_accent_dark&quot;);" />
+              <path d="m231-330c0.013 0.74 0.249 2.18 0.603 3.3 0.744 2.38 2.01 4.58 3.76 6.51 1.8 1.99 4.02 3.59 6.58 4.73 2.69 1.19 5.61 1.8 8.64 1.8 3.03-4e-3 5.95-0.624 8.64-1.83 2.56-1.15 4.78-2.75 6.58-4.75 1.76-1.95 3.02-4.15 3.76-6.53 0.375-1.2 0.612-2.42 0.707-3.64 0.093-1.2 0.054-2.41-0.117-3.62-0.334-2.35-1.15-4.56-2.4-6.56-1.14-1.85-2.62-3.46-4.38-4.82l4e-3 -3e-3 -17.7-13.6c-0.016-0.012-0.029-0.025-0.046-0.036-1.16-0.892-3.12-0.889-4.39 5e-3 -1.29 0.904-1.44 2.4-0.29 3.34l-5e-3 5e-3 7.39 6.01-22.5 0.024h-0.03c-1.86 2e-3 -3.65 1.22-4 2.77-0.364 1.57 0.9 2.88 2.84 2.88l-3e-3 7e-3 11.4-0.022-20.4 15.6c-0.026 0.019-0.054 0.039-0.078 0.058-1.92 1.47-2.54 3.92-1.33 5.46 1.23 1.57 3.84 1.58 5.78 9e-3l11.1-9.1s-0.162 1.23-0.149 1.96zm28.6 4.11c-2.29 2.33-5.5 3.66-8.96 3.66-3.47 6e-3 -6.68-1.3-8.97-3.63-1.12-1.14-1.94-2.44-2.45-3.83-0.497-1.37-0.69-2.82-0.562-4.28 0.121-1.43 0.547-2.8 1.23-4.03 0.668-1.21 1.59-2.31 2.72-3.24 2.23-1.81 5.06-2.8 8.02-2.8 2.97-4e-3 5.8 0.969 8.03 2.78 1.13 0.924 2.05 2.02 2.72 3.23 0.683 1.23 1.11 2.59 1.23 4.03 0.126 1.46-0.067 2.91-0.564 4.28-0.508 1.4-1.33 2.7-2.45 3.84z" style="fill-rule: nonzero; fill: url(&quot;#bg_accent&quot;);" />
             </g>
           </g>
           <rect x="24.2493" y="45.5579" width="37.3014" height="29.9807" style="fill: none; stroke: url(&quot;#gradient-0&quot;); stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px; vector-effect: non-scaling-stroke; visibility: hidden;">
@@ -1206,13 +1216,13 @@
     <g id="keycap-unshaded-34">
       <rect class="surface" width="300" height="300" />
       <g transform="">
-        <svg id="icon_play" viewBox="0 0 100 100" width="300.0" height="300.0" style="overflow:visible" transform="matrix(1, 0, 0, 1, 0.29027465163380306, -0.5805493032676043)" x="0" y="0">
+        <svg id="icon_play" viewBox="0 0 100 100" width="300.0" height="300.0" style="overflow:visible" x="0" y="0">
           <rect width="100" height="100" style="stroke-linecap:round;stroke-linejoin:bevel;stroke-width:10px;fill:url(#pattern-0-0-0)">
             <title>Pattern</title>
           </rect>
           <g style="">
             <title>Record</title>
-            <ellipse style="stroke-linecap:round;stroke-linejoin:round;fill:url(&quot;#fg_main&quot;);paint-order:stroke;stroke:url(&quot;#bg_focus&quot;);stroke-width:6px" cx="50" cy="50" rx="27" ry="27" />
+            <ellipse style="stroke-linecap:round;stroke-linejoin:round;fill:url(&quot;#fg_main&quot;);paint-order:stroke;stroke:url(&quot;#bg_focus&quot;);stroke-width:4px" cx="50" cy="50" rx="27" ry="27" />
             <path style="stroke-linecap:round;stroke-linejoin:round;stroke-width:10px;fill:url(&quot;#bg_accent_dark&quot;)" transform="matrix(0.148844, 0, 0, 0.148844, -130.640943, -13.4205)" d="M 1056.527723804 335.388 A 181.398 181.398 0 0 1 1213.623 244.689 L 1213.623 426.087 Z" bx:shape="pie 1213.623 426.087 0 181.398 300 0 1@ff70ddfc">
               <title>HiglightBG</title>
             </path>
@@ -1236,8 +1246,8 @@
               <title>Center</title>
             </ellipse>
           </g>
-          <g style="" transform="matrix(0.550031, 0, 0, 0.550031, 21.125284, 22.498779)">
-            <title>Play Icon</title>
+          <g style="visibility:hidden" transform="matrix(0.550031, 0, 0, 0.550031, 21.125284, 22.498779)">
+            <title>Play Icon Old</title>
             <path d="M 54.6854 41.46 L 54.6854 58.54 L 54.6854 41.46 Z" style="stroke-linejoin:round;fill:url(&quot;#bg_accent&quot;);stroke-width:10.9085px;stroke:url(&quot;#bg_accent_darker&quot;)" transform="matrix(1.000001, 0, 0, 1, -0.000038, -0.00003)">
               <title>Cover</title>
             </path>
@@ -1250,6 +1260,18 @@
               <title>Cover</title>
             </path>
             <path d="M 24.631 36.638 L 33.252 48.46 L 16.01 48.46 L 24.631 36.638 Z" bx:shape="triangle 16.01 36.638 17.242 11.822 0.5 0 1@eae8573c" style="stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;stroke:url(&quot;#bg_accent&quot;);fill:url(&quot;#bg_accent&quot;);transform-box:fill-box;transform-origin:50% 50%" transform="matrix(0, 1, -1, 0, 22.049368, 7.450474)" />
+          </g>
+          <g style="">
+            <title>Play Icon</title>
+            <path d="M 51.3934 45.3031 L 51.3934 54.6976 L 51.3934 45.3031 Z" style="stroke-linejoin:round;stroke:url(&quot;#bg_accent&quot;);fill:url(&quot;#bg_accent&quot;);stroke-width:3px" />
+            <path d="M 56.347 45.302 L 56.347 54.6987 L 56.347 45.302 Z" style="stroke-linejoin:round;stroke:url(&quot;#bg_accent&quot;);fill:url(&quot;#bg_accent&quot;);stroke-width:3px" />
+            <path d="M 50.4506 50.8888 L 43.9481 55.6306 C 43.6136 55.8745 43.1705 55.91 42.8015 55.7223 C 42.4324 55.5347 42.2 55.1558 42.2 54.7418 L 42.2 45.2582 C 42.2 44.8442 42.4324 44.4653 42.8015 44.2777 C 43.1705 44.09 43.6136 44.1255 43.9481 44.3694 L 50.4506 49.1112 C 50.7346 49.3183 50.9025 49.6486 50.9025 50 C 50.9025 50.3514 50.7346 50.6817 50.4506 50.8888 Z" style="stroke:url(&quot;#bg_accent_darker&quot;);fill:none;stroke-width:4px">
+              <title>Cover</title>
+            </path>
+            <path d="M -4.0642 -20.152 L 0.6776 -13.6495 L -8.806 -13.6495 L -4.0642 -20.152 Z" bx:shape="triangle -8.806 -20.152 9.4836 6.5025 0.5 0 1@1976d492" style="stroke-linecap:round;stroke-linejoin:round;stroke:url(&quot;#bg_accent&quot;);fill:url(&quot;#bg_accent&quot;);stroke-width:2.2px;pointer-events:none;transform-origin:-4.0642px -16.9007px" transform="matrix(0, 1, -1, 0, 50.615433, 66.900671)" />
+            <rect x="42.2" y="44.1582" width="15.6" height="11.6836" style="fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;vector-effect:non-scaling-stroke;stroke:rgb(218, 85, 85);pointer-events:none;visibility:hidden">
+              <title>Bounds</title>
+            </rect>
           </g>
         </svg>
       </g>
@@ -1762,7 +1784,7 @@
           <text style="font-weight: 400; font-size: 40px; font-family: &quot;Open Gorton&quot;; fill: url(&quot;#fg_main&quot;); white-space: pre;" x="50" y="64.08" text-anchor="middle" xml:space="preserve"><tspan>I</tspan></text>
           <g>
             <title>Corner</title>
-            <text style="fill: url(&quot;#dim&quot;); font-family: &quot;Open Gorton&quot;; font-size: 20px; font-weight: 700; stroke: url(&quot;#dim&quot;); stroke-width: 0.7px; text-anchor: middle; white-space: pre;" x="72.136" y="38.2073"><title>Symbol</title>^</text>
+            <text style="fill: url(&quot;#dim&quot;); font-family: &quot;Open Gorton&quot;; font-size: 20px; font-weight: 700; stroke: url(&quot;#dim&quot;); stroke-width: 1px; text-anchor: middle; white-space: pre;" x="72.136" y="38.2073"><title>Symbol</title>^</text>
           </g>
         </svg>
       </g>
@@ -1804,18 +1826,18 @@
           </g>
           <g style="" transform="matrix(1, 0, 0, 1, 9.918955, -0.489979)">
             <title>Definition</title>
-            <text style="fill: url(&quot;#bg_accent_dark&quot;); font-family: &quot;Open Gorton&quot;; font-size: 14px; font-weight: 700; white-space: pre;" transform="matrix(1, 0, 0, 1, 0.133846, -3.142468)"><title>F</title><tspan x="23.0472" y="37.8078">F</tspan><tspan x="23.0472" dy="1em">​</tspan></text>
-            <g transform="matrix(1, 0, 0, 1, 0, -2.252205)">
+            <text style="fill: url(&quot;#bg_accent_dark&quot;); font-family: &quot;Open Gorton&quot;; font-size: 14px; font-weight: 700; white-space: pre;" transform="matrix(1, 0, 0, 1, -0.613414, -3.142468)"><title>F</title><tspan x="23.0472" y="37.8078">F</tspan><tspan x="23.0472" dy="1em">​</tspan></text>
+            <g transform="matrix(1, 0, 0, 1, -0.044649, -2.252205)">
               <title>Colon</title>
-              <ellipse style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px; fill: url(&quot;#bg_accent_dark&quot;);" cx="33.1871" cy="29.887" rx="1" ry="1" />
-              <ellipse style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px; fill: url(&quot;#bg_accent_dark&quot;);" cx="33.1871" cy="34.522" rx="1" ry="1" />
+              <ellipse style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px; fill: url(&quot;#bg_accent_dark&quot;);" cx="33.1871" cy="29.887" rx="1.1" ry="1.1" />
+              <ellipse style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px; fill: url(&quot;#bg_accent_dark&quot;);" cx="33.1871" cy="34.522" rx="1.1" ry="1.1" />
             </g>
-            <g transform="matrix(1, 0, 0, 1, 3.1549, -2.252205)">
+            <g transform="matrix(1, 0, 0, 1, 3.110251, -2.252205)">
               <title>Colon</title>
-              <ellipse style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px; fill: url(&quot;#bg_accent_dark&quot;);" cx="33.1871" cy="29.887" rx="1" ry="1" />
-              <ellipse style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px; fill: url(&quot;#bg_accent_dark&quot;);" cx="33.1871" cy="34.522" rx="1" ry="1" />
+              <ellipse style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px; fill: url(&quot;#bg_accent_dark&quot;);" cx="33.1871" cy="29.887" rx="1.1" ry="1.1" />
+              <ellipse style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px; fill: url(&quot;#bg_accent_dark&quot;);" cx="33.1871" cy="34.522" rx="1.1" ry="1.1" />
             </g>
-            <g transform="matrix(-0.8, 0, 0, 0.8, 48.353258, 25.784761)" style="">
+            <g transform="matrix(-0.8, 0, 0, 0.8, 47.605994, 25.784761)" style="">
               <title>Key</title>
               <path d="M 10 5 C 10 9.908 9.9051 10.003 5 9.998 C 0.095 9.995 0 9.908 0 5 C 0 0.09 0.09 0 5 0 C 9.91 0 10 0.09 10 5 Z" style="stroke-linecap: round; stroke-linejoin: round; vector-effect: non-scaling-stroke; stroke-width: 2px; fill: url(&quot;#accent_sec&quot;);">
                 <title>BG</title>
@@ -1824,12 +1846,12 @@
                 <title>Accent</title>
               </path>
             </g>
-            <g transform="matrix(1, 0, 0, 1, 0, -2.288297)">
+            <g transform="matrix(1, 0, 0, 1, -0.74726, -2.288297)">
               <title>Arrow</title>
-              <line style="fill: none; stroke-linecap: round; stroke-linejoin: round; stroke: url(&quot;#bg_accent_dark&quot;); stroke-width: 1.4px;" x1="51.3" y1="32" x2="58" y2="32" />
-              <polyline style="fill: none; stroke-linecap: round; stroke-linejoin: round; stroke: url(&quot;#bg_accent_dark&quot;); stroke-width: 1.4px;" points="56 30 58 32 56.1 34" />
+              <line style="fill: none; stroke-linecap: round; stroke-linejoin: round; stroke: url(&quot;#bg_accent_dark&quot;); stroke-width: 1.8px;" x1="51.3" y1="32" x2="58" y2="32" />
+              <polyline style="fill: none; stroke-linecap: round; stroke-linejoin: round; stroke: url(&quot;#bg_accent_dark&quot;); stroke-width: 1.8px;" points="55.6187 29.6187 58 32 55.7378 34.3813" />
             </g>
-            <path d="M 837.764 262.3674 L 838.2446 264.1835 L 840.1203 264.0794 L 838.5416 265.0977 L 839.2203 266.8494 L 837.764 265.6626 L 836.3077 266.8494 L 836.9864 265.0977 L 835.4077 264.0794 L 837.2834 264.1835 Z" bx:shape="star 837.764 264.845 2.4776 2.4776 0.33 5 1@06cd2d4a" style="stroke-linecap: round; stroke-linejoin: round; transform-box: fill-box; transform-origin: 50% 50%; fill: url(&quot;#accent_sec&quot;); stroke: url(&quot;#accent_sec&quot;);" transform="matrix(1, -0.000014, 0.000013, 1, -774.517512, -234.880789)" />
+            <path d="M 837.764 262.3674 L 838.2446 264.1835 L 840.1203 264.0794 L 838.5416 265.0977 L 839.2203 266.8494 L 837.764 265.6626 L 836.3077 266.8494 L 836.9864 265.0977 L 835.4077 264.0794 L 837.2834 264.1835 Z" bx:shape="star 837.764 264.845 2.4776 2.4776 0.33 5 1@06cd2d4a" style="stroke-linecap: round; stroke-linejoin: round; transform-box: fill-box; transform-origin: 50% 50%; fill: url(&quot;#accent_sec&quot;); stroke: url(&quot;#accent_sec&quot;); stroke-width: 1.8px;" transform="matrix(1, -0.000014, 0.000013, 1, -774.517512, -234.880789)" />
           </g>
           <text style="fill: url(&quot;#bg_accent&quot;); font-family: &quot;Open Gorton&quot;; font-size: 17px; font-weight: 700; text-anchor: end; white-space: pre;" x="77" y="75">FN</text>
         </svg>
@@ -1899,8 +1921,8 @@
               <path d="m243-334c0.106-1.89 1.03-3.56 2.43-4.74 1.37-1.16 3.21-1.87 5.23-1.87 2.01 0 3.85 0.709 5.22 1.87 1.4 1.18 2.32 2.85 2.43 4.74 0.106 1.94-0.675 3.75-2.04 5.09-1.4 1.36-3.38 2.22-5.61 2.22s-4.22-0.854-5.61-2.22c-1.37-1.34-2.15-3.14-2.04-5.08z" style="fill-rule:nonzero;fill:url(&quot;#bg_focus&quot;)" />
             </g>
             <g transform="matrix(11.1 0 0 11.1 -2215 4153)">
-              <path d="m243-334c0.106-1.89 1.03-3.56 2.43-4.74 1.37-1.16 3.21-1.87 5.23-1.87 2.01 0 3.85 0.709 5.22 1.87 1.4 1.18 2.32 2.85 2.43 4.74 0.106 1.94-0.675 3.75-2.04 5.09-1.4 1.36-3.38 2.22-5.61 2.22s-4.22-0.854-5.61-2.22c-1.37-1.34-2.15-3.14-2.04-5.08z" style="fill-rule:nonzero;fill:url(&quot;#bg_accent&quot;)" />
-              <path d="m231-330c0.013 0.74 0.249 2.18 0.603 3.3 0.744 2.38 2.01 4.58 3.76 6.51 1.8 1.99 4.02 3.59 6.58 4.73 2.69 1.19 5.61 1.8 8.64 1.8 3.03-4e-3 5.95-0.624 8.64-1.83 2.56-1.15 4.78-2.75 6.58-4.75 1.76-1.95 3.02-4.15 3.76-6.53 0.375-1.2 0.612-2.42 0.707-3.64 0.093-1.2 0.054-2.41-0.117-3.62-0.334-2.35-1.15-4.56-2.4-6.56-1.14-1.85-2.62-3.46-4.38-4.82l4e-3 -3e-3 -17.7-13.6c-0.016-0.012-0.029-0.025-0.046-0.036-1.16-0.892-3.12-0.889-4.39 5e-3 -1.29 0.904-1.44 2.4-0.29 3.34l-5e-3 5e-3 7.39 6.01-22.5 0.024h-0.03c-1.86 2e-3 -3.65 1.22-4 2.77-0.364 1.57 0.9 2.88 2.84 2.88l-3e-3 7e-3 11.4-0.022-20.4 15.6c-0.026 0.019-0.054 0.039-0.078 0.058-1.92 1.47-2.54 3.92-1.33 5.46 1.23 1.57 3.84 1.58 5.78 9e-3l11.1-9.1s-0.162 1.23-0.149 1.96zm28.6 4.11c-2.29 2.33-5.5 3.66-8.96 3.66-3.47 6e-3 -6.68-1.3-8.97-3.63-1.12-1.14-1.94-2.44-2.45-3.83-0.497-1.37-0.69-2.82-0.562-4.28 0.121-1.43 0.547-2.8 1.23-4.03 0.668-1.21 1.59-2.31 2.72-3.24 2.23-1.81 5.06-2.8 8.02-2.8 2.97-4e-3 5.8 0.969 8.03 2.78 1.13 0.924 2.05 2.02 2.72 3.23 0.683 1.23 1.11 2.59 1.23 4.03 0.126 1.46-0.067 2.91-0.564 4.28-0.508 1.4-1.33 2.7-2.45 3.84z" style="fill-rule:nonzero;fill:url(&quot;#bg_accent_dark&quot;)" />
+              <path d="m243-334c0.106-1.89 1.03-3.56 2.43-4.74 1.37-1.16 3.21-1.87 5.23-1.87 2.01 0 3.85 0.709 5.22 1.87 1.4 1.18 2.32 2.85 2.43 4.74 0.106 1.94-0.675 3.75-2.04 5.09-1.4 1.36-3.38 2.22-5.61 2.22s-4.22-0.854-5.61-2.22c-1.37-1.34-2.15-3.14-2.04-5.08z" style="fill-rule:nonzero;fill:url(&quot;#bg_accent_dark&quot;)" />
+              <path d="m231-330c0.013 0.74 0.249 2.18 0.603 3.3 0.744 2.38 2.01 4.58 3.76 6.51 1.8 1.99 4.02 3.59 6.58 4.73 2.69 1.19 5.61 1.8 8.64 1.8 3.03-4e-3 5.95-0.624 8.64-1.83 2.56-1.15 4.78-2.75 6.58-4.75 1.76-1.95 3.02-4.15 3.76-6.53 0.375-1.2 0.612-2.42 0.707-3.64 0.093-1.2 0.054-2.41-0.117-3.62-0.334-2.35-1.15-4.56-2.4-6.56-1.14-1.85-2.62-3.46-4.38-4.82l4e-3 -3e-3 -17.7-13.6c-0.016-0.012-0.029-0.025-0.046-0.036-1.16-0.892-3.12-0.889-4.39 5e-3 -1.29 0.904-1.44 2.4-0.29 3.34l-5e-3 5e-3 7.39 6.01-22.5 0.024h-0.03c-1.86 2e-3 -3.65 1.22-4 2.77-0.364 1.57 0.9 2.88 2.84 2.88l-3e-3 7e-3 11.4-0.022-20.4 15.6c-0.026 0.019-0.054 0.039-0.078 0.058-1.92 1.47-2.54 3.92-1.33 5.46 1.23 1.57 3.84 1.58 5.78 9e-3l11.1-9.1s-0.162 1.23-0.149 1.96zm28.6 4.11c-2.29 2.33-5.5 3.66-8.96 3.66-3.47 6e-3 -6.68-1.3-8.97-3.63-1.12-1.14-1.94-2.44-2.45-3.83-0.497-1.37-0.69-2.82-0.562-4.28 0.121-1.43 0.547-2.8 1.23-4.03 0.668-1.21 1.59-2.31 2.72-3.24 2.23-1.81 5.06-2.8 8.02-2.8 2.97-4e-3 5.8 0.969 8.03 2.78 1.13 0.924 2.05 2.02 2.72 3.23 0.683 1.23 1.11 2.59 1.23 4.03 0.126 1.46-0.067 2.91-0.564 4.28-0.508 1.4-1.33 2.7-2.45 3.84z" style="fill-rule:nonzero;fill:url(&quot;#bg_accent&quot;)" />
             </g>
           </g>
           <rect x="24.2493" y="45.5579" width="37.3014" height="29.9807" style="fill:none;stroke:url(#gradient-0-1);stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;vector-effect:non-scaling-stroke;visibility:hidden">
@@ -2117,11 +2139,11 @@
     <g id="keycap-unshaded-68">
       <rect class="surface" width="600" height="300" />
       <g transform="">
-        <svg id="icon_super" viewBox="0 0 200 100" width="600.0" height="300.0" style="overflow:visible" transform="matrix(1, 0, 0, 0.9999999999999999, 14.785905464222736, 9.023905317410456)" x="0" y="0">
-          <use href="#paw_print-1" width="7" height="6.5" transform="matrix(-0.525377, -1.328456, -1.478144, 0.14688, 23.348686, 58.307456)" style="transform-origin:3.5px 3.25px;fill:url(&quot;#bg_accent_dark&quot;)">
+        <svg id="icon_meta" viewBox="0 0 200 100" width="600.0" height="300.0" style="overflow:visible" transform="matrix(1, 0, 0, 0.9999999999999999, 14.785905464222736, 9.023905317410456)" x="0" y="0">
+          <use href="#paw_print-1" width="7" height="6.5" transform="matrix(-0.5253769159317017, -1.3284560441970825, -1.4781439304351807, 0.14688000082969666, 23.3486858059951, 58.30745594068291)" style="transform-origin:3.5px 3.25px;fill:url(&quot;#bg_accent_dark&quot;)">
             <title>Paw</title>
           </use>
-          <use href="#paw_print-1" width="7" height="6.5" transform="matrix(-0.398616, -1.007931, -1.482974, 0.134666, 56.398417, 62.096537)" style="fill:url(&quot;#bg_accent_dark&quot;);transform-origin:3.5px 3.25px">
+          <use href="#paw_print-1" width="7" height="6.5" transform="matrix(-0.3986160159111023, -1.0079309940338135, -1.4829740524291992, 0.13466599583625793, 56.398417430689534, 62.096537447265604)" style="fill:url(&quot;#bg_accent_dark&quot;);transform-origin:3.5px 3.25px">
             <title>Paw</title>
           </use>
           <g transform="matrix(-1, 0, 0, 1, 142.244687, 8.082873)" style="">
@@ -2172,10 +2194,10 @@
                 <title>Highlight</title>
               </ellipse>
             </g>
-            <use href="#eye" width="1.9588000774383545" height="3.100800037384033" transform="matrix(1.2109010219573975, 0.109498031437397, -0.1323700249195099, 1.2088329792022705, 55.69711968306255, 32.017680556491534)" style="transform-box:fill-box;transform-origin:50% 50%;fill:none">
+            <use href="#eye" width="1.9588000774383545" height="3.100800037384033" transform="matrix(1.2109010219573975, 0.1094980388879776, -0.1323700249195099, 1.2088329792022705, 55.69711968306255, 32.017680556491534)" style="transform-box:fill-box;transform-origin:50% 50%;fill:none">
               <title>Left Eye</title>
             </use>
-            <use href="#eye" width="1.9588000774383545" height="3.100800037384033" transform="matrix(1.3212870359420776, -0.025191007182002068, -0.04629100114107132, 1.2169450521469116, 61.915335515650625, 33.50252473803738)" style="transform-origin:0.979px 1.55px;fill:none">
+            <use href="#eye" width="1.9588000774383545" height="3.100800037384033" transform="matrix(1.3212870359420776, -0.025191009044647217, -0.04629100114107132, 1.2169450521469116, 61.915335515650625, 33.50252473803738)" style="transform-origin:0.979px 1.55px;fill:none">
               <title>Right Eye</title>
             </use>
             <g style="transform-origin:56.522px 33.941px;visibility:hidden" transform="matrix(0.999547, 0.030088, -0.030087, 0.999547, 0, 0)">
@@ -2272,7 +2294,7 @@
             </path>
           </g>
           <text style="fill:url(&quot;#fg_main&quot;);font-family:&quot;Open Gorton&quot;;font-size:12px;font-weight:700;white-space:pre" x="94.8278" y="33.8498"><title>Question Mark</title>?</text>
-          <text style="fill:url(&quot;#fg_main&quot;);font-family:&quot;Open Gorton&quot;;font-size:17px;font-weight:700;text-anchor:end" xml:space="preserve" x="177" y="75" dx="0 0 0.3">SUPER</text>
+          <text style="fill:url(&quot;#fg_main&quot;);font-family:&quot;Open Gorton&quot;;font-size:17px;font-weight:700;text-anchor:end" xml:space="preserve" x="177" y="75" dx="0 0 -0.3 -0.6">Meta</text>
           <g transform="matrix(-1, 0, 0, 1, 213.833508, 13.051693)" style="">
             <title>Tux</title>
             <path style="stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;fill:url(&quot;#bg_focus&quot;)" d="M 52.068 15.337 C 54.546 15.378 57.465 16.711 57.713 20.888 C 57.895 23.942 58.421 25.19 58.887 26.706 C 59.352 28.222 62.79 32.318 62.8 39.914 C 62.8 39.914 65.389 42.926 62.246 45.995 C 62.246 45.995 55.364 49.261 52.068 49.105 C 48.435 48.934 41.041 45.75 41.041 45.75 L 41.83 40.417 C 37.967 38.18 39.512 35.094 40.386 32.66 C 41.438 29.733 43.741 27.35 43.972 26.585 C 44.511 24.79 44.797 23.362 45.079 20.993 C 45.466 17.724 48.169 15.272 52.068 15.337 Z">
@@ -2286,7 +2308,7 @@
               <path d="M 52.646 31.778 C 52.646 32.617 52.319 33.259 51.75 33.259 C 51.179 33.259 50.792 32.662 50.792 31.824 C 50.792 30.986 51.247 30.539 51.701 30.529 C 52.271 30.517 52.646 30.939 52.646 31.778 Z" style="fill:url(&quot;#bg_focus&quot;)">
                 <title>Pupil</title>
               </path>
-              <ellipse style="fill:url(&quot;#bg_main&quot;)" cx="51.835" cy="31.261" rx="0.241" ry="0.268">
+              <ellipse style="fill:url(&quot;#bg_main&quot;);visibility:hidden" cx="51.835" cy="31.261" rx="0.241" ry="0.268">
                 <title>Highlight</title>
               </ellipse>
             </g>
@@ -2298,7 +2320,7 @@
               <path d="M 57.079 31.765 C 57.079 32.591 56.732 33.222 56.126 33.222 C 55.519 33.222 55.107 32.635 55.107 31.811 C 55.107 30.987 55.59 30.547 56.074 30.538 C 56.68 30.525 57.079 30.941 57.079 31.765 Z" style="fill:url(&quot;#bg_focus&quot;)">
                 <title>Pupil</title>
               </path>
-              <ellipse style="fill:url(&quot;#bg_main&quot;)" cx="56.259" cy="31.216" rx="0.241" ry="0.268">
+              <ellipse style="fill:url(&quot;#bg_main&quot;);visibility:hidden" cx="56.259" cy="31.216" rx="0.241" ry="0.268">
                 <title>Highlight</title>
               </ellipse>
             </g>
@@ -2327,13 +2349,13 @@
               <title>Arm</title>
             </path>
           </g>
-          <use href="#paw_print-1" width="7" height="6.5" transform="matrix(-1.305147, -0.580868, -0.891781, 1.166777, 15.695211, 68.241423)" style="transform-origin:3.5px 3.25px;fill:url(&quot;#bg_accent_dark&quot;)">
+          <use href="#paw_print-1" width="7" height="6.5" transform="matrix(-1.3051469326019287, -0.5808680057525635, -0.8917809724807739, 1.1667770147323608, 15.695211133392874, 68.24142335561136)" style="transform-origin:3.5px 3.25px;fill:url(&quot;#bg_accent_dark&quot;)">
             <title>Paw</title>
           </use>
-          <use href="#paw_print-1" width="7" height="6.5" transform="matrix(-1.428406, -0.021729, -0.021731, 1.428412, 7.516838, 79.711028)" style="transform-origin:3.5px 3.25px;fill:url(&quot;#bg_accent_dark&quot;)">
+          <use href="#paw_print-1" width="7" height="6.5" transform="matrix(-1.428406000137329, -0.02172900177538395, -0.021731002256274223, 1.4284119606018066, 7.516837941006024, 79.71102764528061)" style="transform-origin:3.5px 3.25px;fill:url(&quot;#bg_accent_dark&quot;)">
             <title>Paw</title>
           </use>
-          <use href="#paw_print-1" width="7" height="6.5" transform="matrix(-1.420606, 0.150652, 0.150649, 1.420612, 10.700557, 95.712652)" style="transform-origin:3.5px 3.25px;fill:url(&quot;#bg_accent_dark&quot;)">
+          <use href="#paw_print-1" width="7" height="6.5" transform="matrix(-1.420606017112732, 0.1506519913673401, 0.15064899623394012, 1.420612096786499, 10.700556566126707, 95.71265242377585)" style="transform-origin:3.5px 3.25px;fill:url(&quot;#bg_accent_dark&quot;)">
             <title>Paw</title>
           </use>
         </svg>
@@ -2349,7 +2371,7 @@
           <use href="#paw_print-2" width="7" height="6.5" transform="matrix(-1.4119009971618652, -0.21761199831962585, -0.21761199831962585, 1.4119060039520264, 102.14889346003379, 19.583110463548135)" style="fill:url(&quot;#bg_accent_dark&quot;);transform-origin:3.5px 3.25px">
             <title>Paw</title>
           </use>
-          <use href="#paw_print-2" width="7" height="6.5" transform="matrix(-1.3810169696807861, -0.37080901861190796, -0.4302750527858734, 1.3622390031814575, 89.6647017859353, 38.44741371932923)" style="fill:url(&quot;#bg_accent_dark&quot;);transform-origin:3.5px 3.25px">
+          <use href="#paw_print-2" width="7" height="6.5" transform="matrix(-1.3810169696807861, -0.37080901861190796, -0.4302750825881958, 1.3622390031814575, 89.6647017859353, 38.44741371932923)" style="fill:url(&quot;#bg_accent_dark&quot;);transform-origin:3.5px 3.25px">
             <title>Paw</title>
           </use>
           <use href="#paw_print-2" width="7" height="6.5" transform="matrix(-1.1291550397872925, -0.9947590231895447, -1.3272969722747803, 0.836197018623352, 69.43524047320406, 56.303824384264054)" style="fill:url(&quot;#bg_accent_dark&quot;);transform-origin:3.5px 3.25px">
@@ -2358,10 +2380,10 @@
           <use href="#paw_print-2" width="7" height="6.5" transform="matrix(-1.0293519496917725, -1.0977129936218262, -1.5680749416351318, 0.5277490019798279, 47.23920357263794, 69.18519470125192)" style="fill:url(&quot;#bg_accent_dark&quot;);transform-origin:3.5px 3.25px">
             <title>Paw</title>
           </use>
-          <use href="#paw_print-2" width="7" height="6.5" transform="matrix(-0.8998729586601257, -1.2061389684677124, -1.617332935333252, 0.3487239480018616, 23.175605364715235, 75.16209278907749)" style="fill:url(&quot;#bg_accent_dark&quot;);transform-origin:3.5px 3.25px">
+          <use href="#paw_print-2" width="7" height="6.5" transform="matrix(-0.899873, -1.206139, -1.617333, 0.348724, 24.741985, 74.76834)" style="fill:url(&quot;#bg_accent_dark&quot;);transform-origin:3.5px 3.25px">
             <title>Paw</title>
           </use>
-          <use href="#paw_print-2" width="7" height="6.5" transform="matrix(-0.8998729586601257, -1.2061389684677124, -0.9761680960655212, 0.2104780375957489, -2.676273775529587, 81.39001321133796)" style="fill:url(&quot;#bg_accent_dark&quot;);transform-origin:3.5px 3.25px">
+          <use href="#paw_print-2" width="7" height="6.5" transform="matrix(-0.8998729586601257, -1.2061389684677124, -0.976168155670166, 0.2104780524969101, -2.676273775529587, 81.39001321133796)" style="fill:url(&quot;#bg_accent_dark&quot;);transform-origin:3.5px 3.25px">
             <title>Paw</title>
           </use>
           <ellipse style="stroke-linecap:round;stroke-linejoin:round;stroke-width:10px;fill:url(&quot;#bg_accent&quot;)" cx="44" cy="36.6" rx="2" ry="2">
@@ -2375,9 +2397,10 @@
           </ellipse>
           <g transform="matrix(1, 0, 0, 1, 0, 4)">
             <title>Text</title>
-            <path style="fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:4.25px;stroke:url(&quot;#bg_focus&quot;)" d="M 27.6019 69.6112 L 27.6019 76.9566 C 27.6019 82.3366 35.7686 82.3198 35.7686 76.9566 L 35.7686 69.6373 M 40.382 80.381 L 40.382 69.634 L 45.504 79.355 L 50.6 69.6 L 50.575 80.373">
+            <path style="fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:4.25px;stroke:url(&quot;#bg_focus&quot;);visibility:hidden" d="M 27.6019 69.6112 L 27.6019 76.9566 C 27.6019 82.3366 35.7686 82.3198 35.7686 76.9566 L 35.7686 69.6373 M 40.382 80.381 L 40.382 69.634 L 45.504 79.355 L 50.6 69.6 L 50.575 80.373">
               <title>Cover</title>
             </path>
+            <text style="fill:url(&quot;#bg_focus&quot;);font-family:&quot;Open Gorton&quot;;font-size:17px;font-weight:700;stroke:url(&quot;#bg_focus&quot;);stroke-width:4px" xml:space="preserve" transform="matrix(1, 0, 0, 1, -24.6922, 0)"><title>Cover</title><tspan x="50" y="80.984">um</tspan><tspan x="50" dy="1em">​</tspan></text>
             <text style="fill:url(&quot;#bg_accent&quot;);font-family:&quot;Open Gorton&quot;;font-size:17px;font-weight:700;white-space:pre;pointer-events:none" xml:space="preserve" transform="matrix(1, 0, 0, 1, -24.692159, 0)"><tspan x="50" y="80.984">um</tspan><tspan x="50" dy="1em">​</tspan><tspan>laut</tspan></text>
             <line style="fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:2.2px;stroke:url(&quot;#bg_accent&quot;)" x1="55.1954" y1="74.8" x2="58.2051" y2="74.8">
               <title>Hyphen</title>
@@ -2440,24 +2463,52 @@
             <path style="fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;stroke:url(&quot;#accent_sec_dark&quot;);visibility:hidden" d="M 60.4098 150 C 60.4098 150 80.4098 150 90.4098 150 C 96.4098 150 102.4098 144 102.4098 138 C 102.4098 128 102.4098 108 102.4098 108" transform="matrix(-1, 0, 0, -1, 160.409794297851, 257.999990999999)">
               <title>Outline</title>
             </path>
-            <line style="fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;stroke:url(&quot;#accent_sec&quot;)" x1="60.9" y1="118.2" x2="60.9" y2="123.6" />
-            <path d="M 63.6 123.9 L 68.8 120.9 L 63.6 117.9 L 63.6 123.9 Z" style="stroke-linecap:round;stroke-linejoin:round;stroke-width:3.4px;fill:none;stroke:url(&quot;#bg_focus&quot;);transform-box:fill-box;transform-origin:50% 50%" transform="matrix(-1, 0, 0, -1, 0.000007, 0)">
-              <title>Cover</title>
-            </path>
-            <path d="M 63.6 123.9 L 68.8 120.9 L 63.6 117.9 L 63.6 123.9 Z" style="stroke-linecap:round;stroke-linejoin:round;stroke:url(&quot;#accent_sec&quot;);fill:url(&quot;#accent_sec&quot;);stroke-width:1.4px;transform-box:fill-box;transform-origin:50% 50%" transform="matrix(-1, 0, 0, -1, 0.000007, 0)">
-              <title>Play Triangle</title>
-            </path>
-            <path d="M 69.6 123.9 L 74.8 120.9 L 69.6 117.9 L 69.6 123.9 Z" style="stroke-linecap:round;stroke-linejoin:round;stroke-width:3.4px;fill:none;stroke:url(&quot;#bg_focus&quot;);transform-box:fill-box;transform-origin:50% 50%" transform="matrix(-1, 0, 0, -1, 0.000005, 0)">
-              <title>Cover</title>
-            </path>
-            <path d="M 69.6 123.9 L 74.8 120.9 L 69.6 117.9 L 69.6 123.9 Z" style="stroke-linecap:round;stroke-linejoin:round;stroke:url(&quot;#accent_sec&quot;);fill:url(&quot;#accent_sec&quot;);stroke-width:1.4px;transform-box:fill-box;transform-origin:50% 50%" transform="matrix(-1, 0, 0, -1, 0.000005, 0)">
-              <title>Play Triangle</title>
-            </path>
+            <g style="visibility:hidden">
+              <title>Icon Old</title>
+              <line style="fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;stroke:url(&quot;#accent_sec&quot;)" x1="60.9" y1="118.2" x2="60.9" y2="123.6" />
+              <path d="M 63.6 123.9 L 68.8 120.9 L 63.6 117.9 L 63.6 123.9 Z" style="stroke-linecap:round;stroke-linejoin:round;stroke-width:3.4px;fill:none;stroke:url(&quot;#bg_focus&quot;);transform-box:fill-box;transform-origin:50% 50%" transform="matrix(-1, 0, 0, -1, 0.000005, -0.000002)">
+                <title>Cover</title>
+              </path>
+              <path d="M 63.6 123.9 L 68.8 120.9 L 63.6 117.9 L 63.6 123.9 Z" style="stroke-linecap:round;stroke-linejoin:round;stroke:url(&quot;#accent_sec&quot;);fill:url(&quot;#accent_sec&quot;);stroke-width:1.4px;transform-box:fill-box;transform-origin:50% 50%" transform="matrix(-1, 0, 0, -1, 0.000005, -0.000002)">
+                <title>Play Triangle</title>
+              </path>
+              <path d="M 69.6 123.9 L 74.8 120.9 L 69.6 117.9 L 69.6 123.9 Z" style="stroke-linecap:round;stroke-linejoin:round;stroke-width:3.4px;fill:none;stroke:url(&quot;#bg_focus&quot;);transform-box:fill-box;transform-origin:50% 50%" transform="matrix(-1, 0, 0, -1, 0.000006, -0.000002)">
+                <title>Cover</title>
+              </path>
+              <path d="M 69.6 123.9 L 74.8 120.9 L 69.6 117.9 L 69.6 123.9 Z" style="stroke-linecap:round;stroke-linejoin:round;stroke:url(&quot;#accent_sec&quot;);fill:url(&quot;#accent_sec&quot;);stroke-width:1.4px;transform-box:fill-box;transform-origin:50% 50%" transform="matrix(-1, 0, 0, -1, 0.000006, -0.000002)">
+                <title>Play Triangle</title>
+              </path>
+            </g>
+            <g style="" transform="matrix(-1, 0, 0, 1, 135.499998, 0)">
+              <title>Icon</title>
+              <line style="fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;stroke:url(&quot;#accent_sec&quot;)" x1="74.8" y1="118.2" x2="74.8" y2="123.6" />
+              <path d="M 66.4 117.9 L 71.6 120.9 L 66.4 123.9 L 66.4 117.9 Z" style="stroke-linecap:round;stroke-linejoin:round;stroke-width:3.4px;fill:none;stroke:url(&quot;#bg_focus&quot;);visibility:hidden;pointer-events:none">
+                <title>Cover Old</title>
+              </path>
+              <path d="M 66.7498 117.294 L 71.9498 120.294 C 72.1665 120.419 72.3 120.65 72.3 120.9 C 72.3 121.15 72.1665 121.381 71.9498 121.506 L 66.7498 124.506 C 66.5332 124.631 66.2664 124.631 66.0499 124.506 C 65.8334 124.381 65.7 124.15 65.7 123.9 L 65.7 117.9 C 65.7 117.65 65.8334 117.419 66.0499 117.294 C 66.2664 117.169 66.5332 117.169 66.7498 117.294 Z" style="fill:none;stroke:url(&quot;#bg_focus&quot;);stroke-width:3px">
+                <title>Cover</title>
+              </path>
+              <path d="M 66.4 117.9 L 71.6 120.9 L 66.4 123.9 L 66.4 117.9 Z" style="stroke-linecap:round;stroke-linejoin:round;stroke:url(&quot;#accent_sec&quot;);fill:url(&quot;#accent_sec&quot;);stroke-width:1.4px">
+                <title>Play Triangle</title>
+              </path>
+              <path d="M 60.4 117.9 L 65.6 120.9 L 60.4 123.9 L 60.4 117.9 Z" style="stroke-linecap:round;stroke-linejoin:round;stroke-width:3.4px;fill:none;stroke:url(&quot;#bg_focus&quot;);pointer-events:none;visibility:hidden">
+                <title>Cover Old</title>
+              </path>
+              <path d="M 60.7498 117.294 L 65.9498 120.294 C 66.1665 120.419 66.3 120.65 66.3 120.9 C 66.3 121.15 66.1665 121.381 65.9498 121.506 L 60.7498 124.506 C 60.5332 124.631 60.2664 124.631 60.0499 124.506 C 59.8334 124.381 59.7 124.15 59.7 123.9 L 59.7 117.9 C 59.7 117.65 59.8334 117.419 60.0499 117.294 C 60.2664 117.169 60.5332 117.169 60.7498 117.294 Z" style="fill:none;stroke:url(&quot;#bg_focus&quot;);stroke-width:3px">
+                <title>Cover</title>
+              </path>
+              <path d="M 60.4 117.9 L 65.6 120.9 L 60.4 123.9 L 60.4 117.9 Z" style="stroke-linecap:round;stroke-linejoin:round;stroke:url(&quot;#accent_sec&quot;);fill:url(&quot;#accent_sec&quot;);stroke-width:1.4px">
+                <title>Play Triangle</title>
+              </path>
+              <rect x="59.7" y="117.2" width="16.1" height="7.3997" style="fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;vector-effect:non-scaling-stroke;stroke:rgb(237, 52, 52);pointer-events:none;visibility:hidden">
+                <title>Bounds</title>
+              </rect>
+            </g>
           </g>
-          <use href="#paw_print-3" width="7" height="6.5" transform="matrix(-1.420606, 0.150652, 0.150649, 1.420612, 10.700557, -4.305727)" style="transform-origin:3.5px 3.25px;fill:url(&quot;#bg_accent_dark&quot;)">
+          <use href="#paw_print-3" width="7" height="6.5" transform="matrix(-1.420606017112732, 0.1506519764661789, 0.15064898133277893, 1.420612096786499, 10.700556566126707, -4.30572692897887)" style="transform-origin:3.5px 3.25px;fill:url(&quot;#bg_accent_dark&quot;)">
             <title>Paw</title>
           </use>
-          <use href="#paw_print-3" width="7" height="6.5" transform="matrix(-1.411901, -0.217612, -0.217612, 1.411906, 2.148892, 19.58311)" style="fill:url(&quot;#bg_accent_dark&quot;);transform-origin:3.5px 3.25px">
+          <use href="#paw_print-3" width="7" height="6.5" transform="matrix(-1.4119009971618652, -0.21761199831962585, -0.21761199831962585, 1.4119060039520264, 2.148891887868887, 19.583110463548135)" style="fill:url(&quot;#bg_accent_dark&quot;);transform-origin:3.5px 3.25px">
             <title>Paw</title>
           </use>
         </svg>
@@ -2470,7 +2521,7 @@
       <rect class="surface" width="450" height="300" />
       <g transform="translate(0, 300) rotate(-90)">
         <svg id="icon_nav" viewBox="0 0 100 150" width="300.0" height="450.0" style="overflow: visible;" x="0" y="0">
-          <use href="#symbol-0" width="24" height="30" transform="matrix(0.8249577283859253, 0.8249569535255432, -0.7542477250099182, 0.7542469501495361, 37.99999551433864, 26.999995708565113)" style="transform-box: fill-box; transform-origin: 50% 50%; fill: url(&quot;#bg_accent_lighter&quot;);">
+          <use href="#symbol-0" width="24" height="30" transform="matrix(0.824957549571991, 0.8249569535255432, -0.7542475461959839, 0.7542469501495361, 37.99999551433864, 26.999995708565113)" style="transform-box: fill-box; transform-origin: 50% 50%; fill: url(&quot;#bg_accent_lighter&quot;);">
             <title>Icon</title>
           </use>
           <text style="fill: url(&quot;#bg_accent&quot;); font-family: &quot;Open Gorton&quot;; font-size: 17px; font-weight: 700; text-anchor: middle; white-space: pre;" xml:space="preserve" x="50" y="84.984">Nav</text>
@@ -2483,19 +2534,31 @@
             <path style="fill: none; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px; stroke: url(&quot;#accent_sec_dark&quot;); visibility: hidden;" d="M 60.4098 150 C 60.4098 150 80.4098 150 90.4098 150 C 96.4098 150 102.4098 144 102.4098 138 C 102.4098 128 102.4098 108 102.4098 108" transform="matrix(-1, 0, 0, -1, 160.409794297851, 257.999990999999)">
               <title>Outline</title>
             </path>
-            <line style="fill: none; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px; stroke: url(&quot;#accent_sec&quot;);" x1="74.8" y1="118.2" x2="74.8" y2="123.6" />
-            <path d="M 66.9 117.9 L 72.1 120.9 L 66.9 123.9 L 66.9 117.9 Z" style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 3.4px; fill: none; stroke: url(&quot;#bg_focus&quot;);">
-              <title>Cover</title>
-            </path>
-            <path d="M 66.9 117.9 L 72.1 120.9 L 66.9 123.9 L 66.9 117.9 Z" style="stroke-linecap: round; stroke-linejoin: round; stroke: url(&quot;#accent_sec&quot;); fill: url(&quot;#accent_sec&quot;); stroke-width: 1.4px;">
-              <title>Play Triangle</title>
-            </path>
-            <path d="M 60.9 117.9 L 66.1 120.9 L 60.9 123.9 L 60.9 117.9 Z" style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 3.4px; fill: none; stroke: url(&quot;#bg_focus&quot;);">
-              <title>Cover</title>
-            </path>
-            <path d="M 60.9 117.9 L 66.1 120.9 L 60.9 123.9 L 60.9 117.9 Z" style="stroke-linecap: round; stroke-linejoin: round; stroke: url(&quot;#accent_sec&quot;); fill: url(&quot;#accent_sec&quot;); stroke-width: 1.4px;">
-              <title>Play Triangle</title>
-            </path>
+            <g style="">
+              <title>Icon</title>
+              <line style="fill: none; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px; stroke: url(&quot;#accent_sec&quot;);" x1="74.8" y1="118.2" x2="74.8" y2="123.6" />
+              <path d="M 66.4 117.9 L 71.6 120.9 L 66.4 123.9 L 66.4 117.9 Z" style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 3.4px; fill: none; stroke: url(&quot;#bg_focus&quot;); visibility: hidden; pointer-events: none;">
+                <title>Cover Old</title>
+              </path>
+              <path d="M 66.7498 117.294 L 71.9498 120.294 C 72.1665 120.419 72.3 120.65 72.3 120.9 C 72.3 121.15 72.1665 121.381 71.9498 121.506 L 66.7498 124.506 C 66.5332 124.631 66.2664 124.631 66.0499 124.506 C 65.8334 124.381 65.7 124.15 65.7 123.9 L 65.7 117.9 C 65.7 117.65 65.8334 117.419 66.0499 117.294 C 66.2664 117.169 66.5332 117.169 66.7498 117.294 Z" style="fill: none; stroke: url(&quot;#bg_focus&quot;); stroke-width: 3px;">
+                <title>Cover</title>
+              </path>
+              <path d="M 66.4 117.9 L 71.6 120.9 L 66.4 123.9 L 66.4 117.9 Z" style="stroke-linecap: round; stroke-linejoin: round; stroke: url(&quot;#accent_sec&quot;); fill: url(&quot;#accent_sec&quot;); stroke-width: 1.4px;">
+                <title>Play Triangle</title>
+              </path>
+              <path d="M 60.4 117.9 L 65.6 120.9 L 60.4 123.9 L 60.4 117.9 Z" style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 3.4px; fill: none; stroke: url(&quot;#bg_focus&quot;); pointer-events: none; visibility: hidden;">
+                <title>Cover Old</title>
+              </path>
+              <path d="M 60.7498 117.294 L 65.9498 120.294 C 66.1665 120.419 66.3 120.65 66.3 120.9 C 66.3 121.15 66.1665 121.381 65.9498 121.506 L 60.7498 124.506 C 60.5332 124.631 60.2664 124.631 60.0499 124.506 C 59.8334 124.381 59.7 124.15 59.7 123.9 L 59.7 117.9 C 59.7 117.65 59.8334 117.419 60.0499 117.294 C 60.2664 117.169 60.5332 117.169 60.7498 117.294 Z" style="fill: none; stroke: url(&quot;#bg_focus&quot;); stroke-width: 3px;">
+                <title>Cover</title>
+              </path>
+              <path d="M 60.4 117.9 L 65.6 120.9 L 60.4 123.9 L 60.4 117.9 Z" style="stroke-linecap: round; stroke-linejoin: round; stroke: url(&quot;#accent_sec&quot;); fill: url(&quot;#accent_sec&quot;); stroke-width: 1.4px;">
+                <title>Play Triangle</title>
+              </path>
+              <rect x="59.7" y="117.2" width="16.1" height="7.3997" style="fill: none; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px; vector-effect: non-scaling-stroke; stroke: rgb(237, 52, 52); pointer-events: none; visibility: hidden;">
+                <title>Bounds</title>
+              </rect>
+            </g>
           </g>
         </svg>
       </g>
