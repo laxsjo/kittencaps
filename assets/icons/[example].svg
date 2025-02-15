@@ -82,6 +82,14 @@
       <title>accent_sec</title>
       <stop style="stop-color:oklch(0.892 0.12 105);"/>
     </linearGradient>
+    <linearGradient id="dim" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
+      <title>dim</title>
+      <stop style="stop-color:oklch(0.579 0.021 280);"/>
+    </linearGradient>
+    <linearGradient id="dim_light" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
+      <title>dim_light</title>
+      <stop style="stop-color:oklch(0.899 0.027 280);"/>
+    </linearGradient>
     <linearGradient id="case" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
       <title>case</title>
       <stop style="stop-color:#000000;"/>

@@ -25,6 +25,8 @@
     "accent_sec_darker": "oklch(71% 34.8% 89.9deg)",
     "accent_sec_dark": "oklch(71% 34.8% 99.9deg)",
     "accent_sec": "oklch(89.2% 30% 105deg)",
+    "dim": "oklch(57.9% 5.25% 280deg)",
+    "dim_light": "oklch(89.9% 6.75% 280deg)",
     
     "case": "#000000"
   }
