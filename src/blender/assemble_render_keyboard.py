@@ -250,7 +250,9 @@ def create_keyboard(texture_path: Path, svg_viewbox: ViewBox, keyboard: kle.Exte
         
         keys_collection.objects.link(object)
     
-    place_keys(keyboard.keys, 1, place_key)
+    # Filter out ghosted keys
+    keys = filter(lambda key: not key.is_ghosted, keyboard.keys)
+    place_keys(keys, 1, place_key)
     
     ## Move viewport to camera
     space = bpy.data.screens['Layout'].areas[3].spaces[0]

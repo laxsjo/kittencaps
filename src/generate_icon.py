@@ -110,7 +110,7 @@ def generate_svg(size: Vec2, bg_color: str|None, font_paths: list[pathlib.Path],
         bg_element.set("visibility", "hidden")
     element_add_label(bg_element, "BG")
     
-    icon = create_text_icon_svg("_", "", size, font, theme.font_size_px)
+    icon = create_text_icon_svg("_", "", size, font, theme.font_size_px, None)
     
     builder.add_element(bg_element)
     builder.add_element(icon.element)

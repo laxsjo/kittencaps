@@ -1,9 +1,11 @@
 {
     "cSpell.words": [
       "altgr",
+      "BSDF",
       "damsenviet",
       "DSA",
       "glyf",
+      "HDRI",
       "hhea",
       "ipython",
       "lxml",
@@ -12,14 +14,13 @@
       "numpad",
       "numpy",
       "pypkgs",
+      "rshift",
       "sdist",
       "tspan",
       "VARC",
       "Vec",
       "virtualenvwrapper",
-      "zstandard",
-      "BSDF",
-      "HDRI"
+      "zstandard"
     ],
     "svg.preview.background": "editor",
     "colorInfo.languages": [

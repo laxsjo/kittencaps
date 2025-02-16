@@ -46,14 +46,17 @@
   [{"x":15},{"y":0.079,"c":"bg_main"}, "9", {"x":-1,"y":1}, "[p_with_acute_`]", {"x":-1,"y":1}, "[o_with_å_;]", {"x":-1,"y":1}, "[,]", {"x":-1,"y":1}, {"c":"bg_focus"}, "[math]", {"y":-5}],
   [{"x":16},{"y":0.158,"c":"bg_main"}, "0", {"x":-1,"y":1}, {"c":"bg_focus"}, "[~]", {"x":-1,"y":1}, {"c":"bg_main"}, "[i_with_^]", {"x":-1,"y":1}, {"c": "bg_focus"}, "[fn]", {"x":-1,"y":1}, "", {"y":-5}],
   [{"x":17},{"y":0.079,"c":"bg_focus"}, "[reset]", {"x":-1,"y":1}, "[numpad_right]", {"x":-1,"y":1}, "[enter]", {"x":-1,"y":1}, "[below_enter]", {"x":-1,"y":1}, "[below_enter2]", {"y":-5}],
-
+  
+  // Reserve keys (keys with the 'ghosted' flag won't show up in the 3D render)
+  [{"g":true,"y":5.5,"x":14,"c":"bg_focus"}, "", "", "", ""],
+  [{"x":14,"c":"bg_main"}, "", "", {"t":"bg_accent->dim"}, "[~]", {"c":"bg_focus","t":"#000000"}, "[rshift]", {"g":false}],
+  
   // For the left half, offset from the point (5u,5u):
   // x: +3.3127894736842105
   // y: -0.007707842105263158
 
   [{"r":50, "rx":8.313, "ry":4.992, "x":-2, "y":0, "w":2, "c":"bg_accent"}, "[cat_face]"],
   [{"x":-2, "h":1.5, "c":"bg_focus"}, "[shift]", {"h":1.5}, "[ctrl]", {"h":1.5}, "[alt]"],
-  
   
   [{"r":-50, "rx":9.687, "ry":4.992, "x":0, "y":0, "w":2, "c":"bg_accent"}, "[meta]"],
   [{"x":-1, "h":1.5, "c":"bg_focus"}, "[umlaut]", {"h":1.5}, "[space]", {"h":1.5}, "[nav]"]

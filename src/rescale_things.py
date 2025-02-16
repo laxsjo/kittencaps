@@ -13,7 +13,6 @@ from fontTools import ttLib
 from .lib.utils import *
 from .lib import font as Font
 from .lib.svg_builder import *
-from .lib.keyboard_builder import create_text_icon_svg
 from .lib.pos import *
 from .lib.theme import *
 from .lib.color import *

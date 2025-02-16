@@ -11,10 +11,9 @@ from .utils import *
 from .pos import *
 from .theme import *
 from .color import *
+from . import svg 
 
 __all__ = [
-    "MaybeElementTree",
-    "resolve_element_tree",
     "get_unique_id",
     "element_resolve_namespaces",
     "tree_resolve_namespaces",
@@ -52,10 +51,6 @@ NS = {
 
 for namespace, url in NS.items():
     ET.register_namespace(namespace, url)
-
-type MaybeElementTree = ET.Element | ET.ElementTree
-def resolve_element_tree(tree: MaybeElementTree) -> ET.Element:
-    return tree.getroot() if isinstance(tree, ET.ElementTree) else tree
 
 _id_highest_indices: dict[str, int] = dict()
 def get_unique_id(prefix: str) -> str:
@@ -156,8 +151,8 @@ def remove_element_by_id_in_tree(id: str, tree: ET.ElementTree|ET.Element):
             if child.get("id", None) == id:
                 parent.remove(child)
 
-def tree_get_id(tree: MaybeElementTree, id: str) -> ET.Element|None:
-    for element in resolve_element_tree(tree).iter():
+def tree_get_id(tree: svg.MaybeElementTree, id: str) -> ET.Element|None:
+    for element in svg.resolve_element_tree(tree).iter():
         if element.get("id", None) == id:
             return element
 
@@ -242,8 +237,8 @@ def element_update_outgoing_id(element: ET.Element, old_id: str, new_id: str):
     for child in element.iter():
         update_single_element_id(child, old_id, new_id)
 
-def tree_get_viewbox(tree: MaybeElementTree) -> ViewBox:
-    root = resolve_element_tree(tree)
+def tree_get_viewbox(tree: svg.MaybeElementTree) -> ViewBox:
+    root = svg.resolve_element_tree(tree)
     
     match ViewBox.parse_svg_value(root.attrib["viewBox"]):
         case Ok(value):
@@ -270,10 +265,10 @@ class DefsSet():
     # `self.defs` contains a list of elements previously returned from
     # this function. If any of the returned element ids conflict the ids in the
     # return list are updated, and `element` is mutated to match this new list of elements.
-    def extract_references_from_element_in_tree(self, element: ET.Element, tree: MaybeElementTree):
+    def extract_references_from_element_in_tree(self, element: ET.Element, tree: svg.MaybeElementTree):
         def extract_uncopied(element: ET.Element):
             nonlocal tree
-            tree = resolve_element_tree(tree)
+            tree = svg.resolve_element_tree(tree)
             
             # We don't use a set because we'd like to maintain element order.
             found_referents: list[ET.Element] = []
@@ -376,7 +371,7 @@ def tree_filtered_indent(
     value than 0 can be used for indenting subtrees that are more deeply
     nested inside of a document.
     
-    *add_to_existing* specifies if the indenation white space should be added
+    *add_to_existing* specifies if the indentation white space should be added
     onto any existing whitespace. If false this operation
     is idempotent. (default is False)
     """

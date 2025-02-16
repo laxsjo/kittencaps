@@ -13,6 +13,7 @@ from .error import *
 from .utils import *
 from .pos import *
 from .svg_builder import *
+from . import svg
 from . import font as Font
 from .color import *
 
@@ -54,7 +55,7 @@ def lookup_icon_id(id: str, defs: DefsSet) -> SvgElement | None:
     return SvgElement(element)
 
 # id defaults to text
-def create_text_icon_svg(text: str, id: str|None, keycap_size: Vec2, font: Font.FontDefinition, font_size_px: float) -> SvgElement:
+def create_text_icon_svg(text: str, id: str|None, keycap_size: Vec2, font: Font.FontDefinition, font_size_px: float, foreground_color: str|None) -> SvgElement:
     id = id if id != None else text
     id = f"icon_{id}" if id != "" else "icon"
     
@@ -70,7 +71,7 @@ def create_text_icon_svg(text: str, id: str|None, keycap_size: Vec2, font: Font.
             f"font-weight:{font.weight};"
             f"font-size:{font_size_px}px;"
             f"font-family:{font.family};"
-            f"fill:url(#fg_main);"
+            f"fill:url(#{foreground_color or "fg_main"});"
             f"white-space:normal;"
             f"white-space-collapse:collapse;"
             f"text-wrap:nowrap;",
@@ -119,6 +120,12 @@ class KeycapInfo:
     orientation: Orientation
     # CSS color of background
     color: str
+    color_mappings: list[Tuple[str, str]]
+    """A list of tuples where all instances of the first color name should be
+    replaced by the second color names."""
+    foreground_color: str|None = None
+    """The color name which this keys text should default to if given. If any
+    color_mappings have been specified this is always `None`."""
     
     def __init__(self, key: kle.Key) -> None:
         # We only consider the value of the central label for looking up the icon
@@ -133,7 +140,30 @@ class KeycapInfo:
         self.orientation = geometry.orientation
         self.major_size = geometry.major_size
         self.color = key.color
-     
+        self.color_mappings = []
+        self.foreground_color = None
+        
+        if re.match(r".*->.*(;.*->.*)*", key.default_text_color):
+            # This is sort of an abuse of the KLE format:
+            # If the key foreground color is set to a string with the grammar
+            # `<color-name> "->" <color-name> (";" <color-name> "->" <color-name>)*`,
+            # we then interpret that as a list of tuples where all instances of
+            # the first color name will be replaced with the color described by
+            # the second color name.
+            # Note: The replacements are done all at once, meaning that
+            # for instance, if we have two mappings of X -> Y and Y -> Z, places
+            # that use the color X will only be replaced by Y, and *not* Z.
+            for mapping_str in key.default_text_color.split(";"):
+                old, new = mapping_str.split("->")
+                self.color_mappings.append((old, new))
+        else:
+            # A foreground color of pure black is considered to be specifying
+            # the default color.
+            if key.default_text_color == "#000000":
+                self.foreground_color = None
+            else:
+                self.foreground_color = key.default_text_color 
+    
     # Get size in '_u' notation, ex: 1u, 1.5u
     def size_u(self) -> str:
         size = float(f"{float(self.major_size):.2}")
@@ -283,7 +313,13 @@ class KeycapFactory:
             if icon is None:
                 panic(f"Could not find icon '{key.icon_id}'")
         else:
-            icon = create_text_icon_svg(key.icon_id, None, Vec2(1, 1), self.theme.default_font, self.theme.font_size_px)
+            icon = create_text_icon_svg(key.icon_id, None, Vec2(1, 1), self.theme.default_font, self.theme.font_size_px, key.foreground_color)
+        if key.color_mappings:
+            mappings = dict(map(
+                lambda pair: (f"#{pair[0]}", f"#{pair[1]}"),
+                key.color_mappings
+            ))
+            svg.tree_replace_in_attributes(icon.element, mappings)
         icon.set_scale(Scaling(self.theme.unit_size / 100))
         
         center_pos = dimensions.as_vec2() / 2
