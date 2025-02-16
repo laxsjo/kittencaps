@@ -7,19 +7,19 @@
     </linearGradient>
     <linearGradient id="bg_accent_darker" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
       <title>bg_accent_darker</title>
-      <stop style="stop-color:oklch(0.552 0.0672 278);"/>
+      <stop style="stop-color:oklch(0.552 0.0672 290);"/>
     </linearGradient>
     <linearGradient id="bg_accent_dark" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
       <title>bg_accent_dark</title>
-      <stop style="stop-color:oklch(0.71 0.0568 282);"/>
+      <stop style="stop-color:oklch(0.71 0.0568 295);"/>
     </linearGradient>
     <linearGradient id="bg_accent" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
       <title>bg_accent</title>
-      <stop style="stop-color:oklch(0.899 0.035 285);"/>
+      <stop style="stop-color:oklch(0.899 0.035 300);"/>
     </linearGradient>
     <linearGradient id="bg_accent_lighter" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
       <title>bg_accent_lighter</title>
-      <stop style="stop-color:oklch(0.942 0.013 290);"/>
+      <stop style="stop-color:oklch(0.942 0.013 310);"/>
     </linearGradient>
     <linearGradient id="bg_focus" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
       <title>bg_focus</title>
@@ -45,17 +45,17 @@
       <title>fg_orange</title>
       <stop style="stop-color:#ffc867;"/>
     </linearGradient>
-    <linearGradient id="fg_color_darker" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
-      <title>fg_color_darker</title>
-      <stop style="stop-color:oklch(0.633 0.086 347);"/>
+    <linearGradient id="blush_darker" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
+      <title>blush_darker</title>
+      <stop style="stop-color:oklch(0.633 0.086 310);"/>
     </linearGradient>
-    <linearGradient id="fg_color" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
-      <title>fg_color</title>
-      <stop style="stop-color:oklch(0.698 0.1192 342);"/>
+    <linearGradient id="blush" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
+      <title>blush</title>
+      <stop style="stop-color:oklch(0.846 0.048 310);"/>
     </linearGradient>
-    <linearGradient id="fg_color_lighter" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
-      <title>fg_color_lighter</title>
-      <stop style="stop-color:oklch(0.966 0.022 336);"/>
+    <linearGradient id="blush_lighter" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
+      <title>blush_lighter</title>
+      <stop style="stop-color:oklch(0.966 0.022 310);"/>
     </linearGradient>
     <linearGradient id="accent_sec_darker" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
       <title>accent_sec_darker</title>
@@ -81,8 +81,8 @@
       <title>case</title>
       <stop style="stop-color:#000000;"/>
     </linearGradient>
-    <linearGradient id="fg_color_invert" gradientUnits="userSpaceOnUse">
-      <title>fg_color_invert</title>
+    <linearGradient id="blush_invert" gradientUnits="userSpaceOnUse">
+      <title>blush_invert</title>
       <stop style="stop-color: oklch(0.834 0.045 342);"/>
     </linearGradient>
     <symbol id="symbol-0" viewBox="-2 -2 27.4 27.4" bx:pinned="true">
@@ -189,10 +189,10 @@
       <ellipse style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 10px; transform-box: fill-box; transform-origin: 53.5105% 40.7275%; fill: url(&quot;#bg_accent&quot;);" cx="42.0065" cy="35.0259" rx="1.1108" ry="1.6662">
         <title>Eye</title>
       </ellipse>
-      <ellipse style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 10px; fill: url(&quot;#fg_color_invert&quot;); visibility: hidden;" cx="34.9865" cy="38.3105" rx="1.333" ry="0.648">
+      <ellipse style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 10px; fill: url(&quot;#blush_invert&quot;); visibility: hidden;" cx="34.9865" cy="38.3105" rx="1.333" ry="0.648">
         <title>Blush</title>
       </ellipse>
-      <ellipse style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 10px; fill: url(&quot;#fg_color_invert&quot;); visibility: hidden;" cx="42.3919" cy="38.3105" rx="1.333" ry="0.6583">
+      <ellipse style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 10px; fill: url(&quot;#blush_invert&quot;); visibility: hidden;" cx="42.3919" cy="38.3105" rx="1.333" ry="0.6583">
         <title>Blush</title>
       </ellipse>
       <path style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.5px; fill: none; stroke: url(&quot;#bg_accent&quot;);" d="M 37.2751 38.1315 C 37.2751 40.434 40.0121 40.4099 40.0121 38.1315">

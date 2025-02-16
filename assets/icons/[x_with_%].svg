@@ -7,19 +7,19 @@
     </linearGradient>
     <linearGradient id="bg_accent_darker" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
       <title>bg_accent_darker</title>
-      <stop style="stop-color:oklch(0.552 0.0672 278);"/>
+      <stop style="stop-color:oklch(0.552 0.0672 290);"/>
     </linearGradient>
     <linearGradient id="bg_accent_dark" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
       <title>bg_accent_dark</title>
-      <stop style="stop-color:oklch(0.71 0.0568 282);"/>
+      <stop style="stop-color:oklch(0.71 0.0568 295);"/>
     </linearGradient>
     <linearGradient id="bg_accent" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
       <title>bg_accent</title>
-      <stop style="stop-color:oklch(0.899 0.035 285);"/>
+      <stop style="stop-color:oklch(0.899 0.035 300);"/>
     </linearGradient>
     <linearGradient id="bg_accent_lighter" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
       <title>bg_accent_lighter</title>
-      <stop style="stop-color:oklch(0.942 0.013 290);"/>
+      <stop style="stop-color:oklch(0.942 0.013 310);"/>
     </linearGradient>
     <linearGradient id="bg_focus" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
       <title>bg_focus</title>
@@ -45,17 +45,17 @@
       <title>fg_orange</title>
       <stop style="stop-color:#ffc867;"/>
     </linearGradient>
-    <linearGradient id="fg_color_darker" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
-      <title>fg_color_darker</title>
-      <stop style="stop-color:oklch(0.633 0.086 347);"/>
+    <linearGradient id="blush_darker" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
+      <title>blush_darker</title>
+      <stop style="stop-color:oklch(0.633 0.086 310);"/>
     </linearGradient>
-    <linearGradient id="fg_color" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
-      <title>fg_color</title>
-      <stop style="stop-color:oklch(0.698 0.1192 342);"/>
+    <linearGradient id="blush" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
+      <title>blush</title>
+      <stop style="stop-color:oklch(0.846 0.048 310);"/>
     </linearGradient>
-    <linearGradient id="fg_color_lighter" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
-      <title>fg_color_lighter</title>
-      <stop style="stop-color:oklch(0.966 0.022 336);"/>
+    <linearGradient id="blush_lighter" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
+      <title>blush_lighter</title>
+      <stop style="stop-color:oklch(0.966 0.022 310);"/>
     </linearGradient>
     <linearGradient id="accent_sec_darker" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
       <title>accent_sec_darker</title>
