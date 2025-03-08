@@ -18,21 +18,15 @@ __all__ = [
     "element_resolve_namespaces",
     "tree_resolve_namespaces",
     "make_element",
-    "remove_element_in_tree",
-    "remove_element_by_id_in_tree",
-    "tree_get_id",
     "untangle_gradient_links",
     "tree_get_viewbox",
     "DefsSet",
     "element_add_label",
-    "element_append_css_properties",
-    "element_remove_css_properties",
     "tree_remove_indentation",
     "tree_filtered_indent",
     "Transform",
     "Placement",
     "element_apply_transform",
-    "ViewBox",
     "SizedElement",
     "SvgElement",
     "SvgSymbol",
@@ -139,23 +133,6 @@ def element_depth_in_tree(element: ET.Element, tree: ET.ElementTree|ET.Element) 
     
     return depth
 
-def remove_element_in_tree(element: ET.Element, tree: ET.ElementTree|ET.Element):
-    for parent in tree.iter():
-        # Removes element it if it's a child of parent 
-        if element in parent:
-            parent.remove(element)
-
-def remove_element_by_id_in_tree(id: str, tree: ET.ElementTree|ET.Element):
-    for parent in tree.iter():
-        for child in parent:
-            if child.get("id", None) == id:
-                parent.remove(child)
-
-def tree_get_id(tree: svg.MaybeElementTree, id: str) -> ET.Element|None:
-    for element in svg.resolve_element_tree(tree).iter():
-        if element.get("id", None) == id:
-            return element
-
 # Remove all <linearGradient> elements which link to another with an href, and updated all
 # references to this element.
 def untangle_gradient_links(tree: ET.ElementTree|ET.Element) -> None:
@@ -184,7 +161,7 @@ def untangle_gradient_links(tree: ET.ElementTree|ET.Element) -> None:
         parent_id = value.removeprefix("#")
         
         update_all_refs(root, id, parent_id)
-        remove_element_in_tree(gradient, tree)
+        svg.tree_remove_element(tree, gradient)
 
 # Get a list of all ids which are somehow referenced by element, or one of its
 # children.
@@ -237,10 +214,10 @@ def element_update_outgoing_id(element: ET.Element, old_id: str, new_id: str):
     for child in element.iter():
         update_single_element_id(child, old_id, new_id)
 
-def tree_get_viewbox(tree: svg.MaybeElementTree) -> ViewBox:
+def tree_get_viewbox(tree: svg.MaybeElementTree) -> svg.ViewBox:
     root = svg.resolve_element_tree(tree)
     
-    match ViewBox.parse_svg_value(root.attrib["viewBox"]):
+    match svg.ViewBox.parse_svg_value(root.attrib["viewBox"]):
         case Ok(value):
             return value
         case Error(reason):
@@ -280,7 +257,7 @@ class DefsSet():
                 if id in self.skipped_ids:
                     continue
                 
-                referent = tree_get_id(tree, id)
+                referent = svg.tree_get_id(tree, id)
                 if referent is None or referent in encountered_elements:
                     continue
                 encountered_elements.add(referent)
@@ -317,27 +294,6 @@ def element_add_label(element: ET.Element, label: str) -> None:
     
     element.set("inkscape:label", label)
     title.text = label
-
-
-def element_append_css_properties(element: ET.Element, properties: CssStyles) -> None:
-    styles = CssStyles(CssStyles.from_style(element.get("style", "")) | properties)
-    if styles != CssStyles():
-        element.set("style", styles.to_style())
-
-def element_remove_css_properties(element: ET.Element, properties: set[str]) -> None:
-    styles = CssStyles.from_style(element.get("style", ""))
-    for property in properties:
-        try:
-            del styles[property]
-        except:
-            pass
-    if styles == CssStyles():
-        try:
-            del element.attrib["style"]
-        except:
-            pass
-    else:
-        element.set("style", styles.to_style())
 
 def tree_remove_indentation(tree: ET.ElementTree|ET.Element) -> None:
     root = tree.getroot() if isinstance(tree, ET.ElementTree) else tree
@@ -467,45 +423,6 @@ def element_apply_style(element: ET.Element, styles: CssStyles) -> None:
     new_style = previous_style + " ".join(style_statements)
     if new_style != "":
         element.attrib["style"] = previous_style + " ".join(style_statements)
-
-@dataclass
-class ViewBox:
-    pos: Vec2
-    size: Scaling
-    
-    def add_padding(self, padding: float) -> ViewBox:
-        return ViewBox(
-            pos=self.pos - Vec2(padding, padding),
-            size=self.size + Scaling(padding) * 2
-        )
-    
-    @classmethod
-    def parse_svg_value(cls, value: str) -> Result[Self, str]:
-        try:
-            components = tuple(map(float, re.sub(r"[\s,]+", " ", value).split(" ")))
-        except ValueError as error:
-            return Error(
-                f"Value contained non-numeric component: {" ".join(error.args)}"
-            )
-        
-        if len(components) != 4:
-            return Error(f"Value did not contained 4 components: Got {len(components)}")
-        
-        x, y, width, height = components
-        return Ok(cls(
-            Vec2(x, y),
-            Scaling(width, height),
-        ))
-    
-    @classmethod
-    def from_bounds(cls, bounds: Bounds) -> Self:
-        delta = bounds.max - bounds.min
-        
-        # TODO: Does this really work?
-        return cls(
-            pos=bounds.min,
-            size=delta.as_scaling()
-        )
 
 @dataclass
 class SizedElement:
@@ -687,7 +604,7 @@ class SvgDocumentBuilder:
     elements: list[ET.Element]
     _root_styles: CssStyles
     _palette: Palette|None = None
-    viewbox: ViewBox|None = None
+    viewbox: svg.ViewBox|None = None
     
     def __init__(self) -> None:
         self.elements = []
@@ -716,7 +633,7 @@ class SvgDocumentBuilder:
         self._palette = palette
         return self
     
-    def set_viewbox(self, viewbox: ViewBox) -> Self:
+    def set_viewbox(self, viewbox: svg.ViewBox) -> Self:
         self.viewbox = viewbox
         return self
     

@@ -11,12 +11,14 @@ __all__ = [
     "Todo",
     "assert_instance",
     "inspect",
+    "time_it",
+    "log_action_time",
 ]
 
 def eprint(*args, **kwargs):
     print(*args, file=sys.stderr, **kwargs)
 
-def panic(reason: str, traceback_level: int = 0) -> Never:
+def panic(reason: str = "", traceback_level: int = 0) -> Never:
     location = traceback.extract_stack()[-(traceback_level + 2)]
     
     path = os.path.relpath(location.filename, os.getcwd())
@@ -48,3 +50,19 @@ def assert_instance[T](_class: type[T], value: Any) -> T:
 def inspect[T](value: T) -> T:
     print(value)
     return value
+
+def time_it[T](function: Callable[[], T]) -> tuple[T, float]:
+    from time import time
+    start = time()
+    
+    result = function()
+    
+    end = time()
+    return result, end - start
+
+def log_action_time[T](action: str, function: Callable[[], T]) -> T:
+    print(f"{action}...", end="")
+    result, seconds = time_it(function)
+    print(f"\r{action} took {seconds * 1000.0:.1f} ms")
+    return result
+    

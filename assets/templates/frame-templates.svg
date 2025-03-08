@@ -29,25 +29,25 @@
 </filter>
 
 <!-- Keycap top surfaces -->
-<symbol  id="1u-top" viewBox="-50 -50 100 100" preserveAspectRatio="none">
+<symbol id="_1u-top" viewBox="-50 -50 100 100" preserveAspectRatio="none">
   <path class="surface" style="fill:inherit;" d="M 50 -40 C 50 -45.5 45.5 -50 40 -50 L -40 -50 C -45.5 -50 -50 -45.5 -50 -40 L -50 40 C -50 45.5 -45.5 50 -40 50 L 40 50 C 45.5 50 50 45.5 50 40 L 50 -40 Z"/>
 </symbol>
-<symbol id="1.25u-top" viewBox="-68.75 -50 137.5 100" preserveAspectRatio="none">
+<symbol id="_1.25u-top" viewBox="-68.75 -50 137.5 100" preserveAspectRatio="none">
   <path class="surface" style="fill:inherit;" d="M68.75-40c0-5.5-4.5-10-10-10h-117.5c-5.5,0-10,4.5-10,10v80c0,5.5,4.5,10,10,10h117.5   c5.5,0,10-4.5,10-10V-40z" />
 </symbol>
-<symbol id="1.5u-top" viewBox="-87.5 -50 175 100" preserveAspectRatio="none">
+<symbol id="_1.5u-top" viewBox="-87.5 -50 175 100" preserveAspectRatio="none">
   <path class="surface" style="fill:inherit;" d="M87.5-40c0-5.5-4.5-10-10-10h-155c-5.5,0-10,4.5-10,10v80c0,5.5,4.5,10,10,10h155   c5.5,0,10-4.5,10-10V-40z" />
 </symbol>
-<symbol id="0.75u-top" viewBox="-31.25 -50 62.5 100" preserveAspectRatio="none">
+<symbol id="_0.75u-top" viewBox="-31.25 -50 62.5 100" preserveAspectRatio="none">
   <path class="surface" style="fill:inherit;" d="M106.25-40c0-5.5-4.5-10-10-10h-192.5c-5.5,0-10,4.5-10,10v80c0,5.5,4.5,10,10,10h192.5   c5.5,0,10-4.5,10-10V-40z" />
 </symbol>
-<symbol id="2u-top" viewBox="-125 -50 250 100" preserveAspectRatio="none">
+<symbol id="_2u-top" viewBox="-125 -50 250 100" preserveAspectRatio="none">
   <path class="surface" style="fill:inherit;" d="M125-40c0-5.5-4.5-10-10-10h-230c-5.5,0-10,4.5-10,10v80c0,5.5,4.5,10,10,10h230   c5.5,0,10-4.5,10-10V-40z" />
 </symbol>
-<symbol id="2.25u-top" viewBox="-143.75 -50 287.5 100" preserveAspectRatio="none">
+<symbol id="_2.25u-top" viewBox="-143.75 -50 287.5 100" preserveAspectRatio="none">
   <path class="surface" style="fill:inherit;" d="M143.75-40c0-5.5-4.5-10-10-10h-267.5c-5.5,0-10,4.5-10,10v80c0,5.5,4.5,10,10,10h267.5   c5.5,0,10-4.5,10-10V-40z" />
 </symbol>
-<symbol id="2.75u-top" viewBox="-181.25 -50 362.5 100" preserveAspectRatio="none">
+<symbol id="_2.75u-top" viewBox="-181.25 -50 362.5 100" preserveAspectRatio="none">
   <path class="surface" style="fill:inherit;" d="M181.25-40c0-5.5-4.5-10-10-10h-342.5c-5.5,0-10,4.5-10,10v80c0,5.5,4.5,10,10,10h342.5   c5.5,0,10-4.5,10-10V-40z" />
 </symbol>
 </svg>

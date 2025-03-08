@@ -12,12 +12,15 @@ __all__ = [
     "Ok",
     "Option",
     "map_some",
-    "unwrap"
+    "map_ok",
+    "unwrap",
+    "unwrap_or",
+    "collect_results",
 ]
 
 type Result[OkType, ErrType] = Ok[OkType]|Error[ErrType]
 
-@dataclass
+@dataclass(frozen=True)
 class Error[T]:
     value: T
     
@@ -27,7 +30,7 @@ class Error[T]:
     def unwrap_err(self) -> T:
         return self.value
 
-@dataclass
+@dataclass(frozen=True)
 class Ok[T]:
     value: T
     
@@ -46,6 +49,13 @@ def map_some[T, R](value: Option[T], f: Callable[[T], R]) -> Option[R]:
         case some_value:
             return f(some_value)
 
+def map_ok[T, U, R](value: Result[T, U], f: Callable[[T], R]) -> Result[R, U]:
+    match value:
+        case Error(err_value):
+            return Error(err_value)
+        case Ok(ok_value):
+            return Ok(f(ok_value))
+
 def unwrap[T](value: Result[T, Any]|Option[T]) -> T:
     match value:
         case Error(error):
@@ -56,3 +66,27 @@ def unwrap[T](value: Result[T, Any]|Option[T]) -> T:
             return ok
         case some:
             return some
+
+def unwrap_or[T, U](value: Result[T, Any]|Option[T], default: U) -> T | U:
+    match value:
+        case Error(error):
+            return default
+        case None:
+            return default
+        case Ok(ok):
+            return ok
+        case some:
+            return some
+
+def collect_results[T, U](iterable: Iterable[Result[T, U]]) -> Result[list[T], U]:
+    result = list[T]()
+    iterator = iter(iterable)
+    try:
+        while True:
+            match next(iterator):
+                case Ok(value):
+                    result.append(value)
+                case Error(value):
+                    return Error(value)
+    except StopIteration:
+        return Ok(result)

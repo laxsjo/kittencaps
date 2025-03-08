@@ -23,6 +23,7 @@ __all__ = [
     "create_keycap_mask",
     "create_text_icon_svg",
     "place_keys",
+    "border_from_bounds",
     "build_keyboard_svg",
 ]
 
@@ -171,7 +172,7 @@ class KeycapInfo:
 
 # Create mask for keycap bounding box
 def create_keycap_mask(size_u: str, theme: Theme) -> ET.Element:
-    id = f"{size_u}-base"
+    id = f"_{size_u}-base"
     
     size = float(size_u.removesuffix("u"))
     
@@ -242,7 +243,7 @@ class KeycapFactory:
         if size_u in self._shading_masks:
             return self._shading_masks[size_u].attrib["id"]
         
-        id = f"{size_u}-shading"
+        id = f"_{size_u}-shading"
         
         size = float(size_u.removesuffix("u"))
         
@@ -261,7 +262,7 @@ class KeycapFactory:
             "height": f"{height:g}",
             "x": f"{offset:g}",
             "y": f"{offset:g}",
-            "href": f"#{size_u}-top",
+            "href": f"#_{size_u}-top",
             "fill": "black",
         })
         
@@ -380,8 +381,8 @@ class PlacedComponent():
             self.transform.get_translation(),
         ).bounds()
 
-def border_from_bounds(bounds: Bounds|ViewBox) -> ET.Element:
-    viewbox = ViewBox.from_bounds(bounds) if isinstance(bounds, Bounds) else bounds
+def border_from_bounds(bounds: Bounds | svg.ViewBox) -> ET.Element:
+    viewbox = svg.ViewBox.from_bounds(bounds) if isinstance(bounds, Bounds) else bounds
     return ET.Element("rect", {
         "width": str(viewbox.size.get_x()),
         "height": str(viewbox.size.get_y()),
@@ -441,7 +442,7 @@ class KeyboardBuilder():
             (component.bounds() for component in self._components),
         )
         
-        viewbox = ViewBox.from_bounds(bounds).add_padding(magic.padding)
+        viewbox = svg.ViewBox.from_bounds(bounds).add_padding(magic.padding)
 
         builder = SvgDocumentBuilder()\
             .set_viewbox(viewbox)\
@@ -457,9 +458,20 @@ class KeyboardBuilder():
             # .add_element(border_from_bounds(viewbox))
         
         builder.add_element(
-            SvgStyleBuilder()\
-                .indentation(1, "  ")\
-                .statement(*map(Font.generate_css_rule, self.theme.font_family))\
+            SvgStyleBuilder()
+                .indentation(1, "  ")
+                .attributes(dict(
+                    id="fonts",
+                ))
+                .statement(*map(Font.generate_css_rule, self.theme.font_family))
+                .build()
+        )
+        builder.add_element(
+            SvgStyleBuilder()
+                .indentation(1, "  ")
+                .attributes(dict(
+                    id="surface-colors",
+                ))
                 .rule(*(
                     CssRule(f".keycap-color-{name} .surface", CssStyles({
                         "fill": f"url(#{name})",

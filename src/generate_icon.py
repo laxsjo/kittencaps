@@ -13,6 +13,7 @@ from fontTools import ttLib
 from .lib.utils import *
 from .lib import font as Font
 from .lib.svg_builder import *
+from .lib import svg
 from .lib.keyboard_builder import *
 from .lib.pos import *
 from .lib.theme import *
@@ -52,7 +53,7 @@ def generate_svg(size: Vec2, bg_color: str|None, font_paths: list[pathlib.Path],
     font_rules = (Font.generate_css_rule(Font.FontDefinition(path)) for path in font_paths)
     
     builder = SvgDocumentBuilder()\
-        .set_viewbox(ViewBox(Vec2(0, 0), (size * 100).as_scaling()))\
+        .set_viewbox(svg.ViewBox(Vec2(0, 0), (size * 100).as_scaling()))\
         .palette(theme.colors)
     
     style = SvgStyleBuilder()\
@@ -77,7 +78,7 @@ def generate_svg(size: Vec2, bg_color: str|None, font_paths: list[pathlib.Path],
         case Orientation.VERTICAL:
             surface_rotation = Rotation(90)
             
-    surface_id = f"{key_size.size_u()}-top"
+    surface_id = f"_{key_size.size_u()}-top"
     # A surface symbol is assumed to have a "-50 -50 100 100" viewbox
     surface_symbol = templates[surface_id]
     if isinstance(surface_symbol, Error):
@@ -93,7 +94,7 @@ def generate_svg(size: Vec2, bg_color: str|None, font_paths: list[pathlib.Path],
     surface_path.set("stroke", "black")
     surface_path.set("stroke-opacity", "0.5")
     surface_path.set("fill", "none")
-    element_remove_css_properties(surface_path, {"fill"})
+    svg.remove_css_properties(surface_path, {"fill"})
     try:
         del surface_path.attrib["class"]
     except:
