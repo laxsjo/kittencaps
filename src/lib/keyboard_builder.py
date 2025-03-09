@@ -22,6 +22,7 @@ __all__ = [
     "KeycapInfo",
     "create_keycap_mask",
     "create_text_icon_svg",
+    "create_icon_outline",
     "place_keys",
     "border_from_bounds",
     "build_keyboard_svg",
@@ -94,7 +95,41 @@ def create_text_icon_svg(text: str, id: str|None, keycap_size: Vec2, font: Font.
     
     return SvgElement(root)
 
-@dataclass
+def create_icon_outline(geometry: KeycapGeometry, theme: Theme, templates: SvgSymbolSet, *, stroke="black") -> ET.Element:
+    center_pos = Vec2(50, 50) * geometry.size()
+    surface_scaling = Scaling(theme.top_size / theme.unit_size)
+    match geometry.orientation:
+        case Orientation.HORIZONTAL:
+            surface_rotation = Rotation(0)
+        case Orientation.VERTICAL:
+            surface_rotation = Rotation(90)
+            
+    surface_id = f"_{geometry.size_u()}-top"
+    # A surface symbol is assumed to have a "-50 -50 100 100" viewbox
+    surface_symbol = templates[surface_id]
+    if isinstance(surface_symbol, Error):
+        panic(f"Given icon size did not have a corresponding entry in the templates file: could not find symbol element with id '{surface_id}'.")
+    outline = surface_symbol.source.element.find(".//path")
+    if outline == None:
+        panic(f"Found symbol with id {surface_id} did not have required path child element")
+    element_apply_transform(outline, Transform(
+        translate=center_pos,
+        scale=surface_scaling,
+        rotate=surface_rotation,
+    ))
+    outline.set("stroke", stroke)
+    outline.set("stroke-opacity", "0.5")
+    outline.set("fill", "none")
+    outline.set("style", "pointer-events: none;")
+    svg.remove_css_properties(outline, {"fill"})
+    try:
+        del outline.attrib["class"]
+    except:
+        pass
+    element_add_label(outline, "Outline")
+    return outline
+
+@dataclass(frozen=True)
 class KeycapGeometry:
     major_size: float
     orientation: Orientation
@@ -113,6 +148,13 @@ class KeycapGeometry:
     def size_u(self) -> str:
         size = float(f"{float(self.major_size):.2}")
         return f"{size}".removesuffix(".0") + "u"
+    
+    def size(self) -> Vec2:
+        match self.orientation:
+            case Orientation.HORIZONTAL:
+                return Vec2(self.major_size, 1)
+            case Orientation.VERTICAL:
+                return Vec2(1, self.major_size)
 
 class KeycapInfo:
     icon_id: str
@@ -169,6 +211,9 @@ class KeycapInfo:
     def size_u(self) -> str:
         size = float(f"{float(self.major_size):.2}")
         return f"{size}".removesuffix(".0") + "u"
+    
+    def geometry(self) -> KeycapGeometry:
+        return KeycapGeometry(self.major_size, self.orientation)
 
 # Create mask for keycap bounding box
 def create_keycap_mask(size_u: str, theme: Theme) -> ET.Element:
@@ -332,9 +377,15 @@ class KeycapFactory:
         
         icon.element.attrib["x"] = f"{icon_pos.x:g}"
         icon.element.attrib["y"] = f"{icon_pos.y:g}"
+
+        outline = create_icon_outline(key.geometry(), self.theme, self.templates, stroke="red")
+        outline.set("class", "outline")
+        outline.set("visibility", "hidden")
+        element_apply_transform(outline, Transform(scale=Scaling(self.theme.unit_size / 100)))
         
         icon_wrapper = ET.Element("g")
         icon_wrapper.append(icon.element)
+        icon_wrapper.append(outline)
         element_apply_transform(icon_wrapper, Placement(
             translate=frame_pos.swap(),
             rotate=-frame_rotation

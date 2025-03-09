@@ -70,37 +70,7 @@ def generate_svg(size: Vec2, bg_color: str|None, margin: float, font_paths: list
     if key_size == None:
         panic(f"Icon was not 1u in either width or height, given key dimensions: ({size.x}, {size.y})")
     
-    center_pos = Vec2(50, 50) * size
-    surface_scaling = Scaling(theme.top_size / theme.unit_size)
-    match key_size.orientation:
-        case Orientation.HORIZONTAL:
-            surface_rotation = Rotation(0)
-        case Orientation.VERTICAL:
-            surface_rotation = Rotation(90)
-            
-    surface_id = f"_{key_size.size_u()}-top"
-    # A surface symbol is assumed to have a "-50 -50 100 100" viewbox
-    surface_symbol = templates[surface_id]
-    if isinstance(surface_symbol, Error):
-        panic(f"Given icon size did not have a corresponding entry in the templates file: could not find symbol element with id '{surface_id}'.")
-    surface_path = surface_symbol.source.element.find(".//path")
-    if surface_path == None:
-        panic(f"Found symbol with id {surface_id} did not have required path child element")
-    element_apply_transform(surface_path, Transform(
-        translate=center_pos,
-        scale=surface_scaling,
-        rotate=surface_rotation,
-    ))
-    surface_path.set("stroke", "black")
-    surface_path.set("stroke-opacity", "0.5")
-    surface_path.set("fill", "none")
-    surface_path.set("style", "pointer-events: none;")
-    svg.remove_css_properties(surface_path, {"fill"})
-    try:
-        del surface_path.attrib["class"]
-    except:
-        pass
-    element_add_label(surface_path, "Outline")
+    surface_path = create_icon_outline(key_size, theme, templates)
     
     bounds_rect = make_element("rect", {
         "width": number_to_str(size.x * 100),

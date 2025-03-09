@@ -499,8 +499,9 @@ class SvgSymbolSet:
         return id in self.symbols
     
     def __getitem__(self, id: str) -> SvgSymbol|Error[str]:
+        from copy import deepcopy
         if id in self:
-            return self.symbols[id]
+            return deepcopy(self.symbols[id])
         else:
             return Error(f"Icon set did not contain id '{id}'")
     

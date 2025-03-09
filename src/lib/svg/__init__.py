@@ -27,10 +27,13 @@ __all__ = [
     "tree_get_by",
     "tree_get_by_class",
     "tree_remove_by",
+    "tree_remove_by_class",
+    "tree_remove_by_id",
     "tree_remove_attributes_by",
     "tree_replace_in_attributes",
     "tree_remove_unreferenced_ids",
     "tree_remove_element",
+    "tree_find_by_class",
     "get_css_property",
     "append_css_properties",
     "remove_css_properties",
@@ -127,6 +130,13 @@ def tree_remove_by(tree: MaybeElementTree, predicate: Callable[[ET.Element], boo
                 found_any = True
                 parent.remove(child)
     return found_any
+
+def tree_remove_by_class(tree: MaybeElementTree, class_: str) -> bool:
+    """
+    Remove all elements in tree with the provided class.
+    Return true if any elements were removed, otherwise false.
+    """
+    return tree_remove_by(tree, lambda element: element.get("class") == class_)
 
 def tree_remove_by_id(tree: MaybeElementTree, id: str) -> bool:
     """
@@ -339,6 +349,13 @@ def tree_remove_properties(tree: MaybeElementTree, properties: set[str]) -> None
     
     for element in tree.iter():
         remove_properties(element, properties)
+
+def tree_find_by_class(tree: MaybeElementTree, class_: str) -> Iterable[ET.Element]:
+    """
+    Return iterable of all elements in tree with class.
+    """
+    
+    return filter(lambda element: element.get("class") == class_, tree.iter())
 
 def resolve_transform_origin(tree: MaybeElementTree, element: ET.Element, view_box: ViewBox) -> Vec2 | None:
     """

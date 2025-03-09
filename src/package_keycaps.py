@@ -74,10 +74,6 @@ def normalize_keyboard_for_texture(keyboard: svg.MaybeElementTree, theme: Theme)
     if not svg.tree_remove_by_id(keyboard, "palette-colors"):
         panic("Could not find #palette-colors")
     
-    # Remove fonts
-    if not svg.tree_remove_by_id(keyboard, "fonts"):
-        panic("Could not find #fonts")
-    
     # Set fill color of background rect manually that would otherwise be set via
     # css.
     for name, color in theme.colors.items():
@@ -161,10 +157,22 @@ def main() -> None:
     with open(out / "preview.svg", "w") as file:
         result.write(file, encoding="unicode", xml_declaration=True)
     
+    # Show icon outlines
+    for outline in svg.tree_find_by_class(result, "outline"):
+        outline.set("visibility", "visible")
+    
     log_action_time(
         "Normalizing texture.svg",
         lambda: normalize_keyboard_for_texture(result, theme),
     )
+    
+    with open(out / "texture-outlined.svg", "w") as file:
+        result.write(file, encoding="unicode", xml_declaration=True)
+    
+    # Remove icon outlines
+    svg.tree_remove_by_class(result, "outline")
+    # Remove embedded fonts
+    svg.tree_remove_by_id(result, "fonts")
     
     with open(out / "texture.svg", "w") as file:
         result.write(file, encoding="unicode", xml_declaration=True)
@@ -207,6 +215,7 @@ def main() -> None:
         )
     log_action_time("Generating PNGs", lambda: svg.render_many_files_as_png((
         (out / "preview.svg", out / "preview.png"),
+        (out / "texture-outlined.svg", out / "texture-outlined.png"),
         (out / "texture.svg", out / "texture.png"),
     )))
     
