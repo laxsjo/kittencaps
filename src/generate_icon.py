@@ -48,12 +48,12 @@ def parse_size(size: str) -> Ok[Vec2]|Error[str]:
     
     return Ok(Vec2(*components))
 
-def generate_svg(size: Vec2, bg_color: str|None, font_paths: list[pathlib.Path], theme: Theme, templates: SvgSymbolSet, out_file: TextIO) -> None:
+def generate_svg(size: Vec2, bg_color: str|None, margin: float, font_paths: list[pathlib.Path], theme: Theme, templates: SvgSymbolSet, out_file: TextIO) -> None:
     font = Font.FontDefinition(font_paths[0])
     font_rules = (Font.generate_css_rule(Font.FontDefinition(path)) for path in font_paths)
     
     builder = SvgDocumentBuilder()\
-        .set_viewbox(svg.ViewBox(Vec2(0, 0), (size * 100).as_scaling()))\
+        .set_viewbox(svg.ViewBox(Vec2(-margin, -margin), (size * 100 + Vec2.promote_float(margin * 2)).as_scaling()))\
         .palette(theme.colors)
     
     style = SvgStyleBuilder()\
@@ -94,6 +94,7 @@ def generate_svg(size: Vec2, bg_color: str|None, font_paths: list[pathlib.Path],
     surface_path.set("stroke", "black")
     surface_path.set("stroke-opacity", "0.5")
     surface_path.set("fill", "none")
+    surface_path.set("style", "pointer-events: none;")
     svg.remove_css_properties(surface_path, {"fill"})
     try:
         del surface_path.attrib["class"]
@@ -101,10 +102,28 @@ def generate_svg(size: Vec2, bg_color: str|None, font_paths: list[pathlib.Path],
         pass
     element_add_label(surface_path, "Outline")
     
-    bg_element = ET.Element("rect", {
-        "class": "icon-bg",
+    bounds_rect = make_element("rect", {
         "width": number_to_str(size.x * 100),
         "height": number_to_str(size.y * 100),
+        "fill": "none",
+        "stroke": "black",
+        "stroke-opacity": "0.5",
+        # This approximates the correct width given the standard themes top size
+        # TODO: This is very ugly, should instead apply the transform of the top
+        #       surface path, so that its stroke width isn't scaled.
+        "stroke-width": "0.65",
+        "style": "pointer-events: none;",
+    })
+    element_add_label(bounds_rect, "Bounds")
+    
+    # Margin adjusted to match if unit_size was 100 px. 
+    
+    bg_element = make_element("rect", {
+        "class": "icon-bg",
+        "x": number_to_str(-margin) if margin != 0 else None,
+        "y": number_to_str(-margin) if margin != 0 else None,
+        "width": number_to_str(size.x * 100 + margin * 2),
+        "height": number_to_str(size.y * 100 + margin * 2),
         "fill": f"url(#{bg_color or "bg_main"})",
     })
     if bg_color is None:
@@ -116,6 +135,7 @@ def generate_svg(size: Vec2, bg_color: str|None, font_paths: list[pathlib.Path],
     builder.add_element(bg_element)
     builder.add_element(icon.element)
     builder.add_element(surface_path)
+    builder.add_element(bounds_rect)
     
     tree = builder.build()
     tree.write(out_file, encoding="unicode", xml_declaration=True)
@@ -134,6 +154,13 @@ def main() -> None:
         metavar="COLOR",
         default="",
         help="The background color of the keycap. The value must be a valid name present in the theme, or an empty string. The created element is set to hidden if empty or not given. It's purely to help while designing and is removed before the icon is inserted into the assembled keymap.",
+    )
+    parser.add_argument(
+        "--margin",
+        metavar="COLOR",
+        type=float,
+        default=0,
+        help="Margin to extend the icon viewbox in pixels. Assuming a 1u keycap, setting a margin of 100 would make the generated SVG 300 pixels wide.  Changing this setting produces no difference in how the placed icon appears, unless `iconMargin` is configured for the given layout.",
     )
     parser.add_argument(
         "--font",
@@ -186,13 +213,15 @@ def main() -> None:
     elif bg_color not in theme.colors:
         panic(f"The specified background color '{bg_color}' could not be found in the theme.")
     
+    margin: float = args.margin
+    
     out: pathlib.Path | None = args.out
 
     if out == None:
-        generate_svg(size, bg_color, fonts, theme, key_templates, sys.stdout)
+        generate_svg(size, bg_color, margin, fonts, theme, key_templates, sys.stdout)
     else:
         with open(out, "w") as out_file:
-            generate_svg(size, bg_color, fonts, theme, key_templates, out_file)
+            generate_svg(size, bg_color, margin, fonts, theme, key_templates, out_file)
 
 def run() -> None:
     try:

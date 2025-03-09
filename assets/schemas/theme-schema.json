@@ -57,10 +57,6 @@
       "description": "The width in pixels of the top surface of a 1u keycap in pixels",
       "type": "number"
     },
-    "scale": {
-      "description": "All dimensions in the final SVG are scaled by this factor, effectively increasing the resolution of the generated PNG.",
-      "type": "number"
-    },
     "colors": {
       "description": "The colors to bind to named color variables used in the keycap set. If a color is not given it defaults to hidden.",
       "type": "object",
@@ -76,7 +72,6 @@
     "unit_size",
     "base_size",
     "top_size",
-    "scale",
     "colors"
   ]
 }

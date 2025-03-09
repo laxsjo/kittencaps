@@ -101,9 +101,21 @@ def _playback_case_changes(
     if "mirrorAroundY" in case_changes:
         case.mirror_around_y = case_changes["mirrorAroundY"]
 
-Keyboard_JSON = list[Union[dict, list[Union[str, dict]]]]
+Keyboard_JSON = list[dict | list[str | dict]]
 class ExtendedKeyboard(Keyboard):
     case: Case
+    icon_margin: float
+    """
+    Margin around to add around individual icons. For this option to be useful
+    the icons should specify a viewbox that extends beyond the standard
+    100x100 px rectangle at (0, 0). This extended area is then included in the
+    texture variant.
+    """
+    scale: float
+    """
+    All dimensions in the final SVG are scaled by this factor, effectively
+    increasing the resolution of the generated PNG.
+    """
     
     def __init__(self):
         """Initializes a Keyboard."""
@@ -117,14 +129,20 @@ class ExtendedKeyboard(Keyboard):
     ) -> Self: 
         super_keyboard = super().from_json(keyboard_json)
         super_keyboard.__class__ = cls
-        keyboard = cast(cls, super_keyboard)
+        keyboard = cast(Self, super_keyboard)
         keyboard.case = Case()
+        keyboard.icon_margin = 0
+        keyboard.scale = 1
         
         # TODO: We should probably validate keyboard_json...
         
         for item in keyboard_json:
-            if type(item) is dict and "case" in item and \
-                    type(item["case"]) is dict:
-                _playback_case_changes(keyboard.case, item["case"])
+            if type(item) is dict:
+                if "case" in item and type(item["case"]) is dict:
+                    _playback_case_changes(keyboard.case, item["case"])
+                if "iconMargin" in item and isinstance(item["iconMargin"], (float, int)):
+                    keyboard.icon_margin = item["iconMargin"]
+                if "scale" in item and isinstance(item["scale"], (float, int)):
+                    keyboard.scale = item["scale"]
         
         return keyboard

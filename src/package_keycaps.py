@@ -43,7 +43,7 @@ def normalize_keyboard_for_texture(keyboard: svg.MaybeElementTree, theme: Theme)
             re.match(r"^_[0-9]+(\.[0-9]+)?u-base$", element.attrib.get("id", "")),
         keyboard.findall(".//mask")
     )
-    theme.base_size = theme.unit_size
+    theme.base_size = theme.unit_size + theme.icon_margin * 2
     for mask in masks:
         size_u = mask.attrib["id"].removeprefix("_").removesuffix("-base")
         new_mask = create_keycap_mask(size_u, theme)
@@ -149,8 +149,7 @@ def main() -> None:
         theme_path=theme_path
     )
 
-    theme = metadata.load_theme()
-    layout = metadata.load_layout()
+    layout, theme = metadata.load()
 
     with open(template_path, "r") as file:
         key_templates = SvgSymbolSet(ET.parse(file))

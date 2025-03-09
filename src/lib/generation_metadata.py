@@ -60,8 +60,16 @@ class GenerationMetadata():
             )
     
     def load_theme(self) -> Theme:
-        return Theme.load_file(self.theme_path)
-
+        return Theme.load_file(self.theme_path)\
+            .attach_layout(self.load_layout())
+    
+    def load(self) -> tuple[kle.ExtendedKeyboard, Theme]:
+        layout = self.load_layout()
+        return (
+            layout,
+            Theme.load_file(self.theme_path).attach_layout(layout)
+        )
+    
     def store_at(self, path: pathlib.Path) -> None:
         with open(path, "w") as file:
             result = {

@@ -99,9 +99,17 @@ def tree_resolve_namespaces(tree: ET.ElementTree|ET.Element) -> None:
     for child in root.findall(".//*"):
         element_resolve_namespaces(child)
 
-# Sane element initializer that can add child elements.
-def make_element(tag: str, attributes: dict[str, str], children: Iterable[ET.Element]) -> ET.Element:
-    result = ET.Element(tag, attributes)
+def make_element(tag: str, attributes: dict[str, str|None], children: Iterable[ET.Element] = []) -> ET.Element:
+    """
+    Sane element initializer that can add child elements.
+    Attributes set to `None` won't be set in the final element.
+    """
+    
+    result = ET.Element(tag, {
+        name: value
+        for name, value in attributes.items()
+        if value is not None
+    })
     result.extend(children)
     return result
 

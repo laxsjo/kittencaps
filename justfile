@@ -8,10 +8,17 @@ set-editor $new_editor:
     printf "%s" "$new_editor" > .svg-editor
     @echo "Just edit-icon will now open '$new_editor'"
 
-# Create a new icon with the specified name in assets/icons. Size should be in u, may specify two dimensions for vertical keycaps, and bg-size should be a valid color name from the standard theme. see `python -m src.generate_icon --help` for more details.
-create-icon name size="1u" bg-color="":
+bg-color := "bg_main"
+margin := "10"
+
+# Create a new icon with the specified name in assets/icons. Size should be in u, may specify two dimensions for vertical keycaps, override the bg-size variable, which must be a valid color name from the standard theme. You can override the `margin` variable. See `python -m src.generate_icon --help` for more details.
+create-icon name size="1u":
     nix build .#open-gorton
-    python -m src.generate_icon --size {{size}} --bg-color "{{bg-color}}" --out "assets/icons/[{{name}}].svg" \
+    python -m src.generate_icon \
+        --size {{size}} \
+        --bg-color "{{bg-color}}" \
+        --margin "{{margin}}" \
+        --out "assets/icons/[{{name}}].svg" \
         --font result/share/fonts/opentype/OpenGorton-Regular.otf \
         --font result/share/fonts/opentype/OpenGorton-Bold.otf
     @echo "Created 'assets/icons/[{{name}}].svg', edit it by running 'just edit-icon {{name}}'"

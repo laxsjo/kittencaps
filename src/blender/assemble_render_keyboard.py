@@ -233,7 +233,7 @@ def create_keyboard(texture_path: Path, svg_viewbox: svg.ViewBox, keyboard: kle.
         texture_local_pos = local_pos * theme.unit_size
         texture_pos_pixels = \
             rotate(texture_local_pos, Vec2(0, 0), rotation_clockwise.deg) \
-            + transform.get_translation() * theme.unit_size \
+            + transform.get_translation() * (theme.unit_size + theme.icon_margin * 2) \
             - svg_viewbox.pos
         
         object["texture_position_pixels"] = \
@@ -299,8 +299,7 @@ out_path: Path = args.out
 
 metadata = GenerationMetadata.from_file(directory / "metadata.json5")
 
-layout = metadata.load_layout()
-theme = metadata.load_theme()
+layout, theme = metadata.load()
 
 with open(directory / "texture.svg", "r") as file:
     view_box = tree_get_viewbox(ET.parse(file))

@@ -12,7 +12,8 @@
       "verticalOffsetMM": 14,
       "mirrorAroundX": 9,
       "color": "case"
-    }
+    },
+    "scale": 3
   },
   // Column delta positions (mm) (-y is upwards)
   // 0

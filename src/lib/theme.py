@@ -1,6 +1,7 @@
 from __future__ import annotations
 from typing import *
 from dataclasses import dataclass
+import dataclasses
 import os
 import json5
 import jsonschema
@@ -12,7 +13,7 @@ from .font import *
 from . import font as Font
 from .sp_color import *
 from .color import *
-from . import project
+from . import project, kle_ext as kle
 
 __all__ = [
     "Palette",
@@ -37,7 +38,6 @@ class ThemeDeclaration(TypedDict):
     unit_size: float
     base_size: float
     top_size: float
-    scale: float
     colors: PaletteDeclaration
 
 class Palette(dict[str, HideableColor]):
@@ -73,6 +73,7 @@ class Palette(dict[str, HideableColor]):
 
 @dataclass
 class Theme():
+    # Configured via theme file
     default_font: FontDefinition
     font_family: list[FontDefinition]
     font_size_px: float
@@ -80,9 +81,11 @@ class Theme():
     base_size: float
     top_size: float
     colors: Palette
+    # Configured via layout file
+    icon_margin: float
     
     @classmethod
-    def from_declaration(cls, declaration: ThemeDeclaration) -> Self:
+    def from_declaration_and_layout(cls, declaration: ThemeDeclaration) -> Self:
         match Font.get_system_family(declaration["font_family"]):
             case Error(_):
                 panic(f"Font '{declaration["font_family"]}' is not installed")
@@ -98,16 +101,15 @@ class Theme():
                 
                 font = matching_fonts[0]
         
-        scale = declaration["scale"]
-        
         return cls(
             default_font=font,
             font_family=fonts,
             font_size_px=declaration["font_size_px"],
-            unit_size=declaration["unit_size"] * scale,
-            base_size=declaration["base_size"] * scale,
-            top_size=declaration["top_size"] * scale,
+            unit_size=declaration["unit_size"],
+            base_size=declaration["base_size"],
+            top_size=declaration["top_size"],
             colors=Palette(declaration["colors"]),
+            icon_margin=0,
         )
     
     @classmethod
@@ -137,4 +139,18 @@ class Theme():
         # contain additional fields, but oh well...
         declaration = cast(ThemeDeclaration, theme_object)
         
-        return cls.from_declaration(declaration)
+        return cls.from_declaration_and_layout(declaration)
+    
+    def attach_layout(self, layout: kle.ExtendedKeyboard) -> Self:
+        """
+        Create copy of self with data from layout set.
+        """
+        
+        scale = layout.scale
+        return dataclasses.replace(
+            self,
+            unit_size=self.unit_size * scale,
+            base_size=self.base_size * scale,
+            top_size=self.top_size * scale,
+            icon_margin=layout.icon_margin * scale,
+        )

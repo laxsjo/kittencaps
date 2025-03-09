@@ -284,6 +284,7 @@ class KeycapFactory:
     
     def create(self, key: KeycapInfo) -> SizedElement:
         unit = self.theme.unit_size
+        margin = self.theme.icon_margin
         
         dimensions = Scaling(unit)
         match key.orientation:
@@ -301,13 +302,16 @@ class KeycapFactory:
                 frame_rotation += 90
                 frame_pos.x += unit
         
-        base = ET.Element("rect", {
-            "class": "surface",
-            "width": f"{unit * key.major_size:g}",
-            "height": f"{unit:g}",
-        })
+        base = make_element("rect", dict(
+            **{"class": "surface"},
+            x = f"{-margin:g}" if margin != 0 else None,
+            y = f"{-margin:g}" if margin != 0 else None,
+            width = f"{unit * key.major_size + margin * 2:g}",
+            height = f"{unit + margin * 2:g}",
+        ))
         
-        # A 1u icon is an svg with a viewbox of "0 0 100 100"
+        # A 1u icon is an svg with a viewbox of "0 0 100 100" (assuming no
+        # margin)
         if (match := re.match(r"\[(.*)\]", key.icon_id)):
             id = match.group(1)
             icon = lookup_icon_id(id, self._defs)
@@ -420,7 +424,9 @@ class KeyboardBuilder():
             element = self._factory.create(key)
             
             self.component(PlacedComponent(element, transform))
-        place_keys(keys, self.theme.unit_size, placer)
+        
+        unit_size = self.theme.unit_size + self.theme.icon_margin * 2
+        place_keys(keys, unit_size, placer)
         
         return self
     
@@ -491,6 +497,14 @@ class KeyboardBuilder():
             
         # Visualize keycap bounds
         # builder.add_elements(border_from_bounds(component.bounds()) for component in self._components)
+        
+        # Visualize origin
+        # builder.add_element(ET.Element("circle", dict(
+        #     fill = "rgb(218, 85, 85)",
+        #     r = f"{self.theme.icon_margin:g}",
+        #     cx = "0",
+        #     cy = "0",
+        # )))
         
         return builder.build()
 
