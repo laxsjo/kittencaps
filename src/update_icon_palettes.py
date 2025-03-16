@@ -17,7 +17,7 @@ from .lib import font as Font
 from .lib.svg_builder import *
 from .lib.keyboard_builder import *
 from .lib.pos import *
-from .lib.theme import *
+from .lib.config import *
 from .lib.color import *
 from .lib import project
 from .lib.error import *

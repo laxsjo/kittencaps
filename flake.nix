@@ -83,6 +83,8 @@
         pkgs.poetry
         pkgs.just
         pkgs.open-gorton
+        pkgs.inkscape
+        pkgs.imagemagick
         blender
       ];
     in {
@@ -106,7 +108,6 @@
         default = pkgs.mkShellNoCC {
           packages = devPackages ++ (with pkgs; [
             pureref
-            inkscape
           ]);
           
           shellHook = ''

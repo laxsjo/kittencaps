@@ -9,6 +9,7 @@
       "hhea",
       "ipython",
       "lxml",
+      "magick",
       "materialx",
       "mortoray",
       "num",
@@ -23,7 +24,7 @@
       "virtualenvwrapper",
       "zstandard"
     ],
-    "svg.preview.background": "editor",
+    "svg.preview.background": "dark-transparent",
     "colorInfo.languages": [
       {
         "selector": "css",

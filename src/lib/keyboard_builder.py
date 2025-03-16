@@ -7,7 +7,7 @@ import itertools
 import re
 
 from . import project, magic
-from .theme import *
+from .config import *
 from typing import *
 from .error import *
 from .utils import *
@@ -216,14 +216,14 @@ class KeycapInfo:
         return KeycapGeometry(self.major_size, self.orientation)
 
 # Create mask for keycap bounding box
-def create_keycap_mask(size_u: str, theme: Theme) -> ET.Element:
+def create_keycap_mask(size_u: str, config: Config) -> ET.Element:
     id = f"_{size_u}-base"
     
     size = float(size_u.removesuffix("u"))
     
-    offset = (theme.unit_size - theme.base_size) / 2
-    width = theme.unit_size * size - offset * 2
-    height = theme.base_size
+    offset = (config.unit_size - config.base_size) / 2
+    width = config.unit_size * size - offset * 2
+    height = config.base_size
     
     rect = ET.Element("rect", {
         "width": f"{width:g}",
@@ -263,14 +263,14 @@ class KeycapFactory:
     """
     
     templates: SvgSymbolSet
-    theme: Theme
+    config: Config
     _defs: DefsSet = field(init=False)
     _masks: dict[str, ET.Element] = field(default_factory=lambda: {})
     _shading_masks: dict[str, ET.Element] = field(default_factory=lambda: {})
     
     def __post_init__(self):
         self._defs = DefsSet(
-            skipped_ids=set(self.theme.colors.keys())
+            skipped_ids=set(self.config.colors.keys())
         )
     
     # Creates a mask and return its id
@@ -278,7 +278,7 @@ class KeycapFactory:
         if size_u in self._masks:
             return self._masks[size_u].attrib["id"]
         
-        mask = create_keycap_mask(size_u, self.theme)
+        mask = create_keycap_mask(size_u, self.config)
         
         self._masks[size_u] = mask
         return mask.attrib["id"]
@@ -292,13 +292,13 @@ class KeycapFactory:
         
         size = float(size_u.removesuffix("u"))
         
-        offset = (self.theme.unit_size - self.theme.top_size) / 2
-        width = self.theme.unit_size * size - offset * 2
-        height = self.theme.top_size
+        offset = (self.config.unit_size - self.config.top_size) / 2
+        width = self.config.unit_size * size - offset * 2
+        height = self.config.top_size
         
         bg = ET.Element("rect", {
-            "width": f"{self.theme.unit_size * size:g}",
-            "height": f"{self.theme.unit_size:g}",
+            "width": f"{self.config.unit_size * size:g}",
+            "height": f"{self.config.unit_size:g}",
             "fill": "white",
         })
         
@@ -328,8 +328,8 @@ class KeycapFactory:
         )
     
     def create(self, key: KeycapInfo) -> SizedElement:
-        unit = self.theme.unit_size
-        margin = self.theme.icon_margin
+        unit = self.config.unit_size
+        margin = self.config.icon_margin
         
         dimensions = Scaling(unit)
         match key.orientation:
@@ -338,7 +338,7 @@ class KeycapFactory:
             case Orientation.VERTICAL:
                 dimensions.y *= key.major_size
         
-        frame_pos = Vec2(0, 0)
+        frame_pos = Vec2[float](0, 0)
         frame_rotation = Rotation(0)
         match key.orientation:
             case Orientation.HORIZONTAL:
@@ -363,14 +363,14 @@ class KeycapFactory:
             if icon is None:
                 panic(f"Could not find icon '{key.icon_id}'")
         else:
-            icon = create_text_icon_svg(key.icon_id, None, Vec2(1, 1), self.theme.default_font, self.theme.font_size_px, key.foreground_color)
+            icon = create_text_icon_svg(key.icon_id, None, Vec2(1, 1), self.config.default_font, self.config.font_size_px, key.foreground_color)
         if key.color_mappings:
             mappings = dict(map(
                 lambda pair: (f"#{pair[0]}", f"#{pair[1]}"),
                 key.color_mappings
             ))
             svg.tree_replace_in_attributes(icon.element, mappings)
-        icon.set_scale(Scaling(self.theme.unit_size / 100))
+        icon.set_scale(Scaling(self.config.unit_size / 100))
         
         center_pos = dimensions.as_vec2() / 2
         icon_pos = center_pos - icon.size.as_vec2() / 2
@@ -378,10 +378,10 @@ class KeycapFactory:
         icon.element.attrib["x"] = f"{icon_pos.x:g}"
         icon.element.attrib["y"] = f"{icon_pos.y:g}"
 
-        outline = create_icon_outline(key.geometry(), self.theme, self.templates, stroke="red")
+        outline = create_icon_outline(key.geometry(), self.config.as_theme(), self.templates, stroke="red")
         outline.set("class", "outline")
         outline.set("visibility", "hidden")
-        element_apply_transform(outline, Transform(scale=Scaling(self.theme.unit_size / 100)))
+        element_apply_transform(outline, Transform(scale=Scaling(self.config.unit_size / 100)))
         
         icon_wrapper = ET.Element("g")
         icon_wrapper.append(icon.element)
@@ -461,14 +461,14 @@ def place_keys[T](keys: Iterable[kle.Key], unit_size: float, placer: Callable[[K
 
 @dataclass
 class KeyboardBuilder():
-    theme: Theme
+    config: Config
     key_templates: SvgSymbolSet
     _factory: KeycapFactory = field(init=False)
     _components: list[PlacedComponent] = field(default_factory=lambda: [])
     _builder_extra: Callable[[SvgDocumentBuilder], Any]|None = None
     
     def __post_init__(self):
-        self._factory = KeycapFactory(self.key_templates, self.theme)
+        self._factory = KeycapFactory(self.key_templates, self.config)
     
     def keys(self, *keys: kle.Key) -> Self:
         def placer(key: KeycapInfo, transform: Transform) -> None:
@@ -476,7 +476,7 @@ class KeyboardBuilder():
             
             self.component(PlacedComponent(element, transform))
         
-        unit_size = self.theme.unit_size + self.theme.icon_margin * 2
+        unit_size = self.config.unit_size + self.config.icon_margin * 2
         place_keys(keys, unit_size, placer)
         
         return self
@@ -503,7 +503,7 @@ class KeyboardBuilder():
 
         builder = SvgDocumentBuilder()\
             .set_viewbox(viewbox)\
-            .palette(self.theme.colors)\
+            .palette(self.config.colors)\
             .add_icon_set(self._factory.templates)\
             .add_element(make_element(
                 "defs",
@@ -520,7 +520,7 @@ class KeyboardBuilder():
                 .attributes(dict(
                     id="fonts",
                 ))
-                .statement(*map(Font.generate_css_rule, self.theme.font_family))
+                .statement(*map(Font.generate_css_rule, self.config.font_family))
                 .build()
         )
         builder.add_element(
@@ -533,7 +533,7 @@ class KeyboardBuilder():
                     CssRule(f".keycap-color-{name} .surface", CssStyles({
                         "fill": f"url(#{name})",
                     }))
-                    for name, color in self.theme.colors.keycap_colors()
+                    for name, color in self.config.colors.keycap_colors()
                 ))
                 # .rule(
                 #     ".icon-bounding-box {stroke: red; stroke-width: 1px;}"
@@ -559,7 +559,7 @@ class KeyboardBuilder():
         
         return builder.build()
 
-def build_keyboard_svg(keyboard: kle.Keyboard, theme: Theme, key_templates: SvgSymbolSet) -> ET.ElementTree:
-    return (KeyboardBuilder(theme,  key_templates)\
+def build_keyboard_svg(keyboard: kle.Keyboard, config: Config, key_templates: SvgSymbolSet) -> ET.ElementTree:
+    return (KeyboardBuilder(config,  key_templates)\
         .keys(*keyboard.keys)\
         .build())

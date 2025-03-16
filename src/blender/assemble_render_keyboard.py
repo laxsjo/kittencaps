@@ -15,7 +15,7 @@ import PIL
 # Relative imports don't work in blender unfortunately :(
 from src.lib import magic, svg
 from src.lib.generation_metadata import *
-from src.lib.theme import *
+from src.lib.config import *
 from src.lib.keyboard_builder import *
 from src.lib.svg_builder import *
 from src.lib.utils import *
@@ -69,7 +69,7 @@ def copy_modifiers(source: bpy.types.Object, destination: bpy.types.Object):
             setattr(destination_modifier, prop, getattr(source_modifier, prop))
         destination_modifier = destination
 
-def create_keyboard(texture_path: Path, svg_viewbox: svg.ViewBox, keyboard: kle.ExtendedKeyboard, theme: Theme, out_path: Path) -> None:
+def create_keyboard(texture_path: Path, svg_viewbox: svg.ViewBox, keyboard: kle.ExtendedKeyboard, theme: Config, out_path: Path) -> None:
     with PIL.Image.open(texture_path) as image:
         texture_size = Vec2(*image.size)
     
@@ -188,7 +188,7 @@ def create_keyboard(texture_path: Path, svg_viewbox: svg.ViewBox, keyboard: kle.
         
         object = bpy.data.objects.new(f"Key_{key.icon_id}", mesh)
         
-        local_pos = Vec2(0, 0)
+        local_pos = Vec2[float](0, 0)
         local_rotation_clockwise = Rotation(0)
         match key.orientation:
             case Orientation.HORIZONTAL:

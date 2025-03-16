@@ -2,6 +2,9 @@ from typing import *
 import sys
 import traceback
 import os
+from dataclasses import dataclass
+from time import time
+
 
 __all__ = [
     "eprint",
@@ -12,6 +15,7 @@ __all__ = [
     "assert_instance",
     "inspect",
     "time_it",
+    "log_split_action_time",
     "log_action_time",
 ]
 
@@ -60,9 +64,26 @@ def time_it[T](function: Callable[[], T]) -> tuple[T, float]:
     end = time()
     return result, end - start
 
-def log_action_time[T](action: str, function: Callable[[], T]) -> T:
-    print(f"{action}...", end="")
-    result, seconds = time_it(function)
-    print(f"\r{action} took {seconds * 1000.0:.1f} ms")
-    return result
+class StartedTimedAction:
+    def __init__(self, action: str):
+        self.action = action
+        self.start = time()
+        
+        print(f"{action}...", end="")
     
+    def done(self) -> None:
+        seconds = time() - self.start
+        
+        print(f"\r{self.action} took {seconds * 1000.0:.1f} ms")
+
+def log_split_action_time(action: str) -> StartedTimedAction:
+    return StartedTimedAction(action)
+
+def log_action_time[T](action: str, function: Callable[[], T]) -> T:
+    timer = log_split_action_time(action)
+    
+    result = function()
+    
+    timer.done()
+    
+    return result

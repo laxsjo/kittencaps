@@ -343,7 +343,7 @@ class EllipticalArc(PathCommand):
         # right side of the ellipse (before rotating it), where positive angles
         # walk clockwise, e.g. the angle 0 correspons to the point (1, 0) for
         # the unit circle.
-        theta_1 = Vec2(1, 0).angle_to(
+        theta_1 = Vec2[float](1, 0).angle_to(
             (transformed_position - transformed_center)
             / radius
         )

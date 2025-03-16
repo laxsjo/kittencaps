@@ -12,7 +12,7 @@ from .font import *
 from .sp_color import *
 from .color import *
 from . import project
-from .theme import *
+from .config import *
 from . import kle_ext as kle
 
 __all__ = [
@@ -59,15 +59,14 @@ class GenerationMetadata():
                 json5.load(file)
             )
     
-    def load_theme(self) -> Theme:
-        return Theme.load_file(self.theme_path)\
-            .attach_layout(self.load_layout())
-    
-    def load(self) -> tuple[kle.ExtendedKeyboard, Theme]:
+    def load(self) -> tuple[kle.ExtendedKeyboard, Config]:
         layout = self.load_layout()
         return (
             layout,
-            Theme.load_file(self.theme_path).attach_layout(layout)
+            Config.from_parts(
+                theme=Theme.load_file(self.theme_path),
+                layout=self.load_layout(),
+            )
         )
     
     def store_at(self, path: pathlib.Path) -> None:

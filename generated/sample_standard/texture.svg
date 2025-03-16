@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:bx="https://boxy-svg.com" version="1.1" viewBox="-40 -40 1100 380">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:bx="https://boxy-svg.com" version="1.1" viewBox="-40 -40 420 180">
   <filter>
     <feFlood flood-color="#d5d5d5" result="light" />
     <feBlend in="light" in2="SourceGraphic" mode="multiply" result="shaded" />
@@ -27,11 +27,11 @@
   </symbol>
   <defs>
     <mask id="_1u-base">
-      <rect width="360" height="360" x="-30" y="-30" fill="white" />
+      <rect width="120" height="120" x="-10" y="-10" fill="white" />
     </mask>
     <mask>
-      <rect width="300" height="300" fill="white" />
-      <use width="197.701" height="197.701" x="51.1494" y="51.1494" href="#_1u-top" fill="black" />
+      <rect width="100" height="100" fill="white" />
+      <use width="65.9004" height="65.9004" x="17.0498" y="17.0498" href="#_1u-top" fill="black" />
     </mask>
     <pattern id="pattern-0-0" href="#pattern-0" patternTransform="matrix(0.9, 0, 0, 0.9, 5, 5)" />
     <pattern id="pattern-0" patternUnits="userSpaceOnUse" width="40" height="40" bx:pinned="true" viewBox="0 0 40 40">
@@ -44,9 +44,9 @@
   </defs>
   <g class="keycap-color-bg_focus" mask="url(#_1u-base)" transform="">
     <g>
-      <rect class="surface" x="-30" y="-30" width="360" height="360" fill="#2e2f32" />
+      <rect class="surface" x="-10" y="-10" width="120" height="120" fill="#2e2f32" />
       <g transform="">
-        <svg viewBox="0 0 100 100" width="300.0" height="300.0" style="overflow:visible;" x="0" y="0" version="1.1">
+        <svg viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0" version="1.1">
           <path style="fill: #f5f7f7; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px; stroke: #f5f7f7;" d="M 31.143 41.822 C 35.034 37.293 41.261 33.376 47.223 32.685 C 48.52 32.535 50.007 26.412 51.313 26.389 C 52.61 26.366 55.425 31.659 56.696 31.963 C 61.708 33.166 63.675 33.846 67.907 36.923 C 68.739 37.527 74.21 34.264 75.036 35.079 C 76.791 36.813 74.735 46.176 75.382 47.37 C 77.571 51.402 78.088 55.736 78.094 58.952 C 78.094 58.952 31.203 41.67 31.143 41.822 Z">
             <title>Body</title>
           </path>
@@ -142,11 +142,11 @@
       </g>
     </g>
   </g>
-  <g class="keycap-color-bg_focus" mask="url(#_1u-base)" transform="translate(360, 0)">
+  <g class="keycap-color-bg_focus" mask="url(#_1u-base)" transform="translate(120, 0)">
     <g>
-      <rect class="surface" x="-30" y="-30" width="360" height="360" fill="#2e2f32" />
+      <rect class="surface" x="-10" y="-10" width="120" height="120" fill="#2e2f32" />
       <g transform="">
-        <svg viewBox="0 0 100 100" width="300.0" height="300.0" style="overflow:visible;" x="0" y="0" version="1.1">
+        <svg viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0" version="1.1">
           <rect width="120" height="120" style="stroke-linecap: round; stroke-linejoin: bevel; stroke-width: 10px; fill: url(&quot;#pattern-0-0&quot;);" x="-10" y="-10">
             <title>Pattern</title>
           </rect>
@@ -158,11 +158,11 @@
       </g>
     </g>
   </g>
-  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(720, 0)">
+  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(240, 0)">
     <g>
-      <rect class="surface" x="-30" y="-30" width="360" height="360" fill="#f5f7f7" />
+      <rect class="surface" x="-10" y="-10" width="120" height="120" fill="#f5f7f7" />
       <g transform="">
-        <svg viewBox="0 0 100 100" width="300.0" height="300.0" style="overflow:visible;" x="0" y="0" version="1.1">
+        <svg viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0" version="1.1">
           <path d="m 41.080013,64.080002 c 0.76,0 1.4,-0.64 1.4,-1.44 v -20 c 0,-0.32 0.4,-0.48 0.6,-0.2 l 14.88,21.28 c 0.24,0.32 0.64,0.36 1,0.36 0.76,0 1.4,-0.64 1.4,-1.44 v -25.32 c 0,-0.76 -0.64,-1.4 -1.4,-1.4 -0.8,0 -1.44,0.64 -1.44,1.4 v 19.76 c 0,0.32 -0.4,0.44 -0.6,0.16 l -14.84,-20.88 c -0.24,-0.28 -0.6,-0.44 -1,-0.44 -0.8,0 -1.44,0.64 -1.44,1.4 v 25.32 c 0,0.8 0.64,1.44 1.44,1.44 z" style="font-size:40px;font-family:'Open Gorton';text-anchor:middle;white-space:pre;fill:#2e2f32" aria-label="N" />
           <g>
             <title>Corner</title>

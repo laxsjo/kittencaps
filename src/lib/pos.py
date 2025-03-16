@@ -1,6 +1,6 @@
 from __future__ import annotations
 from typing import *
-from dataclasses import dataclass, field
+from dataclasses import dataclass, field, replace
 from collections import namedtuple
 from collections.abc import Sequence
 from enum import IntEnum
@@ -88,22 +88,22 @@ class Vec3(Sequence[float]):
     def promote_float(cls, component: float|Self) -> Self:
         return cls(component, component, component) if not isinstance(component, Vec3) else component
 
-@dataclass
-class Vec2():
-    x: float
-    y: float
+@dataclass()
+class Vec2[T: (float,int)]():
+    x: T
+    y: T
     
     def __iter__(self):
         yield self.x
         yield self.y
     
     @overload
-    def __getitem__(self, index: int) -> float:
+    def __getitem__(self, index: int) -> T:
         ...
     @overload
-    def __getitem__(self, index: slice) -> Sequence:
+    def __getitem__(self, index: slice) -> Sequence[T]:
         ...
-    def __getitem__(self, index: int|slice) -> float|Sequence:
+    def __getitem__(self, index: int|slice) -> T|Sequence[T]:
         return (*self,)[index]
         
     def __add__(self, other: Self) -> Self:
@@ -118,41 +118,41 @@ class Vec2():
             self.y - other.y,
         )
     
-    def __mul__(self, factor: float|Self) -> Self:
+    def __mul__(self, factor: T|Self) -> Self:
         cls = type(self)
-        other = cls.promote_float(factor)
+        other = cls.promote(factor)
         return cls(
             self.x * other.x,
             self.y * other.y,
         )
     
-    def __truediv__(self, factor: float|Self) -> Self:
+    def __truediv__(self, factor: T|Self) -> Vec2[float]:
         cls = type(self)
-        other = cls.promote_float(factor)
-        return cls(
+        other = cls.promote(factor)
+        return Vec2(
             self.x / other.x,
             self.y / other.y,
         )
     
     def __neg__(self) -> Self:
-        return self.apply_unary(operator.neg)
+        return cast(Self, self.apply_unary(operator.neg))
     
-    def __pow__(self, exponent: float|Self) -> Self:
+    def __pow__(self, exponent: T|Self) -> Self:
         return self.apply_binary(operator.pow, (exponent,))
     
     def abs(self) -> Self:
-        return self.apply_unary(operator.abs)
+        return cast(Self, self.apply_unary(operator.abs))
     
     def sqrt(self) -> Self:
-        return self.apply_unary(math.sqrt)
+        return cast(Self, self.apply_unary(math.sqrt))
     
-    def min(self, *other_values: float|Self) -> Self:
+    def min(self, *other_values: T|Self) -> Self:
         return self.apply_binary(min, other_values)
     
-    def max(self, *other_values: float|Self) -> Self:
+    def max(self, *other_values: T|Self) -> Self:
         return self.apply_binary(max, other_values)
         
-    def clamp(self, min_value: float|Self, max_value: float|Self) -> Self:
+    def clamp(self, min_value: T|Self, max_value: T|Self) -> Self:
         return self.min(max_value).max(min_value)
     
     def length(self) -> float:
@@ -184,35 +184,47 @@ class Vec2():
         
         return Rotation(math.degrees(angle_rad))
     
-    def per_component(self, map_x: Callable[[float], float]|None, map_y: Callable[[float], float]|None) -> Self:
+    def per_component(self, map_x: Callable[[T], T]|None, map_y: Callable[[T], T]|None) -> Self:
         return self.__class__(
             (map_x or (lambda x: x))(self.x),
             (map_y or (lambda y: y))(self.y),
         )
     
-    def apply_unary(self, operator: Callable[[float], float]) -> Self:
-        return type(self)(
-            operator(self.x),
-            operator(self.y),
-        )
+    def apply_unary[R: (float, int)](self, operator: Callable[[T], R]) -> Vec2[R]:
+        # We pretend that we return Vec2 here, which is sort of fine.
+        # This is so that we can safely cast the type in other functions to the
+        # correct Self type
+        pretend_operator = cast(Callable[[T], T], operator)
+        return cast(Vec2[R], type(self)(
+            pretend_operator(self.x),
+            pretend_operator(self.y),
+        ))
     
-    def apply_binary(self, operator: Callable[[float, float], float], others: Iterable[float|Self]) -> Self:
-        other_vec2s = map(self.promote_float, others)
+    def apply_binary(self, operator: Callable[[T, T], T], others: Iterable[T|Self]) -> Self:
+        other_vec2s = map(self.promote, others)
         x_components, y_components = zip(self, *other_vec2s)
         
         return type(self)(
             functools.reduce(operator, x_components),
             functools.reduce(operator, y_components),
         )
+
+    def with_x(self, x: T) -> Self:
+        return replace(self, x=x)
+    def with_y(self, y: T) -> Self:
+        return replace(self, y=y)
+    
+    def cast_to[U: (float, int)](self, type_: type[U]) -> Vec2[U]:
+        return self.apply_unary(type_)
     
     @classmethod
-    def promote_float(cls, component: float|Self) -> Self:
+    def promote(cls, component: T|Self) -> Self:
         return cls(component, component) if not isinstance(component, Vec2) else component
 
     
     @classmethod
     def identity(cls) -> Self:
-        return cls(0, 0)
+        return cls(cast(T, 0), cast(T, 0))
     
     def is_identity(self) -> bool:
         return self.x == 0 and self.y == 0
@@ -380,11 +392,11 @@ class Orientation(IntEnum):
 
 @dataclass
 class Bounds():
-    min: Vec2
-    max: Vec2
+    min: Vec2[float]
+    max: Vec2[float]
     
     @classmethod
-    def from_points(cls, *points: Vec2) -> Self:
+    def from_points(cls, *points: Vec2[float]) -> Self:
         x_components, y_components = zip(*points)
         return cls(
             min=Vec2(min(x_components), min(y_components)),
@@ -392,11 +404,11 @@ class Bounds():
         )
     
     @classmethod
-    def from_pos_size(cls, pos: Vec2, size: Vec2) -> Self:
+    def from_pos_size(cls, pos: Vec2[float], size: Vec2[float]) -> Self:
         return cls(pos, pos + size)
     
     @classmethod
-    def from_quadratic_bezier(cls, start_point: Vec2, handle: Vec2, end_point: Vec2) -> Self:
+    def from_quadratic_bezier(cls, start_point: Vec2[float], handle: Vec2[float], end_point: Vec2[float]) -> Self:
         # From https://iquilezles.org/articles/bezierbbox/
         
         ends_bounds = cls.from_points(start_point, end_point)
@@ -408,7 +420,7 @@ class Bounds():
             # I have no idea what the semantic meaning of these values are :)
             t = ((start_point - handle) / (start_point - handle * 2 + end_point))\
                 .clamp(0, 1)
-            s = Vec2.promote_float(1) - t
+            s = Vec2.promote(1) - t
             q = s * s * start_point \
                 + (s * t * handle) * 2 \
                 + t * t * end_point
@@ -444,9 +456,9 @@ class Bounds():
             )
             
             t1 = ((-b - g) / a).clamp(0, 1)
-            s1 = Vec2.promote_float(1) - t1
+            s1 = Vec2.promote(1) - t1
             t2 = ((-b + g) / a).clamp(0, 1)
-            s2 = Vec2.promote_float(1) - t2
+            s2 = Vec2.promote(1) - t2
             
             q1 = s1 * s1 * s1 * segment.start \
                 + s1 * s1 * t1 * segment.handle_1 * 3 \
@@ -483,6 +495,39 @@ class Bounds():
     
     def size(self) -> Vec2:
         return self.max - self.min
+    
+    def to_pos_size(self) -> tuple[Vec2, Vec2]:
+        return self.min, self.size()
+
+    def as_segments(self, max_size: Vec2[float]) -> Iterable[tuple[Vec2[int], Self]]:
+        """
+        Create an iterable of segments and their indices which when all combined
+        cover the entire area of self, where each segment is at most the
+        specified maximum size. The indices are 2 dimensional, and define the
+        order in comparison to the other segments along the x and y axes
+        individually.
+        The bounds are returned in an undefined order.
+        """
+        
+        cls = type(self)
+        
+        total_size = self.size()
+        count = (total_size / max_size).apply_unary(math.ceil)
+        
+        for index_y in range(count.y):
+            for index_x in range(count.x):
+                width, height = max_size
+                if max_size.x * (index_x + 1) > total_size.x:
+                    width = total_size.x - max_size.x * index_x
+                if max_size.y * (index_y + 1) > total_size.y:
+                    height = total_size.y - max_size.y * index_y
+                
+                pos = self.min + Vec2[float](index_x, index_y) * max_size
+                
+                yield (
+                    Vec2(index_x, index_y),
+                    cls.from_pos_size(pos, Vec2(width, height)),
+                )
     
     def with_margin(self, margin: float) -> Self:
         """
@@ -527,13 +572,13 @@ class Box():
 
 @dataclass
 class CubicBezierSegment():
-    start: Vec2
-    handle_1: Vec2
-    handle_2: Vec2
-    end: Vec2
+    start: Vec2[float]
+    handle_1: Vec2[float]
+    handle_2: Vec2[float]
+    end: Vec2[float]
     
     @classmethod
-    def approximate_arc(cls, center: Vec2, radius: Vec2, x_axis_angle: Rotation, start_angle: Rotation, end_angle: Rotation, segement_min_degrees: float) -> Iterable[Self]:
+    def approximate_arc(cls, center: Vec2[float], radius: Vec2[float], x_axis_angle: Rotation, start_angle: Rotation, end_angle: Rotation, segement_min_degrees: float) -> Iterable[Self]:
         """Approximate arc segment of ellipse as a series of count bezier segments.
         
         The arguments correspond to the variables in the SVG implementation note
@@ -548,13 +593,13 @@ class CubicBezierSegment():
         
         # Implementation based on https://mortoray.com/rendering-an-svg-elliptical-arc-as-bezier-curves/
         
-        def elliptic_arc_point(center: Vec2, radius: Vec2, x_axis_angle: Rotation, angle: Rotation) -> Vec2:
+        def elliptic_arc_point(center: Vec2[float], radius: Vec2[float], x_axis_angle: Rotation, angle: Rotation) -> Vec2[float]:
             """Get point along the ellipses that is `angle` clockwise along from uhh somewhere."""
             return Vec2(
                 center.x + radius.x * math.cos(x_axis_angle.rad()) * math.cos(angle.rad()) - radius.y * math.sin(x_axis_angle.rad()) * math.sin(angle.rad()),
                 center.y + radius.x * math.sin(x_axis_angle.rad()) * math.cos(angle.rad()) + radius.y * math.cos(x_axis_angle.rad()) * math.sin(angle.rad())
             )
-        def elliptic_arc_point_derivative(center: Vec2, radius: Vec2, x_axis_angle: Rotation, angle: Rotation) -> Vec2:
+        def elliptic_arc_point_derivative(center: Vec2[float], radius: Vec2[float], x_axis_angle: Rotation, angle: Rotation) -> Vec2[float]:
             """The derivative of elliptic_arc_point with respects to `angle`"""
             # Generated with ChatGPT :) 
             return Vec2(
@@ -562,10 +607,10 @@ class CubicBezierSegment():
                 -radius.x * math.sin(x_axis_angle.rad()) * math.sin(angle.rad()) + radius.y * math.cos(x_axis_angle.rad()) * math.cos(angle.rad())
             )
         
-        def approximate_single(center: Vec2, radius: Vec2, x_axis_angle: Rotation, start_angle: Rotation, end_angle: Rotation) -> Self:
-            def calc_point(angle: Rotation) -> Vec2:
+        def approximate_single(center: Vec2[float], radius: Vec2[float], x_axis_angle: Rotation, start_angle: Rotation, end_angle: Rotation) -> Self:
+            def calc_point(angle: Rotation) -> Vec2[float]:
                 return elliptic_arc_point(center, radius, x_axis_angle, angle)
-            def calc_point_derivative(angle: Rotation) -> Vec2:
+            def calc_point_derivative(angle: Rotation) -> Vec2[float]:
                 return elliptic_arc_point_derivative(center, radius, x_axis_angle, angle)
             
             start = calc_point(start_angle)

@@ -16,7 +16,7 @@ from .lib.svg_builder import *
 from .lib import svg
 from .lib.keyboard_builder import *
 from .lib.pos import *
-from .lib.theme import *
+from .lib.config import *
 from .lib.color import *
 from .lib import project
 from .lib.error import *
@@ -53,7 +53,7 @@ def generate_svg(size: Vec2, bg_color: str|None, margin: float, font_paths: list
     font_rules = (Font.generate_css_rule(Font.FontDefinition(path)) for path in font_paths)
     
     builder = SvgDocumentBuilder()\
-        .set_viewbox(svg.ViewBox(Vec2(-margin, -margin), (size * 100 + Vec2.promote_float(margin * 2)).as_scaling()))\
+        .set_viewbox(svg.ViewBox(Vec2(-margin, -margin), (size * 100 + Vec2.promote(margin * 2)).as_scaling()))\
         .palette(theme.colors)
     
     style = SvgStyleBuilder()\

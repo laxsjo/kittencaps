@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<svg version="1.1" viewBox="-40 -40 1100 380" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:bx="https://boxy-svg.com">
+<svg version="1.1" viewBox="-40 -40 420 180" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:bx="https://boxy-svg.com">
   <filter id="sideShading">
     <feFlood flood-color="#d5d5d5" result="light" />
     <feBlend in="light" in2="SourceGraphic" mode="multiply" result="shaded" />
@@ -28,10 +28,10 @@
   </symbol>
   <defs id="factory-elements">
     <mask id="_1u-base">
-      <rect width="360" height="360" x="-30" y="-30" fill="white" /></mask>
+      <rect width="120" height="120" x="-10" y="-10" fill="white" /></mask>
     <mask id="_1u-shading">
-      <rect width="300" height="300" fill="white" />
-      <use width="197.701" height="197.701" x="51.1494" y="51.1494" href="#_1u-top" fill="black" />
+      <rect width="100" height="100" fill="white" />
+      <use width="65.9004" height="65.9004" x="17.0498" y="17.0498" href="#_1u-top" fill="black" />
     </mask>
     <pattern id="pattern-0-0" href="#pattern-0" patternTransform="matrix(0.9, 0, 0, 0.9, 5, 5)" />
     <pattern id="pattern-0" patternUnits="userSpaceOnUse" width="40" height="40" bx:pinned="true" viewBox="0 0 40 40">
@@ -56,9 +56,9 @@
   </style>
   <g class="keycap-color-bg_focus" mask="url(#_1u-base)" transform="">
     <g id="keycap-unshaded-0">
-      <rect class="surface" x="-30" y="-30" width="360" height="360" fill="#2e2f32" />
+      <rect class="surface" x="-10" y="-10" width="120" height="120" fill="#2e2f32" />
       <g transform="">
-        <svg id="icon_gaming" viewBox="0 0 100 100" width="300.0" height="300.0" style="overflow:visible;" x="0" y="0">
+        <svg id="icon_gaming" viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0">
           <path style="fill: #f5f7f7; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px; stroke: #f5f7f7;" d="M 31.143 41.822 C 35.034 37.293 41.261 33.376 47.223 32.685 C 48.52 32.535 50.007 26.412 51.313 26.389 C 52.61 26.366 55.425 31.659 56.696 31.963 C 61.708 33.166 63.675 33.846 67.907 36.923 C 68.739 37.527 74.21 34.264 75.036 35.079 C 76.791 36.813 74.735 46.176 75.382 47.37 C 77.571 51.402 78.088 55.736 78.094 58.952 C 78.094 58.952 31.203 41.67 31.143 41.822 Z">
             <title>Body</title>
           </path>
@@ -151,17 +151,17 @@
             <title>Heart</title>
           </path>
         </svg>
-        <path style="pointer-events:none" d="M 50 -40 C 50 -45.5 45.5 -50 40 -50 L -40 -50 C -45.5 -50 -50 -45.5 -50 -40 L -50 40 C -50 45.5 -45.5 50 -40 50 L 40 50 C 45.5 50 50 45.5 50 40 L 50 -40 Z" transform="scale(3) translate(50, 50) scale(0.6590038314000001)" stroke="red" stroke-opacity="0.5" fill="none" inkscape:label="Outline" class="outline" visibility="visible">
+        <path style="pointer-events:none" d="M 50 -40 C 50 -45.5 45.5 -50 40 -50 L -40 -50 C -45.5 -50 -50 -45.5 -50 -40 L -50 40 C -50 45.5 -45.5 50 -40 50 L 40 50 C 45.5 50 50 45.5 50 40 L 50 -40 Z" transform=" translate(50, 50) scale(0.6590038314000001)" stroke="red" stroke-opacity="0.5" fill="none" inkscape:label="Outline" class="outline" visibility="visible">
           <title>Outline</title>
         </path>
       </g>
     </g>
     </g>
-  <g class="keycap-color-bg_focus" mask="url(#_1u-base)" transform="translate(360, 0)">
+  <g class="keycap-color-bg_focus" mask="url(#_1u-base)" transform="translate(120, 0)">
     <g id="keycap-unshaded-1">
-      <rect class="surface" x="-30" y="-30" width="360" height="360" fill="#2e2f32" />
+      <rect class="surface" x="-10" y="-10" width="120" height="120" fill="#2e2f32" />
       <g transform="">
-        <svg id="icon_esc" viewBox="0 0 100 100" width="300.0" height="300.0" style="overflow:visible;" x="0" y="0">
+        <svg id="icon_esc" viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0">
           <rect width="120" height="120" style="stroke-linecap: round; stroke-linejoin: bevel; stroke-width: 10px; fill: url(&quot;#pattern-0-0&quot;);" x="-10" y="-10">
             <title>Pattern</title>
           </rect>
@@ -170,17 +170,17 @@
           </rect>
           <text style="fill: #e1d9f2; font-family: &quot;Open Gorton&quot;; font-size: 23px; font-weight: 700; text-anchor: middle; white-space: pre;" xml:space="preserve" x="50" y="58.096">ESC</text>
         </svg>
-        <path style="pointer-events:none" d="M 50 -40 C 50 -45.5 45.5 -50 40 -50 L -40 -50 C -45.5 -50 -50 -45.5 -50 -40 L -50 40 C -50 45.5 -45.5 50 -40 50 L 40 50 C 45.5 50 50 45.5 50 40 L 50 -40 Z" transform="scale(3) translate(50, 50) scale(0.6590038314000001)" stroke="red" stroke-opacity="0.5" fill="none" inkscape:label="Outline" class="outline" visibility="visible">
+        <path style="pointer-events:none" d="M 50 -40 C 50 -45.5 45.5 -50 40 -50 L -40 -50 C -45.5 -50 -50 -45.5 -50 -40 L -50 40 C -50 45.5 -45.5 50 -40 50 L 40 50 C 45.5 50 50 45.5 50 40 L 50 -40 Z" transform=" translate(50, 50) scale(0.6590038314000001)" stroke="red" stroke-opacity="0.5" fill="none" inkscape:label="Outline" class="outline" visibility="visible">
           <title>Outline</title>
         </path>
       </g>
     </g>
     </g>
-  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(720, 0)">
+  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(240, 0)">
     <g id="keycap-unshaded-2">
-      <rect class="surface" x="-30" y="-30" width="360" height="360" fill="#f5f7f7" />
+      <rect class="surface" x="-10" y="-10" width="120" height="120" fill="#f5f7f7" />
       <g transform="">
-        <svg id="icon_n_with_ö_+" viewBox="0 0 100 100" width="300.0" height="300.0" style="overflow:visible;" x="0" y="0">
+        <svg id="icon_n_with_ö_+" viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0">
           <text style="fill: #2e2f32; font-family: &quot;Open Gorton&quot;; font-size: 40px; text-anchor: middle; white-space: pre;" x="50" y="64.080">N</text>
           <g>
             <title>Corner</title>
@@ -196,7 +196,7 @@
             </g>
           </g>
         </svg>
-        <path style="pointer-events:none" d="M 50 -40 C 50 -45.5 45.5 -50 40 -50 L -40 -50 C -45.5 -50 -50 -45.5 -50 -40 L -50 40 C -50 45.5 -45.5 50 -40 50 L 40 50 C 45.5 50 50 45.5 50 40 L 50 -40 Z" transform="scale(3) translate(50, 50) scale(0.6590038314000001)" stroke="red" stroke-opacity="0.5" fill="none" inkscape:label="Outline" class="outline" visibility="visible">
+        <path style="pointer-events:none" d="M 50 -40 C 50 -45.5 45.5 -50 40 -50 L -40 -50 C -45.5 -50 -50 -45.5 -50 -40 L -50 40 C -50 45.5 -45.5 50 -40 50 L 40 50 C 45.5 50 50 45.5 50 40 L 50 -40 Z" transform=" translate(50, 50) scale(0.6590038314000001)" stroke="red" stroke-opacity="0.5" fill="none" inkscape:label="Outline" class="outline" visibility="visible">
           <title>Outline</title>
         </path>
       </g>

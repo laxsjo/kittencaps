@@ -4,6 +4,7 @@
     "switchMount": "cherry",
     "iconMargin": 10,
     "scale": 3,
+    "textureScale": 3,
   },
   
   [{"a":7,"c":"bg_focus"}, "[gaming]", "[esc]", {"c":"bg_main"}, "[n_with_ö_+]"]

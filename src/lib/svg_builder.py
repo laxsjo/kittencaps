@@ -9,7 +9,7 @@ import itertools
 from .error import *
 from .utils import *
 from .pos import *
-from .theme import *
+from .config import *
 from .color import *
 from . import svg 
 

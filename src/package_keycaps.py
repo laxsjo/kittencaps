@@ -12,15 +12,16 @@ import xml.etree.ElementTree as ET
 
 from .lib import project
 from .lib.svg_builder import *
-from .lib import svg
+from .lib.pos import *
+from .lib import svg, browser
 from .lib.keyboard_builder import build_keyboard_svg, create_keycap_mask
-from .lib.theme import *
+from .lib.config import *
 from .lib.utils import *
 from .lib.error import *
 from .lib.color import *
 from .lib.generation_metadata import *
 
-def normalize_keyboard_for_texture(keyboard: svg.MaybeElementTree, theme: Theme) -> None:
+def normalize_keyboard_for_texture(keyboard: svg.MaybeElementTree, config: Config) -> None:
     keyboard = svg.resolve_element_tree(keyboard)
     view_box_str = keyboard.attrib.get("viewBox", None)
     if view_box_str == None:
@@ -43,10 +44,10 @@ def normalize_keyboard_for_texture(keyboard: svg.MaybeElementTree, theme: Theme)
             re.match(r"^_[0-9]+(\.[0-9]+)?u-base$", element.attrib.get("id", "")),
         keyboard.findall(".//mask")
     )
-    theme.base_size = theme.unit_size + theme.icon_margin * 2
+    config.base_size = config.unit_size + config.icon_margin * 2
     for mask in masks:
         size_u = mask.attrib["id"].removeprefix("_").removesuffix("-base")
-        new_mask = create_keycap_mask(size_u, theme)
+        new_mask = create_keycap_mask(size_u, config)
         # Replace the mask's children
         mask[:] = new_mask[:]
     
@@ -67,7 +68,7 @@ def normalize_keyboard_for_texture(keyboard: svg.MaybeElementTree, theme: Theme)
         keyboard,
         dict(
             itertools.chain.from_iterable(
-                map(create_color_mappings, theme.colors.items())
+                map(create_color_mappings, config.colors.items())
             )
         ),
     )
@@ -76,7 +77,7 @@ def normalize_keyboard_for_texture(keyboard: svg.MaybeElementTree, theme: Theme)
     
     # Set fill color of background rect manually that would otherwise be set via
     # css.
-    for name, color in theme.colors.items():
+    for name, color in config.colors.items():
         for element in svg.tree_get_by_class(keyboard, f"keycap-color-{name}"):
             rect = element.find("./g/rect")
             if rect is None:
@@ -206,18 +207,49 @@ def main() -> None:
             lambda: clean_up_inkscape(out / "texture.svg"),
         )
         
+        # log_action_time(
+        #     "Generating texture.pdf",
+        #     lambda: subprocess.check_call(
+        #         ["inkscape", str(out / "texture.svg"), "-o", str(out / "texture.pdf")],
+        #         stderr=null,
+        #     ),
+        # )
+    
+    timer = log_split_action_time("Opening browser")
+    with browser.create_page() as page:
+        timer.done()
+        
         log_action_time(
-            "Generating texture.pdf",
-            lambda: subprocess.check_call(
-                ["inkscape", str(out / "texture.svg"), "-o", str(out / "texture.pdf")],
-                stderr=null,
-            ),
+            "Generating preview.png",
+            lambda: svg.render_file_as_png(
+                page,
+                out / "preview.svg",
+                out / "preview.png",
+                theme.scale,
+            )
         )
-    log_action_time("Generating PNGs", lambda: svg.render_many_files_as_png((
-        (out / "preview.svg", out / "preview.png"),
-        (out / "texture-outlined.svg", out / "texture-outlined.png"),
-        (out / "texture.svg", out / "texture.png"),
-    )))
+        log_action_time(
+            "Generating texture-outlined.png",
+            lambda: svg.render_file_as_png(
+                page,
+                out / "texture-outlined.svg",
+                out / "texture-outlined.png",
+                theme.scale
+            )
+        )
+        tiles = log_action_time(
+            "Generating texture.png's tiles",
+            lambda: svg.render_file_as_png(
+                page, out / "texture.svg",
+                out / "texture.png",
+                theme.texture_scale,
+                Vec2(3000, 3000),
+            )
+        )
+        log_action_time(
+            "Stiching together texture.png",
+            lambda: tiles.stich_together(),
+        )
     
     metadata.store_at(out / "metadata.json5")
 

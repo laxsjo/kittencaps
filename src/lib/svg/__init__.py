@@ -4,10 +4,10 @@ from pathlib import Path
 from dataclasses import dataclass
 import re
 import xml.etree.ElementTree as ET 
-from playwright.sync_api import sync_playwright
+from playwright import sync_api as playwright
 import io
 
-from .. import svg_builder
+from .. import svg_builder, browser
 from ..utils import *
 from ..error import *
 from ..color import *
@@ -452,7 +452,7 @@ def basic_shape_pre_transform_bounds(shape: ET.Element) -> Bounds:
     elif shape.tag in ("circle", "ellipse"):
         match shape.tag:
             case "circle":
-                radius = Vec2.promote_float(
+                radius = Vec2.promote(
                     get_property(shape, "r", float)
                 )
             case "ellipse":
@@ -610,23 +610,42 @@ def tree_to_str(tree: ET.Element|ET.ElementTree) -> str:
     tree.write(output, encoding="unicode")
     return output.getvalue()
 
-def render_many_files_as_png(in_out_path_pairs: Iterable[tuple[Path, Path]]):
-    with sync_playwright() as p:
-        browser = p.chromium.launch()
-        page = browser.new_page()
-        
-        for svg_path, out_path in in_out_path_pairs:
-            with open(svg_path, "r") as file:
-                svg = ET.parse(svg_path)
-            view_box = svg_builder.tree_get_viewbox(svg)
-            
-            page.set_viewport_size({
-                'width': int(view_box.size.get_x()),
-                'height': int(view_box.size.get_y()),
-            })
-            
-            page.goto(f'file://{str(svg_path.absolute())}')
-            
-            page.screenshot(path=out_path, omit_background=True)
-        
-        browser.close()
+
+@overload
+def render_file_as_png(page: playwright.Page, svg_path: Path, out_path: Path, scale: float, max_tile_size: Vec2[int]) -> browser._ImageTileMap: ...
+@overload
+def render_file_as_png(page: playwright.Page, svg_path: Path, out_path: Path, scale: float) -> None: ...
+def render_file_as_png(page: playwright.Page, svg_path: Path, out_path: Path, scale: float, max_tile_size: Vec2[int]|None = None) -> browser._ImageTileMap|None:
+    with open(svg_path, "r") as file:
+        svg = ET.parse(svg_path)
+        view_box = svg_builder.tree_get_viewbox(svg)
+    
+    page.set_viewport_size({
+        'width': int(view_box.size.get_x() * scale),
+        'height': int(view_box.size.get_y() * scale),
+    })
+    
+    page.goto(f'file://{svg_path.absolute()}')
+    
+    if max_tile_size:
+        return browser.render_segmented(page, max_tile_size, out_path)
+    else:
+        page.screenshot(path=out_path, omit_background=True, timeout=60000)
+        return None
+
+def render_file_as_pdf(page: playwright.Page, svg_path: Path, out_path: Path, scale: float):
+    with open(svg_path, "r") as file:
+        svg = ET.parse(svg_path)
+        view_box = svg_builder.tree_get_viewbox(svg)
+
+    width = int(view_box.size.get_x() * scale)
+    height = int(view_box.size.get_y() * scale)
+    page.set_viewport_size({
+        'width': width,
+        'height': height,
+    })
+    
+    page.goto(f'file://{svg_path.absolute()}')
+    
+    page.emulate_media(media="screen")
+    page.pdf(path=out_path, width=str(width), height=str(height))

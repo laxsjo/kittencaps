@@ -104,17 +104,21 @@ def _playback_case_changes(
 Keyboard_JSON = list[dict | list[str | dict]]
 class ExtendedKeyboard(Keyboard):
     case: Case
-    icon_margin: float
+    icon_margin: float = 0
     """
     Margin around to add around individual icons. For this option to be useful
     the icons should specify a viewbox that extends beyond the standard
     100x100 px rectangle at (0, 0). This extended area is then included in the
     texture variant.
     """
-    scale: float
+    scale: float = 1
     """
-    All dimensions in the final SVG are scaled by this factor, effectively
-    increasing the resolution of the generated PNG.
+    The resolutions of the generated preview.png and texture-outlined.png are
+    scaled by this factor.
+    """
+    texture_scale: float = 1
+    """
+    The resolution of the generated texture.png is scaled by this factor.
     """
     
     def __init__(self):
@@ -131,18 +135,19 @@ class ExtendedKeyboard(Keyboard):
         super_keyboard.__class__ = cls
         keyboard = cast(Self, super_keyboard)
         keyboard.case = Case()
-        keyboard.icon_margin = 0
-        keyboard.scale = 1
         
         # TODO: We should probably validate keyboard_json...
         
         for item in keyboard_json:
             if type(item) is dict:
-                if "case" in item and type(item["case"]) is dict:
-                    _playback_case_changes(keyboard.case, item["case"])
-                if "iconMargin" in item and isinstance(item["iconMargin"], (float, int)):
-                    keyboard.icon_margin = item["iconMargin"]
-                if "scale" in item and isinstance(item["scale"], (float, int)):
-                    keyboard.scale = item["scale"]
+                if isinstance(value := item.get("case"), dict):
+                    _playback_case_changes(keyboard.case, value)
+                if isinstance(value := item.get("iconMargin"), float | int):
+                    keyboard.icon_margin = value
+                if isinstance(value := item.get("scale"), float | int):
+                    keyboard.scale = value
+                if isinstance(value := item.get("textureScale"), float | int):
+                    keyboard.texture_scale = value
+                
         
         return keyboard
