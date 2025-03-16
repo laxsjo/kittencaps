@@ -2,7 +2,7 @@
   {
     "name": "Kittencaps Sample",
     "switchMount": "cherry",
-    "iconMargin": 10,
+    "iconMargin": 32,
     "scale": 3,
     "textureScale": 3,
   },

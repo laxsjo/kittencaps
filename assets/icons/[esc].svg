@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<svg version="1.1" viewBox="-10 -10 120 120" xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:bx="https://boxy-svg.com" style="">
+<svg version="1.1" viewBox="-34 -34 168 168" xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:bx="https://boxy-svg.com" style="">
   <defs id="palette-colors">
     <linearGradient id="bg_main" inkscape:swatch="solid" bx:pinned="true" gradientUnits="userSpaceOnUse">
       <title>bg_main</title>
@@ -88,7 +88,7 @@
       <line style="fill: none; stroke-linejoin: round; stroke-linecap: square; stroke-width: 9.5px; stroke: url(&quot;#bg_accent&quot;);" x1="0" y1="0" x2="-40" y2="40"/>
       <line style="fill: none; stroke-linejoin: round; stroke-linecap: square; stroke-width: 9.5px; stroke: url(&quot;#bg_accent&quot;);" x1="80" y1="0" x2="40" y2="40"/>
     </pattern>
-    <pattern id="pattern-0-0" href="#pattern-0" patternTransform="matrix(0.9, 0, 0, 0.9, 5, 5)"/>
+    <pattern id="pattern-0-0" href="#pattern-0" patternTransform="matrix(1.26, 0, 0, 1.26, -13.000006, -13.000001)"/>
   </defs>
   <style type="text/css" id="font_style">
     @font-face {
@@ -106,7 +106,7 @@
     <title>BG</title>
   </rect>
   <svg id="icon" viewBox="0 0 100 100" width="100" height="100" style="overflow:visible;">
-    <rect width="120" height="120" style="stroke-linecap: round; stroke-linejoin: bevel; stroke-width: 10px; fill: url(&quot;#pattern-0-0&quot;);" x="-10" y="-10">
+    <rect width="168" height="168" style="stroke-linecap: round; stroke-linejoin: bevel; stroke-width: 10px; fill: url(&quot;#pattern-0-0&quot;);" x="-34" y="-34">
       <title>Pattern</title>
     </rect>
     <rect style="stroke-linejoin: bevel; stroke-width: 10px; stroke-linecap: round; fill: url(&quot;#bg_focus&quot;);" x="20.5" y="35.7" width="59" height="28.6" rx="7" ry="7">

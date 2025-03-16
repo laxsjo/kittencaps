@@ -64,7 +64,7 @@
     <linearGradient x1="0" x2="0" y1="0" y2="1">
       <stop offset="0" style="stop-color: rgb(222, 224, 237);" />
     </linearGradient>
-    <pattern id="pattern-0-0" href="#pattern-0" patternTransform="matrix(0.9, 0, 0, 0.9, 5, 5)" />
+    <pattern id="pattern-0-0" href="#pattern-0" patternTransform="matrix(1.26, 0, 0, 1.26, -13.000006, -13.000001)" />
     <pattern id="pattern-0" patternUnits="userSpaceOnUse" width="40" height="40" bx:pinned="true" viewBox="0 0 40 40">
       <title>Stripes</title>
       <rect width="40" height="40" style="stroke-linecap: round; stroke-linejoin: bevel; stroke-width: 10px; fill: #2e2f32;" />
@@ -318,7 +318,7 @@
     <g>
       <rect class="surface" width="100" height="100" fill="#2e2f32" />
       <g transform="">
-        <svg viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0" version="1.1">
+        <svg viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" transform="matrix(1, 0, 0, 1.0000000000000002, -31.709163303023473, -26.14108956720664)" x="0" y="0" version="1.1">
           <path style="fill: #f5f7f7; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px; stroke: #f5f7f7;" d="M 31.143 41.822 C 35.034 37.293 41.261 33.376 47.223 32.685 C 48.52 32.535 50.007 26.412 51.313 26.389 C 52.61 26.366 55.425 31.659 56.696 31.963 C 61.708 33.166 63.675 33.846 67.907 36.923 C 68.739 37.527 74.21 34.264 75.036 35.079 C 76.791 36.813 74.735 46.176 75.382 47.37 C 77.571 51.402 78.088 55.736 78.094 58.952 C 78.094 58.952 31.203 41.67 31.143 41.822 Z">
             <title>Body</title>
           </path>
@@ -331,10 +331,10 @@
           <ellipse style="fill: #2e2f32;" cx="63.721" cy="45.64" rx="1.98" ry="1.98">
             <title>Eye</title>
           </ellipse>
-          <path style="fill: #e1d9f2; stroke-width: 2px;" d="M -10 26.6243 L 110 70.7867 L 110 110 L -10 110 L -10 26.6243 Z">
+          <path style="fill:#e1d9f2;stroke-width:2px" d="M -34 17.8 L 134 79.6274 L 134 134 L -34 134 L -34 17.8 Z">
             <title>Table BG</title>
           </path>
-          <path style="stroke: #2e2f32; fill: none; stroke-width: 2px; stroke-linecap: square;" d="M -10 26.6243 L 110 70.7867">
+          <path style="stroke: #2e2f32; fill: none; stroke-width: 2px; stroke-linecap: square;" d="M -34 17.7918 L 134 79.6192">
             <title>Table Border</title>
           </path>
           <path style="stroke-linecap:round;stroke-linejoin:round;fill:none;stroke:#2e2f32;stroke-width:2px" d="M 50.437 41.42 C 50.972 42.651 52.585 43.192 54.142 42.504 C 54.573 43.793 56.168 45.109 58.485 44.621" transform="translate(54.461, 43.07254008120839) matrix(0.99889, -0.04711, 0.04711, 0.99889, 0, 0) translate(-54.461, -43.07254008120839)">
@@ -931,7 +931,7 @@
       <rect class="surface" width="100" height="100" fill="#2e2f32" />
       <g transform="">
         <svg viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0" version="1.1">
-          <rect width="120" height="120" style="stroke-linecap: round; stroke-linejoin: bevel; stroke-width: 10px; fill: url(&quot;#pattern-0-0&quot;);" x="-10" y="-10">
+          <rect width="168" height="168" style="stroke-linecap: round; stroke-linejoin: bevel; stroke-width: 10px; fill: url(&quot;#pattern-0-0&quot;);" x="-34" y="-34">
             <title>Pattern</title>
           </rect>
           <rect style="stroke-linejoin: bevel; stroke-width: 10px; stroke-linecap: round; fill: #2e2f32;" x="20.5" y="35.7" width="59" height="28.6" rx="7" ry="7">
