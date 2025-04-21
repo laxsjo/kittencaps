@@ -50,5 +50,8 @@
         "selector": "json5",
         "colors": "css"
       }
-    ]
+    ],
+    "files.associations": {
+      "*.json": "json5"
+    }
 }
