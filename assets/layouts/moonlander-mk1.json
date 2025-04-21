@@ -13,7 +13,8 @@
       "mirrorAroundX": 9,
       "color": "case"
     },
-    "scale": 3
+    "scale": 3,
+    "iconMargin": 34,
   },
   // Column delta positions (mm) (-y is upwards)
   // 0

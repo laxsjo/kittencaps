@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:bx="https://boxy-svg.com" version="1.1" viewBox="-40 -71.6 1880 861.6">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:bx="https://boxy-svg.com" version="1.1" viewBox="-40 -93.088 3036 1325.09">
   <filter>
     <feFlood flood-color="#d5d5d5" result="light" />
     <feBlend in="light" in2="SourceGraphic" mode="multiply" result="shaded" />
@@ -27,13 +27,13 @@
   </symbol>
   <defs>
     <mask id="_1.5u-base">
-      <rect width="150" height="100" x="0" y="0" fill="white" />
+      <rect width="218" height="168" x="-34" y="-34" fill="white" />
     </mask>
     <mask id="_1u-base">
-      <rect width="100" height="100" x="0" y="0" fill="white" />
+      <rect width="168" height="168" x="-34" y="-34" fill="white" />
     </mask>
     <mask id="_2u-base">
-      <rect width="200" height="100" x="0" y="0" fill="white" />
+      <rect width="268" height="168" x="-34" y="-34" fill="white" />
     </mask>
     <mask>
       <rect width="150" height="100" fill="white" />
@@ -162,7 +162,7 @@
   </defs>
   <g class="keycap-color-bg_focus" mask="url(#_1u-base)" transform="">
     <g>
-      <rect class="surface" width="100" height="100" fill="#2e2f32" />
+      <rect class="surface" x="-34" y="-34" width="168" height="168" fill="#2e2f32" />
       <g transform="">
         <svg viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0" version="1.1">
           <g style="">
@@ -255,9 +255,9 @@
       </g>
     </g>
   </g>
-  <g class="keycap-color-bg_focus" mask="url(#_1u-base)" transform="translate(0, 100)">
+  <g class="keycap-color-bg_focus" mask="url(#_1u-base)" transform="translate(0, 168)">
     <g>
-      <rect class="surface" width="100" height="100" fill="#2e2f32" />
+      <rect class="surface" x="-34" y="-34" width="168" height="168" fill="#2e2f32" />
       <g transform="">
         <svg viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0" version="1.1">
           <path style="fill:none;stroke-linecap:round;stroke-linejoin:round;stroke:#e1d9f2;stroke-width:2.25px" d="M 37.693 27.49 L 66.817 27.49 L 66.817 48.51 L 37.693 48.51 L 27.182 38 L 37.693 27.49 Z" transform="translate(46.9995, 38.0) matrix(-1, 0, 0, -1, 0.00001, 0.000004) translate(-46.9995, -38.0)">
@@ -291,9 +291,9 @@
       </g>
     </g>
   </g>
-  <g class="keycap-color-bg_focus" mask="url(#_1u-base)" transform="translate(0, 200)">
+  <g class="keycap-color-bg_focus" mask="url(#_1u-base)" transform="translate(0, 336)">
     <g>
-      <rect class="surface" width="100" height="100" fill="#2e2f32" />
+      <rect class="surface" x="-34" y="-34" width="168" height="168" fill="#2e2f32" />
       <g transform="">
         <svg viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0" version="1.1">
           <path style="fill: none; stroke-linecap: round; stroke-width: 3px; stroke: #e1d9f2;" d="M 32.808 50 L 61.832 50" />
@@ -304,9 +304,9 @@
       </g>
     </g>
   </g>
-  <g class="keycap-color-bg_focus" mask="url(#_1u-base)" transform="translate(0, 300)">
+  <g class="keycap-color-bg_focus" mask="url(#_1u-base)" transform="translate(0, 504)">
     <g>
-      <rect class="surface" width="100" height="100" fill="#2e2f32" />
+      <rect class="surface" x="-34" y="-34" width="168" height="168" fill="#2e2f32" />
       <g transform="">
         <svg viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0" version="1.1">
           <path d="m 20.760008,75.408 c 0.561,0.255 1.224,-0.017 1.462,-0.595 l 1.156,-2.669 c 0.017,-0.051 0.085,-0.085 0.136,-0.085 h 4.59 c 0.051,0 0.119,0.034 0.136,0.085 l 1.156,2.669 c 0.238,0.578 0.901,0.85 1.462,0.595 0.561,-0.238 0.816,-0.901 0.578,-1.479 l -4.607,-10.829 c -0.153,-0.391 -0.578,-0.663 -1.02,-0.663 -0.442,0 -0.867,0.272 -1.02,0.663 l -4.607,10.829 c -0.238,0.578 0.017,1.241 0.578,1.479 z m 6.613,-4.658 h -3.111 c -0.153,0 -0.238,-0.136 -0.187,-0.272 l 1.513,-3.706 c 0.085,-0.221 0.357,-0.221 0.442,0 l 1.513,3.706 c 0.051,0.136 -0.017,0.272 -0.17,0.272 z m 6.528005,3.638 c 0,0.612 0.476,1.105 1.105,1.122 h 6.273 c 0.612,0 1.105,-0.51 1.105,-1.122 0,-0.578 -0.527,-1.105 -1.105,-1.105 h -4.981 c -0.102,0 -0.17,-0.068 -0.17,-0.17 v -9.486 c 0,-0.578 -0.527,-1.105 -1.105,-1.105 -0.612,0 -1.122,0.493 -1.122,1.105 z M 44.764012,63.627 c 0,0.595 0.527,1.122 1.122,1.122 h 2.397 c 0.102,0 0.17,0.068 0.17,0.17 v 9.469 c 0,0.595 0.527,1.122 1.122,1.122 0.612,0 1.105,-0.51 1.105,-1.122 v -9.469 c 0,-0.102 0.068,-0.17 0.17,-0.17 h 2.38 c 0.612,0 1.105,-0.51 1.105,-1.122 0,-0.578 -0.527,-1.105 -1.105,-1.105 h -7.344 c -0.629,0 -1.122,0.493 -1.122,1.105 z m 11.950985,5.576 c 0,3.468 2.839,6.307 6.307,6.307 1.53,0 3.009,-0.561 4.25,-1.615 0.663,-0.612 0.833,-0.901 0.833,-1.479 l 0.102,-3.264 c 0.017,-0.595 -0.493,-1.105 -1.105,-1.105 h -2.499 c -0.629,0.017 -1.105,0.51 -1.105,1.105 0,0.612 0.476,1.105 1.105,1.122 h 1.173 c 0.102,0 0.187,0.085 0.187,0.187 -0.017,0.459 -0.017,0.816 0,1.071 0,0.629 0.017,0.561 -0.068,0.629 -1.037,0.799 -1.938,1.156 -2.873,1.156 -2.312,0 -4.114,-1.802 -4.114,-4.114 0,-2.295 1.819,-4.114 4.114,-4.114 0.986,0 1.938,0.357 2.669,1.02 0.476,0.374 1.037,0.391 1.53,0.068 0.595,-0.408 0.51,-1.309 -0.204,-1.853 -1.088,-0.918 -2.516,-1.428 -3.995,-1.428 -3.468,0 -6.307,2.839 -6.307,6.307 z m 13.872001,5.185 c 0,0.595 0.527,1.122 1.122,1.122 0.612,0 1.105,-0.51 1.105,-1.122 V 70.75 c 0,-0.102 0.068,-0.17 0.17,-0.17 h 2.55 c 0.051,0 0.119,0.034 0.136,0.085 0.765,1.53 1.496,3.043 2.295,4.573 0.187,0.357 0.884,0.459 1.326,0.221 0.527,-0.272 0.765,-0.952 0.493,-1.479 l -1.955,-4.029 c -0.034,-0.085 -0.017,-0.153 0.051,-0.204 0.935,-0.765 1.513,-1.955 1.513,-3.162 0,-2.244 -1.819,-4.063 -4.046,-4.063 h -3.638 c -0.612,0 -1.122,0.493 -1.122,1.105 z m 2.227,-6.052 v -3.434 c 0,-0.102 0.068,-0.17 0.17,-0.17 h 2.329 c 1.054,0 1.87,0.833 1.87,1.887 0,1.054 -0.816,1.887 -1.87,1.887 h -2.329 c -0.102,0 -0.17,-0.068 -0.17,-0.17 z" style="font-weight:700;font-size:17px;font-family:'Open Gorton';text-anchor:middle;white-space:pre;fill:#e1d9f2" aria-label="AltGr" />
@@ -314,9 +314,9 @@
       </g>
     </g>
   </g>
-  <g class="keycap-color-bg_focus" mask="url(#_1u-base)" transform="translate(0, 400)">
+  <g class="keycap-color-bg_focus" mask="url(#_1u-base)" transform="translate(0, 672)">
     <g>
-      <rect class="surface" width="100" height="100" fill="#2e2f32" />
+      <rect class="surface" x="-34" y="-34" width="168" height="168" fill="#2e2f32" />
       <g transform="">
         <svg viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" transform="matrix(1, 0, 0, 1.0000000000000002, -31.709163303023473, -26.14108956720664)" x="0" y="0" version="1.1">
           <path style="fill: #f5f7f7; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px; stroke: #f5f7f7;" d="M 31.143 41.822 C 35.034 37.293 41.261 33.376 47.223 32.685 C 48.52 32.535 50.007 26.412 51.313 26.389 C 52.61 26.366 55.425 31.659 56.696 31.963 C 61.708 33.166 63.675 33.846 67.907 36.923 C 68.739 37.527 74.21 34.264 75.036 35.079 C 76.791 36.813 74.735 46.176 75.382 47.37 C 77.571 51.402 78.088 55.736 78.094 58.952 C 78.094 58.952 31.203 41.67 31.143 41.822 Z">
@@ -414,9 +414,9 @@
       </g>
     </g>
   </g>
-  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(100, -7.9)">
+  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(168, -13.272)">
     <g>
-      <rect class="surface" width="100" height="100" fill="#f5f7f7" />
+      <rect class="surface" x="-34" y="-34" width="168" height="168" fill="#f5f7f7" />
       <g transform="">
         <svg viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0" version="1.1">
           <path d="m 51.619987,64.080002 c 0.76,0 1.4,-0.64 1.4,-1.44 v -25.32 c 0,-0.76 -0.64,-1.4 -1.4,-1.4 -0.84,0 -1.48,0.88 -4.4,4.64 -0.56,0.72 -0.12,1.64 0.8,1.64 h 1.56 c 0.32,0 0.6,0.28 0.6,0.6 v 19.84 c 0,0.8 0.64,1.44 1.44,1.44 z" style="font-size:40px;font-family:'Open Gorton';text-anchor:middle;fill:#2e2f32" aria-label="1" />
@@ -424,9 +424,9 @@
       </g>
     </g>
   </g>
-  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(100, 92.10000000000001)">
+  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(168, 154.728)">
     <g>
-      <rect class="surface" width="100" height="100" fill="#f5f7f7" />
+      <rect class="surface" x="-34" y="-34" width="168" height="168" fill="#f5f7f7" />
       <g transform="">
         <svg viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" version="1.1" x="0" y="0">
           <path style="fill: #2e2f32; fill-rule: nonzero; stroke: #2e2f32; stroke-linecap: round; stroke-linejoin: round; stroke-dasharray: none; stroke-width: 3px;" d="M 40.3162 41.2286 L 41.5213 37.0793 L 45.5877 37.4288">
@@ -452,9 +452,9 @@
       </g>
     </g>
   </g>
-  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(100, 192.1)">
+  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(168, 322.728)">
     <g>
-      <rect class="surface" width="100" height="100" fill="#f5f7f7" />
+      <rect class="surface" x="-34" y="-34" width="168" height="168" fill="#f5f7f7" />
       <g transform="">
         <svg viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0" version="1.1">
           <path d="m 38.6,63.960002 c 0.72,0.32 1.56,-0.04 1.88,-0.8 l 2.72,-6.32 c 0.04,-0.12 0.2,-0.24 0.32,-0.24 h 12.96 c 0.12,0 0.28,0.12 0.32,0.24 l 2.72,6.32 c 0.32,0.76 1.16,1.12 1.88,0.8 0.72,-0.32 1.08,-1.16 0.76,-1.92 l -10.84,-25.48 c -0.24,-0.52 -0.76,-0.84 -1.32,-0.84 -0.56,0 -1.08,0.32 -1.32,0.84 l -10.84,25.48 c -0.32,0.76 0.04,1.6 0.76,1.92 z m 6.6,-10.2 c -0.36,0 -0.56,-0.32 -0.44,-0.64 l 4.72,-11.12 c 0.2,-0.52 0.84,-0.52 1.04,0 l 4.72,11.12 c 0.12,0.32 -0.08,0.64 -0.44,0.64 z" style="font-size:40px;font-family:'Open Gorton';text-anchor:middle;white-space:pre;fill:#2e2f32" aria-label="A" />
@@ -468,9 +468,9 @@
       </g>
     </g>
   </g>
-  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(100, 292.1)">
+  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(168, 490.72800000000007)">
     <g>
-      <rect class="surface" width="100" height="100" fill="#f5f7f7" />
+      <rect class="surface" x="-34" y="-34" width="168" height="168" fill="#f5f7f7" />
       <g transform="">
         <svg viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0" version="1.1">
           <path d="m 57.999994,63.880002 c 0.8,0 1.44,-0.64 1.44,-1.44 0,-0.76 -0.64,-1.4 -1.44,-1.4 h -13.48 c -0.48,0 -0.72,-0.44 -0.44,-0.84 l 16.52,-21.92 c 0.48,-0.64 0.32,-1.52 -0.28,-1.96 -0.56,-0.4 -0.84,-0.36 -18.12,-0.24 -0.8,0 -1.44,0.64 -1.44,1.44 0,0.76 0.64,1.4 1.44,1.4 h 13.28 c 0.48,0 0.72,0.44 0.44,0.84 l -16.52,21.92 c -0.48,0.64 -0.36,1.52 0.28,2 0.36,0.28 0.8,0.2 18.32,0.2 z" style="font-size:40px;font-family:'Open Gorton';text-anchor:middle;white-space:pre;fill:#2e2f32" aria-label="Z" />
@@ -484,9 +484,9 @@
       </g>
     </g>
   </g>
-  <g class="keycap-color-bg_focus" mask="url(#_1u-base)" transform="translate(100, 392.1)">
+  <g class="keycap-color-bg_focus" mask="url(#_1u-base)" transform="translate(168, 658.7280000000001)">
     <g>
-      <rect class="surface" width="100" height="100" fill="#2e2f32" />
+      <rect class="surface" x="-34" y="-34" width="168" height="168" fill="#2e2f32" />
       <g transform="">
         <svg viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0" version="1.1">
           <g style="">
@@ -548,9 +548,9 @@
       </g>
     </g>
   </g>
-  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(200, -23.699999999999974)">
+  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(336, -39.81599999999995)">
     <g>
-      <rect class="surface" width="100" height="100" fill="#f5f7f7" />
+      <rect class="surface" x="-34" y="-34" width="168" height="168" fill="#f5f7f7" />
       <g transform="">
         <svg viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0" version="1.1">
           <path d="m 40.599992,40.720002 c -0.4,0.88 -0.04,1.84 0.72,2.08 0.72,0.24 1.32,-0.44 2.08,-1.4 1.44,-1.84 3.52,-2.8 5.96,-2.8 3.44,0 6.52,2.28 6.52,6.04 0,2.88 -3.32,4.24 -6.52,5.56 -0.92,0.4 -1.88,0.76 -2.72,1.2 -3.76,1.84 -6,5.16 -6,8.84 0,2.56 0.72,3.72 2.48,3.72 h 15.28 c 0.84,0 1.52,-0.68 1.52,-1.52 0,-0.8 -0.68,-1.52 -1.52,-1.52 h -12.76 c -1.6,0 -1.56,-0.92 -1.56,-1.8 0,-2.72 1.96,-4.64 6.2,-6.12 3.56,-1.24 8.24,-2.92 8.24,-8.36 0,-5.96 -4.92,-8.84 -9.56,-8.84 -3.88,0 -7.36,2.72 -8.36,4.92 z" style="font-size:40px;font-family:'Open Gorton';text-anchor:middle;fill:#2e2f32" aria-label="2" />
@@ -558,9 +558,9 @@
       </g>
     </g>
   </g>
-  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(200, 76.30000000000003)">
+  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(336, 128.18400000000003)">
     <g>
-      <rect class="surface" width="100" height="100" fill="#f5f7f7" />
+      <rect class="surface" x="-34" y="-34" width="168" height="168" fill="#f5f7f7" />
       <g transform="">
         <svg viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0" version="1.1">
           <path d="m 39.879986,64.080002 h 10.84 c 5.96,-0.24 10.84,-6.44 10.84,-14.08 0,-7.64 -4.92,-13.84 -10.84,-14.08 h -10.84 c -0.8,0 -1.44,0.64 -1.44,1.4 v 25.32 c 0,0.8 0.64,1.44 1.44,1.44 z m 1.8,-2.8 c -0.24,0 -0.4,-0.16 -0.4,-0.4 v -21.64 c 0,-0.24 0.16,-0.4 0.4,-0.4 h 8.48 c 4.76,0.2 8.64,5.12 8.64,11.2 0,6.08 -3.92,11.04 -8.64,11.24 z" style="font-size:40px;font-family:'Open Gorton';text-anchor:middle;white-space:pre;fill:#2e2f32" aria-label="D" />
@@ -574,9 +574,9 @@
       </g>
     </g>
   </g>
-  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(200, 176.30000000000004)">
+  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(336, 296.1840000000001)">
     <g>
-      <rect class="surface" width="100" height="100" fill="#f5f7f7" />
+      <rect class="surface" x="-34" y="-34" width="168" height="168" fill="#f5f7f7" />
       <g transform="">
         <svg viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0" version="1.1">
           <path d="m 50.099997,64.840002 c 5.4,0 11.48,-2.36 11.48,-8.48 0,-6.44 -5.84,-8.84 -11.48,-8.84 -4.28,0 -7.16,-1.12 -7.16,-4.28 0,-2.76 3,-4.36 7.16,-4.36 6.92,0 8.16,3.8 9.88,1.72 1.88,-2.28 -5.04,-4.88 -9.88,-4.88 -5.68,0 -10.2,2.96 -10.2,7.36 0,5.28 5.28,7.44 10.2,7.44 4.52,0 8.32,1.24 8.44,5.44 0.12,4.64 -4.56,5.68 -8.44,5.68 -9.36,0 -9.12,-4.88 -11.24,-2.8 -2.24,2.2 4.64,6 11.24,6 z" style="font-size:40px;font-family:'Open Gorton';text-anchor:middle;white-space:pre;fill:#2e2f32" aria-label="S" />
@@ -590,9 +590,9 @@
       </g>
     </g>
   </g>
-  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(200, 276.3)">
+  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(336, 464.1840000000001)">
     <g>
-      <rect class="surface" width="100" height="100" fill="#f5f7f7" />
+      <rect class="surface" x="-34" y="-34" width="168" height="168" fill="#f5f7f7" />
       <g transform="">
         <svg viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0" version="1.1">
           <path d="m 38.93998,63.680002 c 0.6,0.44 1.52,0.32 2,-0.32 l 8.72,-11.52 c 0.2,-0.28 0.52,-0.28 0.72,0 l 8.68,11.52 c 0.48,0.64 1.4,0.76 2,0.32 0.64,-0.48 0.76,-1.36 0.28,-2 l -9.4,-12.44 c -0.08,-0.12 -0.08,-0.36 0,-0.48 l 7.92,-10.48 c 0.48,-0.64 0.32,-1.52 -0.28,-1.96 -0.64,-0.48 -1.56,-0.36 -2,0.24 l -7.24,9.6 c -0.2,0.28 -0.52,0.28 -0.72,0 l -7.2,-9.6 c -0.44,-0.6 -1.36,-0.72 -2,-0.24 -0.6,0.44 -0.76,1.32 -0.28,1.96 l 7.92,10.48 c 0.08,0.12 0.08,0.36 0,0.48 l -9.4,12.44 c -0.48,0.64 -0.36,1.52 0.28,2 z" style="font-size:40px;font-family:'Open Gorton';text-anchor:middle;white-space:pre;fill:#2e2f32" aria-label="X" />
@@ -606,9 +606,9 @@
       </g>
     </g>
   </g>
-  <g class="keycap-color-bg_focus" mask="url(#_1u-base)" transform="translate(200, 376.3)">
+  <g class="keycap-color-bg_focus" mask="url(#_1u-base)" transform="translate(336, 632.1840000000001)">
     <g>
-      <rect class="surface" width="100" height="100" fill="#2e2f32" />
+      <rect class="surface" x="-34" y="-34" width="168" height="168" fill="#2e2f32" />
       <g transform="">
         <svg viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0" version="1.1">
           <g transform="translate(470.83, 415.761) matrix(0.064592, 0.020225, -0.020224, 0.064592, -413.10122, -377.088006) translate(-470.83, -415.761)">
@@ -626,9 +626,9 @@
       </g>
     </g>
   </g>
-  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(300, -31.599999999999966)">
+  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(504, -53.087999999999944)">
     <g>
-      <rect class="surface" width="100" height="100" fill="#f5f7f7" />
+      <rect class="surface" x="-34" y="-34" width="168" height="168" fill="#f5f7f7" />
       <g transform="">
         <svg viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0" version="1.1">
           <rect class="icon-bounding-box" width="100" height="100" fill="none" />
@@ -639,9 +639,9 @@
       </g>
     </g>
   </g>
-  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(300, 68.40000000000003)">
+  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(504, 114.91200000000006)">
     <g>
-      <rect class="surface" width="100" height="100" fill="#f5f7f7" />
+      <rect class="surface" x="-34" y="-34" width="168" height="168" fill="#f5f7f7" />
       <g transform="">
         <svg viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0" version="1.1">
           <path d="m 41.679989,64.080002 c 0.76,0 1.4,-0.64 1.4,-1.44 v -9.76 c 0,-0.24 0.16,-0.4 0.4,-0.4 h 7.96 c 0.12,0 0.28,0.08 0.32,0.2 l 5.24,10.76 c 0.32,0.76 1.24,1 1.96,0.64 0.64,-0.32 1,-1.16 0.64,-1.88 l -4.88,-10.08 c -0.16,-0.36 -0.08,-0.76 0.28,-1 2.16,-1.52 3.56,-4 3.56,-6.84 0,-4.6 -3.72,-8.36 -8.32,-8.36 h -8.56 c -0.8,0 -1.44,0.64 -1.44,1.4 v 25.32 c 0,0.8 0.64,1.44 1.44,1.44 z m 1.8,-14.08 c -0.24,0 -0.4,-0.16 -0.4,-0.4 v -10.48 c 0,-0.24 0.16,-0.4 0.4,-0.4 h 6.68 c 3.12,0 5.6,2.48 5.6,5.64 0,3.16 -2.48,5.64 -5.6,5.64 z" style="font-size:40px;font-family:'Open Gorton';text-anchor:middle;white-space:pre;fill:#2e2f32" aria-label="R" />
@@ -655,9 +655,9 @@
       </g>
     </g>
   </g>
-  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(300, 168.40000000000003)">
+  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(504, 282.9120000000001)">
     <g>
-      <rect class="surface" width="100" height="100" fill="#f5f7f7" />
+      <rect class="surface" x="-34" y="-34" width="168" height="168" fill="#f5f7f7" />
       <g transform="">
         <svg viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0" version="1.1">
           <path d="m 40.419994,64.080002 c 0.76,0 1.4,-0.64 1.4,-1.44 v -12.48 c 0,-0.24 0.16,-0.4 0.4,-0.4 h 15.56 c 0.24,0 0.4,0.16 0.4,0.4 v 12.48 c 0,0.8 0.64,1.44 1.44,1.44 0.76,0 1.4,-0.64 1.4,-1.44 v -25.32 c 0,-0.76 -0.64,-1.4 -1.4,-1.4 -0.8,0 -1.44,0.64 -1.44,1.4 v 9.2 c 0,0.24 -0.16,0.4 -0.4,0.4 h -15.56 c -0.24,0 -0.4,-0.16 -0.4,-0.4 v -9.2 c 0,-0.76 -0.64,-1.4 -1.4,-1.4 -0.8,0 -1.44,0.64 -1.44,1.4 v 25.32 c 0,0.8 0.64,1.44 1.44,1.44 z" style="font-size:40px;font-family:'Open Gorton';text-anchor:middle;white-space:pre;fill:#2e2f32" aria-label="H" />
@@ -671,9 +671,9 @@
       </g>
     </g>
   </g>
-  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(300, 268.40000000000003)">
+  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(504, 450.91200000000003)">
     <g>
-      <rect class="surface" width="100" height="100" fill="#f5f7f7" />
+      <rect class="surface" x="-34" y="-34" width="168" height="168" fill="#f5f7f7" />
       <g transform="">
         <svg viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0" version="1.1">
           <path d="m 38.020016,64.080002 c 0.76,0 1.4,-0.64 1.4,-1.44 v -18.36 c 0,-0.28 0.44,-0.4 0.56,-0.16 l 8.56,16.28 c 0.6,1.12 2.32,1.12 2.92,0 l 8.56,-16.28 c 0.12,-0.24 0.56,-0.12 0.56,0.16 v 18.36 c 0,0.8 0.64,1.44 1.44,1.44 0.76,0 1.4,-0.64 1.4,-1.44 v -25.44 c -0.08,-0.72 -0.68,-1.28 -1.4,-1.28 -0.32,0 -0.64,0.12 -0.88,0.28 -0.16,0.12 -0.28,0.28 -0.4,0.48 l -10.4,19.84 c -0.16,0.28 -0.48,0.28 -0.64,0 l -10.44,-19.84 c -0.24,-0.48 -0.72,-0.76 -1.24,-0.76 -0.76,0 -1.36,0.56 -1.44,1.28 v 25.44 c 0,0.8 0.64,1.44 1.44,1.44 z" style="font-size:40px;font-family:'Open Gorton';text-anchor:middle;white-space:pre;fill:#2e2f32" aria-label="M" />
@@ -687,9 +687,9 @@
       </g>
     </g>
   </g>
-  <g class="keycap-color-bg_focus" mask="url(#_1u-base)" transform="translate(300, 368.40000000000003)">
+  <g class="keycap-color-bg_focus" mask="url(#_1u-base)" transform="translate(504, 618.912)">
     <g>
-      <rect class="surface" width="100" height="100" fill="#2e2f32" />
+      <rect class="surface" x="-34" y="-34" width="168" height="168" fill="#2e2f32" />
       <g transform="">
         <svg viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0" version="1.1">
           <path d="m 21.660992,74.388 c 0,0.595 0.527,1.122 1.122,1.122 0.612,0 1.105,-0.51 1.105,-1.122 v -4.794 c 0,-0.102 0.068,-0.17 0.17,-0.17 h 5.593 c 0.102,0 0.17,0.068 0.17,0.17 v 4.794 c 0,0.595 0.527,1.122 1.122,1.122 0.612,0 1.105,-0.51 1.105,-1.122 V 63.627 c 0,-0.578 -0.527,-1.105 -1.105,-1.105 -0.612,0 -1.122,0.493 -1.122,1.105 v 3.4 c 0,0.102 -0.068,0.17 -0.17,0.17 h -5.593 c -0.102,0 -0.17,-0.068 -0.17,-0.17 v -3.4 c 0,-0.578 -0.527,-1.105 -1.105,-1.105 -0.612,0 -1.122,0.493 -1.122,1.105 z m 12.970991,-9.877 3.417,4.879 c 0.153,0.221 0.238,0.493 0.238,0.765 l 0.034,4.233 c 0,0.595 0.527,1.122 1.122,1.122 0.612,0 1.105,-0.51 1.105,-1.122 l 0.034,-4.25 c 0,-0.272 0.085,-0.544 0.238,-0.765 l 3.4,-4.845 c 0.34,-0.527 0.238,-1.207 -0.238,-1.547 -0.51,-0.374 -1.19,-0.255 -1.564,0.255 l -2.839,4.029 c -0.085,0.119 -0.221,0.119 -0.306,0 l -2.805,-3.995 -0.034,-0.051 c -0.374,-0.493 -1.054,-0.595 -1.564,-0.238 -0.476,0.34 -0.578,1.02 -0.238,1.53 z m 12.172011,9.877 c 0,0.595 0.527,1.122 1.122,1.122 0.612,0 1.105,-0.51 1.105,-1.122 v -3.587 c 0,-0.102 0.068,-0.17 0.17,-0.17 h 2.363 c 2.21,0 4.046,-1.836 4.046,-4.046 0,-2.244 -1.819,-4.063 -4.046,-4.063 h -3.638 c -0.612,0 -1.122,0.493 -1.122,1.105 z m 2.227,-6.052 v -3.434 c 0,-0.102 0.068,-0.17 0.17,-0.17 h 2.329 c 1.054,0 1.87,0.833 1.87,1.887 0,1.054 -0.816,1.887 -1.87,1.887 h -2.329 c -0.102,0 -0.17,-0.068 -0.17,-0.17 z m 8.959016,6.052 c 0,0.612 0.476,1.105 1.105,1.122 h 6.443 c 0.612,0 1.105,-0.51 1.105,-1.122 0,-0.578 -0.527,-1.105 -1.105,-1.105 h -5.151 c -0.102,0 -0.17,-0.068 -0.17,-0.17 v -3.196 c 0,-0.102 0.068,-0.17 0.17,-0.17 h 3.196 c 0.612,0 1.105,-0.51 1.105,-1.122 0,-0.578 -0.527,-1.105 -1.105,-1.105 h -3.196 c -0.102,0 -0.17,-0.068 -0.17,-0.17 v -2.431 c 0,-0.102 0.068,-0.17 0.17,-0.17 h 4.896 c 0.612,0 1.105,-0.51 1.105,-1.122 0,-0.578 -0.527,-1.105 -1.105,-1.105 h -6.188 c -0.629,0.017 -1.105,0.51 -1.105,1.105 z m 11.033004,0 c 0,0.595 0.527,1.122 1.122,1.122 0.612,0 1.105,-0.51 1.105,-1.122 V 70.75 c 0,-0.102 0.068,-0.17 0.17,-0.17 h 2.55 c 0.051,0 0.119,0.034 0.136,0.085 0.765,1.53 1.496,3.043 2.295,4.573 0.187,0.357 0.884,0.459 1.326,0.221 0.527,-0.272 0.765,-0.952 0.493,-1.479 l -1.955,-4.029 c -0.034,-0.085 -0.017,-0.153 0.051,-0.204 0.935,-0.765 1.513,-1.955 1.513,-3.162 0,-2.244 -1.819,-4.063 -4.046,-4.063 h -3.638 c -0.612,0 -1.122,0.493 -1.122,1.105 z m 2.227,-6.052 v -3.434 c 0,-0.102 0.068,-0.17 0.17,-0.17 h 2.329 c 1.054,0 1.87,0.833 1.87,1.887 0,1.054 -0.816,1.887 -1.87,1.887 h -2.329 c -0.102,0 -0.17,-0.068 -0.17,-0.17 z" style="font-weight:700;font-size:17px;font-family:'Open Gorton';text-anchor:middle;white-space:pre;fill:#e1d9f2" aria-label="HYPER" />
@@ -750,9 +750,9 @@
       </g>
     </g>
   </g>
-  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(400, -23.69999999999998)">
+  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(672, -39.81599999999997)">
     <g>
-      <rect class="surface" width="100" height="100" fill="#f5f7f7" />
+      <rect class="surface" x="-34" y="-34" width="168" height="168" fill="#f5f7f7" />
       <g transform="">
         <svg viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0" version="1.1">
           <path d="m 55.200007,64.080002 c 0.76,0 1.4,-0.64 1.4,-1.44 v -4.88 c 0,-0.32 0.28,-0.6 0.6,-0.6 h 1.68 c 0.76,0.04 1.4,-0.68 1.4,-1.4 0,-0.84 -0.64,-1.48 -1.4,-1.44 h -1.68 c -0.32,0 -0.6,-0.28 -0.6,-0.6 v -16.4 c 0,-0.76 -0.64,-1.4 -1.4,-1.4 -0.36,0 -0.72,0.04 -0.96,0.36 l -14.08,18.32 c -0.32,0.4 -0.44,0.68 -0.44,1.16 0,0.72 0.6,1.4 1.4,1.4 h 12.04 c 0.32,0 0.6,0.28 0.6,0.6 v 4.88 c 0,0.8 0.64,1.44 1.44,1.44 z m -10.08,-9.76 c -0.48,0 -0.72,-0.44 -0.44,-0.84 l 7.92,-10.52 c 0.4,-0.52 1.16,-0.24 1.16,0.4 v 10.56 c 0,0.24 -0.16,0.4 -0.4,0.4 z" style="font-size:40px;font-family:'Open Gorton';text-anchor:middle;fill:#2e2f32" aria-label="4" />
@@ -760,9 +760,9 @@
       </g>
     </g>
   </g>
-  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(400, 76.30000000000001)">
+  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(672, 128.18400000000003)">
     <g>
-      <rect class="surface" width="100" height="100" fill="#f5f7f7" />
+      <rect class="surface" x="-34" y="-34" width="168" height="168" fill="#f5f7f7" />
       <g transform="">
         <svg viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0" version="1.1">
           <rect class="icon-bounding-box" width="100" height="100" fill="none" />
@@ -789,9 +789,9 @@
       </g>
     </g>
   </g>
-  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(400, 176.3)">
+  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(672, 296.184)">
     <g>
-      <rect class="surface" width="100" height="100" fill="#f5f7f7" />
+      <rect class="surface" x="-34" y="-34" width="168" height="168" fill="#f5f7f7" />
       <g transform="">
         <svg viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0" version="1.1">
           <path d="m 50.060001,64.080002 c 0.76,0 1.4,-0.64 1.4,-1.44 v -23.48 c 0,-0.24 0.16,-0.4 0.4,-0.4 h 6.8 c 0.76,0 1.4,-0.64 1.4,-1.44 0,-0.76 -0.64,-1.4 -1.4,-1.4 h -17.28 c -0.84,0 -1.44,0.64 -1.44,1.4 0,0.8 0.64,1.44 1.44,1.44 h 6.84 c 0.24,0 0.4,0.16 0.4,0.4 v 23.48 c 0,0.8 0.64,1.44 1.44,1.44 z" style="font-size:40px;font-family:'Open Gorton';text-anchor:middle;white-space:pre;fill:#2e2f32" aria-label="T" />
@@ -805,9 +805,9 @@
       </g>
     </g>
   </g>
-  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(400, 276.3)">
+  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(672, 464.18399999999997)">
     <g>
-      <rect class="surface" width="100" height="100" fill="#f5f7f7" />
+      <rect class="surface" x="-34" y="-34" width="168" height="168" fill="#f5f7f7" />
       <g transform="">
         <svg viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0" version="1.1">
           <path d="m 51.820014,64.080002 c 3.56,0 6.76,-1.36 9.2,-3.56 0.96,-0.88 1.04,-2.04 0.4,-2.44 -0.68,-0.44 -1.52,-0.32 -2.12,0.28 -1.96,1.84 -4.6,2.96 -7.48,2.96 -6.04,0 -10.88,-4.84 -10.88,-10.88 0,-6 4.84,-10.88 10.88,-10.88 2.72,0 5.2,1 7.08,2.64 0.64,0.52 1.44,0.64 2.12,0.2 l 0.04,-0.04 c 0.64,-0.44 0.48,-1.6 -0.56,-2.44 -2.36,-1.96 -5.4,-3.12 -8.68,-3.12 -7.56,0 -13.64,6.12 -13.64,13.64 0,7.56 6.08,13.64 13.64,13.64 z" style="font-size:40px;font-family:'Open Gorton';text-anchor:middle;white-space:pre;fill:#2e2f32" aria-label="C" />
@@ -821,9 +821,9 @@
       </g>
     </g>
   </g>
-  <g class="keycap-color-bg_focus" mask="url(#_1u-base)" transform="translate(400, 376.3)">
+  <g class="keycap-color-bg_focus" mask="url(#_1u-base)" transform="translate(672, 632.184)">
     <g>
-      <rect class="surface" width="100" height="100" fill="#2e2f32" />
+      <rect class="surface" x="-34" y="-34" width="168" height="168" fill="#2e2f32" />
       <g transform="">
         <svg viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0" version="1.1">
           <path d="m 24.19,74.388 c 0,0.595 0.527,1.122 1.122,1.122 0.612,0 1.105,-0.51 1.105,-1.122 v -6.46 c 0,-0.272 0.34,-0.374 0.51,-0.153 1.768,2.499 3.519,5.049 5.287,7.514 0.136,0.187 0.425,0.221 0.697,0.221 0.612,0 1.105,-0.51 1.105,-1.122 V 63.627 c 0,-0.578 -0.527,-1.105 -1.105,-1.105 -0.612,0 -1.122,0.493 -1.122,1.105 v 6.375 c 0,0.272 -0.34,0.374 -0.51,0.153 l -5.1,-7.225 c -0.204,-0.255 -0.527,-0.408 -0.867,-0.408 -0.612,0 -1.122,0.493 -1.122,1.105 z M 45.678007,62.522 c -0.612,0 -1.122,0.493 -1.122,1.105 v 7.327 c 0,1.649 -1.309,2.958 -2.958,2.958 -1.632,0 -2.975,-1.326 -2.975,-2.958 v -7.327 c 0,-0.578 -0.527,-1.105 -1.105,-1.105 -0.612,0 -1.122,0.493 -1.122,1.105 v 7.327 c 0,2.873 2.329,5.185 5.202,5.185 2.839,0 5.185,-2.346 5.185,-5.185 v -7.327 c 0,-0.578 -0.527,-1.105 -1.105,-1.105 z m 3.484991,11.866 c 0,0.595 0.527,1.122 1.122,1.122 0.612,0 1.105,-0.51 1.105,-1.122 v -4.964 c 0,-0.306 0.459,-0.425 0.595,-0.153 l 2.312,4.42 c 0.459,0.833 1.7,0.833 2.159,0 l 2.312,-4.403 c 0.136,-0.272 0.595,-0.17 0.595,0.136 v 4.964 c 0,0.595 0.527,1.122 1.122,1.122 0.612,0 1.105,-0.51 1.105,-1.122 V 63.525 c -0.034,-0.561 -0.34,-0.816 -0.884,-1.003 -0.34,-0.119 -0.833,-0.017 -1.003,0.306 l -4.114,7.752 c -0.085,0.17 -0.323,0.17 -0.408,0 l -3.91,-7.48 c -0.187,-0.34 -0.595,-0.578 -0.986,-0.578 -0.578,0 -1.088,0.442 -1.122,1.003 z" style="font-weight:700;font-size:17px;font-family:'Open Gorton';white-space:pre;fill:#e1d9f2" aria-label="num&#8203;">
@@ -846,9 +846,9 @@
       </g>
     </g>
   </g>
-  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(500, -7.90000000000001)">
+  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(840, -13.272000000000016)">
     <g>
-      <rect class="surface" width="100" height="100" fill="#f5f7f7" />
+      <rect class="surface" x="-34" y="-34" width="168" height="168" fill="#f5f7f7" />
       <g transform="">
         <svg viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0" version="1.1">
           <path d="m 49.679994,64.080002 c 5.36,0 9.72,-4.08 9.72,-10.28 0,-6.12 -4.36,-10.28 -9.72,-10.28 -1.84,0 -2.96,0.32 -4.24,0.44 -0.44,0.04 -0.72,-0.24 -0.72,-0.68 v -2.88 c 0,-0.6 0.44,-1.08 1.08,-1.08 h 10.56 c 0.8,0 1.52,-0.68 1.52,-1.56 0,-0.8 -0.72,-1.52 -1.52,-1.52 h -14.08 c -0.6,0 -1.08,0.48 -1.08,1.08 v 12.24 c 0,1.92 2.76,1.76 3.4,0.2 0.84,-2.04 2.4,-3.12 5.08,-3.12 3.6,0 6.48,2.8 6.48,7.16 0,4.4 -2.88,7.16 -6.48,7.16 -2.56,0 -4.44,-0.68 -5.4,-3.44 -0.64,-1.84 -3.76,-1.44 -3.16,0.6 1.08,3.64 4.36,5.96 8.56,5.96 z" style="font-size:40px;font-family:'Open Gorton';text-anchor:middle;fill:#2e2f32" aria-label="5" />
@@ -856,9 +856,9 @@
       </g>
     </g>
   </g>
-  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(500, 92.1)">
+  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(840, 154.72799999999998)">
     <g>
-      <rect class="surface" width="100" height="100" fill="#f5f7f7" />
+      <rect class="surface" x="-34" y="-34" width="168" height="168" fill="#f5f7f7" />
       <g transform="">
         <svg viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0" version="1.1">
           <path d="m 42.099987,64.080002 h 9 c 4.52,0 8.24,-3.72 8.24,-8.28 0,-3.16 -1.76,-5.88 -4.4,-7.28 -0.32,-0.2 -0.36,-0.56 -0.04,-0.8 1.64,-1.2 2.68,-3.12 2.68,-5.28 0,-3.6 -2.92,-6.52 -6.48,-6.52 h -9 c -0.8,0 -1.44,0.64 -1.44,1.4 v 25.32 c 0,0.8 0.64,1.44 1.44,1.44 z m 1.8,-16.88 c -0.24,0 -0.4,-0.16 -0.4,-0.4 v -7.68 c 0,-0.24 0.16,-0.4 0.4,-0.4 h 6.92 c 2.32,0 4.2,1.88 4.2,4.24 0,2.36 -1.88,4.24 -4.2,4.24 z m 0,13.92 c -0.24,0 -0.4,-0.16 -0.4,-0.4 v -10.24 c 0,-0.24 0.16,-0.4 0.4,-0.4 h 6.92 c 3.04,0 5.48,2.48 5.48,5.52 0,3.04 -2.44,5.52 -5.48,5.52 z" style="font-size:40px;font-family:'Open Gorton';text-anchor:middle;white-space:pre;fill:#2e2f32" aria-label="B" />
@@ -872,9 +872,9 @@
       </g>
     </g>
   </g>
-  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(500, 192.1)">
+  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(840, 322.72799999999995)">
     <g>
-      <rect class="surface" width="100" height="100" fill="#f5f7f7" />
+      <rect class="surface" x="-34" y="-34" width="168" height="168" fill="#f5f7f7" />
       <g transform="">
         <svg viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0" version="1.1">
           <path d="m 51.319984,64.080002 c 3.56,0 6.68,-1.4 9.2,-3.56 1.48,-1.28 1.56,-1.64 1.56,-2.52 l 0.24,-7.68 c 0.04,-0.76 -0.64,-1.4 -1.4,-1.4 h -5.88 c -0.8,0.04 -1.4,0.64 -1.4,1.4 0,0.8 0.6,1.4 1.4,1.44 h 3.6 c 0.48,0 0.84,0.4 0.8,0.92 -0.12,4.72 0.32,4.96 -0.64,5.68 -2.16,1.64 -4.6,2.96 -7.48,2.96 -6.04,0 -10.88,-4.84 -10.88,-10.88 0,-6 4.84,-10.88 10.88,-10.88 2.72,0 5.2,1 7.08,2.64 0.68,0.56 1.44,0.64 2.16,0.16 0.64,-0.44 0.48,-1.6 -0.56,-2.44 -2.36,-1.96 -5.4,-3.12 -8.68,-3.12 -7.56,0 -13.64,6.12 -13.64,13.64 0,7.56 6.08,13.64 13.64,13.64 z" style="font-size:40px;font-family:'Open Gorton';text-anchor:middle;white-space:pre;fill:#2e2f32" aria-label="G" />
@@ -888,9 +888,9 @@
       </g>
     </g>
   </g>
-  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(500, 292.09999999999997)">
+  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(840, 490.72799999999995)">
     <g>
-      <rect class="surface" width="100" height="100" fill="#f5f7f7" />
+      <rect class="surface" x="-34" y="-34" width="168" height="168" fill="#f5f7f7" />
       <g transform="">
         <svg viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0" version="1.1">
           <path d="m 50,64.080002 c 0.56,0 1.08,-0.32 1.32,-0.84 l 10.84,-25.48 c 0.32,-0.76 -0.04,-1.6 -0.76,-1.92 -0.72,-0.32 -1.56,0.04 -1.88,0.8 l -9,21.16 c -0.2,0.52 -0.84,0.52 -1.04,0 l -9,-21.16 c -0.32,-0.76 -1.16,-1.12 -1.88,-0.8 -0.72,0.32 -1.08,1.16 -0.76,1.92 l 10.84,25.48 c 0.24,0.52 0.76,0.84 1.32,0.84 z" style="font-size:40px;font-family:'Open Gorton';text-anchor:middle;white-space:pre;fill:#2e2f32" aria-label="V" />
@@ -904,21 +904,21 @@
       </g>
     </g>
   </g>
-  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(600, -1.8041124150158794e-14)">
+  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(1008, -3.0309088572266774e-14)">
     <g>
-      <rect class="surface" width="100" height="100" fill="#f5f7f7" />
+      <rect class="surface" x="-34" y="-34" width="168" height="168" fill="#f5f7f7" />
       <g transform="">
         <svg viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0" version="1.1">
-          <path style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 3px; fill: #2e2f32;" d="M 100 100 L -0.0002 100 L 100 0 L 100 100 Z">
+          <path style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 3px; fill: #2e2f32;" d="M 134 134 L -34 134 L 134 -34 L 134 134 Z">
             <title>BG</title>
           </path>
         </svg>
       </g>
     </g>
   </g>
-  <g class="keycap-color-bg_focus" mask="url(#_1u-base)" transform="translate(600, 99.99999999999997)">
+  <g class="keycap-color-bg_focus" mask="url(#_1u-base)" transform="translate(1008, 167.99999999999997)">
     <g>
-      <rect class="surface" width="100" height="100" fill="#2e2f32" />
+      <rect class="surface" x="-34" y="-34" width="168" height="168" fill="#2e2f32" />
       <g transform="">
         <svg viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0" version="1.1">
           <text style="font-weight:400;font-size:40px;font-family:'Open Gorton';white-space:normal;fill:#2e2f32" x="50" y="64.080002" text-anchor="middle" xml:space="preserve"><tspan /></text>
@@ -926,9 +926,9 @@
       </g>
     </g>
   </g>
-  <g class="keycap-color-bg_focus" mask="url(#_1u-base)" transform="translate(600, 199.99999999999997)">
+  <g class="keycap-color-bg_focus" mask="url(#_1u-base)" transform="translate(1008, 335.99999999999994)">
     <g>
-      <rect class="surface" width="100" height="100" fill="#2e2f32" />
+      <rect class="surface" x="-34" y="-34" width="168" height="168" fill="#2e2f32" />
       <g transform="">
         <svg viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0" version="1.1">
           <rect width="168" height="168" style="stroke-linecap: round; stroke-linejoin: bevel; stroke-width: 10px; fill: url(&quot;#pattern-0-0&quot;);" x="-34" y="-34">
@@ -942,21 +942,21 @@
       </g>
     </g>
   </g>
-  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(1100, -2.220446049250313e-14)">
+  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(1848, -3.730349362740526e-14)">
     <g>
-      <rect class="surface" width="100" height="100" fill="#f5f7f7" />
+      <rect class="surface" x="-34" y="-34" width="168" height="168" fill="#f5f7f7" />
       <g transform="">
-        <svg viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0" version="1.1">
-          <path style="stroke-linecap:round;stroke-linejoin:round;stroke-width:3px;fill:#2e2f32" d="M 100 0 L 0 0 L 100 100 L 100 0 Z" transform="translate(50.0, 50.0) matrix(-1, 0, 0, -1, -0.000002, -0.000017) translate(-50.0, -50.0)">
+        <svg viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow: visible;" transform="matrix(1.2899704992418748, 0, 0, 1.265732767251464, -18.600043641399402, -7.97324502457262)" x="0" y="0" version="1.1">
+          <path style="stroke-linecap:round;stroke-linejoin:round;stroke-width:3px;fill:#2e2f32" d="M -34 134 L 134 134 L -34 -34 L -34 134 Z">
             <title>BG</title>
           </path>
         </svg>
       </g>
     </g>
   </g>
-  <g class="keycap-color-bg_focus" mask="url(#_1u-base)" transform="translate(1100, 99.99999999999997)">
+  <g class="keycap-color-bg_focus" mask="url(#_1u-base)" transform="translate(1848, 167.99999999999997)">
     <g>
-      <rect class="surface" width="100" height="100" fill="#2e2f32" />
+      <rect class="surface" x="-34" y="-34" width="168" height="168" fill="#2e2f32" />
       <g transform="">
         <svg viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0" version="1.1">
           <text style="font-weight:400;font-size:40px;font-family:'Open Gorton';white-space:normal;fill:#2e2f32" x="50" y="64.080002" text-anchor="middle" xml:space="preserve"><tspan /></text>
@@ -964,12 +964,12 @@
       </g>
     </g>
   </g>
-  <g class="keycap-color-bg_accent" mask="url(#_1u-base)" transform="translate(1100, 199.99999999999997)">
+  <g class="keycap-color-bg_accent" mask="url(#_1u-base)" transform="translate(1848, 335.99999999999994)">
     <g>
-      <rect class="surface" width="100" height="100" fill="#e1d9f2" />
+      <rect class="surface" x="-34" y="-34" width="168" height="168" fill="#e1d9f2" />
       <g transform="">
         <svg viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible" x="0" y="0" version="1.1">
-          <rect width="100" height="100" style="stroke-linecap:round;stroke-linejoin:bevel;stroke-width:10px;fill:url(#pattern-0-0-0)">
+          <rect width="168" height="168" style="stroke-linecap:round;stroke-linejoin:bevel;stroke-width:10px;fill:url(#pattern-0-0-0)" x="-34" y="-34">
             <title>Pattern</title>
           </rect>
           <g style="">
@@ -998,9 +998,9 @@
       </g>
     </g>
   </g>
-  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(1200, -7.900000000000023)">
+  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(2016, -13.272000000000038)">
     <g>
-      <rect class="surface" width="100" height="100" fill="#f5f7f7" />
+      <rect class="surface" x="-34" y="-34" width="168" height="168" fill="#f5f7f7" />
       <g transform="">
         <svg viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0" version="1.1">
           <path d="m 50.160011,64.080002 c 5.6,0 9.92,-3.68 9.92,-8.48 0,-4.92 -4.4,-8.84 -9.92,-8.84 -1.48,0 -4.28,0.04 -6.24,1.04 -1.4,0.72 -1.2,-1.88 -0.32,-4.04 1,-2.48 3.56,-4.12 6.56,-4.12 3.2,0 5.6,1.48 6.96,4.16 0.92,1.8 3.6,1.16 3.04,-0.68 -1.28,-4.24 -4.84,-6.64 -10,-6.64 -7.04,0 -10.92,5.24 -10.92,14.72 0,8.56 3.64,12.88 10.92,12.88 z m 0,-2.56 c -4.12,0 -6.92,-2.52 -6.92,-6.2 0,-3.4 2.76,-5.68 6.92,-5.68 3.92,0 7.2,2.72 7.2,5.96 0,3.48 -2.96,5.92 -7.2,5.92 z" style="font-size:40px;font-family:'Open Gorton';text-anchor:middle;fill:#2e2f32" aria-label="6" />
@@ -1008,9 +1008,9 @@
       </g>
     </g>
   </g>
-  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(1200, 92.09999999999998)">
+  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(2016, 154.72799999999998)">
     <g>
-      <rect class="surface" width="100" height="100" fill="#f5f7f7" />
+      <rect class="surface" x="-34" y="-34" width="168" height="168" fill="#f5f7f7" />
       <g transform="">
         <svg viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0" version="1.1">
           <path d="m 58.979986,35.920002 c -0.8,0 -1.44,0.64 -1.44,1.4 v 17.24 c 0,4.48 -3.68,8.16 -8.16,8.16 -2.92,0 -5.48,-1.52 -6.92,-3.8 -0.56,-0.88 -1.32,-1.32 -2.08,-0.96 -0.72,0.36 -1,1.36 -0.48,2.28 1.96,3.2 5.44,5.32 9.48,5.32 6.08,0 11,-4.92 11,-11 v -17.24 c 0,-0.76 -0.64,-1.4 -1.4,-1.4 z" style="font-size:40px;font-family:'Open Gorton';text-anchor:middle;white-space:pre;fill:#2e2f32" aria-label="J" />
@@ -1024,9 +1024,9 @@
       </g>
     </g>
   </g>
-  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(1200, 192.1)">
+  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(2016, 322.72799999999995)">
     <g>
-      <rect class="surface" width="100" height="100" fill="#f5f7f7" />
+      <rect class="surface" x="-34" y="-34" width="168" height="168" fill="#f5f7f7" />
       <g transform="">
         <svg viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0" version="1.1">
           <path d="m 50.040009,64.080002 c 0.76,0 1.4,-0.64 1.4,-1.44 v -10.52 c 0,-0.44 0.12,-0.96 0.4,-1.32 l 8.48,-12.08 c 0.44,-0.64 0.28,-1.52 -0.32,-1.96 -0.68,-0.48 -1.52,-0.28 -2,0.36 l -7.64,10.88 c -0.2,0.28 -0.52,0.28 -0.72,0 l -7.6,-10.84 -0.04,-0.04 c -0.48,-0.64 -1.32,-0.84 -2,-0.36 -0.6,0.44 -0.76,1.32 -0.32,1.96 l 8.52,12.16 c 0.28,0.36 0.4,0.88 0.4,1.32 v 10.44 c 0,0.8 0.64,1.44 1.44,1.44 z" style="font-size:40px;font-family:'Open Gorton';text-anchor:middle;white-space:pre;fill:#2e2f32" aria-label="Y" />
@@ -1040,9 +1040,9 @@
       </g>
     </g>
   </g>
-  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(1200, 292.09999999999997)">
+  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(2016, 490.72799999999995)">
     <g>
-      <rect class="surface" width="100" height="100" fill="#f5f7f7" />
+      <rect class="surface" x="-34" y="-34" width="168" height="168" fill="#f5f7f7" />
       <g transform="">
         <svg viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0" version="1.1">
           <path d="m 39.679981,64.080002 c 0.76,0 1.4,-0.64 1.4,-1.44 v -7.76 c 0,-0.08 0.04,-0.24 0.12,-0.28 l 5.72,-4.8 c 0.16,-0.16 0.44,-0.16 0.6,0.04 l 11.6,13.56 0.16,0.16 c 0.56,0.56 1.36,0.68 1.92,0.16 0.64,-0.56 0.72,-1.4 0.2,-2 l -11.72,-13.68 c -0.16,-0.16 -0.12,-0.44 0.04,-0.6 l 10.64,-8.96 0.04,-0.04 c 0.6,-0.52 0.68,-1.4 0.16,-1.96 -0.56,-0.6 -1.4,-0.72 -2,-0.2 l -16.56,14 c -0.4,0.36 -0.92,0.04 -0.92,-0.44 v -12.52 c 0,-0.76 -0.64,-1.4 -1.4,-1.4 -0.8,0 -1.44,0.64 -1.44,1.4 v 25.32 c 0,0.8 0.64,1.44 1.44,1.44 z" style="font-size:40px;font-family:'Open Gorton';text-anchor:middle;white-space:pre;fill:#2e2f32" aria-label="K" />
@@ -1056,9 +1056,9 @@
       </g>
     </g>
   </g>
-  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(1300, -23.700000000000017)">
+  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(2184, -39.81600000000003)">
     <g>
-      <rect class="surface" width="100" height="100" fill="#f5f7f7" />
+      <rect class="surface" x="-34" y="-34" width="168" height="168" fill="#f5f7f7" />
       <g transform="">
         <svg viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0" version="1.1">
           <path d="m 45.579987,64.200002 c 0.68,0 1.2,-0.48 1.36,-1.16 1.08,-4.68 2.44,-9.44 4.28,-12.68 2.92,-5.16 7.36,-10.08 9,-12 0.24,-0.32 0.44,-0.64 0.44,-1.04 0,-0.76 -0.64,-1.4 -1.4,-1.4 h -18.48 c -0.84,0 -1.44,0.64 -1.44,1.4 0,0.8 0.64,1.44 1.44,1.44 h 14.28 c 0.52,0 0.8,0.56 0.44,0.96 -1.8,2 -5,5.8 -7.24,10.2 -2.2,4.28 -3.32,8.12 -4.08,12.44 -0.16,1 0.28,1.84 1.4,1.84 z" style="font-size:40px;font-family:'Open Gorton';text-anchor:middle;fill:#2e2f32" aria-label="7" />
@@ -1066,9 +1066,9 @@
       </g>
     </g>
   </g>
-  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(1300, 76.29999999999998)">
+  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(2184, 128.18399999999997)">
     <g>
-      <rect class="surface" width="100" height="100" fill="#f5f7f7" />
+      <rect class="surface" x="-34" y="-34" width="168" height="168" fill="#f5f7f7" />
       <g transform="">
         <svg viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0" version="1.1">
           <path d="m 42.760006,64.080002 c 0.76,0 1.4,-0.64 1.4,-1.44 v -11.72 c 0,-0.24 0.16,-0.4 0.4,-0.4 h 8.72 c 0.76,0 1.4,-0.64 1.4,-1.44 0,-0.76 -0.64,-1.4 -1.4,-1.4 h -8.72 c -0.24,0 -0.4,-0.16 -0.4,-0.4 v -8.12 c 0,-0.24 0.16,-0.4 0.4,-0.4 h 12.72 c 0.76,0 1.4,-0.64 1.4,-1.44 0,-0.76 -0.64,-1.4 -1.4,-1.4 h -14.56 c -0.8,0.04 -1.4,0.64 -1.4,1.4 v 25.32 c 0,0.8 0.64,1.44 1.44,1.44 z" style="font-size:40px;font-family:'Open Gorton';text-anchor:middle;white-space:pre;fill:#2e2f32" aria-label="F" />
@@ -1080,9 +1080,9 @@
       </g>
     </g>
   </g>
-  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(1300, 176.29999999999998)">
+  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(2184, 296.18399999999997)">
     <g>
-      <rect class="surface" width="100" height="100" fill="#f5f7f7" />
+      <rect class="surface" x="-34" y="-34" width="168" height="168" fill="#f5f7f7" />
       <g transform="">
         <svg viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0" version="1.1">
           <path d="m 41.080013,64.080002 c 0.76,0 1.4,-0.64 1.4,-1.44 v -20 c 0,-0.32 0.4,-0.48 0.6,-0.2 l 14.88,21.28 c 0.24,0.32 0.64,0.36 1,0.36 0.76,0 1.4,-0.64 1.4,-1.44 v -25.32 c 0,-0.76 -0.64,-1.4 -1.4,-1.4 -0.8,0 -1.44,0.64 -1.44,1.4 v 19.76 c 0,0.32 -0.4,0.44 -0.6,0.16 l -14.84,-20.88 c -0.24,-0.28 -0.6,-0.44 -1,-0.44 -0.8,0 -1.44,0.64 -1.44,1.4 v 25.32 c 0,0.8 0.64,1.44 1.44,1.44 z" style="font-size:40px;font-family:'Open Gorton';text-anchor:middle;white-space:pre;fill:#2e2f32" aria-label="N" />
@@ -1103,9 +1103,9 @@
       </g>
     </g>
   </g>
-  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(1300, 276.3)">
+  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(2184, 464.18399999999997)">
     <g>
-      <rect class="surface" width="100" height="100" fill="#f5f7f7" />
+      <rect class="surface" x="-34" y="-34" width="168" height="168" fill="#f5f7f7" />
       <g transform="">
         <svg viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0" version="1.1">
           <path d="m 42.619984,64.080002 h 14.76 c 0.76,0 1.4,-0.64 1.4,-1.44 0,-0.76 -0.64,-1.4 -1.4,-1.4 h -12.92 c -0.24,0 -0.4,-0.16 -0.4,-0.4 v -23.52 c 0,-0.76 -0.64,-1.4 -1.4,-1.4 -0.8,0 -1.44,0.64 -1.44,1.4 v 25.32 c 0,0.8 0.6,1.4 1.4,1.44 z" style="font-size:40px;font-family:'Open Gorton';text-anchor:middle;white-space:pre;fill:#2e2f32" aria-label="L" />
@@ -1119,9 +1119,9 @@
       </g>
     </g>
   </g>
-  <g class="keycap-color-bg_focus" mask="url(#_1u-base)" transform="translate(1300, 376.3)">
+  <g class="keycap-color-bg_focus" mask="url(#_1u-base)" transform="translate(2184, 632.184)">
     <g>
-      <rect class="surface" width="100" height="100" fill="#2e2f32" />
+      <rect class="surface" x="-34" y="-34" width="168" height="168" fill="#2e2f32" />
       <g transform="">
         <svg viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0" version="1.1">
           <g transform="matrix(1, 0, 0, 1, 22.124588, -2.632781)">
@@ -1194,9 +1194,9 @@
       </g>
     </g>
   </g>
-  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(1400, -31.600000000000012)">
+  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(2352, -53.08800000000002)">
     <g>
-      <rect class="surface" width="100" height="100" fill="#f5f7f7" />
+      <rect class="surface" x="-34" y="-34" width="168" height="168" fill="#f5f7f7" />
       <g transform="">
         <svg viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0" version="1.1">
           <path d="m 55.740014,48.600002 c 2.44,-1.28 4.04,-3.4 4.04,-5.72 0,-3.92 -4.4,-7.12 -9.76,-7.12 -5.4,0 -9.8,3.2 -9.8,7.12 0,2.32 1.6,4.44 4.04,5.72 -2.88,1.48 -4.76,4.04 -4.76,6.96 0,4.56 4.72,8.28 10.52,8.28 5.76,0 10.48,-3.72 10.48,-8.28 0,-2.92 -1.88,-5.48 -4.76,-6.96 z m -12.24,-5.72 c 0,-2.4 2.92,-4.4 6.52,-4.4 3.56,0 6.48,2 6.48,4.4 0,2.36 -2.92,4.36 -6.48,4.36 -3.6,0 -6.52,-2 -6.52,-4.36 z m 6.52,18.24 c -4.12,0 -7.44,-2.48 -7.44,-5.56 0,-3.12 3.32,-5.6 7.44,-5.6 4.08,0 7.4,2.48 7.4,5.6 0,3.08 -3.32,5.56 -7.4,5.56 z" style="font-size:40px;font-family:'Open Gorton';text-anchor:middle;fill:#2e2f32" aria-label="8" />
@@ -1204,9 +1204,9 @@
       </g>
     </g>
   </g>
-  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(1400, 68.39999999999999)">
+  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(2352, 114.91199999999999)">
     <g>
-      <rect class="surface" width="100" height="100" fill="#f5f7f7" />
+      <rect class="surface" x="-34" y="-34" width="168" height="168" fill="#f5f7f7" />
       <g transform="">
         <svg viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0" version="1.1">
           <path d="m 59.619994,35.920002 c -0.8,0 -1.44,0.64 -1.44,1.4 v 17.24 c 0,4.48 -3.68,8.16 -8.16,8.16 -4.52,0 -8.2,-3.68 -8.2,-8.16 v -17.24 c 0,-0.76 -0.64,-1.4 -1.4,-1.4 -0.8,0 -1.44,0.64 -1.44,1.4 v 17.24 c 0,6.08 4.92,11 11.04,11 6.08,0 11,-4.92 11,-11 v -17.24 c 0,-0.76 -0.64,-1.4 -1.4,-1.4 z" style="font-size:40px;font-family:'Open Gorton';text-anchor:middle;white-space:pre;fill:#2e2f32" aria-label="U" />
@@ -1228,9 +1228,9 @@
       </g>
     </g>
   </g>
-  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(1400, 168.4)">
+  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(2352, 282.912)">
     <g>
-      <rect class="surface" width="100" height="100" fill="#f5f7f7" />
+      <rect class="surface" x="-34" y="-34" width="168" height="168" fill="#f5f7f7" />
       <g transform="">
         <svg viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0" version="1.1">
           <path d="m 42.420018,64.080002 h 15.16 c 0.76,0 1.4,-0.64 1.4,-1.44 0,-0.76 -0.64,-1.4 -1.4,-1.4 h -13.32 c -0.24,0 -0.4,-0.16 -0.4,-0.4 v -9.92 c 0,-0.24 0.16,-0.4 0.4,-0.4 h 8.72 c 0.76,0 1.4,-0.64 1.4,-1.44 0,-0.76 -0.64,-1.4 -1.4,-1.4 h -8.72 c -0.24,0 -0.4,-0.16 -0.4,-0.4 v -8.12 c 0,-0.24 0.16,-0.4 0.4,-0.4 h 12.72 c 0.76,0 1.4,-0.64 1.4,-1.44 0,-0.76 -0.64,-1.4 -1.4,-1.4 h -14.56 c -0.8,0.04 -1.4,0.64 -1.4,1.4 v 25.32 c 0,0.8 0.6,1.4 1.4,1.44 z" style="font-size:40px;font-family:'Open Gorton';text-anchor:middle;white-space:pre;fill:#2e2f32" aria-label="e" />
@@ -1253,9 +1253,9 @@
       </g>
     </g>
   </g>
-  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(1400, 268.40000000000003)">
+  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(2352, 450.91200000000003)">
     <g>
-      <rect class="surface" width="100" height="100" fill="#f5f7f7" />
+      <rect class="surface" x="-34" y="-34" width="168" height="168" fill="#f5f7f7" />
       <g transform="">
         <svg viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0" version="1.1">
           <rect class="icon-bounding-box" width="100" height="100" fill="none" />
@@ -1271,9 +1271,9 @@
       </g>
     </g>
   </g>
-  <g class="keycap-color-bg_focus" mask="url(#_1u-base)" transform="translate(1400, 368.40000000000003)">
+  <g class="keycap-color-bg_focus" mask="url(#_1u-base)" transform="translate(2352, 618.912)">
     <g>
-      <rect class="surface" width="100" height="100" fill="#2e2f32" />
+      <rect class="surface" x="-34" y="-34" width="168" height="168" fill="#2e2f32" />
       <g transform="">
         <svg viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0" version="1.1">
           <g transform="matrix(1, 0, 0, 1, 51.00001, 25.000001)">
@@ -1286,9 +1286,9 @@
       </g>
     </g>
   </g>
-  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(1500, -23.69999999999998)">
+  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(2520, -39.81599999999997)">
     <g>
-      <rect class="surface" width="100" height="100" fill="#f5f7f7" />
+      <rect class="surface" x="-34" y="-34" width="168" height="168" fill="#f5f7f7" />
       <g transform="">
         <svg viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0" version="1.1">
           <path d="m 49.320011,36.480002 c -5.6,0 -9.92,3.68 -9.92,8.48 0,4.92 4.4,8.84 9.92,8.84 1.48,0 4.28,-0.04 6.24,-1.04 1.4,-0.72 1.2,1.88 0.32,4.04 -1,2.48 -3.56,4.12 -6.56,4.12 -3.2,0 -5.6,-1.48 -6.96,-4.16 -0.92,-1.8 -3.6,-1.16 -3.04,0.68 1.28,4.24 4.84,6.64 10,6.64 7.04,0 10.92,-5.24 10.92,-14.72 0,-8.56 -3.64,-12.88 -10.92,-12.88 z m 0,2.56 c 4.12,0 6.92,2.52 6.92,6.2 0,3.4 -2.76,5.68 -6.92,5.68 -3.92,0 -7.2,-2.72 -7.2,-5.96 0,-3.48 2.96,-5.92 7.2,-5.92 z" style="font-size:40px;font-family:'Open Gorton';text-anchor:middle;fill:#2e2f32" aria-label="9" />
@@ -1296,9 +1296,9 @@
       </g>
     </g>
   </g>
-  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(1500, 76.30000000000001)">
+  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(2520, 128.18400000000003)">
     <g>
-      <rect class="surface" width="100" height="100" fill="#f5f7f7" />
+      <rect class="surface" x="-34" y="-34" width="168" height="168" fill="#f5f7f7" />
       <g transform="">
         <svg viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0" version="1.1">
           <path d="m 42.280002,64.080002 c 0.76,0 1.4,-0.64 1.4,-1.44 v -9.64 c 0,-0.24 0.16,-0.4 0.4,-0.4 h 6.76 c 4.6,0 8.32,-3.72 8.32,-8.32 0,-4.6 -3.72,-8.36 -8.32,-8.36 h -8.56 c -0.8,0 -1.44,0.64 -1.44,1.4 v 25.32 c 0,0.8 0.64,1.44 1.44,1.44 z m 1.8,-14.08 c -0.24,0 -0.4,-0.16 -0.4,-0.4 v -10.48 c 0,-0.24 0.16,-0.4 0.4,-0.4 h 6.68 c 3.12,0 5.6,2.48 5.6,5.64 0,3.16 -2.48,5.64 -5.6,5.64 z" style="font-size:40px;font-family:'Open Gorton';text-anchor:middle;white-space:pre;fill:#2e2f32" aria-label="P" />
@@ -1318,9 +1318,9 @@
       </g>
     </g>
   </g>
-  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(1500, 176.3)">
+  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(2520, 296.184)">
     <g>
-      <rect class="surface" width="100" height="100" fill="#f5f7f7" />
+      <rect class="surface" x="-34" y="-34" width="168" height="168" fill="#f5f7f7" />
       <g transform="">
         <svg viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0" version="1.1">
           <path d="m 49.999984,64.080002 c 7.52,0 13.64,-6.08 13.64,-13.64 0,-7.56 -6.12,-13.64 -13.64,-13.64 -7.56,0 -13.64,6.12 -13.64,13.64 0,7.56 6.08,13.64 13.64,13.64 z m 0,-2.76 c -6.04,0 -10.88,-4.84 -10.88,-10.88 0,-6 4.84,-10.88 10.88,-10.88 6,0 10.88,4.84 10.88,10.88 0,6.04 -4.88,10.88 -10.88,10.88 z" style="font-size:40px;font-family:'Open Gorton';text-anchor:middle;white-space:pre;fill:#2e2f32" aria-label="O" />
@@ -1345,9 +1345,9 @@
       </g>
     </g>
   </g>
-  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(1500, 276.3)">
+  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(2520, 464.18399999999997)">
     <g>
-      <rect class="surface" width="100" height="100" fill="#f5f7f7" />
+      <rect class="surface" x="-34" y="-34" width="168" height="168" fill="#f5f7f7" />
       <g transform="">
         <svg viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0" version="1.1">
           <rect class="icon-bounding-box" width="100" height="100" fill="none" />
@@ -1366,9 +1366,9 @@
       </g>
     </g>
   </g>
-  <g class="keycap-color-bg_focus" mask="url(#_1u-base)" transform="translate(1500, 376.3)">
+  <g class="keycap-color-bg_focus" mask="url(#_1u-base)" transform="translate(2520, 632.184)">
     <g>
-      <rect class="surface" width="100" height="100" fill="#2e2f32" />
+      <rect class="surface" x="-34" y="-34" width="168" height="168" fill="#2e2f32" />
       <g transform="">
         <svg viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible" x="0" y="0" version="1.1">
           <path d="m 40.33102,75.408 c 0.561,0.255 1.224,-0.017 1.462,-0.595 l 1.156,-2.669 c 0.017,-0.051 0.085,-0.085 0.136,-0.085 h 4.59 c 0.051,0 0.119,0.034 0.136,0.085 l 1.156,2.669 c 0.238,0.578 0.901,0.85 1.462,0.595 0.561,-0.238 0.816,-0.901 0.578,-1.479 L 46.40002,63.1 c -0.153,-0.391 -0.578,-0.663 -1.02,-0.663 -0.442,0 -0.867,0.272 -1.02,0.663 l -4.607,10.829 c -0.238,0.578 0.017,1.241 0.578,1.479 z m 6.613,-4.658 h -3.111 c -0.153,0 -0.238,-0.136 -0.187,-0.272 l 1.513,-3.706 c 0.085,-0.221 0.357,-0.221 0.442,0 l 1.513,3.706 c 0.051,0.136 -0.017,0.272 -0.17,0.272 z m 6.528004,-7.123 c 0,0.595 0.527,1.122 1.122,1.122 h 2.397 c 0.102,0 0.17,0.068 0.17,0.17 v 9.469 c 0,0.595 0.527,1.122 1.122,1.122 0.612,0 1.105,-0.51 1.105,-1.122 v -9.469 c 0,-0.102 0.068,-0.17 0.17,-0.17 h 2.38 c 0.612,0 1.105,-0.51 1.105,-1.122 0,-0.578 -0.527,-1.105 -1.105,-1.105 h -7.344 c -0.629,0 -1.122,0.493 -1.122,1.105 z m 11.950985,10.761 c 0,0.595 0.527,1.122 1.122,1.122 0.612,0 1.105,-0.51 1.105,-1.122 v -4.794 c 0,-0.102 0.068,-0.17 0.17,-0.17 h 5.593 c 0.102,0 0.17,0.068 0.17,0.17 v 4.794 c 0,0.595 0.527,1.122 1.122,1.122 0.612,0 1.105,-0.51 1.105,-1.122 V 63.627 c 0,-0.578 -0.527,-1.105 -1.105,-1.105 -0.612,0 -1.122,0.493 -1.122,1.105 v 3.4 c 0,0.102 -0.068,0.17 -0.17,0.17 h -5.593 c -0.102,0 -0.17,-0.068 -0.17,-0.17 v -3.4 c 0,-0.578 -0.527,-1.105 -1.105,-1.105 -0.612,0 -1.122,0.493 -1.122,1.105 z" style="font-weight:700;font-size:17px;font-family:'Open Gorton';text-anchor:end;white-space:pre;fill:#e1d9f2" aria-label="ath" />
@@ -1379,9 +1379,9 @@
       </g>
     </g>
   </g>
-  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(1600, -7.90000000000001)">
+  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(2688, -13.272000000000016)">
     <g>
-      <rect class="surface" width="100" height="100" fill="#f5f7f7" />
+      <rect class="surface" x="-34" y="-34" width="168" height="168" fill="#f5f7f7" />
       <g transform="">
         <svg viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0" version="1.1">
           <path d="m 49.979984,64.120002 c 6.2,0 11.16,-6.28 11.16,-14.08 0,-7.76 -4.96,-14.04 -11.16,-14.04 -6.16,0 -11.12,6.28 -11.12,14.04 0,7.8 4.96,14.08 11.12,14.08 z m 0,-2.96 c -4.52,0 -8.16,-5 -8.16,-11.12 0,-6.08 3.64,-11.08 8.16,-11.08 4.56,0 8.2,5 8.2,11.08 0,6.12 -3.64,11.12 -8.2,11.12 z" style="font-size:40px;font-family:'Open Gorton';text-anchor:middle;fill:#2e2f32" aria-label="0" />
@@ -1389,9 +1389,9 @@
       </g>
     </g>
   </g>
-  <g class="keycap-color-bg_focus" mask="url(#_1u-base)" transform="translate(1600, 92.1)">
+  <g class="keycap-color-bg_focus" mask="url(#_1u-base)" transform="translate(2688, 154.72799999999998)">
     <g>
-      <rect class="surface" width="100" height="100" fill="#2e2f32" />
+      <rect class="surface" x="-34" y="-34" width="168" height="168" fill="#2e2f32" />
       <g transform="">
         <svg viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0" version="1.1">
           <g>
@@ -1404,9 +1404,9 @@
       </g>
     </g>
   </g>
-  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(1600, 192.1)">
+  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(2688, 322.72799999999995)">
     <g>
-      <rect class="surface" width="100" height="100" fill="#f5f7f7" />
+      <rect class="surface" x="-34" y="-34" width="168" height="168" fill="#f5f7f7" />
       <g transform="">
         <svg viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0" version="1.1">
           <path d="m 50.019985,35.920002 c -0.8,0 -1.44,0.64 -1.44,1.4 v 25.32 c 0,0.8 0.64,1.44 1.44,1.44 0.76,0 1.4,-0.64 1.4,-1.44 v -25.32 c 0,-0.76 -0.64,-1.4 -1.4,-1.4 z" style="font-size:40px;font-family:'Open Gorton';text-anchor:middle;white-space:pre;fill:#2e2f32" aria-label="I" />
@@ -1420,9 +1420,9 @@
       </g>
     </g>
   </g>
-  <g class="keycap-color-bg_focus" mask="url(#_1u-base)" transform="translate(1600, 292.09999999999997)">
+  <g class="keycap-color-bg_focus" mask="url(#_1u-base)" transform="translate(2688, 490.72799999999995)">
     <g>
-      <rect class="surface" width="100" height="100" fill="#2e2f32" />
+      <rect class="surface" x="-34" y="-34" width="168" height="168" fill="#2e2f32" />
       <g transform="">
         <svg viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0" version="1.1">
           <g style="" transform="matrix(1, 0, 0, 1, 9.918955, -0.489979)">
@@ -1461,9 +1461,9 @@
       </g>
     </g>
   </g>
-  <g class="keycap-color-bg_focus" mask="url(#_1u-base)" transform="translate(1600, 392.09999999999997)">
+  <g class="keycap-color-bg_focus" mask="url(#_1u-base)" transform="translate(2688, 658.728)">
     <g>
-      <rect class="surface" width="100" height="100" fill="#2e2f32" />
+      <rect class="surface" x="-34" y="-34" width="168" height="168" fill="#2e2f32" />
       <g transform="">
         <svg viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0" version="1.1">
           <text style="font-weight:400;font-size:40px;font-family:'Open Gorton';white-space:normal;fill:#2e2f32" x="50" y="64.080002" text-anchor="middle" xml:space="preserve"><tspan /></text>
@@ -1471,9 +1471,9 @@
       </g>
     </g>
   </g>
-  <g class="keycap-color-bg_focus" mask="url(#_1u-base)" transform="translate(1700, -1.8041124150158794e-14)">
+  <g class="keycap-color-bg_focus" mask="url(#_1u-base)" transform="translate(2856, -3.0309088572266774e-14)">
     <g>
-      <rect class="surface" width="100" height="100" fill="#2e2f32" />
+      <rect class="surface" x="-34" y="-34" width="168" height="168" fill="#2e2f32" />
       <g transform="">
         <svg viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0" version="1.1">
           <g>
@@ -1507,9 +1507,9 @@
       </g>
     </g>
   </g>
-  <g class="keycap-color-bg_focus" mask="url(#_1u-base)" transform="translate(1700, 99.99999999999997)">
+  <g class="keycap-color-bg_focus" mask="url(#_1u-base)" transform="translate(2856, 167.99999999999997)">
     <g>
-      <rect class="surface" width="100" height="100" fill="#2e2f32" />
+      <rect class="surface" x="-34" y="-34" width="168" height="168" fill="#2e2f32" />
       <g transform="">
         <svg viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible" x="0" y="0" version="1.1">
           <g transform="translate(470.83, 415.761) matrix(0.064586, -0.020245, 0.020245, 0.064585, -440.62661, -372.674279) translate(-470.83, -415.761)">
@@ -1527,11 +1527,11 @@
       </g>
     </g>
   </g>
-  <g class="keycap-color-bg_focus" mask="url(#_1u-base)" transform="translate(1700, 199.99999999999997)">
+  <g class="keycap-color-bg_focus" mask="url(#_1u-base)" transform="translate(2856, 335.99999999999994)">
     <g>
-      <rect class="surface" width="100" height="100" fill="#2e2f32" />
+      <rect class="surface" x="-34" y="-34" width="168" height="168" fill="#2e2f32" />
       <g transform="">
-        <svg viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" transform="matrix(1.0000000000000002, 0, 0, 1.0000000000000002, 1.290542755007266, -1.5872811004057557)" x="0" y="0" version="1.1">
+        <svg viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" transform="matrix(1, 0, 0, 1, -0.5263905255070966, 64.84558451215433)" x="0" y="0" version="1.1">
           <g transform="matrix(1, 0, 0, 1, 14.762421, 4.016501)">
             <title>Enter</title>
             <path style="fill: none; stroke-linecap: round; stroke-linejoin: round; stroke-width: 3px; stroke: #e1d9f2;" d="M 59.361 45.707 L 59.361 48.588 C 59.361 50.091 58.049 51.261 56.601 51.261 L 37.586 51.261" />
@@ -1540,82 +1540,83 @@
           </g>
           <g style="" transform="matrix(-1, 0.118846, 0, 1, 96.718242, -11.773461)">
             <title>Door</title>
-            <path style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 3px; fill: #e1d9f2;" d="M 57.319 69.514 L -3.282 112.163 L 55.599 105.166 L 70.627 69.466 L 57.319 69.514 Z" />
             <rect x="55.599" y="41.676" width="16.419" height="28.054" style="fill: #e1d9f2;">
               <title>BG</title>
             </rect>
-            <use href="#paw_print" width="7" height="6.5" style="fill:#a49bc2" transform="translate(3.5, 3.25) matrix(-0.365738, -0.078168, -0.161414, 0.318415, 66.102607, 56.395827) translate(-3.5, -3.25)">
+            <use href="#paw_print" width="7" height="6.5" style="fill:#a49bc2" transform="translate(3.5, 3.25) matrix(-0.36573800444602966, -0.07816801965236664, -0.1614139825105667, 0.3184150159358978, 66.10260655988024, 56.39582725129191) translate(-3.5, -3.25)">
               <title>Paw</title>
             </use>
-            <use href="#paw_print" width="7" height="6.5" style="fill:#a49bc2" transform="translate(3.5, 3.25) matrix(-0.455899, -0.097438, -0.201205, 0.39691, 63.80371, 61.46461) translate(-3.5, -3.25)">
+            <use href="#paw_print" width="7" height="6.5" style="fill:#a49bc2" transform="translate(3.5, 3.25) matrix(-0.45589905977249146, -0.0974380150437355, -0.2012050300836563, 0.39691007137298584, 63.80370981092097, 61.464609968189144) translate(-3.5, -3.25)">
               <title>Paw</title>
             </use>
             <polyline style="stroke-linejoin: round; stroke-width: 2.99993px; stroke: #a49bc2; fill: none;" points="72.018 69.73 72.018 41.676 55.599 41.676 55.599 69.73">
               <title>Frame</title>
             </polyline>
           </g>
-          <use href="#paw_print" width="7" height="6.5" style="fill:#a49bc2" transform="translate(3.5, 3.25) matrix(0.534611, -0.177797, 0.235944, 0.437396, 31.107574, 61.582667) translate(-3.5, -3.25)">
+          <path style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 3px; fill: #e1d9f2;" d="M 39.3992 64.5527 L 100 99.9995 L 41.1192 100 L 26.0912 66.0863 L 39.3992 64.5527 Z" />
+          <path style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px; fill: #e1d9f2;" d="M 41.1194 100 L 100.001 100 L 100.001 100.001 L 100.001 100 L 100.001 100.001 L 134 119.889 L 134 234 L 100 234 L 100 232.948 L 41.1194 100 Z" />
+          <use href="#paw_print" width="7" height="6.5" style="fill:#a49bc2" transform="translate(3.5, 3.25) matrix(0.53461092710495, -0.17779704928398132, 0.2359439581632614, 0.43739598989486694, 31.107573913625693, 61.58266721708117) translate(-3.5, -3.25)">
             <title>Paw</title>
           </use>
-          <use href="#paw_print" width="7" height="6.5" style="fill:#a49bc2" transform="translate(3.5, 3.25) matrix(0.581571, -0.193414, 0.256669, 0.475816, 32.646167, 67.39868) translate(-3.5, -3.25)">
+          <use href="#paw_print" width="7" height="6.5" style="fill:#a49bc2" transform="translate(3.5, 3.25) matrix(0.5815709233283997, -0.19341400265693665, 0.2566690146923065, 0.4758160710334778, 32.64616717869515, 67.39868045056976) translate(-3.5, -3.25)">
             <title>Paw</title>
           </use>
-          <use href="#paw_print" width="7" height="6.5" style="fill:#a49bc2" transform="translate(3.5, 3.25) matrix(0.642949, -0.213827, 0.283758, 0.526033, 39.262611, 71.816466) translate(-3.5, -3.25)">
+          <use href="#paw_print" width="7" height="6.5" style="fill:#a49bc2" transform="translate(3.5, 3.25) matrix(0.6429489254951477, -0.21382702887058258, 0.2837579846382141, 0.5260328650474548, 39.26261069590213, 71.81646601709637) translate(-3.5, -3.25)">
             <title>Paw</title>
           </use>
-          <use href="#paw_print" width="7" height="6.5" style="fill:#a49bc2" transform="translate(3.5, 3.25) matrix(0.772737, -0.25699, 0.341038, 0.63222, 41.771396, 80.567008) translate(-3.5, -3.25)">
+          <use href="#paw_print" width="7" height="6.5" style="fill:#a49bc2" transform="translate(3.5, 3.25) matrix(0.7727368474006653, -0.2569900155067444, 0.3410379886627197, 0.6322199106216431, 41.771395899407366, 80.5670075496002) translate(-3.5, -3.25)">
             <title>Paw</title>
           </use>
-          <use href="#paw_print" width="7" height="6.5" style="fill:#a49bc2" transform="translate(3.5, 3.25) matrix(0.858079, -0.285372, 0.378703, 0.702043, 50.584037, 86.976546) translate(-3.5, -3.25)">
+          <use href="#paw_print" width="7" height="6.5" style="fill:#a49bc2" transform="translate(3.5, 3.25) matrix(0.8580790162086487, -0.2853719890117645, 0.37870296835899353, 0.7020429372787476, 50.58403688760182, 86.97654570547026) translate(-3.5, -3.25)">
             <title>Paw</title>
           </use>
-          <use href="#paw_print" width="7" height="6.5" style="fill:#a49bc2" transform="translate(3.5, 3.25) matrix(0.946695, -0.314843, 0.417813, 0.774545, 51.935447, 96.250677) translate(-3.5, -3.25)">
+          <use href="#paw_print" width="7" height="6.5" style="fill:#a49bc2" transform="translate(3.5, 3.25) matrix(0.9466950297355652, -0.3148430585861206, 0.4178130626678467, 0.7745450139045715, 51.935446775849414, 96.25067731661971) translate(-3.5, -3.25)">
             <title>Paw</title>
           </use>
         </svg>
       </g>
     </g>
   </g>
-  <g class="keycap-color-bg_focus" mask="url(#_1u-base)" transform="translate(1700, 300)">
+  <g class="keycap-color-bg_focus" mask="url(#_1u-base)" transform="translate(2856, 504)">
     <g>
-      <rect class="surface" width="100" height="100" fill="#2e2f32" />
+      <rect class="surface" x="-34" y="-34" width="168" height="168" fill="#2e2f32" />
       <g transform="">
         <svg viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible" transform="matrix(1, 0, 0, 1, -71.71042927940482, -70.46318299412367)" x="0" y="0" version="1.1">
           <path style="stroke-linecap:round;stroke-linejoin:round;stroke-width:3px;fill:#e1d9f2" d="M 39.399 -35.448 L 100 -0.001 L 41.119 0 L 26.091 -33.914 L 39.399 -35.448 Z" />
           <path style="stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;fill:#e1d9f2" d="M 85.431 100 L 100 100 L 99.975 -0.209 L 41.119 0 L 41.119 0 L 85.431 100 Z" />
-          <use href="#paw_print-0" width="7" height="6.5" style="fill:#a49bc2" transform="translate(3.5, 3.25) matrix(0.946695, -0.314843, 0.417813, 0.774545, 51.971324, -3.730776) translate(-3.5, -3.25)">
+          <path style="stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;fill:#e1d9f2" d="M 41.119 0 L 100.0007 0 L 100.001 0 L 100.001 0.0006 L 100.0007 0.0004 L 100.001 0.0006 L 134 19.8891 L 134 134 L 100 134 L 100 132.9484 L 41.119 0 Z" />
+          <use href="#paw_print-0" width="7" height="6.5" style="fill:#a49bc2" transform="translate(3.5, 3.25) matrix(0.9466950297355652, -0.3148430287837982, 0.4178130328655243, 0.7745450139045715, 51.97132400299913, -3.73077600567433) translate(-3.5, -3.25)">
             <title>Paw</title>
           </use>
-          <use href="#paw_print-0" width="7" height="6.5" style="fill:#a49bc2" transform="translate(3.5, 3.25) matrix(1.077004, -0.35818, 0.475323, 0.881158, 65.741317, 6.484207) translate(-3.5, -3.25)">
+          <use href="#paw_print-0" width="7" height="6.5" style="fill:#a49bc2" transform="translate(3.5, 3.25) matrix(1.0770039558410645, -0.3581799864768982, 0.47532302141189575, 0.8811579942703247, 65.74131658823218, 6.484207038828981) translate(-3.5, -3.25)">
             <title>Paw</title>
           </use>
-          <use href="#paw_print-0" width="7" height="6.5" style="fill:#a49bc2" transform="translate(3.5, 3.25) matrix(1.133208, -0.531712, 0.634658, 0.903545, 67.208785, 21.610754) translate(-3.5, -3.25)">
+          <use href="#paw_print-0" width="7" height="6.5" style="fill:#a49bc2" transform="translate(3.5, 3.25) matrix(1.1332080364227295, -0.531711995601654, 0.6346579790115356, 0.903545081615448, 67.20878482403991, 21.61075363148149) translate(-3.5, -3.25)">
             <title>Paw</title>
           </use>
-          <use href="#paw_print-0" width="7" height="6.5" style="fill:#a49bc2" transform="translate(3.5, 3.25) matrix(1.239321, -0.445018, 0.575507, 1.008951, 82.547545, 33.436172) translate(-3.5, -3.25)">
+          <use href="#paw_print-0" width="7" height="6.5" style="fill:#a49bc2" transform="translate(3.5, 3.25) matrix(1.239320993423462, -0.4450179934501648, 0.5755069851875305, 1.00895094871521, 82.54754492918073, 33.43617189497069) translate(-3.5, -3.25)">
             <title>Paw</title>
           </use>
-          <use href="#paw_print-0" width="7" height="6.5" style="fill:#a49bc2" transform="translate(3.5, 3.25) matrix(1.354493, -0.727411, 0.838409, 1.065983, 87.707472, 53.108134) translate(-3.5, -3.25)">
+          <use href="#paw_print-0" width="7" height="6.5" style="fill:#a49bc2" transform="translate(3.5, 3.25) matrix(1.3544930219650269, -0.7274110317230225, 0.8384090662002563, 1.0659830570220947, 87.7074722062362, 53.10813428566091) translate(-3.5, -3.25)">
             <title>Paw</title>
           </use>
         </svg>
       </g>
     </g>
   </g>
-  <g class="keycap-color-bg_focus" mask="url(#_1u-base)" transform="translate(1700, 400)">
+  <g class="keycap-color-bg_focus" mask="url(#_1u-base)" transform="translate(2856, 672)">
     <g>
-      <rect class="surface" width="100" height="100" fill="#2e2f32" />
+      <rect class="surface" x="-34" y="-34" width="168" height="168" fill="#2e2f32" />
       <g transform="">
         <svg viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" transform="matrix(1, 0, 0, 1, -71.71042927940482, -70.46318299412367)" x="0" y="0" version="1.1">
-          <path style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px; fill: #e1d9f2;" d="M 85.431 0 L 100 0 L 99.975 -100.21 L 41.119 -100 L 85.431 0 Z" />
-          <path style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px; fill: #e1d9f2;" d="M 100 32.878 L 85.431 0 L 100 0 Z" />
+          <path style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px; fill: #e1d9f2;" d="M 134 109.606 L 70.3648 -34 L 134 -34 L 134 109.606 Z" />
         </svg>
       </g>
     </g>
   </g>
-  <g class="keycap-color-bg_focus" mask="url(#_1u-base)" transform="translate(1400, 550)">
+  <g class="keycap-color-bg_focus" mask="url(#_1u-base)" transform="translate(2352, 924)">
     <g>
-      <rect class="surface" width="100" height="100" fill="#2e2f32" />
+      <rect class="surface" x="-34" y="-34" width="168" height="168" fill="#2e2f32" />
       <g transform="">
         <svg viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0" version="1.1">
           <text style="font-weight:400;font-size:40px;font-family:'Open Gorton';white-space:normal;fill:#2e2f32" x="50" y="64.080002" text-anchor="middle" xml:space="preserve"><tspan /></text>
@@ -1623,9 +1624,9 @@
       </g>
     </g>
   </g>
-  <g class="keycap-color-bg_focus" mask="url(#_1u-base)" transform="translate(1500, 550)">
+  <g class="keycap-color-bg_focus" mask="url(#_1u-base)" transform="translate(2520, 924)">
     <g>
-      <rect class="surface" width="100" height="100" fill="#2e2f32" />
+      <rect class="surface" x="-34" y="-34" width="168" height="168" fill="#2e2f32" />
       <g transform="">
         <svg viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0" version="1.1">
           <text style="font-weight:400;font-size:40px;font-family:'Open Gorton';white-space:normal;fill:#2e2f32" x="50" y="64.080002" text-anchor="middle" xml:space="preserve"><tspan /></text>
@@ -1633,9 +1634,9 @@
       </g>
     </g>
   </g>
-  <g class="keycap-color-bg_focus" mask="url(#_1u-base)" transform="translate(1600, 550)">
+  <g class="keycap-color-bg_focus" mask="url(#_1u-base)" transform="translate(2688, 924)">
     <g>
-      <rect class="surface" width="100" height="100" fill="#2e2f32" />
+      <rect class="surface" x="-34" y="-34" width="168" height="168" fill="#2e2f32" />
       <g transform="">
         <svg viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0" version="1.1">
           <text style="font-weight:400;font-size:40px;font-family:'Open Gorton';white-space:normal;fill:#2e2f32" x="50" y="64.080002" text-anchor="middle" xml:space="preserve"><tspan /></text>
@@ -1643,9 +1644,9 @@
       </g>
     </g>
   </g>
-  <g class="keycap-color-bg_focus" mask="url(#_1u-base)" transform="translate(1700, 550)">
+  <g class="keycap-color-bg_focus" mask="url(#_1u-base)" transform="translate(2856, 924)">
     <g>
-      <rect class="surface" width="100" height="100" fill="#2e2f32" />
+      <rect class="surface" x="-34" y="-34" width="168" height="168" fill="#2e2f32" />
       <g transform="">
         <svg viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0" version="1.1">
           <text style="font-weight:400;font-size:40px;font-family:'Open Gorton';white-space:normal;fill:#2e2f32" x="50" y="64.080002" text-anchor="middle" xml:space="preserve"><tspan /></text>
@@ -1653,9 +1654,9 @@
       </g>
     </g>
   </g>
-  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(1400, 650)">
+  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(2352, 1092)">
     <g>
-      <rect class="surface" width="100" height="100" fill="#f5f7f7" />
+      <rect class="surface" x="-34" y="-34" width="168" height="168" fill="#f5f7f7" />
       <g transform="">
         <svg viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0" version="1.1">
           <text style="font-weight:400;font-size:40px;font-family:'Open Gorton';white-space:normal;fill:#2e2f32" x="50" y="64.080002" text-anchor="middle" xml:space="preserve"><tspan /></text>
@@ -1663,9 +1664,9 @@
       </g>
     </g>
   </g>
-  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(1500, 650)">
+  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(2520, 1092)">
     <g>
-      <rect class="surface" width="100" height="100" fill="#f5f7f7" />
+      <rect class="surface" x="-34" y="-34" width="168" height="168" fill="#f5f7f7" />
       <g transform="">
         <svg viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0" version="1.1">
           <text style="font-weight:400;font-size:40px;font-family:'Open Gorton';white-space:normal;fill:#2e2f32" x="50" y="64.080002" text-anchor="middle" xml:space="preserve"><tspan /></text>
@@ -1673,9 +1674,9 @@
       </g>
     </g>
   </g>
-  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(1600, 650)">
+  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(2688, 1092)">
     <g>
-      <rect class="surface" width="100" height="100" fill="#f5f7f7" />
+      <rect class="surface" x="-34" y="-34" width="168" height="168" fill="#f5f7f7" />
       <g transform="">
         <svg viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0" version="1.1">
           <g>
@@ -1688,9 +1689,9 @@
       </g>
     </g>
   </g>
-  <g class="keycap-color-bg_focus" mask="url(#_1u-base)" transform="translate(1700, 650)">
+  <g class="keycap-color-bg_focus" mask="url(#_1u-base)" transform="translate(2856, 1092)">
     <g>
-      <rect class="surface" width="100" height="100" fill="#2e2f32" />
+      <rect class="surface" x="-34" y="-34" width="168" height="168" fill="#2e2f32" />
       <g transform="">
         <svg viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0" version="1.1">
           <path d="M 18.3441 60.8845 H 29.5441 L 29.5441 53.6845 L 43.1441 65.6845 L 29.5441 77.6845 L 29.5441 70.4845 H 18.3441 V 60.8845 Z" bx:shape="arrow 18.3441 53.6845 24.8 24 9.6 13.6 0 1@9c65ec35" style="fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:2.5px;stroke:#e1d9f2" transform="translate(30.744100000000003, 65.6845) matrix(0, -1, 1, 0, 31.455896, -28.284499) translate(-30.744100000000003, -65.6845)">
@@ -1701,12 +1702,12 @@
       </g>
     </g>
   </g>
-  <g class="keycap-color-bg_accent" mask="url(#_2u-base)" transform="translate(702.7424780626922, 345.9911113762044) rotate(50)">
+  <g class="keycap-color-bg_accent" mask="url(#_2u-base)" transform="translate(1180.607363145323, 581.2650671120234) rotate(50)">
     <g>
-      <rect class="surface" width="200" height="100" fill="#e1d9f2" />
+      <rect class="surface" x="-34" y="-34" width="268" height="168" fill="#e1d9f2" />
       <g transform="">
         <svg viewBox="0 0 200 100" width="200.0" height="100.0" style="overflow: visible;" transform="matrix(0.9742441177368163, 0, 0, 0.9742441177368163, -3.030572342170558, 3.4332079974112375)" x="0" y="0" version="1.1">
-          <path style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 3px; fill: #f5f7f7; stroke: #2e2f32;" d="M 30.9758 100 C 30.9758 100 34.1473 44.9319 54.4983 38.0379 C 55.8028 32.0919 59.9662 26.332 62.3333 26.332 C 65.0506 26.332 67.933 28.3765 70.3884 34.3222 C 87.7332 30.9913 113.035 31.0845 130.417 34.3222 C 133.749 28.7214 135.908 26.2699 138.849 26.2699 C 141.797 26.2699 145.201 32.1636 147.567 37.7285 C 166.65 45.6689 169.221 100 169.221 100">
+          <path style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 3px; fill: #f5f7f7; stroke: #2e2f32;" d="M 28.8841 134 L 30.9758 100 C 30.9758 100 34.1473 44.9319 54.4983 38.0379 C 55.8028 32.0919 59.9662 26.332 62.3333 26.332 C 65.0506 26.332 67.933 28.3765 70.3884 34.3222 C 87.7332 30.9913 113.035 31.0845 130.417 34.3222 C 133.749 28.7214 135.908 26.2699 138.849 26.2699 C 141.797 26.2699 145.201 32.1636 147.567 37.7285 C 166.65 45.6689 169.221 100 169.221 100 L 171.6012 134">
             <title>Body</title>
           </path>
           <g transform="matrix(1, 0, 0, 1, 0, 7)">
@@ -1731,9 +1732,9 @@
       </g>
     </g>
   </g>
-  <g class="keycap-color-bg_focus" mask="url(#_1.5u-base)" transform="translate(626.1380337507944, 410.2698723448584) rotate(50) translate(100, 0) rotate(90)">
+  <g class="keycap-color-bg_focus" mask="url(#_1.5u-base)" transform="translate(1051.9118967013346, 689.2533855393621) rotate(50) translate(100, 0) rotate(90)">
     <g>
-      <rect class="surface" width="150" height="100" fill="#2e2f32" />
+      <rect class="surface" x="-34" y="-34" width="218" height="168" fill="#2e2f32" />
       <g transform="translate(0, 100) rotate(-90)">
         <svg viewBox="0 0 100 150" width="100.0" height="150.0" style="overflow:visible;" transform="matrix(1, 0, 0, 1, 1.768546192413307, -11.20305138692285)" x="0" y="0" version="1.1">
           <path d="M 22.9301 76.1056 H 36.9301 L 36.9301 67.1056 L 53.9301 82.1056 L 36.9301 97.1056 L 36.9301 88.1056 H 22.9301 V 76.1056 Z" bx:shape="arrow 22.9301 67.1056 31 30 12 17 0 1@1aaf8013" style="fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:3px;stroke:#e1d9f2" transform="translate(38.4301, 82.1056) matrix(0, -1, 1, 0, 11.569897, -35.1056) translate(-38.4301, -82.1056)" />
@@ -1757,9 +1758,9 @@
       </g>
     </g>
   </g>
-  <g class="keycap-color-bg_focus" mask="url(#_1.5u-base)" transform="translate(690.4167947194483, 486.87431665675615) rotate(50) translate(100, 0) rotate(90)">
+  <g class="keycap-color-bg_focus" mask="url(#_1.5u-base)" transform="translate(1159.9002151286732, 817.9488519833503) rotate(50) translate(100, 0) rotate(90)">
     <g>
-      <rect class="surface" width="150" height="100" fill="#2e2f32" />
+      <rect class="surface" x="-34" y="-34" width="218" height="168" fill="#2e2f32" />
       <g transform="translate(0, 100) rotate(-90)">
         <svg viewBox="0 0 100 150" width="100.0" height="150.0" style="overflow:visible;" transform="matrix(1, 0, 0, 1, 1.768546192413307, -11.20305138692285)" x="0" y="0" version="1.1">
           <g transform="matrix(1, 0, 0, 1, 0, 4)">
@@ -1782,9 +1783,9 @@
       </g>
     </g>
   </g>
-  <g class="keycap-color-bg_focus" mask="url(#_1.5u-base)" transform="translate(754.6955556881022, 563.478760968654) rotate(50) translate(100, 0) rotate(90)">
+  <g class="keycap-color-bg_focus" mask="url(#_1.5u-base)" transform="translate(1267.888533556012, 946.6443184273387) rotate(50) translate(100, 0) rotate(90)">
     <g>
-      <rect class="surface" width="150" height="100" fill="#2e2f32" />
+      <rect class="surface" x="-34" y="-34" width="218" height="168" fill="#2e2f32" />
       <g transform="translate(0, 100) rotate(-90)">
         <svg viewBox="0 0 100 150" width="100.0" height="150.0" style="overflow: visible;" transform="matrix(1, 0, 0, 1, 1.768546192413307, -11.20305138692285)" x="0" y="0" version="1.1">
           <g transform="matrix(1, 0, 0, 1, 0, 4)">
@@ -1806,9 +1807,9 @@
       </g>
     </g>
   </g>
-  <g class="keycap-color-bg_accent" mask="url(#_2u-base)" transform="translate(968.6999999999999, 499.2) rotate(-50)">
+  <g class="keycap-color-bg_accent" mask="url(#_2u-base)" transform="translate(1627.416, 838.656) rotate(-50)">
     <g>
-      <rect class="surface" width="200" height="100" fill="#e1d9f2" />
+      <rect class="surface" x="-34" y="-34" width="268" height="168" fill="#e1d9f2" />
       <g transform="">
         <svg viewBox="0 0 200 100" width="200.0" height="100.0" style="overflow:visible" transform="matrix(1, 0, 0, 0.9999999999999999, 14.785905464222736, 9.023905317410456)" x="0" y="0" version="1.1">
           <use href="#paw_print-1" width="7" height="6.5" style="fill:#a49bc2" transform="translate(3.5, 3.25) matrix(-0.5253769159317017, -1.3284560441970825, -1.4781439304351807, 0.14688000082969666, 23.3486858059951, 58.30745594068291) translate(-3.5, -3.25)">
@@ -1918,9 +1919,9 @@
       </g>
     </g>
   </g>
-  <g class="keycap-color-bg_focus" mask="url(#_1.5u-base)" transform="translate(981.0256833432438, 640.0832052805517) rotate(-50) translate(100, 0) rotate(90)">
+  <g class="keycap-color-bg_focus" mask="url(#_1.5u-base)" transform="translate(1648.1231480166496, 1075.3397848713269) rotate(-50) translate(100, 0) rotate(90)">
     <g>
-      <rect class="surface" width="150" height="100" fill="#2e2f32" />
+      <rect class="surface" x="-34" y="-34" width="218" height="168" fill="#2e2f32" />
       <g transform="translate(0, 100) rotate(-90)">
         <svg viewBox="0 0 100 150" width="100.0" height="150.0" style="overflow:visible" transform="matrix(0.9999999999999999, 0, 0, 1, 1.9604572475505542, -11.861032098774828)" x="0" y="0" version="1.1">
           <use href="#paw_print-2" width="7" height="6.5" style="fill:#a49bc2" transform="translate(3.5, 3.25) matrix(-1.4119009971618652, -0.21761199831962585, -0.21761199831962585, 1.4119060039520264, 102.14889346003379, 19.583110463548135) translate(-3.5, -3.25)">
@@ -1974,9 +1975,9 @@
       </g>
     </g>
   </g>
-  <g class="keycap-color-bg_focus" mask="url(#_1.5u-base)" transform="translate(1045.304444311898, 563.478760968654) rotate(-50) translate(100, 0) rotate(90)">
+  <g class="keycap-color-bg_focus" mask="url(#_1.5u-base)" transform="translate(1756.1114664439883, 946.6443184273387) rotate(-50) translate(100, 0) rotate(90)">
     <g>
-      <rect class="surface" width="150" height="100" fill="#2e2f32" />
+      <rect class="surface" x="-34" y="-34" width="218" height="168" fill="#2e2f32" />
       <g transform="translate(0, 100) rotate(-90)">
         <svg viewBox="0 0 100 150" width="100.0" height="150.0" style="overflow:visible" x="0" y="0" version="1.1">
           <path d="M 65 54.5 L 65 57.5 L 35 57.5 L 35 54.5" style="fill:none;stroke-width:3px;stroke-linecap:round;stroke-linejoin:round;stroke:#e1d9f2">
@@ -2012,9 +2013,9 @@
       </g>
     </g>
   </g>
-  <g class="keycap-color-bg_focus" mask="url(#_1.5u-base)" transform="translate(1109.5832052805517, 486.87431665675615) rotate(-50) translate(100, 0) rotate(90)">
+  <g class="keycap-color-bg_focus" mask="url(#_1.5u-base)" transform="translate(1864.099784871327, 817.9488519833503) rotate(-50) translate(100, 0) rotate(90)">
     <g>
-      <rect class="surface" width="150" height="100" fill="#2e2f32" />
+      <rect class="surface" x="-34" y="-34" width="218" height="168" fill="#2e2f32" />
       <g transform="translate(0, 100) rotate(-90)">
         <svg viewBox="0 0 100 150" width="100.0" height="150.0" style="overflow: visible;" x="0" y="0" version="1.1">
           <use href="#symbol-0" width="24" height="30" style="fill:#eeeaf3" transform="translate(12.0, 15.0) matrix(0.824957549571991, 0.8249569535255432, -0.7542475461959839, 0.7542469501495361, 37.99999551433864, 26.999995708565113) translate(-12.0, -15.0)">

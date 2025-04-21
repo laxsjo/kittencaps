@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<svg version="1.1" viewBox="-40 -71.6 1880 861.6" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:bx="https://boxy-svg.com">
+<svg version="1.1" viewBox="-40 -93.088 3036 1325.09" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:bx="https://boxy-svg.com">
   <filter id="sideShading">
     <feFlood flood-color="#d5d5d5" result="light" />
     <feBlend in="light" in2="SourceGraphic" mode="multiply" result="shaded" />
@@ -28,11 +28,11 @@
   </symbol>
   <defs id="factory-elements">
     <mask id="_1.5u-base">
-      <rect width="150" height="100" x="0" y="0" fill="white" /></mask>
+      <rect width="218" height="168" x="-34" y="-34" fill="white" /></mask>
     <mask id="_1u-base">
-      <rect width="100" height="100" x="0" y="0" fill="white" /></mask>
+      <rect width="168" height="168" x="-34" y="-34" fill="white" /></mask>
     <mask id="_2u-base">
-      <rect width="200" height="100" x="0" y="0" fill="white" /></mask>
+      <rect width="268" height="168" x="-34" y="-34" fill="white" /></mask>
     <mask id="_1.5u-shading">
       <rect width="150" height="100" fill="white" />
       <use width="115.9" height="65.9004" x="17.0498" y="17.0498" href="#_1.5u-top" fill="black" />
@@ -172,7 +172,7 @@
   </style>
   <g class="keycap-color-bg_focus" mask="url(#_1u-base)" transform="">
     <g id="keycap-unshaded-0">
-      <rect class="surface" width="100" height="100" fill="#2e2f32" />
+      <rect class="surface" x="-34" y="-34" width="168" height="168" fill="#2e2f32" />
       <g transform="">
         <svg id="icon_sleep" viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0">
           <g style="">
@@ -268,9 +268,9 @@
       </g>
     </g>
     </g>
-  <g class="keycap-color-bg_focus" mask="url(#_1u-base)" transform="translate(0, 100)">
+  <g class="keycap-color-bg_focus" mask="url(#_1u-base)" transform="translate(0, 168)">
     <g id="keycap-unshaded-1">
-      <rect class="surface" width="100" height="100" fill="#2e2f32" />
+      <rect class="surface" x="-34" y="-34" width="168" height="168" fill="#2e2f32" />
       <g transform="">
         <svg id="icon_del" viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0">
           <path style="fill:none;stroke-linecap:round;stroke-linejoin:round;stroke:#e1d9f2;stroke-width:2.25px" d="M 37.693 27.49 L 66.817 27.49 L 66.817 48.51 L 37.693 48.51 L 27.182 38 L 37.693 27.49 Z" transform="translate(46.9995, 38.0) matrix(-1, 0, 0, -1, 0.00001, 0.000004) translate(-46.9995, -38.0)">
@@ -307,9 +307,9 @@
       </g>
     </g>
     </g>
-  <g class="keycap-color-bg_focus" mask="url(#_1u-base)" transform="translate(0, 200)">
+  <g class="keycap-color-bg_focus" mask="url(#_1u-base)" transform="translate(0, 336)">
     <g id="keycap-unshaded-2">
-      <rect class="surface" width="100" height="100" fill="#2e2f32" />
+      <rect class="surface" x="-34" y="-34" width="168" height="168" fill="#2e2f32" />
       <g transform="">
         <svg id="icon_tab" viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0">
           <path style="fill: none; stroke-linecap: round; stroke-width: 3px; stroke: #e1d9f2;" d="M 32.808 50 L 61.832 50" />
@@ -323,9 +323,9 @@
       </g>
     </g>
     </g>
-  <g class="keycap-color-bg_focus" mask="url(#_1u-base)" transform="translate(0, 300)">
+  <g class="keycap-color-bg_focus" mask="url(#_1u-base)" transform="translate(0, 504)">
     <g id="keycap-unshaded-3">
-      <rect class="surface" width="100" height="100" fill="#2e2f32" />
+      <rect class="surface" x="-34" y="-34" width="168" height="168" fill="#2e2f32" />
       <g transform="">
         <svg id="icon_altgr" viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0">
           <text style="fill: #e1d9f2; font-family: &quot;Open Gorton&quot;; font-size: 17px; font-weight: 700; text-anchor: middle; white-space: pre;" xml:space="preserve" x="50" y="75">AltGr</text>
@@ -336,9 +336,9 @@
       </g>
     </g>
     </g>
-  <g class="keycap-color-bg_focus" mask="url(#_1u-base)" transform="translate(0, 400)">
+  <g class="keycap-color-bg_focus" mask="url(#_1u-base)" transform="translate(0, 672)">
     <g id="keycap-unshaded-4">
-      <rect class="surface" width="100" height="100" fill="#2e2f32" />
+      <rect class="surface" x="-34" y="-34" width="168" height="168" fill="#2e2f32" />
       <g transform="">
         <svg id="icon_gaming" viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" transform="matrix(1, 0, 0, 1.0000000000000002, -31.709163303023473, -26.14108956720664)" x="0" y="0">
           <path style="fill: #f5f7f7; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px; stroke: #f5f7f7;" d="M 31.143 41.822 C 35.034 37.293 41.261 33.376 47.223 32.685 C 48.52 32.535 50.007 26.412 51.313 26.389 C 52.61 26.366 55.425 31.659 56.696 31.963 C 61.708 33.166 63.675 33.846 67.907 36.923 C 68.739 37.527 74.21 34.264 75.036 35.079 C 76.791 36.813 74.735 46.176 75.382 47.37 C 77.571 51.402 78.088 55.736 78.094 58.952 C 78.094 58.952 31.203 41.67 31.143 41.822 Z">
@@ -439,9 +439,9 @@
       </g>
     </g>
     </g>
-  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(100, -7.9)">
+  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(168, -13.272)">
     <g id="keycap-unshaded-5">
-      <rect class="surface" width="100" height="100" fill="#f5f7f7" />
+      <rect class="surface" x="-34" y="-34" width="168" height="168" fill="#f5f7f7" />
       <g transform="">
         <svg id="icon_1" viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0">
           <text style="font-weight:400;font-size:40px;font-family:Open Gorton;fill:#2e2f32;white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="64.08" text-anchor="middle" xml:space="preserve"><tspan>1</tspan></text>
@@ -452,9 +452,9 @@
       </g>
     </g>
     </g>
-  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(100, 92.10000000000001)">
+  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(168, 154.728)">
     <g id="keycap-unshaded-6">
-      <rect class="surface" width="100" height="100" fill="#f5f7f7" />
+      <rect class="surface" x="-34" y="-34" width="168" height="168" fill="#f5f7f7" />
       <g transform="">
         <svg id="icon_Q" viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" version="1.1" x="0" y="0">
           <path style="fill: #2e2f32; fill-rule: nonzero; stroke: #2e2f32; stroke-linecap: round; stroke-linejoin: round; stroke-dasharray: none; stroke-width: 3px;" d="M 40.3162 41.2286 L 41.5213 37.0793 L 45.5877 37.4288" id="path1" inkscape:label="Ear">
@@ -483,9 +483,9 @@
       </g>
     </g>
     </g>
-  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(100, 192.1)">
+  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(168, 322.728)">
     <g id="keycap-unshaded-7">
-      <rect class="surface" width="100" height="100" fill="#f5f7f7" />
+      <rect class="surface" x="-34" y="-34" width="168" height="168" fill="#f5f7f7" />
       <g transform="">
         <svg id="icon_a_with_#" viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0">
           <text style="font-weight: 400; font-size: 40px; font-family: &quot;Open Gorton&quot;; fill: #2e2f32; white-space: pre;" x="50" y="64.08" text-anchor="middle" xml:space="preserve"><tspan>A</tspan></text>
@@ -500,9 +500,9 @@
       </g>
     </g>
     </g>
-  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(100, 292.1)">
+  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(168, 490.72800000000007)">
     <g id="keycap-unshaded-8">
-      <rect class="surface" width="100" height="100" fill="#f5f7f7" />
+      <rect class="surface" x="-34" y="-34" width="168" height="168" fill="#f5f7f7" />
       <g transform="">
         <svg id="icon_z_with__" viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0">
           <text style="font-weight: 400; font-size: 40px; font-family: &quot;Open Gorton&quot;; fill: #2e2f32; white-space: pre;" x="50" y="64.08" text-anchor="middle" xml:space="preserve"><tspan>Z</tspan></text>
@@ -517,9 +517,9 @@
       </g>
     </g>
     </g>
-  <g class="keycap-color-bg_focus" mask="url(#_1u-base)" transform="translate(100, 392.1)">
+  <g class="keycap-color-bg_focus" mask="url(#_1u-base)" transform="translate(168, 658.7280000000001)">
     <g id="keycap-unshaded-9">
-      <rect class="surface" width="100" height="100" fill="#2e2f32" />
+      <rect class="surface" x="-34" y="-34" width="168" height="168" fill="#2e2f32" />
       <g transform="">
         <svg id="icon_emoji" viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0">
           <g style="">
@@ -584,9 +584,9 @@
       </g>
     </g>
     </g>
-  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(200, -23.699999999999974)">
+  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(336, -39.81599999999995)">
     <g id="keycap-unshaded-10">
-      <rect class="surface" width="100" height="100" fill="#f5f7f7" />
+      <rect class="surface" x="-34" y="-34" width="168" height="168" fill="#f5f7f7" />
       <g transform="">
         <svg id="icon_2" viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0">
           <text style="font-weight:400;font-size:40px;font-family:Open Gorton;fill:#2e2f32;white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="64.08" text-anchor="middle" xml:space="preserve"><tspan>2</tspan></text>
@@ -597,9 +597,9 @@
       </g>
     </g>
     </g>
-  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(200, 76.30000000000003)">
+  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(336, 128.18400000000003)">
     <g id="keycap-unshaded-11">
-      <rect class="surface" width="100" height="100" fill="#f5f7f7" />
+      <rect class="surface" x="-34" y="-34" width="168" height="168" fill="#f5f7f7" />
       <g transform="">
         <svg id="icon_d_with_@" viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0">
           <text style="font-weight: 400; font-size: 40px; font-family: &quot;Open Gorton&quot;; fill: #2e2f32; white-space: pre;" x="50" y="64.08" text-anchor="middle" xml:space="preserve"><tspan>D</tspan></text>
@@ -614,9 +614,9 @@
       </g>
     </g>
     </g>
-  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(200, 176.30000000000004)">
+  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(336, 296.1840000000001)">
     <g id="keycap-unshaded-12">
-      <rect class="surface" width="100" height="100" fill="#f5f7f7" />
+      <rect class="surface" x="-34" y="-34" width="168" height="168" fill="#f5f7f7" />
       <g transform="">
         <svg id="icon_s_with_$" viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0">
           <text style="font-weight: 400; font-size: 40px; font-family: &quot;Open Gorton&quot;; fill: #2e2f32; white-space: pre;" x="50" y="64.08" text-anchor="middle" xml:space="preserve"><tspan>S</tspan></text>
@@ -631,9 +631,9 @@
       </g>
     </g>
     </g>
-  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(200, 276.3)">
+  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(336, 464.1840000000001)">
     <g id="keycap-unshaded-13">
-      <rect class="surface" width="100" height="100" fill="#f5f7f7" />
+      <rect class="surface" x="-34" y="-34" width="168" height="168" fill="#f5f7f7" />
       <g transform="">
         <svg id="icon_x_with_%" viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0">
           <text style="font-weight: 400; font-size: 40px; font-family: &quot;Open Gorton&quot;; fill: #2e2f32; white-space: pre;" x="50" y="64.08" text-anchor="middle" xml:space="preserve"><tspan>X</tspan></text>
@@ -648,9 +648,9 @@
       </g>
     </g>
     </g>
-  <g class="keycap-color-bg_focus" mask="url(#_1u-base)" transform="translate(200, 376.3)">
+  <g class="keycap-color-bg_focus" mask="url(#_1u-base)" transform="translate(336, 632.1840000000001)">
     <g id="keycap-unshaded-14">
-      <rect class="surface" width="100" height="100" fill="#2e2f32" />
+      <rect class="surface" x="-34" y="-34" width="168" height="168" fill="#2e2f32" />
       <g transform="">
         <svg id="icon_numpad_left" viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0">
           <g transform="translate(470.83, 415.761) matrix(0.064592, 0.020225, -0.020224, 0.064592, -413.10122, -377.088006) translate(-470.83, -415.761)">
@@ -671,9 +671,9 @@
       </g>
     </g>
     </g>
-  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(300, -31.599999999999966)">
+  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(504, -53.087999999999944)">
     <g id="keycap-unshaded-15">
-      <rect class="surface" width="100" height="100" fill="#f5f7f7" />
+      <rect class="surface" x="-34" y="-34" width="168" height="168" fill="#f5f7f7" />
       <g transform="">
         <svg id="icon_:3" viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0">
           <rect class="icon-bounding-box" width="100" height="100" fill="none" />
@@ -687,9 +687,9 @@
       </g>
     </g>
     </g>
-  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(300, 68.40000000000003)">
+  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(504, 114.91200000000006)">
     <g id="keycap-unshaded-16">
-      <rect class="surface" width="100" height="100" fill="#f5f7f7" />
+      <rect class="surface" x="-34" y="-34" width="168" height="168" fill="#f5f7f7" />
       <g transform="">
         <svg id="icon_r_with_{" viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0">
           <text style="font-weight: 400; font-size: 40px; font-family: &quot;Open Gorton&quot;; fill: #2e2f32; white-space: pre;" x="50" y="64.08" text-anchor="middle" xml:space="preserve"><tspan>R</tspan></text>
@@ -704,9 +704,9 @@
       </g>
     </g>
     </g>
-  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(300, 168.40000000000003)">
+  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(504, 282.9120000000001)">
     <g id="keycap-unshaded-17">
-      <rect class="surface" width="100" height="100" fill="#f5f7f7" />
+      <rect class="surface" x="-34" y="-34" width="168" height="168" fill="#f5f7f7" />
       <g transform="">
         <svg id="icon_h_with_(" viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0">
           <text style="font-weight: 400; font-size: 40px; font-family: &quot;Open Gorton&quot;; fill: #2e2f32; white-space: pre;" x="50" y="64.08" text-anchor="middle" xml:space="preserve"><tspan>H</tspan></text>
@@ -721,9 +721,9 @@
       </g>
     </g>
     </g>
-  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(300, 268.40000000000003)">
+  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(504, 450.91200000000003)">
     <g id="keycap-unshaded-18">
-      <rect class="surface" width="100" height="100" fill="#f5f7f7" />
+      <rect class="surface" x="-34" y="-34" width="168" height="168" fill="#f5f7f7" />
       <g transform="">
         <svg id="icon_m_with_[" viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0">
           <text style="font-weight: 400; font-size: 40px; font-family: &quot;Open Gorton&quot;; fill: #2e2f32; white-space: pre;" x="50" y="64.08" text-anchor="middle" xml:space="preserve"><tspan>M</tspan></text>
@@ -738,9 +738,9 @@
       </g>
     </g>
     </g>
-  <g class="keycap-color-bg_focus" mask="url(#_1u-base)" transform="translate(300, 368.40000000000003)">
+  <g class="keycap-color-bg_focus" mask="url(#_1u-base)" transform="translate(504, 618.912)">
     <g id="keycap-unshaded-19">
-      <rect class="surface" width="100" height="100" fill="#2e2f32" />
+      <rect class="surface" x="-34" y="-34" width="168" height="168" fill="#2e2f32" />
       <g transform="">
         <svg id="icon_hyper" viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0">
           <text style="fill: #e1d9f2; font-family: &quot;Open Gorton&quot;; font-size: 17px; font-weight: 700; text-anchor: middle; white-space: pre;" x="50" y="75">HYPER</text>
@@ -804,9 +804,9 @@
       </g>
     </g>
     </g>
-  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(400, -23.69999999999998)">
+  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(672, -39.81599999999997)">
     <g id="keycap-unshaded-20">
-      <rect class="surface" width="100" height="100" fill="#f5f7f7" />
+      <rect class="surface" x="-34" y="-34" width="168" height="168" fill="#f5f7f7" />
       <g transform="">
         <svg id="icon_4" viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0">
           <text style="font-weight:400;font-size:40px;font-family:Open Gorton;fill:#2e2f32;white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="64.08" text-anchor="middle" xml:space="preserve"><tspan>4</tspan></text>
@@ -817,9 +817,9 @@
       </g>
     </g>
     </g>
-  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(400, 76.30000000000001)">
+  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(672, 128.18400000000003)">
     <g id="keycap-unshaded-21">
-      <rect class="surface" width="100" height="100" fill="#f5f7f7" />
+      <rect class="surface" x="-34" y="-34" width="168" height="168" fill="#f5f7f7" />
       <g transform="">
         <svg id="icon_&gt;w&lt;_with_}" viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0">
           <rect class="icon-bounding-box" width="100" height="100" fill="none" />
@@ -847,9 +847,9 @@
       </g>
     </g>
     </g>
-  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(400, 176.3)">
+  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(672, 296.184)">
     <g id="keycap-unshaded-22">
-      <rect class="surface" width="100" height="100" fill="#f5f7f7" />
+      <rect class="surface" x="-34" y="-34" width="168" height="168" fill="#f5f7f7" />
       <g transform="">
         <svg id="icon_t_with_)" viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0">
           <text style="font-weight: 400; font-size: 40px; font-family: &quot;Open Gorton&quot;; fill: #2e2f32; white-space: pre;" x="50" y="64.08" text-anchor="middle" xml:space="preserve"><tspan>T</tspan></text>
@@ -864,9 +864,9 @@
       </g>
     </g>
     </g>
-  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(400, 276.3)">
+  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(672, 464.18399999999997)">
     <g id="keycap-unshaded-23">
-      <rect class="surface" width="100" height="100" fill="#f5f7f7" />
+      <rect class="surface" x="-34" y="-34" width="168" height="168" fill="#f5f7f7" />
       <g transform="">
         <svg id="icon_c_with_]" viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0">
           <text style="font-weight: 400; font-size: 40px; font-family: &quot;Open Gorton&quot;; fill: #2e2f32; white-space: pre;" x="50" y="64.08" text-anchor="middle" xml:space="preserve"><tspan>C</tspan></text>
@@ -881,9 +881,9 @@
       </g>
     </g>
     </g>
-  <g class="keycap-color-bg_focus" mask="url(#_1u-base)" transform="translate(400, 376.3)">
+  <g class="keycap-color-bg_focus" mask="url(#_1u-base)" transform="translate(672, 632.184)">
     <g id="keycap-unshaded-24">
-      <rect class="surface" width="100" height="100" fill="#2e2f32" />
+      <rect class="surface" x="-34" y="-34" width="168" height="168" fill="#2e2f32" />
       <g transform="">
         <svg id="icon_num" viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0">
           <text style="fill: #e1d9f2; font-family: &quot;Open Gorton&quot;; font-size: 17px; font-weight: 700; white-space: pre;" x="23" y="75"><title>NUM</title>num<tspan x="50" dy="1em">​</tspan></text>
@@ -907,9 +907,9 @@
       </g>
     </g>
     </g>
-  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(500, -7.90000000000001)">
+  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(840, -13.272000000000016)">
     <g id="keycap-unshaded-25">
-      <rect class="surface" width="100" height="100" fill="#f5f7f7" />
+      <rect class="surface" x="-34" y="-34" width="168" height="168" fill="#f5f7f7" />
       <g transform="">
         <svg id="icon_5" viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0">
           <text style="font-weight:400;font-size:40px;font-family:Open Gorton;fill:#2e2f32;white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="64.08" text-anchor="middle" xml:space="preserve"><tspan>5</tspan></text>
@@ -920,9 +920,9 @@
       </g>
     </g>
     </g>
-  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(500, 92.1)">
+  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(840, 154.72799999999998)">
     <g id="keycap-unshaded-26">
-      <rect class="surface" width="100" height="100" fill="#f5f7f7" />
+      <rect class="surface" x="-34" y="-34" width="168" height="168" fill="#f5f7f7" />
       <g transform="">
         <svg id="icon_b_with_\" viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0">
           <text style="font-weight: 400; font-size: 40px; font-family: &quot;Open Gorton&quot;; fill: #2e2f32; white-space: pre;" x="50" y="64.08" text-anchor="middle" xml:space="preserve"><tspan>B</tspan></text>
@@ -937,9 +937,9 @@
       </g>
     </g>
     </g>
-  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(500, 192.1)">
+  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(840, 322.72799999999995)">
     <g id="keycap-unshaded-27">
-      <rect class="surface" width="100" height="100" fill="#f5f7f7" />
+      <rect class="surface" x="-34" y="-34" width="168" height="168" fill="#f5f7f7" />
       <g transform="">
         <svg id="icon_g_with_&amp;" viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0">
           <text style="font-weight: 400; font-size: 40px; font-family: &quot;Open Gorton&quot;; fill: #2e2f32; white-space: pre;" x="50" y="64.08" text-anchor="middle" xml:space="preserve"><tspan>G</tspan></text>
@@ -954,9 +954,9 @@
       </g>
     </g>
     </g>
-  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(500, 292.09999999999997)">
+  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(840, 490.72799999999995)">
     <g id="keycap-unshaded-28">
-      <rect class="surface" width="100" height="100" fill="#f5f7f7" />
+      <rect class="surface" x="-34" y="-34" width="168" height="168" fill="#f5f7f7" />
       <g transform="">
         <svg id="icon_v_with_|" viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0">
           <text style="font-weight: 400; font-size: 40px; font-family: &quot;Open Gorton&quot;; fill: #2e2f32; white-space: pre;" x="50" y="64.08" text-anchor="middle" xml:space="preserve"><tspan>V</tspan></text>
@@ -971,12 +971,12 @@
       </g>
     </g>
     </g>
-  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(600, -1.8041124150158794e-14)">
+  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(1008, -3.0309088572266774e-14)">
     <g id="keycap-unshaded-29">
-      <rect class="surface" width="100" height="100" fill="#f5f7f7" />
+      <rect class="surface" x="-34" y="-34" width="168" height="168" fill="#f5f7f7" />
       <g transform="">
         <svg id="icon_white_wedge_left" viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0">
-          <path style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 3px; fill: #2e2f32;" d="M 100 100 L -0.0002 100 L 100 0 L 100 100 Z">
+          <path style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 3px; fill: #2e2f32;" d="M 134 134 L -34 134 L 134 -34 L 134 134 Z">
             <title>BG</title>
           </path>
         </svg>
@@ -986,9 +986,9 @@
       </g>
     </g>
     </g>
-  <g class="keycap-color-bg_focus" mask="url(#_1u-base)" transform="translate(600, 99.99999999999997)">
+  <g class="keycap-color-bg_focus" mask="url(#_1u-base)" transform="translate(1008, 167.99999999999997)">
     <g id="keycap-unshaded-30">
-      <rect class="surface" width="100" height="100" fill="#2e2f32" />
+      <rect class="surface" x="-34" y="-34" width="168" height="168" fill="#2e2f32" />
       <g transform="">
         <svg id="icon" viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0">
           <text style="font-weight:400;font-size:40px;font-family:Open Gorton;fill:#2e2f32;white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="64.08" text-anchor="middle" xml:space="preserve"><tspan /></text>
@@ -999,9 +999,9 @@
       </g>
     </g>
     </g>
-  <g class="keycap-color-bg_focus" mask="url(#_1u-base)" transform="translate(600, 199.99999999999997)">
+  <g class="keycap-color-bg_focus" mask="url(#_1u-base)" transform="translate(1008, 335.99999999999994)">
     <g id="keycap-unshaded-31">
-      <rect class="surface" width="100" height="100" fill="#2e2f32" />
+      <rect class="surface" x="-34" y="-34" width="168" height="168" fill="#2e2f32" />
       <g transform="">
         <svg id="icon_esc" viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0">
           <rect width="168" height="168" style="stroke-linecap: round; stroke-linejoin: bevel; stroke-width: 10px; fill: url(&quot;#pattern-0-0&quot;);" x="-34" y="-34">
@@ -1018,12 +1018,12 @@
       </g>
     </g>
     </g>
-  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(1100, -2.220446049250313e-14)">
+  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(1848, -3.730349362740526e-14)">
     <g id="keycap-unshaded-32">
-      <rect class="surface" width="100" height="100" fill="#f5f7f7" />
+      <rect class="surface" x="-34" y="-34" width="168" height="168" fill="#f5f7f7" />
       <g transform="">
-        <svg id="icon_white_wedge_right" viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0">
-          <path style="stroke-linecap:round;stroke-linejoin:round;stroke-width:3px;fill:#2e2f32" d="M 100 0 L 0 0 L 100 100 L 100 0 Z" transform="translate(50.0, 50.0) matrix(-1, 0, 0, -1, -0.000002, -0.000017) translate(-50.0, -50.0)">
+        <svg id="icon_white_wedge_right" viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow: visible;" transform="matrix(1.2899704992418748, 0, 0, 1.265732767251464, -18.600043641399402, -7.97324502457262)" x="0" y="0">
+          <path style="stroke-linecap:round;stroke-linejoin:round;stroke-width:3px;fill:#2e2f32" d="M -34 134 L 134 134 L -34 -34 L -34 134 Z">
             <title>BG</title>
           </path>
         </svg>
@@ -1033,9 +1033,9 @@
       </g>
     </g>
     </g>
-  <g class="keycap-color-bg_focus" mask="url(#_1u-base)" transform="translate(1100, 99.99999999999997)">
+  <g class="keycap-color-bg_focus" mask="url(#_1u-base)" transform="translate(1848, 167.99999999999997)">
     <g id="keycap-unshaded-33">
-      <rect class="surface" width="100" height="100" fill="#2e2f32" />
+      <rect class="surface" x="-34" y="-34" width="168" height="168" fill="#2e2f32" />
       <g transform="">
         <svg id="icon" viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0">
           <text style="font-weight:400;font-size:40px;font-family:Open Gorton;fill:#2e2f32;white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="64.08" text-anchor="middle" xml:space="preserve"><tspan /></text>
@@ -1046,12 +1046,12 @@
       </g>
     </g>
     </g>
-  <g class="keycap-color-bg_accent" mask="url(#_1u-base)" transform="translate(1100, 199.99999999999997)">
+  <g class="keycap-color-bg_accent" mask="url(#_1u-base)" transform="translate(1848, 335.99999999999994)">
     <g id="keycap-unshaded-34">
-      <rect class="surface" width="100" height="100" fill="#e1d9f2" />
+      <rect class="surface" x="-34" y="-34" width="168" height="168" fill="#e1d9f2" />
       <g transform="">
         <svg id="icon_play" viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible" x="0" y="0">
-          <rect width="100" height="100" style="stroke-linecap:round;stroke-linejoin:bevel;stroke-width:10px;fill:url(#pattern-0-0-0)">
+          <rect width="168" height="168" style="stroke-linecap:round;stroke-linejoin:bevel;stroke-width:10px;fill:url(#pattern-0-0-0)" x="-34" y="-34">
             <title>Pattern</title>
           </rect>
           <g style="">
@@ -1083,9 +1083,9 @@
       </g>
     </g>
     </g>
-  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(1200, -7.900000000000023)">
+  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(2016, -13.272000000000038)">
     <g id="keycap-unshaded-35">
-      <rect class="surface" width="100" height="100" fill="#f5f7f7" />
+      <rect class="surface" x="-34" y="-34" width="168" height="168" fill="#f5f7f7" />
       <g transform="">
         <svg id="icon_6" viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0">
           <text style="font-weight:400;font-size:40px;font-family:Open Gorton;fill:#2e2f32;white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="64.08" text-anchor="middle" xml:space="preserve"><tspan>6</tspan></text>
@@ -1096,9 +1096,9 @@
       </g>
     </g>
     </g>
-  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(1200, 92.09999999999998)">
+  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(2016, 154.72799999999998)">
     <g id="keycap-unshaded-36">
-      <rect class="surface" width="100" height="100" fill="#f5f7f7" />
+      <rect class="surface" x="-34" y="-34" width="168" height="168" fill="#f5f7f7" />
       <g transform="">
         <svg id="icon_j_with_?" viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0">
           <text style="font-weight: 400; font-size: 40px; font-family: &quot;Open Gorton&quot;; fill: #2e2f32; white-space: pre;" x="50" y="64.08" text-anchor="middle" xml:space="preserve"><tspan>J</tspan></text>
@@ -1113,9 +1113,9 @@
       </g>
     </g>
     </g>
-  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(1200, 192.1)">
+  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(2016, 322.72799999999995)">
     <g id="keycap-unshaded-37">
-      <rect class="surface" width="100" height="100" fill="#f5f7f7" />
+      <rect class="surface" x="-34" y="-34" width="168" height="168" fill="#f5f7f7" />
       <g transform="">
         <svg id="icon_y_with_!" viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0">
           <text style="font-weight: 400; font-size: 40px; font-family: &quot;Open Gorton&quot;; fill: #2e2f32; white-space: pre;" x="50" y="64.08" text-anchor="middle" xml:space="preserve"><tspan>Y</tspan></text>
@@ -1130,9 +1130,9 @@
       </g>
     </g>
     </g>
-  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(1200, 292.09999999999997)">
+  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(2016, 490.72799999999995)">
     <g id="keycap-unshaded-38">
-      <rect class="surface" width="100" height="100" fill="#f5f7f7" />
+      <rect class="surface" x="-34" y="-34" width="168" height="168" fill="#f5f7f7" />
       <g transform="">
         <svg id="icon_k_with_=" viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0">
           <text style="font-weight: 400; font-size: 40px; font-family: &quot;Open Gorton&quot;; fill: #2e2f32; white-space: pre;" x="50" y="64.08" text-anchor="middle" xml:space="preserve"><tspan>K</tspan></text>
@@ -1147,9 +1147,9 @@
       </g>
     </g>
     </g>
-  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(1300, -23.700000000000017)">
+  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(2184, -39.81600000000003)">
     <g id="keycap-unshaded-39">
-      <rect class="surface" width="100" height="100" fill="#f5f7f7" />
+      <rect class="surface" x="-34" y="-34" width="168" height="168" fill="#f5f7f7" />
       <g transform="">
         <svg id="icon_7" viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0">
           <text style="font-weight:400;font-size:40px;font-family:Open Gorton;fill:#2e2f32;white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="64.08" text-anchor="middle" xml:space="preserve"><tspan>7</tspan></text>
@@ -1160,9 +1160,9 @@
       </g>
     </g>
     </g>
-  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(1300, 76.29999999999998)">
+  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(2184, 128.18399999999997)">
     <g id="keycap-unshaded-40">
-      <rect class="surface" width="100" height="100" fill="#f5f7f7" />
+      <rect class="surface" x="-34" y="-34" width="168" height="168" fill="#f5f7f7" />
       <g transform="">
         <svg id="icon_f_with_&quot;" viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0">
           <text style="font-weight: 400; font-size: 40px; font-family: &quot;Open Gorton&quot;; fill: #2e2f32; white-space: pre;" x="50" y="64.08" text-anchor="middle" xml:space="preserve"><tspan>F</tspan></text>
@@ -1177,9 +1177,9 @@
       </g>
     </g>
     </g>
-  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(1300, 176.29999999999998)">
+  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(2184, 296.18399999999997)">
     <g id="keycap-unshaded-41">
-      <rect class="surface" width="100" height="100" fill="#f5f7f7" />
+      <rect class="surface" x="-34" y="-34" width="168" height="168" fill="#f5f7f7" />
       <g transform="">
         <svg id="icon_n_with_ö_+" viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0">
           <text style="fill: #2e2f32; font-family: &quot;Open Gorton&quot;; font-size: 40px; text-anchor: middle; white-space: pre;" x="50" y="64.080">N</text>
@@ -1203,9 +1203,9 @@
       </g>
     </g>
     </g>
-  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(1300, 276.3)">
+  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(2184, 464.18399999999997)">
     <g id="keycap-unshaded-42">
-      <rect class="surface" width="100" height="100" fill="#f5f7f7" />
+      <rect class="surface" x="-34" y="-34" width="168" height="168" fill="#f5f7f7" />
       <g transform="">
         <svg id="icon_l_with_-" viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0">
           <text style="font-weight: 400; font-size: 40px; font-family: &quot;Open Gorton&quot;; fill: #2e2f32; white-space: pre;" x="50" y="64.08" text-anchor="middle" xml:space="preserve"><tspan>L</tspan></text>
@@ -1220,9 +1220,9 @@
       </g>
     </g>
     </g>
-  <g class="keycap-color-bg_focus" mask="url(#_1u-base)" transform="translate(1300, 376.3)">
+  <g class="keycap-color-bg_focus" mask="url(#_1u-base)" transform="translate(2184, 632.184)">
     <g id="keycap-unshaded-43">
-      <rect class="surface" width="100" height="100" fill="#2e2f32" />
+      <rect class="surface" x="-34" y="-34" width="168" height="168" fill="#2e2f32" />
       <g transform="">
         <svg id="icon_sym" viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0">
           <g transform="matrix(1, 0, 0, 1, 22.124588, -2.632781)">
@@ -1298,9 +1298,9 @@
       </g>
     </g>
     </g>
-  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(1400, -31.600000000000012)">
+  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(2352, -53.08800000000002)">
     <g id="keycap-unshaded-44">
-      <rect class="surface" width="100" height="100" fill="#f5f7f7" />
+      <rect class="surface" x="-34" y="-34" width="168" height="168" fill="#f5f7f7" />
       <g transform="">
         <svg id="icon_8" viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0">
           <text style="font-weight:400;font-size:40px;font-family:Open Gorton;fill:#2e2f32;white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="64.08" text-anchor="middle" xml:space="preserve"><tspan>8</tspan></text>
@@ -1311,9 +1311,9 @@
       </g>
     </g>
     </g>
-  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(1400, 68.39999999999999)">
+  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(2352, 114.91199999999999)">
     <g id="keycap-unshaded-45">
-      <rect class="surface" width="100" height="100" fill="#f5f7f7" />
+      <rect class="surface" x="-34" y="-34" width="168" height="168" fill="#f5f7f7" />
       <g transform="">
         <svg id="icon_u_with_umlaut_quote" viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0">
           <text style="font-weight: 400; font-size: 40px; font-family: &quot;Open Gorton&quot;; fill: #2e2f32; white-space: pre;" x="50" y="64.08" text-anchor="middle"><tspan>U</tspan></text>
@@ -1336,9 +1336,9 @@
       </g>
     </g>
     </g>
-  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(1400, 168.4)">
+  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(2352, 282.912)">
     <g id="keycap-unshaded-46">
-      <rect class="surface" width="100" height="100" fill="#f5f7f7" />
+      <rect class="surface" x="-34" y="-34" width="168" height="168" fill="#f5f7f7" />
       <g transform="">
         <svg id="icon_e_with_ä_*" viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0">
           <text style="fill: #2e2f32; font-family: &quot;Open Gorton&quot;; font-size: 40px; text-anchor: middle; white-space: pre;" x="50" y="64.080">e</text>
@@ -1362,9 +1362,9 @@
       </g>
     </g>
     </g>
-  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(1400, 268.40000000000003)">
+  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(2352, 450.91200000000003)">
     <g id="keycap-unshaded-47">
-      <rect class="surface" width="100" height="100" fill="#f5f7f7" />
+      <rect class="surface" x="-34" y="-34" width="168" height="168" fill="#f5f7f7" />
       <g transform="">
         <svg id="icon_." viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0">
           <rect class="icon-bounding-box" width="100" height="100" fill="none" />
@@ -1381,9 +1381,9 @@
       </g>
     </g>
     </g>
-  <g class="keycap-color-bg_focus" mask="url(#_1u-base)" transform="translate(1400, 368.40000000000003)">
+  <g class="keycap-color-bg_focus" mask="url(#_1u-base)" transform="translate(2352, 618.912)">
     <g id="keycap-unshaded-48">
-      <rect class="surface" width="100" height="100" fill="#2e2f32" />
+      <rect class="surface" x="-34" y="-34" width="168" height="168" fill="#2e2f32" />
       <g transform="">
         <svg id="icon_lalt" viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0">
           <g transform="matrix(1, 0, 0, 1, 51.00001, 25.000001)">
@@ -1399,9 +1399,9 @@
       </g>
     </g>
     </g>
-  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(1500, -23.69999999999998)">
+  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(2520, -39.81599999999997)">
     <g id="keycap-unshaded-49">
-      <rect class="surface" width="100" height="100" fill="#f5f7f7" />
+      <rect class="surface" x="-34" y="-34" width="168" height="168" fill="#f5f7f7" />
       <g transform="">
         <svg id="icon_9" viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0">
           <text style="font-weight:400;font-size:40px;font-family:Open Gorton;fill:#2e2f32;white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="64.08" text-anchor="middle" xml:space="preserve"><tspan>9</tspan></text>
@@ -1412,9 +1412,9 @@
       </g>
     </g>
     </g>
-  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(1500, 76.30000000000001)">
+  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(2520, 128.18400000000003)">
     <g id="keycap-unshaded-50">
-      <rect class="surface" width="100" height="100" fill="#f5f7f7" />
+      <rect class="surface" x="-34" y="-34" width="168" height="168" fill="#f5f7f7" />
       <g transform="">
         <svg id="icon_p_with_acute_`" viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0">
           <text style="font-weight: 400; font-size: 40px; font-family: &quot;Open Gorton&quot;; fill: #2e2f32; white-space: pre;" x="50" y="64.08" text-anchor="middle"><tspan>P</tspan></text>
@@ -1435,9 +1435,9 @@
       </g>
     </g>
     </g>
-  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(1500, 176.3)">
+  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(2520, 296.184)">
     <g id="keycap-unshaded-51">
-      <rect class="surface" width="100" height="100" fill="#f5f7f7" />
+      <rect class="surface" x="-34" y="-34" width="168" height="168" fill="#f5f7f7" />
       <g transform="">
         <svg id="icon_o_with_å_;" viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0">
           <text style="fill: #2e2f32; font-family: &quot;Open Gorton&quot;; font-size: 40px; text-anchor: middle; white-space: pre;" x="50" y="64.080">O</text>
@@ -1463,9 +1463,9 @@
       </g>
     </g>
     </g>
-  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(1500, 276.3)">
+  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(2520, 464.18399999999997)">
     <g id="keycap-unshaded-52">
-      <rect class="surface" width="100" height="100" fill="#f5f7f7" />
+      <rect class="surface" x="-34" y="-34" width="168" height="168" fill="#f5f7f7" />
       <g transform="">
         <svg id="icon_," viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0">
           <rect class="icon-bounding-box" width="100" height="100" fill="none" />
@@ -1487,9 +1487,9 @@
       </g>
     </g>
     </g>
-  <g class="keycap-color-bg_focus" mask="url(#_1u-base)" transform="translate(1500, 376.3)">
+  <g class="keycap-color-bg_focus" mask="url(#_1u-base)" transform="translate(2520, 632.184)">
     <g id="keycap-unshaded-53">
-      <rect class="surface" width="100" height="100" fill="#2e2f32" />
+      <rect class="surface" x="-34" y="-34" width="168" height="168" fill="#2e2f32" />
       <g transform="">
         <svg id="icon_math" viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible" x="0" y="0">
           <text style="fill:#e1d9f2;font-family:&quot;Open Gorton&quot;;font-size:17px;font-weight:700;white-space:pre;text-anchor:end" xml:space="preserve" x="77" y="75" dx="0">ath</text>
@@ -1503,9 +1503,9 @@
       </g>
     </g>
     </g>
-  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(1600, -7.90000000000001)">
+  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(2688, -13.272000000000016)">
     <g id="keycap-unshaded-54">
-      <rect class="surface" width="100" height="100" fill="#f5f7f7" />
+      <rect class="surface" x="-34" y="-34" width="168" height="168" fill="#f5f7f7" />
       <g transform="">
         <svg id="icon_0" viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0">
           <text style="font-weight:400;font-size:40px;font-family:Open Gorton;fill:#2e2f32;white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="64.08" text-anchor="middle" xml:space="preserve"><tspan>0</tspan></text>
@@ -1516,9 +1516,9 @@
       </g>
     </g>
     </g>
-  <g class="keycap-color-bg_focus" mask="url(#_1u-base)" transform="translate(1600, 92.1)">
+  <g class="keycap-color-bg_focus" mask="url(#_1u-base)" transform="translate(2688, 154.72799999999998)">
     <g id="keycap-unshaded-55">
-      <rect class="surface" width="100" height="100" fill="#2e2f32" />
+      <rect class="surface" x="-34" y="-34" width="168" height="168" fill="#2e2f32" />
       <g transform="">
         <svg id="icon_~" viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0">
           <g>
@@ -1532,9 +1532,9 @@
       </g>
     </g>
     </g>
-  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(1600, 192.1)">
+  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(2688, 322.72799999999995)">
     <g id="keycap-unshaded-56">
-      <rect class="surface" width="100" height="100" fill="#f5f7f7" />
+      <rect class="surface" x="-34" y="-34" width="168" height="168" fill="#f5f7f7" />
       <g transform="">
         <svg id="icon_i_with_^" viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0">
           <text style="font-weight: 400; font-size: 40px; font-family: &quot;Open Gorton&quot;; fill: #2e2f32; white-space: pre;" x="50" y="64.08" text-anchor="middle" xml:space="preserve"><tspan>I</tspan></text>
@@ -1549,9 +1549,9 @@
       </g>
     </g>
     </g>
-  <g class="keycap-color-bg_focus" mask="url(#_1u-base)" transform="translate(1600, 292.09999999999997)">
+  <g class="keycap-color-bg_focus" mask="url(#_1u-base)" transform="translate(2688, 490.72799999999995)">
     <g id="keycap-unshaded-57">
-      <rect class="surface" width="100" height="100" fill="#2e2f32" />
+      <rect class="surface" x="-34" y="-34" width="168" height="168" fill="#2e2f32" />
       <g transform="">
         <svg id="icon_fn" viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0">
           <g style="" transform="matrix(1, 0, 0, 1, 9.918955, -0.489979)">
@@ -1591,9 +1591,9 @@
       </g>
     </g>
     </g>
-  <g class="keycap-color-bg_focus" mask="url(#_1u-base)" transform="translate(1600, 392.09999999999997)">
+  <g class="keycap-color-bg_focus" mask="url(#_1u-base)" transform="translate(2688, 658.728)">
     <g id="keycap-unshaded-58">
-      <rect class="surface" width="100" height="100" fill="#2e2f32" />
+      <rect class="surface" x="-34" y="-34" width="168" height="168" fill="#2e2f32" />
       <g transform="">
         <svg id="icon" viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0">
           <text style="font-weight:400;font-size:40px;font-family:Open Gorton;fill:#2e2f32;white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="64.08" text-anchor="middle" xml:space="preserve"><tspan /></text>
@@ -1604,9 +1604,9 @@
       </g>
     </g>
     </g>
-  <g class="keycap-color-bg_focus" mask="url(#_1u-base)" transform="translate(1700, -1.8041124150158794e-14)">
+  <g class="keycap-color-bg_focus" mask="url(#_1u-base)" transform="translate(2856, -3.0309088572266774e-14)">
     <g id="keycap-unshaded-59">
-      <rect class="surface" width="100" height="100" fill="#2e2f32" />
+      <rect class="surface" x="-34" y="-34" width="168" height="168" fill="#2e2f32" />
       <g transform="">
         <svg id="icon_reset" viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0">
           <g>
@@ -1643,9 +1643,9 @@
       </g>
     </g>
     </g>
-  <g class="keycap-color-bg_focus" mask="url(#_1u-base)" transform="translate(1700, 99.99999999999997)">
+  <g class="keycap-color-bg_focus" mask="url(#_1u-base)" transform="translate(2856, 167.99999999999997)">
     <g id="keycap-unshaded-60">
-      <rect class="surface" width="100" height="100" fill="#2e2f32" />
+      <rect class="surface" x="-34" y="-34" width="168" height="168" fill="#2e2f32" />
       <g transform="">
         <svg id="icon_numpad_right" viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible" x="0" y="0">
           <g transform="translate(470.83, 415.761) matrix(0.064586, -0.020245, 0.020245, 0.064585, -440.62661, -372.674279) translate(-470.83, -415.761)">
@@ -1666,11 +1666,11 @@
       </g>
     </g>
     </g>
-  <g class="keycap-color-bg_focus" mask="url(#_1u-base)" transform="translate(1700, 199.99999999999997)">
+  <g class="keycap-color-bg_focus" mask="url(#_1u-base)" transform="translate(2856, 335.99999999999994)">
     <g id="keycap-unshaded-61">
-      <rect class="surface" width="100" height="100" fill="#2e2f32" />
+      <rect class="surface" x="-34" y="-34" width="168" height="168" fill="#2e2f32" />
       <g transform="">
-        <svg id="icon_enter" viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" transform="matrix(1.0000000000000002, 0, 0, 1.0000000000000002, 1.290542755007266, -1.5872811004057557)" x="0" y="0">
+        <svg id="icon_enter" viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" transform="matrix(1, 0, 0, 1, -0.5263905255070966, 64.84558451215433)" x="0" y="0">
           <g transform="matrix(1, 0, 0, 1, 14.762421, 4.016501)">
             <title>Enter</title>
             <path style="fill: none; stroke-linecap: round; stroke-linejoin: round; stroke-width: 3px; stroke: #e1d9f2;" d="M 59.361 45.707 L 59.361 48.588 C 59.361 50.091 58.049 51.261 56.601 51.261 L 37.586 51.261" />
@@ -1679,36 +1679,37 @@
           </g>
           <g style="" transform="matrix(-1, 0.118846, 0, 1, 96.718242, -11.773461)">
             <title>Door</title>
-            <path style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 3px; fill: #e1d9f2;" d="M 57.319 69.514 L -3.282 112.163 L 55.599 105.166 L 70.627 69.466 L 57.319 69.514 Z" />
             <rect x="55.599" y="41.676" width="16.419" height="28.054" style="fill: #e1d9f2;">
               <title>BG</title>
             </rect>
-            <use href="#paw_print" width="7" height="6.5" style="fill:#a49bc2" transform="translate(3.5, 3.25) matrix(-0.365738, -0.078168, -0.161414, 0.318415, 66.102607, 56.395827) translate(-3.5, -3.25)">
+            <use href="#paw_print" width="7" height="6.5" style="fill:#a49bc2" transform="translate(3.5, 3.25) matrix(-0.36573800444602966, -0.07816801965236664, -0.1614139825105667, 0.3184150159358978, 66.10260655988024, 56.39582725129191) translate(-3.5, -3.25)">
               <title>Paw</title>
             </use>
-            <use href="#paw_print" width="7" height="6.5" style="fill:#a49bc2" transform="translate(3.5, 3.25) matrix(-0.455899, -0.097438, -0.201205, 0.39691, 63.80371, 61.46461) translate(-3.5, -3.25)">
+            <use href="#paw_print" width="7" height="6.5" style="fill:#a49bc2" transform="translate(3.5, 3.25) matrix(-0.45589905977249146, -0.0974380150437355, -0.2012050300836563, 0.39691007137298584, 63.80370981092097, 61.464609968189144) translate(-3.5, -3.25)">
               <title>Paw</title>
             </use>
             <polyline style="stroke-linejoin: round; stroke-width: 2.99993px; stroke: #a49bc2; fill: none;" points="72.018 69.73 72.018 41.676 55.599 41.676 55.599 69.73">
               <title>Frame</title>
             </polyline>
           </g>
-          <use href="#paw_print" width="7" height="6.5" style="fill:#a49bc2" transform="translate(3.5, 3.25) matrix(0.534611, -0.177797, 0.235944, 0.437396, 31.107574, 61.582667) translate(-3.5, -3.25)">
+          <path style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 3px; fill: #e1d9f2;" d="M 39.3992 64.5527 L 100 99.9995 L 41.1192 100 L 26.0912 66.0863 L 39.3992 64.5527 Z" />
+          <path style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px; fill: #e1d9f2;" d="M 41.1194 100 L 100.001 100 L 100.001 100.001 L 100.001 100 L 100.001 100.001 L 134 119.889 L 134 234 L 100 234 L 100 232.948 L 41.1194 100 Z" />
+          <use href="#paw_print" width="7" height="6.5" style="fill:#a49bc2" transform="translate(3.5, 3.25) matrix(0.53461092710495, -0.17779704928398132, 0.2359439581632614, 0.43739598989486694, 31.107573913625693, 61.58266721708117) translate(-3.5, -3.25)">
             <title>Paw</title>
           </use>
-          <use href="#paw_print" width="7" height="6.5" style="fill:#a49bc2" transform="translate(3.5, 3.25) matrix(0.581571, -0.193414, 0.256669, 0.475816, 32.646167, 67.39868) translate(-3.5, -3.25)">
+          <use href="#paw_print" width="7" height="6.5" style="fill:#a49bc2" transform="translate(3.5, 3.25) matrix(0.5815709233283997, -0.19341400265693665, 0.2566690146923065, 0.4758160710334778, 32.64616717869515, 67.39868045056976) translate(-3.5, -3.25)">
             <title>Paw</title>
           </use>
-          <use href="#paw_print" width="7" height="6.5" style="fill:#a49bc2" transform="translate(3.5, 3.25) matrix(0.642949, -0.213827, 0.283758, 0.526033, 39.262611, 71.816466) translate(-3.5, -3.25)">
+          <use href="#paw_print" width="7" height="6.5" style="fill:#a49bc2" transform="translate(3.5, 3.25) matrix(0.6429489254951477, -0.21382702887058258, 0.2837579846382141, 0.5260328650474548, 39.26261069590213, 71.81646601709637) translate(-3.5, -3.25)">
             <title>Paw</title>
           </use>
-          <use href="#paw_print" width="7" height="6.5" style="fill:#a49bc2" transform="translate(3.5, 3.25) matrix(0.772737, -0.25699, 0.341038, 0.63222, 41.771396, 80.567008) translate(-3.5, -3.25)">
+          <use href="#paw_print" width="7" height="6.5" style="fill:#a49bc2" transform="translate(3.5, 3.25) matrix(0.7727368474006653, -0.2569900155067444, 0.3410379886627197, 0.6322199106216431, 41.771395899407366, 80.5670075496002) translate(-3.5, -3.25)">
             <title>Paw</title>
           </use>
-          <use href="#paw_print" width="7" height="6.5" style="fill:#a49bc2" transform="translate(3.5, 3.25) matrix(0.858079, -0.285372, 0.378703, 0.702043, 50.584037, 86.976546) translate(-3.5, -3.25)">
+          <use href="#paw_print" width="7" height="6.5" style="fill:#a49bc2" transform="translate(3.5, 3.25) matrix(0.8580790162086487, -0.2853719890117645, 0.37870296835899353, 0.7020429372787476, 50.58403688760182, 86.97654570547026) translate(-3.5, -3.25)">
             <title>Paw</title>
           </use>
-          <use href="#paw_print" width="7" height="6.5" style="fill:#a49bc2" transform="translate(3.5, 3.25) matrix(0.946695, -0.314843, 0.417813, 0.774545, 51.935447, 96.250677) translate(-3.5, -3.25)">
+          <use href="#paw_print" width="7" height="6.5" style="fill:#a49bc2" transform="translate(3.5, 3.25) matrix(0.9466950297355652, -0.3148430585861206, 0.4178130626678467, 0.7745450139045715, 51.935446775849414, 96.25067731661971) translate(-3.5, -3.25)">
             <title>Paw</title>
           </use>
         </svg>
@@ -1718,26 +1719,27 @@
       </g>
     </g>
     </g>
-  <g class="keycap-color-bg_focus" mask="url(#_1u-base)" transform="translate(1700, 300)">
+  <g class="keycap-color-bg_focus" mask="url(#_1u-base)" transform="translate(2856, 504)">
     <g id="keycap-unshaded-62">
-      <rect class="surface" width="100" height="100" fill="#2e2f32" />
+      <rect class="surface" x="-34" y="-34" width="168" height="168" fill="#2e2f32" />
       <g transform="">
         <svg id="icon_below_enter" viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible" transform="matrix(1, 0, 0, 1, -71.71042927940482, -70.46318299412367)" x="0" y="0">
           <path style="stroke-linecap:round;stroke-linejoin:round;stroke-width:3px;fill:#e1d9f2" d="M 39.399 -35.448 L 100 -0.001 L 41.119 0 L 26.091 -33.914 L 39.399 -35.448 Z" />
           <path style="stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;fill:#e1d9f2" d="M 85.431 100 L 100 100 L 99.975 -0.209 L 41.119 0 L 41.119 0 L 85.431 100 Z" />
-          <use href="#paw_print-0" width="7" height="6.5" style="fill:#a49bc2" transform="translate(3.5, 3.25) matrix(0.946695, -0.314843, 0.417813, 0.774545, 51.971324, -3.730776) translate(-3.5, -3.25)">
+          <path style="stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;fill:#e1d9f2" d="M 41.119 0 L 100.0007 0 L 100.001 0 L 100.001 0.0006 L 100.0007 0.0004 L 100.001 0.0006 L 134 19.8891 L 134 134 L 100 134 L 100 132.9484 L 41.119 0 Z" />
+          <use href="#paw_print-0" width="7" height="6.5" style="fill:#a49bc2" transform="translate(3.5, 3.25) matrix(0.9466950297355652, -0.3148430287837982, 0.4178130328655243, 0.7745450139045715, 51.97132400299913, -3.73077600567433) translate(-3.5, -3.25)">
             <title>Paw</title>
           </use>
-          <use href="#paw_print-0" width="7" height="6.5" style="fill:#a49bc2" transform="translate(3.5, 3.25) matrix(1.077004, -0.35818, 0.475323, 0.881158, 65.741317, 6.484207) translate(-3.5, -3.25)">
+          <use href="#paw_print-0" width="7" height="6.5" style="fill:#a49bc2" transform="translate(3.5, 3.25) matrix(1.0770039558410645, -0.3581799864768982, 0.47532302141189575, 0.8811579942703247, 65.74131658823218, 6.484207038828981) translate(-3.5, -3.25)">
             <title>Paw</title>
           </use>
-          <use href="#paw_print-0" width="7" height="6.5" style="fill:#a49bc2" transform="translate(3.5, 3.25) matrix(1.133208, -0.531712, 0.634658, 0.903545, 67.208785, 21.610754) translate(-3.5, -3.25)">
+          <use href="#paw_print-0" width="7" height="6.5" style="fill:#a49bc2" transform="translate(3.5, 3.25) matrix(1.1332080364227295, -0.531711995601654, 0.6346579790115356, 0.903545081615448, 67.20878482403991, 21.61075363148149) translate(-3.5, -3.25)">
             <title>Paw</title>
           </use>
-          <use href="#paw_print-0" width="7" height="6.5" style="fill:#a49bc2" transform="translate(3.5, 3.25) matrix(1.239321, -0.445018, 0.575507, 1.008951, 82.547545, 33.436172) translate(-3.5, -3.25)">
+          <use href="#paw_print-0" width="7" height="6.5" style="fill:#a49bc2" transform="translate(3.5, 3.25) matrix(1.239320993423462, -0.4450179934501648, 0.5755069851875305, 1.00895094871521, 82.54754492918073, 33.43617189497069) translate(-3.5, -3.25)">
             <title>Paw</title>
           </use>
-          <use href="#paw_print-0" width="7" height="6.5" style="fill:#a49bc2" transform="translate(3.5, 3.25) matrix(1.354493, -0.727411, 0.838409, 1.065983, 87.707472, 53.108134) translate(-3.5, -3.25)">
+          <use href="#paw_print-0" width="7" height="6.5" style="fill:#a49bc2" transform="translate(3.5, 3.25) matrix(1.3544930219650269, -0.7274110317230225, 0.8384090662002563, 1.0659830570220947, 87.7074722062362, 53.10813428566091) translate(-3.5, -3.25)">
             <title>Paw</title>
           </use>
         </svg>
@@ -1747,13 +1749,12 @@
       </g>
     </g>
     </g>
-  <g class="keycap-color-bg_focus" mask="url(#_1u-base)" transform="translate(1700, 400)">
+  <g class="keycap-color-bg_focus" mask="url(#_1u-base)" transform="translate(2856, 672)">
     <g id="keycap-unshaded-63">
-      <rect class="surface" width="100" height="100" fill="#2e2f32" />
+      <rect class="surface" x="-34" y="-34" width="168" height="168" fill="#2e2f32" />
       <g transform="">
         <svg id="icon_below_enter2" viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" transform="matrix(1, 0, 0, 1, -71.71042927940482, -70.46318299412367)" x="0" y="0">
-          <path style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px; fill: #e1d9f2;" d="M 85.431 0 L 100 0 L 99.975 -100.21 L 41.119 -100 L 85.431 0 Z" />
-          <path style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px; fill: #e1d9f2;" d="M 100 32.878 L 85.431 0 L 100 0 Z" />
+          <path style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px; fill: #e1d9f2;" d="M 134 109.606 L 70.3648 -34 L 134 -34 L 134 109.606 Z" />
         </svg>
         <path style="pointer-events:none" d="M 50 -40 C 50 -45.5 45.5 -50 40 -50 L -40 -50 C -45.5 -50 -50 -45.5 -50 -40 L -50 40 C -50 45.5 -45.5 50 -40 50 L 40 50 C 45.5 50 50 45.5 50 40 L 50 -40 Z" transform=" translate(50, 50) scale(0.6590038314000001)" stroke="red" stroke-opacity="0.5" fill="none" inkscape:label="Outline" class="outline" visibility="visible">
           <title>Outline</title>
@@ -1761,9 +1762,9 @@
       </g>
     </g>
     </g>
-  <g class="keycap-color-bg_focus" mask="url(#_1u-base)" transform="translate(1400, 550)">
+  <g class="keycap-color-bg_focus" mask="url(#_1u-base)" transform="translate(2352, 924)">
     <g id="keycap-unshaded-64">
-      <rect class="surface" width="100" height="100" fill="#2e2f32" />
+      <rect class="surface" x="-34" y="-34" width="168" height="168" fill="#2e2f32" />
       <g transform="">
         <svg id="icon" viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0">
           <text style="font-weight:400;font-size:40px;font-family:Open Gorton;fill:#2e2f32;white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="64.08" text-anchor="middle" xml:space="preserve"><tspan /></text>
@@ -1774,9 +1775,9 @@
       </g>
     </g>
     </g>
-  <g class="keycap-color-bg_focus" mask="url(#_1u-base)" transform="translate(1500, 550)">
+  <g class="keycap-color-bg_focus" mask="url(#_1u-base)" transform="translate(2520, 924)">
     <g id="keycap-unshaded-65">
-      <rect class="surface" width="100" height="100" fill="#2e2f32" />
+      <rect class="surface" x="-34" y="-34" width="168" height="168" fill="#2e2f32" />
       <g transform="">
         <svg id="icon" viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0">
           <text style="font-weight:400;font-size:40px;font-family:Open Gorton;fill:#2e2f32;white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="64.08" text-anchor="middle" xml:space="preserve"><tspan /></text>
@@ -1787,9 +1788,9 @@
       </g>
     </g>
     </g>
-  <g class="keycap-color-bg_focus" mask="url(#_1u-base)" transform="translate(1600, 550)">
+  <g class="keycap-color-bg_focus" mask="url(#_1u-base)" transform="translate(2688, 924)">
     <g id="keycap-unshaded-66">
-      <rect class="surface" width="100" height="100" fill="#2e2f32" />
+      <rect class="surface" x="-34" y="-34" width="168" height="168" fill="#2e2f32" />
       <g transform="">
         <svg id="icon" viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0">
           <text style="font-weight:400;font-size:40px;font-family:Open Gorton;fill:#2e2f32;white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="64.08" text-anchor="middle" xml:space="preserve"><tspan /></text>
@@ -1800,9 +1801,9 @@
       </g>
     </g>
     </g>
-  <g class="keycap-color-bg_focus" mask="url(#_1u-base)" transform="translate(1700, 550)">
+  <g class="keycap-color-bg_focus" mask="url(#_1u-base)" transform="translate(2856, 924)">
     <g id="keycap-unshaded-67">
-      <rect class="surface" width="100" height="100" fill="#2e2f32" />
+      <rect class="surface" x="-34" y="-34" width="168" height="168" fill="#2e2f32" />
       <g transform="">
         <svg id="icon" viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0">
           <text style="font-weight:400;font-size:40px;font-family:Open Gorton;fill:#2e2f32;white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="64.08" text-anchor="middle" xml:space="preserve"><tspan /></text>
@@ -1813,9 +1814,9 @@
       </g>
     </g>
     </g>
-  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(1400, 650)">
+  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(2352, 1092)">
     <g id="keycap-unshaded-68">
-      <rect class="surface" width="100" height="100" fill="#f5f7f7" />
+      <rect class="surface" x="-34" y="-34" width="168" height="168" fill="#f5f7f7" />
       <g transform="">
         <svg id="icon" viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0">
           <text style="font-weight:400;font-size:40px;font-family:Open Gorton;fill:#2e2f32;white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="64.08" text-anchor="middle" xml:space="preserve"><tspan /></text>
@@ -1826,9 +1827,9 @@
       </g>
     </g>
     </g>
-  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(1500, 650)">
+  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(2520, 1092)">
     <g id="keycap-unshaded-69">
-      <rect class="surface" width="100" height="100" fill="#f5f7f7" />
+      <rect class="surface" x="-34" y="-34" width="168" height="168" fill="#f5f7f7" />
       <g transform="">
         <svg id="icon" viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0">
           <text style="font-weight:400;font-size:40px;font-family:Open Gorton;fill:#2e2f32;white-space:normal;white-space-collapse:collapse;text-wrap:nowrap;" x="50" y="64.08" text-anchor="middle" xml:space="preserve"><tspan /></text>
@@ -1839,9 +1840,9 @@
       </g>
     </g>
     </g>
-  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(1600, 650)">
+  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(2688, 1092)">
     <g id="keycap-unshaded-70">
-      <rect class="surface" width="100" height="100" fill="#f5f7f7" />
+      <rect class="surface" x="-34" y="-34" width="168" height="168" fill="#f5f7f7" />
       <g transform="">
         <svg id="icon_~" viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0">
           <g>
@@ -1855,9 +1856,9 @@
       </g>
     </g>
     </g>
-  <g class="keycap-color-bg_focus" mask="url(#_1u-base)" transform="translate(1700, 650)">
+  <g class="keycap-color-bg_focus" mask="url(#_1u-base)" transform="translate(2856, 1092)">
     <g id="keycap-unshaded-71">
-      <rect class="surface" width="100" height="100" fill="#2e2f32" />
+      <rect class="surface" x="-34" y="-34" width="168" height="168" fill="#2e2f32" />
       <g transform="">
         <svg id="icon_rshift" viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0">
           <path d="M 18.3441 60.8845 H 29.5441 L 29.5441 53.6845 L 43.1441 65.6845 L 29.5441 77.6845 L 29.5441 70.4845 H 18.3441 V 60.8845 Z" bx:shape="arrow 18.3441 53.6845 24.8 24 9.6 13.6 0 1@9c65ec35" style="fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:2.5px;stroke:#e1d9f2" transform="translate(30.744100000000003, 65.6845) matrix(0, -1, 1, 0, 31.455896, -28.284499) translate(-30.744100000000003, -65.6845)">
@@ -1871,12 +1872,12 @@
       </g>
     </g>
     </g>
-  <g class="keycap-color-bg_accent" mask="url(#_2u-base)" transform="translate(702.7424780626922, 345.9911113762044) rotate(50)">
+  <g class="keycap-color-bg_accent" mask="url(#_2u-base)" transform="translate(1180.607363145323, 581.2650671120234) rotate(50)">
     <g id="keycap-unshaded-72">
-      <rect class="surface" width="200" height="100" fill="#e1d9f2" />
+      <rect class="surface" x="-34" y="-34" width="268" height="168" fill="#e1d9f2" />
       <g transform="">
         <svg id="icon_cat_face" viewBox="0 0 200 100" width="200.0" height="100.0" style="overflow: visible;" transform="matrix(0.9742441177368163, 0, 0, 0.9742441177368163, -3.030572342170558, 3.4332079974112375)" x="0" y="0">
-          <path style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 3px; fill: #f5f7f7; stroke: #2e2f32;" d="M 30.9758 100 C 30.9758 100 34.1473 44.9319 54.4983 38.0379 C 55.8028 32.0919 59.9662 26.332 62.3333 26.332 C 65.0506 26.332 67.933 28.3765 70.3884 34.3222 C 87.7332 30.9913 113.035 31.0845 130.417 34.3222 C 133.749 28.7214 135.908 26.2699 138.849 26.2699 C 141.797 26.2699 145.201 32.1636 147.567 37.7285 C 166.65 45.6689 169.221 100 169.221 100">
+          <path style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 3px; fill: #f5f7f7; stroke: #2e2f32;" d="M 28.8841 134 L 30.9758 100 C 30.9758 100 34.1473 44.9319 54.4983 38.0379 C 55.8028 32.0919 59.9662 26.332 62.3333 26.332 C 65.0506 26.332 67.933 28.3765 70.3884 34.3222 C 87.7332 30.9913 113.035 31.0845 130.417 34.3222 C 133.749 28.7214 135.908 26.2699 138.849 26.2699 C 141.797 26.2699 145.201 32.1636 147.567 37.7285 C 166.65 45.6689 169.221 100 169.221 100 L 171.6012 134">
             <title>Body</title>
           </path>
           <g transform="matrix(1, 0, 0, 1, 0, 7)">
@@ -1904,9 +1905,9 @@
       </g>
     </g>
     </g>
-  <g class="keycap-color-bg_focus" mask="url(#_1.5u-base)" transform="translate(626.1380337507944, 410.2698723448584) rotate(50) translate(100, 0) rotate(90)">
+  <g class="keycap-color-bg_focus" mask="url(#_1.5u-base)" transform="translate(1051.9118967013346, 689.2533855393621) rotate(50) translate(100, 0) rotate(90)">
     <g id="keycap-unshaded-73">
-      <rect class="surface" width="150" height="100" fill="#2e2f32" />
+      <rect class="surface" x="-34" y="-34" width="218" height="168" fill="#2e2f32" />
       <g transform="translate(0, 100) rotate(-90)">
         <svg id="icon_shift" viewBox="0 0 100 150" width="100.0" height="150.0" style="overflow:visible;" transform="matrix(1, 0, 0, 1, 1.768546192413307, -11.20305138692285)" x="0" y="0">
           <path d="M 22.9301 76.1056 H 36.9301 L 36.9301 67.1056 L 53.9301 82.1056 L 36.9301 97.1056 L 36.9301 88.1056 H 22.9301 V 76.1056 Z" bx:shape="arrow 22.9301 67.1056 31 30 12 17 0 1@1aaf8013" style="fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:3px;stroke:#e1d9f2" transform="translate(38.4301, 82.1056) matrix(0, -1, 1, 0, 11.569897, -35.1056) translate(-38.4301, -82.1056)" />
@@ -1933,9 +1934,9 @@
       </g>
     </g>
     </g>
-  <g class="keycap-color-bg_focus" mask="url(#_1.5u-base)" transform="translate(690.4167947194483, 486.87431665675615) rotate(50) translate(100, 0) rotate(90)">
+  <g class="keycap-color-bg_focus" mask="url(#_1.5u-base)" transform="translate(1159.9002151286732, 817.9488519833503) rotate(50) translate(100, 0) rotate(90)">
     <g id="keycap-unshaded-74">
-      <rect class="surface" width="150" height="100" fill="#2e2f32" />
+      <rect class="surface" x="-34" y="-34" width="218" height="168" fill="#2e2f32" />
       <g transform="translate(0, 100) rotate(-90)">
         <svg id="icon_ctrl" viewBox="0 0 100 150" width="100.0" height="150.0" style="overflow:visible;" transform="matrix(1, 0, 0, 1, 1.768546192413307, -11.20305138692285)" x="0" y="0">
           <g transform="matrix(1, 0, 0, 1, 0, 4)">
@@ -1959,9 +1960,9 @@
       </g>
     </g>
     </g>
-  <g class="keycap-color-bg_focus" mask="url(#_1.5u-base)" transform="translate(754.6955556881022, 563.478760968654) rotate(50) translate(100, 0) rotate(90)">
+  <g class="keycap-color-bg_focus" mask="url(#_1.5u-base)" transform="translate(1267.888533556012, 946.6443184273387) rotate(50) translate(100, 0) rotate(90)">
     <g id="keycap-unshaded-75">
-      <rect class="surface" width="150" height="100" fill="#2e2f32" />
+      <rect class="surface" x="-34" y="-34" width="218" height="168" fill="#2e2f32" />
       <g transform="translate(0, 100) rotate(-90)">
         <svg id="icon_alt" viewBox="0 0 100 150" width="100.0" height="150.0" style="overflow: visible;" transform="matrix(1, 0, 0, 1, 1.768546192413307, -11.20305138692285)" x="0" y="0">
           <g transform="matrix(1, 0, 0, 1, 0, 4)">
@@ -1986,9 +1987,9 @@
       </g>
     </g>
     </g>
-  <g class="keycap-color-bg_accent" mask="url(#_2u-base)" transform="translate(968.6999999999999, 499.2) rotate(-50)">
+  <g class="keycap-color-bg_accent" mask="url(#_2u-base)" transform="translate(1627.416, 838.656) rotate(-50)">
     <g id="keycap-unshaded-76">
-      <rect class="surface" width="200" height="100" fill="#e1d9f2" />
+      <rect class="surface" x="-34" y="-34" width="268" height="168" fill="#e1d9f2" />
       <g transform="">
         <svg id="icon_meta" viewBox="0 0 200 100" width="200.0" height="100.0" style="overflow:visible" transform="matrix(1, 0, 0, 0.9999999999999999, 14.785905464222736, 9.023905317410456)" x="0" y="0">
           <use href="#paw_print-1" width="7" height="6.5" style="fill:#a49bc2" transform="translate(3.5, 3.25) matrix(-0.5253769159317017, -1.3284560441970825, -1.4781439304351807, 0.14688000082969666, 23.3486858059951, 58.30745594068291) translate(-3.5, -3.25)">
@@ -2099,9 +2100,9 @@
       </g>
     </g>
     </g>
-  <g class="keycap-color-bg_focus" mask="url(#_1.5u-base)" transform="translate(981.0256833432438, 640.0832052805517) rotate(-50) translate(100, 0) rotate(90)">
+  <g class="keycap-color-bg_focus" mask="url(#_1.5u-base)" transform="translate(1648.1231480166496, 1075.3397848713269) rotate(-50) translate(100, 0) rotate(90)">
     <g id="keycap-unshaded-77">
-      <rect class="surface" width="150" height="100" fill="#2e2f32" />
+      <rect class="surface" x="-34" y="-34" width="218" height="168" fill="#2e2f32" />
       <g transform="translate(0, 100) rotate(-90)">
         <svg id="icon_umlaut" viewBox="0 0 100 150" width="100.0" height="150.0" style="overflow:visible" transform="matrix(0.9999999999999999, 0, 0, 1, 1.9604572475505542, -11.861032098774828)" x="0" y="0">
           <use href="#paw_print-2" width="7" height="6.5" style="fill:#a49bc2" transform="translate(3.5, 3.25) matrix(-1.4119009971618652, -0.21761199831962585, -0.21761199831962585, 1.4119060039520264, 102.14889346003379, 19.583110463548135) translate(-3.5, -3.25)">
@@ -2153,9 +2154,9 @@
       </g>
     </g>
     </g>
-  <g class="keycap-color-bg_focus" mask="url(#_1.5u-base)" transform="translate(1045.304444311898, 563.478760968654) rotate(-50) translate(100, 0) rotate(90)">
+  <g class="keycap-color-bg_focus" mask="url(#_1.5u-base)" transform="translate(1756.1114664439883, 946.6443184273387) rotate(-50) translate(100, 0) rotate(90)">
     <g id="keycap-unshaded-78">
-      <rect class="surface" width="150" height="100" fill="#2e2f32" />
+      <rect class="surface" x="-34" y="-34" width="218" height="168" fill="#2e2f32" />
       <g transform="translate(0, 100) rotate(-90)">
         <svg id="icon_space" viewBox="0 0 100 150" width="100.0" height="150.0" style="overflow:visible" x="0" y="0">
           <path d="M 65 54.5 L 65 57.5 L 35 57.5 L 35 54.5" style="fill:none;stroke-width:3px;stroke-linecap:round;stroke-linejoin:round;stroke:#e1d9f2">
@@ -2194,9 +2195,9 @@
       </g>
     </g>
     </g>
-  <g class="keycap-color-bg_focus" mask="url(#_1.5u-base)" transform="translate(1109.5832052805517, 486.87431665675615) rotate(-50) translate(100, 0) rotate(90)">
+  <g class="keycap-color-bg_focus" mask="url(#_1.5u-base)" transform="translate(1864.099784871327, 817.9488519833503) rotate(-50) translate(100, 0) rotate(90)">
     <g id="keycap-unshaded-79">
-      <rect class="surface" width="150" height="100" fill="#2e2f32" />
+      <rect class="surface" x="-34" y="-34" width="218" height="168" fill="#2e2f32" />
       <g transform="translate(0, 100) rotate(-90)">
         <svg id="icon_nav" viewBox="0 0 100 150" width="100.0" height="150.0" style="overflow: visible;" x="0" y="0">
           <use href="#symbol-0" width="24" height="30" style="fill:#eeeaf3" transform="translate(12.0, 15.0) matrix(0.824957549571991, 0.8249569535255432, -0.7542475461959839, 0.7542469501495361, 37.99999551433864, 26.999995708565113) translate(-12.0, -15.0)">
