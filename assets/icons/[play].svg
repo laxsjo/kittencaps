@@ -82,15 +82,13 @@
       <stop style="stop-color:#000000;"/>
     </linearGradient>
     <pattern id="pattern-0" patternUnits="userSpaceOnUse" width="40" height="40" bx:pinned="true" viewBox="0 0 40 40">
-      <title>Waves</title>
-      <rect width="40" height="40" style="stroke-linecap: round; stroke-linejoin: bevel; stroke-width: 10px; fill: url(&quot;#bg_focus&quot;); pointer-events: none;"/>
-      <path style="fill: none; stroke-linejoin: round; stroke-linecap: square; stroke: url(&quot;#bg_accent&quot;); stroke-width: 4.5px;" d="M 20 -20 C 15 -15 13 -17 8 -12 C 3 -7 5 -5 0 0 C -5 5 -7 3 -12 8 C -17 13 -15 15 -20 20"/>
-      <path style="fill: none; stroke-linejoin: round; stroke-linecap: square; stroke: url(&quot;#bg_accent&quot;); stroke-width: 4.5px;" d="M 30 -10 C 25 -5 23 -7 18 -2 C 13 3 15 5 10 10 C 5 15 3 13 -2 18 C -7 23 -5 25 -10 30"/>
-      <path style="fill: none; stroke-linejoin: round; stroke-linecap: square; stroke: url(&quot;#bg_accent&quot;); stroke-width: 4.5px;" d="M 40 0 C 35 5 33 3 28 8 C 23 13 25 15 20 20 C 15 25 13 23 8 28 C 3 33 5 35 0 40"/>
-      <path style="fill: none; stroke-linejoin: round; stroke-linecap: square; stroke: url(&quot;#bg_accent&quot;); stroke-width: 4.5px;" d="M 50 10 C 45 15 43 13 38 18 C 33 23 35 25 30 30 C 25 35 23 33 18 38 C 13 43 15 45 10 50"/>
-      <path style="fill: none; stroke-linejoin: round; stroke-linecap: square; stroke: url(&quot;#bg_accent&quot;); stroke-width: 4.5px;" d="M 60 20 C 55 25 53 23 48 28 C 43 33 45 35 40 40 C 35 45 33 43 28 48 C 23 53 25 55 20 60"/>
+      <title>Stripes</title>
+      <rect width="40" height="40" style="stroke-linecap: round; stroke-linejoin: bevel; stroke-width: 10px; fill: url(&quot;#bg_focus&quot;);"/>
+      <line style="fill: none; stroke-linejoin: round; stroke-linecap: square; stroke-width: 9.5px; stroke: url(&quot;#bg_accent&quot;);" x1="40" y1="0" x2="0" y2="40"/>
+      <line style="fill: none; stroke-linejoin: round; stroke-linecap: square; stroke-width: 9.5px; stroke: url(&quot;#bg_accent&quot;);" x1="0" y1="0" x2="-40" y2="40"/>
+      <line style="fill: none; stroke-linejoin: round; stroke-linecap: square; stroke-width: 9.5px; stroke: url(&quot;#bg_accent&quot;);" x1="80" y1="0" x2="40" y2="40"/>
     </pattern>
-    <pattern id="pattern-0-0" href="#pattern-0" patternTransform="matrix(0, -1.8, 1.8, 0, 5, 95)"/>
+    <pattern id="pattern-0-0" href="#pattern-0" patternTransform="matrix(1.26, 0, 0, 1.26, -113.000004, -13.000001)"/>
   </defs>
   <style type="text/css" id="font_style">
     @font-face {
@@ -108,7 +106,7 @@
     <title>BG</title>
   </rect>
   <svg id="icon" viewBox="0 0 100 100" width="100" height="100" style="overflow:visible;">
-    <rect width="168" height="168" style="stroke-linecap: round; stroke-linejoin: bevel; stroke-width: 10px; fill: url(&quot;#pattern-0-0&quot;);" x="-34" y="-34">
+    <rect width="168" height="168" style="stroke-linecap: round; stroke-linejoin: bevel; stroke-width: 10px; fill: url(&quot;#pattern-0-0&quot;);" x="-134" y="-34" transform="matrix(-1, 0, 0, 1, 0, 0)">
       <title>Pattern</title>
     </rect>
     <g style="">
