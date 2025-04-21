@@ -24,14 +24,14 @@ def main() -> None:
         
         shell.run_command_print_exit_fail(
             "just", "generate-keycaps",
-            f"\"{layout.stem}\"",
-            f"\"{theme.stem}\"",
+            f"{layout.stem}",
+            f"{theme.stem}",
         )
         
         shell.run_command_print_exit_fail(
             "just", "generate-render-scene",
-            f"\"{layout.stem}\"",
-            f"\"{theme.stem}\"",
+            f"{layout.stem}",
+            f"{theme.stem}",
         )
     
     console.print(f"\n[bold cyan]Updating icon SVG colors...[/bold cyan]")

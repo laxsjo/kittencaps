@@ -53,20 +53,20 @@ edit-icon +$names:
         fi
     done
 
-generate-keycaps layout="moonlander-mk1" theme="standard":
+generate-keycaps $layout="moonlander-mk1" $theme="standard":
     python -m src.package_keycaps \
         ./assets/layouts/{{layout}}.json \
-        --theme=./assets/themes/{{theme}}.json \
-        --out=./generated/{{layout}}_{{theme}}
+        --theme="./assets/themes/$theme.json" \
+        --out="./generated/${layout}_${theme}"
 
 # TODO: This command should save the hashes of it's inputs, and only generate a new .blend file if it changes, since creating the blend file is non-deterministic.
-generate-render-scene layout="moonlander-mk1" theme="standard":
+generate-render-scene $layout="moonlander-mk1" $theme="standard":
     BLENDER_SYSTEM_PYTHON="$VIRTUAL_ENV" PYTHONPATH="$(python -c "import sys; print(\":\".join(sys.path))")" blender \
         assets/templates/render/scene-template.blend \
         --background \
         --python "src/blender/assemble_render_keyboard.py" -- \
-        --directory ./generated/moonlander-mk1_standard/ \
-        --out ./generated/moonlander-mk1_standard/scene.blend
+        --directory "./generated/${layout}_${theme}/" \
+        --out "./generated/${layout}_${theme}/scene.blend"
 
 # Update the palette colors in the specified icon SVG files to match the colors defined in the standard theme. The icon names should be the text in between the [brackets], i.e. to update assets/icons/[tab].svg run `just update-icon-palettes tab`. Default is to update all icons.
 update-icon-palettes *icons="*":
