@@ -92,7 +92,7 @@ def element_resolve_namespaces(element: ET.Element) -> None:
     element.tag = resolve_label(element.tag)
     element.attrib = dict((resolve_label(name), value) for name, value in element.attrib.items())
 
-def tree_resolve_namespaces(tree: ET.ElementTree|ET.Element) -> None:
+def tree_resolve_namespaces(tree: svg.MaybeElementTree) -> None:
     root = tree.getroot() if isinstance(tree, ET.ElementTree) else tree
     
     element_resolve_namespaces(root)
@@ -113,7 +113,7 @@ def make_element(tag: str, attributes: dict[str, str|None], children: Iterable[E
     result.extend(children)
     return result
 
-def element_depth_in_tree(element: ET.Element, tree: ET.ElementTree|ET.Element) -> int | Error[str]:
+def element_depth_in_tree(element: ET.Element, tree: svg.MaybeElementTree) -> int | Error[str]:
     root = tree.getroot() if isinstance(tree, ET.ElementTree) else tree
     if element == root:
         return 0
@@ -143,7 +143,7 @@ def element_depth_in_tree(element: ET.Element, tree: ET.ElementTree|ET.Element) 
 
 # Remove all <linearGradient> elements which link to another with an href, and updated all
 # references to this element.
-def untangle_gradient_links(tree: ET.ElementTree|ET.Element) -> None:
+def untangle_gradient_links(tree: svg.MaybeElementTree) -> None:
     def update_all_refs(root: ET.Element, old_id: str, new_id: str) -> None:
         for child in root.iter():
             child.attrib = dict((name, value.replace(f"url(#{old_id})", f"url(#{new_id})")) for name, value in child.attrib.items())
@@ -303,7 +303,7 @@ def element_add_label(element: ET.Element, label: str) -> None:
     element.set("inkscape:label", label)
     title.text = label
 
-def tree_remove_indentation(tree: ET.ElementTree|ET.Element) -> None:
+def tree_remove_indentation(tree: svg.MaybeElementTree) -> None:
     root = tree.getroot() if isinstance(tree, ET.ElementTree) else tree
     
     for child in root.iter():
@@ -313,7 +313,7 @@ def tree_remove_indentation(tree: ET.ElementTree|ET.Element) -> None:
             child.text = ""
 
 def tree_filtered_indent(
-        tree: ET.Element|ET.ElementTree,
+        tree: svg.MaybeElementTree,
         predicate: Callable[[ET.Element], bool] = lambda element: element.tag not in ["text"],
         space: str="  ",
         level: int=0,
@@ -480,7 +480,7 @@ class SvgSymbolSet:
     # TODO: Wow this is ugly...
     other_elements: list[ET.Element]
     
-    def __init__(self, source: ET.ElementTree) -> None:
+    def __init__(self, source: ET.ElementTree[ET.Element]) -> None:
         tree_resolve_namespaces(source)
         
         elements = source.findall("symbol")
@@ -550,7 +550,7 @@ class SvgStyleBuilder:
         return self
     
     # Indent content properly when inserted under the given parent in it's tree.
-    def calculate_indentation(self, parent: ET.Element, tree: ET.ElementTree|ET.ElementTree, space: str = "  ") -> SvgStyleBuilder:
+    def calculate_indentation(self, parent: ET.Element, tree: svg.MaybeElementTree, space: str = "  ") -> SvgStyleBuilder:
         parent_depth = element_depth_in_tree(parent, tree)
         if isinstance(parent_depth, Error):
             panic(f"Given parent element {parent} is not part of the tree {tree}")
@@ -646,7 +646,7 @@ class SvgDocumentBuilder:
         self.viewbox = viewbox
         return self
     
-    def build(self) -> ET.ElementTree:
+    def build(self) -> ET.ElementTree[ET.Element]:
         if self.viewbox == None:
             panic("You must set a viewbox!")
         viewbox_str = f"{self.viewbox.pos.x:g} {self.viewbox.pos.y:g} {self.viewbox.size.x:g} {self.viewbox.size.y:g}"
@@ -671,7 +671,7 @@ class SvgDocumentBuilder:
         for element in self.elements:
             root.append(element)
         
-        tree = ET.ElementTree(root)
+        tree: ET.ElementTree[ET.Element] = ET.ElementTree(root)
         tree_filtered_indent(tree, lambda element: element.tag not in ["text"], "  ")
         
         return tree

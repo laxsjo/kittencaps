@@ -493,7 +493,7 @@ class KeyboardBuilder():
         self._builder_extra = callback
         return self
     
-    def build(self) -> ET.ElementTree:
+    def build(self) -> ET.ElementTree[ET.Element]:
         bounds = functools.reduce(
             Bounds.combine,
             (component.bounds() for component in self._components),
@@ -559,7 +559,7 @@ class KeyboardBuilder():
         
         return builder.build()
 
-def build_keyboard_svg(keyboard: kle.Keyboard, config: Config, key_templates: SvgSymbolSet) -> ET.ElementTree:
+def build_keyboard_svg(keyboard: kle.Keyboard, config: Config, key_templates: SvgSymbolSet) -> ET.ElementTree[ET.Element]:
     return (KeyboardBuilder(config,  key_templates)\
         .keys(*keyboard.keys)\
         .build())

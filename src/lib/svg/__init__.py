@@ -87,7 +87,7 @@ class ViewBox:
         return Bounds.from_pos_size(self.pos, self.size.as_vec2())
 
 
-type MaybeElementTree = ET.Element | ET.ElementTree
+type MaybeElementTree = ET.Element[str] | ET.ElementTree[ET.Element]
 def resolve_element_tree(tree: MaybeElementTree) -> ET.Element:
     return tree.getroot() if isinstance(tree, ET.ElementTree) else tree
 
@@ -603,7 +603,7 @@ def apply_transform_origin(tree: MaybeElementTree, element: ET.Element, view_box
     
     remove_properties(element, {"transform-box", "transform-origin"})
 
-def tree_to_str(tree: ET.Element|ET.ElementTree) -> str:
+def tree_to_str(tree: MaybeElementTree) -> str:
     tree = tree if isinstance(tree, ET.ElementTree) else ET.ElementTree(tree)
     
     output = io.StringIO()
