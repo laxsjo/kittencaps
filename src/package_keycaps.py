@@ -162,9 +162,9 @@ def main() -> None:
     for outline in svg.tree_find_by_class(result, "outline"):
         outline.set("visibility", "visible")
     
-    log_action_time(
+    log_action(
         "Normalizing texture.svg",
-        lambda: normalize_keyboard_for_texture(result, theme),
+        lambda _: normalize_keyboard_for_texture(result, theme),
     )
     
     with open(out / "texture-outlined.svg", "w") as file:
@@ -180,7 +180,7 @@ def main() -> None:
     
     with open("/dev/null") as null:
         # Convert all text to paths.
-        log_action_time("Converting all text to paths", lambda: subprocess.check_call(
+        log_action("Converting all text to paths", lambda _: subprocess.check_call(
             [
                 "inkscape",
                 str(out / "texture.svg"),
@@ -202,53 +202,54 @@ def main() -> None:
             tree.write(path)
         
         # Why does inkscape have to be so hard to work with...
-        log_action_time(
+        log_action(
             "Cleaning up after Inkscape",
-            lambda: clean_up_inkscape(out / "texture.svg"),
+            lambda _: clean_up_inkscape(out / "texture.svg"),
         )
         
-        # log_action_time(
+        # log_action(
         #     "Generating texture.pdf",
-        #     lambda: subprocess.check_call(
+        #     lambda _: subprocess.check_call(
         #         ["inkscape", str(out / "texture.svg"), "-o", str(out / "texture.pdf")],
         #         stderr=null,
         #     ),
         # )
     
-    timer = log_split_action_time("Opening browser")
+    timer = StartedTimedAction("Opening browser")
     with browser.create_page() as page:
         timer.done()
         
-        log_action_time(
+        log_action(
             "Generating preview.png",
-            lambda: svg.render_file_as_png(
+            lambda _: svg.render_file_as_png(
                 page,
                 out / "preview.svg",
                 out / "preview.png",
                 theme.scale,
             )
         )
-        log_action_time(
+        log_action(
             "Generating texture-outlined.png",
-            lambda: svg.render_file_as_png(
+            lambda _: svg.render_file_as_png(
                 page,
                 out / "texture-outlined.svg",
                 out / "texture-outlined.png",
-                theme.scale
+                theme.scale,
             )
         )
-        tiles = log_action_time(
-            "Generating texture.png's tiles",
-            lambda: svg.render_file_as_png(
+        tiles = log_action(
+            "Generating texture.png's",
+            lambda handler: svg.render_file_as_png(
                 page, out / "texture.svg",
                 out / "texture.png",
                 theme.texture_scale,
                 Vec2(3000, 3000),
+                progress_handler=handler
             )
         )
-        log_action_time(
+        log_action(
             "Stiching together texture.png",
-            lambda: tiles.stich_together(),
+            lambda _: tiles.stich_together(),
         )
     
     metadata.store_at(out / "metadata.json5")

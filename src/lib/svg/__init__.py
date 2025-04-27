@@ -610,12 +610,11 @@ def tree_to_str(tree: ET.Element|ET.ElementTree) -> str:
     tree.write(output, encoding="unicode")
     return output.getvalue()
 
-
 @overload
-def render_file_as_png(page: playwright.Page, svg_path: Path, out_path: Path, scale: float, max_tile_size: Vec2[int]) -> browser._ImageTileMap: ...
+def render_file_as_png(page: playwright.Page, svg_path: Path, out_path: Path, scale: float, max_tile_size: Vec2[int], *, progress_handler: Callable[[browser.TileRenderProgress], None]|None = None) -> browser._ImageTileMap: ...
 @overload
 def render_file_as_png(page: playwright.Page, svg_path: Path, out_path: Path, scale: float) -> None: ...
-def render_file_as_png(page: playwright.Page, svg_path: Path, out_path: Path, scale: float, max_tile_size: Vec2[int]|None = None) -> browser._ImageTileMap|None:
+def render_file_as_png(page: playwright.Page, svg_path: Path, out_path: Path, scale: float, max_tile_size: Vec2[int]|None = None, *, progress_handler: Callable[[browser.TileRenderProgress], None]|None = None) -> browser._ImageTileMap|None:
     with open(svg_path, "r") as file:
         svg = ET.parse(svg_path)
         view_box = svg_builder.tree_get_viewbox(svg)
@@ -628,7 +627,7 @@ def render_file_as_png(page: playwright.Page, svg_path: Path, out_path: Path, sc
     page.goto(f'file://{svg_path.absolute()}')
     
     if max_tile_size:
-        return browser.render_segmented(page, max_tile_size, out_path)
+        return browser.render_segmented(page, max_tile_size, out_path, progress_handler=progress_handler)
     else:
         page.screenshot(path=out_path, omit_background=True, timeout=60000)
         return None

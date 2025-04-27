@@ -37,6 +37,18 @@ def render_single_segment(page: playwright.Page, rect: Bounds, path: Path) -> No
         clip={"x": pos.x, "y": pos.y, "width": size.x, "height": size.y},
     )
 
+@dataclass(frozen=True)
+class TileRenderProgress(ActionProgress):
+    current_tile: int
+    total_tiles: int
+    
+    def render(self) -> str | None:
+        return f"tile {self.current_tile + 1}/{self.total_tiles}"
+    
+    def render_finished(self) -> str | None:
+        return f"{self.total_tiles} tile(s)"
+    
+
 @dataclass
 class _ImageTileMap():
     """
@@ -60,7 +72,7 @@ class _ImageTileMap():
         
         self.dir.cleanup()
 
-def render_segmented(page: playwright.Page, segment_max_width: Vec2[int], path: Path) -> _ImageTileMap:
+def render_segmented(page: playwright.Page, segment_max_width: Vec2[int], path: Path, *, progress_handler: Callable[[TileRenderProgress], None] | None = None) -> _ImageTileMap:
     if page.viewport_size is None:
         panic(f"No viewport_size in {page}")
     total_size = Vec2[float](
@@ -71,7 +83,10 @@ def render_segmented(page: playwright.Page, segment_max_width: Vec2[int], path: 
     temp_dir = tempfile.TemporaryDirectory()
     directory = Path(temp_dir.name)
     indices = list[Vec2[int]]()
-    for index_pair, segment in total_bounds.as_segments(segment_max_width.cast_to(int)):
+    pairs = tuple(total_bounds.as_segments(segment_max_width.cast_to(int)))
+    for index, (index_pair, segment) in enumerate(pairs):
+        if progress_handler is not None:
+            progress_handler(TileRenderProgress(index, len(pairs)))
         render_single_segment(page, segment, directory / f"{index_pair.x}_{index_pair.y}.png")
         indices.append(index_pair)
     
