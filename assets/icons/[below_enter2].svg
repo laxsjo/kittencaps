@@ -97,7 +97,7 @@
   <rect width="168" height="168" style="fill: url(&quot;#bg_focus&quot;)" x="-34" y="-34">
     <title>BG</title>
   </rect>
-  <svg id="icon" viewBox="0 0 100 100" width="100" height="100" style="overflow:visible;" transform="matrix(1, 0, 0, 1, -71.71042927940482, -70.46318299412367)">
+  <svg id="icon" viewBox="0 0 100 100" width="100" height="100" style="overflow:visible;">
     <path style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px; fill: url(&quot;#bg_accent&quot;); visibility: hidden;" d="M 85.431 0 L 100 0 L 99.975 -100.21 L 41.119 -100 L 85.431 0 Z"/>
     <path style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px; fill: url(&quot;#bg_accent&quot;); visibility: hidden;" d="M 100 32.878 L 85.431 0 L 100 0 Z"/>
     <path style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px; fill: url(&quot;#bg_accent&quot;);" d="M 134 109.606 L 70.3648 -34 L 134 -34 L 134 109.606 Z"/>

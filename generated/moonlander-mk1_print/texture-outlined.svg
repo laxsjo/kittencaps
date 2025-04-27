@@ -338,7 +338,7 @@
     <g id="keycap-unshaded-4">
       <rect class="surface" x="-34" y="-34" width="168" height="168" fill="#020203" />
       <g transform="">
-        <svg id="icon_gaming" viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" transform="matrix(1, 0, 0, 1.0000000000000002, -31.709163303023473, -26.14108956720664)" x="0" y="0">
+        <svg id="icon_gaming" viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0">
           <path style="fill: #f5f7f7; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px; stroke: #f5f7f7;" d="M 31.143 41.822 C 35.034 37.293 41.261 33.376 47.223 32.685 C 48.52 32.535 50.007 26.412 51.313 26.389 C 52.61 26.366 55.425 31.659 56.696 31.963 C 61.708 33.166 63.675 33.846 67.907 36.923 C 68.739 37.527 74.21 34.264 75.036 35.079 C 76.791 36.813 74.735 46.176 75.382 47.37 C 77.571 51.402 78.088 55.736 78.094 58.952 C 78.094 58.952 31.203 41.67 31.143 41.822 Z">
             <title>Body</title>
           </path>
@@ -1020,7 +1020,7 @@
     <g id="keycap-unshaded-32">
       <rect class="surface" x="-34" y="-34" width="168" height="168" fill="#f5f7f7" />
       <g transform="">
-        <svg id="icon_white_wedge_right" viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow: visible;" transform="matrix(1.2899704992418748, 0, 0, 1.265732767251464, -18.600043641399402, -7.97324502457262)" x="0" y="0">
+        <svg id="icon_white_wedge_right" viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow: visible;" x="0" y="0">
           <path style="stroke-linecap:round;stroke-linejoin:round;stroke-width:3px;fill:#020203" d="M -34 134 L 134 134 L -34 -34 L -34 134 Z">
             <title>BG</title>
           </path>
@@ -1668,7 +1668,7 @@
     <g id="keycap-unshaded-61">
       <rect class="surface" x="-34" y="-34" width="168" height="168" fill="#020203" />
       <g transform="">
-        <svg id="icon_enter" viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" transform="matrix(1, 0, 0, 1, -0.5263905255070966, 64.84558451215433)" x="0" y="0">
+        <svg id="icon_enter" viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0">
           <g transform="matrix(1, 0, 0, 1, 14.762421, 4.016501)">
             <title>Enter</title>
             <path style="fill: none; stroke-linecap: round; stroke-linejoin: round; stroke-width: 3px; stroke: #daccf7;" d="M 59.361 45.707 L 59.361 48.588 C 59.361 50.091 58.049 51.261 56.601 51.261 L 37.586 51.261" />
@@ -1721,7 +1721,7 @@
     <g id="keycap-unshaded-62">
       <rect class="surface" x="-34" y="-34" width="168" height="168" fill="#020203" />
       <g transform="">
-        <svg id="icon_below_enter" viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible" transform="matrix(1, 0, 0, 1, -71.71042927940482, -70.46318299412367)" x="0" y="0">
+        <svg id="icon_below_enter" viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible" x="0" y="0">
           <path style="stroke-linecap:round;stroke-linejoin:round;stroke-width:3px;fill:#daccf7" d="M 39.399 -35.448 L 100 -0.001 L 41.119 0 L 26.091 -33.914 L 39.399 -35.448 Z" />
           <path style="stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;fill:#daccf7" d="M 85.431 100 L 100 100 L 99.975 -0.209 L 41.119 0 L 41.119 0 L 85.431 100 Z" />
           <path style="stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;fill:#daccf7" d="M 41.119 0 L 100.0007 0 L 100.001 0 L 100.001 0.0006 L 100.0007 0.0004 L 100.001 0.0006 L 134 19.8891 L 134 134 L 100 134 L 100 132.9484 L 41.119 0 Z" />
@@ -1751,7 +1751,7 @@
     <g id="keycap-unshaded-63">
       <rect class="surface" x="-34" y="-34" width="168" height="168" fill="#020203" />
       <g transform="">
-        <svg id="icon_below_enter2" viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" transform="matrix(1, 0, 0, 1, -71.71042927940482, -70.46318299412367)" x="0" y="0">
+        <svg id="icon_below_enter2" viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0">
           <path style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px; fill: #daccf7;" d="M 134 109.606 L 70.3648 -34 L 134 -34 L 134 109.606 Z" />
         </svg>
         <path style="pointer-events:none" d="M 50 -40 C 50 -45.5 45.5 -50 40 -50 L -40 -50 C -45.5 -50 -50 -45.5 -50 -40 L -50 40 C -50 45.5 -45.5 50 -40 50 L 40 50 C 45.5 50 50 45.5 50 40 L 50 -40 Z" transform=" translate(50, 50) scale(0.6590038314000001)" stroke="red" stroke-opacity="0.5" fill="none" inkscape:label="Outline" class="outline" visibility="visible">
@@ -1874,7 +1874,7 @@
     <g id="keycap-unshaded-72">
       <rect class="surface" x="-34" y="-34" width="268" height="168" fill="#daccf7" />
       <g transform="">
-        <svg id="icon_cat_face" viewBox="0 0 200 100" width="200.0" height="100.0" style="overflow: visible;" transform="matrix(0.9742441177368163, 0, 0, 0.9742441177368163, -3.030572342170558, 3.4332079974112375)" x="0" y="0">
+        <svg id="icon_cat_face" viewBox="0 0 200 100" width="200.0" height="100.0" style="overflow: visible;" x="0" y="0">
           <path style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 3px; fill: #f5f7f7; stroke: #020203;" d="M 28.8841 134 L 30.9758 100 C 30.9758 100 34.1473 44.9319 54.4983 38.0379 C 55.8028 32.0919 59.9662 26.332 62.3333 26.332 C 65.0506 26.332 67.933 28.3765 70.3884 34.3222 C 87.7332 30.9913 113.035 31.0845 130.417 34.3222 C 133.749 28.7214 135.908 26.2699 138.849 26.2699 C 141.797 26.2699 145.201 32.1636 147.567 37.7285 C 166.65 45.6689 169.221 100 169.221 100 L 171.6012 134">
             <title>Body</title>
           </path>
@@ -1907,7 +1907,7 @@
     <g id="keycap-unshaded-73">
       <rect class="surface" x="-34" y="-34" width="218" height="168" fill="#020203" />
       <g transform="translate(0, 100) rotate(-90)">
-        <svg id="icon_shift" viewBox="0 0 100 150" width="100.0" height="150.0" style="overflow:visible;" transform="matrix(1, 0, 0, 1, 1.768546192413307, -11.20305138692285)" x="0" y="0">
+        <svg id="icon_shift" viewBox="0 0 100 150" width="100.0" height="150.0" style="overflow:visible;" x="0" y="0">
           <path d="M 22.9301 76.1056 H 36.9301 L 36.9301 67.1056 L 53.9301 82.1056 L 36.9301 97.1056 L 36.9301 88.1056 H 22.9301 V 76.1056 Z" bx:shape="arrow 22.9301 67.1056 31 30 12 17 0 1@1aaf8013" style="fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:3px;stroke:#daccf7" transform="translate(38.4301, 82.1056) matrix(0, -1, 1, 0, 11.569897, -35.1056) translate(-38.4301, -82.1056)" />
           <g transform="matrix(1, 0, 0, 1, 0, 4)">
             <title>Shift</title>
@@ -1936,7 +1936,7 @@
     <g id="keycap-unshaded-74">
       <rect class="surface" x="-34" y="-34" width="218" height="168" fill="#020203" />
       <g transform="translate(0, 100) rotate(-90)">
-        <svg id="icon_ctrl" viewBox="0 0 100 150" width="100.0" height="150.0" style="overflow:visible;" transform="matrix(1, 0, 0, 1, 1.768546192413307, -11.20305138692285)" x="0" y="0">
+        <svg id="icon_ctrl" viewBox="0 0 100 150" width="100.0" height="150.0" style="overflow:visible;" x="0" y="0">
           <g transform="matrix(1, 0, 0, 1, 0, 4)">
             <title>Ctrl</title>
             <text style="fill: #daccf7; font-family: &quot;Open Gorton&quot;; font-size: 17px; font-weight: 700; text-anchor: middle; white-space: pre;" xml:space="preserve" x="50" y="80.984"><title>Guide</title>ctrl</text>
@@ -1962,7 +1962,7 @@
     <g id="keycap-unshaded-75">
       <rect class="surface" x="-34" y="-34" width="218" height="168" fill="#020203" />
       <g transform="translate(0, 100) rotate(-90)">
-        <svg id="icon_alt" viewBox="0 0 100 150" width="100.0" height="150.0" style="overflow: visible;" transform="matrix(1, 0, 0, 1, 1.768546192413307, -11.20305138692285)" x="0" y="0">
+        <svg id="icon_alt" viewBox="0 0 100 150" width="100.0" height="150.0" style="overflow: visible;" x="0" y="0">
           <g transform="matrix(1, 0, 0, 1, 0, 4)">
             <title>Alt</title>
             <text style="fill: #daccf7; font-family: &quot;Open Gorton&quot;; font-size: 17px; font-weight: 700; text-anchor: middle; white-space: pre;" xml:space="preserve" x="50" y="80.984">Alt</text>
@@ -1989,7 +1989,7 @@
     <g id="keycap-unshaded-76">
       <rect class="surface" x="-34" y="-34" width="268" height="168" fill="#daccf7" />
       <g transform="">
-        <svg id="icon_meta" viewBox="0 0 200 100" width="200.0" height="100.0" style="overflow:visible" transform="matrix(1, 0, 0, 0.9999999999999999, 14.785905464222736, 9.023905317410456)" x="0" y="0">
+        <svg id="icon_meta" viewBox="0 0 200 100" width="200.0" height="100.0" style="overflow:visible" x="0" y="0">
           <use href="#paw_print-1" width="7" height="6.5" style="fill:#ab94d5" transform="translate(3.5, 3.25) matrix(-0.5253769159317017, -1.3284560441970825, -1.4781439304351807, 0.14688000082969666, 23.3486858059951, 58.30745594068291) translate(-3.5, -3.25)">
             <title>Paw</title>
           </use>
@@ -2102,7 +2102,7 @@
     <g id="keycap-unshaded-77">
       <rect class="surface" x="-34" y="-34" width="218" height="168" fill="#020203" />
       <g transform="translate(0, 100) rotate(-90)">
-        <svg id="icon_umlaut" viewBox="0 0 100 150" width="100.0" height="150.0" style="overflow:visible" transform="matrix(0.9999999999999999, 0, 0, 1, 1.9604572475505542, -11.861032098774828)" x="0" y="0">
+        <svg id="icon_umlaut" viewBox="0 0 100 150" width="100.0" height="150.0" style="overflow:visible" x="0" y="0">
           <use href="#paw_print-2" width="7" height="6.5" style="fill:#ab94d5" transform="translate(3.5, 3.25) matrix(-1.4119009971618652, -0.21761199831962585, -0.21761199831962585, 1.4119060039520264, 102.14889346003379, 19.583110463548135) translate(-3.5, -3.25)">
             <title>Paw</title>
           </use>

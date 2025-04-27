@@ -111,7 +111,7 @@
   <rect class="icon-bg" width="168" height="218" inkscape:label="BG" style="fill: url(&quot;#bg_focus&quot;);" x="-34" y="-34">
     <title>BG</title>
   </rect>
-  <svg id="icon" viewBox="0 0 100 150" width="100" height="150" style="overflow: visible;" transform="matrix(0.9999999999999999, 0, 0, 1, 1.9604572475505542, -11.861032098774828)">
+  <svg id="icon" viewBox="0 0 100 150" width="100" height="150" style="overflow: visible;">
     <use href="#paw_print" width="7" height="6.5" transform="matrix(-1.4119009971618652, -0.21761199831962585, -0.21761199831962585, 1.4119060039520264, 102.14889346003379, 19.583110463548135)" style="fill: url(&quot;#bg_accent_dark&quot;); transform-origin: 3.5px 3.25px;">
       <title>Paw</title>
     </use>

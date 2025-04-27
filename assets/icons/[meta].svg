@@ -119,7 +119,7 @@
   <rect class="icon-bounding-box" width="268" height="168" style="fill: url(&quot;#bg_accent&quot;);" x="-34" y="-34">
     <title>BG</title>
   </rect>
-  <svg id="icon" viewBox="0 0 200 100" width="200" height="100" style="overflow:visible;" transform="matrix(1, 0, 0, 0.9999999999999999, 14.785905464222736, 9.023905317410456)">
+  <svg id="icon" viewBox="0 0 200 100" width="200" height="100" style="overflow:visible;">
     <use href="#paw_print" width="7" height="6.5" transform="matrix(-0.5253769159317017, -1.3284560441970825, -1.4781439304351807, 0.14688000082969666, 23.3486858059951, 58.30745594068291)" style="transform-origin: 3.5px 3.25px; fill: url(&quot;#bg_accent_dark&quot;);">
       <title>Paw</title>
     </use>

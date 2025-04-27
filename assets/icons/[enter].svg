@@ -109,7 +109,7 @@
   <rect class="icon-bounding-box" width="168" height="168" style="fill: url(&quot;#bg_focus&quot;);" x="-34" y="-34">
     <title>BG</title>
   </rect>
-  <svg id="icon" viewBox="0 0 100 100" width="100" height="100" style="overflow:visible;" transform="matrix(1, 0, 0, 1, -0.5263905255070966, 64.84558451215433)">
+  <svg id="icon" viewBox="0 0 100 100" width="100" height="100" style="overflow:visible;">
     <g transform="matrix(1, 0, 0, 1, 14.762421, 4.016501)">
       <title>Enter</title>
       <path style="fill: none; stroke-linecap: round; stroke-linejoin: round; stroke-width: 3px; stroke: url(&quot;#bg_accent&quot;);" d="M 59.361 45.707 L 59.361 48.588 C 59.361 50.091 58.049 51.261 56.601 51.261 L 37.586 51.261"/>

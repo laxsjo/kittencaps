@@ -316,7 +316,7 @@
     <g>
       <rect class="surface" x="-34" y="-34" width="168" height="168" fill="#2e2f32" />
       <g transform="">
-        <svg viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" transform="matrix(1, 0, 0, 1.0000000000000002, -31.709163303023473, -26.14108956720664)" x="0" y="0" version="1.1">
+        <svg viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0" version="1.1">
           <path style="fill: #f5f7f7; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px; stroke: #f5f7f7;" d="M 31.143 41.822 C 35.034 37.293 41.261 33.376 47.223 32.685 C 48.52 32.535 50.007 26.412 51.313 26.389 C 52.61 26.366 55.425 31.659 56.696 31.963 C 61.708 33.166 63.675 33.846 67.907 36.923 C 68.739 37.527 74.21 34.264 75.036 35.079 C 76.791 36.813 74.735 46.176 75.382 47.37 C 77.571 51.402 78.088 55.736 78.094 58.952 C 78.094 58.952 31.203 41.67 31.143 41.822 Z">
             <title>Body</title>
           </path>
@@ -944,7 +944,7 @@
     <g>
       <rect class="surface" x="-34" y="-34" width="168" height="168" fill="#f5f7f7" />
       <g transform="">
-        <svg viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow: visible;" transform="matrix(1.2899704992418748, 0, 0, 1.265732767251464, -18.600043641399402, -7.97324502457262)" x="0" y="0" version="1.1">
+        <svg viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow: visible;" x="0" y="0" version="1.1">
           <path style="stroke-linecap:round;stroke-linejoin:round;stroke-width:3px;fill:#2e2f32" d="M -34 134 L 134 134 L -34 -34 L -34 134 Z">
             <title>BG</title>
           </path>
@@ -1529,7 +1529,7 @@
     <g>
       <rect class="surface" x="-34" y="-34" width="168" height="168" fill="#2e2f32" />
       <g transform="">
-        <svg viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" transform="matrix(1, 0, 0, 1, -0.5263905255070966, 64.84558451215433)" x="0" y="0" version="1.1">
+        <svg viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0" version="1.1">
           <g transform="matrix(1, 0, 0, 1, 14.762421, 4.016501)">
             <title>Enter</title>
             <path style="fill: none; stroke-linecap: round; stroke-linejoin: round; stroke-width: 3px; stroke: #e1d9f2;" d="M 59.361 45.707 L 59.361 48.588 C 59.361 50.091 58.049 51.261 56.601 51.261 L 37.586 51.261" />
@@ -1579,7 +1579,7 @@
     <g>
       <rect class="surface" x="-34" y="-34" width="168" height="168" fill="#2e2f32" />
       <g transform="">
-        <svg viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible" transform="matrix(1, 0, 0, 1, -71.71042927940482, -70.46318299412367)" x="0" y="0" version="1.1">
+        <svg viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible" x="0" y="0" version="1.1">
           <path style="stroke-linecap:round;stroke-linejoin:round;stroke-width:3px;fill:#e1d9f2" d="M 39.399 -35.448 L 100 -0.001 L 41.119 0 L 26.091 -33.914 L 39.399 -35.448 Z" />
           <path style="stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;fill:#e1d9f2" d="M 85.431 100 L 100 100 L 99.975 -0.209 L 41.119 0 L 41.119 0 L 85.431 100 Z" />
           <path style="stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;fill:#e1d9f2" d="M 41.119 0 L 100.0007 0 L 100.001 0 L 100.001 0.0006 L 100.0007 0.0004 L 100.001 0.0006 L 134 19.8891 L 134 134 L 100 134 L 100 132.9484 L 41.119 0 Z" />
@@ -1606,7 +1606,7 @@
     <g>
       <rect class="surface" x="-34" y="-34" width="168" height="168" fill="#2e2f32" />
       <g transform="">
-        <svg viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" transform="matrix(1, 0, 0, 1, -71.71042927940482, -70.46318299412367)" x="0" y="0" version="1.1">
+        <svg viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0" version="1.1">
           <path style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px; fill: #e1d9f2;" d="M 134 109.606 L 70.3648 -34 L 134 -34 L 134 109.606 Z" />
         </svg>
       </g>
@@ -1704,7 +1704,7 @@
     <g>
       <rect class="surface" x="-34" y="-34" width="268" height="168" fill="#e1d9f2" />
       <g transform="">
-        <svg viewBox="0 0 200 100" width="200.0" height="100.0" style="overflow: visible;" transform="matrix(0.9742441177368163, 0, 0, 0.9742441177368163, -3.030572342170558, 3.4332079974112375)" x="0" y="0" version="1.1">
+        <svg viewBox="0 0 200 100" width="200.0" height="100.0" style="overflow: visible;" x="0" y="0" version="1.1">
           <path style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 3px; fill: #f5f7f7; stroke: #2e2f32;" d="M 28.8841 134 L 30.9758 100 C 30.9758 100 34.1473 44.9319 54.4983 38.0379 C 55.8028 32.0919 59.9662 26.332 62.3333 26.332 C 65.0506 26.332 67.933 28.3765 70.3884 34.3222 C 87.7332 30.9913 113.035 31.0845 130.417 34.3222 C 133.749 28.7214 135.908 26.2699 138.849 26.2699 C 141.797 26.2699 145.201 32.1636 147.567 37.7285 C 166.65 45.6689 169.221 100 169.221 100 L 171.6012 134">
             <title>Body</title>
           </path>
@@ -1734,7 +1734,7 @@
     <g>
       <rect class="surface" x="-34" y="-34" width="218" height="168" fill="#2e2f32" />
       <g transform="translate(0, 100) rotate(-90)">
-        <svg viewBox="0 0 100 150" width="100.0" height="150.0" style="overflow:visible;" transform="matrix(1, 0, 0, 1, 1.768546192413307, -11.20305138692285)" x="0" y="0" version="1.1">
+        <svg viewBox="0 0 100 150" width="100.0" height="150.0" style="overflow:visible;" x="0" y="0" version="1.1">
           <path d="M 22.9301 76.1056 H 36.9301 L 36.9301 67.1056 L 53.9301 82.1056 L 36.9301 97.1056 L 36.9301 88.1056 H 22.9301 V 76.1056 Z" bx:shape="arrow 22.9301 67.1056 31 30 12 17 0 1@1aaf8013" style="fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:3px;stroke:#e1d9f2" transform="translate(38.4301, 82.1056) matrix(0, -1, 1, 0, 11.569897, -35.1056) translate(-38.4301, -82.1056)" />
           <g transform="matrix(1, 0, 0, 1, 0, 4)">
             <title>Shift</title>
@@ -1760,7 +1760,7 @@
     <g>
       <rect class="surface" x="-34" y="-34" width="218" height="168" fill="#2e2f32" />
       <g transform="translate(0, 100) rotate(-90)">
-        <svg viewBox="0 0 100 150" width="100.0" height="150.0" style="overflow:visible;" transform="matrix(1, 0, 0, 1, 1.768546192413307, -11.20305138692285)" x="0" y="0" version="1.1">
+        <svg viewBox="0 0 100 150" width="100.0" height="150.0" style="overflow:visible;" x="0" y="0" version="1.1">
           <g transform="matrix(1, 0, 0, 1, 0, 4)">
             <title>Ctrl</title>
             <path d="m 33.518507,81.494001 c 1.598,0 3.077,-0.578 4.267,-1.666 0.612,-0.561 0.663,-1.445 0.085,-1.802 -0.459,-0.34 -1.105,-0.272 -1.53,0.17 -0.765,0.714 -1.768,1.105 -2.822,1.105 -2.312,0 -4.114,-1.802 -4.114,-4.114 0,-2.295 1.819,-4.114 4.114,-4.114 0.969,0 1.921,0.357 2.669,1.02 0.476,0.357 1.088,0.408 1.53,0.102 l 0.034,-0.017 c 0.578,-0.425 0.459,-1.292 -0.238,-1.87 -1.088,-0.918 -2.516,-1.428 -3.995,-1.428 -3.468,0 -6.307,2.839 -6.307,6.307 0,3.468 2.839,6.307 6.307,6.307 z m 7.140006,-11.883 c 0,0.595 0.527,1.122 1.122,1.122 h 2.397 c 0.102,0 0.17,0.068 0.17,0.17 v 9.469 c 0,0.595 0.527,1.122 1.122,1.122 0.612,0 1.105,-0.51 1.105,-1.122 v -9.469 c 0,-0.102 0.068,-0.17 0.17,-0.17 h 2.38 c 0.612,0 1.105,-0.51 1.105,-1.122 0,-0.578 -0.527,-1.105 -1.105,-1.105 h -7.344 c -0.629,0 -1.122,0.493 -1.122,1.105 z m 11.950985,10.761 c 0,0.595 0.527,1.122 1.122,1.122 0.612,0 1.105,-0.51 1.105,-1.122 v -3.638 c 0,-0.102 0.068,-0.17 0.17,-0.17 h 2.55 c 0.051,0 0.119,0.034 0.136,0.085 0.765,1.53 1.496,3.043 2.295,4.573 0.187,0.357 0.884,0.459 1.326,0.221 0.527,-0.272 0.765,-0.952 0.493,-1.479 l -1.955,-4.029 c -0.034,-0.085 -0.017,-0.153 0.051,-0.204 0.935,-0.765 1.513,-1.955 1.513,-3.162 0,-2.244 -1.819,-4.063 -4.046,-4.063 h -3.638 c -0.612,0 -1.122,0.493 -1.122,1.105 z m 2.227,-6.052 v -3.434 c 0,-0.102 0.068,-0.17 0.17,-0.17 h 2.329 c 1.054,0 1.87,0.833 1.87,1.887 0,1.054 -0.816,1.887 -1.87,1.887 h -2.329 c -0.102,0 -0.17,-0.068 -0.17,-0.17 z m 9.468996,6.052 c 0,0.612 0.476,1.105 1.105,1.122 h 6.273 c 0.612,0 1.105,-0.51 1.105,-1.122 0,-0.578 -0.527,-1.105 -1.105,-1.105 h -4.981 c -0.102,0 -0.17,-0.068 -0.17,-0.17 v -9.486 c 0,-0.578 -0.527,-1.105 -1.105,-1.105 -0.612,0 -1.122,0.493 -1.122,1.105 z" style="font-weight:700;font-size:17px;font-family:'Open Gorton';text-anchor:middle;white-space:pre;fill:#e1d9f2" aria-label="ctrl">
@@ -1785,7 +1785,7 @@
     <g>
       <rect class="surface" x="-34" y="-34" width="218" height="168" fill="#2e2f32" />
       <g transform="translate(0, 100) rotate(-90)">
-        <svg viewBox="0 0 100 150" width="100.0" height="150.0" style="overflow: visible;" transform="matrix(1, 0, 0, 1, 1.768546192413307, -11.20305138692285)" x="0" y="0" version="1.1">
+        <svg viewBox="0 0 100 150" width="100.0" height="150.0" style="overflow: visible;" x="0" y="0" version="1.1">
           <g transform="matrix(1, 0, 0, 1, 0, 4)">
             <title>Alt</title>
             <path d="m 33.544006,81.392001 c 0.561,0.255 1.224,-0.017 1.462,-0.595 l 1.156,-2.669 c 0.017,-0.051 0.085,-0.085 0.136,-0.085 h 4.59 c 0.051,0 0.119,0.034 0.136,0.085 l 1.156,2.669 c 0.238,0.578 0.901,0.85 1.462,0.595 0.561,-0.238 0.816,-0.901 0.578,-1.479 l -4.607,-10.829 c -0.153,-0.391 -0.578,-0.663 -1.02,-0.663 -0.442,0 -0.867,0.272 -1.02,0.663 l -4.607,10.829 c -0.238,0.578 0.017,1.241 0.578,1.479 z m 6.613,-4.658 h -3.111 c -0.153,0 -0.238,-0.136 -0.187,-0.272 l 1.513,-3.706 c 0.085,-0.221 0.357,-0.221 0.442,0 l 1.513,3.706 c 0.051,0.136 -0.017,0.272 -0.17,0.272 z m 6.528004,3.638 c 0,0.612 0.476,1.105 1.105,1.122 h 6.273 c 0.612,0 1.105,-0.51 1.105,-1.122 0,-0.578 -0.527,-1.105 -1.105,-1.105 h -4.981 c -0.102,0 -0.17,-0.068 -0.17,-0.17 v -9.486 c 0,-0.578 -0.527,-1.105 -1.105,-1.105 -0.612,0 -1.122,0.493 -1.122,1.105 z m 10.862999,-10.761 c 0,0.595 0.527,1.122 1.122,1.122 h 2.397 c 0.102,0 0.17,0.068 0.17,0.17 v 9.469 c 0,0.595 0.527,1.122 1.122,1.122 0.612,0 1.105,-0.51 1.105,-1.122 v -9.469 c 0,-0.102 0.068,-0.17 0.17,-0.17 h 2.38 c 0.612,0 1.105,-0.51 1.105,-1.122 0,-0.578 -0.527,-1.105 -1.105,-1.105 h -7.344 c -0.629,0 -1.122,0.493 -1.122,1.105 z" style="font-weight:700;font-size:17px;font-family:'Open Gorton';text-anchor:middle;white-space:pre;fill:#e1d9f2" aria-label="Alt" />
@@ -1809,7 +1809,7 @@
     <g>
       <rect class="surface" x="-34" y="-34" width="268" height="168" fill="#e1d9f2" />
       <g transform="">
-        <svg viewBox="0 0 200 100" width="200.0" height="100.0" style="overflow:visible" transform="matrix(1, 0, 0, 0.9999999999999999, 14.785905464222736, 9.023905317410456)" x="0" y="0" version="1.1">
+        <svg viewBox="0 0 200 100" width="200.0" height="100.0" style="overflow:visible" x="0" y="0" version="1.1">
           <use href="#paw_print-1" width="7" height="6.5" style="fill:#a49bc2" transform="translate(3.5, 3.25) matrix(-0.5253769159317017, -1.3284560441970825, -1.4781439304351807, 0.14688000082969666, 23.3486858059951, 58.30745594068291) translate(-3.5, -3.25)">
             <title>Paw</title>
           </use>
@@ -1921,7 +1921,7 @@
     <g>
       <rect class="surface" x="-34" y="-34" width="218" height="168" fill="#2e2f32" />
       <g transform="translate(0, 100) rotate(-90)">
-        <svg viewBox="0 0 100 150" width="100.0" height="150.0" style="overflow:visible" transform="matrix(0.9999999999999999, 0, 0, 1, 1.9604572475505542, -11.861032098774828)" x="0" y="0" version="1.1">
+        <svg viewBox="0 0 100 150" width="100.0" height="150.0" style="overflow:visible" x="0" y="0" version="1.1">
           <use href="#paw_print-2" width="7" height="6.5" style="fill:#a49bc2" transform="translate(3.5, 3.25) matrix(-1.4119009971618652, -0.21761199831962585, -0.21761199831962585, 1.4119060039520264, 102.14889346003379, 19.583110463548135) translate(-3.5, -3.25)">
             <title>Paw</title>
           </use>
