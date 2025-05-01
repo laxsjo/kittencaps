@@ -18,6 +18,7 @@ from . import project, kle_ext as kle
 __all__ = [
     "Palette",
     "Theme",
+    "Args",
     "Config",
 ]
 
@@ -139,6 +140,12 @@ class Theme():
         return cls.from_declaration_and_layout(declaration)
 
 @dataclass
+class Args():
+    preview_scale: float|None
+    texture_outlined_scale: float|None
+    texture_scale: float|None
+
+@dataclass
 class Config:
     # From theme file
     default_font: FontDefinition
@@ -150,13 +157,16 @@ class Config:
     colors: Palette
     # From layout file
     icon_margin: float
-    scale: float
-    """Amount to scale the resolution of preview.png and texture-outlined.png by."""
+    
+    preview_scale: float
+    """Amount to scale the resolution of preview.png by."""
+    texture_outlined_scale: float
+    """Amount to scale the resolution of texture-outlined.png by."""
     texture_scale: float
     """Amount to scale the resolution of texture.png by."""
     
     @classmethod
-    def from_parts(cls, *, theme: Theme, layout: kle.ExtendedKeyboard) -> Self:
+    def from_parts(cls, *, theme: Theme, layout: kle.ExtendedKeyboard, args: Args) -> Self:
         return cls(
             default_font=theme.default_font,
             font_family=theme.font_family,
@@ -166,8 +176,9 @@ class Config:
             top_size=theme.top_size,
             colors=theme.colors,
             icon_margin=layout.icon_margin,
-            scale=layout.scale,
-            texture_scale=layout.texture_scale,
+            preview_scale=layout.scale if args.preview_scale is None else args.preview_scale,
+            texture_scale=layout.scale if args.texture_scale is None else args.texture_scale,
+            texture_outlined_scale=layout.scale if args.texture_outlined_scale is None else args.texture_outlined_scale,
         )
     
     def as_theme(self) -> Theme:

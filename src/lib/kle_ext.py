@@ -116,10 +116,6 @@ class ExtendedKeyboard(Keyboard):
     The resolutions of the generated preview.png and texture-outlined.png are
     scaled by this factor.
     """
-    texture_scale: float = 1
-    """
-    The resolution of the generated texture.png is scaled by this factor.
-    """
     
     def __init__(self):
         """Initializes a Keyboard."""
@@ -146,8 +142,5 @@ class ExtendedKeyboard(Keyboard):
                     keyboard.icon_margin = value
                 if isinstance(value := item.get("scale"), float | int):
                     keyboard.scale = value
-                if isinstance(value := item.get("textureScale"), float | int):
-                    keyboard.texture_scale = value
-                
         
         return keyboard

@@ -132,18 +132,56 @@ def main() -> None:
         required=True,
         help="Write the generated files to this directory."
     )
+    parser.add_argument(
+        "--scale",
+        metavar="SCALE",
+        type=float,
+        default=None,
+        help="Scale the resolution of all of the generated images by this factor. Uses value from layout if not given.",
+    )
+    parser.add_argument(
+        "--preview-scale",
+        metavar="SCALE",
+        type=float,
+        default=None,
+        help="Scale the resolution the output preview.png by this factor. Overrides use of --scale.",
+    )
+    parser.add_argument(
+        "--texture-outlined-scale",
+        metavar="SCALE",
+        type=float,
+        default=None,
+        help="Scale the resolution the output texture-outlined.png by this factor. Overrides use of --scale.",
+    )
+    parser.add_argument(
+        "--texture-scale",
+        metavar="SCALE",
+        type=float,
+        default=None,
+        help="Scale the resolution the output texture.png by this factor. Overrides use of --scale.",
+    )
     
     args = parser.parse_args()
-    
     
     layout_path: pathlib.Path = args.layout
     theme_path: pathlib.Path = args.theme
     template_path: pathlib.Path = args.templates
     out: pathlib.Path = args.out
+    scale: float | None = args.scale
+    preview_scale: float | None = args.preview_scale
+    texture_outlined_scale: float | None = args.texture_outlined_scale
+    texture_scale: float | None = args.texture_scale
+
+    args = Args(
+        preview_scale=scale if preview_scale is None else preview_scale,
+        texture_outlined_scale=scale if texture_outlined_scale is None else texture_outlined_scale,
+        texture_scale=scale if texture_scale is None else texture_scale,
+    )
 
     metadata = GenerationMetadata(
         layout_path=layout_path,
-        theme_path=theme_path
+        theme_path=theme_path,
+        args=args,
     )
 
     layout, theme = metadata.load()
@@ -225,7 +263,7 @@ def main() -> None:
                 page,
                 out / "preview.svg",
                 out / "preview.png",
-                theme.scale,
+                theme.preview_scale,
             )
         )
         log_action(
@@ -234,7 +272,7 @@ def main() -> None:
                 page,
                 out / "texture-outlined.svg",
                 out / "texture-outlined.png",
-                theme.scale,
+                theme.texture_outlined_scale,
             )
         )
     

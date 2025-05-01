@@ -1,1 +1,1 @@
-{layout_path: "assets/layouts/moonlander-mk1.json", theme_path: "assets/themes/print.json"}
+{layout_path: "assets/layouts/moonlander-mk1.json", theme_path: "assets/themes/print.json", args: {preview_scale: null, texture_scale: null, texture_outlined_scale: null}}

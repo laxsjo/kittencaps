@@ -11,10 +11,27 @@
     "theme_path": {
       "description": "Path to the used theme JSON file. This file must follow the schema 'assets/themes/theme-schema.json'.",
       "type": "string"
+    },
+    "args": {
+      "properties": {
+        "preview_scale": {
+          "description": "The factor the resolution of the generated preview.png was scaled by.",
+          "type": ["number", "null"]
+        },
+        "texture_outlined_scale": {
+          "description": "The factor the resolution of the generated preview.png was scaled by.",
+          "type": ["number", "null"]
+        },
+        "texture_scale": {
+          "description": "The factor the resolution of the generated preview.png was scaled by.",
+          "type": ["number", "null"]
+        },
+      },
     }
   },
   "required": [
     "layout_path",
-    "theme_path"
+    "theme_path",
+    "args"
   ]
 }

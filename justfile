@@ -53,11 +53,12 @@ edit-icon +$names:
         fi
     done
 
-generate-keycaps $layout="moonlander-mk1" $theme="standard":
+generate-keycaps $layout="moonlander-mk1" $theme="standard" *$args="":
     python -m src.package_keycaps \
         ./assets/layouts/{{layout}}.json \
         --theme="./assets/themes/$theme.json" \
-        --out="./generated/${layout}_${theme}"
+        --out="./generated/${layout}_${theme}" \
+        ${args}
 
 # TODO: This command should save the hashes of it's inputs, and only generate a new .blend file if it changes, since creating the blend file is non-deterministic.
 generate-render-scene $layout="moonlander-mk1" $theme="standard":

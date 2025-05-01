@@ -23,6 +23,7 @@ __all__ = [
 class GenerationMetadata():
     layout_path: pathlib.Path
     theme_path: pathlib.Path
+    args: Args
     
     @classmethod
     def from_file(cls, path: str | os.PathLike) -> Self:
@@ -51,6 +52,11 @@ class GenerationMetadata():
         return cls(
             layout_path=pathlib.Path(metadata["layout_path"]),
             theme_path=pathlib.Path(metadata["theme_path"]),
+            args=Args(
+                preview_scale=metadata["args"].get("preview_scale", None),
+                texture_outlined_scale=metadata["args"].get("texture_outlined_scale", None),
+                texture_scale=metadata["args"].get("texture_scale", None),
+            ),
         )
     
     def load_layout(self) -> kle.ExtendedKeyboard:
@@ -66,6 +72,7 @@ class GenerationMetadata():
             Config.from_parts(
                 theme=Theme.load_file(self.theme_path),
                 layout=self.load_layout(),
+                args=self.args,
             )
         )
     
@@ -74,6 +81,11 @@ class GenerationMetadata():
             result = {
                 "layout_path": str(self.layout_path),
                 "theme_path": str(self.theme_path),
+                "args": {                    
+                    "preview_scale": self.args.preview_scale,
+                    "texture_scale": self.args.texture_scale,
+                    "texture_outlined_scale": self.args.texture_outlined_scale,
+                },
             }
             
             json5.dump(result, file)
