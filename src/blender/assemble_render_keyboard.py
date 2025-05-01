@@ -69,7 +69,7 @@ def copy_modifiers(source: bpy.types.Object, destination: bpy.types.Object):
             setattr(destination_modifier, prop, getattr(source_modifier, prop))
         destination_modifier = destination
 
-def create_keyboard(texture_path: Path, svg_viewbox: svg.ViewBox, keyboard: kle.ExtendedKeyboard, theme: Config, out_path: Path) -> None:
+def create_keyboard(texture_path: Path, svg_viewbox: svg.ViewBox, keyboard: kle.ExtendedKeyboard, config: Config, out_path: Path) -> None:
     with PIL.Image.open(texture_path) as image:
         texture_size = Vec2(*image.size)
     
@@ -130,7 +130,7 @@ def create_keyboard(texture_path: Path, svg_viewbox: svg.ViewBox, keyboard: kle.
         
         case_mesh = assert_instance(bpy.types.Mesh, case_object.data)
         case_mesh.materials.append(bpy.data.materials['Case Plastic'])
-        color = theme.colors[case.color] if case.color in theme.colors else HideableColor(case.color)
+        color = config.colors[case.color] if case.color in config.colors else HideableColor(case.color)
         case_object["color"] = color[0:3]
         
         
@@ -230,18 +230,19 @@ def create_keyboard(texture_path: Path, svg_viewbox: svg.ViewBox, keyboard: kle.
         object.parent = origin_object
         
         
-        texture_local_pos = local_pos * theme.unit_size
-        texture_pos_pixels = \
+        texture_local_pos = local_pos * config.unit_size
+        texture_pos_pixels = (
             rotate(texture_local_pos, Vec2(0, 0), rotation_clockwise.deg) \
-            + transform.get_translation() * (theme.unit_size + theme.icon_margin * 2) \
-            - svg_viewbox.pos
+            + transform.get_translation() * (config.unit_size + config.icon_margin * 2) \
+            - svg_viewbox.pos            
+        ) * config.texture_scale
         
         object["texture_position_pixels"] = \
             (*texture_pos_pixels, 0)
         # The negation of the counter-clockwise rotation
         object["texture_rotation"] = -(-rotation_clockwise.rad()) - -local_rotation_clockwise.rad()
         object["texture_dimensions"] = tuple(texture_size)
-        object["texture_unit_size"] = theme.unit_size
+        object["texture_unit_size"] = config.unit_size * config.texture_scale
         object["unit_size"] = magic.keycap_model_unit_size
         object["dimensions"] = (unit * key.major_size, unit)
 
