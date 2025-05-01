@@ -538,6 +538,12 @@ class Bounds():
             self.min - Vec2(margin, margin),
             self.max + Vec2(margin, margin) * 2,
         )
+    
+    def scaled(self, scale: float) -> Self:
+        return type(self)(
+            self.min * scale,
+            self.max * scale,
+        )
 
 @dataclass
 class Box():

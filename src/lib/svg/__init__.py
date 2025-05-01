@@ -2,12 +2,16 @@ from __future__ import annotations
 from typing import *
 from pathlib import Path
 from dataclasses import dataclass
+import os
+import sys
+import io
+import subprocess
 import re
+import itertools
 import xml.etree.ElementTree as ET 
 from playwright import sync_api as playwright
-import io
 
-from .. import svg_builder, browser
+from .. import browser, render, shell
 from ..utils import *
 from ..error import *
 from ..color import *
@@ -41,7 +45,8 @@ __all__ = [
     "basic_shape_pre_transform_bounds",
     "apply_transform_origin",
     "tree_to_str",
-    "render_many_files_as_png",
+    "render_file_as_png",
+    "render_file_as_png_segmented_resvg",
 ]
 
 @dataclass
@@ -72,6 +77,9 @@ class ViewBox:
             Vec2(x, y),
             Scaling(width, height),
         ))
+    
+    def as_svg_value(self) -> str:
+        return " ".join(map(str, (*self.pos, *self.size.as_vec2())))
     
     @classmethod
     def from_bounds(cls, bounds: Bounds) -> Self:
@@ -231,6 +239,21 @@ def tree_remove_unreferenced_ids(tree: MaybeElementTree) -> None:
     Attributes which may contain ids, either with the `#<id>` or `url(#<id>)`
     syntax.
     """
+
+def tree_get_viewbox(tree: MaybeElementTree) -> ViewBox:
+    root = resolve_element_tree(tree)
+    
+    match ViewBox.parse_svg_value(root.attrib["viewBox"]):
+        case Ok(value):
+            return value
+        case Error(reason):
+            panic(f"Tree svg element contained invalid viewBox '{root.attrib["viewBox"]}': {reason}")
+
+def tree_set_viewbox(tree: MaybeElementTree, value: ViewBox) -> None:
+    root = resolve_element_tree(tree)
+    
+    root.attrib["viewBox"] = value.as_svg_value()
+
 @dataclass
 class Percentage:
     amount: float
@@ -611,13 +634,12 @@ def tree_to_str(tree: MaybeElementTree) -> str:
     return output.getvalue()
 
 @overload
-def render_file_as_png(page: playwright.Page, svg_path: Path, out_path: Path, scale: float, max_tile_size: Vec2[int], *, progress_handler: Callable[[browser.TileRenderProgress], None]|None = None) -> browser._ImageTileMap: ...
+def render_file_as_png(page: playwright.Page, svg_path: Path, out_path: Path, scale: float, max_tile_size: Vec2[int], *, progress_handler: Callable[[render.TileRenderProgress], None]|None = None) -> render.ImageTileMap: ...
 @overload
 def render_file_as_png(page: playwright.Page, svg_path: Path, out_path: Path, scale: float) -> None: ...
-def render_file_as_png(page: playwright.Page, svg_path: Path, out_path: Path, scale: float, max_tile_size: Vec2[int]|None = None, *, progress_handler: Callable[[browser.TileRenderProgress], None]|None = None) -> browser._ImageTileMap|None:
-    with open(svg_path, "r") as file:
-        svg = ET.parse(svg_path)
-        view_box = svg_builder.tree_get_viewbox(svg)
+def render_file_as_png(page: playwright.Page, svg_path: Path, out_path: Path, scale: float, max_tile_size: Vec2[int]|None = None, *, progress_handler: Callable[[render.TileRenderProgress], None]|None = None) -> render.ImageTileMap|None:
+    svg = ET.parse(svg_path)
+    view_box = tree_get_viewbox(svg)
     
     page.set_viewport_size({
         'width': int(view_box.size.get_x() * scale),
@@ -633,9 +655,8 @@ def render_file_as_png(page: playwright.Page, svg_path: Path, out_path: Path, sc
         return None
 
 def render_file_as_pdf(page: playwright.Page, svg_path: Path, out_path: Path, scale: float):
-    with open(svg_path, "r") as file:
-        svg = ET.parse(svg_path)
-        view_box = svg_builder.tree_get_viewbox(svg)
+    svg = ET.parse(svg_path)
+    view_box = tree_get_viewbox(svg)
 
     width = int(view_box.size.get_x() * scale)
     height = int(view_box.size.get_y() * scale)
@@ -648,3 +669,55 @@ def render_file_as_pdf(page: playwright.Page, svg_path: Path, out_path: Path, sc
     
     page.emulate_media(media="screen")
     page.pdf(path=out_path, width=str(width), height=str(height))
+
+def render_file_as_png_segmented_resvg(
+    svg_path: Path,
+    out_path: Path,
+    scale: float,
+    max_segment_size: Vec2[int],
+    *,
+    progress_handler: Callable[[render.TileRenderProgress], None] | None = None
+) -> render.ImageTileMap:
+    svg = ET.parse(svg_path)
+    view_box = tree_get_viewbox(svg)
+    
+    # For some reason resvg doesn't scan the share directories from
+    # XDG_DATA_DIRS for fonts. Since we don't know which ones contain fonts we
+    # just add all of them as potential font directories.
+    fonts_arguments = map(
+        lambda path: f"--use-fonts-dir={path}",
+        os.environ["XDG_DATA_DIRS"].split(":")
+    )
+    
+    def renderer(area: Bounds, path: Path) -> None:
+        view_box = ViewBox.from_bounds(area.scaled(1 / scale))
+        
+        tree_set_viewbox(svg, view_box)
+        
+        result = shell.run_print_and_capture_output(
+            (
+                "resvg",
+                f"--zoom={scale}",
+                # Note: resvg complians when using stdin without specifying
+                # `--resources-dir` for some reason...
+                "--resources-dir=/dev/null",
+                "-",
+                path,
+                *fonts_arguments,
+            ),
+            input=tree_to_str(svg),
+        )
+        if result.stdout != "" or result.stderr != "":
+            # Make sure that the next progress print doesn't override the
+            # output.
+            print("")
+    
+    result = render.render_segmented(
+        area=view_box.bounds().scaled(scale),
+        max_segment_size=max_segment_size,
+        path=out_path,
+        segment_renderer=renderer,
+        progress_handler=progress_handler
+    )
+    
+    return result

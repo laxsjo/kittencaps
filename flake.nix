@@ -85,6 +85,7 @@
         pkgs.open-gorton
         pkgs.inkscape
         pkgs.imagemagick
+        pkgs.resvg
         blender
       ];
     in {

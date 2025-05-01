@@ -10,7 +10,7 @@ from playwright import sync_api as playwright
 import io
 from contextlib import contextmanager
 
-from . import svg_builder
+from . import svg_builder, render
 from .utils import *
 from .error import *
 from .color import *
@@ -37,42 +37,7 @@ def render_single_segment(page: playwright.Page, rect: Bounds, path: Path) -> No
         clip={"x": pos.x, "y": pos.y, "width": size.x, "height": size.y},
     )
 
-@dataclass(frozen=True)
-class TileRenderProgress(ActionProgress):
-    current_tile: int
-    total_tiles: int
-    
-    def render(self) -> str | None:
-        return f"tile {self.current_tile + 1}/{self.total_tiles}"
-    
-    def render_finished(self) -> str | None:
-        return f"{self.total_tiles} tile(s)"
-    
-
-@dataclass
-class _ImageTileMap():
-    """
-    Intermediate result returned by `render_segment`. Call `stich_together` to
-    finish the operation. Is separate to allow easy measurement of how long the
-    two stages take.
-    """
-    dir: tempfile.TemporaryDirectory
-    paths: map[Path]
-    count: Vec2[int]
-    out_path: Path
-    
-    def stich_together(self) -> None:
-        subprocess.check_call([
-            "magick", "montage",
-            *self.paths,
-            "-mode", "Concatenate",
-            "-tile", f"{self.count.x}x{self.count.y}",
-            self.out_path
-        ])
-        
-        self.dir.cleanup()
-
-def render_segmented(page: playwright.Page, segment_max_width: Vec2[int], path: Path, *, progress_handler: Callable[[TileRenderProgress], None] | None = None) -> _ImageTileMap:
+def render_segmented(page: playwright.Page, segment_max_width: Vec2[int], path: Path, *, progress_handler: Callable[[render.TileRenderProgress], None] | None = None) -> render.ImageTileMap:
     if page.viewport_size is None:
         panic(f"No viewport_size in {page}")
     total_size = Vec2[float](
@@ -86,7 +51,7 @@ def render_segmented(page: playwright.Page, segment_max_width: Vec2[int], path: 
     pairs = tuple(total_bounds.as_segments(segment_max_width.cast_to(int)))
     for index, (index_pair, segment) in enumerate(pairs):
         if progress_handler is not None:
-            progress_handler(TileRenderProgress(index, len(pairs)))
+            progress_handler(render.TileRenderProgress(index, len(pairs)))
         render_single_segment(page, segment, directory / f"{index_pair.x}_{index_pair.y}.png")
         indices.append(index_pair)
     
@@ -99,4 +64,4 @@ def render_segmented(page: playwright.Page, segment_max_width: Vec2[int], path: 
     )
     
     count = Vec2[int].max(*indices) + Vec2(1, 1)
-    return _ImageTileMap(temp_dir, paths, count, path)
+    return render.ImageTileMap(temp_dir, paths, count, path)

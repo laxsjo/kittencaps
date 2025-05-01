@@ -302,6 +302,6 @@ metadata = GenerationMetadata.from_file(directory / "metadata.json5")
 layout, theme = metadata.load()
 
 with open(directory / "texture.svg", "r") as file:
-    view_box = tree_get_viewbox(ET.parse(file))
+    view_box = svg.tree_get_viewbox(ET.parse(file))
 
 create_keyboard(directory / "texture.png", view_box, layout, theme, out_path)

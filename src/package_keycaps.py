@@ -237,20 +237,21 @@ def main() -> None:
                 theme.scale,
             )
         )
-        tiles = log_action(
-            "Generating texture.png's",
-            lambda handler: svg.render_file_as_png(
-                page, out / "texture.svg",
-                out / "texture.png",
-                theme.texture_scale,
-                Vec2(3000, 3000),
-                progress_handler=handler
-            )
+    
+    tiles = log_action(
+        "Generating texture.png's",
+        lambda handler: svg.render_file_as_png_segmented_resvg(
+            out / "texture.svg",
+            out / "texture.png",
+            theme.texture_scale,
+            Vec2(3000, 3000),
+            progress_handler=handler
         )
-        log_action(
-            "Stiching together texture.png",
-            lambda _: tiles.stich_together(),
-        )
+    )
+    log_action(
+        "Stiching together texture.png",
+        lambda _: tiles.stich_together(),
+    )
     
     metadata.store_at(out / "metadata.json5")
 

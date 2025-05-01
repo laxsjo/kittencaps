@@ -19,7 +19,6 @@ __all__ = [
     "tree_resolve_namespaces",
     "make_element",
     "untangle_gradient_links",
-    "tree_get_viewbox",
     "DefsSet",
     "element_add_label",
     "tree_remove_indentation",
@@ -221,15 +220,6 @@ def element_update_outgoing_id(element: ET.Element, old_id: str, new_id: str):
     
     for child in element.iter():
         update_single_element_id(child, old_id, new_id)
-
-def tree_get_viewbox(tree: svg.MaybeElementTree) -> svg.ViewBox:
-    root = svg.resolve_element_tree(tree)
-    
-    match svg.ViewBox.parse_svg_value(root.attrib["viewBox"]):
-        case Ok(value):
-            return value
-        case Error(reason):
-            panic(f"Tree svg element contained invalid viewBox '{root.attrib["viewBox"]}': {reason}")
 
 # class DefsSet(list[ET.Element]):
 #     def append(self, object):

@@ -2,9 +2,8 @@ from typing import *
 import sys
 import traceback
 import os
-import abc
-from dataclasses import dataclass
 from time import time
+import curses
 
 
 __all__ = [
@@ -20,6 +19,8 @@ __all__ = [
     "ActionProgress",
     "log_action",
 ]
+
+curses.setupterm()
 
 def eprint(*args, **kwargs):
     print(*args, file=sys.stderr, **kwargs)
@@ -53,6 +54,13 @@ def assert_instance[T](_class: type[T], value: Any) -> T:
     else:
         panic(f"assert_instance: Value {value} is not an instance of {_class}")
 
+def get_move_cursor_up() -> str:
+    match curses.tigetstr("cuu1"):
+        case None:
+            return ""
+        case value:
+            return value.decode()
+
 def inspect[T](value: T) -> T:
     print(value)
     return value
@@ -71,14 +79,14 @@ class StartedTimedAction:
         self.action = action
         self.start_time = time()
         
-        print(f"{action}...", end="")
+        print(f"{action}...")
     
     def update(self, *, updated_action: str | None = None) -> None:
         if updated_action is not None:
             self.action = updated_action
         
         seconds = time() - self.start_time
-        print(f"\r{self.action} for {seconds * 1000.0:.1f} ms", end="")
+        print(f"{get_move_cursor_up()}\r{self.action} for {seconds * 1000.0:.1f} ms")
         
     
     def done(self, *, updated_action: str | None = None) -> None:
@@ -86,7 +94,7 @@ class StartedTimedAction:
             self.action = updated_action
 
         seconds = time() - self.start_time
-        print(f"\r{self.action} took {seconds * 1000.0:.1f} ms")
+        print(f"{get_move_cursor_up()}\r{self.action} took {seconds * 1000.0:.1f} ms")
 
 class ActionProgress(Protocol):
     def render(self) -> str | None: ...
