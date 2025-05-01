@@ -35,6 +35,7 @@ def render_single_segment(page: playwright.Page, rect: Bounds, path: Path) -> No
     page.screenshot(
         path=path,
         clip={"x": pos.x, "y": pos.y, "width": size.x, "height": size.y},
+        omit_background=True,
     )
 
 def render_segmented(page: playwright.Page, segment_max_width: Vec2[int], path: Path, *, progress_handler: Callable[[render.TileRenderProgress], None] | None = None) -> render.ImageTileMap:

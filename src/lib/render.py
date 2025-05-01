@@ -47,7 +47,8 @@ class ImageTileMap():
             *self.paths,
             "-mode", "Concatenate",
             "-tile", f"{self.count.x}x{self.count.y}",
-            self.out_path
+            "-background", "none",
+            self.out_path,
         ])
         
         self.dir.cleanup()
