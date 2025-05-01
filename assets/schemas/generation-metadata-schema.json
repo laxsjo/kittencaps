@@ -18,12 +18,16 @@
           "description": "The factor the resolution of the generated preview.png was scaled by.",
           "type": ["number", "null"]
         },
-        "texture_outlined_scale": {
+        "texture_scale": {
           "description": "The factor the resolution of the generated preview.png was scaled by.",
           "type": ["number", "null"]
         },
-        "texture_scale": {
-          "description": "The factor the resolution of the generated preview.png was scaled by.",
+        "print_outlined_scale": {
+          "description": "The factor the resolution of the generated print-outlined.png was scaled by.",
+          "type": ["number", "null"]
+        },
+        "print_scale": {
+          "description": "The factor the resolution of the generated print.png was scaled by.",
           "type": ["number", "null"]
         },
       },

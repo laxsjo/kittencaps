@@ -5,6 +5,7 @@ import functools
 import damsenviet.kle as kle
 import itertools
 import re
+from copy import deepcopy
 
 from . import project, magic
 from .config import *
@@ -26,6 +27,7 @@ __all__ = [
     "place_keys",
     "border_from_bounds",
     "build_keyboard_svg",
+    "pack_keys_for_print",
 ]
 
 def resolve_key_position(key: kle.Key) -> Vec2:
@@ -563,3 +565,43 @@ def build_keyboard_svg(keyboard: kle.Keyboard, config: Config, key_templates: Sv
     return (KeyboardBuilder(config,  key_templates)\
         .keys(*keyboard.keys)\
         .build())
+
+def pack_keys_for_print[K: kle.Keyboard](keyboard: K) -> K:
+    keyboard = deepcopy(keyboard)
+    
+    def geometry_to_size(geometry: tuple[float, Orientation]) -> Vec2[float]:
+        size = Vec2(geometry[0], 1)
+        match geometry[1]:
+            case Orientation.HORIZONTAL:
+                return size
+            case Orientation.VERTICAL:
+                return size.swap()
+    
+    keys_by_geometry: dict[tuple[float, Orientation], list[kle.Key]] = {}
+    for key in keyboard.keys:
+        info = KeycapInfo(key)
+        geometry = (info.major_size, info.orientation)
+        if geometry not in keys_by_geometry:
+            keys_by_geometry[geometry] = []
+        
+        keys_by_geometry[geometry].append(key)
+    
+    next_y = 0
+    for geometry, keys in keys_by_geometry.items():
+        size = geometry_to_size(geometry)
+        next_x = 0
+        for key in keys:
+            key.x = next_x
+            key.y = next_y
+            key.rotation_x = 0
+            key.rotation_y = 0
+            key.rotation_angle = 0
+            
+            next_x += size.x
+            if next_x >= magic.print_max_row_width:
+                next_x = 0
+                next_y += size.y
+        
+        next_y += size.y
+
+    return keyboard

@@ -1,0 +1,193 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:bx="https://boxy-svg.com" version="1.1" viewBox="-40 -40 516 180">
+  <filter>
+    <feFlood flood-color="#d5d5d5" result="light" />
+    <feBlend in="light" in2="SourceGraphic" mode="multiply" result="shaded" />
+    <feComposite in="shaded" in2="SourceGraphic" operator="atop" />
+  </filter>
+  <symbol id="_1u-top" viewBox="-50 -50 100 100" preserveAspectRatio="none">
+    <path class="surface" style="fill:inherit;" d="M 50 -40 C 50 -45.5 45.5 -50 40 -50 L -40 -50 C -45.5 -50 -50 -45.5 -50 -40 L -50 40 C -50 45.5 -45.5 50 -40 50 L 40 50 C 45.5 50 50 45.5 50 40 L 50 -40 Z" />
+  </symbol>
+  <symbol viewBox="-68.75 -50 137.5 100" preserveAspectRatio="none">
+    <path class="surface" style="fill:inherit;" d="M68.75-40c0-5.5-4.5-10-10-10h-117.5c-5.5,0-10,4.5-10,10v80c0,5.5,4.5,10,10,10h117.5   c5.5,0,10-4.5,10-10V-40z" />
+  </symbol>
+  <symbol viewBox="-87.5 -50 175 100" preserveAspectRatio="none">
+    <path class="surface" style="fill:inherit;" d="M87.5-40c0-5.5-4.5-10-10-10h-155c-5.5,0-10,4.5-10,10v80c0,5.5,4.5,10,10,10h155   c5.5,0,10-4.5,10-10V-40z" />
+  </symbol>
+  <symbol viewBox="-31.25 -50 62.5 100" preserveAspectRatio="none">
+    <path class="surface" style="fill:inherit;" d="M106.25-40c0-5.5-4.5-10-10-10h-192.5c-5.5,0-10,4.5-10,10v80c0,5.5,4.5,10,10,10h192.5   c5.5,0,10-4.5,10-10V-40z" />
+  </symbol>
+  <symbol viewBox="-125 -50 250 100" preserveAspectRatio="none">
+    <path class="surface" style="fill:inherit;" d="M125-40c0-5.5-4.5-10-10-10h-230c-5.5,0-10,4.5-10,10v80c0,5.5,4.5,10,10,10h230   c5.5,0,10-4.5,10-10V-40z" />
+  </symbol>
+  <symbol viewBox="-143.75 -50 287.5 100" preserveAspectRatio="none">
+    <path class="surface" style="fill:inherit;" d="M143.75-40c0-5.5-4.5-10-10-10h-267.5c-5.5,0-10,4.5-10,10v80c0,5.5,4.5,10,10,10h267.5   c5.5,0,10-4.5,10-10V-40z" />
+  </symbol>
+  <symbol viewBox="-181.25 -50 362.5 100" preserveAspectRatio="none">
+    <path class="surface" style="fill:inherit;" d="M181.25-40c0-5.5-4.5-10-10-10h-342.5c-5.5,0-10,4.5-10,10v80c0,5.5,4.5,10,10,10h342.5   c5.5,0,10-4.5,10-10V-40z" />
+  </symbol>
+  <defs>
+    <mask id="_1u-base">
+      <rect width="168" height="168" x="-34" y="-34" fill="white" />
+    </mask>
+    <mask>
+      <rect width="100" height="100" fill="white" />
+      <use width="65.9004" height="65.9004" x="17.0498" y="17.0498" href="#_1u-top" fill="black" />
+    </mask>
+    <pattern id="pattern-0-0" href="#pattern-0" patternTransform="matrix(1.26, 0, 0, 1.26, -13.000006, -13.000001)" />
+    <pattern id="pattern-0" patternUnits="userSpaceOnUse" width="40" height="40" bx:pinned="true" viewBox="0 0 40 40">
+      <title>Stripes</title>
+      <rect width="40" height="40" style="stroke-linecap: round; stroke-linejoin: bevel; stroke-width: 10px; fill: #2e2f32;" />
+      <line style="fill: none; stroke-linejoin: round; stroke-linecap: square; stroke-width: 9.5px; stroke: #e1d9f2;" x1="40" y1="0" x2="0" y2="40" />
+      <line style="fill: none; stroke-linejoin: round; stroke-linecap: square; stroke-width: 9.5px; stroke: #e1d9f2;" x1="0" y1="0" x2="-40" y2="40" />
+      <line style="fill: none; stroke-linejoin: round; stroke-linecap: square; stroke-width: 9.5px; stroke: #e1d9f2;" x1="80" y1="0" x2="40" y2="40" />
+    </pattern>
+  </defs>
+  <g class="keycap-color-bg_focus" mask="url(#_1u-base)" transform="">
+    <g>
+      <rect class="surface" x="-34" y="-34" width="168" height="168" fill="#2e2f32" />
+      <g transform="">
+        <svg viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0" version="1.1">
+          <path style="fill: #f5f7f7; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px; stroke: #f5f7f7;" d="M 31.143 41.822 C 35.034 37.293 41.261 33.376 47.223 32.685 C 48.52 32.535 50.007 26.412 51.313 26.389 C 52.61 26.366 55.425 31.659 56.696 31.963 C 61.708 33.166 63.675 33.846 67.907 36.923 C 68.739 37.527 74.21 34.264 75.036 35.079 C 76.791 36.813 74.735 46.176 75.382 47.37 C 77.571 51.402 78.088 55.736 78.094 58.952 C 78.094 58.952 31.203 41.67 31.143 41.822 Z">
+            <title>Body</title>
+          </path>
+          <path style="stroke:#2e2f32;fill:#f5f7f7;stroke-linecap:round;stroke-width:2px" d="M 34.556 32.299 C 30.942 34.868 28.204 37.302 29.518 40.113 C 31.195 43.7 37.473 41.781 43.127 39.512" transform="translate(36.155197905494774, 37.20175758560417) matrix(-0.308585, 0.951197, -0.951197, -0.308585, -0.000016, 0.00001) translate(-36.155197905494774, -37.20175758560417)">
+            <title>Paw</title>
+          </path>
+          <ellipse style="fill: #2e2f32;" cx="45.899" cy="39.72" rx="1.98" ry="1.98">
+            <title>Eye</title>
+          </ellipse>
+          <ellipse style="fill: #2e2f32;" cx="63.721" cy="45.64" rx="1.98" ry="1.98">
+            <title>Eye</title>
+          </ellipse>
+          <path style="fill:#e1d9f2;stroke-width:2px" d="M -34 17.8 L 134 79.6274 L 134 134 L -34 134 L -34 17.8 Z">
+            <title>Table BG</title>
+          </path>
+          <path style="stroke: #2e2f32; fill: none; stroke-width: 2px; stroke-linecap: square;" d="M -34 17.7918 L 134 79.6192">
+            <title>Table Border</title>
+          </path>
+          <path style="stroke-linecap:round;stroke-linejoin:round;fill:none;stroke:#2e2f32;stroke-width:2px" d="M 50.437 41.42 C 50.972 42.651 52.585 43.192 54.142 42.504 C 54.573 43.793 56.168 45.109 58.485 44.621" transform="translate(54.461, 43.07254008120839) matrix(0.99889, -0.04711, 0.04711, 0.99889, 0, 0) translate(-54.461, -43.07254008120839)">
+            <title>Mouth</title>
+          </path>
+          <g transform="matrix(1, -0.014408, 0, 1, 13.983849, -12.18671)" style="">
+            <title>Keyboard</title>
+            <rect x="-58.037" y="-70.797" width="43" height="15.665" style="stroke: #2e2f32; fill: #f5f7f7; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px;" transform="matrix(-0.934085, -0.357052, 0.8393, -0.749746, 57.39723, 14.907937)">
+              <title>Case</title>
+            </rect>
+            <g transform="matrix(-0.934085, -0.357052, 0.627407, -0.560462, 25.125178, 132.71793)" style="">
+              <title>Keys</title>
+              <rect x="19.145" y="70.935" width="2" height="5" style="fill: #d5d5df; stroke: #d5d5df; stroke-linecap: round; stroke-linejoin: round;" />
+              <rect x="23.145" y="70.935" width="2" height="4" style="fill: #d5d5df; stroke: #d5d5df; stroke-linecap: round; stroke-linejoin: round;" />
+              <rect x="27.145" y="70.935" width="2" height="2" style="fill: #d5d5df; stroke: #d5d5df; stroke-linecap: round; stroke-linejoin: round;" />
+              <rect x="31.145" y="70.935" width="2" height="3" style="fill: #d5d5df; stroke: #d5d5df; stroke-linecap: round; stroke-linejoin: round;" />
+              <rect x="35.145" y="70.935" width="2" height="3" style="fill: #d5d5df; stroke: #d5d5df; stroke-linecap: round; stroke-linejoin: round;" />
+              <rect x="39.145" y="70.935" width="2" height="3" style="fill: #d5d5df; stroke: #d5d5df; stroke-linecap: round; stroke-linejoin: round;" />
+              <rect x="43.145" y="70.935" width="2" height="3" style="fill: #d5d5df; stroke: #d5d5df; stroke-linecap: round; stroke-linejoin: round;" />
+              <rect x="47.145" y="70.935" width="2" height="2" style="fill: #d5d5df; stroke: #d5d5df; stroke-linecap: round; stroke-linejoin: round;" />
+              <rect x="51.145" y="70.935" width="2" height="4" style="fill: #d5d5df; stroke: #d5d5df; stroke-linecap: round; stroke-linejoin: round;" />
+              <rect x="55.145" y="70.935" width="2" height="5" style="fill: #d5d5df; stroke: #d5d5df; stroke-linecap: round; stroke-linejoin: round;" />
+              <rect x="19.145" y="77.935" width="2" height="2" style="fill: #d5d5df; stroke: #d5d5df; stroke-linecap: round; stroke-linejoin: round;" />
+              <rect x="23.145" y="76.935" width="2" height="2" style="fill: #d5d5df; stroke: #d5d5df; stroke-linecap: round; stroke-linejoin: round;" />
+              <rect x="27.145" y="74.935" width="2" height="2" style="fill: #d5d5df; stroke: #d5d5df; stroke-linecap: round; stroke-linejoin: round;" />
+              <rect x="31.145" y="75.935" width="2" height="2" style="fill: #d5d5df; stroke: #d5d5df; stroke-linecap: round; stroke-linejoin: round;" />
+              <rect x="35.145" y="75.935" width="2" height="2" style="fill: #d5d5df; stroke: #d5d5df; stroke-linecap: round; stroke-linejoin: round;" />
+              <rect x="39.145" y="75.935" width="2" height="2" style="fill: #d5d5df; stroke: #d5d5df; stroke-linecap: round; stroke-linejoin: round;" />
+              <rect x="43.145" y="75.935" width="2" height="2" style="fill: #d5d5df; stroke: #d5d5df; stroke-linecap: round; stroke-linejoin: round;" />
+              <rect x="47.145" y="74.935" width="2" height="2" style="fill: #d5d5df; stroke: #d5d5df; stroke-linecap: round; stroke-linejoin: round;" />
+              <rect x="51.145" y="76.935" width="2" height="2" style="fill: #d5d5df; stroke: #d5d5df; stroke-linecap: round; stroke-linejoin: round;" />
+              <rect x="55.145" y="77.935" width="2" height="2" style="fill: #d5d5df; stroke: #d5d5df; stroke-linecap: round; stroke-linejoin: round;" />
+              <rect x="19.145" y="81.935" width="2" height="4" style="fill: #d5d5df; stroke: #d5d5df; stroke-linecap: round; stroke-linejoin: round;" />
+              <rect x="23.145" y="80.935" width="2" height="5" style="fill: #d5d5df; stroke: #d5d5df; stroke-linecap: round; stroke-linejoin: round;" />
+              <rect x="27.145" y="78.935" width="2" height="3" style="fill: #d5d5df; stroke: #d5d5df; stroke-linecap: round; stroke-linejoin: round;" />
+              <rect x="31.145" y="79.935" width="2" height="2" style="fill: #d5d5df; stroke: #d5d5df; stroke-linecap: round; stroke-linejoin: round;" />
+              <rect x="35.145" y="79.935" width="2" height="2" style="fill: #d5d5df; stroke: #d5d5df; stroke-linecap: round; stroke-linejoin: round;" />
+              <rect x="39.145" y="79.935" width="2" height="2" style="fill: #d5d5df; stroke: #d5d5df; stroke-linecap: round; stroke-linejoin: round;" />
+              <rect x="43.145" y="79.935" width="2" height="2" style="fill: #d5d5df; stroke: #d5d5df; stroke-linecap: round; stroke-linejoin: round;" />
+              <rect x="47.145" y="78.935" width="2" height="3" style="fill: #d5d5df; stroke: #d5d5df; stroke-linecap: round; stroke-linejoin: round;" />
+              <rect x="51.145" y="80.935" width="2" height="5" style="fill: #d5d5df; stroke: #d5d5df; stroke-linecap: round; stroke-linejoin: round;" />
+              <rect x="55.145" y="81.935" width="2" height="4" style="fill: #d5d5df; stroke: #d5d5df; stroke-linecap: round; stroke-linejoin: round;" />
+              <rect x="27.145" y="83.935" width="2" height="2" style="fill: #d5d5df; stroke: #d5d5df; stroke-linecap: round; stroke-linejoin: round;" />
+              <rect x="31.145" y="83.935" width="6" height="2" style="fill: #d5d5df; stroke: #d5d5df; stroke-linecap: round; stroke-linejoin: round;" />
+              <rect x="39.145" y="83.935" width="6" height="2" style="fill: #d5d5df; stroke: #d5d5df; stroke-linecap: round; stroke-linejoin: round;" />
+              <rect x="47.145" y="83.935" width="2" height="2" style="fill: #d5d5df; stroke: #d5d5df; stroke-linecap: round; stroke-linejoin: round;" />
+            </g>
+            <polyline style="fill: none; stroke-linecap: round; stroke-linejoin: round; stroke: #2e2f32; stroke-width: 2px;" points="11.692 73.852 11.692 74.528 52.659 90.119 65.83 77.973 65.83 77.159">
+              <title>Edge</title>
+            </polyline>
+          </g>
+          <g transform="matrix(1, 0, 0, 1, 7.568624, -2.222609)">
+            <title>Mouse</title>
+            <path style="stroke-linecap: round; stroke-linejoin: round; stroke: #2e2f32; stroke-width: 2px; fill: #f5f7f7;" d="M 25.255 51.352 C 23.755 53.113 21.211 54.674 18.574 56.268 C 16.667 55.999 14.138 55.189 13.129 54.109 L 12.885 53.255 C 13.389 52.322 14.126 50.907 15.534 49.71 C 17.324 48.188 19.138 47.487 19.596 47.424 C 20.948 47.238 24.458 48.348 25.664 49.951 L 25.255 51.352 Z">
+              <title>Body</title>
+            </path>
+            <path style="fill: none; stroke-linecap: round; stroke-linejoin: round; stroke: #2e2f32; stroke-width: 2px;" d="M 19.119 55.868 C 20.043 54.385 21.584 52.402 25.031 51.036">
+              <title>Side</title>
+            </path>
+            <path style="fill: none; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px; stroke: #2e2f32;" d="M 17.74 51.92 L 17.068 52.745">
+              <title>Wheel</title>
+            </path>
+          </g>
+          <g style="" transform="matrix(0.66, 0, 0, 0.66, 22.288481, 14.141075)">
+            <title>Paw</title>
+            <path style="fill:#f5f7f7;stroke-linecap:round;stroke-width:3.0303px" d="M 65.8 57.072 C 62.82 59.359 54.66 67.384 59.919 71.459 C 62.939 73.799 73.091 67.946 80.187 60.773" transform="translate(69.19009324707737, 64.52715518126755) matrix(1, 0.000069, -0.000069, 1, 0.00002, 0.000099) translate(-69.19009324707737, -64.52715518126755)">
+              <title>Background</title>
+            </path>
+            <path style="stroke:#2e2f32;fill:#f5f7f7;stroke-linecap:round;stroke-width:3.0303px" d="M 65.8 57.072 C 62.82 59.359 54.66 67.384 59.919 71.459 C 62.939 73.799 69.727 72.25 76.823 65.077" transform="translate(67.704, 64.787) matrix(1, 0.000069, -0.000069, 1, 0, 0) translate(-67.704, -64.787)">
+              <title>Outline</title>
+            </path>
+          </g>
+          <path d="M 28.5617 29.4563 C 28.5617 29.4563 29.6404 28.9605 30.34 27.6685 C 31.0307 26.393 30.9171 25.5052 29.8243 25.4209 C 28.8042 25.3422 28.1319 27.4606 28.1319 27.4606 C 28.1319 27.4606 26.7034 25.8142 25.6338 26.4748 C 24.8869 26.9361 24.9886 27.7536 26.103 28.454 C 27.5109 29.3388 28.5617 29.4563 28.5617 29.4563 Z" style="stroke-linecap: round; stroke-linejoin: round; fill: #e1d9f2; stroke: #e1d9f2; stroke-width: 2px;">
+            <title>Heart</title>
+          </path>
+        </svg>
+        <path style="pointer-events:none" d="M 50 -40 C 50 -45.5 45.5 -50 40 -50 L -40 -50 C -45.5 -50 -50 -45.5 -50 -40 L -50 40 C -50 45.5 -45.5 50 -40 50 L 40 50 C 45.5 50 50 45.5 50 40 L 50 -40 Z" transform=" translate(50, 50) scale(0.6590038314000001)" stroke="red" stroke-opacity="0.5" fill="none" class="outline" visibility="visible">
+          <title>Outline</title>
+        </path>
+      </g>
+    </g>
+  </g>
+  <g class="keycap-color-bg_focus" mask="url(#_1u-base)" transform="translate(168, 0)">
+    <g>
+      <rect class="surface" x="-34" y="-34" width="168" height="168" fill="#2e2f32" />
+      <g transform="">
+        <svg viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0" version="1.1">
+          <rect width="168" height="168" style="stroke-linecap: round; stroke-linejoin: bevel; stroke-width: 10px; fill: url(&quot;#pattern-0-0&quot;);" x="-34" y="-34">
+            <title>Pattern</title>
+          </rect>
+          <rect style="stroke-linejoin: bevel; stroke-width: 10px; stroke-linecap: round; fill: #2e2f32;" x="20.5" y="35.7" width="59" height="28.6" rx="7" ry="7">
+            <title>Cover</title>
+          </rect>
+          <path d="m 26.091502,57.268001 c 0,0.828 0.644,1.495 1.495,1.518 h 8.717 c 0.828,0 1.495,-0.69 1.495,-1.518 0,-0.782 -0.713,-1.495 -1.495,-1.495 h -6.969 c -0.138,0 -0.23,-0.092 -0.23,-0.23 v -4.324 c 0,-0.138 0.092,-0.23 0.23,-0.23 h 4.324 c 0.828,0 1.495,-0.69 1.495,-1.518 0,-0.782 -0.713,-1.495 -1.495,-1.495 h -4.324 c -0.138,0 -0.23,-0.092 -0.23,-0.23 v -3.289 c 0,-0.138 0.092,-0.23 0.23,-0.23 h 6.624 c 0.828,0 1.495,-0.69 1.495,-1.518 0,-0.782 -0.713,-1.495 -1.495,-1.495 h -8.372 c -0.851,0.023 -1.495,0.69 -1.495,1.495 z m 22.333003,1.955 c 3.243,0 7.291,-1.564 7.291,-5.566 0,-3.542 -2.829,-5.773 -7.291,-5.773 -2.369,0 -3.427,-0.575 -3.427,-1.771 0,-1.104 1.334,-1.817 3.427,-1.817 1.932,0 2.967,0.529 3.772,0.92 0.736,0.368 1.633,0.782 2.461,-0.207 1.472,-1.748 -2.047,-3.91 -6.233,-3.91 -3.749,0 -6.555,2.093 -6.555,4.922 0,2.99 2.622,4.968 6.555,4.968 2.806,0 4.117,0.782 4.163,2.438 0.046,1.679 -1.357,2.576 -4.163,2.576 -2.898,0 -3.979,-0.805 -4.715,-1.357 -0.552,-0.414 -1.311,-0.966 -2.231,-0.046 -1.909,1.886 2.3,4.623 6.946,4.623 z m 19.043983,-0.437 c 2.162,0 4.163,-0.782 5.773,-2.254 0.828,-0.759 0.897,-1.955 0.115,-2.438 -0.621,-0.46 -1.495,-0.368 -2.07,0.23 -1.035,0.966 -2.392,1.495 -3.818,1.495 -3.128,0 -5.566,-2.438 -5.566,-5.566 0,-3.105 2.461,-5.566 5.566,-5.566 1.311,0 2.599,0.483 3.611,1.38 0.644,0.483 1.472,0.552 2.07,0.138 l 0.046,-0.023 c 0.782,-0.575 0.621,-1.748 -0.322,-2.53 -1.472,-1.242 -3.404,-1.932 -5.405,-1.932 -4.692,0 -8.533,3.841 -8.533,8.533 0,4.692 3.841,8.533 8.533,8.533 z" style="font-weight:700;font-size:23px;font-family:'Open Gorton';text-anchor:middle;white-space:pre;fill:#e1d9f2" aria-label="ESC" />
+        </svg>
+        <path style="pointer-events:none" d="M 50 -40 C 50 -45.5 45.5 -50 40 -50 L -40 -50 C -45.5 -50 -50 -45.5 -50 -40 L -50 40 C -50 45.5 -45.5 50 -40 50 L 40 50 C 45.5 50 50 45.5 50 40 L 50 -40 Z" transform=" translate(50, 50) scale(0.6590038314000001)" stroke="red" stroke-opacity="0.5" fill="none" class="outline" visibility="visible">
+          <title>Outline</title>
+        </path>
+      </g>
+    </g>
+  </g>
+  <g class="keycap-color-bg_main" mask="url(#_1u-base)" transform="translate(336, 0)">
+    <g>
+      <rect class="surface" x="-34" y="-34" width="168" height="168" fill="#f5f7f7" />
+      <g transform="">
+        <svg viewBox="0 0 100 100" width="100.0" height="100.0" style="overflow:visible;" x="0" y="0" version="1.1">
+          <path d="m 41.080013,64.080002 c 0.76,0 1.4,-0.64 1.4,-1.44 v -20 c 0,-0.32 0.4,-0.48 0.6,-0.2 l 14.88,21.28 c 0.24,0.32 0.64,0.36 1,0.36 0.76,0 1.4,-0.64 1.4,-1.44 v -25.32 c 0,-0.76 -0.64,-1.4 -1.4,-1.4 -0.8,0 -1.44,0.64 -1.44,1.4 v 19.76 c 0,0.32 -0.4,0.44 -0.6,0.16 l -14.84,-20.88 c -0.24,-0.28 -0.6,-0.44 -1,-0.44 -0.8,0 -1.44,0.64 -1.44,1.4 v 25.32 c 0,0.8 0.64,1.44 1.44,1.44 z" style="font-size:40px;font-family:'Open Gorton';text-anchor:middle;white-space:pre;fill:#2e2f32" aria-label="N" />
+          <g>
+            <title>Corner</title>
+            <path d="M 72.1393 28.8738 H 72.1393 V 32.3393 H 75.6048 V 32.3393 H 72.1393 V 35.8048 H 72.1393 V 32.3393 H 68.6738 V 32.3393 H 72.1393 Z" bx:shape="cross 68.6738 28.8738 6.931 6.931 0 0 0.5 1@c85ec124" style="fill: none; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2.5px; stroke: #777987;" />
+          </g>
+          <g>
+            <title>Corner</title>
+            <g>
+              <title>&#214;</title>
+              <path d="m 27.864001,78.960603 c 4.08,0 7.42,-3.34 7.42,-7.42 0,-4.08 -3.34,-7.42 -7.42,-7.42 -4.08,0 -7.42,3.34 -7.42,7.42 0,4.08 3.34,7.42 7.42,7.42 z m 0,-2.58 c -2.72,0 -4.84,-2.12 -4.84,-4.84 0,-2.7 2.14,-4.84 4.84,-4.84 2.7,0 4.84,2.14 4.84,4.84 0,2.7 -2.14,4.84 -4.84,4.84 z" style="font-weight:700;font-size:20px;font-family:'Open Gorton';text-anchor:middle;white-space:pre;fill:#716c97" aria-label="O" />
+              <ellipse style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 10px; fill: #716c97;" cx="25.3778" cy="61.7803" rx="1.5" ry="1.5" />
+              <ellipse style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 10px; fill: #716c97;" cx="-30.35" cy="61.7803" rx="1.5" ry="1.5" transform="matrix(-1, 0, 0, 1, 0, 0)" />
+            </g>
+          </g>
+        </svg>
+        <path style="pointer-events:none" d="M 50 -40 C 50 -45.5 45.5 -50 40 -50 L -40 -50 C -45.5 -50 -50 -45.5 -50 -40 L -50 40 C -50 45.5 -45.5 50 -40 50 L 40 50 C 45.5 50 50 45.5 50 40 L 50 -40 Z" transform=" translate(50, 50) scale(0.6590038314000001)" stroke="red" stroke-opacity="0.5" fill="none" class="outline" visibility="visible">
+          <title>Outline</title>
+        </path>
+      </g>
+    </g>
+  </g>
+</svg>

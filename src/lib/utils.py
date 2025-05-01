@@ -15,6 +15,7 @@ __all__ = [
     "assert_instance",
     "inspect",
     "time_it",
+    "Timer",
     "StartedTimedAction",
     "ActionProgress",
     "log_action",
@@ -74,10 +75,21 @@ def time_it[T](function: Callable[[], T]) -> tuple[T, float]:
     end = time()
     return result, end - start
 
+class Timer():
+    def __init__(self, start_time: float | None = None):
+        self.start_time = time() if start_time is None else start_time
+    
+    def get_pretty(self) -> str:
+        seconds = time() - self.start_time
+        if seconds < 1:
+            return f"{seconds * 1000.0:.1f} ms"
+        else:
+            return f"{seconds:.2f} s"
+
 class StartedTimedAction:
     def __init__(self, action: str):
         self.action = action
-        self.start_time = time()
+        self.timer = Timer()
         
         print(f"{action}...")
     
@@ -85,16 +97,14 @@ class StartedTimedAction:
         if updated_action is not None:
             self.action = updated_action
         
-        seconds = time() - self.start_time
-        print(f"{get_move_cursor_up()}\r{self.action} for {seconds * 1000.0:.1f} ms")
+        print(f"{get_move_cursor_up()}\r{self.action} for {self.timer.get_pretty()}")
         
     
     def done(self, *, updated_action: str | None = None) -> None:
         if updated_action is not None:
             self.action = updated_action
 
-        seconds = time() - self.start_time
-        print(f"{get_move_cursor_up()}\r{self.action} took {seconds * 1000.0:.1f} ms")
+        print(f"{get_move_cursor_up()}\r{self.action} took {self.timer.get_pretty()}")
 
 class ActionProgress(Protocol):
     def render(self) -> str | None: ...
@@ -117,8 +127,6 @@ def log_action[P: ActionProgress, R](action: str, function: Callable[[Callable[[
             timer.update(updated_action=action + progress_str)
     
     result = function(handler)
-    
-    seconds = time() - timer.start_time
     
     # Type inference doesn't recognize that a value P may be assigned
     last_progress = cast(P | None, last_progress)

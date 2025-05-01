@@ -1,4 +1,5 @@
 from decimal import Decimal
+from . import pos
 
 # Collection of all magic numbers in this project
 
@@ -17,4 +18,12 @@ The angle with defines the limit for what angles are considered sharp for the
 3D model of the case in the blender scene. This value happens to fit well for
 the moonlander mk1 model
 TODO: Yes this is ugly...
+"""
+
+max_tile_size = pos.Vec2(3000, 3000)
+
+print_max_row_width = 10
+"""
+How wide the rows of keys in the packed `print.svg/png` images are allowed to
+be in u.
 """

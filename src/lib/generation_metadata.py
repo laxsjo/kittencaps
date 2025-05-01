@@ -54,8 +54,9 @@ class GenerationMetadata():
             theme_path=pathlib.Path(metadata["theme_path"]),
             args=Args(
                 preview_scale=metadata["args"].get("preview_scale", None),
-                texture_outlined_scale=metadata["args"].get("texture_outlined_scale", None),
                 texture_scale=metadata["args"].get("texture_scale", None),
+                print_outlined_scale=metadata["args"].get("print_outlined_scale", None),
+                print_scale=metadata["args"].get("print_scale", None),
             ),
         )
     
@@ -84,7 +85,8 @@ class GenerationMetadata():
                 "args": {                    
                     "preview_scale": self.args.preview_scale,
                     "texture_scale": self.args.texture_scale,
-                    "texture_outlined_scale": self.args.texture_outlined_scale,
+                    "print_outlined_scale": self.args.print_outlined_scale,
+                    "print_scale": self.args.print_scale,
                 },
             }
             

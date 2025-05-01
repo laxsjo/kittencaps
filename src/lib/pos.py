@@ -233,8 +233,8 @@ class Vec2[T: (float,int)]():
         return Scaling(*self)
     
     # Return a new Vec2 with the x and y components swapped
-    def swap(self) -> Vec2:
-        return Vec2(self.y, self.x)
+    def swap(self) -> Self:
+        return type(self)(self.y, self.x)
 
 @dataclass
 class Rotation:

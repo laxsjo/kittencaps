@@ -10,11 +10,11 @@ import subprocess
 import re
 import xml.etree.ElementTree as ET
 
-from .lib import project
+from .lib import project, magic
 from .lib.svg_builder import *
 from .lib.pos import *
 from .lib import svg, browser
-from .lib.keyboard_builder import build_keyboard_svg, create_keycap_mask
+from .lib import keyboard_builder
 from .lib.config import *
 from .lib.utils import *
 from .lib.error import *
@@ -32,6 +32,9 @@ def normalize_keyboard_for_texture(keyboard: svg.MaybeElementTree, config: Confi
         case Error(msg):
             panic(f"Expected svg element {keyboard}'s view box '{view_box_str}': {msg}")
     
+    # Remove embedded fonts
+    svg.tree_remove_by_id(keyboard, "fonts")
+    
     # Remove elements responsible for the shading effect
     svg.tree_remove_by(
         keyboard,
@@ -47,7 +50,7 @@ def normalize_keyboard_for_texture(keyboard: svg.MaybeElementTree, config: Confi
     config.base_size = config.unit_size + config.icon_margin * 2
     for mask in masks:
         size_u = mask.attrib["id"].removeprefix("_").removesuffix("-base")
-        new_mask = create_keycap_mask(size_u, config)
+        new_mask = keyboard_builder.create_keycap_mask(size_u, config)
         # Replace the mask's children
         mask[:] = new_mask[:]
     
@@ -101,6 +104,36 @@ def normalize_keyboard_for_texture(keyboard: svg.MaybeElementTree, config: Confi
     for element, view_box in iter_with_viewbox(keyboard, view_box):
         svg.apply_transform_origin(keyboard, element, view_box)
 
+def normalize_text_actions(path: Path) -> None:
+    with open("/dev/null") as null:
+        # Convert all text to paths.
+        log_action(f"Converting all text to paths in {path.name}", lambda _: subprocess.check_call(
+            [
+                "inkscape",
+                str(path),
+                "--export-text-to-path",
+                "--export-plain-svg",
+                "-o", str(path)
+            ],
+            # Since inkscape is a fragile shitty program it generates a billion
+            # warnings if you look at it wrong. Therefore we need to throw
+            # away all warnings and errors.
+            stderr=null,
+        ))
+        
+        def clean_up_inkscape(path: Path):
+            with open(path, "r") as file:
+                tree = ET.parse(file)
+            # Remove unnecessary IDs added by Inkscape.
+            svg.tree_remove_unreferenced_ids(tree)
+            tree.write(path)
+        
+        # Why does inkscape have to be so hard to work with...
+        log_action(
+            f"Cleaning up after Inkscape in {path.name}",
+            lambda _: clean_up_inkscape(path),
+        )
+
 def main() -> None:
     parser = argparse.ArgumentParser(
         description="Assemble the keycap set images using a specific keymap and theme.",
@@ -147,18 +180,25 @@ def main() -> None:
         help="Scale the resolution the output preview.png by this factor. Overrides use of --scale.",
     )
     parser.add_argument(
-        "--texture-outlined-scale",
-        metavar="SCALE",
-        type=float,
-        default=None,
-        help="Scale the resolution the output texture-outlined.png by this factor. Overrides use of --scale.",
-    )
-    parser.add_argument(
         "--texture-scale",
         metavar="SCALE",
         type=float,
         default=None,
         help="Scale the resolution the output texture.png by this factor. Overrides use of --scale.",
+    )
+    parser.add_argument(
+        "--print-outlined-scale",
+        metavar="SCALE",
+        type=float,
+        default=None,
+        help="Scale the resolution the output print-outlined.png by this factor. Overrides use of --scale.",
+    )
+    parser.add_argument(
+        "--print-scale",
+        metavar="SCALE",
+        type=float,
+        default=None,
+        help="Scale the resolution the output print.png by this factor. Overrides use of --scale.",
     )
     
     args = parser.parse_args()
@@ -169,13 +209,15 @@ def main() -> None:
     out: pathlib.Path = args.out
     scale: float | None = args.scale
     preview_scale: float | None = args.preview_scale
-    texture_outlined_scale: float | None = args.texture_outlined_scale
     texture_scale: float | None = args.texture_scale
+    print_outlined_scale: float | None = args.print_outlined_scale
+    print_scale: float | None = args.print_scale
 
     args = Args(
         preview_scale=scale if preview_scale is None else preview_scale,
-        texture_outlined_scale=scale if texture_outlined_scale is None else texture_outlined_scale,
         texture_scale=scale if texture_scale is None else texture_scale,
+        print_outlined_scale=scale if print_outlined_scale is None else print_outlined_scale,
+        print_scale=scale if print_scale is None else print_scale,
     )
 
     metadata = GenerationMetadata(
@@ -184,96 +226,82 @@ def main() -> None:
         args=args,
     )
 
+    timer = Timer()
+
     layout, theme = metadata.load()
 
     with open(template_path, "r") as file:
         key_templates = SvgSymbolSet(ET.parse(file))
 
-    result = build_keyboard_svg(layout, theme, key_templates)
+    result = log_action(
+        "Building keyboard SVG",
+        lambda _: keyboard_builder.build_keyboard_svg(layout, theme, key_templates),
+    )
     
     out.mkdir(parents=True, exist_ok=True)
     
     with open(out / "preview.svg", "w") as file:
         result.write(file, encoding="unicode", xml_declaration=True)
     
-    # Show icon outlines
-    for outline in svg.tree_find_by_class(result, "outline"):
-        outline.set("visibility", "visible")
-    
     log_action(
         "Normalizing texture.svg",
         lambda _: normalize_keyboard_for_texture(result, theme),
     )
     
-    with open(out / "texture-outlined.svg", "w") as file:
-        result.write(file, encoding="unicode", xml_declaration=True)
-    
     # Remove icon outlines
     svg.tree_remove_by_class(result, "outline")
-    # Remove embedded fonts
-    svg.tree_remove_by_id(result, "fonts")
     
     with open(out / "texture.svg", "w") as file:
         result.write(file, encoding="unicode", xml_declaration=True)
     
-    with open("/dev/null") as null:
-        # Convert all text to paths.
-        log_action("Converting all text to paths", lambda _: subprocess.check_call(
-            [
-                "inkscape",
-                str(out / "texture.svg"),
-                "--export-text-to-path",
-                "--export-plain-svg",
-                "-o", str(out / "texture.svg")
-            ],
-            # Since inkscape is a fragile shitty program it generates a billion
-            # warnings if you look at it wrong. Therefore we need to throw
-            # away all warnings and errors.
-            stderr=null,
-        ))
-        
-        def clean_up_inkscape(path: Path):
-            with open(path, "r") as file:
-                tree = ET.parse(file)
-            # Remove unnecessary IDs added by Inkscape.
-            svg.tree_remove_unreferenced_ids(tree)
-            tree.write(path)
-        
-        # Why does inkscape have to be so hard to work with...
-        log_action(
-            "Cleaning up after Inkscape",
-            lambda _: clean_up_inkscape(out / "texture.svg"),
-        )
-        
-        # log_action(
-        #     "Generating texture.pdf",
-        #     lambda _: subprocess.check_call(
-        #         ["inkscape", str(out / "texture.svg"), "-o", str(out / "texture.pdf")],
-        #         stderr=null,
-        #     ),
-        # )
+    normalize_text_actions(out / "texture.svg")
     
-    timer = StartedTimedAction("Opening browser")
+    print_layout = keyboard_builder.pack_keys_for_print(layout)
+    
+    print_result = log_action(
+        "Building keyboard print SVG",
+        lambda _: keyboard_builder.build_keyboard_svg(print_layout, theme, key_templates),
+    )
+    
+    # Show icon outlines
+    for outline in svg.tree_find_by_class(print_result, "outline"):
+        outline.set("visibility", "visible")
+    
+    log_action(
+        "Normalizing print.svg",
+        lambda _: normalize_keyboard_for_texture(print_result, theme),
+    )
+
+    with open(out / "print-outlined.svg", "w") as file:
+        print_result.write(file, encoding="unicode", xml_declaration=True)
+    
+    normalize_text_actions(out / "print-outlined.svg")
+    
+    # Remove icon outlines
+    svg.tree_remove_by_class(print_result, "outline")
+    
+    with open(out / "print.svg", "w") as file:
+        print_result.write(file, encoding="unicode", xml_declaration=True)
+    
+    normalize_text_actions(out / "print.svg")
+    
+    browser_timer = StartedTimedAction("Opening browser")
     with browser.create_page() as page:
-        timer.done()
+        browser_timer.done()
         
-        log_action(
+        tiles = log_action(
             "Generating preview.png",
             lambda _: svg.render_file_as_png(
                 page,
                 out / "preview.svg",
                 out / "preview.png",
                 theme.preview_scale,
+                magic.max_tile_size,
             )
         )
         log_action(
-            "Generating texture-outlined.png",
-            lambda _: svg.render_file_as_png(
-                page,
-                out / "texture-outlined.svg",
-                out / "texture-outlined.png",
-                theme.texture_outlined_scale,
-            )
+            "Stiching together preview.png",
+            lambda _: tiles.stich_together(),
         )
     
     tiles = log_action(
@@ -282,7 +310,7 @@ def main() -> None:
             out / "texture.svg",
             out / "texture.png",
             theme.texture_scale,
-            Vec2(3000, 3000),
+            magic.max_tile_size,
             progress_handler=handler
         )
     )
@@ -291,7 +319,40 @@ def main() -> None:
         lambda _: tiles.stich_together(),
     )
     
+    tiles = log_action(
+        "Generating print-outlined.png's",
+        lambda handler: svg.render_file_as_png_segmented_resvg(
+            out / "print-outlined.svg",
+            out / "print-outlined.png",
+            theme.print_outlined_scale,
+            magic.max_tile_size,
+            progress_handler=handler
+        )
+    )
+    log_action(
+        "Stiching together print-outlined.png",
+        lambda _: tiles.stich_together(),
+    )
+    
+    tiles = log_action(
+        "Generating print.png's",
+        lambda handler: svg.render_file_as_png_segmented_resvg(
+            out / "print.svg",
+            out / "print.png",
+            theme.print_scale,
+            magic.max_tile_size,
+            progress_handler=handler
+        )
+    )
+    log_action(
+        "Stiching together print.png",
+        lambda _: tiles.stich_together(),
+    )
+    
     metadata.store_at(out / "metadata.json5")
+    
+    print(f"\nDone in {timer.get_pretty()}")
+    
 
 def run() -> None:
     try:
