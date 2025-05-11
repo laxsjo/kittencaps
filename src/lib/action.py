@@ -4,7 +4,7 @@ import sys
 from time import time
 import curses
 
-from . import utils
+from . import utils, project
 
 _stdout = utils.WriteTracker(sys.stdout)
 _stderr = utils.WriteTracker(sys.stderr)
@@ -24,11 +24,14 @@ def get_written_output_length() -> Tuple[int, int]:
 
 
 def get_clear_last_progress() -> str:
-    return "".join((
-        (curses.tigetstr("cuu1") or bytes()).decode(),
-        "\r",
-        (curses.tigetstr("el") or bytes()).decode(),
-    ))
+    if project.verbose():
+        return ""
+    else:
+        return "".join((
+            (curses.tigetstr("cuu1") or bytes()).decode(),
+            "\r",
+            (curses.tigetstr("el") or bytes()).decode(),
+        ))
 
 class Timer():
     def __init__(self, start_time: float | None = None):

@@ -71,6 +71,12 @@ def main() -> None:
         default=None,
         help="Scale the resolution of the overview.png image by this factor. Overrides use of --scale.",
     )
+    parser.add_argument(
+        "-v",
+        "--verbose",
+        action="store_true",
+        help="Don't override the printed subtask lines when new lines are printed.",
+    )
     
     args = parser.parse_args()
     
@@ -82,6 +88,9 @@ def main() -> None:
     print_outlined_scale: float | None = args.print_outlined_scale
     print_scale: float | None = args.print_scale
     overview_scale: float | None = args.overview_scale
+    verbose: bool = args.verbose
+    
+    project.configure_verbose(verbose)
 
     args = Args(
         preview_scale=scale,

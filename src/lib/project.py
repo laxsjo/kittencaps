@@ -17,3 +17,13 @@ __all__ = [
 # Note: This function assumes that the current script is called in the 'src' directory...
 def path_to_absolute(relative_path: str|Path) -> Path:
     return Path(os.path.dirname(__file__)).joinpath("../..", relative_path).resolve()
+
+_verbose = False
+
+def configure_verbose(value: bool) -> None:
+    global _verbose
+    _verbose = value
+    
+def verbose() -> bool:
+    global _verbose
+    return _verbose
