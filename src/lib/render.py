@@ -4,22 +4,17 @@ from pathlib import Path
 from dataclasses import dataclass
 import tempfile
 import subprocess
-import re
 import xml.etree.ElementTree as ET 
-from playwright import sync_api as playwright
-import io
-from contextlib import contextmanager
 
-from . import svg_builder
+from . import action
 from .utils import *
 from .error import *
 from .color import *
 from .pos import *
 from .default import *
-from . import iterator
 
 @dataclass(frozen=True)
-class TileRenderProgress(ActionProgress):
+class TileRenderProgress(action.ActionProgress):
     current_tile: int
     total_tiles: int
     

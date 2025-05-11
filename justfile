@@ -60,6 +60,14 @@ generate-keycaps $layout="moonlander-mk1" $theme="standard" *$args="":
         --out="./generated/${layout}_${theme}" \
         ${args}
 
+[doc('Create a ZIP archive with the individual rendered icon images.')]
+generate-archive $layout="moonlander-mk1" $theme="standard" *$args="":
+    python -m src.package_archive \
+        "./generated/${layout}_${theme}/archive.zip" \
+        --layout="./assets/layouts/{{layout}}.json" \
+        --theme="./assets/themes/$theme.json" \
+        ${args}
+
 # TODO: This command should save the hashes of it's inputs, and only generate a new .blend file if it changes, since creating the blend file is non-deterministic.
 generate-render-scene $layout="moonlander-mk1" $theme="standard":
     BLENDER_SYSTEM_PYTHON="$VIRTUAL_ENV" PYTHONPATH="$(python -c "import sys; print(\":\".join(sys.path))")" blender \
@@ -81,3 +89,7 @@ sync:
 # Open the reference images in pureref
 open-refs:
     pureref references/references.pur &>> /dev/null &
+
+[doc("Create image diff of image file in the working tree with that in staging.")]
+git-compare-image-index $image_path $out:
+    git cat-file blob ":$image_path" | magick compare - "$image_path" "$out"

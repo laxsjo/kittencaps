@@ -1,10 +1,8 @@
 from typing import *
+import collections.abc
 import sys
 import traceback
 import os
-from time import time
-import curses
-
 
 __all__ = [
     "eprint",
@@ -15,13 +13,7 @@ __all__ = [
     "assert_instance",
     "inspect",
     "time_it",
-    "Timer",
-    "StartedTimedAction",
-    "ActionProgress",
-    "log_action",
 ]
-
-curses.setupterm()
 
 def eprint(*args, **kwargs):
     print(*args, file=sys.stderr, **kwargs)
@@ -55,13 +47,6 @@ def assert_instance[T](_class: type[T], value: Any) -> T:
     else:
         panic(f"assert_instance: Value {value} is not an instance of {_class}")
 
-def get_move_cursor_up() -> str:
-    match curses.tigetstr("cuu1"):
-        case None:
-            return ""
-        case value:
-            return value.decode()
-
 def inspect[T](value: T) -> T:
     print(value)
     return value
@@ -75,66 +60,60 @@ def time_it[T](function: Callable[[], T]) -> tuple[T, float]:
     end = time()
     return result, end - start
 
-class Timer():
-    def __init__(self, start_time: float | None = None):
-        self.start_time = time() if start_time is None else start_time
+class WriteHooked[T: (str, bytes)](IO[T]):
+    def __init__(self, file: IO[T], on_write: Callable[[int], None]) -> None:
+        self.file = file
+        self.on_write = on_write
     
-    def get_pretty(self) -> str:
-        seconds = time() - self.start_time
-        if seconds < 1:
-            return f"{seconds * 1000.0:.1f} ms"
-        else:
-            return f"{seconds:.2f} s"
-
-class StartedTimedAction:
-    def __init__(self, action: str):
-        self.action = action
-        self.timer = Timer()
+    def __setattr__(self, name: str, value: Any) -> None:
+        match name:
+            case "file" | "on_write":
+                super().__setattr__(name, value)
+            case _:
+                self.file.__setattr__(name, value)
+    
+    def __getattribute__(self, name: str) -> None:
+        match name:
+            case "file", "on_write" | "write":
+                return super().__getattribute__(name)
+            case _:
+                return getattr(super().__getattribute__("file"), name)
+    
+    def write(self, s: collections.abc.Buffer|T) -> int:
+        # The typeshed IO protocol requires that write has an overload taking
+        # a Buffer, but I'm not sure why, and I'm just going ignore that :)
+        s = cast(T, s)
         
-        print(f"{action}...")
-    
-    def update(self, *, updated_action: str | None = None) -> None:
-        if updated_action is not None:
-            self.action = updated_action
-        
-        print(f"{get_move_cursor_up()}\r{self.action} for {self.timer.get_pretty()}")
-        
-    
-    def done(self, *, updated_action: str | None = None) -> None:
-        if updated_action is not None:
-            self.action = updated_action
+        result = self.file.write(s)
+        self.on_write(result)
+        return result
 
-        print(f"{get_move_cursor_up()}\r{self.action} took {self.timer.get_pretty()}")
-
-class ActionProgress(Protocol):
-    def render(self) -> str | None: ...
-    def render_finished(self) -> str | None: ...
-
-def log_action[P: ActionProgress, R](action: str, function: Callable[[Callable[[P], None]], R]) -> R:
-    timer = StartedTimedAction(action)
+class WriteTracker(TextIO):
+    # TODO: For some reason this makes `fileno` attribute be `None`.
+    def __init__(self, file: TextIO) -> None:
+        self.file = file
+        self.write_amount = 0
     
-    last_progress: P | None = None
-    def handler(progress: P) -> None:
-            nonlocal last_progress
-            last_progress = progress
-            
-            progress_content = progress.render()
-            if progress_content is None:
-                progress_str = ""
-            else:
-                progress_str = f" {progress_content}"
-                
-            timer.update(updated_action=action + progress_str)
+    def __setattr__(self, name: str, value: Any) -> None:
+        match name:
+            case "file" | "write_amount":
+                super().__setattr__(name, value)
+            case _:
+                self.file.__setattr__(name, value)
     
-    result = function(handler)
+    # Called for *every* access
+    def __getattribute__(self, name: str) -> Any:
+        match name:
+            case "buffer":
+                def on_write(amount: int) -> None:
+                    self.write_amount += amount
+                return WriteHooked(self.file.buffer, on_write)
+            case "file" | "write_amount" | "write":
+                return super().__getattribute__(name)
+            case _:
+                return getattr(super().__getattribute__("file"), name)
     
-    # Type inference doesn't recognize that a value P may be assigned
-    last_progress = cast(P | None, last_progress)
-    
-    if last_progress is None:
-        last_progress_str = ""
-    else:
-        last_progress_str = f" {last_progress.render_finished()}"
-    timer.done(updated_action=action + last_progress_str)
-    
-    return result
+    def write(self, s: str) -> int:
+        result = self.file.write(s)
+        self.write_amount += result
+        return result

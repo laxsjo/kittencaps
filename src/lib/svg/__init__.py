@@ -25,6 +25,7 @@ from . import path
 # formats.
 
 __all__ = [
+    "ElementTree",
     "MaybeElementTree",
     "resolve_element_tree",
     "tree_get_id",
@@ -34,6 +35,7 @@ __all__ = [
     "tree_remove_by_class",
     "tree_remove_by_id",
     "tree_remove_attributes_by",
+    "tree_map_attributes",
     "tree_replace_in_attributes",
     "tree_remove_unreferenced_ids",
     "tree_remove_element",
@@ -51,7 +53,7 @@ __all__ = [
 
 @dataclass
 class ViewBox:
-    pos: Vec2
+    pos: Vec2[float]
     size: Scaling
     
     def add_padding(self, padding: float) -> ViewBox:
@@ -95,6 +97,7 @@ class ViewBox:
         return Bounds.from_pos_size(self.pos, self.size.as_vec2())
 
 
+type ElementTree = ET.ElementTree[ET.Element[str]]
 type MaybeElementTree = ET.Element[str] | ET.ElementTree[ET.Element]
 def resolve_element_tree(tree: MaybeElementTree) -> ET.Element:
     return tree.getroot() if isinstance(tree, ET.ElementTree) else tree
@@ -171,6 +174,18 @@ def tree_remove_element(tree: MaybeElementTree, element: ET.Element) -> bool:
             return True
     return False
 
+def tree_map_attributes(tree: MaybeElementTree, function: Callable[[str, str], str]) -> None:
+    """
+    Calls `function` with name and value for each attribute of every element in
+    tree, replacing the value with the one returned by `function`.
+    """
+    
+    def mapper(pair: Tuple[str, str]) -> Tuple[str, str]:
+        return (pair[0], function(pair[0], pair[1]))
+    
+    tree = resolve_element_tree(tree)
+    for element in tree.iter():
+        element.attrib = dict(map(mapper, element.attrib.items()))
 
 # Replace all matches of the keys in mappings in any attribute values of the specified element or
 # its decendants with new.
@@ -181,14 +196,10 @@ def tree_replace_in_attributes(tree: MaybeElementTree, mappings: Dict[str, str])
     replacements are done in place, meaning that later mappings won't replace
     the values inserted by earlier mappings.
     """
-    def replace(attribute: Tuple[str, str]) -> Tuple[str, str]:
-        name, value = attribute
-        
-        return (name, string_replace_mappings(value, mappings))
-    
-    tree = resolve_element_tree(tree)
-    for element in tree.iter():
-        element.attrib = dict(map(replace, element.attrib.items()))
+    tree_map_attributes(
+        tree,
+        lambda _, value: string_replace_mappings(value, mappings)
+    )
 
 def tree_remove_unreferenced_ids(tree: MaybeElementTree) -> None:
     """
@@ -698,7 +709,7 @@ def render_file_as_png_segmented_resvg(
             (
                 "resvg",
                 f"--zoom={scale}",
-                # Note: resvg complians when using stdin without specifying
+                # Note: resvg complains when using stdin without specifying
                 # `--resources-dir` for some reason...
                 "--resources-dir=/dev/null",
                 "-",

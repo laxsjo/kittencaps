@@ -30,6 +30,10 @@
           "description": "The factor the resolution of the generated print.png was scaled by.",
           "type": ["number", "null"]
         },
+        "overview_scale": {
+          "description": "The factor the resolution of the generated overview.png in the ZIP archive was scaled by.",
+          "type": ["number", "null"]
+        },
       },
     }
   },

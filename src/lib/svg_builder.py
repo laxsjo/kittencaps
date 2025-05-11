@@ -618,10 +618,11 @@ class SvgDocumentBuilder:
             self.add_element(element)
         return self
     
-    def add_icon_set(self, icon_set: SvgSymbolSet) -> Self:
-        self.elements.extend(icon_set.other_elements)
-        for icon in icon_set.symbols.values():
-            self.elements.append(icon.source.element)
+    def add_icon_set(self, icon_set: SvgSymbolSet | None) -> Self:
+        if icon_set is not None:
+            self.elements.extend(icon_set.other_elements)
+            for icon in icon_set.symbols.values():
+                self.elements.append(icon.source.element)
         return self
     
     def root_styles(self, styles: CssStyles) -> Self:

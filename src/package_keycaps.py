@@ -1,19 +1,16 @@
 #!/usr/bin/env python
 
 from typing import *
-import json5
 import argparse
 import pathlib
 from pathlib import Path
-import itertools
-import subprocess
 import re
 import xml.etree.ElementTree as ET
 
 from .lib import project, magic
 from .lib.svg_builder import *
 from .lib.pos import *
-from .lib import svg, browser
+from .lib import svg, browser, normalize, action
 from .lib import keyboard_builder
 from .lib.config import *
 from .lib.utils import *
@@ -47,10 +44,13 @@ def normalize_keyboard_for_texture(keyboard: svg.MaybeElementTree, config: Confi
             re.match(r"^_[0-9]+(\.[0-9]+)?u-base$", element.attrib.get("id", "")),
         keyboard.findall(".//mask")
     )
-    config.base_size = config.unit_size + config.icon_margin * 2
     for mask in masks:
         size_u = mask.attrib["id"].removeprefix("_").removesuffix("-base")
-        new_mask = keyboard_builder.create_keycap_mask(size_u, config)
+        new_mask = keyboard_builder.create_keycap_mask(
+            size_u,
+            config.unit_size + config.icon_margin * 2,
+            config,
+        )
         # Replace the mask's children
         mask[:] = new_mask[:]
     
@@ -60,79 +60,21 @@ def normalize_keyboard_for_texture(keyboard: svg.MaybeElementTree, config: Confi
     svg.tree_remove_by(keyboard, is_hidden)
     
     # Replace palette color references with literal srgb hex color codes.
-    def create_color_mappings(pair: tuple[str, HideableColor]) -> Iterable[tuple[str, str]]:
-        name, color = pair
-        color_str = color.convert("srgb").to_string(hex=True)
-        return [
-            (f"url(\"#{name}\")", color_str),
-            (f"url(#{name})", color_str),
-        ]
-    svg.tree_replace_in_attributes(
-        keyboard,
-        dict(
-            itertools.chain.from_iterable(
-                map(create_color_mappings, config.colors.items())
-            )
-        ),
-    )
-    if not svg.tree_remove_by_id(keyboard, "palette-colors"):
-        panic("Could not find #palette-colors")
-    
-    # Set fill color of background rect manually that would otherwise be set via
-    # css.
-    for name, color in config.colors.items():
-        for element in svg.tree_get_by_class(keyboard, f"keycap-color-{name}"):
-            rect = element.find("./g/rect")
-            if rect is None:
-                print(f"Warning: Could not find rect element for {element}")
-                continue
-            rect.attrib["fill"] = color.convert("srgb").to_string(hex=True)
-    svg.tree_remove_by_id(keyboard, "surface-colors")
+    normalize.palette_color_references(keyboard, config)
     
     # Remove all uses of transform-origin
-    def iter_with_viewbox(element: ET.Element, view_box: svg.ViewBox) -> Iterable[tuple[ET.Element, svg.ViewBox]]:
-        yield (element, view_box)
-        for child in element:
-            # svg.ViewBox.parse_svg_value()
-            if (value := child.attrib.get("viewBox", None)) is not None:
-                match svg.ViewBox.parse_svg_value(value):
-                    case Ok(view_box):
-                        pass
-                    case Error(msg):
-                        panic(f"Could not parse viewBox value '{value}' in {child}: {msg}")
-            yield from iter_with_viewbox(child, view_box)
-    for element, view_box in iter_with_viewbox(keyboard, view_box):
-        svg.apply_transform_origin(keyboard, element, view_box)
+    normalize.reduce_transform_origin(keyboard)
 
 def normalize_text_actions(path: Path) -> None:
-    with open("/dev/null") as null:
-        # Convert all text to paths.
-        log_action(f"Converting all text to paths in {path.name}", lambda _: subprocess.check_call(
-            [
-                "inkscape",
-                str(path),
-                "--export-text-to-path",
-                "--export-plain-svg",
-                "-o", str(path)
-            ],
-            # Since inkscape is a fragile shitty program it generates a billion
-            # warnings if you look at it wrong. Therefore we need to throw
-            # away all warnings and errors.
-            stderr=null,
-        ))
-        
-        def clean_up_inkscape(path: Path):
-            with open(path, "r") as file:
-                tree = ET.parse(file)
-            # Remove unnecessary IDs added by Inkscape.
-            svg.tree_remove_unreferenced_ids(tree)
-            tree.write(path)
-        
-        # Why does inkscape have to be so hard to work with...
-        log_action(
-            f"Cleaning up after Inkscape in {path.name}",
-            lambda _: clean_up_inkscape(path),
-        )
+    tree = ET.parse(path)
+    
+    # Convert all text to paths.
+    action.log_action(
+        f"Converting all text to paths in {path.name}",
+        lambda _: normalize.convert_text_to_paths(tree)
+    )
+    
+    tree.write(path, encoding="unicode", xml_declaration=True)
 
 def main() -> None:
     parser = argparse.ArgumentParser(
@@ -218,6 +160,7 @@ def main() -> None:
         texture_scale=scale if texture_scale is None else texture_scale,
         print_outlined_scale=scale if print_outlined_scale is None else print_outlined_scale,
         print_scale=scale if print_scale is None else print_scale,
+        overview_scale=scale
     )
 
     metadata = GenerationMetadata(
@@ -226,14 +169,14 @@ def main() -> None:
         args=args,
     )
 
-    timer = Timer()
+    timer = action.Timer()
 
     layout, theme = metadata.load()
 
     with open(template_path, "r") as file:
         key_templates = SvgSymbolSet(ET.parse(file))
 
-    result = log_action(
+    result = action.log_action(
         "Building keyboard SVG",
         lambda _: keyboard_builder.build_keyboard_svg(layout, theme, key_templates),
     )
@@ -243,7 +186,7 @@ def main() -> None:
     with open(out / "preview.svg", "w") as file:
         result.write(file, encoding="unicode", xml_declaration=True)
     
-    log_action(
+    action.log_action(
         "Normalizing texture.svg",
         lambda _: normalize_keyboard_for_texture(result, theme),
     )
@@ -258,7 +201,7 @@ def main() -> None:
     
     print_layout = keyboard_builder.pack_keys_for_print(layout)
     
-    print_result = log_action(
+    print_result = action.log_action(
         "Building keyboard print SVG",
         lambda _: keyboard_builder.build_keyboard_svg(print_layout, theme, key_templates),
     )
@@ -267,7 +210,7 @@ def main() -> None:
     for outline in svg.tree_find_by_class(print_result, "outline"):
         outline.set("visibility", "visible")
     
-    log_action(
+    action.log_action(
         "Normalizing print.svg",
         lambda _: normalize_keyboard_for_texture(print_result, theme),
     )
@@ -285,11 +228,11 @@ def main() -> None:
     
     normalize_text_actions(out / "print.svg")
     
-    browser_timer = StartedTimedAction("Opening browser")
+    browser_timer = action.StartedTimedAction("Opening browser")
     with browser.create_page() as page:
         browser_timer.done()
         
-        tiles = log_action(
+        tiles = action.log_action(
             "Generating preview.png",
             lambda _: svg.render_file_as_png(
                 page,
@@ -299,12 +242,12 @@ def main() -> None:
                 magic.max_tile_size,
             )
         )
-        log_action(
+        action.log_action(
             "Stiching together preview.png",
             lambda _: tiles.stich_together(),
         )
     
-    tiles = log_action(
+    tiles = action.log_action(
         "Generating texture.png's",
         lambda handler: svg.render_file_as_png_segmented_resvg(
             out / "texture.svg",
@@ -314,12 +257,12 @@ def main() -> None:
             progress_handler=handler
         )
     )
-    log_action(
+    action.log_action(
         "Stiching together texture.png",
         lambda _: tiles.stich_together(),
     )
     
-    tiles = log_action(
+    tiles = action.log_action(
         "Generating print-outlined.png's",
         lambda handler: svg.render_file_as_png_segmented_resvg(
             out / "print-outlined.svg",
@@ -329,12 +272,12 @@ def main() -> None:
             progress_handler=handler
         )
     )
-    log_action(
+    action.log_action(
         "Stiching together print-outlined.png",
         lambda _: tiles.stich_together(),
     )
     
-    tiles = log_action(
+    tiles = action.log_action(
         "Generating print.png's",
         lambda handler: svg.render_file_as_png_segmented_resvg(
             out / "print.svg",
@@ -344,7 +287,7 @@ def main() -> None:
             progress_handler=handler
         )
     )
-    log_action(
+    action.log_action(
         "Stiching together print.png",
         lambda _: tiles.stich_together(),
     )

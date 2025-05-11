@@ -5,3 +5,4 @@ __pycache__
 /COMMIT_EDITMSG
 /.svg-editor
 
+/generated/*/archive.zip

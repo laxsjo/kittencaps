@@ -1,7 +1,8 @@
 from __future__ import annotations
 from dataclasses import dataclass
 from typing import *
-import pathlib
+from pathlib import Path
+import os
 import base64
 from fontTools import ttLib
 from fontTools.pens.boundsPen import BoundsPen
@@ -46,7 +47,7 @@ class TTFontWrapper:
 
     tt: ttLib.TTFont
     
-    def __init__(self, path: pathlib.Path) -> None:
+    def __init__(self, path: Path) -> None:
         self.tt = ttLib.TTFont(path)
     
         
@@ -82,7 +83,7 @@ class Extenders:
 class FontMetrics:
     tables: TTFontWrapper
     
-    def __init__(self, font_file: pathlib.Path) -> None:
+    def __init__(self, font_file: Path) -> None:
         self.tables = TTFontWrapper(font_file)
     
     @functools.cache
@@ -153,11 +154,11 @@ class FontMetrics:
 class FontDefinition:
     family: str
     weight: str
-    path: pathlib.Path
+    path: Path
     metrics: FontMetrics
     
-    def __init__(self, file: str|pathlib.Path) -> None:
-        path = file if isinstance(file, pathlib.Path) else pathlib.Path(file)
+    def __init__(self, file: str | Path) -> None:
+        path = file if isinstance(file, Path) else Path(file)
         known_font_extensions = [".otf", ".ttf", ".woff", ".woff2"]
         
         if path.suffix not in known_font_extensions:
@@ -198,3 +199,19 @@ def generate_css_rule(font: FontDefinition) -> CssStatement:
         f"  src: url(data:{mime_type};base64,{encoded})\n"
         "}"
     )
+
+def scan_fonts_dir(dir: Path) -> Iterable[Path]:
+    """Find list of font files in directory and its subdirectories.
+    
+    Returns the exact same font files that resvg would when --use-fonts-dir is
+    used.
+    """
+    
+    for root, _, filenames in os.walk(dir):
+        for filename in filenames:
+            path = Path(root) / filename
+            match path.suffix.lower():
+                case ".ttf" | ".ttc" | ".otf" | ".otc":
+                    yield path
+                case _:
+                    continue

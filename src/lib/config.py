@@ -145,6 +145,7 @@ class Args():
     texture_scale: float|None
     print_outlined_scale: float|None
     print_scale: float|None
+    overview_scale: float|None
 
 @dataclass
 class Config:
@@ -167,6 +168,8 @@ class Config:
     """Amount to scale the resolution of print-outlined.png by."""
     print_scale: float
     """Amount to scale the resolution of print.png by."""
+    overview_scale: float
+    """Amount to scale the resolution of overview.png in the ZIP archive by."""
     
     @classmethod
     def from_parts(cls, *, theme: Theme, layout: kle.ExtendedKeyboard, args: Args) -> Self:
@@ -183,6 +186,7 @@ class Config:
             texture_scale=layout.scale if args.texture_scale is None else args.texture_scale,
             print_outlined_scale=layout.scale if args.print_outlined_scale is None else args.print_outlined_scale,
             print_scale=layout.scale if args.print_scale is None else args.print_scale,
+            overview_scale=1 if args.overview_scale is None else args.overview_scale,
         )
     
     def as_theme(self) -> Theme:

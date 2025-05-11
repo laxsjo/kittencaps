@@ -133,3 +133,9 @@ class HideableColor(Color):
     @staticmethod
     def from_linear_vec3(linear_color: Vec3) -> HideableColor:
         return HideableColor(Color("srgb-linear", linear_color).convert("srgb"))
+    
+    # Some part of Color doesn't seem to be copyable...
+    def __deepcopy__(self, memo):
+        cls = type(self)
+        
+        return cls(self)

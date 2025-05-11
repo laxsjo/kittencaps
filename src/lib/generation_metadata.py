@@ -57,6 +57,7 @@ class GenerationMetadata():
                 texture_scale=metadata["args"].get("texture_scale", None),
                 print_outlined_scale=metadata["args"].get("print_outlined_scale", None),
                 print_scale=metadata["args"].get("print_scale", None),
+                overview_scale=metadata["args"].get("overview_scale", None),
             ),
         )
     

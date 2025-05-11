@@ -1,5 +1,6 @@
 from __future__ import annotations
 from dataclasses import dataclass, field
+import enum
 import xml.etree.ElementTree as ET 
 import functools
 import damsenviet.kle as kle
@@ -30,7 +31,7 @@ __all__ = [
     "pack_keys_for_print",
 ]
 
-def resolve_key_position(key: kle.Key) -> Vec2:
+def resolve_key_position(key: kle.Key) -> Vec2[float]:
     return rotate(Vec2(key.x, key.y), Vec2(key.rotation_x, key.rotation_y), key.rotation_angle)
 
 # Get svg of the specified id or None if it does not exist.
@@ -158,6 +159,7 @@ class KeycapGeometry:
             case Orientation.VERTICAL:
                 return Vec2(1, self.major_size)
 
+@dataclass
 class KeycapInfo:
     icon_id: str
     # In u units
@@ -216,16 +218,24 @@ class KeycapInfo:
     
     def geometry(self) -> KeycapGeometry:
         return KeycapGeometry(self.major_size, self.orientation)
+    
+    def size(self) -> Vec2[float]:
+        """Get size as an x and y component."""
+        match self.orientation:
+            case Orientation.HORIZONTAL:
+                return Vec2(self.major_size, 1)
+            case Orientation.VERTICAL:
+                return Vec2(1, self.major_size)
 
 # Create mask for keycap bounding box
-def create_keycap_mask(size_u: str, config: Config) -> ET.Element:
+def create_keycap_mask(size_u: str, base_size: float, config: Config) -> ET.Element:
     id = f"_{size_u}-base"
     
     size = float(size_u.removesuffix("u"))
     
-    offset = (config.unit_size - config.base_size) / 2
+    offset = (config.unit_size - base_size) / 2
     width = config.unit_size * size - offset * 2
-    height = config.base_size
+    height = base_size
     
     rect = ET.Element("rect", {
         "width": f"{width:g}",
@@ -241,6 +251,21 @@ def create_keycap_mask(size_u: str, config: Config) -> ET.Element:
     mask.append(rect)
     
     return mask
+
+class OutlineOption(enum.IntEnum):
+    EXCLUDE = 0
+    INCLUDE_HIDDEN = 1
+    SHOW = 2
+
+@dataclass(frozen=True)
+class KeycapRenderingOptions:
+    shading: bool = False
+    outline: OutlineOption = OutlineOption.EXCLUDE
+    include_margin: bool = False
+    """
+    Clip the icon area to include the the margin area, i.e. the width specified
+    by `config.icon_margin`, when masking the generated keycap if `True`.
+    """
 
 @dataclass
 class KeycapFactory:
@@ -264,8 +289,9 @@ class KeycapFactory:
         ```
     """
     
-    templates: SvgSymbolSet
     config: Config
+    _options = KeycapRenderingOptions()
+    _templates: SvgSymbolSet | None = None
     _defs: DefsSet = field(init=False)
     _masks: dict[str, ET.Element] = field(default_factory=lambda: {})
     _shading_masks: dict[str, ET.Element] = field(default_factory=lambda: {})
@@ -275,12 +301,31 @@ class KeycapFactory:
             skipped_ids=set(self.config.colors.keys())
         )
     
+    def configure(self, options: KeycapRenderingOptions, key_templates: SvgSymbolSet|None = None) -> Self:
+        self._options = options
+        self._templates = key_templates
+        return self
+    
+    def _get_templates(self) -> SvgSymbolSet:
+        """Access symbol set.
+        
+        It's an error to access it if it hasn't been set with `configure`.
+        """
+        if self._templates is None:
+            panic("Keycap option set while no templates given")
+        return self._templates
+    
     # Creates a mask and return its id
     def _get_size_mask(self, size_u: str) -> str:
         if size_u in self._masks:
             return self._masks[size_u].attrib["id"]
         
-        mask = create_keycap_mask(size_u, self.config)
+        if self._options.include_margin:
+            size = self.config.unit_size + self.config.icon_margin * 2
+        else:
+            size = self.config.base_size
+        
+        mask = create_keycap_mask(size_u, size, self.config)
         
         self._masks[size_u] = mask
         return mask.attrib["id"]
@@ -349,12 +394,19 @@ class KeycapFactory:
                 frame_rotation += 90
                 frame_pos.x += unit
         
+        match self.config.colors.get(key.color):
+            case None:
+                panic(f"Found unknown key color name '{key.color}'")
+            case _:
+                pass
+        
         base = make_element("rect", dict(
             **{"class": "surface"},
             x = f"{-margin:g}" if margin != 0 else None,
             y = f"{-margin:g}" if margin != 0 else None,
             width = f"{unit * key.major_size + margin * 2:g}",
             height = f"{unit + margin * 2:g}",
+            fill = f"url(#{key.color})",
         ))
         
         # A 1u icon is an svg with a viewbox of "0 0 100 100" (assuming no
@@ -379,15 +431,25 @@ class KeycapFactory:
         
         icon.element.attrib["x"] = f"{icon_pos.x:g}"
         icon.element.attrib["y"] = f"{icon_pos.y:g}"
-
-        outline = create_icon_outline(key.geometry(), self.config.as_theme(), self.templates, stroke="red")
-        outline.set("class", "outline")
-        outline.set("visibility", "hidden")
-        element_apply_transform(outline, Transform(scale=Scaling(self.config.unit_size / 100)))
+        
+        if self._options.outline is not OutlineOption.EXCLUDE:
+            outline = create_icon_outline(
+                key.geometry(),
+                self.config.as_theme(),
+                self._get_templates(),
+                stroke="red",
+            )
+            outline.set("class", "outline")
+            if self._options.outline is OutlineOption.INCLUDE_HIDDEN:
+                outline.set("visibility", "hidden")
+            element_apply_transform(outline, Transform(scale=Scaling(self.config.unit_size / 100)))
+        else:
+            outline = None
         
         icon_wrapper = ET.Element("g")
         icon_wrapper.append(icon.element)
-        icon_wrapper.append(outline)
+        if outline is not None:
+            icon_wrapper.append(outline)
         element_apply_transform(icon_wrapper, Placement(
             translate=frame_pos.swap(),
             rotate=-frame_rotation
@@ -399,11 +461,14 @@ class KeycapFactory:
         unshaded_group.append(base)
         unshaded_group.append(icon_wrapper)
         
-        shading = ET.Element("use", {
-            "href": f"#{unshaded_group.get("id")}",
-            "mask": f"url(#{self._get_shading_mask(key.size_u())})",
-            "filter": "url(#sideShading)",
-        })
+        if self._options.shading:
+            shading = ET.Element("use", {
+                "href": f"#{unshaded_group.get("id")}",
+                "mask": f"url(#{self._get_shading_mask(key.size_u())})",
+                "filter": "url(#sideShading)",
+            })
+        else:
+            shading = None
         
         group = ET.Element("g", {
             "class": f"keycap-color-{key.color}",
@@ -414,7 +479,8 @@ class KeycapFactory:
             rotate=frame_rotation
         ))
         group.append(unshaded_group)
-        group.append(shading)
+        if shading is not None:
+            group.append(shading)
         
         return SizedElement(group, dimensions)
 
@@ -468,9 +534,23 @@ class KeyboardBuilder():
     _factory: KeycapFactory = field(init=False)
     _components: list[PlacedComponent] = field(default_factory=lambda: [])
     _builder_extra: Callable[[SvgDocumentBuilder], Any]|None = None
+    _embed_fonts = True
     
     def __post_init__(self):
-        self._factory = KeycapFactory(self.key_templates, self.config)
+        self._factory = KeycapFactory(self.config).configure(
+            KeycapRenderingOptions(),
+        )
+    
+    def configure_factory(self, options: KeycapRenderingOptions) -> Self:
+        if options.shading or options.outline is not OutlineOption.EXCLUDE:
+            self._factory.configure(options, self.key_templates)
+        else:
+            self._factory.configure(options)
+        return self
+    
+    def embed_fonts(self, value: bool) -> Self:
+        self._embed_fonts = value
+        return self
     
     def keys(self, *keys: kle.Key) -> Self:
         def placer(key: KeycapInfo, transform: Transform) -> None:
@@ -506,7 +586,7 @@ class KeyboardBuilder():
         builder = SvgDocumentBuilder()\
             .set_viewbox(viewbox)\
             .palette(self.config.colors)\
-            .add_icon_set(self._factory.templates)\
+            .add_icon_set(self._factory._templates)\
             .add_element(make_element(
                 "defs",
                 {
@@ -516,32 +596,16 @@ class KeyboardBuilder():
             ))\
             # .add_element(border_from_bounds(viewbox))
         
-        builder.add_element(
-            SvgStyleBuilder()
-                .indentation(1, "  ")
-                .attributes(dict(
-                    id="fonts",
-                ))
-                .statement(*map(Font.generate_css_rule, self.config.font_family))
-                .build()
-        )
-        builder.add_element(
-            SvgStyleBuilder()
-                .indentation(1, "  ")
-                .attributes(dict(
-                    id="surface-colors",
-                ))
-                .rule(*(
-                    CssRule(f".keycap-color-{name} .surface", CssStyles({
-                        "fill": f"url(#{name})",
-                    }))
-                    for name, color in self.config.colors.keycap_colors()
-                ))
-                # .rule(
-                #     ".icon-bounding-box {stroke: red; stroke-width: 1px;}"
-                # )\
-                .build()
-        )
+        if self._embed_fonts:
+            builder.add_element(
+                SvgStyleBuilder()
+                    .indentation(1, "  ")
+                    .attributes(dict(
+                        id="fonts",
+                    ))
+                    .statement(*map(Font.generate_css_rule, self.config.font_family))
+                    .build()
+            )
         
         builder.add_elements(component.realize() for component in self._components)
         
@@ -562,11 +626,16 @@ class KeyboardBuilder():
         return builder.build()
 
 def build_keyboard_svg(keyboard: kle.Keyboard, config: Config, key_templates: SvgSymbolSet) -> ET.ElementTree[ET.Element]:
-    return (KeyboardBuilder(config,  key_templates)\
-        .keys(*keyboard.keys)\
+    return (KeyboardBuilder(config,  key_templates)
+        .configure_factory(KeycapRenderingOptions(
+            shading=True,
+            outline=OutlineOption.INCLUDE_HIDDEN,
+            include_margin=False,
+        ))
+        .keys(*keyboard.keys)
         .build())
 
-def pack_keys_for_print[K: kle.Keyboard](keyboard: K) -> K:
+def pack_keys_for_print[Keyboard: kle.Keyboard](keyboard: Keyboard) -> Keyboard:
     keyboard = deepcopy(keyboard)
     
     def geometry_to_size(geometry: tuple[float, Orientation]) -> Vec2[float]:
